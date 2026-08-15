@@ -64,7 +64,7 @@ const articleSchema = {
     name: "Mãng Cầu Bà Đen Tây Ninh",
     logo: {
       "@type": "ImageObject",
-      url: "https://mangcaubaden.vn/app-icon-512.png",
+      url: "https://mangcaubaden.vn/logo.png",
     },
   },
   mainEntityOfPage: {
@@ -156,7 +156,13 @@ export default function ArticlePage() {
       {/* HEADER */}
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
-          <span className="brand-mark">MC</span>
+          <img
+            src="/logo.png"
+            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            className="brand-logo-img"
+            width="42"
+            height="42"
+          />
           <span className="brand-text">
             Mãng Cầu<br />Bà Đen
           </span>
@@ -544,7 +550,13 @@ export default function ArticlePage() {
       {/* FOOTER */}
       <footer>
         <Link className="brand footer-brand" href="/">
-          <span className="brand-mark">MC</span>
+          <img
+            src="/logo.png"
+            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            className="brand-logo-img"
+            width="42"
+            height="42"
+          />
           <span>
             Mãng Cầu<br />Bà Đen
           </span>

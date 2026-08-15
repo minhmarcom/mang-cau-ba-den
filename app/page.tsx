@@ -134,7 +134,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Mãng Cầu Bà Đen",
   url: "https://mangcaubaden.vn/",
-  logo: "https://mangcaubaden.vn/app-icon-512.png",
+  logo: "https://mangcaubaden.vn/logo.png",
   description:
     "Kết nối mãng cầu Bà Đen từ vùng trồng Tây Ninh đến khách hàng và đối tác phân phối.",
   contactPoint: {
@@ -212,7 +212,13 @@ export default function Home() {
       {/* STICKY APP HEADER */}
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Mãng Cầu Bà Đen - Trang chủ">
-          <span className="brand-mark">MC</span>
+          <img
+            src="/logo.png"
+            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            className="brand-logo-img"
+            width="42"
+            height="42"
+          />
           <span className="brand-text">
             Mãng Cầu<br />Bà Đen
           </span>
@@ -816,7 +822,13 @@ export default function Home() {
       {/* FOOTER */}
       <footer>
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark">MC</span>
+          <img
+            src="/logo.png"
+            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            className="brand-logo-img"
+            width="42"
+            height="42"
+          />
           <span>
             Mãng Cầu<br />Bà Đen
           </span>

@@ -159,6 +159,17 @@ a {
   text-transform: uppercase;
 }
 
+.brand-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+  padding: 3px;
+  box-shadow: 0 2px 8px rgba(31, 61, 43, 0.12);
+  flex-shrink: 0;
+}
+
 .brand-mark {
   display: grid;
   place-items: center;
