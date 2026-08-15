@@ -525,7 +525,6 @@ export default function ArticleFamousSpecialtyPage() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
-          <Link href="/so-do-trang-web">Sơ đồ trang web</Link>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             Zalo
           </a>

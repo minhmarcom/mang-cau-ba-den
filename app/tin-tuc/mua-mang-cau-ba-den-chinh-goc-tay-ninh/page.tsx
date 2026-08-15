@@ -437,7 +437,7 @@ export default function ArticlePage() {
             <div className="article-cta-box">
               <h3>Bạn muốn thưởng thức mãng cầu Bà Đen tươi ngon hôm nay?</h3>
               <p>
-                Liên hệ trực tiếp với chúng tôi để kiểm tra lứa trái đang thu hoạch, nhận báo giá theo thời điểm và tư vấn quy cách giao nhận phù hợp nhất.
+                Liên hệ trực tiếp với chúng tôi để đặt mua mãng cầu Bà Đen đang thu hoạch, nhận báo giá theo thời điểm và tư vấn quy cách giao nhận phù hợp nhất.
               </p>
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0907215521">
@@ -579,7 +579,6 @@ export default function ArticlePage() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
-          <Link href="/so-do-trang-web">Sơ đồ trang web</Link>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             Zalo
           </a>

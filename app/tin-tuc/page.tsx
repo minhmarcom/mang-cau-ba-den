@@ -268,7 +268,7 @@ export default function NewsHubPage() {
           style={{ marginTop: "48px" }}
           aria-label="Tư vấn đặt hàng trực tiếp"
         >
-          <h3>Bạn cần tư vấn lứa trái thu hoạch hôm nay?</h3>
+          <h3>Đặt mua mãng cầu Bà Đen chính gốc hôm nay</h3>
           <p>
             Liên hệ trực tiếp với vườn Mãng Cầu Bà Đen để kiểm tra độ chín, nhận báo giá theo thời điểm và hỗ trợ giao nhanh tận nơi toàn quốc.
           </p>
@@ -317,7 +317,6 @@ export default function NewsHubPage() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
-          <Link href="/so-do-trang-web">Sơ đồ trang web</Link>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             Zalo
           </a>

@@ -84,7 +84,7 @@ const faqs = [
   {
     question: "Mùa mãng cầu Tây Ninh vào thời gian nào?",
     answer:
-      "Mãng cầu có mùa vụ và sản lượng thay đổi theo thời tiết, lịch xử lý ra hoa của từng vườn. Để biết lứa trái đang có, độ chín và ngày giao phù hợp, khách hàng nên liên hệ trực tiếp trước khi đặt.",
+      "Mãng cầu có mùa vụ và sản lượng thay đổi theo thời tiết, lịch xử lý ra hoa của từng vườn. Để đặt mua mãng cầu Bà Đen đúng độ chín và ngày giao phù hợp, khách hàng nên liên hệ trực tiếp trước khi đặt.",
   },
   {
     question: "Cách chọn mãng cầu Bà Đen ngon và nhận biết trái chín?",
@@ -104,7 +104,7 @@ const faqs = [
   {
     question: "Mua mãng cầu Bà Đen ở đâu và có giao tận nơi không?",
     answer:
-      "Khách hàng có thể gọi hoặc nhắn Zalo 0907 215 521 để hỏi lứa trái, quy cách, giá theo thời điểm và khu vực giao. Đơn lẻ, đơn quà tặng và nhu cầu mua sỉ sẽ được trao đổi riêng.",
+      "Khách hàng có thể gọi hoặc nhắn Zalo 0907 215 521 để đặt mua mãng cầu Bà Đen, chọn quy cách, giá theo thời điểm và khu vực giao. Đơn lẻ, đơn quà tặng và nhu cầu mua sỉ sẽ được trao đổi riêng.",
   },
   {
     question: "Có tiêu chuẩn VietGAP hoặc hồ sơ nguồn gốc vùng trồng không?",
@@ -646,7 +646,7 @@ export default function Home() {
             <em className="heading-line">đến người thân.</em>
           </h2>
           <p>
-            Từ thưởng thức gia đình, hộp quà biếu VIP sang trọng đến các đơn sỉ đóng thùng vận chuyển xa — nhà vườn luôn sẵn sàng tư vấn chọn lứa trái tươi ngon nhất trong ngày.
+            Từ thưởng thức gia đình, hộp quà biếu VIP sang trọng đến các đơn sỉ đóng thùng vận chuyển xa — nhà vườn luôn sẵn sàng hỗ trợ đặt mua mãng cầu Bà Đen tươi ngon nhất trong ngày.
           </p>
           <div className="path-list">
             <a
@@ -774,7 +774,7 @@ export default function Home() {
             Liên hệ để hỏi mùa vụ, giá mãng cầu Tây Ninh theo thời điểm, quy cách hộp quà, đơn giao tận nơi hoặc nhu cầu sỉ và đại lý.
           </p>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
-            Hỏi lứa trái hôm nay <span>→</span>
+            Đặt mua mãng cầu Bà Đen <span>→</span>
           </a>
         </div>
       </section>
@@ -948,7 +948,6 @@ export default function Home() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
-          <a href="/so-do-trang-web">Sơ đồ trang web</a>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             Zalo
           </a>
