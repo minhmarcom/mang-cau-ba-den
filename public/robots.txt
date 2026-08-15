@@ -6,3 +6,4 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://mangcaubaden.vn/sitemap.xml
+Sitemap: https://mangcaubaden.vn/sitemap-tin-tuc.xml

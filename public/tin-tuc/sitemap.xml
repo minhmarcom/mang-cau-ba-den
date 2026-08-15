@@ -4,16 +4,6 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://mangcaubaden.vn/</loc>
-    <lastmod>2026-08-15T15:30:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://mangcaubaden.vn/og.png</image:loc>
-      <image:title>Mãng Cầu Bà Đen Tây Ninh — Trái Ngọt Chính Gốc Từ Vườn Nhà</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mangcaubaden.vn/tin-tuc/</loc>
     <lastmod>2026-08-15T15:30:00+07:00</lastmod>
     <changefreq>daily</changefreq>
