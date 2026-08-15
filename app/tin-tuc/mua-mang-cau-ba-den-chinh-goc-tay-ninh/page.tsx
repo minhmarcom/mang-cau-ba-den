@@ -223,14 +223,6 @@ export default function ArticlePage() {
           <p className="article-lead">
             Mãng cầu Bà Đen là đặc sản nức tiếng của Tây Ninh nhờ vị ngọt thanh, cơm trắng dẻo và hương thơm thanh khiết. Để tránh mua phải hàng trôi nổi kém chất lượng, hãy cùng tìm hiểu kinh nghiệm chọn mua mãng cầu chuẩn gốc từ chính các nhà vườn Tây Ninh.
           </p>
-
-          <div className="author-row">
-            <div className="author-avatar">MC</div>
-            <div>
-              <strong>Ban Biên Tập Mãng Cầu Bà Đen</strong>
-              <span>Chuyên trang thông tin & kết nối nông sản Tây Ninh</span>
-            </div>
-          </div>
         </header>
 
         {/* FEATURED IMAGE */}
@@ -426,33 +418,6 @@ export default function ArticlePage() {
               </figcaption>
             </figure>
 
-            <div className="garden-features">
-              <div className="feat-item">
-                <span className="feat-icon">🌿</span>
-                <div>
-                  <strong>Thu hoạch tại vườn trong ngày:</strong> Đảm bảo độ tươi ngon nhất khi đến tay khách hàng.
-                </div>
-              </div>
-              <div className="feat-item">
-                <span className="feat-icon">🛡️</span>
-                <div>
-                  <strong>Quy trình bao trái an toàn:</strong> 100% trái được bọc bảo vệ trên cành, hạn chế tối đa sâu bệnh tự nhiên.
-                </div>
-              </div>
-              <div className="feat-item">
-                <span className="feat-icon">📦</span>
-                <div>
-                  <strong>Đóng gói hộp quà trang nhã:</strong> Phục vụ nhu cầu quà tặng gia đình, doanh nghiệp, hội nghị và khách du lịch.
-                </div>
-              </div>
-              <div className="feat-item">
-                <span className="feat-icon">🚚</span>
-                <div>
-                  <strong>Giao hàng toàn quốc:</strong> Kết nối vận chuyển nhanh chóng đến TP.HCM, Hà Nội và các tỉnh thành.
-                </div>
-              </div>
-            </div>
-
             {/* CALLOUT BOX */}
             <div className="article-cta-box">
               <h3>Bạn muốn thưởng thức mãng cầu Bà Đen tươi ngon hôm nay?</h3>
@@ -528,18 +493,8 @@ export default function ArticlePage() {
           </section>
         </div>
 
-        {/* AUTHOR BIO & SHARE */}
+        {/* RELATED LINKS */}
         <footer className="article-footer">
-          <div className="article-author-bio">
-            <div className="bio-mark">MC</div>
-            <div>
-              <h4>Mãng Cầu Bà Đen Tây Ninh Chính Gốc</h4>
-              <p>
-                Chúng tôi kết nối câu chuyện nông sản sạch từ vùng trồng chân Núi Bà Đen đến tận tay người tiêu dùng và đối tác phân phối trên toàn quốc.
-              </p>
-            </div>
-          </div>
-
           <div className="article-navigation-back">
             <Link href="/" className="back-home-link">
               <span>← Quay về Trang chủ Mãng Cầu Bà Đen</span>

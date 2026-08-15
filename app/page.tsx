@@ -476,7 +476,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-note">
-          <span className="note-number">☘</span>
+          <span className="note-number">✓</span>
           <p>
             <strong>Chuẩn VietGAP & OCOP</strong>
             <br />
@@ -527,7 +527,7 @@ export default function Home() {
         </div>
         <div className="value-list">
           <article>
-            <span>☘</span>
+            <span>01</span>
             <div>
               <h3>Thuận theo mùa vụ</h3>
               <p>
@@ -536,7 +536,7 @@ export default function Home() {
             </div>
           </article>
           <article>
-            <span>♡</span>
+            <span>02</span>
             <div>
               <h3>Chăm từ vườn</h3>
               <p>
@@ -545,7 +545,7 @@ export default function Home() {
             </div>
           </article>
           <article>
-            <span>⌘</span>
+            <span>03</span>
             <div>
               <h3>Gửi đi tử tế</h3>
               <p>
@@ -554,7 +554,7 @@ export default function Home() {
             </div>
           </article>
           <article>
-            <span>★</span>
+            <span>04</span>
             <div>
               <h3>Chuẩn VietGAP & OCOP</h3>
               <p>
@@ -562,42 +562,6 @@ export default function Home() {
               </p>
             </div>
           </article>
-        </div>
-      </section>
-
-      {/* BRAND BANNER SHOWCASE */}
-      <section className="brand-banner-section section-pad" aria-label="Đặc sản Mãng Cầu Bà Đen NABADEN OCOP 3 Sao">
-        <div className="brand-banner-card">
-          <img
-            src="/banner-nabaden.png"
-            alt="Mãng Cầu Bà Đen NABADEN - Sạch, Tươi, Ngon, Chuẩn vị Tây Ninh OCOP 3 Sao"
-            className="brand-banner-img"
-            width="1024"
-            height="419"
-            loading="lazy"
-          />
-          <div className="brand-banner-badges">
-            <div className="brand-badge-item">
-              <span className="badge-icon">🌿</span>
-              <span>100% Tự Nhiên</span>
-            </div>
-            <div className="brand-badge-item">
-              <span className="badge-icon">✓</span>
-              <span>Chọn Lọc Kỹ Lưỡng</span>
-            </div>
-            <div className="brand-badge-item">
-              <span className="badge-icon">🛡</span>
-              <span>An Toàn Vệ Sinh</span>
-            </div>
-            <div className="brand-badge-item">
-              <span className="badge-icon">⭐</span>
-              <span>OCOP 3 Sao</span>
-            </div>
-            <div className="brand-badge-item">
-              <span className="badge-icon">❤️</span>
-              <span>Tốt Cho Sức Khỏe</span>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -773,7 +737,7 @@ export default function Home() {
                   <span>Đọc bài viết chi tiết</span>
                   <span>→</span>
                 </a>
-                <span className="featured-read-time">⏱ 4 phút đọc</span>
+                <span className="featured-read-time">4 phút đọc</span>
               </div>
             </div>
           </div>
@@ -798,7 +762,7 @@ export default function Home() {
                   <span>Đọc bài viết chi tiết</span>
                   <span>→</span>
                 </a>
-                <span className="featured-read-time">⏱ 5 phút đọc</span>
+                <span className="featured-read-time">5 phút đọc</span>
               </div>
             </div>
           </div>
