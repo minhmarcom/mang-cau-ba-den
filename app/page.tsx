@@ -342,14 +342,6 @@ export default function Home() {
               <span>Khám phá sản phẩm</span>
               <span className="btn-arrow">→</span>
             </a>
-            <a
-              className="text-link"
-              href="https://zalo.me/0907215521"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Nhắn Zalo hợp tác ↗
-            </a>
           </div>
         </div>
         <div className="hero-note">
