@@ -69,12 +69,6 @@ const gallery = [
   },
 ];
 
-const paths = [
-  "Phân phối & bán lẻ",
-  "Quà tặng doanh nghiệp",
-  "Chế biến & phát triển sản phẩm",
-  "Trải nghiệm nông nghiệp",
-];
 
 const faqs = [
   {
@@ -167,7 +161,7 @@ export default function Home() {
   }, [menuOpen]);
 
   useEffect(() => {
-    const sectionIds = ["top", "cau-chuyen", "san-pham", "hinh-anh", "hop-tac", "cam-nang", "lien-he"];
+    const sectionIds = ["top", "cau-chuyen", "san-pham", "hinh-anh", "dat-hang", "cam-nang", "lien-he"];
     const updateActiveSection = () => {
       const marker = window.scrollY + window.innerHeight * 0.35;
       let current = "top";
@@ -191,7 +185,7 @@ export default function Home() {
     if (activeSection === "top" || activeSection === "cau-chuyen") return "top";
     if (activeSection === "san-pham") return "san-pham";
     if (activeSection === "hinh-anh") return "hinh-anh";
-    if (activeSection === "hop-tac" || activeSection === "cam-nang") return "hop-tac";
+    if (activeSection === "dat-hang" || activeSection === "cam-nang") return "dat-hang";
     if (activeSection === "lien-he") return "lien-he";
     return "top";
   };
@@ -228,7 +222,7 @@ export default function Home() {
           <a href="#cau-chuyen">Câu chuyện</a>
           <a href="#san-pham">Sản phẩm</a>
           <a href="#hinh-anh">Hình ảnh</a>
-          <a href="#hop-tac">Hợp tác</a>
+          <a href="#dat-hang">Đặt hàng</a>
           <a href="#cam-nang">Cẩm nang</a>
           <a href="#lien-he">Liên hệ</a>
         </nav>
@@ -274,7 +268,7 @@ export default function Home() {
                 </a>
                 <a href="#san-pham" onClick={closeMenu}>
                   <span className="mobile-nav-num">02</span>
-                  <span>Sản phẩm & Quy cách</span>
+                  <span>Sản phẩm & Quà biếu</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
                 <a href="#hinh-anh" onClick={closeMenu}>
@@ -282,19 +276,19 @@ export default function Home() {
                   <span>Hình ảnh thực tế</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
-                <a href="#hop-tac" onClick={closeMenu}>
+                <a href="#dat-hang" onClick={closeMenu}>
                   <span className="mobile-nav-num">04</span>
-                  <span>Mở lối hợp tác</span>
+                  <span>Đặt mua & Quà tặng</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
                 <a href="#cam-nang" onClick={closeMenu}>
                   <span className="mobile-nav-num">05</span>
-                  <span>Cẩm nang & Hỏi đáp</span>
+                  <span>Cẩm nang từ vườn</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
                 <a href="#lien-he" onClick={closeMenu}>
                   <span className="mobile-nav-num">06</span>
-                  <span>Kênh liên hệ</span>
+                  <span>Kênh liên hệ mua hàng</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
               </div>
@@ -380,8 +374,8 @@ export default function Home() {
           <p>
             Chúng tôi kết nối câu chuyện vùng trồng với những cơ hội mới — từ kênh bán lẻ, quà tặng đến sản phẩm chế biến và trải nghiệm nông nghiệp.
           </p>
-          <a className="arrow-link" href="#hop-tac">
-            Cùng viết tiếp câu chuyện <span>→</span>
+          <a className="arrow-link" href="#san-pham">
+            Khám phá các dòng sản phẩm <span>→</span>
           </a>
         </div>
         <div className="intro-image">
@@ -511,72 +505,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COOPERATION SECTION */}
-      <section className="cooperation" id="hop-tac">
+      {/* ORDER & GIFTING SECTION */}
+      <section className="cooperation" id="dat-hang">
         <div
           className="coop-image"
           role="img"
-          aria-label="Vườn mãng cầu xanh tươi"
+          aria-label="Vườn mãng cầu xanh tươi tại Tây Ninh"
         />
         <div className="coop-content">
-          <p className="section-kicker light">Mở lối hợp tác</p>
+          <p className="section-kicker light">Đặt mua & Quà biếu</p>
           <h2>
-            Cùng đưa vị ngọt<br />
-            <em>đi xa hơn.</em>
+            Gửi trọn vị ngọt<br />
+            <em>đến người thân.</em>
           </h2>
           <p>
-            Chúng tôi mong muốn lắng nghe bài toán thật của từng đối tác, sau đó cùng xây dựng phương án phù hợp.
+            Từ thưởng thức gia đình, hộp quà biếu VIP sang trọng đến các đơn sỉ đóng thùng vận chuyển xa — nhà vườn luôn sẵn sàng tư vấn chọn lứa trái tươi ngon nhất trong ngày.
           </p>
           <div className="path-list">
-            {paths.map((path, i) => (
-              <a
-                href="https://zalo.me/0907215521"
-                target="_blank"
-                rel="noreferrer"
-                key={path}
-              >
-                <span>0{i + 1}</span>
-                {path}
-                <b>→</b>
-              </a>
-            ))}
+            <a
+              href="https://zalo.me/0907215521"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>01</span>
+              Hộp quà 3 trái VIP biếu tặng trang nhã
+              <b>→</b>
+            </a>
+            <a
+              href="https://zalo.me/0907215521"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>02</span>
+              Thùng 5kg tuyển chọn ăn gia đình
+              <b>→</b>
+            </a>
+            <a
+              href="https://zalo.me/0907215521"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>03</span>
+              Thùng 10kg – 15kg đơn sỉ & doanh nghiệp
+              <b>→</b>
+            </a>
+            <a
+              href="https://zalo.me/0907215521"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>04</span>
+              Giao nhanh TP.HCM, Hà Nội & toàn quốc
+              <b>→</b>
+            </a>
           </div>
-        </div>
-      </section>
-
-      {/* PROCESS SECTION */}
-      <section className="process section-pad">
-        <p className="section-kicker">Từ nhu cầu đến hợp tác</p>
-        <div className="section-head">
-          <h2>
-            Một quy trình<br />
-            <em>rõ ràng.</em>
-          </h2>
-          <p>
-            Bắt đầu từ trao đổi thẳng thắn, kiểm chứng thực tế và thống nhất từng bước triển khai.
-          </p>
-        </div>
-        <div className="steps">
-          <article>
-            <span>01</span>
-            <h3>Tiếp nhận</h3>
-            <p>Nhu cầu, sản lượng và kênh phân phối.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Đề xuất</h3>
-            <p>Phương án sản phẩm, quy cách và tiến độ.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Khảo sát</h3>
-            <p>Mẫu thực tế, vùng trồng và khả năng đáp ứng.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Triển khai</h3>
-            <p>Thống nhất lịch, giao nhận và đầu mối phụ trách.</p>
-          </article>
         </div>
       </section>
 
@@ -776,9 +758,9 @@ export default function Home() {
         </a>
 
         <a
-          href="#hop-tac"
-          className={currentTab === "hop-tac" ? "is-active" : ""}
-          aria-current={currentTab === "hop-tac" ? "page" : undefined}
+          href="#dat-hang"
+          className={currentTab === "dat-hang" ? "is-active" : ""}
+          aria-current={currentTab === "dat-hang" ? "page" : undefined}
         >
           <svg
             className="nav-svg"
@@ -790,12 +772,11 @@ export default function Home() {
             strokeLinejoin="round"
             aria-hidden="true"
           >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+            <path d="M3 6h18" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
           </svg>
-          <span>Hợp tác</span>
+          <span>Đặt hàng</span>
         </a>
 
         <a

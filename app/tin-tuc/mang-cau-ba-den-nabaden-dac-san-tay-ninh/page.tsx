@@ -164,7 +164,7 @@ export default function ArticleBrandPage() {
           <Link href="/#cau-chuyen">Câu chuyện</Link>
           <Link href="/#san-pham">Sản phẩm</Link>
           <Link href="/#hinh-anh">Hình ảnh</Link>
-          <Link href="/#hop-tac">Hợp tác</Link>
+          <Link href="/#dat-hang">Đặt hàng</Link>
           <Link href="/#cam-nang">Cẩm nang</Link>
           <Link href="/#lien-he">Liên hệ</Link>
         </nav>
