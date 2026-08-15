@@ -384,22 +384,19 @@ export default function ArticleBrandPage() {
             </div>
           </section>
         </div>
-
-        {/* RELATED LINKS */}
-        <footer className="article-footer">
-          <div className="article-navigation-back" style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/" className="back-home-link">
-              <span>← Quay về Trang chủ</span>
-            </Link>
-            <Link href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/" className="back-home-link">
-              <span>Xem bài: Kinh nghiệm chọn mua mãng cầu chuẩn ngon →</span>
-            </Link>
-          </div>
-        </footer>
       </article>
 
       {/* FOOTER */}
       <footer>
+        <nav className="article-navigation-back" aria-label="Điều hướng bài viết">
+          <Link href="/" className="back-home-link">
+            ← Quay về Trang chủ
+          </Link>
+          <Link href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/" className="back-home-link">
+            Xem bài: Kinh nghiệm chọn mua mãng cầu chuẩn ngon →
+          </Link>
+        </nav>
+
         <Link className="brand footer-brand" href="/">
           <img
             src="/logo.png"

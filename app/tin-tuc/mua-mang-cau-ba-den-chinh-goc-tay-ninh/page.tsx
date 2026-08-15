@@ -492,19 +492,19 @@ export default function ArticlePage() {
             </div>
           </section>
         </div>
-
-        {/* RELATED LINKS */}
-        <footer className="article-footer">
-          <div className="article-navigation-back">
-            <Link href="/" className="back-home-link">
-              <span>← Quay về Trang chủ Mãng Cầu Bà Đen</span>
-            </Link>
-          </div>
-        </footer>
       </article>
 
       {/* FOOTER */}
       <footer>
+        <nav className="article-navigation-back" aria-label="Điều hướng bài viết">
+          <Link href="/" className="back-home-link">
+            ← Quay về Trang chủ Mãng Cầu Bà Đen
+          </Link>
+          <Link href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/" className="back-home-link">
+            Xem bài: Mãng Cầu Bà Đen – Đặc sản Tây Ninh →
+          </Link>
+        </nav>
+
         <Link className="brand footer-brand" href="/">
           <img
             src="/logo.png"
