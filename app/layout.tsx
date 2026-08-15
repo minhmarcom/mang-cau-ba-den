@@ -81,7 +81,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: "/vuon-nui-ba-den.jpg",
+          url: image,
           width: 1200,
           height: 630,
           alt: "Mãng Cầu Bà Đen Tây Ninh — Trái ngọt từ vườn nhà",
@@ -92,7 +92,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      images: ["/vuon-nui-ba-den.jpg"],
+      images: [image],
     },
     other: {
       "geo.region": "VN-37",

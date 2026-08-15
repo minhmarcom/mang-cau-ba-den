@@ -1,5 +1,5 @@
 // Auto Cache Buster & Service Worker Purge
-self.addEventListener("install", (event) => {
+self.addEventListener("install", () => {
   self.skipWaiting();
 });
 
@@ -19,7 +19,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-self.addEventListener("fetch", (event) => {
+self.addEventListener("fetch", () => {
   // Direct network bypass - no caching
   return;
 });
