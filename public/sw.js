@@ -1,4 +1,4 @@
-const CACHE_NAME = "mang-cau-ba-den-v1";
+const CACHE_NAME = "mang-cau-ba-den-v2";
 const APP_SHELL = [
   "/",
   "/manifest.webmanifest",
@@ -7,6 +7,12 @@ const APP_SHELL = [
   "/hero-mang-cau.jpg",
   "/vuon-mang-cau.jpg",
   "/mang-cau-tren-canh.jpg",
+  "/thuc-te-dong-goi-nhieu-thung.jpg",
+  "/thuc-te-dong-goi.jpg",
+  "/thuc-te-mang-cau-tuoi.jpg",
+  "/thuc-te-phan-loai.jpg",
+  "/thuc-te-thu-hoach.jpg",
+  "/thuc-te-vuon-mang-cau.jpg",
   "/fonts/be-vietnam-pro-400.ttf",
   "/fonts/be-vietnam-pro-500.ttf",
   "/fonts/be-vietnam-pro-600.ttf",
