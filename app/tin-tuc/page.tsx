@@ -63,7 +63,7 @@ const collectionSchema = {
       "@type": "NewsArticle",
       headline: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
       url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
-      image: "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
+      image: "https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg",
     },
     {
       "@type": "NewsArticle",
@@ -106,7 +106,7 @@ export default function NewsHubPage() {
       title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
       kicker: "Nông sản bản sắc",
       tag: "Đặc sản nổi tiếng",
-      image: "/vuon-nui-ba-den.jpg",
+      image: "/hai-trieu-trai-mang-cau-chin.jpg",
       date: "Tháng 8/2026",
       readTime: "4 phút đọc",
       description:

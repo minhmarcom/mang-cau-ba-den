@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/vuon-nui-ba-den.jpg",
+        url: "/hai-trieu-trai-mang-cau-chin.jpg",
         width: 1200,
         height: 630,
         alt: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | NABADEN",
     description:
       "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon và được bảo hộ chỉ dẫn địa lý.",
-    images: ["/vuon-nui-ba-den.jpg"],
+    images: ["/hai-trieu-trai-mang-cau-chin.jpg"],
   },
 };
 
@@ -50,9 +50,9 @@ const articleSchema = {
   headline: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
   description:
     "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon và được bảo hộ chỉ dẫn địa lý.",
-  image: ["https://mangcaubaden.vn/vuon-nui-ba-den.jpg"],
+  image: ["https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg"],
   datePublished: "2026-08-15T08:00:00+07:00",
-  dateModified: "2026-08-15T15:55:00+07:00",
+  dateModified: "2026-08-15T16:00:00+07:00",
   author: {
     "@type": "Organization",
     name: "Mãng Cầu Bà Đen NABADEN",
@@ -219,12 +219,12 @@ export default function ArticleFamousSpecialtyPage() {
         {/* HERO IMAGE */}
         <figure className="article-hero-media">
           <img
-            src="/vuon-nui-ba-den.jpg"
-            alt="Những vườn mãng cầu xanh ngát trải dài dưới chân Núi Bà Đen Tây Ninh"
+            src="/hai-trieu-thu-hoach-mang-cau.jpg"
+            alt="Nhà nông cẩn trọng thu hoạch từng trái mãng cầu chín già tại vườn Tây Ninh"
             loading="eager"
           />
           <figcaption>
-            Những vườn mãng cầu xanh mát trải dài quanh khu vực Núi Bà Đen Tây Ninh.
+            Nhà nông cẩn trọng thu hoạch từng trái mãng cầu chín già tại vườn Tây Ninh.
           </figcaption>
         </figure>
 
@@ -303,12 +303,12 @@ export default function ArticleFamousSpecialtyPage() {
 
             <figure className="article-inline-image">
               <img
-                src="/thuc-te-mang-cau-tuoi.jpg"
-                alt="Trái mãng cầu Bà Đen tươi ngon với mắt nở to đều"
+                src="/hai-trieu-trai-mang-cau-chin.jpg"
+                alt="Trái mãng cầu Bà Đen chín đạt chuẩn với mắt nở to, vỏ sáng đẹp"
                 loading="lazy"
               />
               <figcaption>
-                Mãng cầu Bà Đen khi già đạt chuẩn có mắt nở to, vỏ sáng và mùi thơm dịu nhẹ.
+                Trái mãng cầu Bà Đen với mắt nở to phẳng, vỏ sáng đẹp, thịt dẻo dai và vị ngọt thanh đặc trưng.
               </figcaption>
             </figure>
           </section>
@@ -340,12 +340,12 @@ export default function ArticleFamousSpecialtyPage() {
 
             <figure className="article-inline-image">
               <img
-                src="/thuc-te-vuon-mang-cau.jpg"
-                alt="Vườn mãng cầu trù phú quanh chân Núi Bà Đen Tây Ninh"
+                src="/hai-trieu-van-chuyen-vuon.jpg"
+                alt="Tập kết từng thùng mãng cầu vừa hái tươi nguyên từ vườn nhà dưới chân Núi Bà Đen"
                 loading="lazy"
               />
               <figcaption>
-                Những vườn mãng cầu sum suê trĩu quả tạo nên nét trù phú dưới chân Núi Bà Đen.
+                Tập kết từng thùng mãng cầu vừa hái tươi nguyên từ vườn nhà dưới chân Núi Bà Đen.
               </figcaption>
             </figure>
           </section>
@@ -361,6 +361,17 @@ export default function ArticleFamousSpecialtyPage() {
             <p>
               Để tạo ra một trái mãng cầu Bà Đen đạt chất lượng, người trồng phải trải qua nhiều công đoạn như cắt tỉa cành, xử lý ra hoa, thụ phấn, lựa trái, bao trái, chăm sóc và theo dõi độ già trước khi quyết định thời điểm thu hoạch. Phía sau một trái mãng cầu đến tay người tiêu dùng là cả một quá trình chăm sóc công phu của người nông dân.
             </p>
+
+            <figure className="article-inline-image">
+              <img
+                src="/hai-trieu-cat-trai-tren-canh.jpg"
+                alt="Kỹ thuật bao trái và thu hoạch mãng cầu đạt độ già chuẩn trên cành"
+                loading="lazy"
+              />
+              <figcaption>
+                Kỹ thuật bao trái an toàn và kiểm tra kỹ lưỡng độ già trước khi thu hoạch từng quả.
+              </figcaption>
+            </figure>
           </section>
 
           <section id="bao-ho-chi-dan-dia-ly">
