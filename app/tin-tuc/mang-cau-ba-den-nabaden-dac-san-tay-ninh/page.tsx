@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/vuon-nui-ba-den.jpg",
+        url: "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
         width: 1200,
         height: 630,
         alt: "Vườn mãng cầu xanh ngát dưới chân Núi Bà Đen Tây Ninh",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Mãng Cầu Bà Đen – Đặc Sản Tây Ninh: Tươi Ngon Chuẩn Vị Từ Vườn Nhà",
     description:
       "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành và chất lượng chuẩn VietGAP & OCOP.",
-    images: ["/vuon-nui-ba-den.jpg"],
+    images: ["https://mangcaubaden.vn/vuon-nui-ba-den.jpg"],
   },
 };
 

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/thuc-te-dong-goi-nhieu-thung.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
         width: 1200,
         height: 630,
         alt: "Mua mãng cầu Bà Đen chính gốc Tây Ninh",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen Tây Ninh ngon, chuẩn nguồn gốc từ nhà vườn.",
-    images: ["/thuc-te-dong-goi-nhieu-thung.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],
   },
 };
 

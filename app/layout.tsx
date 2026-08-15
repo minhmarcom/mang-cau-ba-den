@@ -11,10 +11,10 @@ export const viewport: Viewport = {
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
-  const host = requestHeaders.get("host") ?? "localhost:3000";
-  const protocol = host.startsWith("localhost") ? "http" : "https";
-  const siteUrl = `${protocol}://${host}`;
-  const image = `${protocol}://${host}/og.png`;
+  const host = requestHeaders.get("host");
+  const isLocal = host?.startsWith("localhost") || host?.startsWith("127.0.0.1");
+  const siteUrl = isLocal ? `http://${host}` : "https://mangcaubaden.vn";
+  const image = "https://mangcaubaden.vn/og.png";
   const title = "Mãng Cầu Bà Đen Tây Ninh — Trái Ngọt Chính Gốc Từ Vườn Nhà";
   const description = "Mãng Cầu Bà Đen Tây Ninh chính gốc, chuẩn tiêu chuẩn VietGAP và OCOP 3 Sao. Vị ngọt thanh, dẻo thơm, thu hoạch hái tươi trong ngày. Đặt mua Hộp Đặc Biệt 3 Quả, Thùng 5kg, Thùng 15kg giao nhanh toàn quốc (Hotline/Zalo: 0907 215 521).";
   const keywords = [

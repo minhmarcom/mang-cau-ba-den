@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/hai-trieu-trai-mang-cau-chin.jpg",
+        url: "https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg",
         width: 1200,
         height: 630,
         alt: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | NABADEN",
     description:
       "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon và được bảo hộ chỉ dẫn địa lý.",
-    images: ["/hai-trieu-trai-mang-cau-chin.jpg"],
+    images: ["https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg"],
   },
 };
 
