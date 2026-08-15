@@ -123,24 +123,138 @@ const faqSchema = {
   })),
 };
 
-const organizationSchema = {
+const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Mãng Cầu Bà Đen",
+  "@type": ["LocalBusiness", "ProduceFarm", "Store"],
+  "@id": "https://mangcaubaden.vn/#business",
+  name: "Mãng Cầu Bà Đen Tây Ninh — Vùng Trồng Chính Gốc",
+  alternateName: ["Mãng Cầu Bà Đen NABADEN", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh"],
   url: "https://mangcaubaden.vn/",
   logo: "https://mangcaubaden.vn/logo.png",
+  image: [
+    "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
+    "https://mangcaubaden.vn/hop-dac-biet-3-qua.png",
+    "https://mangcaubaden.vn/thung-5kg.png"
+  ],
   description:
-    "Kết nối mãng cầu Bà Đen từ vùng trồng Tây Ninh đến khách hàng và đối tác phân phối.",
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+84907215521",
-    contactType: "sales",
-    areaServed: "VN",
-    availableLanguage: "Vietnamese",
+    "Chuyên cung cấp Mãng Cầu Bà Đen chính gốc chân Núi Bà Đen Tây Ninh, đạt chuẩn VietGAP và OCOP 3 Sao. Thu hoạch hái tươi trong ngày, giao nhanh tận nơi toàn quốc.",
+  telephone: "+84907215521",
+  priceRange: "$$",
+  currenciesAccepted: "VND",
+  paymentAccepted: "Tiền mặt, Chuyển khoản ngân hàng",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Khu vực chân Núi Bà Đen",
+    addressLocality: "Thành phố Tây Ninh",
+    addressRegion: "Tây Ninh",
+    postalCode: "84000",
+    addressCountry: "VN",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 11.3742,
+    longitude: 106.1685,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "06:00",
+      closes: "20:00",
+    },
+  ],
+  areaServed: [
+    { "@type": "Country", name: "Việt Nam" },
+    { "@type": "City", name: "Hồ Chí Minh" },
+    { "@type": "City", name: "Hà Nội" },
+    { "@type": "AdministrativeArea", name: "Tây Ninh" },
+  ],
   sameAs: [
-    "https://www.tiktok.com/@mangcaubaden",
     "https://zalo.me/0907215521",
+    "https://www.tiktok.com/@mangcaubaden",
+  ],
+};
+
+const productListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Danh mục Mãng Cầu Bà Đen Tây Ninh Chính Gốc",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Product",
+        name: "Mãng Cầu Bà Đen Hộp Đặc Biệt (3 Quả VIP)",
+        image: "https://mangcaubaden.vn/hop-dac-biet-3-qua.png",
+        description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng (450g – 600g/trái) đạt chuẩn OCOP 3 sao.",
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "VND",
+          availability: "https://schema.org/InStock",
+          url: "https://mangcaubaden.vn/#san-pham",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "128",
+        },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Product",
+        name: "Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn",
+        image: "https://mangcaubaden.vn/thung-5kg.png",
+        description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "VND",
+          availability: "https://schema.org/InStock",
+          url: "https://mangcaubaden.vn/#san-pham",
+        },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Product",
+        name: "Thùng 15KG Mãng Cầu Bà Đen Đơn Sỉ & Vận Chuyển Xa",
+        image: "https://mangcaubaden.vn/thung-15kg.png",
+        description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài.",
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "VND",
+          availability: "https://schema.org/InStock",
+          url: "https://mangcaubaden.vn/#san-pham",
+        },
+      },
+    },
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Mãng Cầu Bà Đen Tây Ninh",
+  url: "https://mangcaubaden.vn/",
+  inLanguage: "vi-VN",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Trang chủ", item: "https://mangcaubaden.vn/" },
+    { "@type": "ListItem", position: 2, name: "Sản phẩm Trái Tươi", item: "https://mangcaubaden.vn/#san-pham" },
+    { "@type": "ListItem", position: 3, name: "Cẩm nang từ vườn", item: "https://mangcaubaden.vn/#cam-nang" },
+    { "@type": "ListItem", position: 4, name: "Liên hệ mua hàng", item: "https://mangcaubaden.vn/#lien-he" },
   ],
 };
 
@@ -196,11 +310,23 @@ export default function Home() {
     <main>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productListSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
       {/* STICKY APP HEADER */}

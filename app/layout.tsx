@@ -14,18 +14,28 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = requestHeaders.get("host") ?? "localhost:3000";
   const protocol = host.startsWith("localhost") ? "http" : "https";
   const image = `${protocol}://${host}/og.png`;
-  const siteUrl = `${protocol}://${host}`;
-  const description = "Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn, sản phẩm trồng trọt theo tiêu chuẩn VietGAP và OCOP tại Tây Ninh.";
+  const title = "Mãng Cầu Bà Đen Tây Ninh — Trái Ngọt Chính Gốc Từ Vườn Nhà";
+  const description = "Mãng Cầu Bà Đen Tây Ninh chính gốc, chuẩn tiêu chuẩn VietGAP và OCOP 3 Sao. Vị ngọt thanh, dẻo thơm, thu hoạch hái tươi trong ngày. Đặt mua Hộp Đặc Biệt 3 Quả, Thùng 5kg, Thùng 15kg giao nhanh toàn quốc (Hotline/Zalo: 0907 215 521).";
   const keywords = [
-    "mãng cầu Bà Đen", "mãng cầu Bà Đen Tây Ninh", "mãng cầu Tây Ninh", "mãng cầu núi Bà Đen", "mãng cầu na Bà Đen",
-    "na Bà Đen", "na Tây Ninh", "đặc sản mãng cầu Tây Ninh", "đặc sản Tây Ninh", "đặc sản núi Bà Đen",
-    "mua mãng cầu Bà Đen", "mua mãng cầu Tây Ninh", "mãng cầu Bà Đen chính gốc", "mãng cầu Tây Ninh chính gốc",
-    "giá mãng cầu Bà Đen", "giá mãng cầu Tây Ninh", "đặt mãng cầu Bà Đen online", "mãng cầu Bà Đen giao tận nơi",
-    "vườn mãng cầu Bà Đen", "vườn mãng cầu Tây Ninh", "nhà vườn mãng cầu Tây Ninh", "vựa mãng cầu Tây Ninh",
-    "sỉ mãng cầu Bà Đen", "đại lý mãng cầu Tây Ninh", "mãng cầu VietGAP Tây Ninh", "mãng cầu OCOP Tây Ninh",
-    "nguồn gốc mãng cầu Bà Đen", "mùa mãng cầu Tây Ninh", "cách chọn mãng cầu ngon", "cách nhận biết mãng cầu chín",
-    "cách bảo quản mãng cầu", "mãng cầu Bà Đen và mãng cầu thường", "na dai và na Bà Đen", "dinh dưỡng mãng cầu",
-    "hộp quà mãng cầu Tây Ninh", "mãng cầu Tây Ninh làm quà", "mãng cầu Bà Đen tuyển chọn", "mãng cầu Tây Ninh loại 1"
+    // Từ khóa hạt nhân (Core Keywords)
+    "mãng cầu Bà Đen", "mang cau ba den", "mãng cầu Bà Đen Tây Ninh", "mang cau tay ninh",
+    "mãng cầu Tây Ninh", "đặc sản Tây Ninh", "đặc sản núi Bà Đen", "na Bà Đen", "na Tây Ninh",
+    "mãng cầu na Bà Đen", "trái mãng cầu Bà Đen", "quả mãng cầu Tây Ninh",
+    
+    // Từ khóa thương mại & Đặt mua (Commercial & Transactional)
+    "mua mãng cầu Bà Đen chính gốc", "mua mang cau ba den", "giá mãng cầu Bà Đen hôm nay",
+    "giá mãng cầu Tây Ninh tại vườn", "đặt mua mãng cầu Bà Đen online", "mãng cầu Bà Đen giao tận nơi",
+    "hộp đặc biệt 3 quả mãng cầu", "hộp quà mãng cầu 3 trái VIP", "hộp quà mãng cầu Tây Ninh",
+    "thùng mãng cầu 5kg", "thùng mãng cầu 15kg", "sỉ mãng cầu Bà Đen", "vựa mãng cầu Tây Ninh",
+    "mãng cầu Tây Ninh giao TPHCM", "mãng cầu Tây Ninh giao Hà Nội",
+    
+    // Từ khóa tiêu chuẩn chất lượng (Quality & Standards)
+    "mãng cầu VietGAP Tây Ninh", "mãng cầu OCOP 3 sao", "mãng cầu bao trái an toàn",
+    "mãng cầu sạch Tây Ninh", "mãng cầu tươi thu hoạch trong ngày", "mãng cầu loại 1 Tây Ninh",
+    
+    // Từ khóa thông tin & Hướng dẫn (Informational)
+    "vườn mãng cầu núi Bà Đen", "mùa mãng cầu Tây Ninh tháng mấy", "cách chọn mãng cầu Bà Đen ngon",
+    "phân biệt mãng cầu Bà Đen chính gốc", "cách nhận biết mãng cầu chín", "cách bảo quản mãng cầu không bị sượng"
   ];
 
   return {
@@ -38,11 +48,17 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: {
       index: true,
       follow: true,
-      googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
     applicationName: "Mãng Cầu Bà Đen",
     manifest: "/manifest.webmanifest",
-    appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "Mãng Cầu" },
+    appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "Mãng Cầu Bà Đen" },
     icons: {
       icon: [
         { url: "/favicon.png", sizes: "64x64", type: "image/png" },
@@ -55,8 +71,37 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/app-icon-512.png", sizes: "512x512", type: "image/png" },
       ],
     },
-    openGraph: { title, description, url: siteUrl, siteName: "Mãng Cầu Bà Đen", locale: "vi_VN", type: "website", images: [{ url: image, width: 1200, height: 630, alt: "Mãng Cầu Bà Đen Tây Ninh — Trái ngọt từ vườn nhà" }] },
-    twitter: { card: "summary_large_image", title, description, images: [image] },
+    openGraph: {
+      title,
+      description,
+      url: siteUrl,
+      siteName: "Mãng Cầu Bà Đen Tây Ninh",
+      locale: "vi_VN",
+      type: "website",
+      images: [
+        {
+          url: "/vuon-nui-ba-den.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Mãng Cầu Bà Đen Tây Ninh — Trái ngọt từ vườn nhà",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/vuon-nui-ba-den.jpg"],
+    },
+    other: {
+      "geo.region": "VN-37",
+      "geo.placename": "Núi Bà Đen, Tây Ninh",
+      "geo.position": "11.3742;106.1685",
+      "ICBM": "11.3742, 106.1685",
+      "dc.coverage": "Tây Ninh, Việt Nam",
+      "dc.language": "vi",
+      "format-detection": "telephone=yes",
+    },
   };
 }
 
