@@ -492,19 +492,59 @@ export default function ArticlePage() {
             </div>
           </section>
         </div>
+
+        {/* RELATED ARTICLES SECTION */}
+        <section className="article-related-section" aria-label="Bài viết cùng chuyên mục">
+          <div className="related-section-header">
+            <span className="related-section-kicker">Góc đọc thêm</span>
+            <h2 className="related-section-title">Bài viết liên quan</h2>
+          </div>
+
+          <div className="related-articles-grid">
+            <Link
+              href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/"
+              className="related-article-card"
+            >
+              <div className="related-card-thumb">
+                <img
+                  src="/vuon-nui-ba-den.jpg"
+                  alt="Mãng Cầu Bà Đen – Đặc sản Tây Ninh"
+                  loading="lazy"
+                />
+                <span className="related-thumb-tag">Đặc sản quê nhà</span>
+              </div>
+              <div className="related-card-body">
+                <div className="related-card-meta">
+                  <span>4 phút đọc</span>
+                  <span>•</span>
+                  <time>Tháng 8/2026</time>
+                </div>
+                <h3 className="related-card-title">
+                  Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà
+                </h3>
+                <p className="related-card-desc">
+                  Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.
+                </p>
+                <span className="related-card-link">
+                  Đọc bài viết <span>→</span>
+                </span>
+              </div>
+            </Link>
+          </div>
+
+          <div className="related-bottom-nav">
+            <Link href="/tin-tuc" className="nav-pill-btn">
+              ← Xem tất cả tin tức
+            </Link>
+            <Link href="/" className="nav-pill-btn secondary">
+              ← Về trang chủ
+            </Link>
+          </div>
+        </section>
       </article>
 
       {/* FOOTER */}
       <footer>
-        <nav className="article-navigation-back" aria-label="Điều hướng bài viết">
-          <Link href="/" className="back-home-link">
-            ← Quay về Trang chủ Mãng Cầu Bà Đen
-          </Link>
-          <Link href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/" className="back-home-link">
-            Xem bài: Mãng Cầu Bà Đen – Đặc sản Tây Ninh →
-          </Link>
-        </nav>
-
         <Link className="brand footer-brand" href="/">
           <img
             src="/logo.png"

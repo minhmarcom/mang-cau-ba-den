@@ -384,19 +384,59 @@ export default function ArticleBrandPage() {
             </div>
           </section>
         </div>
+
+        {/* RELATED ARTICLES SECTION */}
+        <section className="article-related-section" aria-label="Bài viết cùng chuyên mục">
+          <div className="related-section-header">
+            <span className="related-section-kicker">Góc đọc thêm</span>
+            <h2 className="related-section-title">Bài viết liên quan</h2>
+          </div>
+
+          <div className="related-articles-grid">
+            <Link
+              href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/"
+              className="related-article-card"
+            >
+              <div className="related-card-thumb">
+                <img
+                  src="/thuc-te-dong-goi-nhieu-thung.jpg"
+                  alt="Kinh nghiệm chọn mua mãng cầu Bà Đen chính gốc Tây Ninh"
+                  loading="lazy"
+                />
+                <span className="related-thumb-tag">Kinh nghiệm mua</span>
+              </div>
+              <div className="related-card-body">
+                <div className="related-card-meta">
+                  <span>5 phút đọc</span>
+                  <span>•</span>
+                  <time>Tháng 8/2026</time>
+                </div>
+                <h3 className="related-card-title">
+                  Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon
+                </h3>
+                <p className="related-card-desc">
+                  Hướng dẫn chi tiết cách nhận biết độ già, phân biệt trái chuẩn gốc Tây Ninh, quy cách đóng gói chống va đập và bảng phân loại trái ăn gia đình hoặc biếu tặng.
+                </p>
+                <span className="related-card-link">
+                  Đọc bài viết <span>→</span>
+                </span>
+              </div>
+            </Link>
+          </div>
+
+          <div className="related-bottom-nav">
+            <Link href="/tin-tuc" className="nav-pill-btn">
+              ← Xem tất cả tin tức
+            </Link>
+            <Link href="/" className="nav-pill-btn secondary">
+              ← Về trang chủ
+            </Link>
+          </div>
+        </section>
       </article>
 
       {/* FOOTER */}
       <footer>
-        <nav className="article-navigation-back" aria-label="Điều hướng bài viết">
-          <Link href="/" className="back-home-link">
-            ← Quay về Trang chủ
-          </Link>
-          <Link href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/" className="back-home-link">
-            Xem bài: Kinh nghiệm chọn mua mãng cầu chuẩn ngon →
-          </Link>
-        </nav>
-
         <Link className="brand footer-brand" href="/">
           <img
             src="/logo.png"
