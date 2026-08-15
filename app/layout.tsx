@@ -16,8 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol = host.startsWith("localhost") ? "http" : "https";
   const image = `${protocol}://${host}/og.png`;
   const siteUrl = `${protocol}://${host}`;
-  const title = "Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Từ Vườn Đến Tận Nơi";
-  const description = "Tìm hiểu mãng cầu Bà Đen Tây Ninh: nguồn gốc, mùa vụ, cách chọn trái ngon, bảo quản, giá và kết nối mua lẻ, mua sỉ trực tiếp từ vùng trồng.";
+  const description = "Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn, sản phẩm trồng trọt theo tiêu chuẩn VietGAP và OCOP tại Tây Ninh.";
   const keywords = [
     "mãng cầu Bà Đen", "mãng cầu Bà Đen Tây Ninh", "mãng cầu Tây Ninh", "mãng cầu núi Bà Đen", "mãng cầu na Bà Đen",
     "na Bà Đen", "na Tây Ninh", "đặc sản mãng cầu Tây Ninh", "đặc sản Tây Ninh", "đặc sản núi Bà Đen",

@@ -335,7 +335,7 @@ export default function Home() {
             <em>từ vườn nhà.</em>
           </h1>
           <p className="hero-copy">
-            Mãng cầu Bà Đen được vun trồng bằng kinh nghiệm nhà nông, đón nắng gió Tây Ninh và mang theo vị ngọt mộc mạc của quê nhà.
+            Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn. Sản phẩm trồng trọt theo tiêu chuẩn VietGAP và OCOP.
           </p>
           <div className="hero-actions">
             <a className="primary-button" href="#san-pham">
@@ -347,9 +347,9 @@ export default function Home() {
         <div className="hero-note">
           <span className="note-number">☘</span>
           <p>
-            <strong>Tươi theo mùa</strong>
+            <strong>Chuẩn VietGAP & OCOP</strong>
             <br />
-            Gắn với vùng trồng, tôn trọng tự nhiên và công sức nhà vườn.
+            Hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất.
           </p>
         </div>
       </section>
@@ -419,6 +419,15 @@ export default function Home() {
               <h3>Gửi đi tử tế</h3>
               <p>
                 Trao đổi rõ độ chín, quy cách, bao bì và lịch giao để trái đến tay khách trọn vị.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span>★</span>
+            <div>
+              <h3>Chuẩn VietGAP & OCOP</h3>
+              <p>
+                Trồng trọt theo tiêu chuẩn an toàn, tuyển chọn kỹ lưỡng, giữ trọn vị ngon thuần khiết và giàu dưỡng chất.
               </p>
             </div>
           </article>
