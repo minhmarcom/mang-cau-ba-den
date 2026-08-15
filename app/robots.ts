@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://mang-cau-ba-den-tay-ninh.nhatminhmarcom.chatgpt.site";
+const siteUrl = "https://mangcaubaden.vn";
 
 export default function robots(): MetadataRoute.Robots {
   return {

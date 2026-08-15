@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://mang-cau-ba-den-tay-ninh.nhatminhmarcom.chatgpt.site";
+const siteUrl = "https://mangcaubaden.vn";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [{ url: `${siteUrl}/`, lastModified: new Date(), changeFrequency: "weekly", priority: 1 }];
