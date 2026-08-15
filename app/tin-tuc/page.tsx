@@ -61,8 +61,8 @@ const collectionSchema = {
   hasPart: [
     {
       "@type": "NewsArticle",
-      headline: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
-      url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+      headline: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
+      url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
       image: "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
     },
     {
@@ -70,6 +70,12 @@ const collectionSchema = {
       headline: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
       url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
       image: "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
+    },
+    {
+      "@type": "NewsArticle",
+      headline: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
+      url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+      image: "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
     },
   ],
 };
@@ -96,15 +102,15 @@ const breadcrumbSchema = {
 export default function NewsHubPage() {
   const articles = [
     {
-      slug: "/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
-      title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
+      slug: "/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
+      title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
       kicker: "Nông sản bản sắc",
-      tag: "Đặc sản Tây Ninh",
+      tag: "Đặc sản nổi tiếng",
       image: "/vuon-nui-ba-den.jpg",
       date: "Tháng 8/2026",
       readTime: "4 phút đọc",
       description:
-        "Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
+        "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon, vùng chuyên canh trù phú và được bảo hộ chỉ dẫn địa lý.",
     },
     {
       slug: "/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
@@ -116,6 +122,17 @@ export default function NewsHubPage() {
       readTime: "5 phút đọc",
       description:
         "Hướng dẫn chi tiết cách nhận biết độ già của trái, phân biệt mãng cầu chuẩn gốc Tây Ninh, quy cách đóng gói chống va đập và bảng phân loại trái ăn gia đình hoặc biếu tặng.",
+    },
+    {
+      slug: "/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+      title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
+      kicker: "Đặc sản quê nhà",
+      tag: "Văn hóa nhà nông",
+      image: "/thuc-te-vuon-mang-cau.jpg",
+      date: "Tháng 8/2026",
+      readTime: "4 phút đọc",
+      description:
+        "Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
     },
   ];
 
