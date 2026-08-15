@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const products = [
   { no: "01", title: "Mãng cầu tươi", tag: "Theo mùa vụ", image: "/thuc-te-mang-cau-tuoi.jpg", copy: "Trái tươi được phân loại theo độ chín, kích cỡ và nhu cầu vận chuyển." },
@@ -21,6 +21,23 @@ const paths = ["Phân phối & bán lẻ", "Quà tặng doanh nghiệp", "Chế 
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("top");
+
+  useEffect(() => {
+    const sectionIds = ["top", "san-pham", "hop-tac", "lien-he"];
+    const updateActiveSection = () => {
+      const marker = window.scrollY + window.innerHeight * 0.42;
+      let current = "top";
+      sectionIds.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section && section.offsetTop <= marker) current = id;
+      });
+      setActiveSection(current);
+    };
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    return () => window.removeEventListener("scroll", updateActiveSection);
+  }, []);
   return (
     <main>
       <header className="site-header">
@@ -91,7 +108,12 @@ export default function Home() {
         </div>
       </section>
 
-      <nav className="app-nav" aria-label="Điều hướng ứng dụng"><a href="#top"><span>⌂</span>Trang chủ</a><a href="#san-pham"><span>☘</span>Sản phẩm</a><a href="#hop-tac"><span>♡</span>Hợp tác</a><a href="#lien-he"><span>☎</span>Liên hệ</a></nav>
+      <nav className="app-nav" aria-label="Điều hướng ứng dụng">
+        <a href="#top" className={activeSection === "top" ? "is-active" : ""} aria-current={activeSection === "top" ? "page" : undefined}><span className="nav-icon nav-icon-home" aria-hidden="true" />Trang chủ</a>
+        <a href="#san-pham" className={activeSection === "san-pham" ? "is-active" : ""} aria-current={activeSection === "san-pham" ? "page" : undefined}><span className="nav-icon nav-icon-fruit" aria-hidden="true" />Sản phẩm</a>
+        <a href="#hop-tac" className={activeSection === "hop-tac" ? "is-active" : ""} aria-current={activeSection === "hop-tac" ? "page" : undefined}><span className="nav-icon nav-icon-partner" aria-hidden="true" />Hợp tác</a>
+        <a href="#lien-he" className={activeSection === "lien-he" ? "is-active" : ""} aria-current={activeSection === "lien-he" ? "page" : undefined}><span className="nav-icon nav-icon-phone" aria-hidden="true" />Liên hệ</a>
+      </nav>
       <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">MC</span><span>Mãng Cầu<br />Bà Đen</span></a><p>Đặc sản từ vùng trồng Tây Ninh.<br /><a href="tel:0907215521">Hotline/Zalo: 0907 215 521</a></p><div><a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer">Facebook</a><a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">TikTok</a><a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Zalo</a></div><small>© 2026 Mãng Cầu Bà Đen</small></footer>
     </main>
   );
