@@ -36,31 +36,31 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-photo" role="img" aria-label="Mãng cầu tươi trong vườn tại Tây Ninh" /><div className="hero-shade" />
         <div className="hero-content">
-          <p className="eyebrow">Từ vùng đất dưới chân Núi Bà Đen</p>
-          <h1>Vị ngọt<br />của <em>Tây Ninh.</em></h1>
-          <p className="hero-copy">Mãng cầu Bà Đen — nơi hương vị, thổ nhưỡng và bàn tay nhà vườn gặp nhau trong từng trái ngọt lành.</p>
+          <p className="eyebrow">Nông sản quê mình • Tây Ninh</p>
+          <h1>Trái ngọt<br /><em>từ vườn nhà.</em></h1>
+          <p className="hero-copy">Mãng cầu Bà Đen được vun trồng bằng kinh nghiệm nhà nông, đón nắng gió Tây Ninh và mang theo vị ngọt mộc mạc của quê nhà.</p>
           <div className="hero-actions"><a className="primary-button" href="#san-pham">Khám phá sản phẩm <span>→</span></a><a className="text-link" href="#hop-tac">Trở thành đối tác</a></div>
         </div>
-        <div className="hero-note"><span className="note-number">01</span><p><strong>Đặc sản bản địa</strong><br />Được vun trồng từ thổ nhưỡng đặc trưng vùng Núi Bà Đen.</p></div>
+        <div className="hero-note"><span className="note-number">☘</span><p><strong>Tươi theo mùa</strong><br />Gắn với vùng trồng, tôn trọng tự nhiên và công sức nhà vườn.</p></div>
       </section>
 
       <section className="intro section-pad" id="cau-chuyen">
-        <div><p className="section-kicker">Một trái ngọt lành, một vùng đất đáng nhớ</p><h2>Từ chân núi,<br />thành <em>niềm tự hào.</em></h2></div>
+        <div><p className="section-kicker">Chuyện của vườn nhà</p><h2>Lớn lên<br />từ <em>đất lành.</em></h2></div>
         <div className="intro-copy"><p>Khí hậu nắng ấm, đất đai đặc trưng cùng kinh nghiệm canh tác qua nhiều thế hệ đã làm nên hương vị mãng cầu Bà Đen: thơm, ngọt thanh và dẻo dai.</p><p>Chúng tôi kết nối câu chuyện vùng trồng với những cơ hội mới — từ kênh bán lẻ, quà tặng đến sản phẩm chế biến và trải nghiệm nông nghiệp.</p><a className="arrow-link" href="#hop-tac">Cùng viết tiếp câu chuyện <span>→</span></a></div>
         <div className="intro-image"><img src="/vuon-mang-cau.jpg" alt="Nhà vườn thu hoạch mãng cầu tại Tây Ninh" /><span>Vùng trồng Tây Ninh</span></div>
       </section>
 
       <section className="values">
-        <div className="value-lead"><p className="section-kicker light">Giá trị trong từng trái</p><h2>Nguyên bản.<br />Minh bạch.<br /><em>Bền vững.</em></h2></div>
+        <div className="value-lead"><p className="section-kicker">Giữ trọn chất quê</p><h2>Thuần mùa.<br />Sạch lành.<br /><em>Tử tế.</em></h2></div>
         <div className="value-list">
-          <article><span>01</span><div><h3>Gắn với vùng trồng</h3><p>Tôn trọng mùa vụ, đặc tính tự nhiên và tri thức của nhà vườn bản địa.</p></div></article>
-          <article><span>02</span><div><h3>Phù hợp từng kênh bán</h3><p>Trao đổi rõ nhu cầu về độ chín, quy cách, bao bì và lịch giao nhận.</p></div></article>
-          <article><span>03</span><div><h3>Cùng nâng giá trị</h3><p>Hướng đến quan hệ hợp tác dài hạn, mở rộng thị trường cho nông sản địa phương.</p></div></article>
+          <article><span>☘</span><div><h3>Thuận theo mùa vụ</h3><p>Tôn trọng nhịp sinh trưởng tự nhiên, độ chín và hương vị riêng của từng mùa trái.</p></div></article>
+          <article><span>♡</span><div><h3>Chăm từ vườn</h3><p>Gìn giữ kinh nghiệm nhà nông, chăm chút từ lúc nuôi trái đến khi phân loại.</p></div></article>
+          <article><span>⌘</span><div><h3>Gửi đi tử tế</h3><p>Trao đổi rõ độ chín, quy cách, bao bì và lịch giao để trái đến tay khách trọn vị.</p></div></article>
         </div>
       </section>
 
       <section className="products section-pad" id="san-pham">
-        <div className="section-head"><div><p className="section-kicker">Danh mục kết nối</p><h2>Sản phẩm từ<br /><em>mãng cầu.</em></h2></div><p>Từ trái tươi theo mùa đến những ý tưởng chế biến và quà tặng mang bản sắc vùng đất.</p></div>
+        <div className="section-head"><div><p className="section-kicker">Từ khu vườn xanh</p><h2>Gói ghém<br /><em>vị quê.</em></h2></div><p>Từ trái tươi theo mùa đến những món quà mộc mạc mang bản sắc vùng đất.</p></div>
         <div className="product-grid">{products.map((product) => <article className="product-card" key={product.no}><div className="product-image"><img src={product.image} alt={product.title} /><span>{product.no}</span></div><p className="product-tag">{product.tag}</p><h3>{product.title}</h3><p>{product.copy}</p><a href="#lien-he" aria-label={`Trao đổi về ${product.title}`}>Trao đổi nhu cầu <span>↗</span></a></article>)}</div>
       </section>
 

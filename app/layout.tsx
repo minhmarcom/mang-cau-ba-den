@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    openGraph: { title, description, images: [{ url: image, width: 1200, height: 630, alt: "Mãng Cầu Bà Đen — Vị ngọt của Tây Ninh" }] },
+    openGraph: { title, description, images: [{ url: image, width: 1200, height: 630, alt: "Mãng Cầu Bà Đen — Trái ngọt từ vườn nhà" }] },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }
