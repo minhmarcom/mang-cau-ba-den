@@ -236,16 +236,16 @@ export default function ArticleBrandPage() {
               <a href="#tinh-hoa-tay-ninh">1. Mãng cầu Bà Đen – Tinh hoa từ vùng đất Tây Ninh</a>
             </li>
             <li>
-              <a href="#quy-trinh-bao-trai">2. Quy trình bao trái an toàn & chuẩn VietGAP – OCOP</a>
+              <a href="#quy-trinh-bao-trai">2. Quy trình bao trái an toàn chuẩn VietGAP – OCOP</a>
             </li>
             <li>
               <a href="#thu-hoach-trong-ngay">3. Thu hoạch trong ngày – Gửi trọn sự tươi ngon</a>
             </li>
             <li>
-              <a href="#hop-qua-y-nghia">4. Hộp quà 3 trái VIP – Món quà trang nhã cho người thân</a>
+              <a href="#hop-qua-y-nghia">4. Hộp quà 3 trái VIP – Món quà biếu trang nhã</a>
             </li>
             <li>
-              <a href="#faq">5. Câu hỏi thường gặp</a>
+              <a href="#faq">5. Câu hỏi thường gặp về Mãng Cầu Bà Đen</a>
             </li>
           </ol>
         </div>
@@ -263,7 +263,7 @@ export default function ArticleBrandPage() {
           </section>
 
           <section id="quy-trinh-bao-trai">
-            <h2>2. Quy trình bao trái an toàn & chuẩn VietGAP – OCOP</h2>
+            <h2>2. Quy trình bao trái an toàn chuẩn VietGAP – OCOP</h2>
             <p>
               Chất lượng vượt trội của mãng cầu Bà Đen không chỉ đến từ thiên nhiên ưu đãi mà còn là kết quả của kỹ thuật canh tác tỉ mỉ từ những người nông dân lành nghề:
             </p>
@@ -305,7 +305,7 @@ export default function ArticleBrandPage() {
           </section>
 
           <section id="hop-qua-y-nghia">
-            <h2>4. Hộp quà 3 trái VIP – Món quà trang nhã cho người thân</h2>
+            <h2>4. Hộp quà 3 trái VIP – Món quà biếu trang nhã</h2>
             <p>
               Đáp ứng nhu cầu biếu tặng cao cấp trong các dịp lễ tết, sự kiện, tri ân đối tác hay làm quà du lịch Tây Ninh, dòng sản phẩm <strong>Hộp quà 3 trái VIP</strong> được ra đời với sự chuẩn mực cao nhất:
             </p>
@@ -347,7 +347,7 @@ export default function ArticleBrandPage() {
 
           {/* FAQ SECTION */}
           <section id="faq" className="article-faq-section">
-            <h2>5. Câu hỏi thường gặp</h2>
+            <h2>5. Câu hỏi thường gặp về Mãng Cầu Bà Đen</h2>
             <div className="faq-list">
               <details open>
                 <summary>

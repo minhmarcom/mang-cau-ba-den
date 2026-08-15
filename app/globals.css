@@ -1537,12 +1537,12 @@ h2 {
 
 .article-title {
   font-family: var(--font-serif);
-  font-size: clamp(1.95rem, 3.8vw + 0.5rem, 3.2rem);
-  line-height: 1.2;
+  font-size: clamp(1.75rem, 2.8vw + 0.5rem, 2.55rem);
+  line-height: 1.32;
   letter-spacing: -0.015em;
   margin: 0 0 18px;
   color: var(--ink);
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .article-title em {
@@ -1551,8 +1551,8 @@ h2 {
 }
 
 .article-lead {
-  font-size: clamp(1.05rem, 0.4vw + 0.95rem, 1.25rem);
-  line-height: 1.82;
+  font-size: clamp(1.02rem, 0.35vw + 0.92rem, 1.18rem);
+  line-height: 1.85;
   color: var(--ink);
   margin: 0 0 24px;
   text-wrap: pretty;
@@ -1597,7 +1597,7 @@ h2 {
 .toc-title {
   font-family: var(--font-serif);
   font-weight: 700;
-  font-size: clamp(1.1rem, 1.2vw + 0.5rem, 1.35rem);
+  font-size: clamp(1.05rem, 1vw + 0.5rem, 1.25rem);
   color: var(--ink);
   margin: 0 0 12px;
 }
@@ -1623,11 +1623,14 @@ h2 {
 
 .article-body h2 {
   font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.2rem);
-  line-height: 1.28;
+  font-size: clamp(1.28rem, 1.4vw + 0.72rem, 1.65rem);
+  line-height: 1.42;
+  letter-spacing: -0.01em;
   margin: 0 0 18px;
   color: var(--ink);
-  text-wrap: balance;
+  text-wrap: pretty;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .article-body p {

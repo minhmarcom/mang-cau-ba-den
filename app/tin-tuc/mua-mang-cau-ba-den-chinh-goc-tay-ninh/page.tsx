@@ -250,7 +250,7 @@ export default function ArticlePage() {
               <a href="#kinh-nghiem-chon-trai">3. Nên chọn mua mãng cầu già cứng hay đã chín mềm?</a>
             </li>
             <li>
-              <a href="#bang-gia-quy-cach">4. Phân loại & quy cách mãng cầu Bà Đen phổ biến</a>
+              <a href="#bang-gia-quy-cach">4. Phân loại và quy cách mãng cầu Bà Đen</a>
             </li>
             <li>
               <a href="#dat-mua-chinh-goc">5. Đặt mua mãng cầu Bà Đen chính gốc trực tiếp từ vườn</a>
@@ -362,7 +362,7 @@ export default function ArticlePage() {
           </section>
 
           <section id="bang-gia-quy-cach">
-            <h2>4. Phân loại & quy cách mãng cầu Bà Đen phổ biến</h2>
+            <h2>4. Phân loại và quy cách mãng cầu Bà Đen</h2>
             <p>
               Nhà vườn Tây Ninh thường phân chia mãng cầu theo các quy cách tiêu chuẩn sau để đáp ứng đa dạng nhu cầu của khách hàng:
             </p>
