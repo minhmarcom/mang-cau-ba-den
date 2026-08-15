@@ -1,0 +1,8 @@
+# Robots.txt for Mãng Cầu Bà Đen Tây Ninh
+# https://mangcaubaden.vn
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://mangcaubaden.vn/sitemap.xml

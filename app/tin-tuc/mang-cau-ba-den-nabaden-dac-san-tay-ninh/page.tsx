@@ -56,7 +56,7 @@ const articleSchema = {
   dateModified: "2026-08-15T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Ban Biên Tập Mãng Cầu Bà Đen",
+    name: "Mãng Cầu Bà Đen NABADEN",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
