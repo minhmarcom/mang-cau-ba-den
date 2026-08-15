@@ -30,7 +30,7 @@ export default function Home() {
         <div className="hero-photo" role="img" aria-label="Mãng cầu tươi trong vườn tại Tây Ninh" /><div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow">Nông sản quê mình • Tây Ninh</p>
-          <h1>Trái ngọt<br /><em>từ vườn nhà.</em></h1>
+          <h1><span>Trái ngọt</span><em>từ vườn nhà.</em></h1>
           <p className="hero-copy">Mãng cầu Bà Đen được vun trồng bằng kinh nghiệm nhà nông, đón nắng gió Tây Ninh và mang theo vị ngọt mộc mạc của quê nhà.</p>
           <div className="hero-actions"><a className="primary-button" href="#san-pham">Khám phá sản phẩm <span>→</span></a><a className="text-link" href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Nhắn Zalo hợp tác</a></div>
         </div>
@@ -77,6 +77,7 @@ export default function Home() {
         </div>
       </section>
 
+      <nav className="app-nav" aria-label="Điều hướng ứng dụng"><a href="#top"><span>⌂</span>Trang chủ</a><a href="#san-pham"><span>☘</span>Sản phẩm</a><a href="#hop-tac"><span>♡</span>Hợp tác</a><a href="#lien-he"><span>☎</span>Liên hệ</a></nav>
       <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">MC</span><span>Mãng Cầu<br />Bà Đen</span></a><p>Đặc sản từ vùng trồng Tây Ninh.<br /><a href="tel:0907215521">Hotline/Zalo: 0907 215 521</a></p><div><a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer">Facebook</a><a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">TikTok</a><a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Zalo</a></div><small>© 2026 Mãng Cầu Bà Đen</small></footer>
     </main>
   );

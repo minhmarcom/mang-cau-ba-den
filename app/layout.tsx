@@ -1,6 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
+import { PWARegister } from "./pwa-register";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#365c3c",
+};
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -13,6 +21,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
+    applicationName: "Mãng Cầu Bà Đen",
+    manifest: "/manifest.webmanifest",
+    appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "Mãng Cầu" },
+    icons: {
+      icon: [{ url: "/app-icon-192.png", sizes: "192x192", type: "image/png" }],
+      apple: [{ url: "/app-icon-192.png", sizes: "192x192", type: "image/png" }],
+    },
     openGraph: { title, description, images: [{ url: image, width: 1200, height: 630, alt: "Mãng Cầu Bà Đen — Trái ngọt từ vườn nhà" }] },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
@@ -25,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body>{children}</body>
+      <body>{children}<PWARegister /></body>
     </html>
   );
 }
