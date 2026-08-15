@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
-import { PWARegister } from "./pwa-register";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -72,7 +71,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body>{children}<PWARegister /></body>
+      <body>{children}</body>
     </html>
   );
 }
