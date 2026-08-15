@@ -364,37 +364,52 @@ export default function ArticlePage() {
           <section id="bang-gia-quy-cach">
             <h2>4. Phân loại và quy cách mãng cầu Bà Đen</h2>
             <p>
-              Nhà vườn Tây Ninh thường phân chia mãng cầu theo các quy cách tiêu chuẩn sau để đáp ứng đa dạng nhu cầu của khách hàng:
+              Nhà vườn Mãng Cầu Bà Đen NABADEN đóng gói và phân phối theo 3 dòng sản phẩm tiêu chuẩn đạt chứng nhận OCOP 3 Sao, đáp ứng trọn vẹn từ nhu cầu biếu tặng cao cấp đến thưởng thức gia đình hay đơn sỉ gửi xa:
             </p>
 
             <div className="table-responsive">
               <table className="custom-table">
                 <thead>
                   <tr>
-                    <th>Phân loại</th>
-                    <th>Trọng lượng / Trái</th>
+                    <th>Quy cách sản phẩm</th>
+                    <th>Trọng lượng & Đóng gói</th>
                     <th>Đặc điểm nổi bật</th>
                     <th>Mục đích sử dụng</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><strong>Hạng Đặc Biệt (VIP)</strong></td>
-                    <td>450g – 650g/trái (2-3 trái/kg)</td>
-                    <td>Trái tròn đều, mắt nở to phẳng, vỏ sáng đẹp hoàn hảo</td>
-                    <td>Quà biếu tặng doanh nghiệp, đối tác, sự kiện lễ tết</td>
+                    <td>
+                      <strong>Hộp Đặc Biệt (3 Quả)</strong>
+                      <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
+                        OCOP 3 Sao • Quà biếu VIP
+                      </span>
+                    </td>
+                    <td>3 trái VIP (450g – 600g/trái)</td>
+                    <td>Trái tròn đều, mắt nở to phẳng, vỏ sáng đẹp hoàn hảo, bọc lưới an toàn trong hộp quai xách cao cấp có cửa sổ</td>
+                    <td>Quà biếu tặng doanh nghiệp, đối tác, sự kiện lễ tết trang nhã</td>
                   </tr>
                   <tr>
-                    <td><strong>Hạng Tuyển Chọn (Loại 1)</strong></td>
-                    <td>300g – 400g/trái (3-4 trái/kg)</td>
-                    <td>Trái đều đặn, thịt dày, ngọt đậm đà, bao trái an toàn</td>
-                    <td>Thưởng thức gia đình, làm quà biếu người thân</td>
+                    <td>
+                      <strong>Thùng 5KG Tuyển Chọn</strong>
+                      <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
+                        OCOP 3 Sao • Thưởng thức & Biếu tặng
+                      </span>
+                    </td>
+                    <td>Thùng carton 5kg (12 – 16 trái)</td>
+                    <td>Từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ từng quả, giữ trọn độ tươi ngọt tự nhiên</td>
+                    <td>Thưởng thức gia đình hàng ngày, biếu tặng người thân và bạn bè</td>
                   </tr>
                   <tr>
-                    <td><strong>Hạng Tiêu Chuẩn (Loại 2)</strong></td>
-                    <td>220g – 280g/trái (4-5 trái/kg)</td>
-                    <td>Chất lượng thịt ngon ngọt, kích thước vừa phải</td>
-                    <td>Ăn tươi hàng ngày, chế biến món sinh tố, trà trái cây</td>
+                    <td>
+                      <strong>Thùng 15KG Đơn Sỉ & Đi Xa</strong>
+                      <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
+                        OCOP 3 Sao • Sỉ & Gửi toàn quốc
+                      </span>
+                    </td>
+                    <td>Thùng carton 15kg chuyên dụng</td>
+                    <td>Thùng carton nhiều lớp dày dặn, lỗ thoáng khí chống hầm nhiệt, chống va đập hoàn hảo khi vận chuyển xa</td>
+                    <td>Đơn sỉ đại lý, tiệc cưới hỏi, hội nghị, gửi nhanh TP.HCM, Hà Nội và toàn quốc</td>
                   </tr>
                 </tbody>
               </table>
