@@ -600,28 +600,55 @@ export default function Home() {
             </details>
           ))}
         </div>
-        {/* FEATURED SEO ARTICLE CARD */}
-        <div className="featured-article-card">
-          <div className="featured-article-img">
-            <img
-              src="/thuc-te-dong-goi-nhieu-thung.jpg"
-              alt="Mua mãng cầu Bà Đen chính gốc Tây Ninh"
-              loading="lazy"
-            />
-            <span className="featured-badge">Bài viết nổi bật</span>
+        {/* FEATURED SEO ARTICLES LIST */}
+        <div className="featured-articles-grid" style={{ display: "grid", gap: "24px", marginTop: "42px" }}>
+          <div className="featured-article-card">
+            <div className="featured-article-img">
+              <img
+                src="/vuon-nui-ba-den.jpg"
+                alt="Mãng Cầu Bà Đen Đặc Sản Tây Ninh"
+                loading="lazy"
+              />
+              <span className="featured-badge">Bản sắc vùng trồng</span>
+            </div>
+            <div className="featured-article-content">
+              <span className="featured-kicker">Đặc sản quê nhà • Tây Ninh</span>
+              <h3>Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà</h3>
+              <p>
+                Khám phá nét độc đáo của mãng cầu Bà Đen: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.
+              </p>
+              <div className="featured-article-action">
+                <a href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/" className="featured-read-btn">
+                  <span>Đọc bài viết chi tiết</span>
+                  <span>→</span>
+                </a>
+                <span className="featured-read-time">⏱ 4 phút đọc</span>
+              </div>
+            </div>
           </div>
-          <div className="featured-article-content">
-            <span className="featured-kicker">Cẩm nang nhà nông • Tây Ninh</span>
-            <h3>Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon</h3>
-            <p>
-              Hướng dẫn chi tiết từ nhà vườn: cách phân biệt trái già, nhận biết độ chín, quy cách đóng gói chống va đập và bảng phân loại mãng cầu theo nhu cầu ăn gia đình hoặc làm quà biếu.
-            </p>
-            <div className="featured-article-action">
-              <a href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/" className="featured-read-btn">
-                <span>Đọc bài viết chi tiết</span>
-                <span>→</span>
-              </a>
-              <span className="featured-read-time">⏱ 5 phút đọc</span>
+
+          <div className="featured-article-card">
+            <div className="featured-article-img">
+              <img
+                src="/hop-qua-3-trai-vip.jpg"
+                alt="Mua mãng cầu Bà Đen chính gốc Tây Ninh"
+                loading="lazy"
+              />
+              <span className="featured-badge">Kinh nghiệm chọn mua</span>
+            </div>
+            <div className="featured-article-content">
+              <span className="featured-kicker">Cẩm nang nhà nông • Tây Ninh</span>
+              <h3>Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon</h3>
+              <p>
+                Hướng dẫn chi tiết từ nhà vườn: cách phân biệt trái già, nhận biết độ chín, quy cách đóng gói chống va đập và bảng phân loại mãng cầu theo nhu cầu ăn gia đình hoặc làm quà biếu.
+              </p>
+              <div className="featured-article-action">
+                <a href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/" className="featured-read-btn">
+                  <span>Đọc bài viết chi tiết</span>
+                  <span>→</span>
+                </a>
+                <span className="featured-read-time">⏱ 5 phút đọc</span>
+              </div>
             </div>
           </div>
         </div>

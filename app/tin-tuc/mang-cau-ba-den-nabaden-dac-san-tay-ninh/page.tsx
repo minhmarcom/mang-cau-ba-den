@@ -1,0 +1,464 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Mãng Cầu Bà Đen – Đặc Sản Tây Ninh: Tươi Ngon Chuẩn Vị Từ Vườn Nhà",
+  description:
+    "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
+  keywords: [
+    "mãng cầu Bà Đen",
+    "mãng cầu Tây Ninh",
+    "đặc sản Tây Ninh",
+    "mãng cầu Bà Đen chính gốc",
+    "hộp quà mãng cầu 3 trái",
+    "mãng cầu VietGAP Tây Ninh",
+    "mãng cầu OCOP Tây Ninh",
+    "mua mãng cầu Tây Ninh",
+    "vườn mãng cầu núi Bà Đen",
+  ],
+  alternates: {
+    canonical: "/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+  },
+  openGraph: {
+    title: "Mãng Cầu Bà Đen – Đặc Sản Tây Ninh: Tươi Ngon Chuẩn Vị Từ Vườn Nhà",
+    description:
+      "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
+    url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+    siteName: "Mãng Cầu Bà Đen",
+    locale: "vi_VN",
+    type: "article",
+    images: [
+      {
+        url: "/vuon-nui-ba-den.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vườn mãng cầu xanh ngát dưới chân Núi Bà Đen Tây Ninh",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mãng Cầu Bà Đen – Đặc Sản Tây Ninh: Tươi Ngon Chuẩn Vị Từ Vườn Nhà",
+    description:
+      "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành và chất lượng chuẩn VietGAP & OCOP.",
+    images: ["/vuon-nui-ba-den.jpg"],
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  headline: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh, tươi ngon từ vườn đến tay khách hàng",
+  description:
+    "Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn, trồng trọt theo tiêu chuẩn VietGAP và OCOP.",
+  image: ["https://mangcaubaden.vn/vuon-nui-ba-den.jpg"],
+  datePublished: "2026-08-07T08:00:00+07:00",
+  dateModified: "2026-08-15T08:00:00+07:00",
+  author: {
+    "@type": "Organization",
+    name: "Ban Biên Tập Mãng Cầu Bà Đen",
+    url: "https://mangcaubaden.vn/",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Mãng Cầu Bà Đen Tây Ninh",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://mangcaubaden.vn/app-icon-512.png",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Trang chủ",
+      item: "https://mangcaubaden.vn/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Cẩm nang & Tin tức",
+      item: "https://mangcaubaden.vn/#cam-nang",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh",
+      item: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+    },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Mãng cầu Bà Đen Tây Ninh có tươi ngon khi giao đến tay khách hàng không?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nhà vườn ưu tiên thu hoạch trái trong ngày vào sáng sớm khi trái đạt độ già chuẩn, phân loại thủ công kỹ lưỡng, bọc lưới bảo vệ chống dập và đóng thùng thông khí chắc chắn nên trái giữ trọn độ tươi ngon tự nhiên khi giao.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Mãng cầu Bà Đen Tây Ninh có thích hợp làm quà biếu tặng không?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hộp quà 3 trái VIP và các thùng quà mãng cầu Tây Ninh tuyển chọn có ngoại hình tròn đều bắt mắt, hương thơm thanh khiết, đạt chuẩn VietGAP & OCOP, đóng gói trang nhã rất thích hợp làm quà biếu tặng gia đình, đối tác và khách hàng.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Vì sao mãng cầu trồng dưới chân núi Bà Đen lại có hương vị ngon khác biệt?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Do thổ nhưỡng đất xám phù sa cổ quanh chân núi lửa cổ Bà Đen có khả năng thoát nước lý tưởng, cùng nền nhiệt nhiều nắng và biên độ nhiệt ngày đêm cao giúp cây mãng cầu tích tụ lượng đường tự nhiên đậm đà, thịt dai và thơm thanh.",
+      },
+    },
+  ],
+};
+
+export default function ArticleBrandPage() {
+  return (
+    <div className="article-page-wrap">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* HEADER */}
+      <header className="site-header">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
+          <span className="brand-mark">MC</span>
+          <span className="brand-text">
+            Mãng Cầu<br />Bà Đen
+          </span>
+        </Link>
+
+        <nav className="desktop-nav" aria-label="Điều hướng">
+          <Link href="/#cau-chuyen">Câu chuyện</Link>
+          <Link href="/#san-pham">Sản phẩm</Link>
+          <Link href="/#hinh-anh">Hình ảnh</Link>
+          <Link href="/#hop-tac">Hợp tác</Link>
+          <Link href="/#cam-nang">Cẩm nang</Link>
+          <Link href="/#lien-he">Liên hệ</Link>
+        </nav>
+
+        <div className="header-actions">
+          <a className="header-cta" href="tel:0907215521">
+            <span>Gọi 0907 215 521</span>
+            <span className="cta-arrow">↗</span>
+          </a>
+          <a
+            className="mobile-quick-call"
+            href="tel:0907215521"
+            aria-label="Gọi ngay 0907 215 521"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      {/* ARTICLE CONTENT */}
+      <article className="article-container">
+        {/* BREADCRUMB */}
+        <nav className="article-breadcrumb" aria-label="Breadcrumb">
+          <Link href="/">Trang chủ</Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/#cam-nang">Cẩm nang</Link>
+          <span aria-hidden="true">/</span>
+          <span className="current">Đặc sản Mãng Cầu Tây Ninh</span>
+        </nav>
+
+        {/* ARTICLE HEADER */}
+        <header className="article-header">
+          <div className="article-meta-badge">
+            <span className="badge-kicker">Nông sản bản sắc</span>
+            <span className="badge-dot">•</span>
+            <time dateTime="2026-08-07">Tháng 8/2026</time>
+            <span className="badge-dot">•</span>
+            <span>4 phút đọc</span>
+          </div>
+
+          <h1 className="article-title">
+            Mãng Cầu Bà Đen – <em>Đặc sản Tây Ninh</em>, tươi ngon từ vườn đến tay khách hàng
+          </h1>
+
+          <p className="article-lead">
+            Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn, từng trái mãng cầu kết tinh hương nắng gió phương Nam và tình đất lành dưới chân Núi Bà Đen.
+          </p>
+
+          <div className="author-row">
+            <div className="author-avatar">MC</div>
+            <div>
+              <strong>Ban Biên Tập Mãng Cầu Bà Đen</strong>
+              <span>Chuyên trang thông tin & kết nối nông sản Tây Ninh</span>
+            </div>
+          </div>
+        </header>
+
+        {/* FEATURED IMAGE */}
+        <figure className="article-hero-media">
+          <img
+            src="/vuon-nui-ba-den.jpg"
+            alt="Vườn mãng cầu xanh ngát bao trái an toàn dưới chân Núi Bà Đen Tây Ninh"
+          />
+          <figcaption>
+            Vùng trồng mãng cầu trù phú trải dài dưới chân ngọn núi thiêng Bà Đen hùng vĩ.
+          </figcaption>
+        </figure>
+
+        {/* TABLE OF CONTENTS */}
+        <div className="article-toc">
+          <p className="toc-title">Mục lục nội dung bài viết</p>
+          <ol>
+            <li>
+              <a href="#tinh-hoa-tay-ninh">1. Mãng cầu Bà Đen – Tinh hoa từ vùng đất Tây Ninh</a>
+            </li>
+            <li>
+              <a href="#quy-trinh-bao-trai">2. Quy trình bao trái an toàn & chuẩn VietGAP – OCOP</a>
+            </li>
+            <li>
+              <a href="#thu-hoach-trong-ngay">3. Thu hoạch trong ngày – Gửi trọn sự tươi ngon</a>
+            </li>
+            <li>
+              <a href="#hop-qua-y-nghia">4. Hộp quà 3 trái VIP – Món quà trang nhã cho người thân</a>
+            </li>
+            <li>
+              <a href="#faq">5. Câu hỏi thường gặp</a>
+            </li>
+          </ol>
+        </div>
+
+        {/* MAIN BODY */}
+        <div className="article-body">
+          <section id="tinh-hoa-tay-ninh">
+            <h2>1. Mãng cầu Bà Đen – Tinh hoa từ vùng đất Tây Ninh</h2>
+            <p>
+              Khi nhắc đến ẩm thực và nông sản Tây Ninh, bên cạnh bánh tráng phơi sương Trảng Bàng hay muối tôm nức tiếng, <strong>mãng cầu Bà Đen</strong> luôn giữ vị trí đặc biệt trong lòng người tiêu dùng trên khắp cả nước.
+            </p>
+            <p>
+              Được canh tác trực tiếp dưới chân <strong>Núi Bà Đen</strong> – ngọn núi cao nhất miền Nam Việt Nam, cây mãng cầu hưởng trọn nguồn nước ngầm tự nhiên thanh mát và tầng đất phù sa cổ giàu khoáng chất vi lượng. Điều kiện nhiệt độ ngày nắng chan hòa, đêm se lạnh giúp quả tích tụ hàm lượng đường tự nhiên cao, thịt quả trắng ngà, mịn màng, ít hạt và có vị ngọt thanh tao không gắt.
+            </p>
+          </section>
+
+          <section id="quy-trinh-bao-trai">
+            <h2>2. Quy trình bao trái an toàn & chuẩn VietGAP – OCOP</h2>
+            <p>
+              Chất lượng vượt trội của mãng cầu Bà Đen không chỉ đến từ thiên nhiên ưu đãi mà còn là kết quả của kỹ thuật canh tác tỉ mỉ từ những người nông dân lành nghề:
+            </p>
+            <ul>
+              <li>
+                <strong>Bao trái 100% trên cành:</strong> Ngay từ khi trái còn nhỏ bằng ngón tay cái, nhà vườn đã dùng túi bọc chuyên dụng để bảo vệ trái trước côn trùng, ruồi vàng và thời tiết khắc nghiệt.
+              </li>
+              <li>
+                <strong>Tiêu chuẩn VietGAP & OCOP an toàn:</strong> Quy trình bón phân hữu cơ sinh học, cắt tỉa cành thoáng khí, không sử dụng thuốc hóa học độc hại trong giai đoạn nuôi trái.
+              </li>
+              <li>
+                <strong>Kiểm soát độ ngọt và hàm lượng dinh dưỡng:</strong> Trái phát triển tự nhiên đầy đủ ngày tuổi, giàu Vitamin C, B6, chất xơ và khoáng chất có lợi cho sức khỏe.
+              </li>
+            </ul>
+
+            <figure className="article-inline-image">
+              <img
+                src="/thuc-te-thu-hoach.jpg"
+                alt="Nhà nông tỉ mỉ thu hoạch từng trái mãng cầu tươi tại vườn Tây Ninh"
+                loading="lazy"
+              />
+              <figcaption>
+                Nhà vườn cẩn trọng thu hoạch từng trái đạt chuẩn độ già vào sáng sớm tinh mơ.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section id="thu-hoach-trong-ngay">
+            <h2>3. Thu hoạch trong ngày – Gửi trọn sự tươi ngon</h2>
+            <p>
+              Đối với mãng cầu ta, yếu tố then chốt quyết định hương vị khi đến tay người dùng là <strong>độ tươi và thời điểm thu hoạch</strong>:
+            </p>
+            <p>
+              Những lứa trái chỉ được cắt vào sáng sớm khi mắt na đã nở to phẳng, gờ rãnh mở rộng màu trắng ngà. Sau đó, trái lập tức được vận chuyển về khu vực phân loại râm mát, kiểm tra từng quả, bọc lưới xốp bảo vệ chống va đập và đóng thùng carton thoáng khí.
+            </p>
+            <p>
+              Việc rút ngắn tối đa thời gian từ lúc hái trên cành đến khi đóng thùng giúp trái giữ nguyên hương thơm tự nhiên và chín dẻo hoàn hảo sau 1-2 ngày vận chuyển.
+            </p>
+          </section>
+
+          <section id="hop-qua-y-nghia">
+            <h2>4. Hộp quà 3 trái VIP – Món quà trang nhã cho người thân</h2>
+            <p>
+              Đáp ứng nhu cầu biếu tặng cao cấp trong các dịp lễ tết, sự kiện, tri ân đối tác hay làm quà du lịch Tây Ninh, dòng sản phẩm <strong>Hộp quà 3 trái VIP</strong> được ra đời với sự chuẩn mực cao nhất:
+            </p>
+
+            <figure className="article-inline-image">
+              <img
+                src="/hop-qua-3-trai-vip.jpg"
+                alt="Hộp quà mãng cầu Bà Đen 3 trái tuyển chọn thượng hạng"
+                loading="lazy"
+              />
+              <figcaption>
+                Hộp quà 3 trái VIP trang nhã với quai xách tiện lợi, tuyển chọn những quả mãng cầu tròn đều đẹp mắt nhất.
+              </figcaption>
+            </figure>
+
+            <div className="garden-features">
+              <div className="feat-item">
+                <span className="feat-icon">👑</span>
+                <div>
+                  <strong>Size trái khủng VIP:</strong> Tuyển chọn 3 quả đạt trọng lượng từ 450g – 600g/trái, mắt nở tròn đều.
+                </div>
+              </div>
+              <div className="feat-item">
+                <span className="feat-icon">🎁</span>
+                <div>
+                  <strong>Bao bì sang trọng:</strong> Hộp quai xách trang nhã, bảo vệ trái nguyên vẹn khi trao tặng.
+                </div>
+              </div>
+              <div className="feat-item">
+                <span className="feat-icon">🌿</span>
+                <div>
+                  <strong>Ý nghĩa sum vầy:</strong> Món quà nông sản sạch mộc mạc, thể hiện sự trân trọng và chúc sức khỏe chân thành.
+                </div>
+              </div>
+              <div className="feat-item">
+                <span className="feat-icon">🚀</span>
+                <div>
+                  <strong>Giao nhanh tận nơi:</strong> Hỗ trợ giao tận tay người nhận tại TP.HCM, Hà Nội và toàn quốc.
+                </div>
+              </div>
+            </div>
+
+            {/* CALLOUT BOX */}
+            <div className="article-cta-box">
+              <h3>Thưởng thức mãng cầu Bà Đen chuẩn vị từ vườn hôm nay</h3>
+              <p>
+                Liên hệ trực tiếp với chúng tôi để kiểm tra lứa trái mới hái, đặt mua hộp quà biếu hoặc thùng sỉ với mức giá tốt nhất tại vườn.
+              </p>
+              <div className="cta-box-buttons">
+                <a className="btn-call" href="tel:0907215521">
+                  <span>Hotline: 0907 215 521</span>
+                  <span>↗</span>
+                </a>
+                <a
+                  className="btn-zalo"
+                  href="https://zalo.me/0907215521"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>Nhắn Zalo tư vấn</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ SECTION */}
+          <section id="faq" className="article-faq-section">
+            <h2>5. Câu hỏi thường gặp</h2>
+            <div className="faq-list">
+              <details open>
+                <summary>
+                  <span>01</span>
+                  Mãng cầu Bà Đen Tây Ninh có tươi ngon khi giao đến tay khách hàng không?
+                  <b aria-hidden="true">＋</b>
+                </summary>
+                <p>
+                  Nhà vườn ưu tiên thu hoạch trái trong ngày vào sáng sớm khi trái đạt độ già chuẩn, phân loại thủ công kỹ lưỡng, bọc lưới bảo vệ chống dập và đóng thùng thông khí chắc chắn nên trái giữ trọn độ tươi ngon tự nhiên khi giao.
+                </p>
+              </details>
+
+              <details>
+                <summary>
+                  <span>02</span>
+                  Mãng cầu Bà Đen Tây Ninh có thích hợp làm quà biếu tặng không?
+                  <b aria-hidden="true">＋</b>
+                </summary>
+                <p>
+                  Hộp quà 3 trái VIP và các thùng quà mãng cầu Tây Ninh tuyển chọn có ngoại hình tròn đều bắt mắt, hương thơm thanh khiết, đạt chuẩn VietGAP & OCOP, đóng gói trang nhã rất thích hợp làm quà biếu tặng gia đình, đối tác và khách hàng.
+                </p>
+              </details>
+
+              <details>
+                <summary>
+                  <span>03</span>
+                  Vì sao mãng cầu trồng dưới chân núi Bà Đen lại có hương vị ngon khác biệt?
+                  <b aria-hidden="true">＋</b>
+                </summary>
+                <p>
+                  Do thổ nhưỡng đất xám phù sa cổ quanh chân núi lửa cổ Bà Đen có khả năng thoát nước lý tưởng, cùng nền nhiệt nhiều nắng và biên độ nhiệt ngày đêm cao giúp cây mãng cầu tích tụ lượng đường tự nhiên đậm đà, thịt dai và thơm thanh.
+                </p>
+              </details>
+            </div>
+          </section>
+        </div>
+
+        {/* AUTHOR BIO & RELATED LINKS */}
+        <footer className="article-footer">
+          <div className="article-author-bio">
+            <div className="bio-mark">MC</div>
+            <div>
+              <h4>Mãng Cầu Bà Đen Tây Ninh Chính Gốc</h4>
+              <p>
+                Chúng tôi kết nối câu chuyện nông sản sạch từ vùng trồng chân Núi Bà Đen đến tận tay người tiêu dùng và đối tác phân phối trên toàn quốc.
+              </p>
+            </div>
+          </div>
+
+          <div className="article-navigation-back" style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/" className="back-home-link">
+              <span>← Quay về Trang chủ</span>
+            </Link>
+            <Link href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/" className="back-home-link">
+              <span>Xem bài: Kinh nghiệm chọn mua mãng cầu chuẩn ngon →</span>
+            </Link>
+          </div>
+        </footer>
+      </article>
+
+      {/* FOOTER */}
+      <footer>
+        <Link className="brand footer-brand" href="/">
+          <span className="brand-mark">MC</span>
+          <span>
+            Mãng Cầu<br />Bà Đen
+          </span>
+        </Link>
+        <p>
+          Đặc sản từ vùng trồng Tây Ninh.
+          <br />
+          <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
+        </p>
+        <div>
+          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
+            Zalo
+          </a>
+          <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
+            TikTok
+          </a>
+        </div>
+        <small>© 2026 Mãng Cầu Bà Đen • Giữ trọn vị quê nhà</small>
+      </footer>
+    </div>
+  );
+}

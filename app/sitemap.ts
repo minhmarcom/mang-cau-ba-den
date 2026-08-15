@@ -16,5 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: `${siteUrl}/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ];
 }
