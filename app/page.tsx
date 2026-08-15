@@ -205,14 +205,15 @@ export default function Home() {
 
       {/* STICKY APP HEADER */}
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Mãng Cầu Bà Đen - Trang chủ">
+        <a className="brand" href="#top" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            alt="Mãng Cầu Bà Đen NABADEN"
             className="brand-logo-img"
-            width="42"
-            height="42"
+            width="130"
+            height="38"
           />
+          <span className="brand-divider" aria-hidden="true">|</span>
           <span className="brand-text">
             Mãng Cầu<br />Bà Đen
           </span>
@@ -335,8 +336,8 @@ export default function Home() {
         <div className="hero-content">
           <p className="eyebrow">Nông sản quê mình • Tây Ninh</p>
           <h1>
-            <span>Trái ngọt</span>
-            <em>từ vườn nhà.</em>
+            <span className="hero-line-1">Trái ngọt</span>
+            <em className="hero-line-2">từ vườn nhà.</em>
           </h1>
           <p className="hero-copy">
             Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn. Sản phẩm trồng trọt theo tiêu chuẩn VietGAP và OCOP.
@@ -363,8 +364,8 @@ export default function Home() {
         <div>
           <p className="section-kicker">Chuyện của vườn nhà</p>
           <h2>
-            Lớn lên<br />
-            từ <em>đất lành.</em>
+            <span className="heading-line">Lớn lên</span>
+            <em className="heading-line">từ đất lành.</em>
           </h2>
         </div>
         <div className="intro-copy">
@@ -393,9 +394,9 @@ export default function Home() {
         <div className="value-lead">
           <p className="section-kicker">Giữ trọn chất quê</p>
           <h2>
-            Thuần mùa.<br />
-            Sạch lành.<br />
-            <em>Tử tế.</em>
+            <span className="heading-line">Thuần mùa.</span>
+            <span className="heading-line">Sạch lành.</span>
+            <em className="heading-line">Tử tế.</em>
           </h2>
         </div>
         <div className="value-list">
@@ -444,8 +445,8 @@ export default function Home() {
           <div>
             <p className="section-kicker">Từ khu vườn xanh</p>
             <h2>
-              Gói ghém<br />
-              <em>vị quê.</em>
+              <span className="heading-line">Gói ghém</span>
+              <em className="heading-line">vị quê.</em>
             </h2>
           </div>
           <p>
@@ -487,8 +488,8 @@ export default function Home() {
           <div>
             <p className="section-kicker">Hình ảnh thực tế</p>
             <h2>
-              Một ngày<br />
-              <em>tại vườn.</em>
+              <span className="heading-line">Một ngày</span>
+              <em className="heading-line">tại vườn.</em>
             </h2>
           </div>
           <p>
@@ -515,8 +516,8 @@ export default function Home() {
         <div className="coop-content">
           <p className="section-kicker light">Đặt mua & Quà biếu</p>
           <h2>
-            Gửi trọn vị ngọt<br />
-            <em>đến người thân.</em>
+            <span className="heading-line">Gửi trọn vị ngọt</span>
+            <em className="heading-line">đến người thân.</em>
           </h2>
           <p>
             Từ thưởng thức gia đình, hộp quà biếu VIP sang trọng đến các đơn sỉ đóng thùng vận chuyển xa — nhà vườn luôn sẵn sàng tư vấn chọn lứa trái tươi ngon nhất trong ngày.
@@ -568,8 +569,8 @@ export default function Home() {
           <div>
             <p className="section-kicker">Cẩm nang từ vườn</p>
             <h2>
-              Hiểu trái ngon.<br />
-              <em>Chọn đúng mùa.</em>
+              <span className="heading-line">Hiểu trái ngon.</span>
+              <em className="heading-line">Chọn đúng mùa.</em>
             </h2>
           </div>
           <p>
@@ -805,12 +806,13 @@ export default function Home() {
         <a className="brand footer-brand" href="#top">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            alt="Mãng Cầu Bà Đen NABADEN"
             className="brand-logo-img"
-            width="42"
-            height="42"
+            width="130"
+            height="38"
           />
-          <span>
+          <span className="brand-divider" aria-hidden="true" style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
+          <span style={{ color: "white" }}>
             Mãng Cầu<br />Bà Đen
           </span>
         </a>

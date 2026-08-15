@@ -147,14 +147,15 @@ export default function ArticleBrandPage() {
 
       {/* HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            alt="Mãng Cầu Bà Đen NABADEN"
             className="brand-logo-img"
-            width="42"
-            height="42"
+            width="130"
+            height="38"
           />
+          <span className="brand-divider" aria-hidden="true">|</span>
           <span className="brand-text">
             Mãng Cầu<br />Bà Đen
           </span>
@@ -447,12 +448,13 @@ export default function ArticleBrandPage() {
         <Link className="brand footer-brand" href="/">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN Logo"
+            alt="Mãng Cầu Bà Đen NABADEN"
             className="brand-logo-img"
-            width="42"
-            height="42"
+            width="130"
+            height="38"
           />
-          <span>
+          <span className="brand-divider" aria-hidden="true" style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
+          <span style={{ color: "white" }}>
             Mãng Cầu<br />Bà Đen
           </span>
         </Link>
