@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 
 const products = [
   { no: "01", title: "Mãng cầu tươi", tag: "Theo mùa vụ", image: "/hero-mang-cau.jpg", copy: "Trái tươi được phân loại theo độ chín, kích cỡ và nhu cầu vận chuyển." },
@@ -12,13 +12,6 @@ const paths = ["Phân phối & bán lẻ", "Quà tặng doanh nghiệp", "Chế 
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [sent, setSent] = useState(false);
-
-  function submitContact(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setSent(true);
-  }
-
   return (
     <main>
       <header className="site-header">
@@ -28,7 +21,7 @@ export default function Home() {
         <nav aria-label="Điều hướng chính">
           <a href="#cau-chuyen">Câu chuyện</a><a href="#san-pham">Sản phẩm</a><a href="#hop-tac">Hợp tác</a>
         </nav>
-        <a className="header-cta" href="#lien-he">Kết nối ngay <span>↗</span></a>
+        <a className="header-cta" href="tel:0907215521">Gọi 0907 215 521 <span>↗</span></a>
         <button className="menu-button" type="button" aria-label="Mở menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "×" : "≡"}</button>
         {menuOpen && <div className="mobile-nav"><a href="#cau-chuyen" onClick={() => setMenuOpen(false)}>Câu chuyện</a><a href="#san-pham" onClick={() => setMenuOpen(false)}>Sản phẩm</a><a href="#hop-tac" onClick={() => setMenuOpen(false)}>Hợp tác</a><a href="#lien-he" onClick={() => setMenuOpen(false)}>Liên hệ</a></div>}
       </header>
@@ -39,7 +32,7 @@ export default function Home() {
           <p className="eyebrow">Nông sản quê mình • Tây Ninh</p>
           <h1>Trái ngọt<br /><em>từ vườn nhà.</em></h1>
           <p className="hero-copy">Mãng cầu Bà Đen được vun trồng bằng kinh nghiệm nhà nông, đón nắng gió Tây Ninh và mang theo vị ngọt mộc mạc của quê nhà.</p>
-          <div className="hero-actions"><a className="primary-button" href="#san-pham">Khám phá sản phẩm <span>→</span></a><a className="text-link" href="#hop-tac">Trở thành đối tác</a></div>
+          <div className="hero-actions"><a className="primary-button" href="#san-pham">Khám phá sản phẩm <span>→</span></a><a className="text-link" href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Nhắn Zalo hợp tác</a></div>
         </div>
         <div className="hero-note"><span className="note-number">☘</span><p><strong>Tươi theo mùa</strong><br />Gắn với vùng trồng, tôn trọng tự nhiên và công sức nhà vườn.</p></div>
       </section>
@@ -61,12 +54,12 @@ export default function Home() {
 
       <section className="products section-pad" id="san-pham">
         <div className="section-head"><div><p className="section-kicker">Từ khu vườn xanh</p><h2>Gói ghém<br /><em>vị quê.</em></h2></div><p>Từ trái tươi theo mùa đến những món quà mộc mạc mang bản sắc vùng đất.</p></div>
-        <div className="product-grid">{products.map((product) => <article className="product-card" key={product.no}><div className="product-image"><img src={product.image} alt={product.title} /><span>{product.no}</span></div><p className="product-tag">{product.tag}</p><h3>{product.title}</h3><p>{product.copy}</p><a href="#lien-he" aria-label={`Trao đổi về ${product.title}`}>Trao đổi nhu cầu <span>↗</span></a></article>)}</div>
+        <div className="product-grid">{products.map((product) => <article className="product-card" key={product.no}><div className="product-image"><img src={product.image} alt={product.title} /><span>{product.no}</span></div><p className="product-tag">{product.tag}</p><h3>{product.title}</h3><p>{product.copy}</p><a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer" aria-label={`Trao đổi về ${product.title} qua Zalo`}>Trao đổi qua Zalo <span>↗</span></a></article>)}</div>
       </section>
 
       <section className="cooperation" id="hop-tac">
         <div className="coop-image" role="img" aria-label="Vườn mãng cầu xanh tươi" />
-        <div className="coop-content"><p className="section-kicker light">Mở lối hợp tác</p><h2>Cùng đưa vị ngọt<br /><em>đi xa hơn.</em></h2><p>Chúng tôi mong muốn lắng nghe bài toán thật của từng đối tác, sau đó cùng xây dựng phương án phù hợp.</p><div className="path-list">{paths.map((path, i) => <a href="#lien-he" key={path}><span>0{i + 1}</span>{path}<b>→</b></a>)}</div></div>
+        <div className="coop-content"><p className="section-kicker light">Mở lối hợp tác</p><h2>Cùng đưa vị ngọt<br /><em>đi xa hơn.</em></h2><p>Chúng tôi mong muốn lắng nghe bài toán thật của từng đối tác, sau đó cùng xây dựng phương án phù hợp.</p><div className="path-list">{paths.map((path, i) => <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer" key={path}><span>0{i + 1}</span>{path}<b>→</b></a>)}</div></div>
       </section>
 
       <section className="process section-pad">
@@ -75,11 +68,16 @@ export default function Home() {
       </section>
 
       <section className="contact" id="lien-he">
-        <div className="contact-title"><p className="section-kicker light">Kết nối từ hôm nay</p><h2>Bạn muốn<br /><em>cùng đi xa?</em></h2><p>Chia sẻ nhu cầu của bạn. Thông tin liên hệ chính thức sẽ được bổ sung khi website đi vào vận hành.</p></div>
-        <form className="contact-form" onSubmit={submitContact}><label>Họ và tên<input required name="name" placeholder="Nguyễn Văn A" /></label><label>Số điện thoại<input required name="phone" type="tel" placeholder="09xx xxx xxx" /></label><label className="full">Hướng hợp tác<select name="interest" defaultValue=""><option value="" disabled>Chọn nhu cầu của bạn</option>{paths.map(path => <option key={path}>{path}</option>)}</select></label><label className="full">Lời nhắn<textarea name="message" rows={3} placeholder="Quy mô, thời gian, thị trường bạn quan tâm..." /></label><button className="submit-button" type="submit">Tạo yêu cầu hợp tác <span>→</span></button>{sent && <p className="form-note" role="status">Yêu cầu mẫu đã được tạo. Hãy bổ sung email hoặc hotline tiếp nhận trước khi website chính thức hoạt động.</p>}</form>
+        <div className="contact-title"><p className="section-kicker light">Kết nối từ hôm nay</p><h2>Bạn muốn<br /><em>cùng đi xa?</em></h2><p>Gọi trực tiếp hoặc nhắn tin qua kênh thuận tiện nhất. Chúng tôi sẵn sàng trao đổi về phân phối, quà tặng và hợp tác sản phẩm.</p></div>
+        <div className="contact-channels">
+          <a className="contact-main" href="tel:0907215521"><span className="channel-label">Hotline</span><strong>0907 215 521</strong><b>Gọi ngay ↗</b></a>
+          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer"><span className="channel-icon">Z</span><div><small>Nhắn tin</small><strong>Zalo 0907 215 521</strong></div><b>↗</b></a>
+          <a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer"><span className="channel-icon">f</span><div><small>Theo dõi</small><strong>Facebook Mãng Cầu Bà Đen</strong></div><b>↗</b></a>
+          <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer"><span className="channel-icon">♪</span><div><small>Xem tại vườn</small><strong>TikTok @mangcaubaden</strong></div><b>↗</b></a>
+        </div>
       </section>
 
-      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">MC</span><span>Mãng Cầu<br />Bà Đen</span></a><p>Đặc sản từ vùng trồng Tây Ninh.<br />Kết nối hợp tác & phân phối.</p><div><a href="#cau-chuyen">Câu chuyện</a><a href="#san-pham">Sản phẩm</a><a href="#hop-tac">Hợp tác</a></div><small>© 2026 Mãng Cầu Bà Đen</small></footer>
+      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">MC</span><span>Mãng Cầu<br />Bà Đen</span></a><p>Đặc sản từ vùng trồng Tây Ninh.<br /><a href="tel:0907215521">Hotline/Zalo: 0907 215 521</a></p><div><a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer">Facebook</a><a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">TikTok</a><a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Zalo</a></div><small>© 2026 Mãng Cầu Bà Đen</small></footer>
     </main>
   );
 }
