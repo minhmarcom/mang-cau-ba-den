@@ -385,7 +385,7 @@ export default function ArticlePage() {
                         OCOP 3 Sao • Quà biếu VIP
                       </span>
                     </td>
-                    <td>3 trái VIP (450g – 600g/trái)</td>
+                    <td>Hộp 3 trái VIP</td>
                     <td>Trái tròn đều, mắt nở to phẳng, vỏ sáng đẹp hoàn hảo, bọc lưới an toàn trong hộp quai xách cao cấp có cửa sổ</td>
                     <td>Quà biếu tặng doanh nghiệp, đối tác, sự kiện lễ tết trang nhã</td>
                   </tr>
@@ -396,20 +396,20 @@ export default function ArticlePage() {
                         OCOP 3 Sao • Thưởng thức & Biếu tặng
                       </span>
                     </td>
-                    <td>Thùng carton 5kg (12 – 16 trái)</td>
+                    <td>Thùng carton 5kg</td>
                     <td>Từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ từng quả, giữ trọn độ tươi ngọt tự nhiên</td>
                     <td>Thưởng thức gia đình hàng ngày, biếu tặng người thân và bạn bè</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>Thùng 15KG Đơn Sỉ & Đi Xa</strong>
+                      <strong>Thùng 15KG Tuyển Chọn</strong>
                       <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
-                        OCOP 3 Sao • Sỉ & Gửi toàn quốc
+                        OCOP 3 Sao
                       </span>
                     </td>
-                    <td>Thùng carton 15kg chuyên dụng</td>
+                    <td>Thùng carton 15kg</td>
                     <td>Thùng carton nhiều lớp dày dặn, lỗ thoáng khí chống hầm nhiệt, chống va đập hoàn hảo khi vận chuyển xa</td>
-                    <td>Đơn sỉ đại lý, tiệc cưới hỏi, hội nghị, gửi nhanh TP.HCM, Hà Nội và toàn quốc</td>
+                    <td>Phục vụ tiệc gia đình, hội nghị, sự kiện, gửi nhanh toàn quốc</td>
                   </tr>
                 </tbody>
               </table>

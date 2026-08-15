@@ -8,7 +8,7 @@ const products = [
     title: "Hộp Đặc Biệt (3 Quả)",
     tag: "OCOP 3 Sao • Quà biếu VIP",
     image: "/hop-dac-biet-3-qua.png",
-    copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng (450g – 600g/trái), bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
+    copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng, bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
     featured: true,
     badge: "⭐ Hộp quà đặc biệt",
   },
@@ -22,8 +22,8 @@ const products = [
   },
   {
     no: "03",
-    title: "Thùng 15KG Đơn Sỉ & Đi Xa",
-    tag: "OCOP 3 Sao • Sỉ & Gửi toàn quốc",
+    title: "Thùng 15KG Tuyển Chọn",
+    tag: "OCOP 3 Sao",
     image: "/thung-15kg.png",
     copy: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển nhanh đến TP.HCM, Hà Nội và toàn quốc.",
     featured: false,
@@ -187,7 +187,7 @@ const productListSchema = {
         "@type": "Product",
         name: "Mãng Cầu Bà Đen Hộp Đặc Biệt (3 Quả VIP)",
         image: "https://mangcaubaden.vn/hop-dac-biet-3-qua.png",
-        description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng (450g – 600g/trái) đạt chuẩn OCOP 3 sao.",
+        description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
         offers: {
           "@type": "Offer",
