@@ -19,6 +19,34 @@ const gallery = [
 
 const paths = ["Phân phối & bán lẻ", "Quà tặng doanh nghiệp", "Chế biến & phát triển sản phẩm", "Trải nghiệm nông nghiệp"];
 
+const faqs = [
+  { question: "Mãng cầu Bà Đen là gì và được trồng ở đâu?", answer: "Mãng cầu Bà Đen là cách gọi quen thuộc của mãng cầu ta, hay quả na, được canh tác tại vùng Tây Ninh, đặc biệt quanh khu vực núi Bà Đen. Điều kiện nắng ấm và kinh nghiệm nhà vườn góp phần tạo nên hương vị đặc trưng của trái." },
+  { question: "Mãng cầu Bà Đen có gì đặc biệt?", answer: "Trái thường được yêu thích nhờ mùi thơm rõ, vị ngọt thanh và phần thịt mềm dẻo khi chín đúng độ. Chất lượng thực tế còn phụ thuộc giống, vườn trồng, thời điểm thu hoạch và cách bảo quản." },
+  { question: "Mùa mãng cầu Tây Ninh vào thời gian nào?", answer: "Mãng cầu có mùa vụ và sản lượng thay đổi theo thời tiết, lịch xử lý ra hoa của từng vườn. Để biết lứa trái đang có, độ chín và ngày giao phù hợp, khách hàng nên liên hệ trực tiếp trước khi đặt." },
+  { question: "Cách chọn mãng cầu Bà Đen ngon và nhận biết trái chín?", answer: "Nên chọn trái có mắt nở tương đối đều, vỏ chuyển xanh nhạt, cầm chắc nhưng không quá cứng. Trái bắt đầu chín thường tỏa mùi thơm nhẹ và mềm dần; tránh bóp mạnh làm dập thịt." },
+  { question: "Mãng cầu bao lâu thì chín và bảo quản thế nào?", answer: "Thời gian chín phụ thuộc độ già khi hái và nhiệt độ môi trường. Nên để trái ở nơi khô thoáng, kiểm tra mỗi ngày; khi vừa chín có thể cho vào ngăn mát và dùng sớm để giữ hương vị." },
+  { question: "Mãng cầu có để tủ lạnh được không?", answer: "Có, nhưng nên làm lạnh sau khi trái đã chín vừa. Trái còn xanh để trong tủ lạnh có thể chín chậm hoặc không đều. Nên bọc nhẹ, tránh đè lên nhau và sử dụng sớm." },
+  { question: "Mua mãng cầu Bà Đen ở đâu và có giao tận nơi không?", answer: "Khách hàng có thể gọi hoặc nhắn Zalo 0907 215 521 để hỏi lứa trái, quy cách, giá theo thời điểm và khu vực giao. Đơn lẻ, đơn quà tặng và nhu cầu mua sỉ sẽ được trao đổi riêng." },
+  { question: "Có mãng cầu VietGAP, OCOP hoặc hồ sơ nguồn gốc không?", answer: "Tiêu chuẩn và hồ sơ đi kèm cần được xác nhận theo từng vườn, từng lô hàng và thời điểm cung ứng. Đối tác nên yêu cầu thông tin truy xuất, chứng nhận còn hiệu lực và mẫu thực tế trước khi thống nhất đơn hàng." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((item) => ({ "@type": "Question", name: item.question, acceptedAnswer: { "@type": "Answer", text: item.answer } })),
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Mãng Cầu Bà Đen",
+  url: "https://mang-cau-ba-den-tay-ninh.nhatminhmarcom.chatgpt.site/",
+  logo: "https://mang-cau-ba-den-tay-ninh.nhatminhmarcom.chatgpt.site/app-icon-512.png",
+  description: "Kết nối mãng cầu Bà Đen từ vùng trồng Tây Ninh đến khách hàng và đối tác phân phối.",
+  contactPoint: { "@type": "ContactPoint", telephone: "+84907215521", contactType: "sales", areaServed: "VN", availableLanguage: "Vietnamese" },
+  sameAs: ["https://www.facebook.com/nabaden.vn/", "https://www.tiktok.com/@mangcaubaden"],
+};
+
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("top");
@@ -40,6 +68,8 @@ export default function Home() {
   }, []);
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <span className="brand-mark">MC</span><span>Mãng Cầu<br />Bà Đen</span>
@@ -96,6 +126,12 @@ export default function Home() {
       <section className="process section-pad">
         <p className="section-kicker">Từ nhu cầu đến hợp tác</p><div className="section-head"><h2>Một quy trình<br /><em>rõ ràng.</em></h2><p>Bắt đầu từ trao đổi thẳng thắn, kiểm chứng thực tế và thống nhất từng bước triển khai.</p></div>
         <div className="steps"><article><span>01</span><h3>Tiếp nhận</h3><p>Nhu cầu, sản lượng và kênh phân phối.</p></article><article><span>02</span><h3>Đề xuất</h3><p>Phương án sản phẩm, quy cách và tiến độ.</p></article><article><span>03</span><h3>Khảo sát</h3><p>Mẫu thực tế, vùng trồng và khả năng đáp ứng.</p></article><article><span>04</span><h3>Triển khai</h3><p>Thống nhất lịch, giao nhận và đầu mối phụ trách.</p></article></div>
+      </section>
+
+      <section className="seo-guide section-pad" id="cam-nang">
+        <div className="seo-guide-heading"><div><p className="section-kicker">Cẩm nang từ vườn</p><h2>Hiểu trái ngon.<br /><em>Chọn đúng mùa.</em></h2></div><p>Những câu hỏi thường gặp khi tìm hiểu, chọn mua và bảo quản mãng cầu Bà Đen Tây Ninh.</p></div>
+        <div className="faq-list">{faqs.map((item, index) => <details key={item.question} open={index === 0}><summary><span>0{index + 1}</span>{item.question}<b aria-hidden="true">＋</b></summary><p>{item.answer}</p></details>)}</div>
+        <div className="seo-intent"><h3>Tìm mãng cầu Bà Đen chính gốc?</h3><p>Liên hệ để hỏi mùa vụ, giá mãng cầu Tây Ninh theo thời điểm, quy cách hộp quà, đơn giao tận nơi hoặc nhu cầu sỉ và đại lý.</p><a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Hỏi lứa trái hôm nay <span>→</span></a></div>
       </section>
 
       <section className="contact" id="lien-he">
