@@ -408,6 +408,17 @@ export default function ArticlePage() {
               Các nhà vườn tại vùng chân Núi Bà Đen Tây Ninh luôn tiên phong gìn giữ giống cây truyền thống, áp dụng quy trình canh tác sạch và an toàn sinh học để mang đến những lứa trái tươi ngon nhất cho người tiêu dùng trên mọi miền đất nước.
             </p>
 
+            <figure className="article-inline-image">
+              <img
+                src="/hop-qua-3-trai-vip.jpg"
+                alt="Hộp quà mãng cầu Bà Đen 3 trái tuyển chọn thượng hạng"
+                loading="lazy"
+              />
+              <figcaption>
+                Mẫu hộp quà 3 trái VIP sang trọng, quai xách chắc chắn, tuyển chọn trái đều đẹp làm quà biếu tặng cao cấp.
+              </figcaption>
+            </figure>
+
             <div className="garden-features">
               <div className="feat-item">
                 <span className="feat-icon">🌿</span>

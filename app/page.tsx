@@ -5,44 +5,48 @@ import { useEffect, useState } from "react";
 const products = [
   {
     no: "01",
-    title: "Mãng cầu tươi",
-    tag: "Theo mùa vụ",
-    image: "/thuc-te-mang-cau-tuoi.jpg",
-    copy: "Trái tươi được phân loại theo độ chín, kích cỡ và nhu cầu vận chuyển.",
+    title: "Hộp quà 3 trái VIP",
+    tag: "Hộp quà biếu cao cấp",
+    image: "/hop-qua-3-trai-vip.jpg",
+    copy: "Tuyển chọn 3 trái mãng cầu chuẩn ngoại hình, bọc lưới xốp sang trọng kèm hộp quai xách biếu tặng trang nhã.",
+    featured: true,
+    badge: "⭐ Quà biếu cao cấp",
   },
   {
     no: "02",
-    title: "Phân loại & đóng gói",
-    tag: "Sẵn sàng giao nhận",
-    image: "/thuc-te-phan-loai.jpg",
-    copy: "Từng trái được kiểm tra, bọc bảo vệ và sắp xếp phù hợp với hành trình giao nhận.",
+    title: "Mãng cầu tươi tại vườn",
+    tag: "Thu hoạch theo ngày",
+    image: "/thuc-te-mang-cau-tuoi.jpg",
+    copy: "Trái già chuẩn độ chín, cơm dày dẻo ngọt thanh, phân loại theo size 2-3 trái/kg hoặc 3-4 trái/kg.",
+    featured: false,
   },
   {
     no: "03",
-    title: "Đơn hàng hợp tác",
-    tag: "Theo nhu cầu đối tác",
+    title: "Thùng sỉ & Giao đi xa",
+    tag: "Đóng gói chuyên dụng",
     image: "/thuc-te-dong-goi-nhieu-thung.jpg",
-    copy: "Quy cách đóng gói linh hoạt cho phân phối, quà tặng, sự kiện và du lịch.",
+    copy: "Quy cách đóng thùng carton nhiều lớp có lỗ thông khí, bảo quản an toàn khi vận chuyển toàn quốc.",
+    featured: false,
   },
 ];
 
 const gallery = [
   {
-    src: "/thuc-te-vuon-mang-cau.jpg",
-    alt: "Vườn mãng cầu Bà Đen thực tế tại Tây Ninh",
-    caption: "Vườn mãng cầu trong nắng chiều",
+    src: "/vuon-nui-ba-den.jpg",
+    alt: "Vườn mãng cầu xanh ngát bao trái trắng dưới chân Núi Bà Đen Tây Ninh",
+    caption: "Vườn mãng cầu xanh ngát dưới chân Núi Bà Đen",
     shape: "gallery-wide",
+  },
+  {
+    src: "/hop-qua-3-trai-vip.jpg",
+    alt: "Hộp quà mãng cầu Bà Đen 3 trái tuyển chọn cao cấp",
+    caption: "Hộp quà 3 trái tuyển chọn thượng hạng",
+    shape: "gallery-tall",
   },
   {
     src: "/thuc-te-thu-hoach.jpg",
     alt: "Thu hoạch mãng cầu trực tiếp tại vườn",
     caption: "Thu hoạch trực tiếp tại vườn",
-    shape: "gallery-tall",
-  },
-  {
-    src: "/thuc-te-phan-loai.jpg",
-    alt: "Mãng cầu được tập kết và phân loại sau thu hoạch",
-    caption: "Phân loại sau thu hoạch",
     shape: "gallery-half",
   },
   {
@@ -52,15 +56,15 @@ const gallery = [
     shape: "gallery-half",
   },
   {
-    src: "/thuc-te-dong-goi.jpg",
-    alt: "Mãng cầu được đóng gói trong thùng",
-    caption: "Đóng gói theo đơn hàng",
+    src: "/thuc-te-phan-loai.jpg",
+    alt: "Mãng cầu được tập kết và phân loại sau thu hoạch",
+    caption: "Phân loại chuẩn kích cỡ",
     shape: "gallery-half",
   },
   {
     src: "/thuc-te-dong-goi-nhieu-thung.jpg",
     alt: "Nhiều thùng mãng cầu đã đóng gói sẵn sàng giao",
-    caption: "Sẵn sàng cho chuyến giao",
+    caption: "Sẵn sàng giao nhận toàn quốc",
     shape: "gallery-half",
   },
 ];
@@ -376,11 +380,11 @@ export default function Home() {
         </div>
         <div className="intro-image">
           <img
-            src="/thuc-te-vuon-mang-cau.jpg"
-            alt="Vườn mãng cầu thực tế tại Tây Ninh"
+            src="/vuon-nui-ba-den.jpg"
+            alt="Vườn mãng cầu xanh tốt dưới chân Núi Bà Đen Tây Ninh"
             loading="lazy"
           />
-          <span>Hình ảnh thực tế • Tây Ninh</span>
+          <span>Vùng trồng chân Núi Bà Đen • Tây Ninh</span>
         </div>
       </section>
 
@@ -450,7 +454,13 @@ export default function Home() {
         </div>
         <div className="product-grid">
           {products.map((product) => (
-            <article className="product-card" key={product.no}>
+            <article
+              className={`product-card ${product.featured ? "is-featured" : ""}`}
+              key={product.no}
+            >
+              {product.featured && product.badge && (
+                <span className="product-featured-ribbon">{product.badge}</span>
+              )}
               <div className="product-image">
                 <img src={product.image} alt={product.title} loading="lazy" />
                 <span>{product.no}</span>
@@ -464,7 +474,7 @@ export default function Home() {
                 rel="noreferrer"
                 aria-label={`Trao đổi về ${product.title} qua Zalo`}
               >
-                Trao đổi qua Zalo <span>↗</span>
+                {product.featured ? "Đặt hộp quà qua Zalo" : "Trao đổi qua Zalo"} <span>↗</span>
               </a>
             </article>
           ))}
