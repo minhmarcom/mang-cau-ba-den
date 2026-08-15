@@ -109,9 +109,9 @@ const faqs = [
       "Khách hàng có thể gọi hoặc nhắn Zalo 0907 215 521 để hỏi lứa trái, quy cách, giá theo thời điểm và khu vực giao. Đơn lẻ, đơn quà tặng và nhu cầu mua sỉ sẽ được trao đổi riêng.",
   },
   {
-    question: "Có mãng cầu VietGAP, OCOP hoặc hồ sơ nguồn gốc không?",
+    question: "Có tiêu chuẩn VietGAP hoặc hồ sơ nguồn gốc vùng trồng không?",
     answer:
-      "Tiêu chuẩn và hồ sơ đi kèm cần được xác nhận theo từng vườn, từng lô hàng và thời điểm cung ứng. Đối tác nên yêu cầu thông tin truy xuất, chứng nhận còn hiệu lực và mẫu thực tế trước khi thống nhất đơn hàng.",
+      "Tiêu chuẩn và hồ sơ truy xuất nguồn gốc được xác nhận theo từng vườn và thời điểm cung ứng. Khách hàng và đối tác có thể liên hệ trực tiếp để trao đổi chi tiết và xem mẫu thực tế trước khi thống nhất đơn hàng.",
   },
 ];
 
@@ -141,8 +141,8 @@ const organizationSchema = {
     availableLanguage: "Vietnamese",
   },
   sameAs: [
-    "https://www.facebook.com/nabaden.vn/",
     "https://www.tiktok.com/@mangcaubaden",
+    "https://zalo.me/0907215521",
   ],
 };
 
@@ -311,7 +311,7 @@ export default function Home() {
               <div className="mobile-nav-footer">
                 <span>Đặc sản Tây Ninh chính gốc</span>
                 <div className="mobile-nav-socials">
-                  <a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer">Facebook</a>
+                  <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Zalo</a>
                   <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">TikTok</a>
                 </div>
               </div>
@@ -600,7 +600,7 @@ export default function Home() {
             <span className="featured-badge">Bài viết nổi bật</span>
           </div>
           <div className="featured-article-content">
-            <span className="featured-kicker">Cẩm nang người mua • NABADEN</span>
+            <span className="featured-kicker">Cẩm nang nhà nông • Tây Ninh</span>
             <h3>Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon</h3>
             <p>
               Hướng dẫn chi tiết từ nhà vườn: cách phân biệt trái già, nhận biết độ chín, quy cách đóng gói chống va đập và bảng phân loại mãng cầu theo nhu cầu ăn gia đình hoặc làm quà biếu.
@@ -649,14 +649,6 @@ export default function Home() {
             <div>
               <small>Nhắn tin nhanh</small>
               <strong>Zalo 0907 215 521</strong>
-            </div>
-            <b>↗</b>
-          </a>
-          <a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer">
-            <span className="channel-icon">f</span>
-            <div>
-              <small>Trang cộng đồng</small>
-              <strong>Facebook Mãng Cầu Bà Đen</strong>
             </div>
             <b>↗</b>
           </a>
@@ -797,14 +789,11 @@ export default function Home() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
-          <a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer">
-            Facebook
+          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
+            Zalo
           </a>
           <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
             TikTok
-          </a>
-          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
-            Zalo
           </a>
         </div>
         <small>© 2026 Mãng Cầu Bà Đen • Giữ trọn vị quê nhà</small>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | NABADEN",
+  title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Cẩm Nang Nhà Vườn",
   description:
-    "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
+    "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và cách phân biệt trái ngon chuẩn vị.",
   keywords: [
     "mua mãng cầu Bà Đen",
     "mua mãng cầu Bà Đen chính gốc",
@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     "cách chọn mãng cầu Bà Đen",
     "giá mãng cầu Bà Đen",
     "địa chỉ mua mãng cầu Tây Ninh",
-    "mãng cầu Bà Đen NABADEN",
+    "vườn mãng cầu Tây Ninh",
     "đặc sản Tây Ninh làm quà",
   ],
   alternates: {
     canonical: "/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
   },
   openGraph: {
-    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | NABADEN",
+    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Cẩm Nang Nhà Vườn",
     description:
       "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
     url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | NABADEN",
+    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Cẩm Nang Nhà Vườn",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen Tây Ninh ngon, chuẩn nguồn gốc từ nhà vườn.",
     images: ["/thuc-te-dong-goi-nhieu-thung.jpg"],
@@ -56,7 +56,7 @@ const articleSchema = {
   dateModified: "2026-08-15T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "NABADEN",
+    name: "Ban Biên Tập Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -107,7 +107,7 @@ const faqSchema = {
       name: "Mua mãng cầu Bà Đen chính gốc ở đâu uy tín?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bạn nên chọn các đơn vị có vùng trồng trực tiếp tại chân Núi Bà Đen Tây Ninh, có hình ảnh và video thu hoạch thật, tiêu chuẩn phân loại trái rõ ràng và cam kết đổi trả như NABADEN (Hotline/Zalo: 0907 215 521).",
+        text: "Bạn nên chọn các nhà vườn có vùng trồng trực tiếp quanh khu vực Núi Bà Đen Tây Ninh, có hình ảnh thu hoạch thực tế tại vườn, tiêu chuẩn phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Hotline/Zalo: 0907 215 521).",
       },
     },
     {
@@ -214,14 +214,14 @@ export default function ArticlePage() {
           </h1>
 
           <p className="article-lead">
-            Mãng cầu Bà Đen là đặc sản nức tiếng của Tây Ninh nhờ vị ngọt thanh, cơm trắng dẻo và hương thơm thanh khiết. Để tránh mua phải hàng trôi nổi kém chất lượng, hãy cùng tìm hiểu kinh nghiệm chọn mua mãng cầu chuẩn gốc từ chính nhà vườn Tây Ninh.
+            Mãng cầu Bà Đen là đặc sản nức tiếng của Tây Ninh nhờ vị ngọt thanh, cơm trắng dẻo và hương thơm thanh khiết. Để tránh mua phải hàng trôi nổi kém chất lượng, hãy cùng tìm hiểu kinh nghiệm chọn mua mãng cầu chuẩn gốc từ chính các nhà vườn Tây Ninh.
           </p>
 
           <div className="author-row">
             <div className="author-avatar">MC</div>
             <div>
-              <strong>Biên tập bởi NABADEN</strong>
-              <span>Hợp tác xã Nông nghiệp Mãng cầu Thạnh Tân Tây Ninh</span>
+              <strong>Ban Biên Tập Mãng Cầu Bà Đen</strong>
+              <span>Chuyên trang thông tin & kết nối nông sản Tây Ninh</span>
             </div>
           </div>
         </header>
@@ -254,7 +254,7 @@ export default function ArticlePage() {
               <a href="#bang-gia-quy-cach">4. Phân loại & quy cách mãng cầu Bà Đen phổ biến</a>
             </li>
             <li>
-              <a href="#dat-mua-nabaden">5. Đặt mua mãng cầu Bà Đen NABADEN trực tiếp từ vườn</a>
+              <a href="#dat-mua-chinh-goc">5. Đặt mua mãng cầu Bà Đen chính gốc trực tiếp từ vườn</a>
             </li>
             <li>
               <a href="#faq">6. Câu hỏi thường gặp khi mua mãng cầu Tây Ninh</a>
@@ -307,7 +307,7 @@ export default function ArticlePage() {
                 <span className="criteria-num">01</span>
                 <h3>Minh bạch nguồn gốc vùng trồng</h3>
                 <p>
-                  Đơn vị bán phải công khai rõ ràng vườn canh tác, hợp tác xã sản xuất tại Tây Ninh (như vùng Thạnh Tân, Tân Bình...) kèm thông tin truy xuất nguồn gốc.
+                  Đơn vị bán phải công khai rõ ràng khu vực vườn canh tác quanh chân Núi Bà Đen Tây Ninh kèm thông tin thu hoạch minh bạch.
                 </p>
               </div>
               <div className="criteria-card">
@@ -321,7 +321,7 @@ export default function ArticlePage() {
                 <span className="criteria-num">03</span>
                 <h3>Phân loại theo tiêu chuẩn rõ ràng</h3>
                 <p>
-                  Mãng cầu chuẩn phải được phân loại theo kích cỡ (Size 2-3 trái/kg, Size 3-4 trái/kg), độ già và mục đích (ăn gia đình hay hộp quà biếu cao cấp).
+                  Mãng cầu chuẩn phải được phân loại theo kích cỡ (Size 2-3 trái/kg, Size 3-4 trái/kg), độ già và mục đích (ăn gia đình hay hộp quà biếu).
                 </p>
               </div>
               <div className="criteria-card">
@@ -402,13 +402,13 @@ export default function ArticlePage() {
             </div>
           </section>
 
-          <section id="dat-mua-nabaden">
-            <h2>5. Đặt mua mãng cầu Bà Đen NABADEN trực tiếp từ vườn</h2>
+          <section id="dat-mua-chinh-goc">
+            <h2>5. Đặt mua mãng cầu Bà Đen chính gốc trực tiếp từ vườn</h2>
             <p>
-              <strong>Hợp tác xã Nông nghiệp Mãng cầu Thạnh Tân (NABADEN)</strong> là một trong những đơn vị tiên phong gìn giữ và phát triển giống mãng cầu Bà Đen chính gốc tại chân Núi Bà Đen Tây Ninh, đạt chứng nhận <strong>OCOP 3 sao</strong> chính thức.
+              Các nhà vườn tại vùng chân Núi Bà Đen Tây Ninh luôn tiên phong gìn giữ giống cây truyền thống, áp dụng quy trình canh tác sạch và an toàn sinh học để mang đến những lứa trái tươi ngon nhất cho người tiêu dùng trên mọi miền đất nước.
             </p>
 
-            <div className="nabaden-features">
+            <div className="garden-features">
               <div className="feat-item">
                 <span className="feat-icon">🌿</span>
                 <div>
@@ -424,7 +424,7 @@ export default function ArticlePage() {
               <div className="feat-item">
                 <span className="feat-icon">📦</span>
                 <div>
-                  <strong>Đóng gói hộp quà sang trọng:</strong> Phục vụ nhu cầu quà tặng doanh nghiệp, hội nghị và khách du lịch.
+                  <strong>Đóng gói hộp quà trang nhã:</strong> Phục vụ nhu cầu quà tặng gia đình, doanh nghiệp, hội nghị và khách du lịch.
                 </div>
               </div>
               <div className="feat-item">
@@ -470,7 +470,7 @@ export default function ArticlePage() {
                   <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
-                  Bạn nên chọn các đơn vị có vùng trồng trực tiếp tại chân Núi Bà Đen Tây Ninh, có hình ảnh và video thu hoạch thật, tiêu chuẩn phân loại trái rõ ràng và cam kết đổi trả như NABADEN (Hotline/Zalo: 0907 215 521).
+                  Bạn nên chọn các nhà vườn có vùng trồng trực tiếp quanh khu vực Núi Bà Đen Tây Ninh, có hình ảnh thu hoạch thực tế tại vườn, tiêu chuẩn phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Hotline/Zalo: 0907 215 521).
                 </p>
               </details>
 
@@ -515,7 +515,7 @@ export default function ArticlePage() {
           <div className="article-author-bio">
             <div className="bio-mark">MC</div>
             <div>
-              <h4>Mãng Cầu Bà Đen Tây Ninh (NABADEN)</h4>
+              <h4>Mãng Cầu Bà Đen Tây Ninh Chính Gốc</h4>
               <p>
                 Chúng tôi kết nối câu chuyện nông sản sạch từ vùng trồng chân Núi Bà Đen đến tận tay người tiêu dùng và đối tác phân phối trên toàn quốc.
               </p>
@@ -544,14 +544,11 @@ export default function ArticlePage() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
-          <a href="https://www.facebook.com/nabaden.vn/" target="_blank" rel="noreferrer">
-            Facebook
+          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
+            Zalo
           </a>
           <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
             TikTok
-          </a>
-          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
-            Zalo
           </a>
         </div>
         <small>© 2026 Mãng Cầu Bà Đen • Giữ trọn vị quê nhà</small>

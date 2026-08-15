@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
     "sỉ mãng cầu Bà Đen", "đại lý mãng cầu Tây Ninh", "mãng cầu VietGAP Tây Ninh", "mãng cầu OCOP Tây Ninh",
     "nguồn gốc mãng cầu Bà Đen", "mùa mãng cầu Tây Ninh", "cách chọn mãng cầu ngon", "cách nhận biết mãng cầu chín",
     "cách bảo quản mãng cầu", "mãng cầu Bà Đen và mãng cầu thường", "na dai và na Bà Đen", "dinh dưỡng mãng cầu",
-    "hộp quà mãng cầu Tây Ninh", "mãng cầu Tây Ninh làm quà", "NABADEN", "mãng cầu NABADEN"
+    "hộp quà mãng cầu Tây Ninh", "mãng cầu Tây Ninh làm quà", "mãng cầu Bà Đen tuyển chọn", "mãng cầu Tây Ninh loại 1"
   ];
 
   return {
