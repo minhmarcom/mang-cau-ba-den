@@ -253,7 +253,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang chủ", item: "https://mangcaubaden.vn/" },
     { "@type": "ListItem", position: 2, name: "Sản phẩm Trái Tươi", item: "https://mangcaubaden.vn/#san-pham" },
-    { "@type": "ListItem", position: 3, name: "Cẩm nang từ vườn", item: "https://mangcaubaden.vn/#cam-nang" },
+    { "@type": "ListItem", position: 3, name: "Tin tức từ vườn", item: "https://mangcaubaden.vn/tin-tuc" },
     { "@type": "ListItem", position: 4, name: "Liên hệ mua hàng", item: "https://mangcaubaden.vn/#lien-he" },
   ],
 };
@@ -275,7 +275,7 @@ export default function Home() {
   }, [menuOpen]);
 
   useEffect(() => {
-    const sectionIds = ["top", "cau-chuyen", "san-pham", "hinh-anh", "dat-hang", "cam-nang", "lien-he"];
+    const sectionIds = ["top", "cau-chuyen", "san-pham", "hinh-anh", "dat-hang", "tin-tuc", "lien-he"];
     const updateActiveSection = () => {
       const marker = window.scrollY + window.innerHeight * 0.35;
       let current = "top";
@@ -299,7 +299,7 @@ export default function Home() {
     if (activeSection === "top" || activeSection === "cau-chuyen") return "top";
     if (activeSection === "san-pham") return "san-pham";
     if (activeSection === "hinh-anh") return "hinh-anh";
-    if (activeSection === "dat-hang" || activeSection === "cam-nang") return "dat-hang";
+    if (activeSection === "dat-hang" || activeSection === "tin-tuc") return "dat-hang";
     if (activeSection === "lien-he") return "lien-he";
     return "top";
   };
@@ -350,7 +350,7 @@ export default function Home() {
           <a href="#san-pham">Sản phẩm</a>
           <a href="#hinh-anh">Hình ảnh</a>
           <a href="#dat-hang">Đặt hàng</a>
-          <a href="#cam-nang">Cẩm nang</a>
+          <a href="#tin-tuc">Tin tức</a>
           <a href="#lien-he">Liên hệ</a>
         </nav>
 
@@ -408,9 +408,9 @@ export default function Home() {
                   <span>Đặt mua & Quà tặng</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
-                <a href="#cam-nang" onClick={closeMenu}>
+                <a href="#tin-tuc" onClick={closeMenu}>
                   <span className="mobile-nav-num">05</span>
-                  <span>Cẩm nang từ vườn</span>
+                  <span>Tin tức từ vườn</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
                 <a href="#lien-he" onClick={closeMenu}>
@@ -690,10 +690,10 @@ export default function Home() {
       </section>
 
       {/* FAQ & KNOWLEDGE SECTION */}
-      <section className="seo-guide section-pad" id="cam-nang">
+      <section className="seo-guide section-pad" id="tin-tuc">
         <div className="seo-guide-heading">
           <div>
-            <p className="section-kicker">Cẩm nang từ vườn</p>
+            <p className="section-kicker">Tin tức từ vườn</p>
             <h2>
               <span className="heading-line">Hiểu trái ngon.</span>
               <em className="heading-line">Chọn đúng mùa.</em>
@@ -752,7 +752,7 @@ export default function Home() {
               <span className="featured-badge">Kinh nghiệm chọn mua</span>
             </div>
             <div className="featured-article-content">
-              <span className="featured-kicker">Cẩm nang nhà nông • Tây Ninh</span>
+              <span className="featured-kicker">Tin tức nhà nông • Tây Ninh</span>
               <h3>Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon</h3>
               <p>
                 Hướng dẫn chi tiết từ nhà vườn: cách phân biệt trái già, nhận biết độ chín, quy cách đóng gói chống va đập và bảng phân loại mãng cầu theo nhu cầu ăn gia đình hoặc làm quà biếu.

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Cẩm Nang Nhà Vườn",
+  title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
   description:
     "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và cách phân biệt trái ngon chuẩn vị.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
   },
   openGraph: {
-    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Cẩm Nang Nhà Vườn",
+    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
     description:
       "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
     url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Cẩm Nang Nhà Vườn",
+    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen Tây Ninh ngon, chuẩn nguồn gốc từ nhà vườn.",
     images: ["/thuc-te-dong-goi-nhieu-thung.jpg"],
@@ -86,8 +86,8 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Cẩm nang & Tin tức",
-      item: "https://mangcaubaden.vn/#cam-nang",
+      name: "Tin tức",
+      item: "https://mangcaubaden.vn/tin-tuc/",
     },
     {
       "@type": "ListItem",
@@ -174,7 +174,7 @@ export default function ArticlePage() {
           <Link href="/#san-pham">Sản phẩm</Link>
           <Link href="/#hinh-anh">Hình ảnh</Link>
           <Link href="/#dat-hang">Đặt hàng</Link>
-          <Link href="/#cam-nang">Cẩm nang</Link>
+          <Link href="/tin-tuc">Tin tức</Link>
           <Link href="/#lien-he">Liên hệ</Link>
         </nav>
 
@@ -201,7 +201,7 @@ export default function ArticlePage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Trang chủ</Link>
           <span aria-hidden="true">/</span>
-          <Link href="/#cam-nang">Cẩm nang</Link>
+          <Link href="/tin-tuc">Tin tức</Link>
           <span aria-hidden="true">/</span>
           <span className="current">Mua mãng cầu chính gốc</span>
         </nav>
@@ -209,7 +209,7 @@ export default function ArticlePage() {
         {/* ARTICLE HEADER */}
         <header className="article-header">
           <div className="article-meta-badge">
-            <span className="badge-kicker">Cẩm nang mùa vụ</span>
+            <span className="badge-kicker">Tin tức mùa vụ</span>
             <span className="badge-dot">•</span>
             <time dateTime="2026-07-04">Cập nhật tháng 8/2026</time>
             <span className="badge-dot">•</span>

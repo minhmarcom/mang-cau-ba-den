@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cẩm Nang & Tin Tức Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
+  title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
   description:
-    "Tổng hợp bài viết cẩm nang nông sản, hướng dẫn chọn mua mãng cầu Bà Đen chính gốc Tây Ninh, quy trình chăm sóc bao trái an toàn và tiêu chuẩn VietGAP & OCOP.",
+    "Tổng hợp bài viết tin tức nông sản, hướng dẫn chọn mua mãng cầu Bà Đen chính gốc Tây Ninh, quy trình chăm sóc bao trái an toàn và tiêu chuẩn VietGAP & OCOP.",
   keywords: [
     "tin tức mãng cầu Bà Đen",
-    "cẩm nang mãng cầu Tây Ninh",
     "kinh nghiệm mua mãng cầu",
     "mãng cầu Bà Đen Tây Ninh",
     "đặc sản Tây Ninh",
@@ -19,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "/tin-tuc/",
   },
   openGraph: {
-    title: "Cẩm Nang & Tin Tức Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
+    title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
     description:
-      "Tổng hợp bài viết cẩm nang nông sản, hướng dẫn chọn mua mãng cầu Bà Đen chính gốc Tây Ninh chuẩn ngon từ nhà vườn.",
+      "Tổng hợp bài viết tin tức nông sản, hướng dẫn chọn mua mãng cầu Bà Đen chính gốc Tây Ninh chuẩn ngon từ nhà vườn.",
     url: "https://mangcaubaden.vn/tin-tuc/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
@@ -31,15 +30,15 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Cẩm nang & Tin tức Mãng Cầu Bà Đen Tây Ninh",
+        alt: "Tin tức Mãng Cầu Bà Đen Tây Ninh",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cẩm Nang & Tin Tức Mãng Cầu Bà Đen Tây Ninh | NABADEN",
+    title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN",
     description:
-      "Khám phá cẩm nang và kinh nghiệm chọn mua mãng cầu Bà Đen chính gốc Tây Ninh chuẩn sạch, tươi ngon.",
+      "Khám phá tin tức và kinh nghiệm chọn mua mãng cầu Bà Đen chính gốc Tây Ninh chuẩn sạch, tươi ngon.",
     images: ["/og.png"],
   },
 };
@@ -47,9 +46,9 @@ export const metadata: Metadata = {
 const collectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Cẩm Nang & Tin Tức Mãng Cầu Bà Đen Tây Ninh",
+  name: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh",
   description:
-    "Tổng hợp các bài viết thông tin, cẩm nang chọn mua và quy trình canh tác mãng cầu Bà Đen chính gốc Tây Ninh.",
+    "Tổng hợp các bài viết thông tin, tin tức chọn mua và quy trình canh tác mãng cầu Bà Đen chính gốc Tây Ninh.",
   url: "https://mangcaubaden.vn/tin-tuc/",
   publisher: {
     "@type": "Organization",
@@ -88,7 +87,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Cẩm nang & Tin tức",
+      name: "Tin tức",
       item: "https://mangcaubaden.vn/tin-tuc/",
     },
   ],
@@ -110,7 +109,7 @@ export default function NewsHubPage() {
     {
       slug: "/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
       title: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
-      kicker: "Cẩm nang mùa vụ",
+      kicker: "Tin tức mùa vụ",
       tag: "Kinh nghiệm chọn mua",
       image: "/thuc-te-dong-goi-nhieu-thung.jpg",
       date: "Tháng 8/2026",
@@ -152,7 +151,7 @@ export default function NewsHubPage() {
           <Link href="/#san-pham">Sản phẩm</Link>
           <Link href="/#hinh-anh">Hình ảnh</Link>
           <Link href="/#dat-hang">Đặt hàng</Link>
-          <Link href="/tin-tuc">Cẩm nang</Link>
+          <Link href="/tin-tuc">Tin tức</Link>
           <Link href="/#lien-he">Liên hệ</Link>
         </nav>
 
@@ -179,19 +178,19 @@ export default function NewsHubPage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Trang chủ</Link>
           <span aria-hidden="true">/</span>
-          <span className="current">Cẩm nang & Tin tức</span>
+          <span className="current">Tin tức</span>
         </nav>
 
         {/* HUB HEADER */}
         <header className="article-header" style={{ marginBottom: "40px" }}>
           <div className="article-meta-badge">
-            <span className="badge-kicker">Cẩm nang nhà nông</span>
+            <span className="badge-kicker">Tin tức nhà nông</span>
             <span className="badge-dot">•</span>
             <span>Kiến thức & Mùa vụ</span>
           </div>
 
           <h1 className="article-title">
-            Góc Tin Tức & <em>Cẩm Nang Mãng Cầu</em> Bà Đen
+            Góc Tin Tức <em>Mãng Cầu</em> Bà Đen
           </h1>
 
           <p className="article-lead">
@@ -200,7 +199,7 @@ export default function NewsHubPage() {
         </header>
 
         {/* ARTICLES LIST */}
-        <section aria-label="Danh sách bài viết cẩm nang" style={{ display: "grid", gap: "28px" }}>
+        <section aria-label="Danh sách bài viết tin tức" style={{ display: "grid", gap: "28px" }}>
           {articles.map((item, idx) => (
             <article
               key={idx}

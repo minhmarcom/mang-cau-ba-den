@@ -86,8 +86,8 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Cẩm nang & Tin tức",
-      item: "https://mangcaubaden.vn/#cam-nang",
+      name: "Tin tức",
+      item: "https://mangcaubaden.vn/tin-tuc/",
     },
     {
       "@type": "ListItem",
@@ -166,7 +166,7 @@ export default function ArticleBrandPage() {
           <Link href="/#san-pham">Sản phẩm</Link>
           <Link href="/#hinh-anh">Hình ảnh</Link>
           <Link href="/#dat-hang">Đặt hàng</Link>
-          <Link href="/#cam-nang">Cẩm nang</Link>
+          <Link href="/tin-tuc">Tin tức</Link>
           <Link href="/#lien-he">Liên hệ</Link>
         </nav>
 
@@ -193,7 +193,7 @@ export default function ArticleBrandPage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Trang chủ</Link>
           <span aria-hidden="true">/</span>
-          <Link href="/#cam-nang">Cẩm nang</Link>
+          <Link href="/tin-tuc">Tin tức</Link>
           <span aria-hidden="true">/</span>
           <span className="current">Đặc sản Mãng Cầu Tây Ninh</span>
         </nav>
