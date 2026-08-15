@@ -565,6 +565,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BRAND BANNER SHOWCASE */}
+      <section className="brand-banner-section section-pad" aria-label="Đặc sản Mãng Cầu Bà Đen NABADEN OCOP 3 Sao">
+        <div className="brand-banner-card">
+          <img
+            src="/banner-nabaden.png"
+            alt="Mãng Cầu Bà Đen NABADEN - Sạch, Tươi, Ngon, Chuẩn vị Tây Ninh OCOP 3 Sao"
+            className="brand-banner-img"
+            width="1024"
+            height="419"
+            loading="lazy"
+          />
+          <div className="brand-banner-badges">
+            <div className="brand-badge-item">
+              <span className="badge-icon">🌿</span>
+              <span>100% Tự Nhiên</span>
+            </div>
+            <div className="brand-badge-item">
+              <span className="badge-icon">✓</span>
+              <span>Chọn Lọc Kỹ Lưỡng</span>
+            </div>
+            <div className="brand-badge-item">
+              <span className="badge-icon">🛡</span>
+              <span>An Toàn Vệ Sinh</span>
+            </div>
+            <div className="brand-badge-item">
+              <span className="badge-icon">⭐</span>
+              <span>OCOP 3 Sao</span>
+            </div>
+            <div className="brand-badge-item">
+              <span className="badge-icon">❤️</span>
+              <span>Tốt Cho Sức Khỏe</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRODUCTS SECTION */}
       <section className="products section-pad" id="san-pham">
         <div className="section-head">

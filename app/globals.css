@@ -849,6 +849,58 @@ h2 {
   text-wrap: pretty;
 }
 
+/* BRAND BANNER SHOWCASE */
+.brand-banner-section {
+  padding-top: 0;
+  padding-bottom: clamp(40px, 5vw, 60px);
+}
+
+.brand-banner-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 16px 48px rgba(61, 80, 52, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-banner-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 56px rgba(61, 80, 52, 0.15);
+}
+
+.brand-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.brand-banner-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 16px 20px;
+  background: rgba(255, 252, 240, 0.95);
+  border-top: 1px solid var(--border-soft);
+}
+
+.brand-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(0.82rem, 0.15vw + 0.78rem, 0.92rem);
+  font-weight: 700;
+  color: var(--leaf);
+}
+
+.badge-icon {
+  font-size: 16px;
+}
+
 /* PRODUCTS */
 .products {
   background: #f7f2df;
