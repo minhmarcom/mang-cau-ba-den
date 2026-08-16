@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn – Đặc Sản Tây Ninh OCOP 3 Sao",
+  title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
   description:
     "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh chính gốc: Từng trái già loại 1 tuyển chọn kỹ lưỡng, bọc xốp lưới êm ái, đóng thùng carton thoáng khí. Chuẩn VietGAP & OCOP 3 sao, ngọt thanh dẻo dai.",
   keywords: [
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
   },
   openGraph: {
-    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn – Đặc Sản Tây Ninh OCOP 3 Sao",
+    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
     description:
       "Thùng 5kg Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1: Bọc xốp lưới từng quả, đóng thùng carton có quai xách tiện dụng, thích hợp thưởng thức gia đình và biếu tặng.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
-    siteName: "Mãng Cầu Bà Đen Tây Ninh",
+    siteName: "Mãng Cầu Bà Đen",
     images: [
       {
         url: `${siteUrl}/thung-5kg.png`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn – Đặc Sản Tây Ninh",
+    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
     description:
       "Quy cách đóng thùng 5kg chuyên dụng, trái già loại 1 bọc xốp êm ái, chuẩn OCOP 3 sao Tây Ninh.",
     images: [`${siteUrl}/thung-5kg.png`],

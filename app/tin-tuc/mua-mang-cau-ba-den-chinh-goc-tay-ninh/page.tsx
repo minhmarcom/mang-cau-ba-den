@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
+  title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
   description:
     "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và cách phân biệt trái ngon chuẩn vị.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
   },
   openGraph: {
-    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
+    title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
     description:
       "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
     url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
+    title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen Tây Ninh ngon, chuẩn nguồn gốc từ nhà vườn.",
     images: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],

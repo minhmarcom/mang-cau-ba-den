@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Đặc Sản Tây Ninh Cao Cấp",
+  title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Cao Cấp | Mãng Cầu Bà Đen",
   description:
     "Hộp quà Mãng Cầu Bà Đen 3 trái VIP thượng hạng: Tuyển chọn 3 quả đỉnh chóp tròn đều, vỏ sáng, lót rơm giấy và xốp lưới sang trọng. Chuẩn VietGAP & OCOP 3 sao làm quà biếu đối tác, dâng lễ.",
   keywords: [
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
   },
   openGraph: {
-    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Đặc Sản Tây Ninh Cao Cấp",
+    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Cao Cấp | Mãng Cầu Bà Đen",
     description:
       "Hộp quà 3 trái mãng cầu Bà Đen tuyển chọn thượng hạng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
-    siteName: "Mãng Cầu Bà Đen Tây Ninh",
+    siteName: "Mãng Cầu Bà Đen",
     images: [
       {
         url: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Đặc Sản Tây Ninh",
+    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP | Mãng Cầu Bà Đen",
     description:
       "Tuyển chọn 3 trái mãng cầu Bà Đen VIP sang trọng, vỏ sáng đẹp mắt, chuẩn OCOP 3 sao Tây Ninh.",
     images: [`${siteUrl}/hop-qua-3-trai-vip.jpg`],

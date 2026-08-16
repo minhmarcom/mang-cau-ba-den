@@ -3,12 +3,11 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa mãng cầu Tây Ninh | NABADEN",
+  title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | Mãng Cầu Bà Đen",
   description:
-    "Mùa Mãng Cầu Bà Đen tháng mấy? Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ, thời điểm có trái và kinh nghiệm chọn mua cùng NABADEN.",
+    "Mùa Mãng Cầu Bà Đen tháng mấy? Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ, thời điểm có trái và kinh nghiệm chọn mua từ nhà vườn Tây Ninh.",
   keywords: [
     "Mãng Cầu Bà Đen",
-    "NABADEN",
     "mùa mãng cầu tháng mấy",
     "mùa mãng cầu Tây Ninh",
     "mùa Mãng Cầu Bà Đen",
@@ -22,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "/mua-mang-cau-ba-den-thang-may/",
   },
   openGraph: {
-    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | NABADEN",
+    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | Mãng Cầu Bà Đen",
     description:
-      "Mùa Mãng Cầu Bà Đen tháng mấy? Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ, thời điểm có trái và kinh nghiệm chọn mua cùng NABADEN.",
+      "Mùa Mãng Cầu Bà Đen tháng mấy? Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ, thời điểm có trái và kinh nghiệm chọn mua từ nhà vườn Tây Ninh.",
     url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-thang-may/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa mãng cầu Tây Ninh",
+    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | Mãng Cầu Bà Đen",
     description:
       "Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ và thời điểm trái ngon nhất.",
     images: ["https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg"],

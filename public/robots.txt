@@ -4,6 +4,37 @@
 User-agent: *
 Allow: /
 
+# Allow AI Search & Crawlers (ChatGPT, Gemini, Perplexity, Claude, Copilot)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# LLMs Knowledge Base
+# https://mangcaubaden.vn/llms.txt
+
 # Sitemaps
 Sitemap: https://mangcaubaden.vn/sitemap.xml
 Sitemap: https://mangcaubaden.vn/sitemap-san-pham.xml

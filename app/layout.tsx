@@ -15,8 +15,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const isLocal = host?.startsWith("localhost") || host?.startsWith("127.0.0.1");
   const siteUrl = isLocal ? `http://${host}` : "https://mangcaubaden.vn";
   const image = "https://mangcaubaden.vn/og.png";
-  const title = "Mãng Cầu Bà Đen Tây Ninh — Trái Ngọt Chính Gốc Từ Vườn Nhà";
-  const description = "Mãng Cầu Bà Đen Tây Ninh chính gốc, chuẩn tiêu chuẩn VietGAP và OCOP 3 Sao. Vị ngọt thanh, dẻo thơm, thu hoạch hái tươi trong ngày. Đặt mua Hộp Đặc Biệt 3 Quả, Thùng 5kg, Thùng 15kg giao nhanh toàn quốc (Hotline/Zalo: 0907 215 521).";
+  const title = 'Mãng cầu Bà Đen Tây Ninh - Sản vật vùng "đất Thánh"';
+  const description = "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.";
   const keywords = [
     // Từ khóa hạt nhân (Core Keywords)
     "mãng cầu Bà Đen", "mang cau ba den", "mãng cầu Bà Đen Tây Ninh", "mang cau tay ninh",

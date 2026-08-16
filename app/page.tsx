@@ -154,7 +154,7 @@ const localBusinessSchema = {
     "https://mangcaubaden.vn/thung-5kg.png"
   ],
   description:
-    "Chuyên cung cấp Mãng Cầu Bà Đen chính gốc chân Núi Bà Đen Tây Ninh, đạt chuẩn VietGAP và OCOP 3 Sao. Thu hoạch hái tươi trong ngày, giao nhanh tận nơi toàn quốc.",
+    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.",
   telephone: "+84907215521",
   priceRange: "$$",
   currenciesAccepted: "VND",
@@ -260,7 +260,9 @@ const productListSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Mãng Cầu Bà Đen Tây Ninh",
+  name: 'Mãng Cầu Bà Đen Tây Ninh - Sản vật vùng "đất Thánh"',
+  description:
+    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.",
   url: "https://mangcaubaden.vn/",
   inLanguage: "vi-VN",
 };
@@ -280,14 +282,6 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("top");
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [currentChapter, setCurrentChapter] = useState({
-    num: 1,
-    total: 6,
-    id: "top",
-    name: "Giới thiệu & Bìa",
-    nextName: "Câu chuyện vườn nhà",
-    nextId: "cau-chuyen",
-  });
 
   useEffect(() => {
     if (menuOpen) {
@@ -301,14 +295,7 @@ export default function Home() {
   }, [menuOpen]);
 
   useEffect(() => {
-    const chapters = [
-      { id: "top", num: 1, name: "Giới thiệu & Bìa", nextName: "Câu chuyện vườn nhà", nextId: "cau-chuyen" },
-      { id: "cau-chuyen", num: 2, name: "Câu chuyện vườn nhà", nextName: "Sản phẩm & Báo giá", nextId: "san-pham" },
-      { id: "san-pham", num: 3, name: "Sản phẩm tuyển chọn", nextName: "Hình ảnh thực tế", nextId: "hinh-anh" },
-      { id: "hinh-anh", num: 4, name: "Hình ảnh thực tế", nextName: "Tin tức từ vườn", nextId: "tin-tuc" },
-      { id: "tin-tuc", num: 5, name: "Tin tức & Cẩm nang", nextName: "Kênh liên hệ mua", nextId: "lien-he" },
-      { id: "lien-he", num: 6, name: "Liên hệ & Đặt hàng", nextName: "Hết trang", nextId: "top" },
-    ];
+    const sections = ["top", "cau-chuyen", "san-pham", "hinh-anh", "tin-tuc", "lien-he"];
 
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -318,15 +305,14 @@ export default function Home() {
       }
 
       const marker = window.scrollY + window.innerHeight * 0.35;
-      let activeChap = chapters[0];
-      chapters.forEach((chap) => {
-        const el = document.getElementById(chap.id);
+      let currentSec = sections[0];
+      sections.forEach((secId) => {
+        const el = document.getElementById(secId);
         if (el && el.offsetTop <= marker) {
-          activeChap = chap;
+          currentSec = secId;
         }
       });
-      setCurrentChapter({ ...activeChap, total: 6 });
-      setActiveSection(activeChap.id);
+      setActiveSection(currentSec);
     };
 
     handleScroll();
@@ -388,7 +374,16 @@ export default function Home() {
 
       {/* STICKY APP HEADER */}
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <a
+          className="brand"
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            if (window.location.hash) window.history.replaceState(null, "", "/");
+          }}
+          aria-label="Mãng Cầu Bà Đen - Trang chủ"
+        >
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen NABADEN"
@@ -401,13 +396,6 @@ export default function Home() {
             Mãng Cầu<br />Bà Đen
           </span>
         </a>
-
-        {/* SUBTLE MAGAZINE CHAPTER INDICATOR IN HEADER */}
-        <div className="header-magazine-tag" aria-label={`Trang ${currentChapter.num} trên 6: ${currentChapter.name}`}>
-          <span className="header-mag-num">Trang 0{currentChapter.num} / 06</span>
-          <span className="header-mag-divider" aria-hidden="true">•</span>
-          <span className="header-mag-name">{currentChapter.name}</span>
-        </div>
 
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <a href="#cau-chuyen">Câu chuyện</a>
@@ -526,7 +514,6 @@ export default function Home() {
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow">
-            <span className="mag-kicker-tag">TRANG 01 / 06</span>
             Nông sản quê mình • Tây Ninh
           </p>
           <h1>
@@ -557,7 +544,6 @@ export default function Home() {
       <section className="intro section-pad" id="cau-chuyen">
         <div>
           <p className="section-kicker">
-            <span className="mag-kicker-tag">TRANG 02 / 06</span>
             Chuyện của vườn nhà
           </p>
           <h2>
@@ -641,7 +627,6 @@ export default function Home() {
         <div className="section-head">
           <div>
             <p className="section-kicker">
-              <span className="mag-kicker-tag">TRANG 03 / 06</span>
               Từ khu vườn xanh
             </p>
             <h2>
@@ -720,7 +705,6 @@ export default function Home() {
         <div className="gallery-heading">
           <div>
             <p className="section-kicker">
-              <span className="mag-kicker-tag">TRANG 04 / 06</span>
               Hình ảnh thực tế
             </p>
             <h2>
@@ -804,7 +788,6 @@ export default function Home() {
         <div className="seo-guide-heading">
           <div>
             <p className="section-kicker">
-              <span className="mag-kicker-tag">TRANG 05 / 06</span>
               Tin tức từ vườn
             </p>
             <h2>
@@ -919,7 +902,6 @@ export default function Home() {
       <section className="contact" id="lien-he">
         <div className="contact-title">
           <p className="section-kicker light">
-            <span className="mag-kicker-tag">TRANG 06 / 06</span>
             Kết nối từ hôm nay
           </p>
           <h2>
@@ -966,7 +948,12 @@ export default function Home() {
       {/* BOTTOM MOBILE APP NAVIGATION (ZERO GAP, FLUSH TO BOTTOM) */}
       <nav className="app-nav" aria-label="Điều hướng ứng dụng di động">
         <a
-          href="#top"
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            if (window.location.hash) window.history.replaceState(null, "", "/");
+          }}
           className={currentTab === "top" ? "is-active" : ""}
           aria-current={currentTab === "top" ? "page" : undefined}
         >

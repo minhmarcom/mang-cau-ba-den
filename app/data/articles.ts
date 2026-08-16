@@ -41,7 +41,7 @@ export const articles: Article[] = [
     date: "Tháng 8/2026",
     readTime: "5 phút đọc",
     description:
-      "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Khám phá kinh nghiệm chọn mãng cầu ngon, mua làm quà du lịch, cách bảo quản, vận chuyển và tìm hiểu Mãng Cầu Bà Đen NABADEN.",
+      "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Khám phá kinh nghiệm chọn mãng cầu ngon, mua làm quà du lịch, cách bảo quản, vận chuyển và thông tin từ nhà vườn Tây Ninh.",
   },
   {
     slug: "/mang-cau-ba-den-dac-san-tay-ninh",

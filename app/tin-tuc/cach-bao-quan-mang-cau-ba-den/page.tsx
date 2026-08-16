@@ -3,12 +3,11 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà | NABADEN",
+  title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà | Mãng Cầu Bà Đen",
   description:
-    "Hướng dẫn cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín. NABADEN giải đáp mãng cầu bao lâu chín, có nên để tủ lạnh và cách xử lý trái chín không đều.",
+    "Hướng dẫn cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín. Giải đáp mãng cầu bao lâu chín, có nên để tủ lạnh và cách xử lý trái chín không đều.",
   keywords: [
     "cách bảo quản Mãng Cầu Bà Đen",
-    "NABADEN",
     "cách bảo quản mãng cầu",
     "mãng cầu bao lâu thì chín",
     "mãng cầu chưa chín để đâu",
@@ -21,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "/cach-bao-quan-mang-cau-ba-den/",
   },
   openGraph: {
-    title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà | NABADEN",
+    title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà | Mãng Cầu Bà Đen",
     description:
-      "Hướng dẫn cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín. NABADEN giải đáp mãng cầu bao lâu chín, có nên để tủ lạnh và cách xử lý trái chín không đều.",
+      "Hướng dẫn cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín. Giải đáp mãng cầu bao lâu chín, có nên để tủ lạnh và cách xử lý trái chín không đều.",
     url: "https://mangcaubaden.vn/cach-bao-quan-mang-cau-ba-den/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
+    title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà | Mãng Cầu Bà Đen",
     description:
       "Hướng dẫn chi tiết từ nhà vườn: cách bảo quản mãng cầu khi nhận hàng, kiểm tra độ chín và mẹo giữ trái tươi ngon.",
     images: ["https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg"],

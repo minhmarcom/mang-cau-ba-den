@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | NABADEN OCOP",
+  title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Mãng Cầu Bà Đen",
   description:
     "Danh mục sản phẩm Mãng Cầu Bà Đen Tây Ninh chính gốc: Hộp quà 3 trái VIP, Thùng 5kg biếu tặng gia đình, Thùng 15kg đơn sỉ. Chuẩn VietGAP & OCOP 3 sao, hái tươi giao nhanh toàn quốc.",
   keywords: [
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham`,
   },
   openGraph: {
-    title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | NABADEN OCOP",
+    title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Mãng Cầu Bà Đen",
     description:
       "Tuyển chọn những dòng sản phẩm Mãng Cầu Bà Đen Tây Ninh thượng hạng: Hộp quà 3 trái VIP, Thùng 5kg & Thùng 15kg. Trồng theo chuẩn VietGAP & OCOP, tươi ngon từ vườn.",
     url: `${siteUrl}/san-pham`,
-    siteName: "Mãng Cầu Bà Đen Tây Ninh",
+    siteName: "Mãng Cầu Bà Đen",
     images: [
       {
         url: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | NABADEN OCOP",
+    title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Mãng Cầu Bà Đen",
     description:
       "Danh mục sản phẩm Mãng Cầu Bà Đen Tây Ninh chính gốc: Hộp 3 trái VIP, Thùng 5kg, Thùng 15kg chuẩn OCOP 3 sao.",
     images: [`${siteUrl}/hop-qua-3-trai-vip.jpg`],

@@ -4,7 +4,7 @@ import { articles } from "../data/articles";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
+  title: "Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | Mãng Cầu Bà Đen",
   description:
     "Tổng hợp bài viết tin tức nông sản, hướng dẫn chọn mua mãng cầu Bà Đen chính gốc Tây Ninh, quy trình chăm sóc bao trái an toàn và tiêu chuẩn VietGAP & OCOP.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "/tin-tuc/",
   },
   openGraph: {
-    title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
+    title: "Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | Mãng Cầu Bà Đen",
     description:
       "Tổng hợp các bài viết thông tin, tin tức chọn mua và quy trình canh tác mãng cầu Bà Đen chính gốc Tây Ninh.",
     url: "https://mangcaubaden.vn/tin-tuc/",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
+    title: "Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | Mãng Cầu Bà Đen",
     description:
       "Tổng hợp các bài viết hướng dẫn chọn mua, đặc điểm trái và cẩm nang nông sản Tây Ninh.",
     images: ["https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg"],

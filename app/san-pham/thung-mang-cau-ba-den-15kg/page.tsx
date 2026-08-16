@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Giá Vườn",
+  title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
   description:
     "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh chuyên dụng đơn sỉ: Thùng carton dày dặn 3-5 lớp chịu lực, lỗ thông gió chống hấp hơi, trái già đều đẹp. Hỗ trợ gửi xe khách & đường bay toàn quốc.",
   keywords: [
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
   },
   openGraph: {
-    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Giá Vườn",
+    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
     description:
       "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
-    siteName: "Mãng Cầu Bà Đen Tây Ninh",
+    siteName: "Mãng Cầu Bà Đen",
     images: [
       {
         url: `${siteUrl}/thung-15kg.png`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc",
+    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
     description:
       "Thùng carton 15kg dày dặn 3-5 lớp chịu lực, chuyên gửi xe khách & máy bay toàn quốc, giá sỉ tận vườn.",
     images: [`${siteUrl}/thung-15kg.png`],
