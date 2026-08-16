@@ -316,7 +316,7 @@ export default function Home() {
     if (activeSection === "top" || activeSection === "cau-chuyen") return "top";
     if (activeSection === "san-pham") return "san-pham";
     if (activeSection === "hinh-anh") return "hinh-anh";
-    if (activeSection === "dat-hang" || activeSection === "tin-tuc") return "dat-hang";
+    if (activeSection === "tin-tuc" || activeSection === "dat-hang") return "tin-tuc";
     if (activeSection === "lien-he") return "lien-he";
     return "top";
   };
@@ -967,9 +967,9 @@ export default function Home() {
         </a>
 
         <a
-          href="#dat-hang"
-          className={currentTab === "dat-hang" ? "is-active" : ""}
-          aria-current={currentTab === "dat-hang" ? "page" : undefined}
+          href="/tin-tuc"
+          className={currentTab === "tin-tuc" ? "is-active" : ""}
+          aria-current={currentTab === "tin-tuc" ? "page" : undefined}
         >
           <svg
             className="nav-svg"
@@ -981,11 +981,12 @@ export default function Home() {
             strokeLinejoin="round"
             aria-hidden="true"
           >
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-            <path d="M3 6h18" />
-            <path d="M16 10a4 4 0 0 1-8 0" />
+            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+            <path d="M18 14h-8" />
+            <path d="M15 18h-5" />
+            <path d="M10 6h8v4h-8V6Z" />
           </svg>
-          <span>Đặt hàng</span>
+          <span>Tin tức</span>
         </a>
 
         <a
