@@ -579,6 +579,9 @@ export default function ArticlePage() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
+          <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
+            Facebook
+          </a>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             Zalo
           </a>

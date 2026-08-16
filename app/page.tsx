@@ -173,6 +173,7 @@ const localBusinessSchema = {
     { "@type": "AdministrativeArea", name: "Tây Ninh" },
   ],
   sameAs: [
+    "https://www.facebook.com/mangcaubaden.vn/",
     "https://zalo.me/0907215521",
     "https://www.tiktok.com/@mangcaubaden",
   ],
@@ -445,6 +446,7 @@ export default function Home() {
               <div className="mobile-nav-footer">
                 <span>Đặc sản Tây Ninh chính gốc</span>
                 <div className="mobile-nav-socials">
+                  <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">Facebook</a>
                   <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Zalo</a>
                   <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">TikTok</a>
                 </div>
@@ -833,6 +835,14 @@ export default function Home() {
             <strong>0907 215 521</strong>
             <b>Gọi ngay ↗</b>
           </a>
+          <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
+            <span className="channel-icon" style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>f</span>
+            <div>
+              <small>Fanpage chính thức</small>
+              <strong>Facebook Mãng Cầu Bà Đen</strong>
+            </div>
+            <b>↗</b>
+          </a>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             <span className="channel-icon">Z</span>
             <div>
@@ -984,6 +994,9 @@ export default function Home() {
           <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
         </p>
         <div>
+          <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
+            Facebook
+          </a>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             Zalo
           </a>

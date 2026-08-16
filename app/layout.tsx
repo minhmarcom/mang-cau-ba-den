@@ -107,6 +107,8 @@ export async function generateMetadata(): Promise<Metadata> {
       "dc.coverage": "Tây Ninh, Việt Nam",
       "dc.language": "vi",
       "format-detection": "telephone=yes",
+      "article:publisher": "https://www.facebook.com/mangcaubaden.vn/",
+      "og:see_also": "https://www.facebook.com/mangcaubaden.vn/",
     },
   };
 }
