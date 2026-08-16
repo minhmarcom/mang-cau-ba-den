@@ -217,6 +217,14 @@ export default function HtmlSitemapPage() {
                 </Link>
               </li>
               <li style={{ marginTop: "6px" }}>
+                <Link href="/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/">
+                  <strong>Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn</strong>
+                </Link>
+                <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
+                  Cẩm nang chọn mua mãng cầu làm quà du lịch Tây Ninh, cách nhận biết trái chín và bảo quản vận chuyển đi xa.
+                </span>
+              </li>
+              <li style={{ marginTop: "6px" }}>
                 <Link href="/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/">
                   <strong>Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh</strong>
                 </Link>

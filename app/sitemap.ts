@@ -59,6 +59,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${siteUrl}/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/di-tay-ninh-mua-mang-cau-ba-den-o-dau/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
       url: `${siteUrl}/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/`,
       lastModified: new Date(),
       changeFrequency: "daily",
