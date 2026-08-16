@@ -217,6 +217,14 @@ export default function HtmlSitemapPage() {
                 </Link>
               </li>
               <li style={{ marginTop: "6px" }}>
+                <Link href="/tin-tuc/cach-bao-quan-mang-cau-ba-den/">
+                  <strong>Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà</strong>
+                </Link>
+                <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
+                  Hướng dẫn chi tiết từ lúc nhận hàng, mẹo kiểm tra độ chín, giải đáp có nên để tủ lạnh và công thức 5 bước bảo quản dễ nhớ.
+                </span>
+              </li>
+              <li style={{ marginTop: "6px" }}>
                 <Link href="/tin-tuc/mua-mang-cau-ba-den-thang-may/">
                   <strong>Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh</strong>
                 </Link>

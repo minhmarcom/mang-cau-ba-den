@@ -11,6 +11,17 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/tin-tuc/cach-bao-quan-mang-cau-ba-den/",
+    title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
+    kicker: "Mẹo hay & Bảo quản • Tây Ninh",
+    badge: "Kinh nghiệm bảo quản",
+    image: "/dong-thung-carton-mang-cau-xop.jpg",
+    date: "Tháng 8/2026",
+    readTime: "5 phút đọc",
+    description:
+      "Hướng dẫn cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín. Giải đáp mãng cầu bao lâu chín, có nên để tủ lạnh và cách xử lý trái chín không đều.",
+  },
+  {
     slug: "/tin-tuc/mua-mang-cau-ba-den-thang-may/",
     title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
     kicker: "Mùa vụ & Nông sản • Tây Ninh",

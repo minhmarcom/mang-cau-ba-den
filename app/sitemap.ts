@@ -59,6 +59,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${siteUrl}/tin-tuc/cach-bao-quan-mang-cau-ba-den/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/cach-bao-quan-mang-cau-ba-den/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
       url: `${siteUrl}/tin-tuc/mua-mang-cau-ba-den-thang-may/`,
       lastModified: new Date(),
       changeFrequency: "daily",
