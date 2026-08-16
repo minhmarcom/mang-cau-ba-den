@@ -115,8 +115,6 @@ export default function Footer({ backLink }: FooterProps) {
             <Link href="/san-pham">Sản phẩm</Link>
             <span className="dot-sep" aria-hidden="true">•</span>
             <Link href="/tin-tuc">Tin tức &amp; Cẩm nang</Link>
-            <span className="dot-sep" aria-hidden="true">•</span>
-            <Link href="/so-do-trang-web">Sơ đồ trang web</Link>
           </div>
         </div>
       </div>
