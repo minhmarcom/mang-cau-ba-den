@@ -91,8 +91,8 @@ p, li, dd, figcaption, blockquote {
 
 h1, h2, h3, h4, .section-kicker, .eyebrow, summary, .featured-kicker, .badge-kicker {
   text-wrap: balance;
-  overflow-wrap: normal;
-  word-break: keep-all;
+  overflow-wrap: break-word;
+  word-break: normal;
   hyphens: none;
   color: var(--ink);
   font-feature-settings: "kern" 1, "liga" 1;
@@ -100,8 +100,8 @@ h1, h2, h3, h4, .section-kicker, .eyebrow, summary, .featured-kicker, .badge-kic
 
 h1 {
   font-family: var(--font-serif);
-  font-size: clamp(2.35rem, 5vw + 0.8rem, 5.2rem);
-  line-height: 1.15;
+  font-size: clamp(2.2rem, 4.8vw + 0.8rem, 5rem);
+  line-height: 1.24;
   letter-spacing: -0.015em;
   font-weight: 500;
   margin: 24px 0 20px;
@@ -115,8 +115,8 @@ h1 em, h2 em {
 
 h2 {
   font-family: var(--font-serif);
-  font-size: clamp(1.85rem, 3.6vw + 0.5rem, 3.8rem);
-  line-height: 1.2;
+  font-size: clamp(1.8rem, 3.4vw + 0.5rem, 3.6rem);
+  line-height: 1.28;
   letter-spacing: -0.01em;
   font-weight: 500;
   margin: 0;
