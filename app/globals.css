@@ -257,7 +257,8 @@ h2 {
   font-size: 14px;
 }
 
-.mobile-quick-call {
+.mobile-quick-call,
+.mobile-order-btn {
   display: none;
 }
 
@@ -285,6 +286,28 @@ h2 {
 
   .desktop-nav, .header-cta {
     display: none;
+  }
+
+  .mobile-order-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: var(--leaf);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 3px 12px rgba(45, 90, 60, 0.28);
+    white-space: nowrap;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+
+  .mobile-order-btn:hover,
+  .mobile-order-btn:active {
+    background: #234830;
+    transform: scale(0.97);
   }
 
   .mobile-quick-call {
@@ -1387,6 +1410,25 @@ h2 {
   font-weight: 600;
   line-height: 1.32;
   margin: 0;
+}
+
+.featured-article-content h3 a,
+.article-title-link {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.featured-article-content h3 a:hover,
+.article-title-link:hover,
+.featured-article-card:hover .featured-article-content h3 a {
+  color: var(--leaf);
+}
+
+.featured-article-img {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .featured-article-content p {
