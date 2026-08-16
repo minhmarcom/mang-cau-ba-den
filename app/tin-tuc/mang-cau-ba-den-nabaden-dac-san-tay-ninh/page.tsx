@@ -17,19 +17,19 @@ export const metadata: Metadata = {
     "vườn mãng cầu núi Bà Đen",
   ],
   alternates: {
-    canonical: "/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+    canonical: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
   },
   openGraph: {
     title: "Mãng Cầu Bà Đen – Đặc Sản Tây Ninh: Tươi Ngon Chuẩn Vị Từ Vườn Nhà",
     description:
       "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
-    url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+    url: "https://mangcaubaden.vn/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
+        url: "https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg",
         width: 1200,
         height: 630,
         alt: "Vườn mãng cầu xanh ngát dưới chân Núi Bà Đen Tây Ninh",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Mãng Cầu Bà Đen – Đặc Sản Tây Ninh: Tươi Ngon Chuẩn Vị Từ Vườn Nhà",
     description:
       "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành và chất lượng chuẩn VietGAP & OCOP.",
-    images: ["https://mangcaubaden.vn/vuon-nui-ba-den.jpg"],
+    images: ["https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg"],
   },
 };
 
@@ -51,7 +51,7 @@ const articleSchema = {
   headline: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh, tươi ngon từ vườn đến tay khách hàng",
   description:
     "Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn, trồng trọt theo tiêu chuẩn VietGAP và OCOP.",
-  image: ["https://mangcaubaden.vn/vuon-nui-ba-den.jpg"],
+  image: ["https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg"],
   datePublished: "2026-08-07T08:00:00+07:00",
   dateModified: "2026-08-15T08:00:00+07:00",
   author: {
@@ -69,7 +69,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+    "@id": "https://mangcaubaden.vn/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
   },
 };
 

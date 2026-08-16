@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "thu hoạch mãng cầu Tây Ninh",
   ],
   alternates: {
-    canonical: "/tin-tuc/mua-mang-cau-ba-den-thang-may/",
+    canonical: "/mua-mang-cau-ba-den-thang-may/",
   },
   openGraph: {
-    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa mãng cầu Tây Ninh | NABADEN",
+    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | NABADEN",
     description:
       "Mùa Mãng Cầu Bà Đen tháng mấy? Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ, thời điểm có trái và kinh nghiệm chọn mua cùng NABADEN.",
-    url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-thang-may/",
+    url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-thang-may/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
@@ -74,7 +74,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-thang-may/",
+    "@id": "https://mangcaubaden.vn/mua-mang-cau-ba-den-thang-may/",
   },
 };
 

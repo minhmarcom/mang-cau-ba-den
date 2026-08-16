@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     "đặc sản Tây Ninh",
   ],
   alternates: {
-    canonical: "/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
+    canonical: "/mang-cau-ba-den-dac-san-tay-ninh/",
   },
   openGraph: {
     title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | NABADEN",
     description:
       "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon và được bảo hộ chỉ dẫn địa lý.",
-    url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
+    url: "https://mangcaubaden.vn/mang-cau-ba-den-dac-san-tay-ninh/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
@@ -68,7 +68,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
+    "@id": "https://mangcaubaden.vn/mang-cau-ba-den-dac-san-tay-ninh/",
   },
 };
 

@@ -217,7 +217,7 @@ export default function HtmlSitemapPage() {
                 </Link>
               </li>
               <li style={{ marginTop: "6px" }}>
-                <Link href="/tin-tuc/cach-bao-quan-mang-cau-ba-den/">
+                <Link href="/cach-bao-quan-mang-cau-ba-den">
                   <strong>Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà</strong>
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
@@ -225,7 +225,7 @@ export default function HtmlSitemapPage() {
                 </span>
               </li>
               <li style={{ marginTop: "6px" }}>
-                <Link href="/tin-tuc/mua-mang-cau-ba-den-thang-may/">
+                <Link href="/mua-mang-cau-ba-den-thang-may">
                   <strong>Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh</strong>
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
@@ -233,7 +233,7 @@ export default function HtmlSitemapPage() {
                 </span>
               </li>
               <li style={{ marginTop: "6px" }}>
-                <Link href="/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/">
+                <Link href="/di-tay-ninh-mua-mang-cau-ba-den-o-dau">
                   <strong>Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn</strong>
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
@@ -241,7 +241,7 @@ export default function HtmlSitemapPage() {
                 </span>
               </li>
               <li style={{ marginTop: "6px" }}>
-                <Link href="/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/">
+                <Link href="/mang-cau-ba-den-dac-san-tay-ninh">
                   <strong>Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh</strong>
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
@@ -249,7 +249,7 @@ export default function HtmlSitemapPage() {
                 </span>
               </li>
               <li style={{ marginTop: "6px" }}>
-                <Link href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/">
+                <Link href="/mua-mang-cau-ba-den-chinh-goc-tay-ninh">
                   <strong>Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon</strong>
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
@@ -257,7 +257,7 @@ export default function HtmlSitemapPage() {
                 </span>
               </li>
               <li style={{ marginTop: "6px" }}>
-                <Link href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/">
+                <Link href="/mang-cau-ba-den-nabaden-dac-san-tay-ninh">
                   <strong>Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà</strong>
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "đặc sản Tây Ninh làm quà",
   ],
   alternates: {
-    canonical: "/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
+    canonical: "/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
   },
   openGraph: {
     title: "Tìm Mua Mãng Cầu Bà Đen Chính Gốc Tây Ninh Ở Đâu? | Tin Tức Nhà Vườn",
     description:
       "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
-    url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
+    url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
@@ -69,7 +69,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
+    "@id": "https://mangcaubaden.vn/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
   },
 };
 

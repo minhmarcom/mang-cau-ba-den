@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "mẹo giữ mãng cầu tươi lâu",
   ],
   alternates: {
-    canonical: "/tin-tuc/cach-bao-quan-mang-cau-ba-den/",
+    canonical: "/cach-bao-quan-mang-cau-ba-den/",
   },
   openGraph: {
     title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà | NABADEN",
     description:
       "Hướng dẫn cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín. NABADEN giải đáp mãng cầu bao lâu chín, có nên để tủ lạnh và cách xử lý trái chín không đều.",
-    url: "https://mangcaubaden.vn/tin-tuc/cach-bao-quan-mang-cau-ba-den/",
+    url: "https://mangcaubaden.vn/cach-bao-quan-mang-cau-ba-den/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
@@ -73,7 +73,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://mangcaubaden.vn/tin-tuc/cach-bao-quan-mang-cau-ba-den/",
+    "@id": "https://mangcaubaden.vn/cach-bao-quan-mang-cau-ba-den/",
   },
 };
 

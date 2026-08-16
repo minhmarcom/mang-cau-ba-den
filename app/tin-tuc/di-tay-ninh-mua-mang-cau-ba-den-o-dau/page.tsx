@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "mua mãng cầu làm quà du lịch",
   ],
   alternates: {
-    canonical: "/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
+    canonical: "/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
   },
   openGraph: {
     title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | NABADEN",
     description:
       "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Khám phá kinh nghiệm chọn mãng cầu ngon, mua làm quà, cách bảo quản, vận chuyển và tìm hiểu Mãng Cầu Bà Đen NABADEN.",
-    url: "https://mangcaubaden.vn/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
+    url: "https://mangcaubaden.vn/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
@@ -76,7 +76,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://mangcaubaden.vn/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
+    "@id": "https://mangcaubaden.vn/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
   },
 };
 

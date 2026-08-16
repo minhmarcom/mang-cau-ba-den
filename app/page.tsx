@@ -364,7 +364,7 @@ export default function Home() {
 
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <a href="#cau-chuyen">Câu chuyện</a>
-          <a href="#san-pham">Sản phẩm</a>
+          <a href="/san-pham">Sản phẩm</a>
           <a href="#hinh-anh">Hình ảnh</a>
           <a href="#dat-hang">Đặt hàng</a>
           <a href="/tin-tuc">Tin tức</a>
@@ -410,7 +410,7 @@ export default function Home() {
                   <span>Câu chuyện vườn nhà</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
-                <a href="#san-pham" onClick={closeMenu}>
+                <a href="/san-pham" onClick={closeMenu}>
                   <span className="mobile-nav-num">02</span>
                   <span>Sản phẩm & Quà biếu</span>
                   <span className="mobile-nav-arrow">→</span>
@@ -922,7 +922,7 @@ export default function Home() {
         </a>
 
         <a
-          href="#san-pham"
+          href="/san-pham"
           className={currentTab === "san-pham" ? "is-active" : ""}
           aria-current={currentTab === "san-pham" ? "page" : undefined}
         >

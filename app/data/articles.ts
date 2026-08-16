@@ -11,7 +11,7 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    slug: "/tin-tuc/cach-bao-quan-mang-cau-ba-den/",
+    slug: "/cach-bao-quan-mang-cau-ba-den",
     title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
     kicker: "Mẹo hay & Bảo quản • Tây Ninh",
     badge: "Kinh nghiệm bảo quản",
@@ -22,7 +22,7 @@ export const articles: Article[] = [
       "Hướng dẫn cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín. Giải đáp mãng cầu bao lâu chín, có nên để tủ lạnh và cách xử lý trái chín không đều.",
   },
   {
-    slug: "/tin-tuc/mua-mang-cau-ba-den-thang-may/",
+    slug: "/mua-mang-cau-ba-den-thang-may",
     title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
     kicker: "Mùa vụ & Nông sản • Tây Ninh",
     badge: "Mùa vụ thu hoạch",
@@ -33,7 +33,7 @@ export const articles: Article[] = [
       "Mùa mãng cầu tháng mấy? Mãng Cầu Bà Đen có quanh năm không? Tìm hiểu mùa vụ tự nhiên, kỹ thuật rải vụ nghịch và cách chọn trái đúng lứa thu hoạch ngon nhất.",
   },
   {
-    slug: "/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
+    slug: "/di-tay-ninh-mua-mang-cau-ba-den-o-dau",
     title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn",
     kicker: "Cẩm nang du lịch • Tây Ninh",
     badge: "Kinh nghiệm du lịch",
@@ -44,7 +44,7 @@ export const articles: Article[] = [
       "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Khám phá kinh nghiệm chọn mãng cầu ngon, mua làm quà du lịch, cách bảo quản, vận chuyển và tìm hiểu Mãng Cầu Bà Đen NABADEN.",
   },
   {
-    slug: "/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
+    slug: "/mang-cau-ba-den-dac-san-tay-ninh",
     title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
     kicker: "Nông sản bản sắc • Tây Ninh",
     badge: "Đặc sản nổi tiếng",
@@ -55,7 +55,7 @@ export const articles: Article[] = [
       "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon, vùng chuyên canh trù phú và được bảo hộ chỉ dẫn địa lý.",
   },
   {
-    slug: "/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
+    slug: "/mua-mang-cau-ba-den-chinh-goc-tay-ninh",
     title: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
     kicker: "Tin tức mùa vụ • Tây Ninh",
     badge: "Kinh nghiệm chọn mua",
@@ -66,7 +66,7 @@ export const articles: Article[] = [
       "Hướng dẫn chi tiết cách nhận biết độ già của trái, phân biệt mãng cầu chuẩn gốc Tây Ninh, quy cách đóng gói chống va đập và bảng phân loại trái ăn gia đình hoặc biếu tặng.",
   },
   {
-    slug: "/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
+    slug: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh",
     title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
     kicker: "Đặc sản quê nhà • Tây Ninh",
     badge: "Văn hóa nhà nông",
