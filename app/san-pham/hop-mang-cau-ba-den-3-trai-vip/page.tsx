@@ -307,37 +307,29 @@ export default function Hop3TraiVipPage() {
 
         {/* RELATED PRODUCTS */}
         <section style={{ margin: "48px 0" }}>
-          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px, 3vw, 26px)", color: "var(--ink)", marginBottom: "20px" }}>
+          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px, 3vw, 26px)", color: "var(--ink)", marginBottom: "16px" }}>
             Xem Thêm Các Quy Cách Đóng Gói Khác
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "20px" }}>
-            <div className="product-item-card" style={{ padding: "20px" }}>
-              <div className="product-item-media" style={{ height: "180px" }}>
-                <img src="/thung-5kg.png" alt="Thùng 5kg Mãng Cầu Bà Đen" loading="lazy" />
+          <div className="related-products-grid">
+            <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
+              <div className="related-product-thumb">
+                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
-              <div className="product-item-info">
-                <span className="product-item-tag">Thưởng Thức & Biếu Tặng</span>
-                <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", margin: "6px 0 8px" }}>Thùng 5KG Tuyển Chọn</h3>
-                <p style={{ fontSize: "14px", color: "var(--ink-muted)", marginBottom: "14px" }}>Thùng carton chuyên dụng bọc xốp từng trái dùng cho gia đình.</p>
-                <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="btn-detail" style={{ fontSize: "13px", padding: "8px 16px" }}>
-                  Xem Thùng 5KG →
-                </Link>
+              <div className="related-product-body">
+                <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
+                <span className="related-product-link">Xem chi tiết →</span>
               </div>
-            </div>
+            </Link>
 
-            <div className="product-item-card" style={{ padding: "20px" }}>
-              <div className="product-item-media" style={{ height: "180px" }}>
-                <img src="/thung-15kg.png" alt="Thùng 15kg Mãng Cầu Bà Đen" loading="lazy" />
+            <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="related-product-card">
+              <div className="related-product-thumb">
+                <img src="/thung-15kg.png" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
               </div>
-              <div className="product-item-info">
-                <span className="product-item-tag">Đơn Sỉ & Vận Chuyển Xa</span>
-                <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", margin: "6px 0 8px" }}>Thùng 15KG Tuyển Chọn</h3>
-                <p style={{ fontSize: "14px", color: "var(--ink-muted)", marginBottom: "14px" }}>Đóng thùng dày dặn 3-5 lớp gửi xe khách & đường bay toàn quốc.</p>
-                <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="btn-detail" style={{ fontSize: "13px", padding: "8px 16px" }}>
-                  Xem Thùng 15KG →
-                </Link>
+              <div className="related-product-body">
+                <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>
+                <span className="related-product-link">Xem chi tiết →</span>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 

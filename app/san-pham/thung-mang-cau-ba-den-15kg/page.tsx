@@ -296,37 +296,29 @@ export default function Thung15kgPage() {
 
         {/* RELATED PRODUCTS */}
         <section style={{ margin: "48px 0" }}>
-          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px, 3vw, 26px)", color: "var(--ink)", marginBottom: "20px" }}>
+          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px, 3vw, 26px)", color: "var(--ink)", marginBottom: "16px" }}>
             Xem Thêm Các Quy Cách Đóng Gói Khác
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "20px" }}>
-            <div className="product-item-card" style={{ padding: "20px" }}>
-              <div className="product-item-media" style={{ height: "180px" }}>
-                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Quà 3 Trái VIP" loading="lazy" />
+          <div className="related-products-grid">
+            <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="related-product-card">
+              <div className="related-product-thumb">
+                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Đặc Biệt (3 Quả VIP)" loading="lazy" />
               </div>
-              <div className="product-item-info">
-                <span className="product-item-tag">Quà Biếu VIP</span>
-                <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", margin: "6px 0 8px" }}>Hộp Đặc Biệt (3 Quả)</h3>
-                <p style={{ fontSize: "14px", color: "var(--ink-muted)", marginBottom: "14px" }}>Hộp quà quai xách cửa sổ bóng kính sang trọng biếu đối tác.</p>
-                <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="btn-detail" style={{ fontSize: "13px", padding: "8px 16px" }}>
-                  Xem Hộp 3 Trái →
-                </Link>
+              <div className="related-product-body">
+                <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
+                <span className="related-product-link">Xem chi tiết →</span>
               </div>
-            </div>
+            </Link>
 
-            <div className="product-item-card" style={{ padding: "20px" }}>
-              <div className="product-item-media" style={{ height: "180px" }}>
-                <img src="/thung-5kg.png" alt="Thùng 5kg Mãng Cầu Bà Đen" loading="lazy" />
+            <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
+              <div className="related-product-thumb">
+                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
-              <div className="product-item-info">
-                <span className="product-item-tag">Thưởng Thức & Biếu Tặng</span>
-                <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", margin: "6px 0 8px" }}>Thùng 5KG Tuyển Chọn</h3>
-                <p style={{ fontSize: "14px", color: "var(--ink-muted)", marginBottom: "14px" }}>Thùng carton chuyên dụng bọc xốp từng trái dùng cho gia đình.</p>
-                <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="btn-detail" style={{ fontSize: "13px", padding: "8px 16px" }}>
-                  Xem Thùng 5KG →
-                </Link>
+              <div className="related-product-body">
+                <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
+                <span className="related-product-link">Xem chi tiết →</span>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 
