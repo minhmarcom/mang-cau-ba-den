@@ -217,6 +217,14 @@ export default function HtmlSitemapPage() {
                 </Link>
               </li>
               <li style={{ marginTop: "6px" }}>
+                <Link href="/tin-tuc/mua-mang-cau-ba-den-thang-may/">
+                  <strong>Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh</strong>
+                </Link>
+                <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
+                  Tìm hiểu thời điểm thu hoạch, chính vụ thuận tự nhiên và kỹ thuật rải vụ nghịch phục vụ quanh năm.
+                </span>
+              </li>
+              <li style={{ marginTop: "6px" }}>
                 <Link href="/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/">
                   <strong>Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn</strong>
                 </Link>

@@ -83,6 +83,12 @@ const collectionSchema = {
       url: "https://mangcaubaden.vn/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
       image: "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
     },
+    {
+      "@type": "NewsArticle",
+      headline: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
+      url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-thang-may/",
+      image: "https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg",
+    },
   ],
 };
 
@@ -107,6 +113,17 @@ const breadcrumbSchema = {
 
 export default function NewsHubPage() {
   const articles = [
+    {
+      slug: "/tin-tuc/mua-mang-cau-ba-den-thang-may/",
+      title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
+      kicker: "Mùa vụ & Nông sản",
+      tag: "Mùa vụ thu hoạch",
+      image: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
+      date: "Tháng 8/2026",
+      readTime: "5 phút đọc",
+      description:
+        "Mùa mãng cầu tháng mấy? Mãng Cầu Bà Đen có quanh năm không? Tìm hiểu mùa vụ tự nhiên, kỹ thuật rải vụ nghịch và cách chọn trái đúng lứa thu hoạch ngon nhất.",
+    },
     {
       slug: "/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
       title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn",
