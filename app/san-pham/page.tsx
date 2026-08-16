@@ -406,30 +406,7 @@ export default function ProductHubPage() {
           </div>
         </section>
 
-        {/* QUALITY COMMITMENT */}
-        <section className="product-highlights">
-          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px, 3vw, 28px)", color: "var(--ink)", marginBottom: "16px" }}>
-            4 Cam Kết Vàng Từ Vườn Mãng Cầu Bà Đen NABADEN
-          </h2>
-          <div className="highlights-grid">
-            <div className="highlight-item">
-              <strong>1. Bao Trái 100% Trên Cành</strong>
-              <p>Trái được bao bọc an toàn từ khi còn nhỏ, cách ly côn trùng và sâu hại, không dư lượng thuốc hóa học độc hại.</p>
-            </div>
-            <div className="highlight-item">
-              <strong>2. Thu Hoạch Đúng Độ Già</strong>
-              <p>Chỉ hái những quả đã nở to mắt na vào sáng sớm, đảm bảo trái tích tụ tối đa lượng đường và chín tự nhiên chuẩn vị.</p>
-            </div>
-            <div className="highlight-item">
-              <strong>3. Đóng Gói Chống Va Đập</strong>
-              <p>Mỗi trái đều được bảo vệ bằng lưới xốp êm ái, xếp cẩn thận vào thùng carton thoáng khí giúp giữ nguyên mẫu mã đẹp.</p>
-            </div>
-            <div className="highlight-item">
-              <strong>4. Đổi Trả & Bảo Hành 1-1</strong>
-              <p>Cam kết hoàn tiền hoặc bù hàng mới nếu sản phẩm bị hư hỏng, dập nát trong quá trình vận chuyển đến tay bạn.</p>
-            </div>
-          </div>
-        </section>
+
 
         {/* FAQ ACCORDION */}
         <section style={{ margin: "48px 0" }}>
