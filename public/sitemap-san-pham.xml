@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://mangcaubaden.vn/san-pham/</loc>
+    <lastmod>2026-08-16T08:30:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/hop-qua-3-trai-vip.jpg</image:loc>
+      <image:title>Danh mục Sản Phẩm Mãng Cầu Bà Đen Tây Ninh NABADEN OCOP</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mangcaubaden.vn/san-pham/hop-mang-cau-ba-den-3-trai-vip/</loc>
+    <lastmod>2026-08-16T08:30:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/hop-qua-3-trai-vip.jpg</image:loc>
+      <image:title>Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Đặc Sản Tây Ninh Cao Cấp</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-5kg/</loc>
+    <lastmod>2026-08-16T08:30:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/thung-5kg.png</image:loc>
+      <image:title>Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn – Đặc Sản Tây Ninh OCOP 3 Sao</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-15kg/</loc>
+    <lastmod>2026-08-16T08:30:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/thung-15kg.png</image:loc>
+      <image:title>Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ &amp; Vận Chuyển Toàn Quốc</image:title>
+    </image:image>
+  </url>
+</urlset>

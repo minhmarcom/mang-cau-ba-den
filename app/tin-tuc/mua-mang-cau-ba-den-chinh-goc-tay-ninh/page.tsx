@@ -171,7 +171,7 @@ export default function ArticlePage() {
 
         <nav className="desktop-nav" aria-label="Điều hướng">
           <Link href="/#cau-chuyen">Câu chuyện</Link>
-          <Link href="/#san-pham">Sản phẩm</Link>
+          <Link href="/san-pham">Sản phẩm</Link>
           <Link href="/#hinh-anh">Hình ảnh</Link>
           <Link href="/#dat-hang">Đặt hàng</Link>
           <Link href="/tin-tuc">Tin tức</Link>

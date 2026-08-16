@@ -6,6 +6,7 @@ const products = [
   {
     no: "01",
     title: "Hộp Đặc Biệt (3 Quả)",
+    slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
     tag: "OCOP 3 Sao • Quà biếu VIP",
     image: "/hop-dac-biet-3-qua.png",
     copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng, bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
@@ -15,6 +16,7 @@ const products = [
   {
     no: "02",
     title: "Thùng 5KG Tuyển Chọn",
+    slug: "/san-pham/thung-mang-cau-ba-den-5kg",
     tag: "OCOP 3 Sao • Thưởng thức & Biếu tặng",
     image: "/thung-5kg.png",
     copy: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ, giữ trọn độ tươi ngọt tự nhiên cho gia đình.",
@@ -23,7 +25,8 @@ const products = [
   {
     no: "03",
     title: "Thùng 15KG Tuyển Chọn",
-    tag: "OCOP 3 Sao",
+    slug: "/san-pham/thung-mang-cau-ba-den-15kg",
+    tag: "OCOP 3 Sao • Đơn sỉ & Vận chuyển xa",
     image: "/thung-15kg.png",
     copy: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển nhanh đến TP.HCM, Hà Nội và toàn quốc.",
     featured: false,
@@ -193,7 +196,7 @@ const productListSchema = {
           "@type": "Offer",
           priceCurrency: "VND",
           availability: "https://schema.org/InStock",
-          url: "https://mangcaubaden.vn/#san-pham",
+          url: "https://mangcaubaden.vn/san-pham/hop-mang-cau-ba-den-3-trai-vip",
         },
         aggregateRating: {
           "@type": "AggregateRating",
@@ -215,7 +218,7 @@ const productListSchema = {
           "@type": "Offer",
           priceCurrency: "VND",
           availability: "https://schema.org/InStock",
-          url: "https://mangcaubaden.vn/#san-pham",
+          url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-5kg",
         },
       },
     },
@@ -232,7 +235,7 @@ const productListSchema = {
           "@type": "Offer",
           priceCurrency: "VND",
           availability: "https://schema.org/InStock",
-          url: "https://mangcaubaden.vn/#san-pham",
+          url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-15kg",
         },
       },
     },
@@ -595,14 +598,47 @@ export default function Home() {
               <p className="product-tag">{product.tag}</p>
               <h3>{product.title}</h3>
               <p>{product.copy}</p>
-              <a
-                href="https://zalo.me/0907215521"
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`Trao đổi về ${product.title} qua Zalo`}
-              >
-                {product.featured ? "Đặt hộp quà qua Zalo" : "Trao đổi qua Zalo"} <span>↗</span>
-              </a>
+              <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginTop: "16px" }}>
+                <a
+                  href={product.slug}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "10px 18px",
+                    borderRadius: "999px",
+                    background: "var(--leaf)",
+                    color: "white",
+                    fontSize: "13.5px",
+                    fontWeight: 600,
+                    textDecoration: "none",
+                  }}
+                  aria-label={`Xem chi tiết ${product.title}`}
+                >
+                  <span>Chi tiết</span>
+                  <span>→</span>
+                </a>
+                <a
+                  href="https://zalo.me/0907215521"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "10px 18px",
+                    borderRadius: "999px",
+                    background: "#e7edbd",
+                    color: "var(--ink)",
+                    fontSize: "13.5px",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                  }}
+                  aria-label={`Trao đổi về ${product.title} qua Zalo`}
+                >
+                  {product.featured ? "Đặt hộp quà" : "Đặt qua Zalo"} <span>↗</span>
+                </a>
+              </div>
             </article>
           ))}
         </div>

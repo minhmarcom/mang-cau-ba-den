@@ -1,0 +1,406 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+const siteUrl = "https://mangcaubaden.vn";
+
+export const metadata: Metadata = {
+  title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Đặc Sản Tây Ninh Cao Cấp",
+  description:
+    "Hộp quà Mãng Cầu Bà Đen 3 trái VIP thượng hạng: Tuyển chọn 3 quả đỉnh chóp tròn đều, vỏ sáng, lót rơm giấy và xốp lưới sang trọng. Chuẩn VietGAP & OCOP 3 sao làm quà biếu đối tác, dâng lễ.",
+  keywords: [
+    "hộp mãng cầu bà đen 3 trái",
+    "hộp quà mãng cầu bà đen vip",
+    "quà biếu mãng cầu tây ninh",
+    "mãng cầu dâng lễ chùa bà",
+    "mãng cầu biếu tết sang trọng",
+    "hộp 3 trái mãng cầu tây ninh",
+  ],
+  alternates: {
+    canonical: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
+  },
+  openGraph: {
+    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Đặc Sản Tây Ninh Cao Cấp",
+    description:
+      "Hộp quà 3 trái mãng cầu Bà Đen tuyển chọn thượng hạng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
+    url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
+    siteName: "Mãng Cầu Bà Đen Tây Ninh",
+    images: [
+      {
+        url: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Hộp quà Mãng Cầu Bà Đen 3 trái VIP sang trọng",
+      },
+    ],
+    locale: "vi_VN",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Đặc Sản Tây Ninh",
+    description:
+      "Tuyển chọn 3 trái mãng cầu Bà Đen VIP sang trọng, vỏ sáng đẹp mắt, chuẩn OCOP 3 sao Tây Ninh.",
+    images: [`${siteUrl}/hop-qua-3-trai-vip.jpg`],
+  },
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP (OCOP 3 Sao)",
+  image: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+  description:
+    "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng, mã đẹp, vỏ sáng, lót rơm giấy và xốp lưới bảo vệ sang trọng.",
+  sku: "MCBD-VIP-03",
+  mpn: "NAB-03VIP",
+  brand: {
+    "@type": "Brand",
+    name: "Mãng Cầu Bà Đen NABADEN",
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "VND",
+    price: "Liên hệ",
+    availability: "https://schema.org/InStock",
+    url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
+    seller: {
+      "@type": "Organization",
+      name: "Mãng Cầu Bà Đen Tây Ninh",
+    },
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "128",
+    bestRating: "5",
+    worstRating: "1",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Trang chủ",
+      item: `${siteUrl}/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Sản phẩm",
+      item: `${siteUrl}/san-pham`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Hộp 3 Trái VIP",
+      item: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
+    },
+  ],
+};
+
+export default function Hop3TraiVipPage() {
+  return (
+    <div className="product-hub-wrap">
+      {/* STRUCTURED DATA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* HEADER */}
+      <header className="site-header" role="banner">
+        <Link className="brand" href="/">
+          <img
+            src="/logo.png"
+            alt="Mãng Cầu Bà Đen NABADEN"
+            className="brand-logo-img"
+            width="130"
+            height="38"
+          />
+          <span className="brand-divider" aria-hidden="true">|</span>
+          <span>
+            Mãng Cầu<br />Bà Đen
+          </span>
+        </Link>
+
+        <nav className="desktop-nav" aria-label="Điều hướng">
+          <Link href="/">Trang chủ</Link>
+          <Link href="/san-pham" className="is-active" style={{ color: "var(--leaf)", fontWeight: 700 }}>
+            Sản phẩm
+          </Link>
+          <Link href="/tin-tuc">Tin tức</Link>
+          <Link href="/#lien-he">Liên hệ</Link>
+        </nav>
+
+        <div className="header-actions">
+          <a
+            className="header-cta"
+            href="https://zalo.me/0907215521"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Tư vấn đặt hộp VIP qua Zalo"
+          >
+            <span>Đặt hộp quà Zalo</span>
+            <span className="btn-arrow">↗</span>
+          </a>
+          <a
+            className="mobile-quick-call"
+            href="tel:0907215521"
+            aria-label="Gọi hotline tư vấn"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      {/* MAIN CONTENT */}
+      <main className="article-container" style={{ maxWidth: "860px" }}>
+        {/* BREADCRUMB */}
+        <nav className="article-breadcrumb" aria-label="Breadcrumb">
+          <Link href="/">Trang chủ</Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/san-pham">Sản phẩm</Link>
+          <span aria-hidden="true">/</span>
+          <span className="current">Hộp 3 Trái VIP</span>
+        </nav>
+
+        {/* PRODUCT HERO */}
+        <div className="product-detail-hero">
+          <div className="product-gallery-main">
+            <img
+              src="/hop-qua-3-trai-vip.jpg"
+              alt="Hộp quà Mãng Cầu Bà Đen 3 trái VIP sang trọng"
+            />
+          </div>
+
+          <div className="product-specs-box">
+            <span className="product-item-tag">OCOP 3 Sao • Quà Biếu VIP</span>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
+              Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP
+            </h1>
+            <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
+              Phiên bản quà tặng cao cấp được thiết kế tinh tế với quai xách trang nhã, ô cửa sổ trong suốt tôn vinh 3 quả mãng cầu tuyển chọn đỉnh chóp từ vườn chân Núi Bà Đen Tây Ninh.
+            </p>
+
+            <h3 className="product-specs-title">Thông Số & Quy Cách Sản Phẩm</h3>
+            <div className="specs-grid">
+              <div className="specs-row">
+                <span className="specs-label">Quy cách:</span>
+                <span className="specs-value">Hộp quà 3 trái VIP + Quai xách</span>
+              </div>
+              <div className="specs-row">
+                <span className="specs-label">Trọng lượng trái:</span>
+                <span className="specs-value">Tuyển chọn quả to tròn đều loại 1</span>
+              </div>
+              <div className="specs-row">
+                <span className="specs-label">Độ ngọt (Brix):</span>
+                <span className="specs-value">19 – 23° Brix (Ngọt thanh tao)</span>
+              </div>
+              <div className="specs-row">
+                <span className="specs-label">Tiêu chuẩn:</span>
+                <span className="specs-value">VietGAP, OCOP 3 sao, 100% bao trái</span>
+              </div>
+              <div className="specs-row">
+                <span className="specs-label">Phụ kiện kèm:</span>
+                <span className="specs-value">Lưới xốp từng trái & rơm lót bảo vệ</span>
+              </div>
+              <div className="specs-row">
+                <span className="specs-label">Độ chín khi giao:</span>
+                <span className="specs-value">Trái già cứng, chín sau 24-48h</span>
+              </div>
+            </div>
+
+            <div className="product-detail-actions">
+              <a
+                href="https://zalo.me/0907215521"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-order-zalo"
+                style={{ width: "100%", justifyContent: "center" }}
+              >
+                <span>Nhắn Zalo Đặt Hộp Quà VIP</span>
+                <span>↗</span>
+              </a>
+              <a
+                href="tel:0907215521"
+                className="btn-call"
+                style={{ width: "100%", justifyContent: "center" }}
+              >
+                <span>Hotline: 0907 215 521</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* DETAILED CONTENT SECTION */}
+        <section className="article-body" style={{ marginTop: "36px" }}>
+          <h2>1. Giá Trị Khác Biệt Của Hộp Quà Mãng Cầu 3 Trái VIP</h2>
+          <p>
+            Không chỉ đơn thuần là món trái cây giải nhiệt, <strong>Hộp quà 3 trái VIP Mãng Cầu Bà Đen</strong> được ra đời nhằm đáp ứng chuẩn mực biếu tặng cao cấp nhất. Mỗi hộp quà chứa đựng sự trân trọng với những ưu điểm nổi bật:
+          </p>
+          <ul>
+            <li>
+              <strong>Tỷ lệ tuyển chọn khắt khe:</strong> Chỉ khoảng 5-10% những quả đẹp nhất trong một lứa thu hoạch mới đủ tiêu chuẩn vào hộp VIP: cuống tươi xanh, mắt na mở to phẳng phiu, vỏ sáng mịn không vết trầy xước.
+            </li>
+            <li>
+              <strong>Đóng gói sang trọng & cứng cáp:</strong> Vỏ hộp carton định hình cao cấp chịu lực, mặt trước có ô bóng kính khoe trọn vẻ đẹp căng mọng của 3 trái bên trong.
+            </li>
+            <li>
+              <strong>Bảo vệ hoàn hảo:</strong> Từng quả được ôm trọn bởi lưới xốp co giãn và lớp rơm giấy mềm mại, đảm bảo không va đập, không cấn dập trong suốt quá trình vận chuyển.
+            </li>
+          </ul>
+
+          <figure className="article-inline-image">
+            <img
+              src="/hop-qua-3-trai-vip.jpg"
+              alt="Cận cảnh hộp quà 3 trái mãng cầu Bà Đen sang trọng với quai xách tiện lợi"
+              loading="lazy"
+            />
+            <figcaption>
+              Mẫu hộp quà 3 trái VIP sang trọng với quai xách chắc chắn, lót rơm giấy và lưới xốp êm ái.
+            </figcaption>
+          </figure>
+
+          <h2>2. Phù Hợp Cho Những Dịp Nào?</h2>
+          <div className="highlights-grid" style={{ marginBottom: "28px" }}>
+            <div className="highlight-item">
+              <strong>Quà Biếu Đối Tác & Khách Hàng VIP</strong>
+              <p>Món quà nông sản bản sắc sang trọng, thể hiện sự tinh tế và trân quý sức khỏe của người nhận.</p>
+            </div>
+            <div className="highlight-item">
+              <strong>Dâng Lễ Chùa Bà & Lễ Hội Tây Ninh</strong>
+              <p>Những trái mãng cầu tròn đầy, tươi tắn dâng lên Điện Bà Linh Sơn Thánh Mẫu cầu bình an, tài lộc.</p>
+            </div>
+            <div className="highlight-item">
+              <strong>Biếu Tặng Gia Đình & Người Thân</strong>
+              <p>Món quà đặc sản Tây Ninh chính gốc dành tặng ông bà, cha mẹ và bạn bè trong các dịp sum vầy.</p>
+            </div>
+          </div>
+
+          <h2>3. Hướng Dẫn Thưởng Thức & Bảo Quản Đúng Cách</h2>
+          <p>
+            Để giữ trọn hương vị dẻo ngọt thanh tao của mãng cầu Bà Đen, bạn nên lưu ý:
+          </p>
+          <ul>
+            <li>
+              <strong>Giai đoạn chờ chín:</strong> Mở nắp hộp để nơi thoáng mát ở nhiệt độ phòng (25-30°C). Trái sẽ mềm dần và tỏa hương thơm dịu sau 1-2 ngày.
+            </li>
+            <li>
+              <strong>Thời điểm thưởng thức ngon nhất:</strong> Khi chạm nhẹ thấy toàn thân quả mềm đều, vỏ ngả màu vàng nhạt là lúc cơm mãng cầu đạt độ dẻo và ngọt thanh nhất.
+            </li>
+            <li>
+              <strong>Bảo quản lạnh:</strong> Khi quả đã chín mềm, có thể cho vào ngăn mát tủ lạnh (6-10°C) để dùng dần trong 3-4 ngày, hương vị mát lạnh càng thêm đậm đà.
+            </li>
+          </ul>
+        </section>
+
+        {/* RELATED PRODUCTS */}
+        <section style={{ margin: "48px 0" }}>
+          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px, 3vw, 26px)", color: "var(--ink)", marginBottom: "20px" }}>
+            Xem Thêm Các Quy Cách Đóng Gói Khác
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "20px" }}>
+            <div className="product-item-card" style={{ padding: "20px" }}>
+              <div className="product-item-media" style={{ height: "180px" }}>
+                <img src="/thung-5kg.png" alt="Thùng 5kg Mãng Cầu Bà Đen" loading="lazy" />
+              </div>
+              <div className="product-item-info">
+                <span className="product-item-tag">Thưởng Thức & Biếu Tặng</span>
+                <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", margin: "6px 0 8px" }}>Thùng 5KG Tuyển Chọn</h3>
+                <p style={{ fontSize: "14px", color: "var(--ink-muted)", marginBottom: "14px" }}>Thùng carton chuyên dụng bọc xốp từng trái dùng cho gia đình.</p>
+                <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="btn-detail" style={{ fontSize: "13px", padding: "8px 16px" }}>
+                  Xem Thùng 5KG →
+                </Link>
+              </div>
+            </div>
+
+            <div className="product-item-card" style={{ padding: "20px" }}>
+              <div className="product-item-media" style={{ height: "180px" }}>
+                <img src="/thung-15kg.png" alt="Thùng 15kg Mãng Cầu Bà Đen" loading="lazy" />
+              </div>
+              <div className="product-item-info">
+                <span className="product-item-tag">Đơn Sỉ & Vận Chuyển Xa</span>
+                <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", margin: "6px 0 8px" }}>Thùng 15KG Tuyển Chọn</h3>
+                <p style={{ fontSize: "14px", color: "var(--ink-muted)", marginBottom: "14px" }}>Đóng thùng dày dặn 3-5 lớp gửi xe khách & đường bay toàn quốc.</p>
+                <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="btn-detail" style={{ fontSize: "13px", padding: "8px 16px" }}>
+                  Xem Thùng 15KG →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA BOX */}
+        <section className="article-cta-box" style={{ marginTop: "40px" }}>
+          <h3>Đặt mua Hộp Quà 3 Trái VIP hôm nay</h3>
+          <p>
+            Liên hệ trực tiếp với vườn để đặt mẫu hộp quà 3 trái tuyển chọn đẹp nhất, hỗ trợ đóng gói và giao nhanh tận nơi.
+          </p>
+          <div className="cta-box-buttons">
+            <a className="btn-call" href="tel:0907215521">
+              <span>Hotline: 0907 215 521</span>
+              <span>↗</span>
+            </a>
+            <a
+              className="btn-zalo"
+              href="https://zalo.me/0907215521"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Nhắn Zalo tư vấn</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      {/* FOOTER */}
+      <footer>
+        <nav className="article-navigation-back" aria-label="Điều hướng quay về">
+          <Link href="/san-pham" className="back-home-link">
+            ← Quay về Danh mục Sản phẩm
+          </Link>
+        </nav>
+
+        <Link className="brand footer-brand" href="/">
+          <img
+            src="/logo.png"
+            alt="Mãng Cầu Bà Đen NABADEN"
+            className="brand-logo-img"
+            width="130"
+            height="38"
+          />
+          <span className="brand-divider" aria-hidden="true" style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
+          <span style={{ color: "white" }}>
+            Mãng Cầu<br />Bà Đen
+          </span>
+        </Link>
+        <p>
+          Đặc sản từ vùng trồng Tây Ninh.
+          <br />
+          <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
+        </p>
+        <div>
+          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
+            Zalo
+          </a>
+          <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
+            TikTok
+          </a>
+        </div>
+        <small>© 2026 Mãng Cầu Bà Đen • Giữ trọn vị quê nhà</small>
+      </footer>
+    </div>
+  );
+}

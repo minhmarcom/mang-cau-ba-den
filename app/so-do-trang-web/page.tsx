@@ -162,27 +162,32 @@ export default function HtmlSitemapPage() {
             </div>
             <ul style={{ paddingLeft: "20px", margin: 0, lineHeight: 1.8 }}>
               <li>
-                <Link href="/#san-pham" style={{ fontWeight: 600, color: "var(--leaf)" }}>
+                <Link href="/san-pham" style={{ fontWeight: 700, color: "var(--leaf)" }}>
+                  Danh mục Sản Phẩm Mãng Cầu Bà Đen (Tổng hợp)
+                </Link>
+              </li>
+              <li style={{ marginTop: "8px" }}>
+                <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" style={{ fontWeight: 600, color: "var(--leaf)" }}>
                   Hộp Đặc Biệt (3 Quả VIP)
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
-                  OCOP 3 Sao • Quà biếu sang trọng
+                  OCOP 3 Sao • Quà biếu sang trọng, đối tác, dâng lễ
                 </span>
               </li>
               <li style={{ marginTop: "8px" }}>
-                <Link href="/#san-pham" style={{ fontWeight: 600, color: "var(--leaf)" }}>
+                <Link href="/san-pham/thung-mang-cau-ba-den-5kg" style={{ fontWeight: 600, color: "var(--leaf)" }}>
                   Thùng 5KG Tuyển Chọn
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
-                  OCOP 3 Sao • Thưởng thức gia đình
+                  OCOP 3 Sao • Thưởng thức gia đình, bọc lưới xốp
                 </span>
               </li>
               <li style={{ marginTop: "8px" }}>
-                <Link href="/#san-pham" style={{ fontWeight: 600, color: "var(--leaf)" }}>
+                <Link href="/san-pham/thung-mang-cau-ba-den-15kg" style={{ fontWeight: 600, color: "var(--leaf)" }}>
                   Thùng 15KG Tuyển Chọn
                 </Link>
                 <span style={{ display: "block", fontSize: "13px", color: "var(--ink-muted)" }}>
-                  OCOP 3 Sao • Đóng gói chuyên dụng đi xa
+                  OCOP 3 Sao • Đơn sỉ, gửi xe khách & máy bay toàn quốc
                 </span>
               </li>
             </ul>
@@ -260,9 +265,14 @@ export default function HtmlSitemapPage() {
                   XML Sitemap chính (sitemap.xml)
                 </a>
               </li>
-              <li>
+              <li style={{ marginTop: "6px" }}>
+                <a href="/sitemap-san-pham.xml" target="_blank" rel="noreferrer">
+                  XML Sitemap sản phẩm (sitemap-san-pham.xml)
+                </a>
+              </li>
+              <li style={{ marginTop: "6px" }}>
                 <a href="/sitemap-tin-tuc.xml" target="_blank" rel="noreferrer">
-                  XML Sitemap Tin tức (sitemap-tin-tuc.xml)
+                  XML Sitemap tin tức (sitemap-tin-tuc.xml)
                 </a>
               </li>
               <li>
