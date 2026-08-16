@@ -367,7 +367,7 @@ export default function Home() {
           <a href="#san-pham">Sản phẩm</a>
           <a href="#hinh-anh">Hình ảnh</a>
           <a href="#dat-hang">Đặt hàng</a>
-          <a href="#tin-tuc">Tin tức</a>
+          <a href="/tin-tuc">Tin tức</a>
           <a href="#lien-he">Liên hệ</a>
         </nav>
 
@@ -425,7 +425,7 @@ export default function Home() {
                   <span>Đặt mua & Quà tặng</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
-                <a href="#tin-tuc" onClick={closeMenu}>
+                <a href="/tin-tuc" onClick={closeMenu}>
                   <span className="mobile-nav-num">05</span>
                   <span>Tin tức từ vườn</span>
                   <span className="mobile-nav-arrow">→</span>
