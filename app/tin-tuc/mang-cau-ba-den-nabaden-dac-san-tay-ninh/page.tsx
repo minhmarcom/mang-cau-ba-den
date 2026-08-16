@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title: "Mãng Cầu Bà Đen – Đặc Sản Tây Ninh: Tươi Ngon Chuẩn Vị Từ Vườn Nhà",
@@ -436,38 +437,7 @@ export default function ArticleBrandPage() {
       </article>
 
       {/* FOOTER */}
-      <footer>
-        <Link className="brand footer-brand" href="/">
-          <img
-            src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN"
-            className="brand-logo-img"
-            width="130"
-            height="38"
-          />
-          <span className="brand-divider" aria-hidden="true" style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
-          <span style={{ color: "white" }}>
-            Mãng Cầu<br />Bà Đen
-          </span>
-        </Link>
-        <p>
-          Đặc sản từ vùng trồng Tây Ninh.
-          <br />
-          <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
-        </p>
-        <div>
-          <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
-            Facebook
-          </a>
-          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
-            Zalo
-          </a>
-          <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
-            TikTok
-          </a>
-        </div>
-        <small>© 2026 Mãng Cầu Bà Đen • Giữ trọn vị quê nhà</small>
-      </footer>
+      <Footer backLink={{ href: "/tin-tuc", label: "Quay về Chuyên mục Tin tức & Cẩm nang" }} />
     </div>
   );
 }

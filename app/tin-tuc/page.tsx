@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { articles } from "../data/articles";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
@@ -242,44 +243,7 @@ export default function NewsHubPage() {
       </main>
 
       {/* FOOTER */}
-      <footer>
-        <nav className="article-navigation-back" aria-label="Điều hướng bài viết">
-          <Link href="/" className="back-home-link">
-            ← Quay về Trang chủ Mãng Cầu Bà Đen
-          </Link>
-        </nav>
-
-        <Link className="brand footer-brand" href="/">
-          <img
-            src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN"
-            className="brand-logo-img"
-            width="130"
-            height="38"
-          />
-          <span className="brand-divider" aria-hidden="true" style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
-          <span style={{ color: "white" }}>
-            Mãng Cầu<br />Bà Đen
-          </span>
-        </Link>
-        <p>
-          Đặc sản từ vùng trồng Tây Ninh.
-          <br />
-          <a href="tel:0907215521">Hotline / Zalo: 0907 215 521</a>
-        </p>
-        <div>
-          <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
-            Facebook
-          </a>
-          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
-            Zalo
-          </a>
-          <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
-            TikTok
-          </a>
-        </div>
-        <small>© 2026 Mãng Cầu Bà Đen • Giữ trọn vị quê nhà</small>
-      </footer>
+      <Footer backLink={{ href: "/", label: "Quay về Trang chủ Mãng Cầu Bà Đen" }} />
     </div>
   );
 }
