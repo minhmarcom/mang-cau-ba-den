@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { articles } from "./data/articles";
 
 const products = [
   {
@@ -765,56 +766,79 @@ export default function Home() {
             </details>
           ))}
         </div>
-        {/* FEATURED SEO ARTICLES LIST */}
-        <div className="featured-articles-grid" style={{ display: "grid", gap: "24px", marginTop: "42px" }}>
-          <div className="featured-article-card">
-            <div className="featured-article-img">
-              <img
-                src="/vuon-nui-ba-den.jpg"
-                alt="Mãng Cầu Bà Đen Đặc Sản Tây Ninh"
-                loading="lazy"
-              />
-              <span className="featured-badge">Bản sắc vùng trồng</span>
+        {/* SYNCHRONIZED ARTICLES LIST */}
+        <div style={{ marginTop: "48px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "24px", flexWrap: "wrap", gap: "16px" }}>
+            <div>
+              <p className="section-kicker" style={{ marginBottom: "6px" }}>Cẩm nang & Kinh nghiệm</p>
+              <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.4rem, 2vw, 1.9rem)", margin: 0, color: "var(--ink)" }}>
+                Bài viết & tin tức mới nhất từ vườn
+              </h3>
             </div>
-            <div className="featured-article-content">
-              <span className="featured-kicker">Đặc sản quê nhà • Tây Ninh</span>
-              <h3>Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà</h3>
-              <p>
-                Khám phá nét độc đáo của mãng cầu Bà Đen: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.
-              </p>
-              <div className="featured-article-action">
-                <a href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/" className="featured-read-btn">
-                  <span>Đọc bài viết chi tiết</span>
-                  <span>→</span>
-                </a>
-                <span className="featured-read-time">4 phút đọc</span>
-              </div>
-            </div>
+            <a
+              href="/tin-tuc"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                fontWeight: 700,
+                color: "var(--leaf)",
+                fontSize: "15px",
+                textDecoration: "none",
+              }}
+            >
+              <span>Xem tất cả bài viết ({articles.length})</span>
+              <span>→</span>
+            </a>
           </div>
 
-          <div className="featured-article-card">
-            <div className="featured-article-img">
-              <img
-                src="/hop-qua-3-trai-vip.jpg"
-                alt="Mua mãng cầu Bà Đen chính gốc Tây Ninh"
-                loading="lazy"
-              />
-              <span className="featured-badge">Kinh nghiệm chọn mua</span>
-            </div>
-            <div className="featured-article-content">
-              <span className="featured-kicker">Tin tức nhà nông • Tây Ninh</span>
-              <h3>Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon</h3>
-              <p>
-                Hướng dẫn chi tiết từ nhà vườn: cách phân biệt trái già, nhận biết độ chín, quy cách đóng gói chống va đập và bảng phân loại mãng cầu theo nhu cầu ăn gia đình hoặc làm quà biếu.
-              </p>
-              <div className="featured-article-action">
-                <a href="/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/" className="featured-read-btn">
-                  <span>Đọc bài viết chi tiết</span>
-                  <span>→</span>
-                </a>
-                <span className="featured-read-time">5 phút đọc</span>
-              </div>
-            </div>
+          <div className="featured-articles-grid" style={{ display: "grid", gap: "24px" }}>
+            {articles.map((art) => (
+              <article key={art.slug} className="featured-article-card">
+                <div className="featured-article-img">
+                  <img
+                    src={art.image}
+                    alt={art.title}
+                    loading="lazy"
+                  />
+                  <span className="featured-badge">{art.badge}</span>
+                </div>
+                <div className="featured-article-content">
+                  <span className="featured-kicker">{art.kicker}</span>
+                  <h3>{art.title}</h3>
+                  <p>{art.description}</p>
+                  <div className="featured-article-action">
+                    <a href={art.slug} className="featured-read-btn">
+                      <span>Đọc bài viết chi tiết</span>
+                      <span>→</span>
+                    </a>
+                    <span className="featured-read-time">{art.readTime} • {art.date}</span>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div style={{ textAlign: "center", marginTop: "32px" }}>
+            <a
+              href="/tin-tuc"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "10px",
+                padding: "14px 28px",
+                borderRadius: "999px",
+                background: "var(--leaf)",
+                color: "white",
+                fontWeight: 700,
+                fontSize: "15px",
+                boxShadow: "0 8px 20px rgba(45,75,52,0.15)",
+                textDecoration: "none",
+              }}
+            >
+              <span>Xem toàn bộ chuyên mục Tin tức & Cẩm nang</span>
+              <span>→</span>
+            </a>
           </div>
         </div>
 

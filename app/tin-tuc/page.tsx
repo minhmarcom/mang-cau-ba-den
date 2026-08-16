@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { articles } from "../data/articles";
 
 export const metadata: Metadata = {
   title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
@@ -20,14 +21,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
     description:
-      "Tổng hợp bài viết tin tức nông sản, hướng dẫn chọn mua mãng cầu Bà Đen chính gốc Tây Ninh chuẩn ngon từ nhà vườn.",
+      "Tổng hợp các bài viết thông tin, tin tức chọn mua và quy trình canh tác mãng cầu Bà Đen chính gốc Tây Ninh.",
     url: "https://mangcaubaden.vn/tin-tuc/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "website",
     images: [
       {
-        url: "/og.png",
+        url: "https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg",
         width: 1200,
         height: 630,
         alt: "Tin tức Mãng Cầu Bà Đen Tây Ninh",
@@ -36,17 +37,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN",
+    title: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh | NABADEN Chính Gốc",
     description:
-      "Khám phá tin tức và kinh nghiệm chọn mua mãng cầu Bà Đen chính gốc Tây Ninh chuẩn sạch, tươi ngon.",
-    images: ["/og.png"],
+      "Tổng hợp các bài viết hướng dẫn chọn mua, đặc điểm trái và cẩm nang nông sản Tây Ninh.",
+    images: ["https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg"],
   },
 };
 
 const collectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Tin Tức & Kinh Nghiệm Mãng Cầu Bà Đen Tây Ninh",
+  name: "Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh",
   description:
     "Tổng hợp các bài viết thông tin, tin tức chọn mua và quy trình canh tác mãng cầu Bà Đen chính gốc Tây Ninh.",
   url: "https://mangcaubaden.vn/tin-tuc/",
@@ -58,38 +59,12 @@ const collectionSchema = {
       url: "https://mangcaubaden.vn/logo.png",
     },
   },
-  hasPart: [
-    {
-      "@type": "NewsArticle",
-      headline: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
-      url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
-      image: "https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg",
-    },
-    {
-      "@type": "NewsArticle",
-      headline: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
-      url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
-      image: "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
-    },
-    {
-      "@type": "NewsArticle",
-      headline: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
-      url: "https://mangcaubaden.vn/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
-      image: "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
-    },
-    {
-      "@type": "NewsArticle",
-      headline: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn",
-      url: "https://mangcaubaden.vn/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
-      image: "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
-    },
-    {
-      "@type": "NewsArticle",
-      headline: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
-      url: "https://mangcaubaden.vn/tin-tuc/mua-mang-cau-ba-den-thang-may/",
-      image: "https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg",
-    },
-  ],
+  hasPart: articles.map((art) => ({
+    "@type": "NewsArticle",
+    headline: art.title,
+    url: `https://mangcaubaden.vn${art.slug}`,
+    image: `https://mangcaubaden.vn${art.image}`,
+  })),
 };
 
 const breadcrumbSchema = {
@@ -112,64 +87,6 @@ const breadcrumbSchema = {
 };
 
 export default function NewsHubPage() {
-  const articles = [
-    {
-      slug: "/tin-tuc/mua-mang-cau-ba-den-thang-may/",
-      title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
-      kicker: "Mùa vụ & Nông sản",
-      tag: "Mùa vụ thu hoạch",
-      image: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
-      date: "Tháng 8/2026",
-      readTime: "5 phút đọc",
-      description:
-        "Mùa mãng cầu tháng mấy? Mãng Cầu Bà Đen có quanh năm không? Tìm hiểu mùa vụ tự nhiên, kỹ thuật rải vụ nghịch và cách chọn trái đúng lứa thu hoạch ngon nhất.",
-    },
-    {
-      slug: "/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
-      title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn",
-      kicker: "Cẩm nang du lịch",
-      tag: "Kinh nghiệm du lịch",
-      image: "/trai-mang-cau-chin-gia-loai-1.jpg",
-      date: "Tháng 8/2026",
-      readTime: "5 phút đọc",
-      description:
-        "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Khám phá kinh nghiệm chọn mãng cầu ngon, mua làm quà du lịch, cách bảo quản, vận chuyển và tìm hiểu Mãng Cầu Bà Đen NABADEN.",
-    },
-    {
-      slug: "/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/",
-      title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
-      kicker: "Nông sản bản sắc",
-      tag: "Đặc sản nổi tiếng",
-      image: "/hai-trieu-trai-mang-cau-chin.jpg",
-      date: "Tháng 8/2026",
-      readTime: "4 phút đọc",
-      description:
-        "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon, vùng chuyên canh trù phú và được bảo hộ chỉ dẫn địa lý.",
-    },
-    {
-      slug: "/tin-tuc/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
-      title: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
-      kicker: "Tin tức mùa vụ",
-      tag: "Kinh nghiệm chọn mua",
-      image: "/thuc-te-dong-goi-nhieu-thung.jpg",
-      date: "Tháng 8/2026",
-      readTime: "5 phút đọc",
-      description:
-        "Hướng dẫn chi tiết cách nhận biết độ già của trái, phân biệt mãng cầu chuẩn gốc Tây Ninh, quy cách đóng gói chống va đập và bảng phân loại trái ăn gia đình hoặc biếu tặng.",
-    },
-    {
-      slug: "/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
-      title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
-      kicker: "Đặc sản quê nhà",
-      tag: "Văn hóa nhà nông",
-      image: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
-      date: "Tháng 8/2026",
-      readTime: "4 phút đọc",
-      description:
-        "Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
-    },
-  ];
-
   return (
     <div className="article-page-wrap">
       <script
