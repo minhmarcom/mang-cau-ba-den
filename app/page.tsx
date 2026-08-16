@@ -35,10 +35,22 @@ const products = [
 
 const gallery = [
   {
+    src: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
+    alt: "Vườn mãng cầu Tây Ninh xanh ngát bọc bao trái an toàn dưới trời xanh",
+    caption: "Vườn mãng cầu bọc bao trái an toàn dưới trời xanh Tây Ninh",
+    shape: "gallery-wide",
+  },
+  {
+    src: "/nong-dan-thu-hoach-mang-cau.jpg",
+    alt: "Nhà nông thu hoạch mãng cầu già trực tiếp tại vườn",
+    caption: "Thu hoạch trái già chọn lọc vào sáng sớm",
+    shape: "gallery-tall",
+  },
+  {
     src: "/vuon-nui-ba-den.jpg",
     alt: "Vườn mãng cầu xanh ngát bao trái trắng dưới chân Núi Bà Đen Tây Ninh",
     caption: "Vườn mãng cầu xanh ngát dưới chân Núi Bà Đen",
-    shape: "gallery-wide",
+    shape: "gallery-half",
   },
   {
     src: "/hop-qua-3-trai-vip.jpg",

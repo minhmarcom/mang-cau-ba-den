@@ -220,11 +220,11 @@ export default function ArticleBrandPage() {
         {/* FEATURED IMAGE */}
         <figure className="article-hero-media">
           <img
-            src="/vuon-nui-ba-den.jpg"
-            alt="Vườn mãng cầu xanh ngát bao trái an toàn dưới chân Núi Bà Đen Tây Ninh"
+            src="/vuon-mang-cau-tay-ninh-bao-trai.jpg"
+            alt="Vườn mãng cầu xanh ngát bao trái an toàn dưới trời xanh Tây Ninh"
           />
           <figcaption>
-            Vùng trồng mãng cầu trù phú trải dài dưới chân ngọn núi thiêng Bà Đen hùng vĩ.
+            Vùng trồng mãng cầu trù phú xanh ngát, từng trái được bao bọc an toàn trên cành dưới bầu trời Tây Ninh.
           </figcaption>
         </figure>
 
@@ -253,43 +253,43 @@ export default function ArticleBrandPage() {
         {/* MAIN BODY */}
         <div className="article-body">
           <section id="tinh-hoa-tay-ninh">
-            <h2>1. Mãng cầu Bà Đen – Tinh hoa từ vùng đất Tây Ninh</h2>
-            <p>
-              Khi nhắc đến ẩm thực và nông sản Tây Ninh, bên cạnh bánh tráng phơi sương Trảng Bàng hay muối tôm nức tiếng, <strong>mãng cầu Bà Đen</strong> luôn giữ vị trí đặc biệt trong lòng người tiêu dùng trên khắp cả nước.
-            </p>
-            <p>
-              Được canh tác trực tiếp dưới chân <strong>Núi Bà Đen</strong> – ngọn núi cao nhất miền Nam Việt Nam, cây mãng cầu hưởng trọn nguồn nước ngầm tự nhiên thanh mát và tầng đất phù sa cổ giàu khoáng chất vi lượng. Điều kiện nhiệt độ ngày nắng chan hòa, đêm se lạnh giúp quả tích tụ hàm lượng đường tự nhiên cao, thịt quả trắng ngà, mịn màng, ít hạt và có vị ngọt thanh tao không gắt.
-            </p>
-          </section>
+          <h2>1. Mãng cầu Bà Đen – Tinh hoa từ vùng đất Tây Ninh</h2>
+          <p>
+            Khi nhắc đến ẩm thực và nông sản Tây Ninh, bên cạnh bánh tráng phơi sương Trảng Bàng hay muối tôm nức tiếng, <strong>mãng cầu Bà Đen</strong> luôn giữ vị trí đặc biệt trong lòng người tiêu dùng trên khắp cả nước.
+          </p>
+          <p>
+            Được canh tác trực tiếp dưới chân <strong>Núi Bà Đen</strong> – ngọn núi cao nhất miền Nam Việt Nam, cây mãng cầu hưởng trọn nguồn nước ngầm tự nhiên thanh mát và tầng đất phù sa cổ giàu khoáng chất vi lượng. Điều kiện nhiệt độ ngày nắng chan hòa, đêm se lạnh giúp quả tích tụ hàm lượng đường tự nhiên cao, thịt quả trắng ngà, mịn màng, ít hạt và có vị ngọt thanh tao không gắt.
+          </p>
+        </section>
 
-          <section id="quy-trinh-bao-trai">
-            <h2>2. Quy trình bao trái an toàn chuẩn VietGAP – OCOP</h2>
-            <p>
-              Chất lượng vượt trội của mãng cầu Bà Đen không chỉ đến từ thiên nhiên ưu đãi mà còn là kết quả của kỹ thuật canh tác tỉ mỉ từ những người nông dân lành nghề:
-            </p>
-            <ul>
-              <li>
-                <strong>Bao trái 100% trên cành:</strong> Ngay từ khi trái còn nhỏ bằng ngón tay cái, nhà vườn đã dùng túi bọc chuyên dụng để bảo vệ trái trước côn trùng, ruồi vàng và thời tiết khắc nghiệt.
-              </li>
-              <li>
-                <strong>Tiêu chuẩn VietGAP & OCOP an toàn:</strong> Quy trình bón phân hữu cơ sinh học, cắt tỉa cành thoáng khí, không sử dụng thuốc hóa học độc hại trong giai đoạn nuôi trái.
-              </li>
-              <li>
-                <strong>Kiểm soát độ ngọt và hàm lượng dinh dưỡng:</strong> Trái phát triển tự nhiên đầy đủ ngày tuổi, giàu Vitamin C, B6, chất xơ và khoáng chất có lợi cho sức khỏe.
-              </li>
-            </ul>
+        <section id="quy-trinh-bao-trai">
+          <h2>2. Quy trình bao trái an toàn chuẩn VietGAP – OCOP</h2>
+          <p>
+            Chất lượng vượt trội của mãng cầu Bà Đen không chỉ đến từ thiên nhiên ưu đãi mà còn là kết quả của kỹ thuật canh tác tỉ mỉ từ những người nông dân lành nghề:
+          </p>
+          <ul>
+            <li>
+              <strong>Bao trái 100% trên cành:</strong> Ngay từ khi trái còn nhỏ bằng ngón tay cái, nhà vườn đã dùng túi bọc chuyên dụng để bảo vệ trái trước côn trùng, ruồi vàng và thời tiết khắc nghiệt.
+            </li>
+            <li>
+              <strong>Tiêu chuẩn VietGAP & OCOP an toàn:</strong> Quy trình bón phân hữu cơ sinh học, cắt tỉa cành thoáng khí, không sử dụng thuốc hóa học độc hại trong giai đoạn nuôi trái.
+            </li>
+            <li>
+              <strong>Kiểm soát độ ngọt và hàm lượng dinh dưỡng:</strong> Trái phát triển tự nhiên đầy đủ ngày tuổi, giàu Vitamin C, B6, chất xơ và khoáng chất có lợi cho sức khỏe.
+            </li>
+          </ul>
 
-            <figure className="article-inline-image">
-              <img
-                src="/thuc-te-thu-hoach.jpg"
-                alt="Nhà nông tỉ mỉ thu hoạch từng trái mãng cầu tươi tại vườn Tây Ninh"
-                loading="lazy"
-              />
-              <figcaption>
-                Nhà vườn cẩn trọng thu hoạch từng trái đạt chuẩn độ già vào sáng sớm tinh mơ.
-              </figcaption>
-            </figure>
-          </section>
+          <figure className="article-inline-image">
+            <img
+              src="/nong-dan-thu-hoach-mang-cau.jpg"
+              alt="Nhà nông tỉ mỉ thu hoạch từng trái mãng cầu tươi tại vườn Tây Ninh"
+              loading="lazy"
+            />
+            <figcaption>
+              Nhà vườn cẩn trọng thu hoạch từng trái đạt chuẩn độ già vào sáng sớm tinh mơ.
+            </figcaption>
+          </figure>
+        </section>
 
           <section id="thu-hoach-trong-ngay">
             <h2>3. Thu hoạch trong ngày – Gửi trọn sự tươi ngon</h2>
