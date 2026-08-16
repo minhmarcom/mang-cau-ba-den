@@ -271,7 +271,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang chủ", item: "https://mangcaubaden.vn/" },
     { "@type": "ListItem", position: 2, name: "Sản phẩm Trái Tươi", item: "https://mangcaubaden.vn/#san-pham" },
-    { "@type": "ListItem", position: 3, name: "Tin tức từ vườn", item: "https://mangcaubaden.vn/tin-tuc" },
+    { "@type": "ListItem", position: 3, name: "Tin tức từ vườn", item: "https://mangcaubaden.vn/#tin-tuc" },
     { "@type": "ListItem", position: 4, name: "Liên hệ mua hàng", item: "https://mangcaubaden.vn/#lien-he" },
   ],
 };
@@ -279,8 +279,16 @@ const breadcrumbSchema = {
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("top");
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [currentChapter, setCurrentChapter] = useState({
+    num: 1,
+    total: 6,
+    id: "top",
+    name: "Giới thiệu & Bìa",
+    nextName: "Câu chuyện vườn nhà",
+    nextId: "cau-chuyen",
+  });
 
-  // Prevent background scroll when mobile menu is open
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
@@ -293,21 +301,37 @@ export default function Home() {
   }, [menuOpen]);
 
   useEffect(() => {
-    const sectionIds = ["top", "cau-chuyen", "san-pham", "hinh-anh", "dat-hang", "tin-tuc", "lien-he"];
-    const updateActiveSection = () => {
+    const chapters = [
+      { id: "top", num: 1, name: "Giới thiệu & Bìa", nextName: "Câu chuyện vườn nhà", nextId: "cau-chuyen" },
+      { id: "cau-chuyen", num: 2, name: "Câu chuyện vườn nhà", nextName: "Sản phẩm & Báo giá", nextId: "san-pham" },
+      { id: "san-pham", num: 3, name: "Sản phẩm tuyển chọn", nextName: "Hình ảnh thực tế", nextId: "hinh-anh" },
+      { id: "hinh-anh", num: 4, name: "Hình ảnh thực tế", nextName: "Tin tức từ vườn", nextId: "tin-tuc" },
+      { id: "tin-tuc", num: 5, name: "Tin tức & Cẩm nang", nextName: "Kênh liên hệ mua", nextId: "lien-he" },
+      { id: "lien-he", num: 6, name: "Liên hệ & Đặt hàng", nextName: "Hết trang", nextId: "top" },
+    ];
+
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) {
+        const percent = Math.min(100, Math.max(0, Math.round((window.scrollY / totalHeight) * 100)));
+        setScrollProgress(percent);
+      }
+
       const marker = window.scrollY + window.innerHeight * 0.35;
-      let current = "top";
-      sectionIds.forEach((id) => {
-        const section = document.getElementById(id);
-        if (section && section.offsetTop <= marker) {
-          current = id;
+      let activeChap = chapters[0];
+      chapters.forEach((chap) => {
+        const el = document.getElementById(chap.id);
+        if (el && el.offsetTop <= marker) {
+          activeChap = chap;
         }
       });
-      setActiveSection(current);
+      setCurrentChapter({ ...activeChap, total: 6 });
+      setActiveSection(activeChap.id);
     };
-    updateActiveSection();
-    window.addEventListener("scroll", updateActiveSection, { passive: true });
-    return () => window.removeEventListener("scroll", updateActiveSection);
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
@@ -347,6 +371,63 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
+      {/* TOP SLIM MAGAZINE READING PROGRESS BAR */}
+      <div
+        className="magazine-progress-bar-container"
+        role="progressbar"
+        aria-valuenow={scrollProgress}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`Tiến độ đọc: ${scrollProgress}%`}
+      >
+        <div
+          className="magazine-progress-bar-fill"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
+
+      {/* FLOATING MAGAZINE PAGE BADGE (SỐ TRANG TẠP CHÍ) */}
+      <div className={`magazine-page-badge ${scrollProgress > 3 ? "is-visible" : ""}`}>
+        <div className="magazine-badge-inner">
+          <div className="magazine-page-number">
+            <span className="magazine-badge-tag">Tạp chí</span>
+            <strong>Trang 0{currentChapter.num}</strong>
+            <span className="magazine-total">/ 0{currentChapter.total}</span>
+          </div>
+          <div className="magazine-page-info">
+            <span className="magazine-chap-name">{currentChapter.name}</span>
+            <div className="magazine-progress-dots" aria-hidden="true">
+              {[1, 2, 3, 4, 5, 6].map((p) => (
+                <span
+                  key={p}
+                  className={`mag-dot ${
+                    p === currentChapter.num
+                      ? "is-current"
+                      : p < currentChapter.num
+                      ? "is-done"
+                      : ""
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+          {currentChapter.num < currentChapter.total ? (
+            <a
+              href={`#${currentChapter.nextId}`}
+              className="magazine-next-btn"
+              aria-label={`Xem tiếp ${currentChapter.nextName}`}
+            >
+              <span>Tiếp: {currentChapter.nextName}</span>
+              <span className="mag-arrow">↓</span>
+            </a>
+          ) : (
+            <span className="magazine-done-tag">
+              <span>✓ Đã xem trọn vẹn</span>
+            </span>
+          )}
+        </div>
+      </div>
+
       {/* STICKY APP HEADER */}
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
@@ -365,10 +446,10 @@ export default function Home() {
 
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <a href="#cau-chuyen">Câu chuyện</a>
-          <a href="/san-pham">Sản phẩm</a>
+          <a href="#san-pham">Sản phẩm</a>
           <a href="#hinh-anh">Hình ảnh</a>
           <a href="#dat-hang">Đặt hàng</a>
-          <a href="/tin-tuc">Tin tức</a>
+          <a href="#tin-tuc">Tin tức</a>
           <a href="#lien-he">Liên hệ</a>
         </nav>
 
@@ -411,7 +492,7 @@ export default function Home() {
                   <span>Câu chuyện vườn nhà</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
-                <a href="/san-pham" onClick={closeMenu}>
+                <a href="#san-pham" onClick={closeMenu}>
                   <span className="mobile-nav-num">02</span>
                   <span>Sản phẩm & Quà biếu</span>
                   <span className="mobile-nav-arrow">→</span>
@@ -426,7 +507,7 @@ export default function Home() {
                   <span>Đặt mua & Quà tặng</span>
                   <span className="mobile-nav-arrow">→</span>
                 </a>
-                <a href="/tin-tuc" onClick={closeMenu}>
+                <a href="#tin-tuc" onClick={closeMenu}>
                   <span className="mobile-nav-num">05</span>
                   <span>Tin tức từ vườn</span>
                   <span className="mobile-nav-arrow">→</span>
@@ -923,7 +1004,7 @@ export default function Home() {
         </a>
 
         <a
-          href="/san-pham"
+          href="#san-pham"
           className={currentTab === "san-pham" ? "is-active" : ""}
           aria-current={currentTab === "san-pham" ? "page" : undefined}
         >
@@ -968,7 +1049,7 @@ export default function Home() {
         </a>
 
         <a
-          href="/tin-tuc"
+          href="#tin-tuc"
           className={currentTab === "tin-tuc" ? "is-active" : ""}
           aria-current={currentTab === "tin-tuc" ? "page" : undefined}
         >

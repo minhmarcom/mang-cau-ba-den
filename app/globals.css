@@ -3323,4 +3323,185 @@ footer {
   }
 }
 
+/* =========================================================
+   EDITORIAL MAGAZINE READING INDICATOR & PAGE COUNTER
+   ========================================================= */
+
+/* Top Slim Gradient Progress Line */
+.magazine-progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.magazine-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1e452a 0%, #2e7d32 50%, #10b981 100%);
+  transition: width 0.12s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+/* Floating Magazine Page Counter & Chapter Pill */
+.magazine-page-badge {
+  position: fixed;
+  bottom: 84px;
+  right: 20px;
+  z-index: 900;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  transform: translateY(12px) scale(0.96);
+  pointer-events: none;
+}
+
+.magazine-page-badge.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.magazine-badge-inner {
+  background: rgba(20, 42, 27, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 12px 30px rgba(10, 25, 16, 0.35);
+  color: #ffffff;
+}
+
+.magazine-page-number {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  padding-right: 12px;
+}
+
+.magazine-badge-tag {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a8d5b5;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.magazine-page-number strong {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.magazine-total {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+.magazine-page-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.magazine-chap-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #e2ede5;
+  white-space: nowrap;
+}
+
+.magazine-progress-dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+}
+
+.mag-dot.is-current {
+  width: 16px;
+  background: #34d399;
+}
+
+.mag-dot.is-done {
+  background: rgba(52, 211, 153, 0.7);
+}
+
+.magazine-next-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.magazine-next-btn:hover {
+  background: var(--leaf, #2d5a3c);
+  border-color: #34d399;
+  transform: translateY(-1px);
+}
+
+.mag-arrow {
+  font-size: 12px;
+  animation: bounceDown 1.5s infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(2px); }
+}
+
+.magazine-done-tag {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.15);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+@media (max-width: 680px) {
+  .magazine-page-badge {
+    bottom: 74px;
+    right: 12px;
+    left: 12px;
+  }
+  .magazine-badge-inner {
+    padding: 8px 12px;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .magazine-next-btn span:first-child {
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
 
