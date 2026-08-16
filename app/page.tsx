@@ -386,48 +386,6 @@ export default function Home() {
         />
       </div>
 
-      {/* FLOATING MAGAZINE PAGE BADGE (SỐ TRANG TẠP CHÍ) */}
-      <div className={`magazine-page-badge ${scrollProgress > 3 ? "is-visible" : ""}`}>
-        <div className="magazine-badge-inner">
-          <div className="magazine-page-number">
-            <span className="magazine-badge-tag">Tạp chí</span>
-            <strong>Trang 0{currentChapter.num}</strong>
-            <span className="magazine-total">/ 0{currentChapter.total}</span>
-          </div>
-          <div className="magazine-page-info">
-            <span className="magazine-chap-name">{currentChapter.name}</span>
-            <div className="magazine-progress-dots" aria-hidden="true">
-              {[1, 2, 3, 4, 5, 6].map((p) => (
-                <span
-                  key={p}
-                  className={`mag-dot ${
-                    p === currentChapter.num
-                      ? "is-current"
-                      : p < currentChapter.num
-                      ? "is-done"
-                      : ""
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-          {currentChapter.num < currentChapter.total ? (
-            <a
-              href={`#${currentChapter.nextId}`}
-              className="magazine-next-btn"
-              aria-label={`Xem tiếp ${currentChapter.nextName}`}
-            >
-              <span>Tiếp: {currentChapter.nextName}</span>
-              <span className="mag-arrow">↓</span>
-            </a>
-          ) : (
-            <span className="magazine-done-tag">
-              <span>✓ Đã xem trọn vẹn</span>
-            </span>
-          )}
-        </div>
-      </div>
-
       {/* STICKY APP HEADER */}
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
@@ -443,6 +401,13 @@ export default function Home() {
             Mãng Cầu<br />Bà Đen
           </span>
         </a>
+
+        {/* SUBTLE MAGAZINE CHAPTER INDICATOR IN HEADER */}
+        <div className="header-magazine-tag" aria-label={`Trang ${currentChapter.num} trên 6: ${currentChapter.name}`}>
+          <span className="header-mag-num">Trang 0{currentChapter.num} / 06</span>
+          <span className="header-mag-divider" aria-hidden="true">•</span>
+          <span className="header-mag-name">{currentChapter.name}</span>
+        </div>
 
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <a href="#cau-chuyen">Câu chuyện</a>
@@ -560,7 +525,10 @@ export default function Home() {
         />
         <div className="hero-shade" />
         <div className="hero-content">
-          <p className="eyebrow">Nông sản quê mình • Tây Ninh</p>
+          <p className="eyebrow">
+            <span className="mag-kicker-tag">TRANG 01 / 06</span>
+            Nông sản quê mình • Tây Ninh
+          </p>
           <h1>
             <span className="hero-line-1">Trái ngọt</span>
             <em className="hero-line-2">từ vườn nhà.</em>
@@ -588,7 +556,10 @@ export default function Home() {
       {/* STORY SECTION */}
       <section className="intro section-pad" id="cau-chuyen">
         <div>
-          <p className="section-kicker">Chuyện của vườn nhà</p>
+          <p className="section-kicker">
+            <span className="mag-kicker-tag">TRANG 02 / 06</span>
+            Chuyện của vườn nhà
+          </p>
           <h2>
             <span className="heading-line">Lớn lên</span>
             <em className="heading-line">từ đất lành.</em>
@@ -669,7 +640,10 @@ export default function Home() {
       <section className="products section-pad" id="san-pham">
         <div className="section-head">
           <div>
-            <p className="section-kicker">Từ khu vườn xanh</p>
+            <p className="section-kicker">
+              <span className="mag-kicker-tag">TRANG 03 / 06</span>
+              Từ khu vườn xanh
+            </p>
             <h2>
               <span className="heading-line">Gói ghém</span>
               <em className="heading-line">vị quê.</em>
@@ -745,7 +719,10 @@ export default function Home() {
       <section className="real-gallery section-pad" id="hinh-anh">
         <div className="gallery-heading">
           <div>
-            <p className="section-kicker">Hình ảnh thực tế</p>
+            <p className="section-kicker">
+              <span className="mag-kicker-tag">TRANG 04 / 06</span>
+              Hình ảnh thực tế
+            </p>
             <h2>
               <span className="heading-line">Một ngày</span>
               <em className="heading-line">tại vườn.</em>
@@ -826,7 +803,10 @@ export default function Home() {
       <section className="seo-guide section-pad" id="tin-tuc">
         <div className="seo-guide-heading">
           <div>
-            <p className="section-kicker">Tin tức từ vườn</p>
+            <p className="section-kicker">
+              <span className="mag-kicker-tag">TRANG 05 / 06</span>
+              Tin tức từ vườn
+            </p>
             <h2>
               <span className="heading-line">Hiểu trái ngon.</span>
               <em className="heading-line">Chọn đúng mùa.</em>
@@ -938,7 +918,10 @@ export default function Home() {
       {/* CONTACT SECTION */}
       <section className="contact" id="lien-he">
         <div className="contact-title">
-          <p className="section-kicker light">Kết nối từ hôm nay</p>
+          <p className="section-kicker light">
+            <span className="mag-kicker-tag">TRANG 06 / 06</span>
+            Kết nối từ hôm nay
+          </p>
           <h2>
             Bạn muốn<br />
             <em>cùng đi xa?</em>
