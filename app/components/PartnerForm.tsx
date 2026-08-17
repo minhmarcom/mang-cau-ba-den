@@ -2,6 +2,84 @@
 
 import React, { useState } from "react";
 
+const VIETNAM_PROVINCES = [
+  "An Giang",
+  "Bà Rịa - Vũng Tàu",
+  "Bắc Giang",
+  "Bắc Kạn",
+  "Bạc Liêu",
+  "Bắc Ninh",
+  "Bến Tre",
+  "Bình Định",
+  "Bình Dương",
+  "Bình Phước",
+  "Bình Thuận",
+  "Cà Mau",
+  "Cần Thơ",
+  "Cao Bằng",
+  "Đà Nẵng",
+  "Đắk Lắk",
+  "Đắk Nông",
+  "Điện Biên",
+  "Đồng Nai",
+  "Đồng Tháp",
+  "Gia Lai",
+  "Hà Giang",
+  "Hà Nam",
+  "Hà Nội",
+  "Hà Tĩnh",
+  "Hải Dương",
+  "Hải Phòng",
+  "Hậu Giang",
+  "Hòa Bình",
+  "Hưng Yên",
+  "Khánh Hòa",
+  "Kiên Giang",
+  "Kon Tum",
+  "Lai Châu",
+  "Lâm Đồng",
+  "Lạng Sơn",
+  "Lào Cai",
+  "Long An",
+  "Nam Định",
+  "Nghệ An",
+  "Ninh Bình",
+  "Ninh Thuận",
+  "Phú Thọ",
+  "Phú Yên",
+  "Quảng Bình",
+  "Quảng Nam",
+  "Quảng Ngãi",
+  "Quảng Ninh",
+  "Quảng Trị",
+  "Sóc Trăng",
+  "Sơn La",
+  "Tây Ninh",
+  "Thái Bình",
+  "Thái Nguyên",
+  "Thanh Hóa",
+  "Thừa Thiên Huế",
+  "Tiền Giang",
+  "TP. Hồ Chí Minh",
+  "Trà Vinh",
+  "Tuyên Quang",
+  "Vĩnh Long",
+  "Vĩnh Phúc",
+  "Yên Bái",
+];
+
+const PROVINCES_POPULAR = [
+  "TP. Hồ Chí Minh",
+  "Hà Nội",
+  "Tây Ninh",
+  "Bình Dương",
+  "Đồng Nai",
+  "Bà Rịa - Vũng Tàu",
+  "Đà Nẵng",
+  "Cần Thơ",
+  "Hải Phòng",
+];
+
 interface PartnerFormProps {
   defaultType?: "ctv" | "npp";
 }
@@ -35,14 +113,26 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
       setErrorMessage("Vui lòng nhập số điện thoại (có Zalo) hợp lệ.");
       return;
     }
+    if (!province) {
+      setErrorMessage("Vui lòng chọn Tỉnh / Thành phố bạn đang sinh sống.");
+      return;
+    }
 
     setIsLoading(true);
 
     try {
+      const currentHost = typeof window !== "undefined" ? window.location.hostname : "";
+      const sourceWebsite = currentHost.includes("mangcaubaden")
+        ? "mangcaubaden.vn"
+        : currentHost.includes("nabaden")
+        ? "nabaden.vn"
+        : currentHost || "nabaden.vn";
+
       const res = await fetch("/api/partner-register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          sourceWebsite,
           partnerType,
           fullName: fullName.trim(),
           phone: phone.trim(),
@@ -104,6 +194,7 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 setIsSuccess(false);
                 setFullName("");
                 setPhone("");
+                setProvince("");
                 setAddress("");
                 setNotes("");
               }}
@@ -208,15 +299,29 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
               <label htmlFor="partner-province" className="form-label">
                 Tỉnh / Thành phố sinh sống <span className="text-required">*</span>
               </label>
-              <input
+              <select
                 id="partner-province"
-                type="text"
-                className="form-input"
-                placeholder="Ví dụ: TP. Hồ Chí Minh, Hà Nội, Tây Ninh..."
+                className="form-select"
                 value={province}
                 onChange={(e) => setProvince(e.target.value)}
                 required
-              />
+              >
+                <option value="">-- Chọn Tỉnh / Thành phố --</option>
+                <optgroup label="⭐ Tỉnh / Thành phố trọng điểm">
+                  {PROVINCES_POPULAR.map((p) => (
+                    <option key={`pop-${p}`} value={p}>
+                      {p}
+                    </option>
+                  ))}
+                </optgroup>
+                <optgroup label="📋 Danh sách 63 Tỉnh / Thành phố (A - Z)">
+                  {VIETNAM_PROVINCES.map((p) => (
+                    <option key={`all-${p}`} value={p}>
+                      {p}
+                    </option>
+                  ))}
+                </optgroup>
+              </select>
             </div>
 
             <div className="form-group">
@@ -240,13 +345,13 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
 
           <div className="form-group">
             <label htmlFor="partner-address" className="form-label">
-              Địa chỉ chi tiết (nhận hàng mẫu / hợp đồng nếu có)
+              Địa chỉ chi tiết <span style={{ fontWeight: 600, color: "#047857", fontSize: "0.86rem" }}>(Vui lòng ghi địa chỉ chưa sáp nhập)</span>
             </label>
             <input
               id="partner-address"
               type="text"
               className="form-input"
-              placeholder="Số nhà, tên đường, phường/xã, quận/huyện..."
+              placeholder="Số nhà, tên đường, phường/xã, quận/huyện (Vui lòng ghi địa chỉ chưa sáp nhập)..."
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             />

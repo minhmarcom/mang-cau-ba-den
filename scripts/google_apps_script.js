@@ -1,43 +1,33 @@
 /**
  * GOOGLE APPS SCRIPT CHO MÃNG CẦU BÀ ĐEN NABADEN
+ * Tự động phân loại đơn từ: nabaden.vn hoặc mangcaubaden.vn
  * ======================================================
- * HƯỚNG DẪN CÀI ĐẶT (CHỈ MẤT 1 PHÚT):
- * 1. Mở trang tính Google (Google Sheets) mới hoặc có sẵn.
+ * HƯỚNG DẪN CẬP NHẬT TRANG TÍNH:
+ * 1. Mở trang Google Sheets của bạn.
  * 2. Trên thanh menu, chọn: Tiện ích mở rộng (Extensions) -> Apps Script.
- * 3. Xóa hết mã cũ trong trình soạn thảo, dán toàn bộ đoạn mã bên dưới vào.
- * 4. Bấm nút "Triển khai" (Deploy) -> "Tùy chọn triển khai mới" (New deployment).
- * 5. Chọn loại: "Ứng dụng web" (Web app).
- *    - Mô tả: "Nabaden Partner Form Webhook"
- *    - Người có quyền truy cập (Who has access): Chọn "Bất kỳ ai" (Anyone).
- * 6. Bấm "Triển khai" (Deploy), cấp quyền và copy đường link "URL ứng dụng web".
- * 7. Dán URL vừa nhận được vào file `.env.local` với tên:
- *    GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/xxxx/exec
+ * 3. Xóa toàn bộ mã cũ, dán toàn bộ đoạn mã bên dưới vào.
+ * 4. Bấm biểu tượng Lưu (Save) 💾.
+ * 5. Bấm nút "Triển khai" (Deploy) -> "Quản lý bản triển khai" (Manage deployments).
+ * 6. Chọn biểu tượng bút chì (Edit) -> Ở mục Phiên bản (Version) chọn "Phiên bản mới" (New version) -> Bấm "Triển khai" (Deploy).
  */
 
 function setupSheetHeaders(sheet) {
   const headers = [
     "Thời Gian Đăng Ký",
+    "Website Nguồn",
     "Loại Đối Tác",
     "Họ Và Tên",
     "Số Điện Thoại (Zalo)",
     "Tỉnh / Thành Phố",
     "Địa Chỉ Chi Tiết",
     "Kênh Bán / Kinh Nghiệm",
-    "Ghi Chú / Nhu Cầu",
-    "Trạng Thái",
-    "Xem Đơn",
-    "Hỗ Trợ Cắt Trái",
-    "Đóng Thùng Xốp",
-    "Ship / Vận Chuyển",
-    "Gửi Đơn / Thu Tiền (COD)",
-    "Lợi Nhuận / Hoa Hồng",
-    "Ghi Chú Đối Soát"
+    "Ghi Chú / Nhu Cầu"
   ];
 
   if (sheet.getLastRow() === 0) {
     sheet.appendRow(headers);
     
-    // Định dạng dòng tiêu đề
+    // Định dạng dòng tiêu đề (Màu xanh thương hiệu NABADEN)
     const headerRange = sheet.getRange(1, 1, 1, headers.length);
     headerRange.setBackground("#1b4d2b");
     headerRange.setFontColor("#ffffff");
@@ -78,24 +68,23 @@ function doPost(e) {
 
     const now = new Date();
     const timeFormatted = Utilities.formatDate(now, "Asia/Ho_Chi_Minh", "dd/MM/yyyy HH:mm:ss");
+    
+    // Phân loại website nguồn: nabaden.vn hoặc mangcaubaden.vn
+    const website = data.website || "nabaden.vn";
+    
+    // Đảm bảo số điện thoại luôn giữ số 0 ở đầu khi vào Google Sheet
+    const phoneFormatted = data.phone ? `'${String(data.phone).replace(/^'/, "")}` : "";
 
     const row = [
       timeFormatted,
+      website,
       data.partnerType || "Cộng Tác Viên (CTV)",
       data.fullName || "",
-      data.phone || "",
+      phoneFormatted,
       data.province || "",
       data.address || "",
       data.salesChannel || "Bán online / Mạng xã hội",
-      data.notes || "",
-      "Mới đăng ký",       // Trạng thái ban đầu
-      "Chưa xem",          // Xem đơn
-      "Chờ lên đơn",       // Hỗ trợ cắt trái
-      "Chưa đóng",         // Đóng thùng xốp
-      "Chờ chuyển",        // Ship / Vận chuyển
-      "Chờ thu hộ",        // Gửi đơn / Thu tiền COD
-      "Chờ đối soát",      // Lợi nhuận / Hoa hồng
-      ""                   // Ghi chú đối soát
+      data.notes || ""
     ];
 
     sheet.appendRow(row);
@@ -105,15 +94,24 @@ function doPost(e) {
     range.setVerticalAlignment("middle");
     range.setFontSize(10);
     
-    // Đổi màu nền nhẹ cho dòng mới theo loại đối tác
-    if ((data.partnerType || "").includes("Nhà Phân Phối") || (data.partnerType || "").includes("NPP")) {
-      sheet.getRange(lastRow, 2).setBackground("#fef3c7").setFontColor("#92400e").setFontWeight("bold");
+    // Định dạng màu cho cột Website Nguồn để dễ nhìn và phân biệt
+    const webCell = sheet.getRange(lastRow, 2);
+    if (website.includes("mangcaubaden")) {
+      webCell.setBackground("#e0f2fe").setFontColor("#0369a1").setFontWeight("bold"); // Xanh dương cho mangcaubaden.vn
     } else {
-      sheet.getRange(lastRow, 2).setBackground("#d1fae5").setFontColor("#065f46").setFontWeight("bold");
+      webCell.setBackground("#f0fdf4").setFontColor("#15803d").setFontWeight("bold"); // Xanh lá cây cho nabaden.vn
+    }
+
+    // Định dạng màu cho cột Loại Đối Tác
+    const typeCell = sheet.getRange(lastRow, 3);
+    if ((data.partnerType || "").includes("Nhà Phân Phối") || (data.partnerType || "").includes("NPP")) {
+      typeCell.setBackground("#fef3c7").setFontColor("#92400e").setFontWeight("bold");
+    } else {
+      typeCell.setBackground("#d1fae5").setFontColor("#065f46").setFontWeight("bold");
     }
 
     return ContentService
-      .createTextOutput(JSON.stringify({ result: "success", message: "Đăng ký thành công!", row: lastRow }))
+      .createTextOutput(JSON.stringify({ result: "success", message: "Đăng ký thành công!", website: website, row: lastRow }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (error) {
@@ -127,6 +125,6 @@ function doPost(e) {
 
 function doGet(e) {
   return ContentService
-    .createTextOutput(JSON.stringify({ status: "active", message: "Nabaden Partner Google Sheets Webhook is ready!" }))
+    .createTextOutput(JSON.stringify({ status: "active", message: "Nabaden Partner Webhook ready!" }))
     .setMimeType(ContentService.MimeType.JSON);
 }

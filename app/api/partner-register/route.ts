@@ -1,7 +1,7 @@
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { partnerType, fullName, phone, province, address, salesChannel, notes } = body;
+    const { partnerType, fullName, phone, province, address, salesChannel, notes, sourceWebsite } = body;
 
     if (!fullName || !phone) {
       return Response.json(
@@ -10,7 +10,29 @@ export async function POST(request: Request) {
       );
     }
 
+    // Nhận diện website nguồn (nabaden.vn hoặc mangcaubaden.vn)
+    const host = request.headers.get("host") || "";
+    const referer = request.headers.get("referer") || "";
+    let detectedWebsite = sourceWebsite || "";
+
+    if (!detectedWebsite || detectedWebsite.includes("localhost")) {
+      if (host.includes("mangcaubaden") || referer.includes("mangcaubaden")) {
+        detectedWebsite = "mangcaubaden.vn";
+      } else if (host.includes("nabaden") || referer.includes("nabaden")) {
+        detectedWebsite = "nabaden.vn";
+      } else {
+        detectedWebsite = detectedWebsite || "nabaden.vn";
+      }
+    } else {
+      if (detectedWebsite.includes("mangcaubaden")) {
+        detectedWebsite = "mangcaubaden.vn";
+      } else if (detectedWebsite.includes("nabaden")) {
+        detectedWebsite = "nabaden.vn";
+      }
+    }
+
     const payload = {
+      website: detectedWebsite,
       partnerType: partnerType || "Cộng Tác Viên (CTV)",
       fullName: String(fullName).trim(),
       phone: String(phone).trim(),
@@ -24,7 +46,7 @@ export async function POST(request: Request) {
     // Google Sheets Apps Script Webhook URL
     const webhookUrl =
       process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
-      "https://script.google.com/macros/s/AKfycbzRw6rmPRQI48pSer-sd2lvZUZ8JELTyeXQtQmoDSGCxMVmp6u5-JS--JgYtPzeAaKJ-Q/exec";
+      "https://script.google.com/macros/s/AKfycbxWkS88653q4hNRnTxptxYYGKbtSgh5_2hceQYrAmLZT0dSE8EtLAe8OhIx84-lsILxUA/exec";
 
     if (webhookUrl) {
       try {
