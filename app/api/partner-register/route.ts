@@ -74,7 +74,7 @@ export async function POST(request: Request) {
     // Google Sheets Apps Script Webhook URL
     const webhookUrl =
       process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
-      "https://script.google.com/macros/s/AKfycbxWkS88653q4hNRnTxptxYYGKbtSgh5_2hceQYrAmLZT0dSE8EtLAe8OhIx84-lsILxUA/exec";
+      "https://script.google.com/macros/s/AKfycbz5zVdK4zDesJDwH-ijWZM5rEeEsUZMo0A3ugnuIa96GKlGZYiavQq40Ng97uR5RtHbsw/exec";
 
     if (webhookUrl) {
       try {
