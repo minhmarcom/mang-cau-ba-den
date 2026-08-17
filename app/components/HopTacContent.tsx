@@ -51,12 +51,6 @@ export default function HopTacContent() {
       </header>
 
       <main className="partner-page-wrapper">
-        <nav className="breadcrumb container" aria-label="Breadcrumb">
-          <Link href="/">Trang chủ</Link>
-          <span aria-hidden="true">/</span>
-          <span>Hợp tác đối tác &amp; CTV</span>
-        </nav>
-
         {successData ? (
           /* SUCCESS STANDALONE VIEW (Chỉ hiển thị đúng thông tin xác nhận) */
           <section className="partner-success-fullscreen-section">
@@ -113,6 +107,12 @@ export default function HopTacContent() {
         ) : (
           /* REGULAR HOP-TAC PAGE CONTENT */
           <>
+            <nav className="breadcrumb container" aria-label="Breadcrumb">
+              <Link href="/">Trang chủ</Link>
+              <span aria-hidden="true">/</span>
+              <span>Hợp tác đối tác &amp; CTV</span>
+            </nav>
+
             {/* HERO SECTION */}
             <section className="partner-hero-section">
               <div className="partner-hero-container">

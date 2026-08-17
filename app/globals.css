@@ -4326,6 +4326,23 @@ footer {
   margin-top: 12px;
 }
 
+/* Standalone Success Screen Layout */
+.partner-success-fullscreen-section {
+  padding: 40px 16px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.success-standalone-card {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 /* Success State in Form */
 .partner-success-state {
   text-align: center;
