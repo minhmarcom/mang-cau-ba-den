@@ -146,7 +146,7 @@ const localBusinessSchema = {
   "@type": ["LocalBusiness", "ProduceFarm", "Store"],
   "@id": "https://mangcaubaden.vn/#business",
   name: "Mãng Cầu Bà Đen Tây Ninh — Vùng Trồng Chính Gốc",
-  alternateName: ["Mãng Cầu Bà Đen NABADEN", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh"],
+  alternateName: ["Mãng Cầu Bà Đen NABADEN", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh", "Vựa Mãng Cầu Núi Bà Đen"],
   url: "https://mangcaubaden.vn/",
   logo: "https://mangcaubaden.vn/logo.png",
   image: [
@@ -155,16 +155,18 @@ const localBusinessSchema = {
     "https://mangcaubaden.vn/thung-5kg.png"
   ],
   description:
-    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.",
+    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh chính gốc. Cập nhật kiến thức mùa vụ, cách chọn, bảo quản, bảng giá mãng cầu tại vườn và phân phối sỉ lẻ toàn quốc.",
   telephone: "+84907215521",
   priceRange: "$$",
   currenciesAccepted: "VND",
-  paymentAccepted: "Tiền mặt, Chuyển khoản ngân hàng",
+  paymentAccepted: "Tiền mặt, Chuyển khoản ngân hàng, COD",
+  hasMap: "https://share.google/mKCDKiRjRo25L0TDN",
+  maps: "https://share.google/mKCDKiRjRo25L0TDN",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Khu vực chân Núi Bà Đen",
-    addressLocality: "Thành phố Tây Ninh",
-    addressRegion: "Tây Ninh",
+    streetAddress: "Khu vực vườn Thạnh Tân, chân Núi Bà Đen",
+    addressLocality: "Xã Thạnh Tân",
+    addressRegion: "Thành phố Tây Ninh, Tỉnh Tây Ninh",
     postalCode: "84000",
     addressCountry: "VN",
   },
@@ -187,10 +189,19 @@ const localBusinessSchema = {
     { "@type": "City", name: "Hà Nội" },
     { "@type": "AdministrativeArea", name: "Tây Ninh" },
   ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+84907215521",
+    contactType: "customer service",
+    areaServed: "VN",
+    availableLanguage: ["vi"],
+  },
   sameAs: [
+    "https://share.google/mKCDKiRjRo25L0TDN",
     "https://www.facebook.com/mangcaubaden.vn/",
     "https://zalo.me/0907215521",
     "https://www.tiktok.com/@mangcaubaden",
+    "https://nabaden.vn",
   ],
 };
 
@@ -1065,6 +1076,14 @@ export default function Home() {
               <strong>Zalo 0907 215 521</strong>
             </div>
             <b>↗</b>
+          </a>
+          <a href="https://share.google/mKCDKiRjRo25L0TDN" target="_blank" rel="noopener noreferrer">
+            <span className="channel-icon" style={{ backgroundColor: "#047857", color: "#ffffff", fontSize: "16px" }}>📍</span>
+            <div>
+              <small>Vị trí nhà vườn</small>
+              <strong>Google Maps: Vườn Mãng Cầu</strong>
+            </div>
+            <b>Chỉ đường ↗</b>
           </a>
           <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
             <span className="channel-icon">♪</span>

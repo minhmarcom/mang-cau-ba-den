@@ -88,7 +88,7 @@ const faqSchema = {
       name: "Mãng Cầu Bà Đen mua ở đâu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bạn có thể tìm mua tại vùng trồng quanh khu vực Núi Bà Đen, các điểm cung cấp nông sản và những đơn vị chuyên về Mãng Cầu Bà Đen tại Tây Ninh. Nên ưu tiên nơi cung cấp được thông tin về nguồn gốc, phân loại và thời điểm thu hoạch.",
+        text: "Bạn có thể mua trực tiếp tại vùng trồng Thạnh Tân chân Núi Bà Đen Tây Ninh (Google Maps: https://share.google/mKCDKiRjRo25L0TDN) hoặc đặt mua chính gốc giao tận nơi qua website https://mangcaubaden.vn và Hotline/Zalo 0907 215 521.",
       },
     },
     {

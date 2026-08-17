@@ -56,7 +56,17 @@ export default function Footer({ backLink }: FooterProps) {
               </a>
             </div>
             <p className="footer-address">
-              📍 Vùng trồng Thạnh Tân, Chân Núi Bà Đen, TP. Tây Ninh
+              <a
+                href="https://share.google/mKCDKiRjRo25L0TDN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-address-link"
+                title="Xem chỉ đường đến Vườn Mãng Cầu Bà Đen trên Google Maps"
+                style={{ color: "inherit", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "4px", transition: "color 0.2s" }}
+              >
+                <span>📍 Vùng trồng Thạnh Tân, Chân Núi Bà Đen, TP. Tây Ninh</span>
+                <span style={{ fontSize: "0.82em", opacity: 0.85 }} aria-hidden="true">↗ (Google Maps)</span>
+              </a>
             </p>
           </div>
 

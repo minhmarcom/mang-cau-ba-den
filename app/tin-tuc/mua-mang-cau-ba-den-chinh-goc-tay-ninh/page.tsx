@@ -108,7 +108,7 @@ const faqSchema = {
       name: "Mua mãng cầu Bà Đen chính gốc ở đâu uy tín?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bạn nên chọn các nhà vườn có vùng trồng trực tiếp quanh khu vực Núi Bà Đen Tây Ninh, có hình ảnh thu hoạch thực tế tại vườn, tiêu chuẩn phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Hotline/Zalo: 0907 215 521).",
+        text: "Bạn nên chọn các nhà vườn có vùng trồng trực tiếp tại Thạnh Tân chân Núi Bà Đen Tây Ninh (Chỉ đường Google Maps: https://share.google/mKCDKiRjRo25L0TDN), có phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Website: https://mangcaubaden.vn - Hotline/Zalo: 0907 215 521).",
       },
     },
     {
