@@ -10,21 +10,6 @@ import ScrollToTopOnMount from "./ScrollToTopOnMount";
 
 export default function HopTacContent() {
   const [successData, setSuccessData] = useState<SuccessDetails | null>(null);
-  const [countdown, setCountdown] = useState(10);
-
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (successData && countdown > 0) {
-      timer = setInterval(() => {
-        setCountdown((prev) => prev - 1);
-      }, 1000);
-    } else if (successData && countdown === 0) {
-      if (typeof window !== "undefined") {
-        window.location.href = "/";
-      }
-    }
-    return () => clearInterval(timer);
-  }, [successData, countdown]);
 
   const handleSuccess = (details: SuccessDetails) => {
     setSuccessData(details);
@@ -118,7 +103,7 @@ export default function HopTacContent() {
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                         <polyline points="9 22 9 12 15 12 15 22" />
                       </svg>
-                      <span>Quay Về Trang Chủ ({countdown}s)</span>
+                      <span>Quay Về Trang Chủ</span>
                     </Link>
                   </div>
                 </div>

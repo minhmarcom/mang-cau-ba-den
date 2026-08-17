@@ -106,21 +106,6 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [countdown, setCountdown] = useState(10);
-
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (isSuccess && countdown > 0) {
-      timer = setInterval(() => {
-        setCountdown((prev) => prev - 1);
-      }, 1000);
-    } else if (isSuccess && countdown === 0) {
-      if (typeof window !== "undefined") {
-        window.location.href = "/";
-      }
-    }
-    return () => clearInterval(timer);
-  }, [isSuccess, countdown]);
 
   const isNPP = partnerType.includes("Nhà Phân Phối") || partnerType.includes("NPP");
 
@@ -242,7 +227,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-              <span>Quay Về Trang Chủ ({countdown}s)</span>
+              <span>Quay Về Trang Chủ</span>
             </Link>
           </div>
         </div>
