@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const VIETNAM_PROVINCES = [
@@ -98,6 +98,21 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [countdown, setCountdown] = useState(10);
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (isSuccess && countdown > 0) {
+      timer = setInterval(() => {
+        setCountdown((prev) => prev - 1);
+      }, 1000);
+    } else if (isSuccess && countdown === 0) {
+      if (typeof window !== "undefined") {
+        window.location.href = "/";
+      }
+    }
+    return () => clearInterval(timer);
+  }, [isSuccess, countdown]);
 
   const isNPP = partnerType.includes("Nhà Phân Phối") || partnerType.includes("NPP");
 
@@ -173,14 +188,14 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
       {isSuccess ? (
         <div className="partner-success-state" role="region" aria-live="polite">
           <div className="success-icon-badge" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#2d6a3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="#2d6a3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
               <polyline points="22 4 12 14.01 9 11.01" />
             </svg>
           </div>
           <h3 className="success-title">Đăng Ký Thành Công!</h3>
           <p className="success-subtitle">
-            Cảm ơn <strong>{fullName}</strong> đã đăng ký đồng hành cùng <strong>Mãng Cầu Bà Đen NABADEN</strong> với vai trò <strong>{partnerType}</strong>.
+            Cảm ơn <strong>{fullName}</strong>! Thông tin đăng ký của bạn đã được hệ thống ghi nhận. NABADEN sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
           </p>
 
           <div className="success-details-box">
@@ -202,22 +217,6 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 <span className="detail-label">Hình thức đăng ký:</span>
                 <span className="detail-value">{partnerType}</span>
               </div>
-              {salesChannel && (
-                <div className="detail-item">
-                  <span className="detail-label">Kênh kinh doanh:</span>
-                  <span className="detail-value">{salesChannel}</span>
-                </div>
-              )}
-              {notes.trim() && (
-                <div className="detail-item">
-                  <span className="detail-label">Ghi chú:</span>
-                  <span className="detail-value">{notes.trim()}</span>
-                </div>
-              )}
-            </div>
-
-            <div className="success-note-banner">
-              ⚡ Thông tin đăng ký của bạn đã được ghi nhận thành công trên hệ thống. Chuyên viên phụ trách đối tác của NABADEN sẽ chủ động liên hệ qua Zalo/SĐT trong thời gian sớm nhất.
             </div>
           </div>
 
@@ -227,7 +226,7 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-              <span>Quay Về Trang Chủ</span>
+              <span>Quay Về Trang Chủ ({countdown}s)</span>
             </Link>
           </div>
         </div>
