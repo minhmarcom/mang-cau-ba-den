@@ -101,7 +101,6 @@ export default function PartnerRecruitmentPage() {
           <Link href="/san-pham">Sản phẩm</Link>
           <a href="#quyen-loi">Chính sách</a>
           <a href="#quy-trinh">Quy trình</a>
-          <a href="#bang-tinh-loi-nhuan">Thu nhập</a>
           <a href="#faq">Hỏi đáp</a>
         </nav>
 
@@ -342,76 +341,6 @@ export default function PartnerRecruitmentPage() {
           </div>
         </section>
 
-        {/* SECTION: ESTIMATED EARNINGS TABLE */}
-        <section className="partner-earnings-section" id="bang-tinh-loi-nhuan">
-          <div className="section-container">
-            <div className="section-header-center">
-              <span className="section-sub-kicker">THAM KHẢO HIỆU QUẢ</span>
-              <h2 className="section-heading-bold">Bảng Minh Họa Chiết Khấu &amp; Sản Lượng</h2>
-              <p className="section-desc-lead">
-                Mức thu nhập thực tế sẽ phụ thuộc vào sản lượng bán ra, quy cách đóng gói và thỏa thuận hợp tác cụ thể giữa hai bên.
-              </p>
-            </div>
-
-            <div className="earnings-table-container">
-              <div className="table-responsive">
-                <table className="earnings-table">
-                  <thead>
-                    <tr>
-                      <th>Mô Hình Hoạt Động</th>
-                      <th>Sản Lượng Dự Kiến / Tháng</th>
-                      <th>Khung Chiết Khấu Tham Khảo</th>
-                      <th>Ước Tính Thu Nhập</th>
-                      <th>Hỗ Trợ Từ NABADEN</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <strong>🌱 CTV Khởi Động</strong>
-                        <div className="table-subtext">Giới thiệu cho bạn bè, người quen</div>
-                      </td>
-                      <td>10 – 20 thùng (5kg/thùng)</td>
-                      <td>Theo mức chiết khấu CTV cơ bản</td>
-                      <td className="earning-val"><strong>2.000.000đ – 4.000.000đ</strong></td>
-                      <td>Cung cấp ảnh mẫu, hỗ trợ đóng ship</td>
-                    </tr>
-                    <tr className="highlight-row">
-                      <td>
-                        <strong>🔥 CTV Bán Hàng Thường Xuyên</strong>
-                        <div className="table-subtext">Có kênh bán online ổn định</div>
-                      </td>
-                      <td>30 – 60 thùng (hoặc hộp VIP)</td>
-                      <td>Chiết khấu theo bậc sản lượng cao hơn</td>
-                      <td className="earning-val"><strong>6.000.000đ – 15.000.000đ</strong></td>
-                      <td>Ưu tiên giữ hàng, cung cấp video vườn</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>⭐ Điểm Bán / Cửa Hàng Trái Cây</strong>
-                        <div className="table-subtext">Cửa hàng thực phẩm sạch, tiệm hoa quả</div>
-                      </td>
-                      <td>100 – 300 thùng</td>
-                      <td>Bảng giá sỉ dành cho đại lý</td>
-                      <td className="earning-val"><strong>18.000.000đ – 45.000.000đ</strong></td>
-                      <td>Hồ sơ VietGAP, OCOP, tem nhãn</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>👑 Nhà Phân Phối Khu Vực</strong>
-                        <div className="table-subtext">Đơn vị phân phối sỉ theo tỉnh thành</div>
-                      </td>
-                      <td>500 – 1.000+ thùng</td>
-                      <td>Chính sách giá sỉ ưu đãi theo hợp đồng</td>
-                      <td className="earning-val"><strong>Trao đổi theo hợp đồng</strong></td>
-                      <td>Ưu tiên kế hoạch thu hoạch và điều phối</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* SECTION: QUALITY STANDARDS */}
         <section className="partner-commitments-section">
