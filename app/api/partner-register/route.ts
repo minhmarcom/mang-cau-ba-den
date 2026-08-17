@@ -56,7 +56,6 @@ export async function POST(request: Request) {
       address: String(address || "").trim(),
       salesChannel: String(salesChannel || "Bán online qua Facebook / Zalo / TikTok").trim(),
       notes: noteWithSource,
-      website: detectedWebsite,
     };
 
     // Google Sheets Apps Script Webhook URL
