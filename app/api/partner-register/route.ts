@@ -31,16 +31,29 @@ export async function POST(request: Request) {
       }
     }
 
+    const now = new Date();
+    const formattedTimestamp = now.toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" });
+
     const payload = {
+      timestamp: formattedTimestamp,
       website: detectedWebsite,
       partnerType: partnerType || "Cộng Tác Viên (CTV)",
       fullName: String(fullName).trim(),
       phone: String(phone).trim(),
       province: String(province || "").trim(),
-      address: String(address || "").trim(),
       salesChannel: String(salesChannel || "Bán online / Mạng xã hội").trim(),
+      address: String(address || "").trim(),
       notes: String(notes || "").trim(),
-      timestamp: new Date().toISOString(),
+
+      // Aliases for Google Apps Script & Google Sheets column mapping
+      time: formattedTimestamp,
+      sourceWebsite: detectedWebsite,
+      type: partnerType || "Cộng Tác Viên (CTV)",
+      name: String(fullName).trim(),
+      zalo: String(phone).trim(),
+      city: String(province || "").trim(),
+      channel: String(salesChannel || "Bán online / Mạng xã hội").trim(),
+      created_at: now.toISOString(),
     };
 
     // Google Sheets Apps Script Webhook URL

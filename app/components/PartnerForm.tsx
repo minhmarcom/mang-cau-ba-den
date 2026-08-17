@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 
 const VIETNAM_PROVINCES = [
   "An Giang",
@@ -137,8 +138,8 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
           fullName: fullName.trim(),
           phone: phone.trim(),
           province: province.trim(),
-          address: address.trim(),
           salesChannel,
+          address: address.trim(),
           notes: notes.trim(),
         }),
       });
@@ -147,6 +148,12 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
 
       if (res.ok && data.success) {
         setIsSuccess(true);
+        if (typeof window !== "undefined") {
+          const formAnchor = document.getElementById("form-dang-ky");
+          if (formAnchor) {
+            formAnchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        }
       } else {
         setErrorMessage(data.message || "Có lỗi xảy ra khi gửi. Vui lòng liên hệ Hotline/Zalo 0907 215 521.");
       }
@@ -160,8 +167,8 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
   return (
     <div className="partner-form-card" id="form-dang-ky">
       {isSuccess ? (
-        <div className="partner-success-state">
-          <div className="success-icon-badge">
+        <div className="partner-success-state" role="region" aria-live="polite">
+          <div className="success-icon-badge" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#2d6a3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
               <polyline points="22 4 12 14.01 9 11.01" />
@@ -169,38 +176,61 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
           </div>
           <h3 className="success-title">Đăng Ký Thành Công!</h3>
           <p className="success-subtitle">
-            Cảm ơn <strong>{fullName}</strong> đã lựa chọn đồng hành cùng <strong>Mãng Cầu Bà Đen NABADEN</strong> với vai trò <strong>{partnerType}</strong>.
+            Cảm ơn <strong>{fullName}</strong> đã đăng ký đồng hành cùng <strong>Mãng Cầu Bà Đen NABADEN</strong> với vai trò <strong>{partnerType}</strong>.
           </p>
+
           <div className="success-details-box">
-            <p>📋 <strong>Thông tin ghi nhận:</strong> {phone} {province ? `• ${province}` : ""}</p>
-            <p>⚡ Thông tin của bạn đã được đồng bộ vào hệ thống quản lý. Chuyên viên phụ trách đối tác sẽ liên hệ qua Zalo trong ít phút để gửi bảng giá & tài liệu bán hàng.</p>
+            <div className="success-details-title">📋 THÔNG TIN XÁC NHẬN ĐĂNG KÝ</div>
+            <div className="success-details-grid">
+              <div className="detail-item">
+                <span className="detail-label">Họ và tên:</span>
+                <span className="detail-value">{fullName}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">Số điện thoại (Zalo):</span>
+                <span className="detail-value">{phone}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">Tỉnh / Thành phố:</span>
+                <span className="detail-value">{province}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">Hình thức đăng ký:</span>
+                <span className="detail-value">{partnerType}</span>
+              </div>
+              {salesChannel && (
+                <div className="detail-item">
+                  <span className="detail-label">Kênh kinh doanh:</span>
+                  <span className="detail-value">{salesChannel}</span>
+                </div>
+              )}
+              {address.trim() && (
+                <div className="detail-item">
+                  <span className="detail-label">Địa chỉ chi tiết:</span>
+                  <span className="detail-value">{address.trim()}</span>
+                </div>
+              )}
+              {notes.trim() && (
+                <div className="detail-item">
+                  <span className="detail-label">Ghi chú:</span>
+                  <span className="detail-value">{notes.trim()}</span>
+                </div>
+              )}
+            </div>
+
+            <div className="success-note-banner">
+              ⚡ Thông tin đăng ký của bạn đã được ghi nhận thành công trên hệ thống. Chuyên viên phụ trách đối tác của NABADEN sẽ chủ động liên hệ qua Zalo/SĐT trong thời gian sớm nhất.
+            </div>
           </div>
+
           <div className="success-action-btns">
-            <a
-              href="https://zalo.me/0907215521"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary-partner"
-            >
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.35 5L2 22l5.22-1.31C8.63 21.43 10.26 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+            <Link href="/" className="btn-home-partner">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-              <span>Nhắn Zalo Nhận Bảng Giá Ngay</span>
-            </a>
-            <button
-              type="button"
-              className="btn-secondary-partner"
-              onClick={() => {
-                setIsSuccess(false);
-                setFullName("");
-                setPhone("");
-                setProvince("");
-                setAddress("");
-                setNotes("");
-              }}
-            >
-              Gửi Đăng Ký Khác
-            </button>
+              <span>Quay Về Trang Chủ</span>
+            </Link>
           </div>
         </div>
       ) : (
