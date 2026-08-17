@@ -38,9 +38,9 @@ export default function HopTacContent() {
           <div className="nav-links desktop-only">
             <Link href="/">Trang Chủ</Link>
             <Link href="/san-pham">Sản Phẩm</Link>
-            <Link href="#quyen-loi">Chính Sách</Link>
-            <Link href="#quy-trinh">Quy Trình</Link>
-            <Link href="#faq">Hỏi Đáp</Link>
+            <Link href={successData ? "/" : "#quyen-loi"}>Chính Sách</Link>
+            <Link href={successData ? "/" : "#quy-trinh"}>Quy Trình</Link>
+            <Link href={successData ? "/" : "#faq"}>Hỏi Đáp</Link>
           </div>
           <div className="header-actions">
             <a className="header-cta" href={successData ? "/" : "#form-dang-ky"}>
