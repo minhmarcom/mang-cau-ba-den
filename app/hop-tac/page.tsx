@@ -169,14 +169,14 @@ export default function PartnerRecruitmentPage() {
             <div className="partner-hero-mascot-box">
               <img
                 src="/logo.png"
-                alt="Biểu trưng Mãng Cầu Bà Đen Tây Ninh NABADEN"
+                alt="Biểu trưng Mãng Cầu Bà Đen Tây Ninh - Sạch Tươi Ngon"
                 className="partner-mascot-img"
                 width="140"
                 height="140"
               />
               <div className="mascot-text-info">
-                <div className="mascot-brand-name">MÃNG CẦU BÀ ĐEN NABADEN</div>
-                <div className="mascot-brand-slogan">SẠCH • TƯƠI • NGON TỪ VƯỜN NHÀ NÚI BÀ ĐEN TÂY NINH</div>
+                <div className="mascot-brand-name">MÃNG CẦU BÀ ĐEN TÂY NINH</div>
+                <div className="mascot-brand-slogan">SẠCH • TƯƠI • NGON • mangcaubaden.vn</div>
                 <div className="mascot-stats-grid">
                   <div className="m-stat"><strong>Mạng lưới</strong> Đại lý &amp; CTV toàn quốc</div>
                   <div className="m-stat"><strong>Đa dạng</strong> Quy cách đóng hộp &amp; thùng</div>
