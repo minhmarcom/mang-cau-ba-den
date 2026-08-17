@@ -454,7 +454,7 @@ export default function ShippingArticlePage() {
               <div className="article-cta-card">
                 <div className="cta-card-content">
                   <h3>Đặt Mua Mãng Cầu Bà Đen Tây Ninh Chính Gốc</h3>
-                  <p>Hái tươi tại vườn mỗi ngày • Đóng thùng xốp chống va đập • Giao nhanh toàn quốc • Bao bù 1 đổi 1 uy tín.</p>
+                  <p>Hái tươi tại vườn mỗi ngày • Đóng thùng xốp chống va đập • Giao nhanh toàn quốc • Hỗ trợ tận tâm.</p>
                   <div className="cta-btn-group">
                     <Link href="/san-pham" className="btn-cta-primary">
                       Xem Các Sản Phẩm →

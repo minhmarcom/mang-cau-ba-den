@@ -4,17 +4,17 @@ import PartnerForm from "../components/PartnerForm";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tuyển Nhà Phân Phối & Cộng Tác Viên (CTV) Mãng Cầu Bà Đen — Vốn 0Đ, Chiết Khấu Cao",
-  description: "Chương trình tuyển Đại lý, Nhà phân phối và Cộng tác viên bán Mãng Cầu Bà Đen Tây Ninh NABADEN. Vốn 0 đồng, không ôm hàng, Nabaden hỗ trợ trọn gói từ hái trái, đóng thùng, ship hàng, thu COD và chuyển hoa hồng minh bạch.",
+  title: "Tuyển Nhà Phân Phối & Cộng Tác Viên (CTV) Mãng Cầu Bà Đen | NABADEN",
+  description: "Chương trình tuyển Nhà phân phối và Cộng tác viên bán Mãng Cầu Bà Đen Tây Ninh NABADEN. Hợp tác linh hoạt, không áp lực ôm hàng, NABADEN hỗ trợ các khâu hái trái, đóng thùng, ship hàng, thu COD và đối soát chiết khấu.",
   keywords: [
     "tuyển cộng tác viên mãng cầu bà đen", "tuyển ctv bán hoa quả", "tuyển đại lý mãng cầu tây ninh",
-    "sỉ mãng cầu bà đen", "nhà phân phối mãng cầu tây ninh", "kinh doanh trái cây 0 vốn",
+    "sỉ mãng cầu bà đen", "nhà phân phối mãng cầu tây ninh", "kinh doanh trái cây",
     "cộng tác viên bán trái cây online", "chiết khấu ctv mãng cầu"
   ],
   alternates: { canonical: "/tuyen-dai-ly-ctv" },
   openGraph: {
-    title: "Tuyển Nhà Phân Phối & CTV Mãng Cầu Bà Đen Tây Ninh — Vốn 0Đ, Hoa Hồng Cao",
-    description: "Nabaden lo trọn gói từ cắt trái tại vườn, đóng thùng xốp, ship hàng thu COD. Đối tác & CTV chỉ cần giới thiệu và nhận hoa hồng!",
+    title: "Tuyển Nhà Phân Phối & CTV Mãng Cầu Bà Đen Tây Ninh | NABADEN",
+    description: "NABADEN hỗ trợ các khâu từ cắt trái tại vườn, đóng thùng xốp, chuyển hàng và thu COD. Đối tác & CTV tập trung giới thiệu và nhận chiết khấu.",
     url: "https://mangcaubaden.vn/tuyen-dai-ly-ctv",
     images: [{ url: "https://mangcaubaden.vn/og.png", width: 1200, height: 630 }],
   },
@@ -35,34 +35,34 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Làm Cộng tác viên (CTV) Mãng Cầu Bà Đen có cần vốn hay ôm hàng không?",
+      name: "Làm Cộng tác viên (CTV) Mãng Cầu Bà Đen NABADEN có cần ôm hàng trước không?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hoàn toàn KHÔNG cần vốn và KHÔNG cần ôm hàng. Bạn chỉ cần chia sẻ hình ảnh, giới thiệu đơn hàng. NABADEN sẽ trực tiếp cắt trái tươi tại vườn, đóng thùng xốp, giao tận tay khách hàng và thu tiền COD, sau đó chuyển khoản hoa hồng cho bạn."
+        text: "Cộng tác viên không bắt buộc phải ôm hàng. Bạn có thể giới thiệu sản phẩm khi có khách đặt. NABADEN sẽ hỗ trợ khâu thu hoạch, đóng thùng xốp, giao hàng và thu hộ COD, sau đó đối soát chiết khấu theo định kỳ."
       }
     },
     {
       "@type": "Question",
-      name: "Chính sách bảo hành trái hỏng hoặc sượng khi giao cho khách của CTV như thế nào?",
+      name: "Khi đơn hàng phát sinh vấn đề dập hỏng do vận chuyển thì xử lý thế nào?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NABADEN áp dụng chính sách 'Bảo hành vàng': Bao bù 1 đổi 1 hoặc hoàn tiền 100% nếu trái bị sượng, hư hỏng trong quá trình vận chuyển. Khách hàng của bạn hoàn toàn yên tâm và uy tín bán hàng của CTV luôn được đảm bảo cao nhất."
+        text: "Khi nhận hàng, khách hàng hoặc đối tác vui lòng quay video/chụp ảnh tình trạng thực tế của thùng hàng. NABADEN sẽ cùng bạn kiểm tra, đối chiếu và trao đổi phương án hỗ trợ, xử lý linh hoạt cho từng trường hợp cụ thể."
       }
     },
     {
       "@type": "Question",
-      name: "Quyền lợi của Nhà Phân Phối / Đại Lý Sỉ khác gì so với Cộng Tác Viên?",
+      name: "Chính sách dành cho Nhà Phân Phối / Đại Lý Sỉ như thế nào?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nhà Phân Phối được hưởng mức giá sỉ gốc tại vườn rẻ nhất theo bậc sản lượng, được hỗ trợ bảo hộ độc quyền theo khu vực, cung cấp đầy đủ giấy chứng nhận VietGAP, chứng nhận OCOP, tem truy xuất nguồn gốc và hỗ trợ hình ảnh/biển bảng quảng cáo."
+        text: "Nhà Phân Phối được áp dụng mức giá sỉ tại vườn theo khung sản lượng, ưu tiên nguồn hàng ổn định, hỗ trợ tài liệu hình ảnh thực tế tại vườn và các giấy tờ kiểm định chất lượng."
       }
     },
     {
       "@type": "Question",
-      name: "Hoa hồng CTV được tính và thanh toán như thế nào?",
+      name: "Chiết khấu của CTV được tính và đối soát ra sao?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hoa hồng được tính trực tiếp trên mỗi thùng/hộp bán thành công. Bạn có thể chọn nhận hoa hồng ngay sau khi đơn hoàn tất hoặc đối soát tổng kết chuyển khoản theo tuần/tháng kèm bảng sao kê chi tiết."
+        text: "Chiết khấu được tính dựa trên số lượng thùng/hộp hoàn thành giao thành công. Các bên sẽ tiến hành đối soát định kỳ theo tuần hoặc theo tháng kèm bảng kê chi tiết."
       }
     }
   ]
@@ -99,7 +99,7 @@ export default function PartnerRecruitmentPage() {
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <Link href="/">Trang chủ</Link>
           <Link href="/san-pham">Sản phẩm</Link>
-          <a href="#quyen-loi">Quyền lợi</a>
+          <a href="#quyen-loi">Chính sách</a>
           <a href="#quy-trinh">Quy trình</a>
           <a href="#bang-tinh-loi-nhuan">Thu nhập</a>
           <a href="#faq">Hỏi đáp</a>
@@ -118,42 +118,42 @@ export default function PartnerRecruitmentPage() {
           <div className="partner-hero-container">
             <div className="partner-hero-badge">
               <span className="badge-sparkle">⭐</span>
-              <span>CHƯƠNG TRÌNH HỢP TÁC KINH DOANH 2026</span>
+              <span>CHƯƠNG TRÌNH HỢP TÁC KINH DOANH NABADEN</span>
             </div>
 
             <h1 className="partner-hero-title">
               Hợp Tác Phân Phối Mãng Cầu Bà Đen Tây Ninh
               <span className="hero-highlight-phrase">
-                Nabaden Lo Trọn Gói A-Z — Bạn Nhận Hoa Hồng
+                NABADEN Hỗ Trợ Đóng Gói, Vận Chuyển &amp; Đối Soát Chiết Khấu
               </span>
             </h1>
 
             <p className="partner-hero-lead">
-              Kinh doanh nông sản đặc sản cao cấp với <strong>VỐN 0 ĐỒNG</strong>. Bạn chỉ cần giới thiệu và lên đơn, toàn bộ khâu <em>cắt trái tươi tại vườn, đóng thùng xốp, giao hàng toàn quốc và thu hộ COD</em> đã có NABADEN bao trọn gói!
+              Kinh doanh nông sản đặc sản Tây Ninh theo mô hình linh hoạt. Bạn tập trung tìm kiếm khách hàng và lên đơn, các khâu <em>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</em> được NABADEN hỗ trợ phối hợp vận hành.
             </p>
 
             <div className="partner-hero-pills">
               <div className="hero-pill-item">
                 <span className="pill-check">✓</span>
-                <span>0đ Vốn — Không Ôm Hàng</span>
+                <span>Chủ Động Vốn &amp; Nguồn Hàng</span>
               </div>
               <div className="hero-pill-item">
                 <span className="pill-check">✓</span>
-                <span>Hái Tươi & Ship Tận Tay</span>
+                <span>Hái Tươi &amp; Đóng Thùng Chuẩn</span>
               </div>
               <div className="hero-pill-item">
                 <span className="pill-check">✓</span>
-                <span>Bao Bù 1 Đổi 1 Uy Tín</span>
+                <span>Hỗ Trợ Xử Lý Linh Hoạt</span>
               </div>
               <div className="hero-pill-item">
                 <span className="pill-check">✓</span>
-                <span>Chiết Khấu & Hoa Hồng Cao</span>
+                <span>Chiết Khấu Rõ Ràng Minh Bạch</span>
               </div>
             </div>
 
             <div className="partner-hero-cta-group">
               <a href="#form-dang-ky" className="btn-hero-partner primary">
-                <span>Đăng Ký Trở Thành Đối Tác Ngay</span>
+                <span>Đăng Ký Nhận Thông Tin Hợp Tác</span>
                 <span className="btn-arrow">↓</span>
               </a>
               <a
@@ -162,7 +162,7 @@ export default function PartnerRecruitmentPage() {
                 rel="noreferrer"
                 className="btn-hero-partner secondary"
               >
-                <span>Nhắn Zalo Tư Vấn Trực Tiếp (0907 215 521)</span>
+                <span>Nhắn Zalo Trao Đổi (0907 215 521)</span>
               </a>
             </div>
 
@@ -179,9 +179,9 @@ export default function PartnerRecruitmentPage() {
                 <div className="mascot-brand-name">MÃNG CẦU BÀ ĐEN NABADEN</div>
                 <div className="mascot-brand-slogan">SẠCH • TƯƠI • NGON TỪ VƯỜN NHÀ NÚI BÀ ĐEN TÂY NINH</div>
                 <div className="mascot-stats-grid">
-                  <div className="m-stat"><strong>50+</strong> Đối tác phân phối</div>
-                  <div className="m-stat"><strong>5.000+</strong> Khách hàng tin dùng</div>
-                  <div className="m-stat"><strong>100%</strong> Trái già loại 1 tuyển chọn</div>
+                  <div className="m-stat"><strong>Mạng lưới</strong> Đại lý &amp; CTV toàn quốc</div>
+                  <div className="m-stat"><strong>Đa dạng</strong> Quy cách đóng hộp &amp; thùng</div>
+                  <div className="m-stat"><strong>Nguồn hàng</strong> Tuyển chọn theo mùa vụ</div>
                 </div>
               </div>
             </div>
@@ -192,87 +192,87 @@ export default function PartnerRecruitmentPage() {
         <section className="partner-models-section" id="quyen-loi">
           <div className="section-container">
             <div className="section-header-center">
-              <span className="section-sub-kicker">LỰA CHỌN MÔ HÌNH PHÙ HỢP</span>
-              <h2 className="section-heading-bold">Bạn Muốn Hợp Tác Dưới Hình Thức Nào?</h2>
+              <span className="section-sub-kicker">HÌNH THỨC HỢP TÁC</span>
+              <h2 className="section-heading-bold">Lựa Chọn Mô Hình Phù Hợp Với Bạn</h2>
               <p className="section-desc-lead">
-                Dù bạn là cá nhân muốn kiếm thêm thu nhập tại nhà hay cửa hàng/doanh nghiệp muốn mở rộng nguồn hàng chất lượng, NABADEN đều có chính sách tối ưu.
+                Dù bạn là cá nhân muốn bắt đầu thử sức kinh doanh online hay đơn vị có sẵn cửa hàng phân phối, NABADEN đều có chính sách hỗ trợ phù hợp.
               </p>
             </div>
 
             <div className="partner-cards-grid">
               {/* CARD 1: CTV */}
               <div className="partner-tier-card ctv">
-                <div className="tier-badge ctv">MÔ HÌNH 0 VỐN</div>
+                <div className="tier-badge ctv">MÔ HÌNH CTV</div>
                 <div className="tier-header">
                   <div className="tier-icon">🌱</div>
                   <h3 className="tier-title">Cộng Tác Viên (CTV)</h3>
-                  <div className="tier-price-tag">Vốn khởi đầu: <strong>0 ĐỒNG</strong></div>
-                  <p className="tier-desc">Dành cho mẹ bỉm sữa, nhân viên văn phòng, sinh viên, người bán hàng online muốn có thêm nguồn thu nhập bền vững.</p>
+                  <div className="tier-price-tag">Hình thức: <strong>Bán hàng theo đơn</strong></div>
+                  <p className="tier-desc">Phù hợp cho cá nhân, nhân viên văn phòng, người bán hàng online muốn kinh doanh thêm đặc sản theo nhu cầu thực tế.</p>
                 </div>
 
                 <div className="tier-benefit-list">
                   <div className="benefit-item">
                     <span className="b-icon">✓</span>
-                    <div><strong>Không cần bỏ vốn & không ôm hàng:</strong> Không áp lực doanh số, có đơn đến đâu đặt đến đó.</div>
+                    <div><strong>Không bắt buộc ôm hàng:</strong> Có đơn đến đâu lên đơn đến đó, chủ động quản lý thời gian.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">✓</span>
-                    <div><strong>Nabaden bao trọn gói A-Z:</strong> Tự cắt trái tại vườn, bọc xốp, đóng thùng, ship tận tay khách và thu tiền COD.</div>
+                    <div><strong>Hỗ trợ đóng gói &amp; giao hàng:</strong> NABADEN phụ trách hái trái tại vườn, bọc xốp, đóng thùng và chuyển cho đơn vị vận chuyển.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">✓</span>
-                    <div><strong>Hoa hồng chiết khấu hấp dẫn:</strong> Hưởng lợi nhuận trực tiếp trên từng thùng 5kg, 15kg hoặc hộp quà 3 trái VIP.</div>
+                    <div><strong>Chiết khấu theo từng đơn hàng:</strong> Hưởng mức chiết khấu theo quy cách thùng 5kg, 15kg hoặc hộp quà 3 trái VIP.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">✓</span>
-                    <div><strong>Bảo hành vàng 1 đổi 1:</strong> Trái sượng hay dập hỏng do vận chuyển đều được nhà vườn bù mới, giữ trọn uy tín của CTV.</div>
+                    <div><strong>Phối hợp hỗ trợ sau bán hàng:</strong> Tiếp nhận phản hồi từ khách hàng và cùng trao đổi phương án xử lý phù hợp cho từng đơn.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">✓</span>
-                    <div><strong>Cung cấp sẵn tư liệu bán hàng:</strong> Hình ảnh vườn, video thực tế, bài viết mẫu chỉ việc copy-paste để đăng bài.</div>
+                    <div><strong>Tài liệu hình ảnh tham khảo:</strong> Cung cấp hình ảnh vườn, video đóng hàng thực tế để thuận tiện giới thiệu đến khách.</div>
                   </div>
                 </div>
 
                 <a href="#form-dang-ky" className="btn-tier-action ctv">
-                  Đăng Ký Làm Cộng Tác Viên →
+                  Đăng Ký Cộng Tác Viên →
                 </a>
               </div>
 
               {/* CARD 2: NPP */}
               <div className="partner-tier-card npp featured">
-                <div className="tier-badge npp">ĐỐI TÁC CHIẾN LƯỢC</div>
+                <div className="tier-badge npp">ĐỐI TÁC PHÂN PHỐI</div>
                 <div className="tier-header">
                   <div className="tier-icon">👑</div>
                   <h3 className="tier-title">Nhà Phân Phối / Đại Lý Sỉ</h3>
-                  <div className="tier-price-tag">Chiết khấu: <strong>GIÁ GỐC TẬN VƯỜN</strong></div>
-                  <p className="tier-desc">Dành cho chuỗi cửa hàng trái cây sạch, siêu thị mini, vựa sỉ hoa quả, tiểu thương các chợ đầu mối hoặc doanh nghiệp phân phối.</p>
+                  <div className="tier-price-tag">Hình thức: <strong>Đơn hàng số lượng lớn</strong></div>
+                  <p className="tier-desc">Dành cho các cửa hàng trái cây, siêu thị mini, vựa sỉ nông sản hoặc đại lý phân phối tại các tỉnh thành.</p>
                 </div>
 
                 <div className="tier-benefit-list">
                   <div className="benefit-item">
                     <span className="b-icon">★</span>
-                    <div><strong>Bảng giá sỉ gốc tận gốc nhà vườn:</strong> Mức giá cạnh tranh vượt trội, tối ưu biên lợi nhuận cao nhất.</div>
+                    <div><strong>Bảng giá sỉ theo sản lượng:</strong> Áp dụng mức giá sỉ tại vườn cạnh tranh, tối ưu chi phí theo từng bậc số lượng.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">★</span>
-                    <div><strong>Bảo hộ độc quyền khu vực:</strong> Ưu tiên thị trường độc quyền theo quận/huyện hoặc tỉnh thành cho đối tác cam kết sản lượng.</div>
+                    <div><strong>Chính sách ưu tiên theo khu vực:</strong> Ưu tiên nguồn hàng và điều phối thuận lợi cho các đối tác có sản lượng ổn định.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">★</span>
-                    <div><strong>Nguồn cung dồi dào, ổn định quanh năm:</strong> Diện tích vùng trồng liên kết hàng chục hecta tại chân núi Bà Đen Tây Ninh.</div>
+                    <div><strong>Kế hoạch nguồn hàng theo mùa vụ:</strong> Trao đổi lịch cắt trái định kỳ để đảm bảo tiến độ giao nhận cho đại lý.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">★</span>
-                    <div><strong>Đầy đủ chứng nhận VietGAP & OCOP:</strong> Hỗ trợ hồ sơ pháp lý, tem nhãn truy xuất nguồn gốc rõ ràng, hóa đơn đầy đủ.</div>
+                    <div><strong>Hồ sơ nguồn gốc xuất xứ:</strong> Cung cấp thông tin chứng nhận VietGAP, OCOP Tây Ninh và tem truy xuất nguồn gốc.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">★</span>
-                    <div><strong>Hỗ trợ biển bảng & Marketing điểm bán:</strong> Cung cấp standee, banner, kệ trưng bày và giới thiệu khách lẻ khu vực về đại lý.</div>
+                    <div><strong>Tư liệu hỗ trợ điểm bán:</strong> Hỗ trợ hình ảnh chất lượng cao, thông tin sản phẩm và tư vấn quy cách trưng bày.</div>
                   </div>
                 </div>
 
                 <a href="#form-dang-ky" className="btn-tier-action npp">
-                  Đăng Ký Làm Nhà Phân Phối →
+                  Đăng Ký Nhà Phân Phối →
                 </a>
               </div>
             </div>
@@ -283,10 +283,10 @@ export default function PartnerRecruitmentPage() {
         <section className="partner-process-section" id="quy-trinh">
           <div className="section-container">
             <div className="section-header-center">
-              <span className="section-sub-kicker">QUY TRÌNH VẬN HÀNH KHÉP KÍN</span>
-              <h2 className="section-heading-bold">NABADEN Hỗ Trợ Bạn Như Thế Nào?</h2>
+              <span className="section-sub-kicker">QUY TRÌNH PHỐI HỢP</span>
+              <h2 className="section-heading-bold">Các Bước Vận Hành Cùng NABADEN</h2>
               <p className="section-desc-lead">
-                Toàn bộ quy trình từ khâu thu hoạch đến tay người tiêu dùng đều được NABADEN chuẩn hóa chuyên nghiệp, giúp bạn kinh doanh nhẹ nhàng và hiệu quả.
+                Quy trình được chuẩn hóa rõ ràng giữa các bên nhằm đảm bảo tiến độ đơn hàng và chất lượng trái khi đến tay người tiêu dùng.
               </p>
             </div>
 
@@ -294,49 +294,49 @@ export default function PartnerRecruitmentPage() {
               <div className="step-card">
                 <div className="step-number-badge">01</div>
                 <div className="step-icon">📱</div>
-                <h4 className="step-title">Bạn Giới Thiệu & Lên Đơn</h4>
-                <p className="step-desc">CTV/NPP gửi thông tin khách hàng, số lượng và địa chỉ nhận qua hệ thống hoặc nhóm Zalo hỗ trợ.</p>
-                <div className="step-tag-who">Bạn thực hiện</div>
+                <h4 className="step-title">Tiếp Nhận &amp; Lên Đơn</h4>
+                <p className="step-desc">Đối tác / CTV gửi thông tin người nhận, số lượng và thời gian mong muốn qua kênh liên lạc Zalo điều phối.</p>
+                <div className="step-tag-who">Đối tác / CTV</div>
               </div>
 
               <div className="step-card highlight">
                 <div className="step-number-badge">02</div>
                 <div className="step-icon">✂️</div>
-                <h4 className="step-title">Tuyển Chọn & Cắt Trái Tại Vườn</h4>
-                <p className="step-desc">Nhà vườn trực tiếp chọn đúng lứa trái già, da bóng, nở gai căng tròn, cắt tươi trong ngày.</p>
-                <div className="step-tag-nabaden">⚡ Nabaden bao trọn</div>
+                <h4 className="step-title">Thu Hoạch Trái Theo Lứa</h4>
+                <p className="step-desc">Nhà vườn kiểm tra độ già phù hợp với khoảng cách vận chuyển của đơn hàng trước khi cắt trái.</p>
+                <div className="step-tag-nabaden">NABADEN thực hiện</div>
               </div>
 
               <div className="step-card highlight">
                 <div className="step-number-badge">03</div>
                 <div className="step-icon">📦</div>
-                <h4 className="step-title">Bọc Lưới Xốp & Đóng Thùng</h4>
-                <p className="step-desc">Từng quả mãng cầu được bọc lưới xốp chuyên dụng, xếp thùng carton dày dặn chống dập nát khi đi xa.</p>
-                <div className="step-tag-nabaden">⚡ Nabaden bao trọn</div>
+                <h4 className="step-title">Phân Loại &amp; Đóng Thùng Xốp</h4>
+                <p className="step-desc">Trái được bọc lưới xốp bảo vệ, xếp vào thùng carton có lỗ thoáng khí để hạn chế va đập trên đường đi.</p>
+                <div className="step-tag-nabaden">NABADEN thực hiện</div>
               </div>
 
               <div className="step-card highlight">
                 <div className="step-number-badge">04</div>
                 <div className="step-icon">🚚</div>
-                <h4 className="step-title">Vận Chuyển Hỏa Tốc</h4>
-                <p className="step-desc">Giao xe mát về TP.HCM trong 2-3 giờ, giao bay/xe lạnh đi Hà Nội và các tỉnh thành toàn quốc.</p>
-                <div className="step-tag-nabaden">⚡ Nabaden bao trọn</div>
+                <h4 className="step-title">Giao Hàng Qua Đơn Vị Vận Chuyển</h4>
+                <p className="step-desc">Chuyển qua xe tuyến, dịch vụ hỏa tốc hoặc đường bay tùy theo khu vực và thỏa thuận của từng đơn.</p>
+                <div className="step-tag-nabaden">NABADEN thực hiện</div>
               </div>
 
               <div className="step-card highlight">
                 <div className="step-number-badge">05</div>
                 <div className="step-icon">💵</div>
-                <h4 className="step-title">Giao Khách & Thu Tiền (COD)</h4>
-                <p className="step-desc">Khách được kiểm tra hàng trước khi nhận, shipper thu hộ tiền tận nơi an toàn và tiện lợi.</p>
-                <div className="step-tag-nabaden">⚡ Nabaden bao trọn</div>
+                <h4 className="step-title">Giao Hàng &amp; Thu Hộ (COD)</h4>
+                <p className="step-desc">Đơn vị vận chuyển giao hàng tận nơi, thu hộ tiền đơn hàng theo thông tin đã xác nhận.</p>
+                <div className="step-tag-nabaden">Vận chuyển &amp; Thu COD</div>
               </div>
 
               <div className="step-card highlight">
                 <div className="step-number-badge">06</div>
                 <div className="step-icon">🎉</div>
-                <h4 className="step-title">Đối Soát & Chi Trả Hoa Hồng</h4>
-                <p className="step-desc">Hệ thống tổng kết doanh số tự động, chuyển khoản hoa hồng đều đặn kèm bảng kê chi tiết minh bạch.</p>
-                <div className="step-tag-nabaden">⚡ Nabaden bao trọn</div>
+                <h4 className="step-title">Đối Soát &amp; Thanh Toán Chiết Khấu</h4>
+                <p className="step-desc">Tổng hợp danh sách các đơn đã giao thành công và tiến hành chuyển khoản chiết khấu theo kỳ đối soát.</p>
+                <div className="step-tag-nabaden">NABADEN thực hiện</div>
               </div>
             </div>
           </div>
@@ -346,10 +346,10 @@ export default function PartnerRecruitmentPage() {
         <section className="partner-earnings-section" id="bang-tinh-loi-nhuan">
           <div className="section-container">
             <div className="section-header-center">
-              <span className="section-sub-kicker">TIỀM NĂNG THU NHẬP</span>
-              <h2 className="section-heading-bold">Bảng Tính Thu Nhập Thực Tế</h2>
+              <span className="section-sub-kicker">THAM KHẢO HIỆU QUẢ</span>
+              <h2 className="section-heading-bold">Bảng Minh Họa Chiết Khấu &amp; Sản Lượng</h2>
               <p className="section-desc-lead">
-                Mãng Cầu Bà Đen Tây Ninh là loại trái cây đặc sản có nhu cầu tiêu thụ cực lớn quanh năm (ăn gia đình, thắp hương ngày rằm, mùng 1, lễ Tết và làm quà biếu VIP).
+                Mức thu nhập thực tế sẽ phụ thuộc vào sản lượng bán ra, quy cách đóng gói và thỏa thuận hợp tác cụ thể giữa hai bên.
               </p>
             </div>
 
@@ -358,53 +358,53 @@ export default function PartnerRecruitmentPage() {
                 <table className="earnings-table">
                   <thead>
                     <tr>
-                      <th>Cấp Độ Hoạt Động</th>
-                      <th>Sản Lượng Bán / Tháng</th>
-                      <th>Chiết Khấu Trung Bình</th>
-                      <th>Thu Nhập Dự Kiến / Tháng</th>
-                      <th>Hỗ Trợ Từ Nabaden</th>
+                      <th>Mô Hình Hoạt Động</th>
+                      <th>Sản Lượng Dự Kiến / Tháng</th>
+                      <th>Khung Chiết Khấu Tham Khảo</th>
+                      <th>Ước Tính Thu Nhập</th>
+                      <th>Hỗ Trợ Từ NABADEN</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>
                         <strong>🌱 CTV Khởi Động</strong>
-                        <div className="table-subtext">Bán cho bạn bè, người thân</div>
+                        <div className="table-subtext">Giới thiệu cho bạn bè, người quen</div>
                       </td>
                       <td>10 – 20 thùng (5kg/thùng)</td>
-                      <td>100.000đ – 150.000đ / thùng</td>
+                      <td>Theo mức chiết khấu CTV cơ bản</td>
                       <td className="earning-val"><strong>2.000.000đ – 4.000.000đ</strong></td>
-                      <td>Hỗ trợ bài mẫu, ship & thu COD</td>
+                      <td>Cung cấp ảnh mẫu, hỗ trợ đóng ship</td>
                     </tr>
                     <tr className="highlight-row">
                       <td>
-                        <strong>🔥 CTV Bán Hàng Tích Cực</strong>
-                        <div className="table-subtext">Đăng bài Facebook, Zalo, TikTok</div>
+                        <strong>🔥 CTV Bán Hàng Thường Xuyên</strong>
+                        <div className="table-subtext">Có kênh bán online ổn định</div>
                       </td>
                       <td>30 – 60 thùng (hoặc hộp VIP)</td>
-                      <td>120.000đ – 180.000đ / thùng</td>
+                      <td>Chiết khấu theo bậc sản lượng cao hơn</td>
                       <td className="earning-val"><strong>6.000.000đ – 15.000.000đ</strong></td>
-                      <td>Cung cấp video vườn, thưởng doanh số</td>
+                      <td>Ưu tiên giữ hàng, cung cấp video vườn</td>
                     </tr>
                     <tr>
                       <td>
-                        <strong>⭐ Đại Lý Cửa Hàng Trái Cây</strong>
-                        <div className="table-subtext">Điểm bán offline / Tiệm thực phẩm</div>
+                        <strong>⭐ Điểm Bán / Cửa Hàng Trái Cây</strong>
+                        <div className="table-subtext">Cửa hàng thực phẩm sạch, tiệm hoa quả</div>
                       </td>
                       <td>100 – 300 thùng</td>
-                      <td>Mức giá sỉ đại lý chiết khấu cao</td>
+                      <td>Bảng giá sỉ dành cho đại lý</td>
                       <td className="earning-val"><strong>18.000.000đ – 45.000.000đ</strong></td>
-                      <td>Chứng nhận VietGAP, OCOP, bảng biển</td>
+                      <td>Hồ sơ VietGAP, OCOP, tem nhãn</td>
                     </tr>
                     <tr>
                       <td>
-                        <strong>👑 Tổng Kho / Nhà Phân Phối</strong>
-                        <div className="table-subtext">Phân phối sỉ toàn tỉnh / thành phố</div>
+                        <strong>👑 Nhà Phân Phối Khu Vực</strong>
+                        <div className="table-subtext">Đơn vị phân phối sỉ theo tỉnh thành</div>
                       </td>
                       <td>500 – 1.000+ thùng</td>
-                      <td>Giá sỉ gốc tận gốc nhà vườn</td>
-                      <td className="earning-val"><strong>50.000.000đ – 120.000.000đ+</strong></td>
-                      <td>Bảo hộ độc quyền, chiết khấu tối đa</td>
+                      <td>Chính sách giá sỉ ưu đãi theo hợp đồng</td>
+                      <td className="earning-val"><strong>Trao đổi theo hợp đồng</strong></td>
+                      <td>Ưu tiên kế hoạch thu hoạch và điều phối</td>
                     </tr>
                   </tbody>
                 </table>
@@ -413,31 +413,31 @@ export default function PartnerRecruitmentPage() {
           </div>
         </section>
 
-        {/* SECTION: QUALITY COMMITMENTS */}
+        {/* SECTION: QUALITY STANDARDS */}
         <section className="partner-commitments-section">
           <div className="section-container">
             <div className="section-header-center">
-              <span className="section-sub-kicker">UY TÍN HÀNG ĐẦU</span>
-              <h2 className="section-heading-bold">3 Cam Kết Vàng Giúp Bạn Bán Hàng Tự Tin</h2>
+              <span className="section-sub-kicker">TIÊU CHUẨN NÔNG SẢN</span>
+              <h2 className="section-heading-bold">3 Điểm Tựa Chất Lượng Của NABADEN</h2>
             </div>
 
             <div className="commitments-grid">
               <div className="commit-card">
-                <div className="commit-icon-circle">🛡️</div>
-                <h4>100% Chính Gốc Núi Bà Đen</h4>
-                <p>Trái mãng cầu dai Tây Ninh chính hiệu, thịt dày dẻo thơm, ngọt đậm đà, không pha tạp hay trà trộn hàng kém chất lượng.</p>
+                <div className="commit-icon-circle">🌱</div>
+                <h4>Vùng Trồng Núi Bà Đen Tây Ninh</h4>
+                <p>Nguồn gốc rõ ràng tại vùng chuyên canh mãng cầu truyền thống, đảm bảo hương vị ngọt thanh và độ dai dẻo đặc trưng của mãng cầu ta Tây Ninh.</p>
               </div>
 
               <div className="commit-card">
-                <div className="commit-icon-circle">🔄</div>
-                <h4>Bảo Hành 1 Đổi 1 Miễn Phí</h4>
-                <p>Cam kết bao bù không mất phí nếu sản phẩm bị dập nát, hư hỏng trong quá trình vận chuyển hoặc bị sượng, đắng khi chín.</p>
+                <div className="commit-icon-circle">🤝</div>
+                <h4>Đồng Hành &amp; Hỗ Trợ Linh Hoạt</h4>
+                <p>Luôn lắng nghe phản hồi của đối tác và khách hàng, phối hợp trao đổi giải pháp phù hợp khi có phát sinh sự cố về vận chuyển hay chất lượng trái.</p>
               </div>
 
               <div className="commit-card">
                 <div className="commit-icon-circle">🏅</div>
-                <h4>Chuẩn VietGAP & OCOP Tây Ninh</h4>
-                <p>Quy trình bao trái an toàn sinh học, không hóa chất bảo quản độc hại, tuyệt đối an toàn cho sức khỏe gia đình và trẻ nhỏ.</p>
+                <h4>Tiêu Chuẩn VietGAP &amp; OCOP</h4>
+                <p>Canh tác theo hướng an toàn sinh học, quy trình bao trái bảo vệ trên cành, minh bạch thông tin nguồn gốc xuất xứ.</p>
               </div>
             </div>
           </div>
@@ -455,49 +455,49 @@ export default function PartnerRecruitmentPage() {
           <div className="section-container">
             <div className="section-header-center">
               <span className="section-sub-kicker">GIẢI ĐÁP THẮC MẮC</span>
-              <h2 className="section-heading-bold">Câu Hỏi Thường Gặp Của Đối Tác & CTV</h2>
+              <h2 className="section-heading-bold">Câu Hỏi Thường Gặp Của Đối Tác &amp; CTV</h2>
             </div>
 
             <div className="faq-accordion-grid">
               <div className="faq-item-card">
-                <h3 className="faq-question">1. Tôi chưa từng bán trái cây bao giờ thì có làm CTV được không?</h3>
+                <h3 className="faq-question">1. Người mới chưa có kinh nghiệm bán trái cây thì có tham gia được không?</h3>
                 <p className="faq-answer">
-                  Hoàn toàn được! NABADEN có đội ngũ hỗ trợ hướng dẫn bạn từ A-Z, cung cấp sẵn hình ảnh vườn, video thực tế, bài viết mẫu và tư vấn cách tư vấn khách hàng chu đáo.
+                  Bạn có thể bắt đầu với vai trò Cộng tác viên. NABADEN sẽ hỗ trợ cung cấp thông tin sản phẩm, hình ảnh thực tế và hướng dẫn các đặc tính cơ bản của trái mãng cầu để bạn dễ dàng tư vấn khách hàng.
                 </p>
               </div>
 
               <div className="faq-item-card">
-                <h3 className="faq-question">2. Làm sao để tôi biết đơn hàng của mình đã được giao và nhận hoa hồng?</h3>
+                <h3 className="faq-question">2. Làm sao để theo dõi tình trạng đơn hàng và chiết khấu?</h3>
                 <p className="faq-answer">
-                  Khi bạn gửi đơn, đội ngũ điều phối sẽ cung cấp mã vận đơn để bạn theo dõi hành trình. Ngay khi khách nhận hàng và thanh toán COD thành công, hệ thống sẽ cập nhật trạng thái và thông báo đối soát hoa hồng cho bạn.
+                  Mỗi đơn hàng gửi đi đều có thông tin vận đơn để các bên tiện theo dõi. Định kỳ theo tuần hoặc theo tháng, NABADEN sẽ gửi bảng kê chi tiết các đơn thành công để đối soát chiết khấu cùng bạn.
                 </p>
               </div>
 
               <div className="faq-item-card">
-                <h3 className="faq-question">3. Nhà Phân Phối cần điều kiện gì để được độc quyền khu vực?</h3>
+                <h3 className="faq-question">3. Nhà Phân Phối cần điều kiện gì để làm việc trực tiếp cùng NABADEN?</h3>
                 <p className="faq-answer">
-                  Để đăng ký phân phối độc quyền tại khu vực quận/huyện hoặc tỉnh thành, NPP chỉ cần cam kết mức sản lượng tiêu thụ tối thiểu theo tháng. NABADEN sẽ ký hợp đồng phân phối chính thức và chuyển toàn bộ khách lẻ/đại lý cấp dưới tại khu vực đó về cho bạn.
+                  Các bên sẽ cùng trao đổi về dự kiến sản lượng tiêu thụ, khu vực phân phối và tần suất nhập hàng để thống nhất chính sách giá và kế hoạch thu hoạch phù hợp nhất.
                 </p>
               </div>
 
               <div className="faq-item-card">
-                <h3 className="faq-question">4. Khách hàng nhận được trái bị dập hoặc sượng thì xử lý thế nào?</h3>
+                <h3 className="faq-question">4. Khi phát sinh sự cố về chất lượng hoặc dập hỏng do vận chuyển thì sao?</h3>
                 <p className="faq-answer">
-                  Khách chỉ cần chụp ảnh hoặc quay video gửi lại. NABADEN sẽ ngay lập tức gửi bù thùng mới hoặc hoàn tiền tương ứng trong vòng 24h. Bạn không phải chịu bất kỳ tổn thất nào.
+                  Đối tác vui lòng gửi hình ảnh hoặc video tình trạng hàng ngay khi nhận. NABADEN sẽ cùng bạn kiểm tra nguyên nhân và thống nhất phương án xử lý, hỗ trợ phù hợp theo từng trường hợp cụ thể.
                 </p>
               </div>
 
               <div className="faq-item-card">
-                <h3 className="faq-question">5. NABADEN giao hàng đến những tỉnh thành nào?</h3>
+                <h3 className="faq-question">5. NABADEN hỗ trợ giao hàng đến những khu vực nào?</h3>
                 <p className="faq-answer">
-                  NABADEN giao hàng trên toàn quốc! Tuyến TP.HCM giao hỏa tốc bằng xe buýt/xe mát chỉ 2-3 tiếng; Hà Nội và miền Bắc giao đường bay/xe lạnh 24-36 tiếng; các tỉnh miền Tây và Đông Nam Bộ giao trong ngày.
+                  Tùy thuộc vào khoảng cách địa lý và thời gian vận chuyển phù hợp với trái tươi, NABADEN sẽ tư vấn hình thức giao nhận bằng xe buýt/xe mát (khu vực lân cận) hoặc đường bay/chuyển phát nhanh (tuyến xa).
                 </p>
               </div>
 
               <div className="faq-item-card">
-                <h3 className="faq-question">6. Sau khi điền form đăng ký thì bao lâu tôi được kích hoạt tài khoản?</h3>
+                <h3 className="faq-question">6. Sau khi gửi thông tin đăng ký thì quy trình tiếp theo là gì?</h3>
                 <p className="faq-answer">
-                  Chuyên viên hỗ trợ đối tác của NABADEN sẽ liên hệ trực tiếp qua số Zalo của bạn trong vòng 15 – 30 phút để gửi bảng giá chi tiết, tài liệu và thêm bạn vào nhóm Zalo Hợp Tác NABADEN.
+                  Đội ngũ phụ trách đối tác của NABADEN sẽ liên hệ qua số Zalo bạn đã đăng ký để gửi bảng thông tin chính sách chi tiết và cùng bạn trao đổi kế hoạch hợp tác.
                 </p>
               </div>
             </div>

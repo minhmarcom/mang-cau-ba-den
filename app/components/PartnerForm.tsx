@@ -118,7 +118,7 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
             <span className="form-tag">ĐĂNG KÝ HỢP TÁC</span>
             <h3 className="form-main-title">Điền Thông Tin Trở Thành Đối Tác</h3>
             <p className="form-main-desc">
-              Tham gia mạng lưới phân phối đặc sản Tây Ninh chính gốc — Thu nhập không giới hạn!
+              Tham gia mạng lưới phân phối đặc sản Tây Ninh chính gốc cùng NABADEN.
             </p>
           </div>
 
@@ -138,7 +138,7 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 </div>
                 <div className="role-info">
                   <div className="role-title">Cộng Tác Viên (CTV)</div>
-                  <div className="role-desc">0 vốn, không ôm hàng, Nabaden ship & thu tiền, nhận hoa hồng trực tiếp.</div>
+                  <div className="role-desc">Bán hàng theo đơn, NABADEN hỗ trợ đóng gói, ship hàng và đối soát chiết khấu.</div>
                 </div>
               </button>
 
@@ -152,7 +152,7 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 </div>
                 <div className="role-info">
                   <div className="role-title">Nhà Phân Phối / Đại Lý Sỉ</div>
-                  <div className="role-desc">Giá sỉ tận vườn, độc quyền khu vực, hỗ trợ marketing & giấy kiểm định.</div>
+                  <div className="role-desc">Chính sách giá sỉ tại vườn theo sản lượng, hỗ trợ tài liệu và nguồn hàng.</div>
                 </div>
               </button>
             </div>
@@ -160,12 +160,12 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
 
           {/* BENEFIT HIGHLIGHT CALLOUT */}
           <div className={`benefit-callout ${isNPP ? "npp" : "ctv"}`}>
-            <span className="callout-icon">{isNPP ? "👑" : "✨"}</span>
+            <span className="callout-icon">{isNPP ? "👑" : "🌱"}</span>
             <div className="callout-text">
               {isNPP ? (
-                <span><strong>Đặc quyền Nhà Phân Phối:</strong> Hưởng chính sách giá sỉ ưu đãi lớn nhất tại vườn Núi Bà Đen, hỗ trợ nguồn hàng quanh năm, hình ảnh/video vườn, tem chống giả & chứng nhận VietGAP/OCOP.</span>
+                <span><strong>Chính sách Nhà Phân Phối:</strong> Áp dụng khung giá sỉ theo sản lượng tại vườn Núi Bà Đen, hỗ trợ nguồn hàng theo mùa vụ, cung cấp thông tin xuất xứ và chứng nhận VietGAP/OCOP.</span>
               ) : (
-                <span><strong>Đặc quyền Cộng Tác Viên:</strong> 100% không cần vốn, không cần tự cắt hay đóng gói. Nabaden lo toàn bộ từ cắt trái tươi, đóng thùng xốp, ship hỏa tốc, thu COD và chuyển hoa hồng đều đặn cho bạn!</span>
+                <span><strong>Chính sách Cộng Tác Viên:</strong> Không bắt buộc ôm hàng. NABADEN hỗ trợ các khâu hái trái tại vườn, bọc xốp, đóng thùng, gửi hàng và thu hộ COD, đối soát chiết khấu định kỳ cùng bạn.</span>
               )}
             </div>
           </div>

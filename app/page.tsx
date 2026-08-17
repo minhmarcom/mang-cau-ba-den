@@ -836,7 +836,7 @@ export default function Home() {
               maxWidth: "620px",
               marginBottom: "24px"
             }}>
-              Nabaden lo toàn bộ từ <strong>cắt trái tươi tại vườn, đóng thùng xốp, giao tận tay và thu tiền COD</strong>. Đối tác &amp; CTV chỉ cần giới thiệu, đặt hàng và nhận hoa hồng chiết khấu hấp dẫn!
+              NABADEN hỗ trợ các khâu từ <strong>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</strong>. Đối tác &amp; CTV chủ động lên đơn và đối soát chiết khấu minh bạch!
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
               <Link
@@ -903,9 +903,9 @@ export default function Home() {
               MÃNG CẦU BÀ ĐEN NABADEN
             </div>
             <div style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "0.85rem", lineHeight: 1.45 }}>
-              ✓ 0đ Vốn khởi đầu • Không ôm hàng<br />
+              ✓ Bán hàng theo đơn • Không ôm hàng<br />
               ✓ Hái tươi tại vườn &amp; Ship toàn quốc<br />
-              ✓ Bao bù 1 đổi 1 bảo vệ uy tín đối tác
+              ✓ Hỗ trợ xử lý &amp; đối soát linh hoạt
             </div>
           </div>
         </div>
