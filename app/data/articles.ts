@@ -11,6 +11,17 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/van-chuyen-mang-cau-ba-den",
+    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
+    kicker: "Đóng gói & Vận chuyển • Tây Ninh",
+    badge: "Vận chuyển & Đóng gói",
+    image: "/thuc-te-dong-goi-nhieu-thung.jpg",
+    date: "Tháng 8/2026",
+    readTime: "6 phút đọc",
+    description:
+      "Khám phá quy trình vận chuyển Mãng Cầu Bà Đen NABADEN từ vườn Tây Ninh đến tay khách hàng: Cách chọn độ già, bọc xốp chống va đập, kiểm soát thời gian và mẹo kiểm tra khi nhận.",
+  },
+  {
     slug: "/cach-bao-quan-mang-cau-ba-den",
     title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
     kicker: "Mẹo hay & Bảo quản • Tây Ninh",
