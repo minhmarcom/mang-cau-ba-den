@@ -81,7 +81,28 @@ img, picture, video, canvas, svg {
   box-sizing: border-box;
 }
 
-/* Fluid Auto-size Typography & Balanced Wrapping */
+/* Fluid Auto-size/* Typography orphan & line break protection */
+.nobr {
+  white-space: nowrap !important;
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6,
+.partner-hero-title,
+.section-heading-bold,
+.form-main-title,
+.tier-title,
+.step-title,
+.faq-question,
+.faq-accordion-title,
+.process-step-name {
+  text-wrap: balance;
+  hyphens: auto;
+}
+
+p, .partner-hero-lead, .section-desc-lead, .tier-desc, .step-desc, .faq-answer, .faq-accordion-body p {
+  text-wrap: pretty;
+}
 p, li, dd, figcaption, blockquote {
   text-wrap: pretty;
   text-align: left;

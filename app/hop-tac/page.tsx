@@ -123,7 +123,7 @@ export default function PartnerRecruitmentPage() {
             </div>
 
             <h1 className="partner-hero-title">
-              Hợp Tác Phân Phối Mãng Cầu Bà Đen Tây Ninh
+              Hợp Tác Phân Phối <span className="nobr">Mãng Cầu Bà Đen</span> <span className="nobr">Tây Ninh</span>
               <span className="hero-highlight-phrase">
                 NABADEN Hỗ Trợ Đóng Gói, Vận Chuyển &amp; Đối Soát Chiết Khấu
               </span>
