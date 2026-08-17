@@ -28,10 +28,10 @@ export default function Footer({ backLink }: FooterProps) {
             <Link className="brand footer-brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
               <img
                 src="/logo.png"
-                alt="Mãng Cầu Bà Đen NABADEN"
+                alt="Mãng Cầu Bà Đen"
                 className="brand-logo-img"
-                width="130"
-                height="38"
+                width="42"
+                height="42"
               />
               <span className="brand-divider" aria-hidden="true" style={{ color: "rgba(255,255,255,0.25)" }}>|</span>
               <span className="footer-brand-title">
@@ -115,6 +115,8 @@ export default function Footer({ backLink }: FooterProps) {
             <Link href="/san-pham">Sản phẩm</Link>
             <span className="dot-sep" aria-hidden="true">•</span>
             <Link href="/tin-tuc">Tin tức &amp; Cẩm nang</Link>
+            <span className="dot-sep" aria-hidden="true">•</span>
+            <Link href="/tuyen-dai-ly-ctv" style={{ color: "#fcd34d", fontWeight: 700 }}>Tuyển Đối Tác &amp; CTV</Link>
           </div>
         </div>
       </div>

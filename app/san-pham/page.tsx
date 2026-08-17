@@ -247,10 +247,10 @@ export default function ProductHubPage() {
         <Link className="brand" href="/">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN"
+            alt="Mãng Cầu Bà Đen"
             className="brand-logo-img"
-            width="130"
-            height="38"
+            width="42"
+            height="42"
           />
           <span className="brand-divider" aria-hidden="true">|</span>
           <span>

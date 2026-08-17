@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { articles } from "./data/articles";
 import Footer from "./components/Footer";
 
@@ -386,10 +387,10 @@ export default function Home() {
         >
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN"
+            alt="Mãng Cầu Bà Đen"
             className="brand-logo-img"
-            width="130"
-            height="38"
+            width="42"
+            height="42"
           />
           <span className="brand-divider" aria-hidden="true">|</span>
           <span className="brand-text">
@@ -402,6 +403,7 @@ export default function Home() {
           <a href="#san-pham">Sản phẩm</a>
           <a href="#hinh-anh">Hình ảnh</a>
           <a href="#dat-hang">Đặt hàng</a>
+          <Link href="/tuyen-dai-ly-ctv" style={{ color: "#2d6a3f", fontWeight: 700 }}>Tuyển CTV / Đối tác</Link>
           <a href="#tin-tuc">Tin tức</a>
           <a href="#lien-he">Liên hệ</a>
         </nav>
@@ -780,6 +782,131 @@ export default function Home() {
               Giao nhanh TP.HCM, Hà Nội & toàn quốc
               <b>→</b>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* PARTNER RECRUITMENT HOMEPAGE BANNER */}
+      <section className="home-partner-cta-section" style={{
+        background: "linear-gradient(135deg, #10361c 0%, #1e4f2c 100%)",
+        color: "#ffffff",
+        padding: "clamp(48px, 6vw, 72px) 20px",
+        margin: "0 0 20px 0"
+      }}>
+        <div style={{
+          maxWidth: "1140px",
+          margin: "0 auto",
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "32px"
+        }}>
+          <div style={{ flex: "1 1 560px" }}>
+            <div style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              background: "rgba(252, 211, 77, 0.15)",
+              border: "1px solid rgba(252, 211, 77, 0.4)",
+              color: "#fcd34d",
+              padding: "4px 14px",
+              borderRadius: "999px",
+              fontSize: "0.8rem",
+              fontWeight: 800,
+              textTransform: "uppercase",
+              letterSpacing: "0.08em",
+              marginBottom: "16px"
+            }}>
+              <span>🤝 HỢP TÁC KINH DOANH 0 VỐN</span>
+            </div>
+            <h2 style={{
+              fontSize: "clamp(1.6rem, 2.4vw + 0.8rem, 2.4rem)",
+              fontWeight: 900,
+              lineHeight: 1.25,
+              color: "#ffffff",
+              marginBottom: "14px"
+            }}>
+              Tuyển Nhà Phân Phối &amp; Cộng Tác Viên (CTV) Toàn Quốc
+            </h2>
+            <p style={{
+              fontSize: "1.02rem",
+              lineHeight: 1.6,
+              color: "#d1fae5",
+              maxWidth: "620px",
+              marginBottom: "24px"
+            }}>
+              Nabaden lo toàn bộ từ <strong>cắt trái tươi tại vườn, đóng thùng xốp, giao tận tay và thu tiền COD</strong>. Đối tác &amp; CTV chỉ cần giới thiệu, đặt hàng và nhận hoa hồng chiết khấu hấp dẫn!
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
+              <Link
+                href="/tuyen-dai-ly-ctv"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  background: "#fcd34d",
+                  color: "#12381e",
+                  padding: "14px 24px",
+                  borderRadius: "12px",
+                  fontWeight: 800,
+                  fontSize: "0.98rem",
+                  textDecoration: "none",
+                  boxShadow: "0 6px 20px rgba(252, 211, 77, 0.3)"
+                }}
+              >
+                <span>Xem Quyền Lợi &amp; Đăng Ký Ngay</span>
+                <span>→</span>
+              </Link>
+              <a
+                href="https://zalo.me/0907215521"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  background: "rgba(255, 255, 255, 0.12)",
+                  border: "1.5px solid rgba(255, 255, 255, 0.3)",
+                  color: "#ffffff",
+                  padding: "14px 22px",
+                  borderRadius: "12px",
+                  fontWeight: 700,
+                  fontSize: "0.98rem",
+                  textDecoration: "none"
+                }}
+              >
+                <span>Nhắn Zalo Tư Vấn</span>
+              </a>
+            </div>
+          </div>
+
+          <div style={{
+            flex: "0 1 360px",
+            background: "rgba(255, 255, 255, 0.08)",
+            border: "1px solid rgba(255, 255, 255, 0.18)",
+            borderRadius: "20px",
+            padding: "24px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: "center"
+          }}>
+            <img
+              src="/logo.png"
+              alt="Mascot Mãng Cầu Bà Đen"
+              width="100"
+              height="100"
+              style={{ objectFit: "contain", marginBottom: "14px", filter: "drop-shadow(0 6px 12px rgba(0,0,0,0.3))" }}
+            />
+            <div style={{ color: "#fcd34d", fontWeight: 800, fontSize: "1.1rem", marginBottom: "4px" }}>
+              MÃNG CẦU BÀ ĐEN NABADEN
+            </div>
+            <div style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "0.85rem", lineHeight: 1.45 }}>
+              ✓ 0đ Vốn khởi đầu • Không ôm hàng<br />
+              ✓ Hái tươi tại vườn &amp; Ship toàn quốc<br />
+              ✓ Bao bù 1 đổi 1 bảo vệ uy tín đối tác
+            </div>
           </div>
         </div>
       </section>
