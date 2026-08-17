@@ -92,7 +92,6 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
   const [province, setProvince] = useState("");
-  const [address, setAddress] = useState("");
   const [salesChannel, setSalesChannel] = useState("Bán online qua Facebook / Zalo / TikTok");
   const [notes, setNotes] = useState("");
 
@@ -110,10 +109,15 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
       setErrorMessage("Vui lòng nhập họ và tên của bạn.");
       return;
     }
-    if (!phone.trim() || phone.trim().length < 9) {
-      setErrorMessage("Vui lòng nhập số điện thoại (có Zalo) hợp lệ.");
+
+    // Strict Vietnam Phone Number Validation (10 digits starting with 03, 05, 07, 08, 09)
+    const cleanPhone = phone.trim().replace(/[\s\-\.]/g, "").replace(/^\+84/, "0").replace(/^84/, "0");
+    const vnPhoneRegex = /^0(3|5|7|8|9)[0-9]{8}$/;
+    if (!vnPhoneRegex.test(cleanPhone)) {
+      setErrorMessage("Số điện thoại Zalo không hợp lệ. Vui lòng nhập đúng 10 chữ số Việt Nam (ví dụ: 0907215521).");
       return;
     }
+
     if (!province) {
       setErrorMessage("Vui lòng chọn Tỉnh / Thành phố bạn đang sinh sống.");
       return;
@@ -136,10 +140,10 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
           sourceWebsite,
           partnerType,
           fullName: fullName.trim(),
-          phone: phone.trim(),
+          phone: cleanPhone,
           province: province.trim(),
           salesChannel,
-          address: address.trim(),
+          address: "",
           notes: notes.trim(),
         }),
       });
@@ -202,12 +206,6 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 <div className="detail-item">
                   <span className="detail-label">Kênh kinh doanh:</span>
                   <span className="detail-value">{salesChannel}</span>
-                </div>
-              )}
-              {address.trim() && (
-                <div className="detail-item">
-                  <span className="detail-label">Địa chỉ chi tiết:</span>
-                  <span className="detail-value">{address.trim()}</span>
                 </div>
               )}
               {notes.trim() && (
@@ -317,6 +315,7 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 type="tel"
                 className="form-input"
                 placeholder="Ví dụ: 0907 215 521"
+                maxLength={12}
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 required
@@ -371,20 +370,6 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
                 <option value="Người mới bắt đầu chưa có kinh nghiệm">Người mới bắt đầu (cần hướng dẫn)</option>
               </select>
             </div>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="partner-address" className="form-label">
-              Địa chỉ chi tiết <span style={{ fontWeight: 600, color: "#047857", fontSize: "0.86rem" }}>(Vui lòng ghi địa chỉ chưa sáp nhập)</span>
-            </label>
-            <input
-              id="partner-address"
-              type="text"
-              className="form-input"
-              placeholder="Số nhà, tên đường, phường/xã, quận/huyện (Vui lòng ghi địa chỉ chưa sáp nhập)..."
-              value={address}
-              onChange={(e) => setAddress(e.target.value)}
-            />
           </div>
 
           <div className="form-group">

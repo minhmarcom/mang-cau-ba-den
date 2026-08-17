@@ -3,9 +3,12 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { partnerType, fullName, phone, province, address, salesChannel, notes, sourceWebsite } = body;
 
-    if (!fullName || !phone) {
+    const cleanPhone = String(phone || "").trim().replace(/[\s\-\.]/g, "").replace(/^\+84/, "0").replace(/^84/, "0");
+    const vnPhoneRegex = /^0(3|5|7|8|9)[0-9]{8}$/;
+
+    if (!fullName || !vnPhoneRegex.test(cleanPhone)) {
       return Response.json(
-        { success: false, message: "Vui lòng nhập đầy đủ Họ tên và Số điện thoại Zalo." },
+        { success: false, message: "Vui lòng nhập đúng số điện thoại Zalo Việt Nam (10 chữ số, ví dụ: 0907215521)." },
         { status: 400 }
       );
     }
@@ -51,9 +54,9 @@ export async function POST(request: Request) {
       timestamp: formattedTimestamp,
       partnerType: partnerType || "Cộng Tác Viên (CTV)",
       fullName: String(fullName).trim(),
-      phone: String(phone).trim(),
+      phone: cleanPhone,
       province: String(province || "").trim(),
-      address: String(address || "").trim(),
+      address: "",
       salesChannel: String(salesChannel || "Bán online qua Facebook / Zalo / TikTok").trim(),
       notes: noteWithSource,
     };
