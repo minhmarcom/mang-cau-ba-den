@@ -81,11 +81,19 @@ const PROVINCES_POPULAR = [
   "Hải Phòng",
 ];
 
-interface PartnerFormProps {
-  defaultType?: "ctv" | "npp";
+export interface SuccessDetails {
+  fullName: string;
+  phone: string;
+  province: string;
+  partnerType: string;
 }
 
-export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
+interface PartnerFormProps {
+  defaultType?: "ctv" | "npp";
+  onSuccess?: (data: SuccessDetails) => void;
+}
+
+export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerFormProps) {
   const [partnerType, setPartnerType] = useState<string>(
     defaultType === "npp" ? "Nhà Phân Phối / Đại Lý Sỉ" : "Cộng Tác Viên (CTV)"
   );
@@ -167,6 +175,14 @@ export default function PartnerForm({ defaultType = "ctv" }: PartnerFormProps) {
 
       if (res.ok && data.success) {
         setIsSuccess(true);
+        if (onSuccess) {
+          onSuccess({
+            fullName: fullName.trim(),
+            phone: cleanPhone,
+            province: province.trim(),
+            partnerType,
+          });
+        }
         if (typeof window !== "undefined") {
           const formAnchor = document.getElementById("form-dang-ky");
           if (formAnchor) {
