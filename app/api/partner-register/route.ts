@@ -41,22 +41,20 @@ export async function POST(request: Request) {
       ? `${cleanNotes} (Nguồn: ${detectedWebsite})`
       : `(Nguồn: ${detectedWebsite})`;
 
-    // Map 1:1 to Google Sheets Columns (A -> H):
-    // Col A: Thời Gian Đăng Ký (timestamp)
-    // Col B: Loại Đối Tác (partnerType)
-    // Col C: Họ Và Tên (fullName)
-    // Col D: Số Điện Thoại (Zalo) (phone)
-    // Col E: Tỉnh / Thành Phố (province)
-    // Col F: Địa Chỉ Chi Tiết (address)
-    // Col G: Kênh Bán / Kinh Nghiệm (salesChannel)
-    // Col H: Ghi Chú / Nhu cầu (notes)
+    // Map 1:1 to Google Sheets Columns (A -> G):
+    // Col A (1): Thời Gian Đăng Ký (timestamp)
+    // Col B (2): Loại Đối Tác (partnerType)
+    // Col C (3): Họ Và Tên (fullName)
+    // Col D (4): Số Điện Thoại (Zalo) (phone)
+    // Col E (5): Tỉnh / Thành Phố (province)
+    // Col F (6): Kênh Bán / Kinh Nghiệm (salesChannel)
+    // Col G (7): Ghi Chú / Nhu cầu (notes)
     const payload = {
       timestamp: formattedTimestamp,
       partnerType: partnerType || "Cộng Tác Viên (CTV)",
       fullName: String(fullName).trim(),
       phone: cleanPhone,
       province: String(province || "").trim(),
-      address: "",
       salesChannel: String(salesChannel || "Bán online qua Facebook / Zalo / TikTok").trim(),
       notes: noteWithSource,
       row: [
@@ -65,7 +63,6 @@ export async function POST(request: Request) {
         String(fullName).trim(),
         "'" + cleanPhone,
         String(province || "").trim(),
-        "",
         String(salesChannel || "Bán online qua Facebook / Zalo / TikTok").trim(),
         noteWithSource
       ]
