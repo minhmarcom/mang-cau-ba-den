@@ -4452,44 +4452,185 @@ footer {
   }
 }
 
-/* FAQ Section */
-.partner-faq-section {
-  padding: clamp(48px, 6vw, 80px) 0;
-  background: #ffffff;
+/* FAQ Accordion Styling (Kiểu Đóng Mở) */
+.faq-accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 860px;
+  margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
 }
 
-.faq-accordion-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
-  gap: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.faq-item-card {
-  background: var(--sand);
+.faq-accordion-item {
+  border: 1.5px solid #e2e8f0;
   border-radius: 14px;
-  padding: 20px 18px;
-  border: 1px solid var(--border-soft);
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.faq-accordion-item.active {
+  border-color: #166534;
+  box-shadow: 0 4px 16px rgba(22, 101, 52, 0.08);
+}
+
+.faq-accordion-header {
+  width: 100%;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  cursor: pointer;
+  font-size: clamp(0.98rem, 0.2vw + 0.95rem, 1.08rem);
+  font-weight: 800;
+  color: #1e293b;
+  transition: background 0.2s ease;
+  box-sizing: border-box;
+}
+
+.faq-accordion-header:hover {
+  background: #f8fafc;
+}
+
+.faq-accordion-item.active .faq-accordion-header {
+  color: #166534;
+  background: #f0fdf4;
+}
+
+.faq-accordion-icon {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #166534;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.faq-accordion-body {
+  padding: 0 20px 18px 20px;
+  color: #334155;
+  font-size: 0.96rem;
+  line-height: 1.65;
+  border-top: 1px dashed #cbd5e1;
+  margin-top: 2px;
+  padding-top: 14px;
+  background: #ffffff;
+}
+
+/* Process Accordion Styling (Kiểu Đóng Mở Các Bước Vận Hành) */
+.process-accordion-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-  word-break: break-word;
 }
 
-.faq-question {
-  font-size: clamp(0.96rem, 0.2vw + 0.92rem, 1.05rem);
+.process-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.process-step-item {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.process-step-item:hover {
+  border-color: #cbd5e1;
+}
+
+.process-step-item.active {
+  border-color: #166534;
+  background: #f0fdf4;
+  box-shadow: 0 4px 16px rgba(22, 101, 52, 0.08);
+}
+
+.process-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.process-step-title-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.process-step-num {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #166534;
+  background: #dcfce7;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.process-step-icon {
+  font-size: 1.25rem;
+}
+
+.process-step-name {
+  font-size: clamp(0.98rem, 0.2vw + 0.95rem, 1.08rem);
   font-weight: 800;
-  color: var(--ink);
-  margin-bottom: 8px;
-  line-height: 1.4;
+  color: #0f172a;
 }
 
-.faq-answer {
-  font-size: 0.9rem;
-  color: var(--muted);
-  line-height: 1.55;
+.process-step-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.process-step-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.process-step-badge.who {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.process-step-badge.nabaden {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.process-step-badge.shipping {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.process-step-chevron {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.process-step-content {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #cbd5e1;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 

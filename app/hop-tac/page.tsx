@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PartnerForm from "../components/PartnerForm";
 import Footer from "../components/Footer";
+import FaqAccordion from "../components/FaqAccordion";
+import ProcessAccordion from "../components/ProcessAccordion";
 
 export const metadata: Metadata = {
   title: "Tuyển Nhà Phân Phối & Cộng Tác Viên (CTV) Mãng Cầu Bà Đen | NABADEN",
@@ -234,19 +236,11 @@ export default function PartnerRecruitmentPage() {
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">★</span>
-                    <div><strong>Chính sách ưu tiên theo khu vực:</strong> Ưu tiên nguồn hàng và điều phối thuận lợi cho các đối tác có sản lượng ổn định.</div>
-                  </div>
-                  <div className="benefit-item">
-                    <span className="b-icon">★</span>
-                    <div><strong>Kế hoạch nguồn hàng theo mùa vụ:</strong> Trao đổi lịch cắt trái định kỳ để đảm bảo tiến độ giao nhận cho đại lý.</div>
+                    <div><strong>Chính sách ưu tiên theo khu vực:</strong> Ưu tiên nguồn hàng và điều phối thuận lợi cho đối tác có sản lượng ổn định.</div>
                   </div>
                   <div className="benefit-item">
                     <span className="b-icon">★</span>
                     <div><strong>Hồ sơ nguồn gốc xuất xứ:</strong> Cung cấp thông tin chứng nhận VietGAP, OCOP Tây Ninh và tem truy xuất nguồn gốc.</div>
-                  </div>
-                  <div className="benefit-item">
-                    <span className="b-icon">★</span>
-                    <div><strong>Tư liệu hỗ trợ điểm bán:</strong> Hỗ trợ hình ảnh chất lượng cao, thông tin sản phẩm và tư vấn quy cách trưng bày.</div>
                   </div>
                 </div>
 
@@ -265,59 +259,11 @@ export default function PartnerRecruitmentPage() {
               <span className="section-sub-kicker">QUY TRÌNH PHỐI HỢP</span>
               <h2 className="section-heading-bold">Các Bước Vận Hành Cùng NABADEN</h2>
               <p className="section-desc-lead">
-                Quy trình được chuẩn hóa rõ ràng giữa các bên nhằm đảm bảo tiến độ đơn hàng và chất lượng trái khi đến tay người tiêu dùng.
+                Nhấn vào từng bước bên dưới để xem chi tiết quy trình phối hợp vận hành đơn hàng.
               </p>
             </div>
 
-            <div className="process-steps-grid">
-              <div className="step-card">
-                <div className="step-number-badge">01</div>
-                <div className="step-icon">📱</div>
-                <h4 className="step-title">Tiếp Nhận &amp; Lên Đơn</h4>
-                <p className="step-desc">Đối tác / CTV gửi thông tin người nhận, số lượng và thời gian mong muốn qua kênh liên lạc Zalo điều phối.</p>
-                <div className="step-tag-who">Đối tác / CTV</div>
-              </div>
-
-              <div className="step-card highlight">
-                <div className="step-number-badge">02</div>
-                <div className="step-icon">✂️</div>
-                <h4 className="step-title">Thu Hoạch Trái Theo Lứa</h4>
-                <p className="step-desc">Nhà vườn kiểm tra độ già phù hợp với khoảng cách vận chuyển của đơn hàng trước khi cắt trái.</p>
-                <div className="step-tag-nabaden">NABADEN thực hiện</div>
-              </div>
-
-              <div className="step-card highlight">
-                <div className="step-number-badge">03</div>
-                <div className="step-icon">📦</div>
-                <h4 className="step-title">Phân Loại &amp; Đóng Thùng Xốp</h4>
-                <p className="step-desc">Trái được bọc lưới xốp bảo vệ, xếp vào thùng carton có lỗ thoáng khí để hạn chế va đập trên đường đi.</p>
-                <div className="step-tag-nabaden">NABADEN thực hiện</div>
-              </div>
-
-              <div className="step-card highlight">
-                <div className="step-number-badge">04</div>
-                <div className="step-icon">🚚</div>
-                <h4 className="step-title">Giao Hàng Qua Đơn Vị Vận Chuyển</h4>
-                <p className="step-desc">Chuyển qua xe tuyến, dịch vụ hỏa tốc hoặc đường bay tùy theo khu vực và thỏa thuận của từng đơn.</p>
-                <div className="step-tag-nabaden">NABADEN thực hiện</div>
-              </div>
-
-              <div className="step-card highlight">
-                <div className="step-number-badge">05</div>
-                <div className="step-icon">💵</div>
-                <h4 className="step-title">Giao Hàng &amp; Thu Hộ (COD)</h4>
-                <p className="step-desc">Đơn vị vận chuyển giao hàng tận nơi, thu hộ tiền đơn hàng theo thông tin đã xác nhận.</p>
-                <div className="step-tag-nabaden">Vận chuyển &amp; Thu COD</div>
-              </div>
-
-              <div className="step-card highlight">
-                <div className="step-number-badge">06</div>
-                <div className="step-icon">🎉</div>
-                <h4 className="step-title">Đối Soát &amp; Thanh Toán Chiết Khấu</h4>
-                <p className="step-desc">Tổng hợp danh sách các đơn đã giao thành công và tiến hành chuyển khoản chiết khấu theo kỳ đối soát.</p>
-                <div className="step-tag-nabaden">NABADEN thực hiện</div>
-              </div>
-            </div>
+            <ProcessAccordion />
           </div>
         </section>
 
@@ -364,51 +310,12 @@ export default function PartnerRecruitmentPage() {
             <div className="section-header-center">
               <span className="section-sub-kicker">GIẢI ĐÁP THẮC MẮC</span>
               <h2 className="section-heading-bold">Câu Hỏi Thường Gặp Của Đối Tác &amp; CTV</h2>
+              <p className="section-desc-lead">
+                Nhấn vào từng câu hỏi bên dưới để xem câu trả lời chi tiết.
+              </p>
             </div>
 
-            <div className="faq-accordion-grid">
-              <div className="faq-item-card">
-                <h3 className="faq-question">1. Người mới chưa có kinh nghiệm bán trái cây thì có tham gia được không?</h3>
-                <p className="faq-answer">
-                  Bạn có thể bắt đầu với vai trò Cộng tác viên. NABADEN sẽ hỗ trợ cung cấp thông tin sản phẩm, hình ảnh thực tế và hướng dẫn các đặc tính cơ bản của trái mãng cầu để bạn dễ dàng tư vấn khách hàng.
-                </p>
-              </div>
-
-              <div className="faq-item-card">
-                <h3 className="faq-question">2. Làm sao để theo dõi tình trạng đơn hàng và chiết khấu?</h3>
-                <p className="faq-answer">
-                  Mỗi đơn hàng gửi đi đều có thông tin vận đơn để các bên tiện theo dõi. Định kỳ theo tuần hoặc theo tháng, NABADEN sẽ gửi bảng kê chi tiết các đơn thành công để đối soát chiết khấu cùng bạn.
-                </p>
-              </div>
-
-              <div className="faq-item-card">
-                <h3 className="faq-question">3. Nhà Phân Phối cần điều kiện gì để làm việc trực tiếp cùng NABADEN?</h3>
-                <p className="faq-answer">
-                  Các bên sẽ cùng trao đổi về dự kiến sản lượng tiêu thụ, khu vực phân phối và tần suất nhập hàng để thống nhất chính sách giá và kế hoạch thu hoạch phù hợp nhất.
-                </p>
-              </div>
-
-              <div className="faq-item-card">
-                <h3 className="faq-question">4. Khi phát sinh sự cố về chất lượng hoặc dập hỏng do vận chuyển thì sao?</h3>
-                <p className="faq-answer">
-                  Đối tác vui lòng gửi hình ảnh hoặc video tình trạng hàng ngay khi nhận. NABADEN sẽ cùng bạn kiểm tra nguyên nhân và thống nhất phương án xử lý, hỗ trợ phù hợp theo từng trường hợp cụ thể.
-                </p>
-              </div>
-
-              <div className="faq-item-card">
-                <h3 className="faq-question">5. NABADEN hỗ trợ giao hàng đến những khu vực nào?</h3>
-                <p className="faq-answer">
-                  Tùy thuộc vào khoảng cách địa lý và thời gian vận chuyển phù hợp với trái tươi, NABADEN sẽ tư vấn hình thức giao nhận bằng xe buýt/xe mát (khu vực lân cận) hoặc đường bay/chuyển phát nhanh (tuyến xa).
-                </p>
-              </div>
-
-              <div className="faq-item-card">
-                <h3 className="faq-question">6. Sau khi gửi thông tin đăng ký thì quy trình tiếp theo là gì?</h3>
-                <p className="faq-answer">
-                  Đội ngũ phụ trách đối tác của NABADEN sẽ liên hệ qua số Zalo bạn đã đăng ký để gửi bảng thông tin chính sách chi tiết và cùng bạn trao đổi kế hoạch hợp tác.
-                </p>
-              </div>
-            </div>
+            <FaqAccordion />
           </div>
         </section>
       </main>
