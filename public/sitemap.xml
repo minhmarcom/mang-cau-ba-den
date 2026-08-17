@@ -113,10 +113,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mangcaubaden.vn/hop-tac/</loc>
+    <lastmod>2026-08-17T09:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://mangcaubaden.vn/tuyen-dai-ly-ctv/</loc>
     <lastmod>2026-08-17T08:30:00+07:00</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mangcaubaden.vn/van-chuyen-mang-cau-ba-den/</loc>

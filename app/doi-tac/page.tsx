@@ -1,1 +1,1 @@
-export { default, metadata } from "../tuyen-dai-ly-ctv/page";
+export { metadata, default } from "../hop-tac/page";

@@ -179,7 +179,7 @@ export default function ShippingArticlePage() {
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <Link href="/">Trang chủ</Link>
           <Link href="/san-pham">Sản phẩm</Link>
-          <Link href="/tuyen-dai-ly-ctv">Tuyển CTV / Đối tác</Link>
+          <Link href="/hop-tac">Hợp tác</Link>
           <Link href="/tin-tuc" className="active">Tin tức</Link>
           <Link href="/#lien-he">Liên hệ</Link>
         </nav>
@@ -459,7 +459,7 @@ export default function ShippingArticlePage() {
                     <Link href="/san-pham" className="btn-cta-primary">
                       Xem Các Sản Phẩm →
                     </Link>
-                    <Link href="/tuyen-dai-ly-ctv" className="btn-cta-partner">
+                    <Link href="/hop-tac" className="btn-cta-partner">
                       Đăng Ký Làm Đối Tác / CTV
                     </Link>
                     <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer" className="btn-cta-zalo">

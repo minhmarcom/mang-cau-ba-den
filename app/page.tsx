@@ -403,7 +403,7 @@ export default function Home() {
           <a href="#san-pham">Sản phẩm</a>
           <a href="#hinh-anh">Hình ảnh</a>
           <a href="#dat-hang">Đặt hàng</a>
-          <Link href="/tuyen-dai-ly-ctv" style={{ color: "#2d6a3f", fontWeight: 700 }}>Tuyển CTV / Đối tác</Link>
+          <Link href="/hop-tac" style={{ color: "#2d6a3f", fontWeight: 700 }}>Hợp tác</Link>
           <a href="#tin-tuc">Tin tức</a>
           <a href="#lien-he">Liên hệ</a>
         </nav>
@@ -840,7 +840,7 @@ export default function Home() {
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
               <Link
-                href="/tuyen-dai-ly-ctv"
+                href="/hop-tac"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
@@ -1128,10 +1128,9 @@ export default function Home() {
           <span>Sản phẩm</span>
         </a>
 
-        <a
-          href="#hinh-anh"
-          className={currentTab === "hinh-anh" ? "is-active" : ""}
-          aria-current={currentTab === "hinh-anh" ? "page" : undefined}
+        <Link
+          href="/hop-tac"
+          aria-label="Hợp tác đối tác &amp; CTV"
         >
           <svg
             className="nav-svg"
@@ -1143,12 +1142,13 @@ export default function Home() {
             strokeLinejoin="round"
             aria-hidden="true"
           >
-            <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-            <circle cx="9" cy="9" r="2" />
-            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
           </svg>
-          <span>Hình ảnh</span>
-        </a>
+          <span>Hợp tác</span>
+        </Link>
 
         <a
           href="#tin-tuc"

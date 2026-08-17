@@ -71,10 +71,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${siteUrl}/tuyen-dai-ly-ctv/`,
+      url: `${siteUrl}/hop-tac/`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.95,
+    },
+    {
+      url: `${siteUrl}/tuyen-dai-ly-ctv/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
     },
     {
       url: `${siteUrl}/doi-tac/`,

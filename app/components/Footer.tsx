@@ -116,7 +116,7 @@ export default function Footer({ backLink }: FooterProps) {
             <span className="dot-sep" aria-hidden="true">•</span>
             <Link href="/tin-tuc">Tin tức &amp; Cẩm nang</Link>
             <span className="dot-sep" aria-hidden="true">•</span>
-            <Link href="/tuyen-dai-ly-ctv" style={{ color: "#fcd34d", fontWeight: 700 }}>Tuyển Đối Tác &amp; CTV</Link>
+            <Link href="/hop-tac" style={{ color: "#fcd34d", fontWeight: 700 }}>Hợp Tác Đối Tác &amp; CTV</Link>
           </div>
         </div>
       </div>
