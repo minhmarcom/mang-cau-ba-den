@@ -38,21 +38,27 @@ const products = [
 
 const gallery = [
   {
-    src: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
-    alt: "Vườn mãng cầu Tây Ninh xanh ngát bọc bao trái an toàn dưới trời xanh",
-    caption: "Vườn mãng cầu bọc bao trái an toàn dưới trời xanh Tây Ninh",
+    src: "/toan-canh-vuon-mang-cau-nui-ba-den.jpg",
+    alt: "Vườn mãng cầu xanh tốt bao trái trắng dưới chân Núi Bà Đen Tây Ninh",
+    caption: "Vườn mãng cầu trù phú dưới chân Núi Bà Đen Tây Ninh",
     shape: "gallery-wide",
   },
   {
-    src: "/nong-dan-thu-hoach-mang-cau.jpg",
-    alt: "Nhà nông thu hoạch mãng cầu già trực tiếp tại vườn",
-    caption: "Thu hoạch trái già chọn lọc vào sáng sớm",
+    src: "/trai-mang-cau-chin-gia-tren-tay.jpg",
+    alt: "Trái mãng cầu Bà Đen chín già mắt nở to căng tròn trên tay nhà vườn",
+    caption: "Trái chín già, mắt nở đều, bọc lưới xốp an toàn",
     shape: "gallery-tall",
   },
   {
-    src: "/vuon-nui-ba-den.jpg",
-    alt: "Vườn mãng cầu xanh ngát bao trái trắng dưới chân Núi Bà Đen Tây Ninh",
-    caption: "Vườn mãng cầu xanh ngát dưới chân Núi Bà Đen",
+    src: "/mang-cau-vua-hai-tai-vuon.jpg",
+    alt: "Mãng cầu Bà Đen vừa thu hoạch tại vườn còn nguyên cành lá tươi xanh",
+    caption: "Mãng cầu tươi vừa hái tại vườn còn nguyên cuống lá",
+    shape: "gallery-half",
+  },
+  {
+    src: "/dong-thung-carton-mang-cau-xop.jpg",
+    alt: "Các thùng carton mãng cầu bọc xốp xếp ngay ngắn sẵn sàng vận chuyển",
+    caption: "Đóng thùng carton thoáng khí, bọc xốp chống va đập",
     shape: "gallery-half",
   },
   {
@@ -64,26 +70,20 @@ const gallery = [
   {
     src: "/thuc-te-thu-hoach.jpg",
     alt: "Thu hoạch mãng cầu trực tiếp tại vườn",
-    caption: "Thu hoạch trực tiếp tại vườn",
-    shape: "gallery-half",
-  },
-  {
-    src: "/thuc-te-mang-cau-tuoi.jpg",
-    alt: "Mãng cầu tươi được bọc lưới bảo vệ",
-    caption: "Bảo vệ từng trái trước khi giao",
+    caption: "Thu hoạch trực tiếp tại vườn theo từng đợt trái",
     shape: "gallery-half",
   },
   {
     src: "/thuc-te-phan-loai.jpg",
     alt: "Mãng cầu được tập kết và phân loại sau thu hoạch",
-    caption: "Phân loại chuẩn kích cỡ",
+    caption: "Phân loại kích cỡ và tuyển chọn độ già đồng đều",
     shape: "gallery-half",
   },
   {
     src: "/thuc-te-dong-goi-nhieu-thung.jpg",
     alt: "Nhiều thùng mãng cầu đã đóng gói sẵn sàng giao",
-    caption: "Sẵn sàng giao nhận toàn quốc",
-    shape: "gallery-half",
+    caption: "Sẵn sàng điều phối giao nhận toàn quốc",
+    shape: "gallery-wide",
   },
 ];
 
