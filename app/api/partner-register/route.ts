@@ -33,27 +33,30 @@ export async function POST(request: Request) {
 
     const now = new Date();
     const formattedTimestamp = now.toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" });
+    const cleanNotes = String(notes || "").trim();
+    const noteWithSource = cleanNotes
+      ? `${cleanNotes} (Nguồn: ${detectedWebsite})`
+      : `(Nguồn: ${detectedWebsite})`;
 
+    // Map 1:1 to Google Sheets Columns (A -> H):
+    // Col A: Thời Gian Đăng Ký (timestamp)
+    // Col B: Loại Đối Tác (partnerType)
+    // Col C: Họ Và Tên (fullName)
+    // Col D: Số Điện Thoại (Zalo) (phone)
+    // Col E: Tỉnh / Thành Phố (province)
+    // Col F: Địa Chỉ Chi Tiết (address)
+    // Col G: Kênh Bán / Kinh Nghiệm (salesChannel)
+    // Col H: Ghi Chú / Nhu cầu (notes)
     const payload = {
       timestamp: formattedTimestamp,
-      website: detectedWebsite,
       partnerType: partnerType || "Cộng Tác Viên (CTV)",
       fullName: String(fullName).trim(),
       phone: String(phone).trim(),
       province: String(province || "").trim(),
-      salesChannel: String(salesChannel || "Bán online / Mạng xã hội").trim(),
       address: String(address || "").trim(),
-      notes: String(notes || "").trim(),
-
-      // Aliases for Google Apps Script & Google Sheets column mapping
-      time: formattedTimestamp,
-      sourceWebsite: detectedWebsite,
-      type: partnerType || "Cộng Tác Viên (CTV)",
-      name: String(fullName).trim(),
-      zalo: String(phone).trim(),
-      city: String(province || "").trim(),
-      channel: String(salesChannel || "Bán online / Mạng xã hội").trim(),
-      created_at: now.toISOString(),
+      salesChannel: String(salesChannel || "Bán online qua Facebook / Zalo / TikTok").trim(),
+      notes: noteWithSource,
+      website: detectedWebsite,
     };
 
     // Google Sheets Apps Script Webhook URL
