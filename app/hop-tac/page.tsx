@@ -4,6 +4,7 @@ import PartnerForm from "../components/PartnerForm";
 import Footer from "../components/Footer";
 import FaqAccordion from "../components/FaqAccordion";
 import ProcessAccordion from "../components/ProcessAccordion";
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount";
 
 export const metadata: Metadata = {
   title: "Tuyển Nhà Phân Phối & Cộng Tác Viên (CTV) Mãng Cầu Bà Đen | NABADEN",
@@ -73,6 +74,7 @@ const faqSchema = {
 export default function PartnerRecruitmentPage() {
   return (
     <>
+      <ScrollToTopOnMount />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
