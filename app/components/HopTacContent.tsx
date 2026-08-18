@@ -23,31 +23,35 @@ export default function HopTacContent() {
       <ScrollToTopOnMount />
 
       {/* HEADER */}
-      <header className="site-header">
-        <nav className="header-nav container" aria-label="Điều hướng chính">
-          <Link href="/" className="brand-logo">
-            <img
-              src="/assets/nabaden-logo.webp"
-              alt="NABADEN - Mãng Cầu Bà Đen Tây Ninh"
-              width="44"
-              height="44"
-              className="logo-img"
-            />
-            <span className="brand-badge">OCOP 3★</span>
-          </Link>
-          <div className="nav-links desktop-only">
-            <Link href="/">Trang Chủ</Link>
-            <Link href="/san-pham">Sản Phẩm</Link>
-            <Link href={successData ? "/" : "#quyen-loi"}>Chính Sách</Link>
-            <Link href={successData ? "/" : "#quy-trinh"}>Quy Trình</Link>
-            <Link href={successData ? "/" : "#faq"}>Hỏi Đáp</Link>
-          </div>
-          <div className="header-actions">
-            <a className="header-cta" href={successData ? "/" : "#form-dang-ky"}>
-              {successData ? "Về Trang Chủ" : "Đăng Ký Đối Tác"}
-            </a>
-          </div>
+      <header className="site-header" role="banner">
+        <Link className="brand" href="/">
+          <img
+            src="/logo.png"
+            alt="Mãng Cầu Bà Đen Tây Ninh NABADEN"
+            className="brand-logo-img"
+            width="42"
+            height="42"
+          />
+          <span className="brand-divider" aria-hidden="true">|</span>
+          <span className="brand-text">
+            Mãng Cầu<br />Bà Đen
+          </span>
+        </Link>
+
+        <nav className="desktop-nav" aria-label="Điều hướng chính">
+          <Link href="/">Trang chủ</Link>
+          <Link href="/san-pham">Sản phẩm</Link>
+          <Link href={successData ? "/" : "#quyen-loi"}>Chính sách</Link>
+          <Link href={successData ? "/" : "#quy-trinh"}>Quy trình</Link>
+          <Link href={successData ? "/" : "#faq"}>Hỏi đáp</Link>
         </nav>
+
+        <div className="header-actions">
+          <a className="header-cta" href={successData ? "/" : "#form-dang-ky"}>
+            <span>{successData ? "Về Trang Chủ" : "Đăng Ký Đối Tác"}</span>
+            <span className="btn-arrow">→</span>
+          </a>
+        </div>
       </header>
 
       <main className="partner-page-wrapper">
