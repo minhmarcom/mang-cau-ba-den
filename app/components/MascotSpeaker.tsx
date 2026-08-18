@@ -1,54 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function MascotSpeaker() {
-  const [isPlaying, setIsPlaying] = useState(false);
   const [isBubbleOpen, setIsBubbleOpen] = useState(true);
-  const [hasInteracted, setHasInteracted] = useState(false);
 
   const speechText =
     "Dạ xin chào! Em là Bé Mãng Cầu Bà Đen Tây Ninh chính gốc đây ạ. Anh chị cần hỏi mùa vụ hoặc đặt hàng giao hỏa tốc thì liên hệ Zalo cho em nhé!";
-
-  const toggleSpeech = () => {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) {
-      alert("Trình duyệt của bạn không hỗ trợ tính năng phát âm thanh Text-to-Speech.");
-      return;
-    }
-
-    if (isPlaying) {
-      window.speechSynthesis.cancel();
-      setIsPlaying(false);
-    } else {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(speechText);
-      utterance.lang = "vi-VN";
-      utterance.rate = 0.95;
-      utterance.pitch = 1.1;
-
-      // Try to select a natural Vietnamese voice
-      const voices = window.speechSynthesis.getVoices();
-      const viVoice = voices.find((v) => v.lang.includes("vi"));
-      if (viVoice) {
-        utterance.voice = viVoice;
-      }
-
-      utterance.onend = () => setIsPlaying(false);
-      utterance.onerror = () => setIsPlaying(false);
-
-      window.speechSynthesis.speak(utterance);
-      setIsPlaying(true);
-      setHasInteracted(true);
-    }
-  };
-
-  useEffect(() => {
-    return () => {
-      if (typeof window !== "undefined" && "speechSynthesis" in window) {
-        window.speechSynthesis.cancel();
-      }
-    };
-  }, []);
 
   return (
     <div
@@ -61,7 +19,7 @@ export default function MascotSpeaker() {
         flexDirection: "column",
         alignItems: "flex-start",
         gap: "10px",
-        maxWidth: "340px",
+        maxWidth: "320px",
       }}
     >
       {/* SPEECH BUBBLE */}
@@ -121,28 +79,7 @@ export default function MascotSpeaker() {
             {speechText}
           </p>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
-            <button
-              onClick={toggleSpeech}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                background: isPlaying ? "#dc2626" : "#166534",
-                color: "#ffffff",
-                border: "none",
-                borderRadius: "99px",
-                padding: "8px 14px",
-                fontSize: "12.5px",
-                fontWeight: 700,
-                cursor: "pointer",
-                boxShadow: "0 4px 12px rgba(22, 101, 52, 0.25)",
-                transition: "all 0.2s ease",
-              }}
-            >
-              <span>{isPlaying ? "⏹ Dừng nói" : "🔊 Nghe Bé Mãng Cầu lồng tiếng"}</span>
-            </button>
-
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <a
               href="https://zalo.me/0907215521"
               target="_blank"
@@ -150,17 +87,18 @@ export default function MascotSpeaker() {
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: "4px",
-                background: "#0284c7",
+                gap: "6px",
+                background: "#166534",
                 color: "#ffffff",
                 borderRadius: "99px",
-                padding: "8px 12px",
-                fontSize: "12.5px",
-                fontWeight: 700,
+                padding: "8px 16px",
+                fontSize: "13px",
+                fontWeight: 800,
                 textDecoration: "none",
+                boxShadow: "0 4px 12px rgba(22, 101, 52, 0.25)",
               }}
             >
-              <span>💬 Nhắn Zalo</span>
+              <span>💬 Nhắn Zalo Tư Vấn Ngay ➔</span>
             </a>
           </div>
         </div>
@@ -174,18 +112,13 @@ export default function MascotSpeaker() {
           gap: "10px",
           cursor: "pointer",
         }}
-        onClick={() => {
-          setIsBubbleOpen((prev) => !prev);
-          if (!isPlaying && !hasInteracted) {
-            toggleSpeech();
-          }
-        }}
+        onClick={() => setIsBubbleOpen((prev) => !prev)}
       >
         <div
           style={{
             position: "relative",
-            width: "84px",
-            height: "84px",
+            width: "80px",
+            height: "80px",
             borderRadius: "50%",
             border: "3px solid #166534",
             background: "#ffffff",
@@ -209,14 +142,14 @@ export default function MascotSpeaker() {
           style={{
             background: "#166534",
             color: "#ffffff",
-            padding: "6px 12px",
+            padding: "6px 14px",
             borderRadius: "99px",
             fontSize: "12px",
             fontWeight: 800,
             boxShadow: "0 4px 12px rgba(22, 101, 52, 0.2)",
           }}
         >
-          {isPlaying ? "🔊 Đang phát..." : "💬 Trò chuyện"}
+          💬 Trò chuyện
         </div>
       </div>
     </div>
