@@ -38,39 +38,39 @@ const products = [
 
 const gallery = [
   {
-    src: "/toan-canh-vuon-mang-cau-nui-ba-den.jpg",
-    alt: "Vườn mãng cầu xanh tốt bao trái trắng dưới chân Núi Bà Đen Tây Ninh",
+    src: "/vuon-mang-cau-nui-ba-den.jpg",
+    alt: "Vườn mãng cầu trù phú bọc túi sinh học dưới chân Núi Bà Đen Tây Ninh",
     caption: "Vườn mãng cầu trù phú dưới chân Núi Bà Đen Tây Ninh",
     shape: "gallery-wide",
   },
   {
-    src: "/trai-mang-cau-chin-gia-tren-tay.jpg",
-    alt: "Trái mãng cầu Bà Đen chín già mắt nở to căng tròn trên tay nhà vườn",
-    caption: "Trái chín già, mắt nở đều, bọc lưới xốp an toàn",
-    shape: "gallery-tall",
+    src: "/mang-cau-tren-canh-tay-ninh.jpg",
+    alt: "Trái mãng cầu Bà Đen chín già mắt nở to phẳng trên cành",
+    caption: "Trái chín già, mắt nở phẳng, bọc túi an toàn trên cành",
+    shape: "gallery-half",
   },
   {
-    src: "/mang-cau-vua-hai-tai-vuon.jpg",
-    alt: "Mãng cầu Bà Đen vừa thu hoạch tại vườn còn nguyên cành lá tươi xanh",
-    caption: "Mãng cầu tươi vừa hái tại vườn còn nguyên cuống lá",
+    src: "/hop-qua-nabaden-thiet-ke.jpg",
+    alt: "Hộp quà mãng cầu Bà Đen 3 trái NABADEN Thạnh Tân Co.op cao cấp",
+    caption: "Hộp quà biếu 3 trái NABADEN Thạnh Tân Co.op VIP",
+    shape: "gallery-half",
+  },
+  {
+    src: "/mang-cau-tap-ket-tai-vuon.jpg",
+    alt: "Mãng cầu bọc xốp thu hoạch tập kết dồi dào tại vườn Thạnh Tân",
+    caption: "Thu hoạch tập kết dồi dào tại vườn NABADEN Thạnh Tân",
+    shape: "gallery-wide",
+  },
+  {
+    src: "/trai-mang-cau-chin-gia-tren-tay.jpg",
+    alt: "Trái mãng cầu Bà Đen chín dẻo trên tay nhà vườn",
+    caption: "Thịt dai dẻo quánh, vị ngọt thanh tự nhiên",
     shape: "gallery-half",
   },
   {
     src: "/dong-thung-carton-mang-cau-xop.jpg",
-    alt: "Các thùng carton mãng cầu bọc xốp xếp ngay ngắn sẵn sàng vận chuyển",
-    caption: "Đóng thùng carton thoáng khí, bọc xốp chống va đập",
-    shape: "gallery-half",
-  },
-  {
-    src: "/hop-qua-3-trai-vip.jpg",
-    alt: "Hộp quà mãng cầu Bà Đen 3 trái tuyển chọn cao cấp",
-    caption: "Hộp quà 3 trái tuyển chọn thượng hạng",
-    shape: "gallery-tall",
-  },
-  {
-    src: "/thuc-te-thu-hoach.jpg",
-    alt: "Thu hoạch mãng cầu trực tiếp tại vườn",
-    caption: "Thu hoạch trực tiếp tại vườn theo từng đợt trái",
+    alt: "Đóng thùng carton mãng cầu bọc xốp thoáng khí",
+    caption: "Đóng thùng carton thoáng khí bọc xốp chống va đập",
     shape: "gallery-half",
   },
 ];
