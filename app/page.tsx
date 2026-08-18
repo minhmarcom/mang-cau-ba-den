@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { articles } from "./data/articles";
 import Footer from "./components/Footer";
-import MascotSpeaker from "./components/MascotSpeaker";
 
 const products = [
   {
@@ -1328,7 +1327,6 @@ export default function Home() {
 
       {/* FOOTER */}
       <Footer />
-      <MascotSpeaker />
     </main>
   );
 }
