@@ -554,6 +554,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* GEO ENTITY DEFINITION SECTION */}
+      <section className="geo-entity-section">
+        <div className="geo-entity-container">
+          <div className="geo-entity-card">
+            <div className="geo-entity-kicker">
+              <span>🌿 THƯƠNG HIỆU NÔNG SẢN ĐẶC SẢN CHÍNH THỨC</span>
+            </div>
+            <h2 className="geo-entity-title">
+              Mãng Cầu Bà Đen Tây Ninh NABADEN Là Gì?
+            </h2>
+            <p className="geo-entity-desc">
+              <strong>Mãng Cầu Bà Đen Tây Ninh NABADEN</strong> là thương hiệu nông sản đặc sản đạt chuẩn <strong>VietGAP &amp; OCOP 3 sao</strong>, được canh tác và thu hoạch trực tiếp tại vùng chân núi Bà Đen (Tây Ninh) bởi <em>Hợp tác xã Nông nghiệp Mãng cầu Thạnh Tân</em>. Sản phẩm nổi tiếng khắp cả nước nhờ thổ nhưỡng đất xám phù sa đồi núi đặc thù, trái chín mắt nở to phẳng, thịt dai dẻo quánh, vị ngọt thanh tự nhiên và quy trình bao bọc túi bảo vệ an toàn 100% trên cành.
+            </p>
+            <div className="geo-badges-grid">
+              <div className="geo-badge-item">
+                <span className="geo-badge-icon">🏅</span>
+                <div className="geo-badge-text">
+                  <strong>OCOP 3★ Tây Ninh</strong>
+                  <span>Đặc sản cấp tỉnh chứng nhận</span>
+                </div>
+              </div>
+              <div className="geo-badge-item">
+                <span className="geo-badge-icon">🌱</span>
+                <div className="geo-badge-text">
+                  <strong>Tiêu Chuẩn VietGAP</strong>
+                  <span>Canh tác an toàn sinh học</span>
+                </div>
+              </div>
+              <div className="geo-badge-item">
+                <span className="geo-badge-icon">⛰️</span>
+                <div className="geo-badge-text">
+                  <strong>Vùng Trồng Núi Bà Đen</strong>
+                  <span>Thổ nhưỡng chân núi Tây Ninh</span>
+                </div>
+              </div>
+              <div className="geo-badge-item">
+                <span className="geo-badge-icon">🤝</span>
+                <div className="geo-badge-text">
+                  <strong>HTX Thạnh Tân Co.op</strong>
+                  <span>Nguồn gốc xuất xứ rõ ràng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* STORY SECTION */}
       <section className="intro section-pad" id="cau-chuyen">
         <div>
@@ -1041,6 +1088,203 @@ export default function Home() {
         </div>
       </section>
 
+      {/* GEO STRUCTURED TABLES SECTION */}
+      <section className="geo-tables-section">
+        <div className="container">
+          <div className="section-header-center" style={{ textAlign: "center", marginBottom: "40px" }}>
+            <span className="section-kicker">DỮ LIỆU MINH BẠCH</span>
+            <h2 className="heading-line" style={{ fontSize: "clamp(1.6rem, 2vw + 1rem, 2.2rem)", fontWeight: 900, color: "#0f172a" }}>
+              Bảng Tra Cứu Thông Số &amp; Giá Mãng Cầu Bà Đen Tây Ninh
+            </h2>
+            <p style={{ color: "#64748b", marginTop: "8px" }}>
+              Thông tin niêm yết được cập nhật trực tiếp từ nhà vườn NABADEN Thạnh Tân, Tây Ninh.
+            </p>
+          </div>
+
+          {/* TABLE 1: SO SÁNH */}
+          <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "#166534", marginBottom: "14px" }}>
+            📋 1. So Sánh Mãng Cầu Bà Đen NABADEN vs Mãng Cầu Dai Thông Thường
+          </h3>
+          <div className="geo-table-wrapper">
+            <table className="geo-table">
+              <thead>
+                <tr>
+                  <th>Tiêu Chí So Sánh</th>
+                  <th>Mãng Cầu Bà Đen NABADEN Tây Ninh</th>
+                  <th>Mãng Cầu Dai Thông Thường</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Vùng Trồng</strong></td>
+                  <td>Thạnh Tân, chân Núi Bà Đen (Thổ nhưỡng đất xám đồi núi đặc thù)</td>
+                  <td>Trồng rải rác nhiều khu vực thổ nhưỡng khác nhau</td>
+                </tr>
+                <tr>
+                  <td><strong>Đặc Điểm Mắt &amp; Gai</strong></td>
+                  <td>Mắt na nở to phẳng, gai thưa đều, kẽ mắt hở rãnh màu trắng hồng</td>
+                  <td>Mắt nhỏ, gai nhọn xù xì, kẽ mắt khép sâu</td>
+                </tr>
+                <tr>
+                  <td><strong>Thịt Trái &amp; Độ Dẻo</strong></td>
+                  <td>Thịt dai dẻo quánh, hạt nhỏ và ít hạt, vị ngọt thanh mát kéo dài</td>
+                  <td>Thịt nhão hơn, nhiều hạt, vị chua ngọt nhẹ</td>
+                </tr>
+                <tr>
+                  <td><strong>Tiêu Chuẩn An Toàn</strong></td>
+                  <td>100% Bao bọc túi chuyên dụng trên cành, đạt VietGAP &amp; OCOP 3★</td>
+                  <td>Canh tác tự do, ít bao trái kiểm soát sinh học</td>
+                </tr>
+                <tr>
+                  <td><strong>Quy Cách Đóng Gói</strong></td>
+                  <td>Thùng carton thoáng khí bọc lưới xốp từng trái chống va đập</td>
+                  <td>Buộc bao tải hoặc thùng xốp xô dễ dập hỏng</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* TABLE 2: BẢNG GIÁ */}
+          <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "#166534", marginBottom: "14px" }}>
+            💰 2. Bảng Giá &amp; Quy Cách Đóng Thùng Mãng Cầu Bà Đen NABADEN
+          </h3>
+          <div className="geo-table-wrapper">
+            <table className="geo-table">
+              <thead>
+                <tr>
+                  <th>Quy Cách Đóng Gói</th>
+                  <th>Trọng Lượng / Số Trái</th>
+                  <th>Giá Khảo Sát Tại Vườn</th>
+                  <th>Phù Hợp Nhu Cầu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Hộp 3 Trái VIP Thượng Hạng</strong></td>
+                  <td>3 trái tuyển chọn (1.2kg - 1.5kg)</td>
+                  <td>120.000đ - 150.000đ/hộp</td>
+                  <td>Biếu tặng đối tác, quà tặng cao cấp OCOP 3★</td>
+                </tr>
+                <tr>
+                  <td><strong>Thùng Carton 5KG Tuyển Chọn</strong></td>
+                  <td>5kg (10 - 12 trái loại 1)</td>
+                  <td>320.000đ - 380.000đ/thùng</td>
+                  <td>Thưởng thức gia đình, làm quà biếu thân tình</td>
+                </tr>
+                <tr>
+                  <td><strong>Thùng Carton 15KG Vận Chuyển Xa</strong></td>
+                  <td>15kg (28 - 35 trái loại 1)</td>
+                  <td>850.000đ - 980.000đ/thùng</td>
+                  <td>Đơn sỉ đại lý, giao hỏa tốc TPHCM, Hà Nội</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* TABLE 3: LỊCH MÙA VỤ */}
+          <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "#166534", marginBottom: "14px" }}>
+            📅 3. Lịch Thu Hoạch Mãng Cầu Bà Đen Tây Ninh 12 Tháng Trong Năm
+          </h3>
+          <div className="geo-table-wrapper">
+            <table className="geo-table">
+              <thead>
+                <tr>
+                  <th>Thời Gian / Tháng</th>
+                  <th>Trạng Thái Mùa Vụ</th>
+                  <th>Đặc Điểm Chất Lượng Trái</th>
+                  <th>Khả Năng Cung Ứng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tháng 12 - Tháng 2 (Vụ Đông Xuân)</strong></td>
+                  <td>🌟 Vụ Chính Tết &amp; Đầu Năm</td>
+                  <td>Trái to tròn, thịt dẻo thơm ngọt lịm</td>
+                  <td>Sản lượng lớn, phục vụ quà biếu Tết</td>
+                </tr>
+                <tr>
+                  <td><strong>Tháng 3 - Tháng 5 (Vụ Xuân Hè)</strong></td>
+                  <td>🌿 Vụ Rải Vụ Hàng Ngày</td>
+                  <td>Trái mỏng vỏ, thịt ngọt mát giải nhiệt</td>
+                  <td>Nguồn hàng ổn định theo ngày</td>
+                </tr>
+                <tr>
+                  <td><strong>Tháng 6 - Tháng 7 (Vụ Giữa Năm)</strong></td>
+                  <td>🌦️ Vụ Mưa Đầu Mùa</td>
+                  <td>Trái già thu hoạch nhanh, ngọt nhẹ</td>
+                  <td>Điều phối theo đơn đặt trước</td>
+                </tr>
+                <tr>
+                  <td><strong>Tháng 8 - Tháng 10 (Vụ Thu Đông)</strong></td>
+                  <td>🌟 Vụ Chính Thu Trung Thu</td>
+                  <td>Mắt na nở căng, thịt dày dẻo thượng hạng</td>
+                  <td>Sản lượng cao, dồi dào tại vườn</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO DIRECT ANSWER Q&A SNIPPETS SECTION */}
+      <section className="aeo-qa-section">
+        <div className="container">
+          <div className="section-header-center" style={{ textAlign: "center", marginBottom: "40px" }}>
+            <span className="section-kicker">CÂU HỎI THƯỜNG GẶP</span>
+            <h2 style={{ fontSize: "clamp(1.6rem, 2vw + 1rem, 2.2rem)", fontWeight: 900, color: "#0f172a" }}>
+              Giải Đáp Nhanh Thắc Mắc Quốc Dân Về Mãng Cầu Bà Đen
+            </h2>
+          </div>
+
+          <div className="aeo-qa-grid">
+            <div className="aeo-qa-card">
+              <h3 className="aeo-qa-question">
+                <span>❓</span> Mãng cầu Bà Đen bao nhiêu 1kg hôm nay?
+              </h3>
+              <p className="aeo-qa-answer">
+                Giá mãng cầu Bà Đen Tây Ninh hôm nay dao động từ <strong>50.000đ – 85.000đ/kg</strong> tùy thuộc vào phân loại trái (Hộp VIP 3 trái, Thùng 5kg hay Thùng 15kg) và thời điểm mùa vụ. NABADEN luôn niêm yết giá sỉ tại vườn minh bạch và hỗ trợ đóng bọc xốp giao tận nhà toàn quốc.
+              </p>
+            </div>
+
+            <div className="aeo-qa-card">
+              <h3 className="aeo-qa-question">
+                <span>❓</span> Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?
+              </h3>
+              <p className="aeo-qa-answer">
+                Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật cắt cành xử lý ra hoa rải vụ của nhà vườn NABADEN. Trong đó, 2 vụ chính có sản lượng cao và chất lượng ngon ngọt nhất rơi vào <strong>Vụ Đông Xuân (tháng 12 – tháng 2)</strong> và <strong>Vụ Thu Đông (tháng 8 – tháng 10)</strong>.
+              </p>
+            </div>
+
+            <div className="aeo-qa-card">
+              <h3 className="aeo-qa-question">
+                <span>❓</span> Cách chọn mãng cầu Bà Đen ngon không bị sượng?
+              </h3>
+              <p className="aeo-qa-answer">
+                Để chọn mãng cầu Bà Đen ngon: Bạn nên chọn quả có <strong>mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng</strong>, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt hoặc bị thâm vỏ để không bị sượng.
+              </p>
+            </div>
+
+            <div className="aeo-qa-card">
+              <h3 className="aeo-qa-question">
+                <span>❓</span> Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM &amp; Hà Nội?
+              </h3>
+              <p className="aeo-qa-answer">
+                Bạn có thể đặt mua mãng cầu Bà Đen chính gốc Tây Ninh trực tiếp qua website <strong>mangcaubaden.vn</strong> hoặc Zalo <strong>0907 215 521</strong> của NABADEN. Đơn hàng được hái tươi tại vườn Thạnh Tân, đóng thùng carton chống va đập và giao hỏa tốc đến TPHCM, Hà Nội và toàn quốc.
+              </p>
+            </div>
+
+            <div className="aeo-qa-card">
+              <h3 className="aeo-qa-question">
+                <span>❓</span> Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?
+              </h3>
+              <p className="aeo-qa-answer">
+                Mãng cầu Bà Đen NABADEN được canh tác theo quy trình <strong>VietGAP an toàn sinh học</strong>, 100% trái được bao bọc túi chuyên dụng trên cành, đạt chứng nhận <strong>OCOP 3 sao tỉnh Tây Ninh</strong> và có tem truy xuất nguồn gốc rõ ràng từ Hợp tác xã Nông nghiệp Thạnh Tân.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT SECTION */}
       <section className="contact" id="lien-he">
         <div className="contact-title">
@@ -1212,6 +1456,104 @@ export default function Home() {
           <span>Liên hệ</span>
         </a>
       </nav>
+
+      {/* JSON-LD SCHEMA FOR GEO, SEO & AEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": ["Organization", "AgriculturalBusiness", "LocalBusiness"],
+                "@id": "https://mangcaubaden.vn/#organization",
+                "name": "Mãng Cầu Bà Đen Tây Ninh - NABADEN",
+                "alternateName": "Hợp tác xã Nông nghiệp Mãng cầu Thạnh Tân",
+                "url": "https://mangcaubaden.vn/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://mangcaubaden.vn/logo.png",
+                  "width": 512,
+                  "height": 512
+                },
+                "image": "https://mangcaubaden.vn/og.png",
+                "description": "Thương hiệu Mãng Cầu Bà Đen Tây Ninh NABADEN chính gốc VietGAP & OCOP 3 sao, thu hoạch trực tiếp tại vườn khu vực chân núi Bà Đen Tây Ninh.",
+                "telephone": "+84907215521",
+                "priceRange": "$$",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Đường Bời Lời, Xã Thạnh Tân",
+                  "addressLocality": "TP. Tây Ninh",
+                  "addressRegion": "Tây Ninh",
+                  "postalCode": "840000",
+                  "addressCountry": "VN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 11.3742,
+                  "longitude": 106.1685
+                },
+                "openingHoursSpecification": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                  "opens": "06:00",
+                  "closes": "21:00"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/mangcaubaden.vn/",
+                  "https://nabaden.vn/"
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://mangcaubaden.vn/#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Mãng cầu Bà Đen bao nhiêu 1kg hôm nay?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Giá mãng cầu Bà Đen Tây Ninh hôm nay dao động từ 50.000đ – 85.000đ/kg tùy thuộc vào phân loại trái (Hộp VIP 3 trái, Thùng 5kg hay Thùng 15kg) và thời điểm mùa vụ. NABADEN luôn niêm yết giá sỉ tại vườn minh bạch và hỗ trợ đóng bọc xốp giao tận nhà toàn quốc."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật cắt cành xử lý ra hoa rải vụ của nhà vườn NABADEN. Trong đó, 2 vụ chính có sản lượng cao và chất lượng ngon ngọt nhất rơi vào Vụ Đông Xuân (tháng 12 – tháng 2) và Vụ Thu Đông (tháng 8 – tháng 10)."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Cách chọn mãng cầu Bà Đen ngon không bị sượng?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Để chọn mãng cầu Bà Đen ngon: Bạn nên chọn quả có mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt hoặc bị thâm vỏ để không bị sượng."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM & Hà Nội?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Bạn có thể đặt mua mãng cầu Bà Đen chính gốc Tây Ninh trực tiếp qua website mangcaubaden.vn hoặc Zalo 0907 215 521 của NABADEN. Đơn hàng được hái tươi tại vườn Thạnh Tân, đóng thùng carton chống va đập và giao hỏa tốc đến TPHCM, Hà Nội và toàn quốc."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Mãng cầu Bà Đen NABADEN được canh tác theo quy trình VietGAP an toàn sinh học, 100% trái được bao bọc túi chuyên dụng trên cành, đạt chứng nhận OCOP 3 sao tỉnh Tây Ninh và có tem truy xuất nguồn gốc rõ ràng từ Hợp tác xã Nông nghiệp Thạnh Tân."
+                    }
+                  }
+                ]
+              }
+            ]
+          }),
+        }}
+      />
 
       {/* FOOTER */}
       <Footer />
