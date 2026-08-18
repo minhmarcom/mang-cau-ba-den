@@ -1055,65 +1055,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AEO DIRECT ANSWER Q&A SNIPPETS SECTION */}
-      <section className="aeo-qa-section">
-        <div className="container">
-          <div className="section-header-center" style={{ textAlign: "center", marginBottom: "32px" }}>
-            <span className="section-kicker">CÂU HỎI THƯỜNG GẶP</span>
-            <h2 style={{ fontSize: "clamp(1.5rem, 2vw + 1rem, 2rem)", fontWeight: 900, color: "#0f172a" }}>
-              Giải Đáp Nhanh Thắc Mắc Về Mãng Cầu Bà Đen
-            </h2>
-          </div>
-
-          <div className="aeo-qa-grid">
-            <div className="aeo-qa-card">
-              <h3 className="aeo-qa-question">
-                <span>❓</span> Mãng cầu Bà Đen bao nhiêu 1kg hôm nay?
-              </h3>
-              <p className="aeo-qa-answer">
-                Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và kích thước trái. Vui lòng liên hệ Hotline/Zalo <strong>0907 215 521</strong> để nhận báo giá sỉ &amp; lẻ tại vườn mới nhất hôm nay.
-              </p>
-            </div>
-
-            <div className="aeo-qa-card">
-              <h3 className="aeo-qa-question">
-                <span>❓</span> Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?
-              </h3>
-              <p className="aeo-qa-answer">
-                Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là <strong>Vụ Đông Xuân (Tháng 12 - Tháng 2)</strong> và <strong>Vụ Thu Đông (Tháng 8 - Tháng 10)</strong>.
-              </p>
-            </div>
-
-            <div className="aeo-qa-card">
-              <h3 className="aeo-qa-question">
-                <span>❓</span> Cách chọn mãng cầu Bà Đen ngon không bị sượng?
-              </h3>
-              <p className="aeo-qa-answer">
-                Chọn quả có <strong>mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng</strong>, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt để không bị sượng.
-              </p>
-            </div>
-
-            <div className="aeo-qa-card">
-              <h3 className="aeo-qa-question">
-                <span>❓</span> Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM &amp; Hà Nội?
-              </h3>
-              <p className="aeo-qa-answer">
-                Đặt mua trực tiếp tại <strong>mangcaubaden.vn</strong> hoặc Zalo <strong>0907 215 521</strong>. NABADEN hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc.
-              </p>
-            </div>
-
-            <div className="aeo-qa-card">
-              <h3 className="aeo-qa-question">
-                <span>❓</span> Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?
-              </h3>
-              <p className="aeo-qa-answer">
-                Mãng cầu NABADEN đạt chuẩn <strong>VietGAP &amp; OCOP 3 sao</strong> tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CONTACT SECTION */}
       <section className="contact" id="lien-he">
         <div className="contact-title">
