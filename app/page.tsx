@@ -1081,10 +1081,10 @@ export default function Home() {
       {/* AEO DIRECT ANSWER Q&A SNIPPETS SECTION */}
       <section className="aeo-qa-section">
         <div className="container">
-          <div className="section-header-center" style={{ textAlign: "center", marginBottom: "40px" }}>
+          <div className="section-header-center" style={{ textAlign: "center", marginBottom: "32px" }}>
             <span className="section-kicker">CÂU HỎI THƯỜNG GẶP</span>
-            <h2 style={{ fontSize: "clamp(1.6rem, 2vw + 1rem, 2.2rem)", fontWeight: 900, color: "#0f172a" }}>
-              Giải Đáp Nhanh Thắc Mắc Quốc Dân Về Mãng Cầu Bà Đen
+            <h2 style={{ fontSize: "clamp(1.5rem, 2vw + 1rem, 2rem)", fontWeight: 900, color: "#0f172a" }}>
+              Giải Đáp Nhanh Thắc Mắc Về Mãng Cầu Bà Đen
             </h2>
           </div>
 
@@ -1094,7 +1094,7 @@ export default function Home() {
                 <span>❓</span> Mãng cầu Bà Đen bao nhiêu 1kg hôm nay?
               </h3>
               <p className="aeo-qa-answer">
-                Giá mãng cầu Bà Đen Tây Ninh hôm nay dao động từ <strong>50.000đ – 85.000đ/kg</strong> tùy thuộc vào phân loại trái (Hộp VIP 3 trái, Thùng 5kg hay Thùng 15kg) và thời điểm mùa vụ. NABADEN luôn niêm yết giá sỉ tại vườn minh bạch và hỗ trợ đóng bọc xốp giao tận nhà toàn quốc.
+                Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và kích thước trái. Vui lòng liên hệ Hotline/Zalo <strong>0907 215 521</strong> để nhận báo giá sỉ &amp; lẻ tại vườn mới nhất hôm nay.
               </p>
             </div>
 
@@ -1103,7 +1103,7 @@ export default function Home() {
                 <span>❓</span> Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?
               </h3>
               <p className="aeo-qa-answer">
-                Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật cắt cành xử lý ra hoa rải vụ của nhà vườn NABADEN. Trong đó, 2 vụ chính có sản lượng cao và chất lượng ngon ngọt nhất rơi vào <strong>Vụ Đông Xuân (tháng 12 – tháng 2)</strong> và <strong>Vụ Thu Đông (tháng 8 – tháng 10)</strong>.
+                Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là <strong>Vụ Đông Xuân (Tháng 12 - Tháng 2)</strong> và <strong>Vụ Thu Đông (Tháng 8 - Tháng 10)</strong>.
               </p>
             </div>
 
@@ -1112,7 +1112,7 @@ export default function Home() {
                 <span>❓</span> Cách chọn mãng cầu Bà Đen ngon không bị sượng?
               </h3>
               <p className="aeo-qa-answer">
-                Để chọn mãng cầu Bà Đen ngon: Bạn nên chọn quả có <strong>mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng</strong>, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt hoặc bị thâm vỏ để không bị sượng.
+                Chọn quả có <strong>mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng</strong>, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt để không bị sượng.
               </p>
             </div>
 
@@ -1121,7 +1121,7 @@ export default function Home() {
                 <span>❓</span> Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM &amp; Hà Nội?
               </h3>
               <p className="aeo-qa-answer">
-                Bạn có thể đặt mua mãng cầu Bà Đen chính gốc Tây Ninh trực tiếp qua website <strong>mangcaubaden.vn</strong> hoặc Zalo <strong>0907 215 521</strong> của NABADEN. Đơn hàng được hái tươi tại vườn Thạnh Tân, đóng thùng carton chống va đập và giao hỏa tốc đến TPHCM, Hà Nội và toàn quốc.
+                Đặt mua trực tiếp tại <strong>mangcaubaden.vn</strong> hoặc Zalo <strong>0907 215 521</strong>. NABADEN hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc.
               </p>
             </div>
 
@@ -1130,7 +1130,7 @@ export default function Home() {
                 <span>❓</span> Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?
               </h3>
               <p className="aeo-qa-answer">
-                Mãng cầu Bà Đen NABADEN được canh tác theo quy trình <strong>VietGAP an toàn sinh học</strong>, 100% trái được bao bọc túi chuyên dụng trên cành, đạt chứng nhận <strong>OCOP 3 sao tỉnh Tây Ninh</strong> và có tem truy xuất nguồn gốc rõ ràng từ Hợp tác xã Nông nghiệp Thạnh Tân.
+                Mãng cầu NABADEN đạt chuẩn <strong>VietGAP &amp; OCOP 3 sao</strong> tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng.
               </p>
             </div>
           </div>
@@ -1365,7 +1365,7 @@ export default function Home() {
                     "name": "Mãng cầu Bà Đen bao nhiêu 1kg hôm nay?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Giá mãng cầu Bà Đen Tây Ninh hôm nay dao động từ 50.000đ – 85.000đ/kg tùy thuộc vào phân loại trái (Hộp VIP 3 trái, Thùng 5kg hay Thùng 15kg) và thời điểm mùa vụ. NABADEN luôn niêm yết giá sỉ tại vườn minh bạch và hỗ trợ đóng bọc xốp giao tận nhà toàn quốc."
+                      "text": "Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và kích thước trái. Vui lòng liên hệ Hotline/Zalo 0907 215 521 để nhận báo giá sỉ & lẻ tại vườn mới nhất hôm nay."
                     }
                   },
                   {
@@ -1373,7 +1373,7 @@ export default function Home() {
                     "name": "Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật cắt cành xử lý ra hoa rải vụ của nhà vườn NABADEN. Trong đó, 2 vụ chính có sản lượng cao và chất lượng ngon ngọt nhất rơi vào Vụ Đông Xuân (tháng 12 – tháng 2) và Vụ Thu Đông (tháng 8 – tháng 10)."
+                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10)."
                     }
                   },
                   {
@@ -1381,7 +1381,7 @@ export default function Home() {
                     "name": "Cách chọn mãng cầu Bà Đen ngon không bị sượng?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Để chọn mãng cầu Bà Đen ngon: Bạn nên chọn quả có mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt hoặc bị thâm vỏ để không bị sượng."
+                      "text": "Chọn quả có mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt để không bị sượng."
                     }
                   },
                   {
@@ -1389,7 +1389,7 @@ export default function Home() {
                     "name": "Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM & Hà Nội?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Bạn có thể đặt mua mãng cầu Bà Đen chính gốc Tây Ninh trực tiếp qua website mangcaubaden.vn hoặc Zalo 0907 215 521 của NABADEN. Đơn hàng được hái tươi tại vườn Thạnh Tân, đóng thùng carton chống va đập và giao hỏa tốc đến TPHCM, Hà Nội và toàn quốc."
+                      "text": "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc."
                     }
                   },
                   {
@@ -1397,7 +1397,7 @@ export default function Home() {
                     "name": "Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Mãng cầu Bà Đen NABADEN được canh tác theo quy trình VietGAP an toàn sinh học, 100% trái được bao bọc túi chuyên dụng trên cành, đạt chứng nhận OCOP 3 sao tỉnh Tây Ninh và có tem truy xuất nguồn gốc rõ ràng từ Hợp tác xã Nông nghiệp Thạnh Tân."
+                      "text": "Mãng cầu NABADEN đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng."
                     }
                   }
                 ]
