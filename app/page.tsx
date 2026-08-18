@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { articles } from "./data/articles";
 import Footer from "./components/Footer";
+import MascotSpeaker from "./components/MascotSpeaker";
 
 const products = [
   {
@@ -539,10 +540,10 @@ export default function Home() {
               <span>🌿 THƯƠNG HIỆU NÔNG SẢN ĐẶC SẢN CHÍNH THỨC</span>
             </div>
             <h2 className="geo-entity-title">
-              Mãng Cầu Bà Đen Tây Ninh NABADEN Là Gì?
+              Mãng Cầu Bà Đen Tây Ninh Là Gì?
             </h2>
             <p className="geo-entity-desc">
-              <strong>Mãng Cầu Bà Đen Tây Ninh NABADEN</strong> là thương hiệu nông sản đặc sản đạt chuẩn <strong>VietGAP &amp; OCOP 3 sao</strong>, được canh tác và thu hoạch trực tiếp tại vùng chân núi Bà Đen (Tây Ninh) bởi <em>Hợp tác xã Nông nghiệp Mãng cầu Thạnh Tân</em>. Sản phẩm nổi tiếng khắp cả nước nhờ thổ nhưỡng đất xám phù sa đồi núi đặc thù, trái chín mắt nở to phẳng, thịt dai dẻo quánh, vị ngọt thanh tự nhiên và quy trình bao bọc túi bảo vệ an toàn 100% trên cành.
+              <strong>Mãng Cầu Bà Đen Tây Ninh</strong> là nông sản đặc sản đạt chuẩn <strong>VietGAP &amp; OCOP 3 sao</strong>, được canh tác và thu hoạch trực tiếp tại vùng chân núi Bà Đen (Tây Ninh). Sản phẩm nổi tiếng khắp cả nước nhờ thổ nhưỡng đất xám phù sa đồi núi đặc thù, trái chín mắt nở to phẳng, thịt dai dẻo quánh, vị ngọt thanh tự nhiên và quy trình bao bọc túi bảo vệ an toàn 100% trên cành.
             </p>
             <div className="geo-badges-grid">
               <div className="geo-badge-item">
@@ -567,10 +568,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">🤝</span>
+                <span className="geo-badge-icon">✨</span>
                 <div className="geo-badge-text">
-                  <strong>HTX Thạnh Tân Co.op</strong>
-                  <span>Nguồn gốc xuất xứ rõ ràng</span>
+                  <strong>Nông Sản Chính Gốc</strong>
+                  <span>100% Thu hoạch tại vườn Tây Ninh</span>
                 </div>
               </div>
             </div>
@@ -1327,6 +1328,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <Footer />
+      <MascotSpeaker />
     </main>
   );
 }
