@@ -73,61 +73,38 @@ const gallery = [
     caption: "Thu hoạch trực tiếp tại vườn theo từng đợt trái",
     shape: "gallery-half",
   },
-  {
-    src: "/thuc-te-phan-loai.jpg",
-    alt: "Mãng cầu được tập kết và phân loại sau thu hoạch",
-    caption: "Phân loại kích cỡ và tuyển chọn độ già đồng đều",
-    shape: "gallery-half",
-  },
-  {
-    src: "/thuc-te-dong-goi-nhieu-thung.jpg",
-    alt: "Nhiều thùng mãng cầu đã đóng gói sẵn sàng giao",
-    caption: "Sẵn sàng điều phối giao nhận toàn quốc",
-    shape: "gallery-wide",
-  },
 ];
-
 
 const faqs = [
   {
     question: "Mãng cầu Bà Đen là gì và được trồng ở đâu?",
     answer:
-      "Mãng cầu Bà Đen là cách gọi quen thuộc của mãng cầu ta, hay quả na, được canh tác tại vùng Tây Ninh, đặc biệt quanh khu vực núi Bà Đen. Điều kiện nắng ấm và kinh nghiệm nhà vườn góp phần tạo nên hương vị đặc trưng của trái.",
+      "Mãng cầu Bà Đen là giống na dai đặc sản được canh tác tại vùng đất xám chân núi Bà Đen (Tây Ninh). NABADEN thu hoạch và phân phối trực tiếp từ nhà vườn HTX Thạnh Tân Co.op đạt chuẩn VietGAP & OCOP 3 sao.",
   },
   {
-    question: "Mãng cầu Bà Đen có gì đặc biệt?",
+    question: "Mãng cầu Bà Đen giá bao nhiêu 1kg hôm nay?",
     answer:
-      "Trái thường được yêu thích nhờ mùi thơm rõ, vị ngọt thanh và phần thịt mềm dẻo khi chín đúng độ. Chất lượng thực tế còn phụ thuộc giống, vườn trồng, thời điểm thu hoạch và cách bảo quản.",
+      "Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và quy cách đóng thùng. Quý khách vui lòng liên hệ Hotline/Zalo 0907 215 521 để nhận báo giá sỉ & lẻ tại vườn mới nhất hôm nay.",
   },
   {
     question: "Mùa mãng cầu Tây Ninh vào thời gian nào?",
     answer:
-      "Mãng cầu có mùa vụ và sản lượng thay đổi theo thời tiết, lịch xử lý ra hoa của từng vườn. Để đặt mua mãng cầu Bà Đen đúng độ chín và ngày giao phù hợp, khách hàng nên liên hệ trực tiếp trước khi đặt.",
+      "Mãng cầu Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10).",
   },
   {
-    question: "Cách chọn mãng cầu Bà Đen ngon và nhận biết trái chín?",
+    question: "Cách chọn mãng cầu Bà Đen ngon không bị sượng?",
     answer:
-      "Nên chọn trái có mắt nở tương đối đều, vỏ chuyển xanh nhạt, cầm chắc nhưng không quá cứng. Trái bắt đầu chín thường tỏa mùi thơm nhẹ và mềm dần; tránh bóp mạnh làm dập thịt.",
+      "Chọn quả có mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng, vỏ mỏng hơi mềm tay và cuống tươi. Tránh chọn quả mắt nhỏ còn xanh gắt để không bị sượng.",
   },
   {
-    question: "Mãng cầu bao lâu thì chín và bảo quản thế nào?",
+    question: "Mua mãng cầu Bà Đen chính gốc giao TPHCM & Hà Nội ở đâu?",
     answer:
-      "Thời gian chín phụ thuộc độ già khi hái và nhiệt độ môi trường. Nên để trái ở nơi khô thoáng, kiểm tra mỗi ngày; khi vừa chín có thể cho vào ngăn mát và dùng sớm để giữ hương vị.",
+      "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân, bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
   },
   {
-    question: "Mãng cầu có để tủ lạnh được không?",
+    question: "Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?",
     answer:
-      "Có, nhưng nên làm lạnh sau khi trái đã chín vừa. Trái còn xanh để trong tủ lạnh có thể chín chậm hoặc không đều. Nên bọc nhẹ, tránh đè lên nhau và sử dụng sớm.",
-  },
-  {
-    question: "Mua mãng cầu Bà Đen ở đâu và có giao tận nơi không?",
-    answer:
-      "Khách hàng có thể gọi hoặc nhắn Zalo 0907 215 521 để đặt mua mãng cầu Bà Đen, chọn quy cách, giá theo thời điểm và khu vực giao. Đơn lẻ, đơn quà tặng và nhu cầu mua sỉ sẽ được trao đổi riêng.",
-  },
-  {
-    question: "Có tiêu chuẩn VietGAP hoặc hồ sơ nguồn gốc vùng trồng không?",
-    answer:
-      "Tiêu chuẩn và hồ sơ truy xuất nguồn gốc được xác nhận theo từng vườn và thời điểm cung ứng. Khách hàng và đối tác có thể liên hệ trực tiếp để trao đổi chi tiết và xem mẫu thực tế trước khi thống nhất đơn hàng.",
+      "Mãng cầu NABADEN đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng từ HTX Nông nghiệp Thạnh Tân.",
   },
 ];
 
