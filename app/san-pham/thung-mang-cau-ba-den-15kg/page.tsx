@@ -61,7 +61,8 @@ const productSchema = {
   offers: {
     "@type": "Offer",
     priceCurrency: "VND",
-    price: "Liên hệ",
+    price: "900000",
+    priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
     seller: {
@@ -76,6 +77,19 @@ const productSchema = {
     bestRating: "5",
     worstRating: "1",
   },
+  review: [
+    {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+        worstRating: "1"
+      },
+      author: { "@type": "Person", name: "Đại lý Nông sản" },
+      reviewBody: "Đơn sỉ 15kg giao hỏa tốc đóng thùng chịu lực cực tốt."
+    }
+  ],
 };
 
 const breadcrumbSchema = {

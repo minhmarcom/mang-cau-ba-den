@@ -14,7 +14,16 @@ export default function HopTacContent() {
   const handleSuccess = (details: SuccessDetails) => {
     setSuccessData(details);
     if (typeof window !== "undefined") {
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    if (successData) return;
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -41,16 +50,23 @@ export default function HopTacContent() {
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <Link href="/">Trang chủ</Link>
           <Link href="/san-pham">Sản phẩm</Link>
-          <Link href={successData ? "/" : "#quyen-loi"}>Chính sách</Link>
-          <Link href={successData ? "/" : "#quy-trinh"}>Quy trình</Link>
-          <Link href={successData ? "/" : "#faq"}>Hỏi đáp</Link>
+          <a href="#quyen-loi" onClick={(e) => scrollToSection(e, "quyen-loi")}>Chính sách</a>
+          <a href="#quy-trinh" onClick={(e) => scrollToSection(e, "quy-trinh")}>Quy trình</a>
+          <a href="#faq" onClick={(e) => scrollToSection(e, "faq")}>Hỏi đáp</a>
         </nav>
 
         <div className="header-actions">
-          <a className="header-cta" href={successData ? "/" : "#form-dang-ky"}>
-            <span>{successData ? "Về Trang Chủ" : "Đăng Ký Đối Tác"}</span>
-            <span className="btn-arrow">→</span>
-          </a>
+          {successData ? (
+            <Link className="header-cta" href="/">
+              <span>Về Trang Chủ</span>
+              <span className="btn-arrow">→</span>
+            </Link>
+          ) : (
+            <a className="header-cta" href="#form-dang-ky" onClick={(e) => scrollToSection(e, "form-dang-ky")}>
+              <span>Đăng Ký Đối Tác</span>
+              <span className="btn-arrow">→</span>
+            </a>
+          )}
         </div>
       </header>
 

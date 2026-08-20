@@ -199,6 +199,8 @@ const productListSchema = {
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
+          price: "180000",
+          priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
           url: "https://mangcaubaden.vn/san-pham/hop-mang-cau-ba-den-3-trai-vip",
         },
@@ -206,7 +208,22 @@ const productListSchema = {
           "@type": "AggregateRating",
           ratingValue: "4.9",
           reviewCount: "128",
+          bestRating: "5",
+          worstRating: "1",
         },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+              worstRating: "1"
+            },
+            author: { "@type": "Person", name: "Chị Thanh Hằng" },
+            reviewBody: "Hộp quà mãng cầu 3 trái VIP sang trọng, dâng lễ Núi Bà Đen rất ý nghĩa."
+          }
+        ]
       },
     },
     {
@@ -221,9 +238,31 @@ const productListSchema = {
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
+          price: "325000",
+          priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
           url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-5kg",
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "96",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+              worstRating: "1"
+            },
+            author: { "@type": "Person", name: "Anh Minh Đức" },
+            reviewBody: "Thùng 5kg bọc xốp cẩn thận, nhận hàng mãng cầu còn rất tươi."
+          }
+        ]
       },
     },
     {
@@ -238,9 +277,31 @@ const productListSchema = {
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
+          price: "900000",
+          priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
           url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-15kg",
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          reviewCount: "74",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+              worstRating: "1"
+            },
+            author: { "@type": "Person", name: "Đại lý Nông sản" },
+            reviewBody: "Đơn sỉ 15kg giao hỏa tốc đóng thùng chịu lực cực tốt."
+          }
+        ]
       },
     },
   ],

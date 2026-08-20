@@ -61,7 +61,8 @@ const productSchema = {
   offers: {
     "@type": "Offer",
     priceCurrency: "VND",
-    price: "Liên hệ",
+    price: "325000",
+    priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
     seller: {
@@ -76,6 +77,19 @@ const productSchema = {
     bestRating: "5",
     worstRating: "1",
   },
+  review: [
+    {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+        worstRating: "1"
+      },
+      author: { "@type": "Person", name: "Anh Minh Đức" },
+      reviewBody: "Thùng 5kg bọc xốp cẩn thận, nhận hàng mãng cầu còn rất tươi."
+    }
+  ],
 };
 
 const breadcrumbSchema = {

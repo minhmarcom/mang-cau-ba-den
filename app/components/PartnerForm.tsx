@@ -169,10 +169,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
           });
         }
         if (typeof window !== "undefined") {
-          const formAnchor = document.getElementById("form-dang-ky");
-          if (formAnchor) {
-            formAnchor.scrollIntoView({ behavior: "smooth", block: "center" });
-          }
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }
       } else {
         setErrorMessage(data.message || "Có lỗi xảy ra khi gửi. Vui lòng liên hệ Hotline/Zalo 0907 215 521.");

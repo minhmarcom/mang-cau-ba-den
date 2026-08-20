@@ -61,7 +61,8 @@ const productSchema = {
   offers: {
     "@type": "Offer",
     priceCurrency: "VND",
-    price: "Liên hệ",
+    price: "180000",
+    priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
     seller: {
@@ -76,6 +77,19 @@ const productSchema = {
     bestRating: "5",
     worstRating: "1",
   },
+  review: [
+    {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+        worstRating: "1"
+      },
+      author: { "@type": "Person", name: "Chị Thanh Hằng" },
+      reviewBody: "Hộp quà mãng cầu 3 trái VIP sang trọng, dâng lễ Núi Bà Đen rất ý nghĩa."
+    }
+  ],
 };
 
 const breadcrumbSchema = {
