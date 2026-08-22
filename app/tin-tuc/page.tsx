@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { articles } from "../data/articles";
 import Footer from "../components/Footer";
+import MagazineArticleCard from "../components/MagazineArticleCard";
 
 export const metadata: Metadata = {
   title: "Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | Mãng Cầu Bà Đen",
@@ -88,8 +89,10 @@ const breadcrumbSchema = {
 };
 
 export default function NewsHubPage() {
+  const [featuredArticle, ...latestArticles] = articles;
+
   return (
-    <div className="article-page-wrap">
+    <div className="article-page-wrap news-magazine-page">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
@@ -142,85 +145,54 @@ export default function NewsHubPage() {
         </div>
       </header>
 
-      {/* HUB MAIN CONTENT */}
-      <main className="article-container" style={{ maxWidth: "1024px" }}>
-        {/* BREADCRUMB */}
+      <main className="news-magazine-container">
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Trang chủ</Link>
           <span aria-hidden="true">/</span>
           <span className="current">Tin tức</span>
         </nav>
 
-        {/* HUB HEADER */}
-        <header className="article-header" style={{ marginBottom: "40px" }}>
-          <div className="article-meta-badge">
-            <span className="badge-kicker">Tin tức nhà nông</span>
-            <span className="badge-dot">•</span>
-            <span>Kiến thức & Mùa vụ</span>
-          </div>
-
-          <h1 className="article-title">
-            Góc Tin Tức <em>Mãng Cầu</em> Bà Đen
+        <header className="news-magazine-masthead">
+          <p className="news-magazine-eyebrow">Tạp chí từ vườn · Tây Ninh</p>
+          <h1>
+            Chuyện mùa vụ, <em>chuyện Bà Đen</em>
           </h1>
-
-          <p className="article-lead">
-            Tổng hợp câu chuyện văn hóa vùng trồng, quy trình chăm sóc bao trái an toàn và những kinh nghiệm quý giá từ nhà vườn giúp bạn chọn mua những trái mãng cầu Tây Ninh tươi ngon, chuẩn gốc nhất.
+          <p className="news-magazine-intro">
+            Những câu chuyện văn hóa vùng trồng, kinh nghiệm chọn trái và cẩm nang
+            chăm sóc được kể trực tiếp từ nhà vườn Tây Ninh.
           </p>
+          <div className="news-magazine-edition" aria-label="Thông tin ấn bản">
+            <span>Ấn bản tháng 8 · 2026</span>
+            <span>{articles.length} bài viết</span>
+          </div>
         </header>
 
-        {/* ARTICLES LIST */}
-        <section aria-label="Danh sách bài viết tin tức" style={{ display: "grid", gap: "28px" }}>
-          {articles.map((item, idx) => (
-            <article
-              key={idx}
-              className="featured-article-card"
-              style={{
-                background: "rgba(255, 252, 240, 0.88)",
-                border: "1px solid var(--border-soft)",
-                borderRadius: "20px",
-                overflow: "hidden",
-                boxShadow: "0 12px 32px rgba(61, 80, 52, 0.06)",
-              }}
-            >
-              <Link href={item.slug} className="featured-article-img" style={{ minHeight: "220px", display: "block" }} aria-label={item.title}>
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  loading="lazy"
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
-                <span className="featured-badge">{item.badge}</span>
-              </Link>
-              <div className="featured-article-content" style={{ padding: "24px 28px" }}>
-                <div style={{ display: "flex", gap: "10px", alignItems: "center", fontSize: "12px", color: "var(--leaf)", fontWeight: 700 }}>
-                  <span className="featured-kicker">{item.kicker}</span>
-                  <span>•</span>
-                  <time>{item.date}</time>
-                </div>
-                <h3>
-                  <Link href={item.slug} style={{ color: "var(--ink)", textDecoration: "none" }}>
-                    {item.title}
-                  </Link>
-                </h3>
-                <p>{item.description}</p>
-                <div className="featured-article-action">
-                  <Link href={item.slug} className="featured-read-btn">
-                    <span>Đọc bài viết chi tiết</span>
-                    <span>→</span>
-                  </Link>
-                  <span className="featured-read-time">{item.readTime}</span>
-                </div>
-              </div>
-            </article>
-          ))}
+        <section className="news-featured" aria-label="Bài viết nổi bật">
+          <div className="news-section-label">
+            <span>Bài nổi bật</span>
+            <span aria-hidden="true">01</span>
+          </div>
+          <MagazineArticleCard article={featuredArticle} featured />
         </section>
 
-        {/* SEO CALLOUT BOX */}
-        <section
-          className="article-cta-box"
-          style={{ marginTop: "48px" }}
-          aria-label="Tư vấn đặt hàng trực tiếp"
-        >
+        <section className="news-latest" aria-labelledby="news-latest-title">
+          <div className="news-section-heading">
+            <div>
+              <span className="news-section-kicker">Mới từ nhà vườn</span>
+              <h2 id="news-latest-title">Đọc tiếp trong số này</h2>
+            </div>
+            <span className="news-section-count">{latestArticles.length.toString().padStart(2, "0")} bài</span>
+          </div>
+
+          <div className="news-magazine-grid">
+            {latestArticles.map((article) => (
+              <MagazineArticleCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </section>
+
+        <section className="article-cta-box news-magazine-cta" aria-label="Tư vấn đặt hàng trực tiếp">
+          <span className="news-cta-kicker">Từ vườn đến tận tay</span>
           <h3>Đặt mua mãng cầu Bà Đen chính gốc hôm nay</h3>
           <p>
             Liên hệ trực tiếp với vườn Mãng Cầu Bà Đen để kiểm tra độ chín, nhận báo giá theo thời điểm và hỗ trợ giao nhanh tận nơi toàn quốc.
@@ -243,7 +215,6 @@ export default function NewsHubPage() {
         </section>
       </main>
 
-      {/* FOOTER */}
       <Footer backLink={{ href: "/", label: "Quay về Trang chủ Mãng Cầu Bà Đen" }} />
     </div>
   );
