@@ -5403,4 +5403,70 @@ footer {
   line-height: 1.6;
 }
 
+/* =========================================================
+   NEWS TITLE SCALE GUARDRAILS
+   Keep long editorial headlines readable within 2–3 lines.
+   ========================================================= */
+.article-layout > .article-header > .article-container {
+  width: min(100%, 1040px);
+  max-width: 1040px;
+  padding-inline: clamp(18px, 4vw, 40px);
+}
+
+.article-main .article-title,
+.article-container.article-content .article-title {
+  width: min(100%, 980px);
+  max-width: 980px;
+  margin: 0 auto 22px;
+  font-size: clamp(1.875rem, 3.2vw, 2.5rem) !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.article-layout > .article-header .article-lead,
+.article-container.article-content > .article-header .article-lead {
+  width: min(100%, 780px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.magazine-card-title,
+.related-card-title,
+.related-product-title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.magazine-card-title {
+  font-size: clamp(1.12rem, 1.1vw, 1.38rem);
+  line-height: 1.28;
+}
+
+.magazine-card-featured .magazine-card-title {
+  max-width: 36rem;
+  font-size: clamp(1.5rem, 2.2vw, 2.15rem);
+  line-height: 1.16;
+}
+
+.related-section-title {
+  font-size: clamp(1.3rem, 1.5vw, 1.65rem);
+}
+
+@media (max-width: 640px) {
+  .article-main .article-title,
+  .article-container.article-content .article-title {
+    font-size: clamp(1.35rem, 5.8vw, 1.7rem) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.022em;
+  }
+
+  .magazine-card-title,
+  .magazine-card-featured .magazine-card-title {
+    font-size: 1.3rem;
+  }
+}
 
