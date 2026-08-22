@@ -2394,6 +2394,222 @@ h2 {
 }
 
 /* =========================================================
+   TEXT-ONLY ARTICLE CTA, TAGS & RELATED CARDS
+   Restores structure after decorative icons were removed.
+   ========================================================= */
+.article-cta-card {
+  width: min(100%, 780px);
+  margin: 48px auto 28px;
+  padding: clamp(28px, 5vw, 44px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  color: #fff;
+  background: var(--leaf-dark);
+  box-shadow: 0 18px 40px rgba(15, 38, 24, 0.15);
+  box-sizing: border-box;
+}
+
+.article-cta-card .cta-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.article-cta-card h3 {
+  max-width: 640px;
+  margin: 0 auto 12px;
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.article-cta-card p {
+  max-width: 620px !important;
+  margin: 0 auto 24px !important;
+  color: rgba(255, 255, 255, 0.86) !important;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  text-align: center !important;
+}
+
+.cta-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.cta-btn-group > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-btn-group > a:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.cta-btn-group .btn-cta-primary {
+  border-color: var(--lime-light);
+  color: var(--ink-dark);
+  background: var(--lime-light);
+}
+
+.article-tags-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: min(100%, 780px);
+  margin: 24px auto 54px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--border-soft);
+}
+
+.article-tags-section .tags-label {
+  flex: 0 0 100%;
+  margin-bottom: 2px;
+  color: var(--ink-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-tag-pill {
+  display: inline-flex;
+  padding: 6px 10px;
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  color: var(--ink-muted);
+  background: rgba(255, 253, 246, 0.72);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.related-articles-section {
+  padding: 42px 0 70px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.related-articles-section .article-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.related-heading {
+  margin: 0 0 20px;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.25;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.related-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  color: var(--ink);
+  background: rgba(255, 253, 246, 0.92);
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(31, 61, 43, 0.06);
+}
+
+.related-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+}
+
+.related-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+
+.related-badge {
+  color: var(--leaf);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.related-title {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+@media (max-width: 720px) {
+  .article-cta-card {
+    margin-top: 36px;
+    padding: 26px 18px;
+    border-radius: 18px;
+  }
+
+  .cta-btn-group {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cta-btn-group > a {
+    width: 100%;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .related-card {
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr);
+  }
+
+  .related-img {
+    height: 100%;
+    min-height: 128px;
+    aspect-ratio: auto;
+  }
+}
+
+/* =========================================================
    CONTACT SECTION
    ========================================================= */
 .contact {
