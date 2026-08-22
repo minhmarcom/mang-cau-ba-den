@@ -201,7 +201,6 @@ export default function CultureArticlePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>0907 215 521</span>
-            <span className="cta-arrow">↗</span>
           </a>
         </div>
       </header>
@@ -228,10 +227,10 @@ export default function CultureArticlePage() {
             <div className="article-container">
               <div className="article-meta-top">
                 <span className="article-kicker-badge">
-                  Văn hóa &amp; Tâm linh • Tây Ninh
+                  Văn hóa &amp; Tâm linh, Tây Ninh
                 </span>
-                <span className="article-read-time">⏱ 7 phút đọc</span>
-                <span className="article-pub-date">📅 Tháng 8/2026</span>
+                <span className="article-read-time">7 phút đọc</span>
+                <span className="article-pub-date">Tháng 8/2026</span>
               </div>
 
               <h1 className="article-title">
@@ -489,7 +488,7 @@ export default function CultureArticlePage() {
 
               {/* HIGHLIGHT BOX / CALLOUT */}
               <div className="article-callout-box">
-                <div className="callout-badge">💡 Gợi ý từ NABADEN</div>
+                <div className="callout-badge">Gợi ý từ NABADEN</div>
                 <h3>Lựa chọn Mãng Cầu Bà Đen cho dịp cúng lễ &amp; Biếu tặng</h3>
                 <p>
                   Để mâm cỗ thêm phần trang trọng và tròn đầy ý nghĩa, NABADEN tuyển chọn từng trái <strong>mãng cầu Bà Đen loại 1</strong> đạt chuẩn VietGAP &amp; OCOP 3 Sao Tây Ninh:
@@ -504,7 +503,7 @@ export default function CultureArticlePage() {
                 </ul>
                 <div className="callout-actions">
                   <Link href="/san-pham" className="callout-btn primary">
-                    Xem danh mục sản phẩm ➔
+                    Xem danh mục sản phẩm
                   </Link>
                   <a href="tel:0907215521" className="callout-btn secondary">
                     Tư vấn dâng lễ: 0907 215 521
@@ -572,7 +571,6 @@ export default function CultureArticlePage() {
                 <details className="faq-item" open>
                   <summary className="faq-question">
                     <span>Vì sao mãng cầu thường xuất hiện trong mâm ngũ quả ngày Tết ở Nam Bộ?</span>
-                    <b aria-hidden="true">＋</b>
                   </summary>
                   <p>
                     Trong đời sống dân gian Nam Bộ, tên gọi của các loại trái cây thường được liên tưởng với những lời cầu chúc. Mãng cầu gắn với chữ “cầu” trong cách đọc dân gian “cầu – sung – dừa – đủ – xoài”, thể hiện ước mong mọi điều bình an, thuận lợi và vạn sự như ý trong năm mới.
@@ -582,7 +580,6 @@ export default function CultureArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Mãng cầu Bà Đen Tây Ninh có điểm gì đặc biệt khi chọn làm lễ vật dâng cúng?</span>
-                    <b aria-hidden="true">＋</b>
                   </summary>
                   <p>
                     Mãng cầu Bà Đen Tây Ninh nổi tiếng với hình dáng trái tròn đều, mắt gai nở phẳng đẹp mắt, thịt dai dẻo ngọt thanh và tỏa hương thơm dịu. Trái mang dấu ấn của vùng đất tâm linh Núi Bà Đen, vừa sang trọng vừa gửi gắm lòng thành kính dâng lên tổ tiên, thần linh.
@@ -592,7 +589,6 @@ export default function CultureArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Nên chọn mãng cầu Bà Đen như thế nào để thắp hương được lâu?</span>
-                    <b aria-hidden="true">＋</b>
                   </summary>
                   <p>
                     Khi mua mãng cầu cúng lễ, nên chọn những trái vừa độ già (mắt nở to, kẽ mắt hơi trắng hoặc ửng hồng), vỏ xanh sáng, cuống còn tươi chắc. Trái già vừa phải sẽ giữ được phom dáng đẹp trên bàn thờ trong 1-2 ngày trước khi chín mềm tỏa hương thơm.
@@ -602,7 +598,6 @@ export default function CultureArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>NABADEN cung cấp những dòng sản phẩm mãng cầu nào phù hợp làm quà biếu dâng lễ?</span>
-                    <b aria-hidden="true">＋</b>
                   </summary>
                   <p>
                     NABADEN mang đến dòng “Hộp Đặc Biệt 3 Trái VIP” đóng hộp sang trọng chuyên dùng dâng lễ và biếu tặng, cùng các “Thùng 5KG” và “Thùng 15KG” tuyển chọn trái chín già loại 1 bọc lưới xốp an toàn.
@@ -638,7 +633,6 @@ export default function CultureArticlePage() {
                 <div className="related-card-body">
                   <div className="related-card-meta">
                     <span>4 phút đọc</span>
-                    <span>•</span>
                     <time>Tháng 8/2026</time>
                   </div>
                   <h3 className="related-card-title">
@@ -648,7 +642,7 @@ export default function CultureArticlePage() {
                     Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon, vùng chuyên canh trù phú và được bảo hộ chỉ dẫn địa lý.
                   </p>
                   <span className="related-card-link">
-                    Đọc bài viết <span>→</span>
+                    Đọc bài viết
                   </span>
                 </div>
               </Link>
@@ -668,7 +662,6 @@ export default function CultureArticlePage() {
                 <div className="related-card-body">
                   <div className="related-card-meta">
                     <span>5 phút đọc</span>
-                    <span>•</span>
                     <time>Tháng 8/2026</time>
                   </div>
                   <h3 className="related-card-title">
@@ -678,7 +671,7 @@ export default function CultureArticlePage() {
                     Khám phá kinh nghiệm chọn mua mãng cầu Bà Đen ngon chuẩn vị làm quà du lịch Tây Ninh và thông tin từ nhà vườn uy tín.
                   </p>
                   <span className="related-card-link">
-                    Đọc bài viết <span>→</span>
+                    Đọc bài viết
                   </span>
                 </div>
               </Link>
@@ -686,10 +679,10 @@ export default function CultureArticlePage() {
 
             <div className="related-bottom-nav">
               <Link href="/tin-tuc" className="nav-pill-btn">
-                ← Xem tất cả tin tức
+                Xem tất cả tin tức
               </Link>
               <Link href="/" className="nav-pill-btn secondary">
-                ← Về trang chủ
+                Về trang chủ
               </Link>
             </div>
           </section>

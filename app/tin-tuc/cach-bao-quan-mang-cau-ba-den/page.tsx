@@ -201,16 +201,12 @@ export default function CustardAppleStorageGuidePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -364,8 +360,8 @@ export default function CustardAppleStorageGuidePage() {
               <div className="highlight-item" style={{ margin: "20px 0", background: "rgba(28,61,40,0.06)", borderLeft: "4px solid var(--leaf)" }}>
                 <strong>Quy tắc vàng cần nhớ:</strong>
                 <p style={{ margin: "6px 0 0" }}>
-                  Trái còn cứng → Để bên ngoài nơi thoáng mát cho chín tự nhiên.<br />
-                  Trái đã chín mềm thơm → Mới cho vào ngăn mát tủ lạnh để ăn mát hoặc bảo quản thêm 2-3 ngày.
+                  Trái còn cứng: Để bên ngoài nơi thoáng mát cho chín tự nhiên.<br />
+                  Trái đã chín mềm thơm: Mới cho vào ngăn mát tủ lạnh để ăn mát hoặc bảo quản thêm 2-3 ngày.
                 </p>
               </div>
             </section>
@@ -467,7 +463,7 @@ export default function CustardAppleStorageGuidePage() {
                 </div>
               </div>
               <p style={{ textAlign: "center", fontStyle: "italic", color: "var(--leaf)", fontWeight: 600 }}>
-                👉 Thần chú dễ nhớ: “Mở thùng – Phân loại – Để thoáng – Kiểm tra mỗi ngày – Ăn trái chín trước!”
+                Mẹo dễ nhớ: “Mở thùng – Phân loại – Để thoáng – Kiểm tra mỗi ngày – Ăn trái chín trước!”
               </p>
             </section>
 
@@ -541,7 +537,6 @@ export default function CustardAppleStorageGuidePage() {
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0907215521">
                   <span>Hotline: 0907 215 521</span>
-                  <span>↗</span>
                 </a>
                 <a
                   className="btn-zalo"
@@ -550,7 +545,6 @@ export default function CustardAppleStorageGuidePage() {
                   rel="noreferrer"
                 >
                   <span>Nhắn Zalo tư vấn đặt hàng</span>
-                  <span>↗</span>
                 </a>
               </div>
             </section>
@@ -569,7 +563,7 @@ export default function CustardAppleStorageGuidePage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
@@ -579,7 +573,7 @@ export default function CustardAppleStorageGuidePage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
@@ -589,7 +583,7 @@ export default function CustardAppleStorageGuidePage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
           </div>
@@ -607,7 +601,7 @@ export default function CustardAppleStorageGuidePage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Mùa Mãng Cầu Bà Đen Tháng Mấy? Mùa Thu Hoạch Chuẩn</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
 
@@ -617,7 +611,7 @@ export default function CustardAppleStorageGuidePage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Đi Tây Ninh Mua Mãng Cầu Ở Đâu? Kinh Nghiệm Chuẩn</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
           </div>

@@ -182,16 +182,12 @@ export default function ArticlePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -444,7 +440,6 @@ export default function ArticlePage() {
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0907215521">
                   <span>Hotline: 0907 215 521</span>
-                  <span>↗</span>
                 </a>
                 <a
                   className="btn-zalo"
@@ -453,7 +448,6 @@ export default function ArticlePage() {
                   rel="noreferrer"
                 >
                   <span>Nhắn Zalo tư vấn</span>
-                  <span>↗</span>
                 </a>
               </div>
             </div>
@@ -467,7 +461,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>01</span>
                   Mua mãng cầu Bà Đen chính gốc ở đâu uy tín?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Bạn nên chọn các nhà vườn có vùng trồng trực tiếp quanh khu vực Núi Bà Đen Tây Ninh, có hình ảnh thu hoạch thực tế tại vườn, tiêu chuẩn phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Hotline/Zalo: 0907 215 521).
@@ -478,7 +471,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>02</span>
                   Nên chọn mãng cầu già hay chín khi mua mang đi xa?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Nếu mang đi xa hoặc làm quà biếu, nên chọn trái già cứng tay, mắt na nở phẳng to, rãnh nở trắng ngà và bọc lưới xốp bảo vệ. Trái sẽ chín dẻo tự nhiên trong 1-2 ngày di chuyển.
@@ -489,7 +481,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>03</span>
                   Mãng cầu Bà Đen có gì khác so với mãng cầu thường?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Mãng cầu Bà Đen được nuôi dưỡng bởi thổ nhưỡng đất phù sa cổ quanh chân núi Bà Đen và biên độ nhiệt ngày đêm cao, giúp cơm trắng mịn, dai dẻo, ít hạt và có vị ngọt thanh xen lẫn chút chua nhẹ rất thanh mát.
@@ -500,7 +491,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>04</span>
                   Mãng cầu còn xanh có nên để trong tủ lạnh không?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Tuyệt đối không để mãng cầu còn xanh hoặc cứng vào tủ lạnh vì nhiệt độ thấp sẽ làm trái bị sượng và ngưng chín. Chỉ nên cho vào ngăn mát sau khi trái đã chín mềm vừa ăn.
@@ -533,7 +523,6 @@ export default function ArticlePage() {
               <div className="related-card-body">
                 <div className="related-card-meta">
                   <span>4 phút đọc</span>
-                  <span>•</span>
                   <time>Tháng 8/2026</time>
                 </div>
                 <h3 className="related-card-title">
@@ -543,7 +532,7 @@ export default function ArticlePage() {
                   Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.
                 </p>
                 <span className="related-card-link">
-                  Đọc bài viết <span>→</span>
+                  Đọc bài viết
                 </span>
               </div>
             </Link>
@@ -551,10 +540,10 @@ export default function ArticlePage() {
 
           <div className="related-bottom-nav">
             <Link href="/tin-tuc" className="nav-pill-btn">
-              ← Xem tất cả tin tức
+              Xem tất cả tin tức
             </Link>
             <Link href="/" className="nav-pill-btn secondary">
-              ← Về trang chủ
+              Về trang chủ
             </Link>
           </div>
         </section>

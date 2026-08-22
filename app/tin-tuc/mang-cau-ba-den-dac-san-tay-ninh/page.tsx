@@ -173,16 +173,12 @@ export default function ArticleFamousSpecialtyPage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -441,7 +437,6 @@ export default function ArticleFamousSpecialtyPage() {
             <div className="cta-box-buttons">
               <a className="btn-call" href="tel:0907215521">
                 <span>Hotline: 0907 215 521</span>
-                <span>↗</span>
               </a>
               <a
                 className="btn-zalo"
@@ -450,7 +445,6 @@ export default function ArticleFamousSpecialtyPage() {
                 rel="noreferrer"
               >
                 <span>Nhắn Zalo tư vấn</span>
-                <span>↗</span>
               </a>
             </div>
           </div>
@@ -479,7 +473,6 @@ export default function ArticleFamousSpecialtyPage() {
               <div className="related-card-body">
                 <div className="related-card-meta">
                   <span>5 phút đọc</span>
-                  <span>•</span>
                   <time>Tháng 8/2026</time>
                 </div>
                 <h3 className="related-card-title">
@@ -489,7 +482,7 @@ export default function ArticleFamousSpecialtyPage() {
                   Hướng dẫn chi tiết cách nhận biết độ già của trái, phân biệt mãng cầu chuẩn gốc Tây Ninh và bảng quy cách đóng gói hộp quà, thùng 5kg, 15kg.
                 </p>
                 <span className="related-card-link">
-                  Đọc bài viết <span>→</span>
+                  Đọc bài viết
                 </span>
               </div>
             </Link>
@@ -497,10 +490,10 @@ export default function ArticleFamousSpecialtyPage() {
 
           <div className="related-bottom-nav">
             <Link href="/tin-tuc" className="nav-pill-btn">
-              ← Xem tất cả tin tức
+              Xem tất cả tin tức
             </Link>
             <Link href="/" className="nav-pill-btn secondary">
-              ← Về trang chủ
+              Về trang chủ
             </Link>
           </div>
         </section>

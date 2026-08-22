@@ -194,16 +194,12 @@ export default function CustardAppleSeasonPage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -385,7 +381,7 @@ export default function CustardAppleSeasonPage() {
                 Trong suốt khoảng thời gian đó, nhà vườn phải liên tục chăm sóc qua các khâu:
               </p>
               <p style={{ textAlign: "center", fontWeight: 600, color: "var(--leaf)", padding: "14px", background: "#eef2e2", borderRadius: "14px" }}>
-                Cành → Hoa → Đậu trái → Tuyển trái → Bao trái → Nuôi trái → Thu hoạch.
+                Quy trình gồm cành, hoa, đậu trái, tuyển trái, bao trái, nuôi trái và thu hoạch.
               </p>
               <p>
                 Thời gian phát triển thực tế có thể thay đổi tùy giống, thời tiết, dinh dưỡng và kỹ thuật chăm sóc. Điều này giải thích tại sao việc dự báo chính xác sản lượng của một đợt thu hoạch cần sự theo dõi rất sát sao từ thực tế nhà vườn.
@@ -523,7 +519,6 @@ export default function CustardAppleSeasonPage() {
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0907215521">
                   <span>Hotline: 0907 215 521</span>
-                  <span>↗</span>
                 </a>
                 <a
                   className="btn-zalo"
@@ -532,7 +527,6 @@ export default function CustardAppleSeasonPage() {
                   rel="noreferrer"
                 >
                   <span>Nhắn Zalo tư vấn mùa vụ</span>
-                  <span>↗</span>
                 </a>
               </div>
             </section>
@@ -551,7 +545,7 @@ export default function CustardAppleSeasonPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
@@ -561,7 +555,7 @@ export default function CustardAppleSeasonPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
@@ -571,7 +565,7 @@ export default function CustardAppleSeasonPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
           </div>
@@ -589,7 +583,7 @@ export default function CustardAppleSeasonPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Đi Tây Ninh Mua Mãng Cầu Ở Đâu? Kinh Nghiệm Chuẩn</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
 
@@ -599,7 +593,7 @@ export default function CustardAppleSeasonPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
           </div>

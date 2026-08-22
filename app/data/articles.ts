@@ -13,7 +13,7 @@ export const articles: Article[] = [
   {
     slug: "/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den",
     title: "Các dịp lễ lớn cúng trong năm của người Việt và ý nghĩa của mãng cầu Bà Đen trong văn hóa truyền thống",
-    kicker: "Văn hóa & Tâm linh • Tây Ninh",
+    kicker: "Văn hóa & Tâm linh, Tây Ninh",
     badge: "Văn hóa cúng lễ",
     image: "/cung-le-trai-cay-mang-cau-ba-den.jpg",
     date: "Tháng 8/2026",
@@ -24,7 +24,7 @@ export const articles: Article[] = [
   {
     slug: "/van-chuyen-mang-cau-ba-den",
     title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
-    kicker: "Đóng gói & Vận chuyển • Tây Ninh",
+    kicker: "Đóng gói & Vận chuyển, Tây Ninh",
     badge: "Vận chuyển & Đóng gói",
     image: "/thuc-te-dong-goi-nhieu-thung.jpg",
     date: "Tháng 8/2026",
@@ -35,7 +35,7 @@ export const articles: Article[] = [
   {
     slug: "/cach-bao-quan-mang-cau-ba-den",
     title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
-    kicker: "Mẹo hay & Bảo quản • Tây Ninh",
+    kicker: "Mẹo hay & Bảo quản, Tây Ninh",
     badge: "Kinh nghiệm bảo quản",
     image: "/dong-thung-carton-mang-cau-xop.jpg",
     date: "Tháng 8/2026",
@@ -46,7 +46,7 @@ export const articles: Article[] = [
   {
     slug: "/mua-mang-cau-ba-den-thang-may",
     title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
-    kicker: "Mùa vụ & Nông sản • Tây Ninh",
+    kicker: "Mùa vụ & Nông sản, Tây Ninh",
     badge: "Mùa vụ thu hoạch",
     image: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
     date: "Tháng 8/2026",
@@ -57,7 +57,7 @@ export const articles: Article[] = [
   {
     slug: "/di-tay-ninh-mua-mang-cau-ba-den-o-dau",
     title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn",
-    kicker: "Cẩm nang du lịch • Tây Ninh",
+    kicker: "Cẩm nang du lịch, Tây Ninh",
     badge: "Kinh nghiệm du lịch",
     image: "/trai-mang-cau-chin-gia-loai-1.jpg",
     date: "Tháng 8/2026",
@@ -68,7 +68,7 @@ export const articles: Article[] = [
   {
     slug: "/mang-cau-ba-den-dac-san-tay-ninh",
     title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
-    kicker: "Nông sản bản sắc • Tây Ninh",
+    kicker: "Nông sản bản sắc, Tây Ninh",
     badge: "Đặc sản nổi tiếng",
     image: "/hai-trieu-trai-mang-cau-chin.jpg",
     date: "Tháng 8/2026",
@@ -79,7 +79,7 @@ export const articles: Article[] = [
   {
     slug: "/mua-mang-cau-ba-den-chinh-goc-tay-ninh",
     title: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
-    kicker: "Tin tức mùa vụ • Tây Ninh",
+    kicker: "Tin tức mùa vụ, Tây Ninh",
     badge: "Kinh nghiệm chọn mua",
     image: "/thuc-te-dong-goi-nhieu-thung.jpg",
     date: "Tháng 8/2026",
@@ -90,7 +90,7 @@ export const articles: Article[] = [
   {
     slug: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh",
     title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
-    kicker: "Đặc sản quê nhà • Tây Ninh",
+    kicker: "Đặc sản quê nhà, Tây Ninh",
     badge: "Văn hóa nhà nông",
     image: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
     date: "Tháng 8/2026",

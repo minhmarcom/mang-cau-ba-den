@@ -187,7 +187,6 @@ export default function ShippingArticlePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>0907 215 521</span>
-            <span className="cta-arrow">↗</span>
           </a>
         </div>
       </header>
@@ -211,9 +210,9 @@ export default function ShippingArticlePage() {
           <header className="article-header">
             <div className="article-container">
               <div className="article-meta-top">
-                <span className="article-kicker-badge">Đóng gói &amp; Vận chuyển • Tây Ninh</span>
-                <span className="article-read-time">⏱ 6 phút đọc</span>
-                <span className="article-pub-date">📅 Tháng 8/2026</span>
+                <span className="article-kicker-badge">Đóng gói &amp; Vận chuyển, Tây Ninh</span>
+                <span className="article-read-time">6 phút đọc</span>
+                <span className="article-pub-date">Tháng 8/2026</span>
               </div>
 
               <h1 className="article-title">
@@ -252,7 +251,6 @@ export default function ShippingArticlePage() {
               </p>
 
               <div className="editorial-callout-box">
-                <div className="callout-icon">💡</div>
                 <div className="callout-content">
                   <strong>Thông điệp từ nhà vườn NABADEN:</strong> Đối với nông sản tươi, “trái đẹp tại vườn” mới chỉ là khởi đầu — điều quyết định trải nghiệm của khách hàng chính là cách chuẩn bị trái phù hợp với toàn bộ hành trình vận chuyển phía trước.
                 </div>
@@ -410,7 +408,6 @@ export default function ShippingArticlePage() {
               </p>
 
               <div className="editorial-callout-box info">
-                <div className="callout-icon">✨</div>
                 <div className="callout-content">
                   <strong>Ưu điểm tuyệt vời cho gia đình:</strong> Trái chín so le giúp gia đình bạn thảnh thơi thưởng thức từng quả thơm ngon chuẩn độ chín mỗi ngày trong suốt cả tuần, không phải lo lắng việc cả thùng chín ồ ạt ăn không kịp!
                 </div>
@@ -454,10 +451,10 @@ export default function ShippingArticlePage() {
               <div className="article-cta-card">
                 <div className="cta-card-content">
                   <h3>Đặt Mua Mãng Cầu Bà Đen Tây Ninh Chính Gốc</h3>
-                  <p>Hái tươi tại vườn mỗi ngày • Đóng thùng xốp chống va đập • Giao nhanh toàn quốc • Hỗ trợ tận tâm.</p>
+                  <p>Hái tươi tại vườn mỗi ngày, đóng thùng xốp chống va đập, giao nhanh toàn quốc và hỗ trợ tận tâm.</p>
                   <div className="cta-btn-group">
                     <Link href="/san-pham" className="btn-cta-primary">
-                      Xem Các Sản Phẩm →
+                      Xem Các Sản Phẩm
                     </Link>
                     <Link href="/hop-tac" className="btn-cta-partner">
                       Đăng Ký Làm Đối Tác / CTV

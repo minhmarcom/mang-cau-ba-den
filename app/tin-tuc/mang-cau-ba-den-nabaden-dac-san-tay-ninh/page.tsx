@@ -174,16 +174,12 @@ export default function ArticleBrandPage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -332,7 +328,6 @@ export default function ArticleBrandPage() {
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0907215521">
                   <span>Hotline: 0907 215 521</span>
-                  <span>↗</span>
                 </a>
                 <a
                   className="btn-zalo"
@@ -341,7 +336,6 @@ export default function ArticleBrandPage() {
                   rel="noreferrer"
                 >
                   <span>Nhắn Zalo tư vấn</span>
-                  <span>↗</span>
                 </a>
               </div>
             </div>
@@ -355,7 +349,6 @@ export default function ArticleBrandPage() {
                 <summary>
                   <span>01</span>
                   Mãng cầu Bà Đen Tây Ninh có tươi ngon khi giao đến tay khách hàng không?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Nhà vườn ưu tiên thu hoạch trái trong ngày vào sáng sớm khi trái đạt độ già chuẩn, phân loại thủ công kỹ lưỡng, bọc lưới bảo vệ chống dập và đóng thùng thông khí chắc chắn nên trái giữ trọn độ tươi ngon tự nhiên khi giao.
@@ -366,7 +359,6 @@ export default function ArticleBrandPage() {
                 <summary>
                   <span>02</span>
                   Mãng cầu Bà Đen Tây Ninh có thích hợp làm quà biếu tặng không?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Hộp quà 3 trái VIP và các thùng quà mãng cầu Tây Ninh tuyển chọn có ngoại hình tròn đều bắt mắt, hương thơm thanh khiết, đạt chuẩn VietGAP & OCOP, đóng gói trang nhã rất thích hợp làm quà biếu tặng gia đình, đối tác và khách hàng.
@@ -377,7 +369,6 @@ export default function ArticleBrandPage() {
                 <summary>
                   <span>03</span>
                   Vì sao mãng cầu trồng dưới chân núi Bà Đen lại có hương vị ngon khác biệt?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Do thổ nhưỡng đất xám phù sa cổ quanh chân núi lửa cổ Bà Đen có khả năng thoát nước lý tưởng, cùng nền nhiệt nhiều nắng và biên độ nhiệt ngày đêm cao giúp cây mãng cầu tích tụ lượng đường tự nhiên đậm đà, thịt dai và thơm thanh.
@@ -410,7 +401,6 @@ export default function ArticleBrandPage() {
               <div className="related-card-body">
                 <div className="related-card-meta">
                   <span>5 phút đọc</span>
-                  <span>•</span>
                   <time>Tháng 8/2026</time>
                 </div>
                 <h3 className="related-card-title">
@@ -420,7 +410,7 @@ export default function ArticleBrandPage() {
                   Hướng dẫn chi tiết cách nhận biết độ già, phân biệt trái chuẩn gốc Tây Ninh, quy cách đóng gói chống va đập và bảng phân loại trái ăn gia đình hoặc biếu tặng.
                 </p>
                 <span className="related-card-link">
-                  Đọc bài viết <span>→</span>
+                  Đọc bài viết
                 </span>
               </div>
             </Link>
@@ -428,10 +418,10 @@ export default function ArticleBrandPage() {
 
           <div className="related-bottom-nav">
             <Link href="/tin-tuc" className="nav-pill-btn">
-              ← Xem tất cả tin tức
+              Xem tất cả tin tức
             </Link>
             <Link href="/" className="nav-pill-btn secondary">
-              ← Về trang chủ
+              Về trang chủ
             </Link>
           </div>
         </section>

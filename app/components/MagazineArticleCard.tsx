@@ -24,7 +24,6 @@ export default function MagazineArticleCard({
       <div className="magazine-card-content">
         <div className="magazine-card-meta">
           <span>{article.kicker}</span>
-          <span aria-hidden="true">•</span>
           <time>{article.date}</time>
         </div>
 
@@ -36,7 +35,7 @@ export default function MagazineArticleCard({
 
         <div className="magazine-card-footer">
           <Link href={article.slug} className="magazine-card-link">
-            Đọc bài viết <span aria-hidden="true">→</span>
+            Đọc bài viết
           </Link>
           <span>{article.readTime}</span>
         </div>
