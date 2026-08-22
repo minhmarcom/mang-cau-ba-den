@@ -106,5 +106,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.9,
     },
+    {
+      url: `${siteUrl}/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
+      url: `${siteUrl}/tin-tuc/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
   ];
 }

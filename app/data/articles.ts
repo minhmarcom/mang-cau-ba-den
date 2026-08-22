@@ -11,6 +11,17 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den",
+    title: "Các dịp lễ lớn cúng trong năm của người Việt và ý nghĩa của mãng cầu Bà Đen trong văn hóa truyền thống",
+    kicker: "Văn hóa & Tâm linh • Tây Ninh",
+    badge: "Văn hóa cúng lễ",
+    image: "/cung-le-trai-cay-mang-cau-ba-den.jpg",
+    date: "Tháng 8/2026",
+    readTime: "7 phút đọc",
+    description:
+      "Tìm hiểu các dịp lễ cúng lớn trong năm của người Việt từ Tết Nguyên Đán, Rằm tháng Giêng, Vu Lan đến khai trương, tân gia và ý nghĩa của mãng cầu Bà Đen Tây Ninh trên mâm ngũ quả truyền thống.",
+  },
+  {
     slug: "/van-chuyen-mang-cau-ba-den",
     title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
     kicker: "Đóng gói & Vận chuyển • Tây Ninh",
