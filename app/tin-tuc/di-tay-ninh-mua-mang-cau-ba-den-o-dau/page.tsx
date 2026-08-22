@@ -161,7 +161,7 @@ const breadcrumbSchema = {
 
 export default function BuyCustardAppleGuidePage() {
   return (
-    <div className="article-page-wrap">
+    <div className="article-page-wrap news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

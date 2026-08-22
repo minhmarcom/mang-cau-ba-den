@@ -9,6 +9,12 @@ export interface Article {
   description: string;
 }
 
+/**
+ * Nguồn dữ liệu chung cho trang tin và khối bài viết liên quan.
+ * Bài mới chỉ cần thêm một bản ghi tại đây và tạo nội dung dưới /tin-tuc.
+ * Khung trình bày được áp tự động bởi app/tin-tuc/layout.tsx.
+ */
+
 export const articles: Article[] = [
   {
     slug: "/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den",

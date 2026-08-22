@@ -131,7 +131,7 @@ const faqSchema = {
 
 export default function ArticleFamousSpecialtyPage() {
   return (
-    <div className="article-page-wrap">
+    <div className="article-page-wrap news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

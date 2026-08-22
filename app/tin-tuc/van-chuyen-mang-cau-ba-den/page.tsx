@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import { ArticleFaq } from "../../components/ArticleBlocks";
 
 export const metadata: Metadata = {
   title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
@@ -146,7 +147,7 @@ const breadcrumbSchema = {
 
 export default function ShippingArticlePage() {
   return (
-    <>
+    <div className="news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -447,6 +448,14 @@ export default function ShippingArticlePage() {
                 Dù bạn cần đặt mua hộp quà biếu VIP sang trọng, thùng ăn gia đình hay tìm nguồn hàng sỉ ổn định để phân phối kinh doanh, NABADEN luôn sẵn sàng đồng hành cùng bạn với chất lượng tốt nhất và sự tận tâm từ nhà vườn.
               </p>
 
+              <ArticleFaq
+                heading="Câu hỏi thường gặp về vận chuyển Mãng Cầu Bà Đen"
+                items={faqSchema.mainEntity.map((item) => ({
+                  question: item.name,
+                  answer: item.acceptedAnswer.text,
+                }))}
+              />
+
               {/* CTA BOX */}
               <div className="article-cta-card">
                 <div className="cta-card-content">
@@ -536,6 +545,6 @@ export default function ShippingArticlePage() {
 
       {/* FOOTER */}
       <Footer />
-    </>
+    </div>
   );
 }

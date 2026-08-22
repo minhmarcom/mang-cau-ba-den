@@ -154,7 +154,7 @@ const breadcrumbSchema = {
 
 export default function CultureArticlePage() {
   return (
-    <>
+    <div className="news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -696,6 +696,6 @@ export default function CultureArticlePage() {
           }}
         />
       </main>
-    </>
+    </div>
   );
 }
