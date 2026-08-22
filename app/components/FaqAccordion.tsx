@@ -64,8 +64,8 @@ export default function FaqAccordion() {
               aria-expanded={isOpen}
             >
               <span className="faq-accordion-title">{item.question}</span>
-              <span className="faq-accordion-icon" aria-hidden="true">
-                {isOpen ? "−" : "+"}
+              <span className="faq-accordion-action" aria-hidden="true">
+                {isOpen ? "Thu gọn" : "Xem chi tiết"}
               </span>
             </button>
             {isOpen && (

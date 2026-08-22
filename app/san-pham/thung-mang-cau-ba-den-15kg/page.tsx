@@ -164,16 +164,13 @@ export default function Thung15kgPage() {
             aria-label="Tư vấn đơn sỉ 15kg qua Zalo"
           >
             <span>Báo giá sỉ Zalo</span>
-            <span className="btn-arrow">↗</span>
+
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -200,7 +197,7 @@ export default function Thung15kgPage() {
           </div>
 
           <div className="product-specs-box">
-            <span className="product-item-tag">OCOP 3 Sao • Đơn Sỉ & Vận Chuyển Xa</span>
+            <span className="product-item-tag">OCOP 3 Sao, Đơn Sỉ & Vận Chuyển Xa</span>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Thùng 15KG Mãng Cầu Bà Đen Tuyển Chọn
             </h1>
@@ -245,7 +242,7 @@ export default function Thung15kgPage() {
                 style={{ width: "100%", justifyContent: "center" }}
               >
                 <span>Nhắn Zalo Báo Giá Sỉ Thùng 15KG</span>
-                <span>↗</span>
+
               </a>
               <a
                 href="tel:0907215521"
@@ -253,7 +250,7 @@ export default function Thung15kgPage() {
                 style={{ width: "100%", justifyContent: "center" }}
               >
                 <span>Hotline: 0907 215 521</span>
-                <span>↗</span>
+
               </a>
             </div>
           </div>
@@ -322,7 +319,7 @@ export default function Thung15kgPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
 
@@ -332,7 +329,7 @@ export default function Thung15kgPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
           </div>
@@ -347,7 +344,7 @@ export default function Thung15kgPage() {
           <div className="cta-box-buttons">
             <a className="btn-call" href="tel:0907215521">
               <span>Hotline: 0907 215 521</span>
-              <span>↗</span>
+
             </a>
             <a
               className="btn-zalo"
@@ -356,7 +353,7 @@ export default function Thung15kgPage() {
               rel="noreferrer"
             >
               <span>Nhắn Zalo tư vấn sỉ</span>
-              <span>↗</span>
+
             </a>
           </div>
         </section>

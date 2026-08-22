@@ -232,7 +232,7 @@ export default function ProductHubPage() {
   const products = [
     {
       id: "hop-3-trai",
-      tag: "OCOP 3 Sao • Quà Biếu VIP",
+      tag: "OCOP 3 Sao, Quà Biếu VIP",
       title: "Hộp Đặc Biệt (3 Quả)",
       slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
       image: "/hop-qua-3-trai-vip.jpg",
@@ -247,7 +247,7 @@ export default function ProductHubPage() {
     },
     {
       id: "thung-5kg",
-      tag: "OCOP 3 Sao • Thưởng Thức & Biếu Tặng",
+      tag: "OCOP 3 Sao, Thưởng Thức & Biếu Tặng",
       title: "Thùng 5KG Tuyển Chọn",
       slug: "/san-pham/thung-mang-cau-ba-den-5kg",
       image: "/thung-5kg.png",
@@ -262,7 +262,7 @@ export default function ProductHubPage() {
     },
     {
       id: "thung-15kg",
-      tag: "OCOP 3 Sao • Đơn Sỉ & Vận Chuyển Xa",
+      tag: "OCOP 3 Sao, Đơn Sỉ & Vận Chuyển Xa",
       title: "Thùng 15KG Tuyển Chọn",
       slug: "/san-pham/thung-mang-cau-ba-den-15kg",
       image: "/thung-15kg.png",
@@ -327,16 +327,13 @@ export default function ProductHubPage() {
             aria-label="Tư vấn mua hàng qua Zalo"
           >
             <span>Đặt hàng Zalo</span>
-            <span className="btn-arrow">↗</span>
+
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -368,10 +365,10 @@ export default function ProductHubPage() {
           </p>
 
           <div className="product-hub-badges">
-            <span className="hub-badge">✓ Chuẩn VietGAP An Toàn</span>
-            <span className="hub-badge">✓ Chứng Nhận OCOP 3 Sao</span>
-            <span className="hub-badge">✓ Bảo Hộ Chỉ Dẫn Địa Lý</span>
-            <span className="hub-badge">✓ Giao Nhanh Toàn Quốc</span>
+            <span className="hub-badge"> Chuẩn VietGAP An Toàn</span>
+            <span className="hub-badge"> Chứng Nhận OCOP 3 Sao</span>
+            <span className="hub-badge"> Bảo Hộ Chỉ Dẫn Địa Lý</span>
+            <span className="hub-badge"> Giao Nhanh Toàn Quốc</span>
           </div>
         </section>
 
@@ -394,7 +391,7 @@ export default function ProductHubPage() {
                 <div className="product-item-actions">
                   <Link href={item.slug} className="btn-detail">
                     <span>{item.ctaText}</span>
-                    <span>→</span>
+
                   </Link>
                   <a
                     href="https://zalo.me/0907215521"
@@ -404,7 +401,7 @@ export default function ProductHubPage() {
                     aria-label={`Đặt mua ${item.title} qua Zalo`}
                   >
                     <span>Nhắn Zalo Báo Giá</span>
-                    <span>↗</span>
+
                   </a>
                 </div>
               </div>
@@ -509,7 +506,7 @@ export default function ProductHubPage() {
           <div className="cta-box-buttons">
             <a className="btn-call" href="tel:0907215521">
               <span>Hotline: 0907 215 521</span>
-              <span>↗</span>
+
             </a>
             <a
               className="btn-zalo"
@@ -518,7 +515,7 @@ export default function ProductHubPage() {
               rel="noreferrer"
             >
               <span>Nhắn Zalo tư vấn</span>
-              <span>↗</span>
+
             </a>
           </div>
         </section>

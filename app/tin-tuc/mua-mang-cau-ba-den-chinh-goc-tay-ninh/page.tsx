@@ -380,7 +380,7 @@ export default function ArticlePage() {
                     <td>
                       <strong>Hộp Đặc Biệt (3 Quả)</strong>
                       <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
-                        OCOP 3 Sao • Quà biếu VIP
+                        OCOP 3 Sao, Quà biếu VIP
                       </span>
                     </td>
                     <td>Hộp 3 trái VIP</td>
@@ -391,7 +391,7 @@ export default function ArticlePage() {
                     <td>
                       <strong>Thùng 5KG Tuyển Chọn</strong>
                       <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
-                        OCOP 3 Sao • Thưởng thức & Biếu tặng
+                        OCOP 3 Sao, Thưởng thức & Biếu tặng
                       </span>
                     </td>
                     <td>Thùng carton 5kg</td>

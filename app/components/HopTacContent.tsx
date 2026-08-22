@@ -59,12 +59,12 @@ export default function HopTacContent() {
           {successData ? (
             <Link className="header-cta" href="/">
               <span>Về Trang Chủ</span>
-              <span className="btn-arrow">→</span>
+
             </Link>
           ) : (
             <a className="header-cta" href="#form-dang-ky" onClick={(e) => scrollToSection(e, "form-dang-ky")}>
               <span>Đăng Ký Đối Tác</span>
-              <span className="btn-arrow">→</span>
+
             </a>
           )}
         </div>
@@ -77,12 +77,6 @@ export default function HopTacContent() {
             <div className="section-container">
               <div className="partner-form-card success-standalone-card">
                 <div className="partner-success-state" role="region" aria-live="polite">
-                  <div className="success-icon-badge" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="#2d6a3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                      <polyline points="22 4 12 14.01 9 11.01" />
-                    </svg>
-                  </div>
 
                   <h1 className="success-title">Đăng Ký Thành Công!</h1>
                   <p className="success-subtitle">
@@ -90,7 +84,7 @@ export default function HopTacContent() {
                   </p>
 
                   <div className="success-details-box">
-                    <div className="success-details-title">📋 THÔNG TIN XÁC NHẬN ĐĂNG KÝ</div>
+                    <div className="success-details-title"> THÔNG TIN XÁC NHẬN ĐĂNG KÝ</div>
                     <div className="success-details-grid">
                       <div className="detail-item">
                         <span className="detail-label">Họ và tên:</span>
@@ -113,10 +107,6 @@ export default function HopTacContent() {
 
                   <div className="success-action-btns">
                     <Link href="/" className="btn-home-partner">
-                      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                        <polyline points="9 22 9 12 15 12 15 22" />
-                      </svg>
                       <span>Quay Về Trang Chủ</span>
                     </Link>
                   </div>
@@ -137,7 +127,6 @@ export default function HopTacContent() {
             <section className="partner-hero-section">
               <div className="partner-hero-container">
                 <div className="partner-hero-badge">
-                  <span className="badge-sparkle">⭐</span>
                   <span>CHƯƠNG TRÌNH HỢP TÁC KINH DOANH NABADEN</span>
                 </div>
 
@@ -154,19 +143,19 @@ export default function HopTacContent() {
 
                 <div className="partner-hero-pills">
                   <div className="hero-pill-item">
-                    <span className="pill-check">✓</span>
+
                     <span>Chủ Động Vốn &amp; Nguồn Hàng</span>
                   </div>
                   <div className="hero-pill-item">
-                    <span className="pill-check">✓</span>
+
                     <span>Hái Tươi &amp; Đóng Thùng Chuẩn</span>
                   </div>
                   <div className="hero-pill-item">
-                    <span className="pill-check">✓</span>
+
                     <span>Hỗ Trợ Xử Lý Linh Hoạt</span>
                   </div>
                   <div className="hero-pill-item">
-                    <span className="pill-check">✓</span>
+
                     <span>Chiết Khấu Rõ Ràng Minh Bạch</span>
                   </div>
                 </div>
@@ -174,7 +163,7 @@ export default function HopTacContent() {
                 <div className="partner-hero-cta-group">
                   <a href="#form-dang-ky" className="btn-hero-partner primary">
                     <span>Đăng Ký Nhận Thông Tin Hợp Tác</span>
-                    <span className="btn-arrow">↓</span>
+
                   </a>
                   <a
                     href="https://zalo.me/0907215521"
@@ -204,7 +193,6 @@ export default function HopTacContent() {
                   <div className="partner-tier-card ctv">
                     <div className="tier-badge ctv">CỘNG TÁC VIÊN</div>
                     <div className="tier-header">
-                      <div className="tier-icon">🌱</div>
                       <h3 className="tier-title">Cộng Tác Viên Bán Hàng</h3>
                       <div className="tier-price-tag">Hình thức: <strong>Lên đơn theo từng khách</strong></div>
                       <p className="tier-desc">Dành cho cá nhân, nhân viên văn phòng, nội trợ muốn tăng thu nhập mà không lo rủi ro vốn.</p>
@@ -212,25 +200,25 @@ export default function HopTacContent() {
 
                     <div className="tier-benefit-list">
                       <div className="benefit-item">
-                        <span className="b-icon">✓</span>
+
                         <div><strong>Không áp lực vốn:</strong> Bạn chỉ cần nhận đơn từ khách, NABADEN hỗ trợ chuẩn bị hàng và vận chuyển.</div>
                       </div>
                       <div className="benefit-item">
-                        <span className="b-icon">✓</span>
+
                         <div><strong>Chiết khấu minh bạch:</strong> Hoa hồng được tính theo từng đơn thành công và đối soát định kỳ.</div>
                       </div>
                       <div className="benefit-item">
-                        <span className="b-icon">✓</span>
+
                         <div><strong>Hỗ trợ giao hàng COD:</strong> Hỗ trợ gửi hàng tận nơi cho người mua và thu hộ tiền.</div>
                       </div>
                       <div className="benefit-item">
-                        <span className="b-icon">✓</span>
+
                         <div><strong>Tài liệu hình ảnh tham khảo:</strong> Cung cấp hình ảnh vườn, video đóng hàng thực tế để thuận tiện giới thiệu đến khách.</div>
                       </div>
                     </div>
 
                     <a href="#form-dang-ky" className="btn-tier-action ctv">
-                      Đăng Ký Cộng Tác Viên →
+                      Đăng Ký Cộng Tác Viên
                     </a>
                   </div>
 
@@ -238,7 +226,6 @@ export default function HopTacContent() {
                   <div className="partner-tier-card npp featured">
                     <div className="tier-badge npp">ĐỐI TÁC PHÂN PHỐI</div>
                     <div className="tier-header">
-                      <div className="tier-icon">👑</div>
                       <h3 className="tier-title">Nhà Phân Phối / Đại Lý Sỉ</h3>
                       <div className="tier-price-tag">Hình thức: <strong>Đơn hàng số lượng lớn</strong></div>
                       <p className="tier-desc">Dành cho các cửa hàng trái cây, siêu thị mini, vựa sỉ nông sản hoặc đại lý phân phối tại các tỉnh thành.</p>
@@ -246,21 +233,21 @@ export default function HopTacContent() {
 
                     <div className="tier-benefit-list">
                       <div className="benefit-item">
-                        <span className="b-icon">★</span>
+
                         <div><strong>Bảng giá sỉ theo sản lượng:</strong> Áp dụng mức giá sỉ tại vườn cạnh tranh, tối ưu chi phí theo từng bậc số lượng.</div>
                       </div>
                       <div className="benefit-item">
-                        <span className="b-icon">★</span>
+
                         <div><strong>Chính sách ưu tiên theo khu vực:</strong> Ưu tiên nguồn hàng và điều phối thuận lợi cho đối tác có sản lượng ổn định.</div>
                       </div>
                       <div className="benefit-item">
-                        <span className="b-icon">★</span>
+
                         <div><strong>Hồ sơ nguồn gốc xuất xứ:</strong> Cung cấp thông tin chứng nhận VietGAP, OCOP Tây Ninh và tem truy xuất nguồn gốc.</div>
                       </div>
                     </div>
 
                     <a href="#form-dang-ky" className="btn-tier-action npp">
-                      Đăng Ký Nhà Phân Phối →
+                      Đăng Ký Nhà Phân Phối
                     </a>
                   </div>
                 </div>
@@ -292,19 +279,16 @@ export default function HopTacContent() {
 
                 <div className="commitments-grid">
                   <div className="commit-card">
-                    <div className="commit-icon-circle">🌱</div>
                     <h4>Vùng Trồng Núi Bà Đen Tây Ninh</h4>
                     <p>Nguồn gốc rõ ràng tại vùng chuyên canh mãng cầu truyền thống, đảm bảo hương vị ngọt thanh và độ dai dẻo đặc trưng của mãng cầu ta Tây Ninh.</p>
                   </div>
 
                   <div className="commit-card">
-                    <div className="commit-icon-circle">🤝</div>
                     <h4>Đồng Hành &amp; Hỗ Trợ Linh Hoạt</h4>
                     <p>Luôn lắng nghe phản hồi của đối tác và khách hàng, phối hợp trao đổi giải pháp phù hợp khi có phát sinh sự cố về vận chuyển hay chất lượng trái.</p>
                   </div>
 
                   <div className="commit-card">
-                    <div className="commit-icon-circle">🏅</div>
                     <h4>Tiêu Chuẩn VietGAP &amp; OCOP</h4>
                     <p>Canh tác theo hướng an toàn sinh học, quy trình bao trái bảo vệ trên cành, minh bạch thông tin nguồn gốc xuất xứ.</p>
                   </div>

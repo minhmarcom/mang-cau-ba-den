@@ -4,7 +4,6 @@ import { useState } from "react";
 
 interface StepItem {
   num: string;
-  icon: string;
   title: string;
   tag: string;
   tagType: "who" | "nabaden" | "shipping";
@@ -14,7 +13,6 @@ interface StepItem {
 const PROCESS_STEPS: StepItem[] = [
   {
     num: "01",
-    icon: "📱",
     title: "Tiếp Nhận & Lên Đơn",
     tag: "Đối tác / CTV",
     tagType: "who",
@@ -22,7 +20,6 @@ const PROCESS_STEPS: StepItem[] = [
   },
   {
     num: "02",
-    icon: "✂️",
     title: "Thu Hoạch Trái Theo Lứa",
     tag: "NABADEN thực hiện",
     tagType: "nabaden",
@@ -30,7 +27,6 @@ const PROCESS_STEPS: StepItem[] = [
   },
   {
     num: "03",
-    icon: "📦",
     title: "Phân Loại & Đóng Thùng Xốp",
     tag: "NABADEN thực hiện",
     tagType: "nabaden",
@@ -38,7 +34,6 @@ const PROCESS_STEPS: StepItem[] = [
   },
   {
     num: "04",
-    icon: "🚚",
     title: "Giao Hàng Qua Đơn Vị Vận Chuyển",
     tag: "NABADEN thực hiện",
     tagType: "nabaden",
@@ -46,7 +41,6 @@ const PROCESS_STEPS: StepItem[] = [
   },
   {
     num: "05",
-    icon: "💵",
     title: "Giao Hàng & Thu Hộ (COD)",
     tag: "Vận chuyển & Thu COD",
     tagType: "shipping",
@@ -54,7 +48,6 @@ const PROCESS_STEPS: StepItem[] = [
   },
   {
     num: "06",
-    icon: "🎉",
     title: "Đối Soát & Thanh Toán Chiết Khấu",
     tag: "NABADEN thực hiện",
     tagType: "nabaden",
@@ -79,14 +72,15 @@ export default function ProcessAccordion() {
               <div className="process-step-header">
                 <div className="process-step-title-area">
                   <span className="process-step-num">{step.num}</span>
-                  <span className="process-step-icon">{step.icon}</span>
                   <span className="process-step-name">{step.title}</span>
                 </div>
                 <div className="process-step-meta">
                   <span className={`process-step-badge ${step.tagType}`}>
                     {step.tag}
                   </span>
-                  <span className="process-step-chevron">{isOpen ? "▲" : "▼"}</span>
+                  <span className="process-step-action">
+                    {isOpen ? "Thu gọn" : "Xem chi tiết"}
+                  </span>
                 </div>
               </div>
 

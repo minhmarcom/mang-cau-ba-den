@@ -10,17 +10,17 @@ const products = [
     no: "01",
     title: "Hộp Đặc Biệt (3 Quả)",
     slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
-    tag: "OCOP 3 Sao • Quà biếu VIP",
+    tag: "OCOP 3 Sao, Quà biếu VIP",
     image: "/hop-dac-biet-3-qua.png",
     copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng, bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
     featured: true,
-    badge: "⭐ Hộp quà đặc biệt",
+    badge: "Hộp quà đặc biệt",
   },
   {
     no: "02",
     title: "Thùng 5KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-5kg",
-    tag: "OCOP 3 Sao • Thưởng thức & Biếu tặng",
+    tag: "OCOP 3 Sao, Thưởng thức & Biếu tặng",
     image: "/thung-5kg.png",
     copy: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ, giữ trọn độ tươi ngọt tự nhiên cho gia đình.",
     featured: false,
@@ -29,7 +29,7 @@ const products = [
     no: "03",
     title: "Thùng 15KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-15kg",
-    tag: "OCOP 3 Sao • Đơn sỉ & Vận chuyển xa",
+    tag: "OCOP 3 Sao, Đơn sỉ & Vận chuyển xa",
     image: "/thung-15kg.png",
     copy: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển nhanh đến TP.HCM, Hà Nội và toàn quốc.",
     featured: false,
@@ -460,7 +460,7 @@ export default function Home() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
+
           </a>
 
           <a
@@ -468,9 +468,6 @@ export default function Home() {
             href="#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </a>
 
@@ -495,40 +492,37 @@ export default function Home() {
                 <a href="#cau-chuyen" onClick={closeMenu}>
                   <span className="mobile-nav-num">01</span>
                   <span>Câu chuyện vườn nhà</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#san-pham" onClick={closeMenu}>
                   <span className="mobile-nav-num">02</span>
                   <span>Sản phẩm & Quà biếu</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#hinh-anh" onClick={closeMenu}>
                   <span className="mobile-nav-num">03</span>
                   <span>Hình ảnh thực tế</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#dat-hang" onClick={closeMenu}>
                   <span className="mobile-nav-num">04</span>
                   <span>Đặt mua & Quà tặng</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#tin-tuc" onClick={closeMenu}>
                   <span className="mobile-nav-num">05</span>
                   <span>Tin tức từ vườn</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#lien-he" onClick={closeMenu}>
                   <span className="mobile-nav-num">06</span>
                   <span>Kênh liên hệ mua hàng</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
               </div>
 
               <div className="mobile-nav-actions">
                 <a className="mobile-cta-primary" href="tel:0907215521" onClick={closeMenu}>
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
                   <span>Gọi ngay 0907 215 521</span>
                 </a>
                 <a
@@ -539,7 +533,7 @@ export default function Home() {
                   onClick={closeMenu}
                 >
                   <span>Nhắn tin Zalo trực tiếp</span>
-                  <span>↗</span>
+
                 </a>
               </div>
 
@@ -566,7 +560,7 @@ export default function Home() {
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow">
-            Nông sản quê mình • Tây Ninh
+            Nông sản quê mình, Tây Ninh
           </p>
           <h1>
             <span className="hero-line-1">Trái ngọt</span>
@@ -578,12 +572,12 @@ export default function Home() {
           <div className="hero-actions">
             <a className="primary-button" href="#san-pham">
               <span>Khám phá sản phẩm</span>
-              <span className="btn-arrow">→</span>
+
             </a>
           </div>
         </div>
         <div className="hero-note">
-          <span className="note-number">✓</span>
+
           <p>
             <strong>Chuẩn VietGAP & OCOP</strong>
             <br />
@@ -597,7 +591,7 @@ export default function Home() {
         <div className="geo-entity-container">
           <div className="geo-entity-card">
             <div className="geo-entity-kicker">
-              <span>🌿 THƯƠNG HIỆU NÔNG SẢN ĐẶC SẢN CHÍNH THỨC</span>
+              <span> THƯƠNG HIỆU NÔNG SẢN ĐẶC SẢN CHÍNH THỨC</span>
             </div>
             <h2 className="geo-entity-title">
               Mãng Cầu Bà Đen Tây Ninh Là Gì?
@@ -607,28 +601,28 @@ export default function Home() {
             </p>
             <div className="geo-badges-grid">
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">🏅</span>
+
                 <div className="geo-badge-text">
-                  <strong>OCOP 3★ Tây Ninh</strong>
+                  <strong>OCOP 3 Tây Ninh</strong>
                   <span>Đặc sản cấp tỉnh chứng nhận</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">🌱</span>
+
                 <div className="geo-badge-text">
                   <strong>Tiêu Chuẩn VietGAP</strong>
                   <span>Canh tác an toàn sinh học</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">⛰️</span>
+
                 <div className="geo-badge-text">
                   <strong>Vùng Trồng Núi Bà Đen</strong>
                   <span>Thổ nhưỡng chân núi Tây Ninh</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">✨</span>
+
                 <div className="geo-badge-text">
                   <strong>Nông Sản Chính Gốc</strong>
                   <span>100% Thu hoạch tại vườn Tây Ninh</span>
@@ -658,7 +652,7 @@ export default function Home() {
             Chúng tôi kết nối câu chuyện vùng trồng với những cơ hội mới — từ kênh bán lẻ, quà tặng đến sản phẩm chế biến và trải nghiệm nông nghiệp.
           </p>
           <a className="arrow-link" href="#san-pham">
-            Khám phá các dòng sản phẩm <span>→</span>
+            Khám phá các dòng sản phẩm
           </a>
         </div>
         <div className="intro-image">
@@ -667,7 +661,7 @@ export default function Home() {
             alt="Vườn mãng cầu xanh tốt dưới chân Núi Bà Đen Tây Ninh"
             loading="lazy"
           />
-          <span>Vùng trồng chân Núi Bà Đen • Tây Ninh</span>
+          <span>Vùng trồng chân Núi Bà Đen, Tây Ninh</span>
         </div>
       </section>
 
@@ -771,7 +765,7 @@ export default function Home() {
                   aria-label={`Xem chi tiết ${product.title}`}
                 >
                   <span>Chi tiết</span>
-                  <span>→</span>
+
                 </a>
                 <a
                   href="https://zalo.me/0907215521"
@@ -791,7 +785,7 @@ export default function Home() {
                   }}
                   aria-label={`Trao đổi về ${product.title} qua Zalo`}
                 >
-                  {product.featured ? "Đặt hộp quà" : "Đặt qua Zalo"} <span>↗</span>
+                  {product.featured ? "Đặt hộp quà" : "Đặt qua Zalo"}
                 </a>
               </div>
             </article>
@@ -849,7 +843,7 @@ export default function Home() {
             >
               <span>01</span>
               Hộp quà 3 trái VIP biếu tặng trang nhã
-              <b>→</b>
+
             </a>
             <a
               href="https://zalo.me/0907215521"
@@ -858,7 +852,7 @@ export default function Home() {
             >
               <span>02</span>
               Thùng 5kg tuyển chọn ăn gia đình
-              <b>→</b>
+
             </a>
             <a
               href="https://zalo.me/0907215521"
@@ -867,7 +861,7 @@ export default function Home() {
             >
               <span>03</span>
               Thùng 10kg – 15kg đơn sỉ & doanh nghiệp
-              <b>→</b>
+
             </a>
             <a
               href="https://zalo.me/0907215521"
@@ -876,7 +870,7 @@ export default function Home() {
             >
               <span>04</span>
               Giao nhanh TP.HCM, Hà Nội & toàn quốc
-              <b>→</b>
+
             </a>
           </div>
         </div>
@@ -914,7 +908,7 @@ export default function Home() {
               letterSpacing: "0.08em",
               marginBottom: "16px"
             }}>
-              <span>🤝 HỢP TÁC KINH DOANH 0 VỐN</span>
+              <span> HỢP TÁC KINH DOANH 0 VỐN</span>
             </div>
             <h2 style={{
               fontSize: "clamp(1.6rem, 2.4vw + 0.8rem, 2.4rem)",
@@ -952,7 +946,7 @@ export default function Home() {
                 }}
               >
                 <span>Xem Quyền Lợi &amp; Đăng Ký Ngay</span>
-                <span>→</span>
+
               </Link>
               <a
                 href="https://zalo.me/0907215521"
@@ -999,9 +993,9 @@ export default function Home() {
               MÃNG CẦU BÀ ĐEN NABADEN
             </div>
             <div style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "0.85rem", lineHeight: 1.45 }}>
-              ✓ Bán hàng theo đơn • Không ôm hàng<br />
-              ✓ Hái tươi tại vườn &amp; Ship toàn quốc<br />
-              ✓ Hỗ trợ xử lý &amp; đối soát linh hoạt
+               Bán hàng theo đơn, Không ôm hàng<br />
+               Hái tươi tại vườn &amp; Ship toàn quốc<br />
+               Hỗ trợ xử lý &amp; đối soát linh hoạt
             </div>
           </div>
         </div>
@@ -1057,7 +1051,7 @@ export default function Home() {
               }}
             >
               <span>Xem tất cả bài viết ({articles.length})</span>
-              <span>→</span>
+
             </a>
           </div>
 
@@ -1083,9 +1077,9 @@ export default function Home() {
                   <div className="featured-article-action">
                     <a href={art.slug} className="featured-read-btn">
                       <span>Đọc bài viết chi tiết</span>
-                      <span>→</span>
+
                     </a>
-                    <span className="featured-read-time">{art.readTime} • {art.date}</span>
+                    <span className="featured-read-time">{art.readTime}, {art.date}</span>
                   </div>
                 </div>
               </article>
@@ -1110,7 +1104,7 @@ export default function Home() {
               }}
             >
               <span>Xem toàn bộ chuyên mục Tin tức & Cẩm nang</span>
-              <span>→</span>
+
             </a>
           </div>
         </div>
@@ -1134,39 +1128,37 @@ export default function Home() {
           <a className="contact-main" href="tel:0907215521">
             <span className="channel-label">Hotline tư vấn</span>
             <strong>0907 215 521</strong>
-            <b>Gọi ngay ↗</b>
+            <b>Gọi ngay </b>
           </a>
           <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
-            <span className="channel-icon" style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>f</span>
             <div>
               <small>Fanpage chính thức</small>
               <strong>Facebook Mãng Cầu Bà Đen</strong>
             </div>
-            <b>↗</b>
+
           </a>
           <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
-            <span className="channel-icon">Z</span>
             <div>
               <small>Nhắn tin nhanh</small>
               <strong>Zalo 0907 215 521</strong>
             </div>
-            <b>↗</b>
+
           </a>
           <a href="https://share.google/mKCDKiRjRo25L0TDN" target="_blank" rel="noopener noreferrer">
-            <span className="channel-icon" style={{ backgroundColor: "#047857", color: "#ffffff", fontSize: "16px" }}>📍</span>
+
             <div>
               <small>Vị trí nhà vườn</small>
               <strong>Google Maps: Vườn Mãng Cầu</strong>
             </div>
-            <b>Chỉ đường ↗</b>
+            <b>Chỉ đường </b>
           </a>
           <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
-            <span className="channel-icon">♪</span>
+
             <div>
               <small>Xem video tại vườn</small>
               <strong>TikTok @mangcaubaden</strong>
             </div>
-            <b>↗</b>
+
           </a>
         </div>
       </section>
@@ -1183,19 +1175,6 @@ export default function Home() {
           className={currentTab === "top" ? "is-active" : ""}
           aria-current={currentTab === "top" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <polyline points="9 22 9 12 15 12 15 22" />
-          </svg>
           <span>Trang chủ</span>
         </a>
 
@@ -1204,21 +1183,6 @@ export default function Home() {
           className={currentTab === "san-pham" ? "is-active" : ""}
           aria-current={currentTab === "san-pham" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="m7.5 4.27 9 5.15" />
-            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-            <path d="m3.3 7 8.7 5 8.7-5" />
-            <path d="M12 22V12" />
-          </svg>
           <span>Sản phẩm</span>
         </a>
 
@@ -1226,21 +1190,6 @@ export default function Home() {
           href="/hop-tac"
           aria-label="Hợp tác đối tác &amp; CTV"
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-          </svg>
           <span>Hợp tác</span>
         </Link>
 
@@ -1249,21 +1198,6 @@ export default function Home() {
           className={currentTab === "tin-tuc" ? "is-active" : ""}
           aria-current={currentTab === "tin-tuc" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
-            <path d="M18 14h-8" />
-            <path d="M15 18h-5" />
-            <path d="M10 6h8v4h-8V6Z" />
-          </svg>
           <span>Tin tức</span>
         </a>
 
@@ -1272,18 +1206,6 @@ export default function Home() {
           className={currentTab === "lien-he" ? "is-active" : ""}
           aria-current={currentTab === "lien-he" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
           <span>Liên hệ</span>
         </a>
       </nav>
