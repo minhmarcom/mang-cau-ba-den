@@ -1177,9 +1177,9 @@ h2 {
 .coop-image {
   min-height: 580px;
   border-radius: 28px 8px 8px 28px;
-  background-image: linear-gradient(0deg, rgba(10, 37, 25, 0.2), transparent), url('/thuc-te-dong-goi.jpg');
+  background-image: linear-gradient(0deg, rgba(10, 37, 25, 0.12), transparent), url('/mang-cau-chin-dong-xop-la.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center 48%;
   filter: saturate(0.92) brightness(1.03);
 }
 
