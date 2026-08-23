@@ -17,6 +17,28 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/mang-cau-bao-lau-thi-chin",
+    title: "Mãng cầu bao lâu thì chín? Cách nhận biết mãng cầu chín ngon",
+    kicker: "Mẹo hay & Bảo quản, Tây Ninh",
+    badge: "Mẹo chọn & Nhận biết",
+    image: "/mang-cau-ba-den-chin-vang-bo-xop.jpg",
+    date: "Tháng 8/2026",
+    readTime: "5 phút đọc",
+    description:
+      "Mãng cầu mua về còn cứng bao lâu thì chín? Xem 7 dấu hiệu nhận biết mãng cầu chín ngon, cách theo dõi độ già và mẹo để trái chín tự nhiên đúng chuẩn.",
+  },
+  {
+    slug: "/mang-cau-va-qua-na-co-phai-la-mot",
+    title: "Mãng cầu và quả na có phải là một? Phân biệt na dai, na bở và mãng cầu Bà Đen",
+    kicker: "Kiến thức nông sản, Tây Ninh",
+    badge: "Phân biệt & Kiến thức",
+    image: "/vuon-mang-cau-nui-ba-den-troi-xanh.jpg",
+    date: "Tháng 8/2026",
+    readTime: "6 phút đọc",
+    description:
+      "Mãng cầu và quả na có phải là một? Tìm hiểu cách gọi na – mãng cầu theo vùng miền Bắc - Nam, phân biệt na dai, na bở và thương hiệu Mãng Cầu Bà Đen Tây Ninh.",
+  },
+  {
     slug: "/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den",
     title: "Các dịp lễ lớn cúng trong năm của người Việt và ý nghĩa của mãng cầu Bà Đen trong văn hóa truyền thống",
     kicker: "Văn hóa & Tâm linh, Tây Ninh",
