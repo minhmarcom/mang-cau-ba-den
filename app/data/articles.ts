@@ -17,6 +17,18 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/vi-sao-mang-cau-ba-den-doi-khi-co-sau",
+    title:
+      "Vì sao mãng cầu Bà Đen đôi khi có sâu? Hiểu đúng về đặc tính tự nhiên của trái mãng cầu",
+    kicker: "Kiến thức về trái, Tây Ninh",
+    badge: "Hiểu đúng về nông sản",
+    image: "/vi-sao-mang-cau-ba-den-co-sau.jpg",
+    date: "Tháng 8/2026",
+    readTime: "9 phút đọc",
+    description:
+      "Vì sao mãng cầu Bà Đen đôi khi có sâu dù bên ngoài trái vẫn đẹp? Tìm hiểu nguyên nhân, cách nhận biết, lựa chọn và bảo quản mãng cầu đúng cách.",
+  },
+  {
     slug: "/mang-cau-bao-lau-thi-chin",
     title: "Mãng cầu bao lâu thì chín? Cách nhận biết mãng cầu chín ngon",
     kicker: "Mẹo hay & Bảo quản, Tây Ninh",
