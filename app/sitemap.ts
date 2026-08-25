@@ -142,5 +142,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.95,
     },
+    {
+      url: `${siteUrl}/vi-sao-mang-cau-ba-den-doi-khi-co-sau/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
+      url: `${siteUrl}/tin-tuc/vi-sao-mang-cau-ba-den-doi-khi-co-sau/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
   ];
 }
