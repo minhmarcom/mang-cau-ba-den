@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const title = "Vì sao mãng cầu Bà Đen đôi khi có sâu? Hiểu đúng về đặc tính tự nhiên của trái mãng cầu";
 const description = "Vì sao mãng cầu Bà Đen đôi khi có sâu dù bên ngoài trái vẫn đẹp? Tìm hiểu nguyên nhân, cách nhận biết, lựa chọn và bảo quản mãng cầu đúng cách.";
 const canonical = "https://mangcaubaden.vn/vi-sao-mang-cau-ba-den-doi-khi-co-sau/";
-const cover = "https://mangcaubaden.vn/vi-sao-mang-cau-ba-den-co-sau.jpg";
+const cover = "https://mangcaubaden.vn/mang-cau-tren-canh-tay-ninh.jpg";
 
 export const metadata: Metadata = {
   title: `${title} | Mãng Cầu Bà Đen`,
@@ -130,8 +130,8 @@ export default function MangCauCoSauArticlePage() {
           <div className="article-hero-media">
             <div className="article-container">
               <figure className="article-figure-main">
-                <img src="/vi-sao-mang-cau-ba-den-co-sau.jpg" alt={title} className="article-img" width="1600" height="1200" style={{ maxHeight: "620px", objectFit: "cover" }} />
-                <figcaption className="article-figcaption">Một trái có thương hiệu và hình thức đẹp vẫn có thể gặp bất thường tự nhiên khó nhận biết hoàn toàn từ bên ngoài.</figcaption>
+                <img src="/mang-cau-tren-canh-tay-ninh.jpg" alt="Trái mãng cầu Bà Đen còn trên cành tại vườn Tây Ninh" className="article-img" width="768" height="1024" style={{ maxHeight: "620px", objectFit: "cover" }} />
+                <figcaption className="article-figcaption">Trái mãng cầu Bà Đen được chăm sóc và bao trái trực tiếp tại vườn Tây Ninh.</figcaption>
               </figure>
             </div>
           </div>
