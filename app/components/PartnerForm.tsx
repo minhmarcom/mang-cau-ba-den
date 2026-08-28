@@ -137,9 +137,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
       const currentHost = typeof window !== "undefined" ? window.location.hostname : "";
       const sourceWebsite = currentHost.includes("mangcaubaden")
         ? "mangcaubaden.vn"
-        : currentHost.includes("nabaden")
-        ? "nabaden.vn"
-        : currentHost || "nabaden.vn";
+        : currentHost || "mangcaubaden.vn";
 
       const res = await fetch("/api/partner-register", {
         method: "POST",
@@ -187,7 +185,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
         <div className="partner-success-state" role="region" aria-live="polite">
           <h3 className="success-title">Đăng Ký Thành Công!</h3>
           <p className="success-subtitle">
-            Cảm ơn <strong>{fullName}</strong>! Thông tin đăng ký của bạn đã được hệ thống ghi nhận. NABADEN sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
+            Cảm ơn <strong>{fullName}</strong>! Thông tin đăng ký của bạn đã được hệ thống ghi nhận. Mãng Cầu Bà Đen sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
           </p>
 
           <div className="success-details-box">
@@ -224,7 +222,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
             <span className="form-tag">ĐĂNG KÝ HỢP TÁC</span>
             <h3 className="form-main-title">Điền Thông Tin Trở Thành Đối Tác</h3>
             <p className="form-main-desc">
-              Tham gia mạng lưới phân phối đặc sản Tây Ninh chính gốc cùng NABADEN.
+              Tham gia mạng lưới phân phối đặc sản Tây Ninh chính gốc cùng Mãng Cầu Bà Đen.
             </p>
           </div>
 
@@ -244,7 +242,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
                 </div>
                 <div className="role-info">
                   <div className="role-title">Cộng Tác Viên (CTV)</div>
-                  <div className="role-desc">Bán hàng theo đơn, NABADEN hỗ trợ đóng gói, ship hàng và đối soát chiết khấu.</div>
+                  <div className="role-desc">Bán hàng theo đơn, Mãng Cầu Bà Đen hỗ trợ đóng gói, ship hàng và đối soát chiết khấu.</div>
                 </div>
               </button>
 
@@ -270,7 +268,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
               {isNPP ? (
                 <span><strong>Chính sách Nhà Phân Phối:</strong> Áp dụng khung giá sỉ theo sản lượng tại vườn Núi Bà Đen, hỗ trợ nguồn hàng theo mùa vụ, cung cấp thông tin xuất xứ và chứng nhận VietGAP/OCOP.</span>
               ) : (
-                <span><strong>Chính sách Cộng Tác Viên:</strong> Không bắt buộc ôm hàng. NABADEN hỗ trợ các khâu hái trái tại vườn, bọc xốp, đóng thùng, gửi hàng và thu hộ COD, đối soát chiết khấu định kỳ cùng bạn.</span>
+                <span><strong>Chính sách Cộng Tác Viên:</strong> Không bắt buộc ôm hàng. Mãng Cầu Bà Đen hỗ trợ các khâu hái trái tại vườn, bọc xốp, đóng thùng, gửi hàng và thu hộ COD, đối soát chiết khấu định kỳ cùng bạn.</span>
               )}
             </div>
           </div>
@@ -393,7 +391,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
           </button>
 
           <p className="form-security-note">
-             Thông tin của bạn được bảo mật tuyệt đối và chỉ dùng để liên hệ gửi bảng giá đối tác từ NABADEN.
+             Thông tin của bạn được bảo mật tuyệt đối và chỉ dùng để liên hệ gửi bảng giá đối tác từ Mãng Cầu Bà Đen.
           </p>
         </form>
       )}

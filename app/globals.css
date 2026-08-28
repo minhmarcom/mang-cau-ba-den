@@ -3631,7 +3631,7 @@ footer {
   .featured-article-img {
     height: 200px;
   }
-  .criteria-grid, .compare-boxes, .garden-features, .nabaden-features {
+  .criteria-grid, .compare-boxes, .garden-features, .brand-features {
     grid-template-columns: 1fr;
   }
   .seo-intent {
@@ -5327,7 +5327,7 @@ footer {
   align-self: flex-start;
 }
 
-.step-tag-nabaden {
+.step-tag-brand {
   font-size: 0.78rem;
   font-weight: 800;
   color: #065f46;
@@ -5984,7 +5984,7 @@ footer {
   color: #92400e;
 }
 
-.process-step-badge.nabaden {
+.process-step-badge.brand {
   background: #dcfce7;
   color: #166534;
 }

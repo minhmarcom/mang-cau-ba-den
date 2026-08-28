@@ -105,7 +105,7 @@ export default function Footer({ backLink }: FooterProps) {
         {/* BOTTOM COPYRIGHT & SITEMAP BAR */}
         <div className="footer-bottom-bar">
           <p className="copyright-text">
-            © 2026 Mãng Cầu Bà Đen NABADEN — Giữ trọn vị quê nhà
+            © 2026 Mãng Cầu Bà Đen — Giữ trọn vị quê nhà
           </p>
           <div className="footer-quick-links">
             <Link href="/san-pham">Sản phẩm</Link>

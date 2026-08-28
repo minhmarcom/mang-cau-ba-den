@@ -86,9 +86,8 @@ async function main() {
   
   const transparentMasterBuffer = await sharp(out, { raw: { width: w, height: h, channels: 4 } }).png().toBuffer();
   
-  console.log("2. Saving public/logo.png and public/logo-nabaden.png...");
+  console.log("2. Saving public/logo.png...");
   await sharp(transparentMasterBuffer).png({ quality: 100, compressionLevel: 9 }).toFile("public/logo.png");
-  await sharp(transparentMasterBuffer).png({ quality: 100, compressionLevel: 9 }).toFile("public/logo-nabaden.png");
   
   console.log("3. Generating app icons and apple-touch-icon...");
   await sharp(transparentMasterBuffer).resize(512, 512, { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toFile("public/app-icon-512.png");

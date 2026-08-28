@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Mãng Cầu Bà Đen",
     images: [
       {
-        url: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+        url: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
         width: 1200,
         height: 630,
         alt: "Hộp quà Mãng Cầu Bà Đen 3 trái VIP sang trọng",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP | Mãng Cầu Bà Đen",
     description:
       "Tuyển chọn 3 trái mãng cầu Bà Đen VIP sang trọng, vỏ sáng đẹp mắt, chuẩn OCOP 3 sao Tây Ninh.",
-    images: [`${siteUrl}/hop-qua-3-trai-vip.jpg`],
+    images: [`${siteUrl}/san-pham-hop-qua-3-trai.jpg`],
   },
 };
 
@@ -49,14 +49,14 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP (OCOP 3 Sao)",
-  image: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+  image: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
   description:
     "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng, mã đẹp, vỏ sáng, lót rơm giấy và xốp lưới bảo vệ sang trọng.",
   sku: "MCBD-VIP-03",
   mpn: "NAB-03VIP",
   brand: {
     "@type": "Brand",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
   },
   offers: {
     "@type": "Offer",
@@ -191,7 +191,7 @@ export default function Hop3TraiVipPage() {
         <div className="product-detail-hero">
           <div className="product-gallery-main">
             <img
-              src="/hop-qua-3-trai-vip.jpg"
+              src="/san-pham-hop-qua-3-trai.jpg"
               alt="Hộp quà Mãng Cầu Bà Đen 3 trái VIP sang trọng"
             />
           </div>
@@ -276,7 +276,7 @@ export default function Hop3TraiVipPage() {
 
           <figure className="article-inline-image">
             <img
-              src="/hop-qua-3-trai-vip.jpg"
+              src="/san-pham-hop-qua-3-trai.jpg"
               alt="Cận cảnh hộp quà 3 trái mãng cầu Bà Đen sang trọng với quai xách tiện lợi"
               loading="lazy"
             />
@@ -326,7 +326,7 @@ export default function Hop3TraiVipPage() {
           <div className="related-products-grid">
             <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-5kg.jpg" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
@@ -336,7 +336,7 @@ export default function Hop3TraiVipPage() {
 
             <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-15kg.png" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-15kg.jpg" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>

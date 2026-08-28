@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Mãng Cầu Bà Đen",
     images: [
       {
-        url: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+        url: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
         width: 1200,
         height: 630,
         alt: "Danh mục sản phẩm Mãng Cầu Bà Đen Tây Ninh",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Mãng Cầu Bà Đen",
     description:
       "Danh mục sản phẩm Mãng Cầu Bà Đen Tây Ninh chính gốc: Hộp 3 trái VIP, Thùng 5kg, Thùng 15kg chuẩn OCOP 3 sao.",
-    images: [`${siteUrl}/hop-qua-3-trai-vip.jpg`],
+    images: [`${siteUrl}/san-pham-hop-qua-3-trai.jpg`],
   },
 };
 
@@ -61,9 +61,9 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Hộp Đặc Biệt (3 Quả) – Quà Biếu VIP",
-        image: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+        image: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         sku: "MCBD-VIP-03",
         offers: {
           "@type": "Offer",
@@ -101,9 +101,9 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 5KG Tuyển Chọn – Thưởng Thức & Biếu Tặng",
-        image: `${siteUrl}/thung-5kg.png`,
+        image: `${siteUrl}/san-pham-thung-5kg.jpg`,
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         sku: "MCBD-THUNG-05KG",
         offers: {
           "@type": "Offer",
@@ -141,9 +141,9 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 15KG Tuyển Chọn – Đơn Sỉ & Vận Chuyển Xa",
-        image: `${siteUrl}/thung-15kg.png`,
+        image: `${siteUrl}/san-pham-thung-15kg.jpg`,
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         sku: "MCBD-THUNG-15KG",
         offers: {
           "@type": "Offer",
@@ -235,7 +235,7 @@ export default function ProductHubPage() {
       tag: "OCOP 3 Sao, Quà Biếu VIP",
       title: "Hộp Đặc Biệt (3 Quả)",
       slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
-      image: "/hop-qua-3-trai-vip.jpg",
+      image: "/san-pham-hop-qua-3-trai.jpg",
       desc: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng, mã đẹp, vỏ sáng, lót rơm giấy và xốp lưới bảo vệ sang trọng.",
       features: [
         "Trái tuyển chọn đỉnh chóp",
@@ -250,7 +250,7 @@ export default function ProductHubPage() {
       tag: "OCOP 3 Sao, Thưởng Thức & Biếu Tặng",
       title: "Thùng 5KG Tuyển Chọn",
       slug: "/san-pham/thung-mang-cau-ba-den-5kg",
-      image: "/thung-5kg.png",
+      image: "/san-pham-thung-5kg.jpg",
       desc: "Quy cách đóng thùng carton 5kg chuyên dụng, từng trái già loại 1 bọc lưới xốp êm ái, thích hợp dùng cho gia đình hoặc làm quà biếu người thân bạn bè.",
       features: [
         "Trái tuyển đồng đều loại 1",
@@ -265,7 +265,7 @@ export default function ProductHubPage() {
       tag: "OCOP 3 Sao, Đơn Sỉ & Vận Chuyển Xa",
       title: "Thùng 15KG Tuyển Chọn",
       slug: "/san-pham/thung-mang-cau-ba-den-15kg",
-      image: "/thung-15kg.png",
+      image: "/san-pham-thung-15kg.jpg",
       desc: "Thùng carton 15kg dày dặn nhiều lớp chịu lực, lỗ thoáng khí chống hấp hơi, tối ưu cho việc gửi xe khách liên tỉnh, máy bay hoặc cung cấp cho đại lý hoa quả sạch.",
       features: [
         "Thùng carton 3-5 lớp dày chịu lực",

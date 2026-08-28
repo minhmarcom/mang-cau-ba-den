@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const siteUrl = isLocal ? `http://${host}` : "https://mangcaubaden.vn";
   const image = "https://mangcaubaden.vn/og.png";
   const title = 'Mãng cầu Bà Đen Tây Ninh - Sản vật vùng "đất Thánh"';
-  const description = "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.";
+  const description = "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ Mãng Cầu Bà Đen.";
   const keywords = [
     // Từ khóa hạt nhân (Core Keywords)
     "mãng cầu Bà Đen", "mang cau ba den", "mãng cầu Bà Đen Tây Ninh", "mang cau tay ninh",

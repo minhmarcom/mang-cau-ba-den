@@ -54,13 +54,13 @@ const articleSchema = {
   image: [
     "https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg",
     "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
-    "https://mangcaubaden.vn/mang-cau-ba-den-nabaden-trung-bay.jpg",
+    "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
   ],
   datePublished: "2026-08-16T10:00:00+07:00",
   dateModified: "2026-08-16T10:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -175,7 +175,7 @@ export default function CustardAppleStorageGuidePage() {
 
       {/* SITE HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"
@@ -277,7 +277,7 @@ export default function CustardAppleStorageGuidePage() {
               Nhiều khách hàng khi mua Mãng Cầu Bà Đen thường gặp những tình huống như: trái còn cứng, có trái chín trước trái chín sau, không biết có nên cho vào tủ lạnh hay không, hoặc lo mãng cầu bị hư khi để ở nhiệt độ phòng.
             </p>
             <p>
-              Thực tế, bảo quản mãng cầu không quá phức tạp. Chỉ cần hiểu đúng đặc tính sinh lý của trái và xử lý theo từng mức độ chín là bạn có thể thưởng thức trọn vẹn vị ngon ngọt tự nhiên. Cùng <strong>NABADEN</strong> khám phá cẩm nang chi tiết dưới đây!
+              Thực tế, bảo quản mãng cầu không quá phức tạp. Chỉ cần hiểu đúng đặc tính sinh lý của trái và xử lý theo từng mức độ chín là bạn có thể thưởng thức trọn vẹn vị ngon ngọt tự nhiên. Cùng <strong>Mãng Cầu Bà Đen</strong> khám phá cẩm nang chi tiết dưới đây!
             </p>
 
             <section id="sau-thu-hoach-tiep-tuc-chin">
@@ -413,12 +413,12 @@ export default function CustardAppleStorageGuidePage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/mang-cau-ba-den-nabaden-trung-bay.jpg"
-                  alt="Trưng bày mãng cầu Bà Đen NABADEN bọc lưới xốp chất lượng cao"
+                  src="/san-pham-hop-qua-3-trai.jpg"
+                  alt="Trưng bày mãng cầu Bà Đen Mãng Cầu Bà Đen bọc lưới xốp chất lượng cao"
                   loading="lazy"
                 />
                 <figcaption>
-                  Mãng cầu NABADEN tuyển chọn từng quả bọc lưới xốp giúp chống va đập và bảo quản dễ dàng.
+                  Mãng Cầu Bà Đen tuyển chọn từng quả, bọc lưới xốp giúp chống va đập và bảo quản dễ dàng.
                 </figcaption>
               </figure>
             </section>
@@ -532,7 +532,7 @@ export default function CustardAppleStorageGuidePage() {
             <section className="article-cta-box" style={{ marginTop: "40px" }}>
               <h3>Thưởng thức Mãng Cầu Bà Đen Tây Ninh tươi ngon tận vườn</h3>
               <p>
-                Đặt mua ngay hôm nay để nhận những thùng mãng cầu già tuyển chọn chuẩn VietGAP & OCOP, đóng gói lưới xốp an toàn và hướng dẫn bảo quản tận tâm từ NABADEN.
+                Đặt mua ngay hôm nay để nhận những thùng mãng cầu già tuyển chọn chuẩn VietGAP & OCOP, đóng gói lưới xốp an toàn và hướng dẫn bảo quản tận tâm từ Mãng Cầu Bà Đen.
               </p>
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0907215521">
@@ -559,7 +559,7 @@ export default function CustardAppleStorageGuidePage() {
           <div className="related-products-grid">
             <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Quà 3 Trái VIP" loading="lazy" />
+                <img src="/san-pham-hop-qua-3-trai.jpg" alt="Hộp Quà 3 Trái VIP" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
@@ -569,7 +569,7 @@ export default function CustardAppleStorageGuidePage() {
 
             <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-5kg.jpg" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
@@ -579,7 +579,7 @@ export default function CustardAppleStorageGuidePage() {
 
             <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-15kg.png" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-15kg.jpg" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>

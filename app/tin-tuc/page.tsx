@@ -55,7 +55,7 @@ const collectionSchema = {
   url: "https://mangcaubaden.vn/tin-tuc/",
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",
@@ -104,7 +104,7 @@ export default function NewsHubPage() {
 
       {/* HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"

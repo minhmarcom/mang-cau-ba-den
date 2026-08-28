@@ -63,14 +63,14 @@ export const articles: Article[] = [
   },
   {
     slug: "/van-chuyen-mang-cau-ba-den",
-    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
+    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói Mãng Cầu Bà Đen",
     kicker: "Đóng gói & Vận chuyển, Tây Ninh",
     badge: "Vận chuyển & Đóng gói",
     image: "/thuc-te-dong-goi-nhieu-thung.jpg",
     date: "Tháng 8/2026",
     readTime: "6 phút đọc",
     description:
-      "Khám phá quy trình vận chuyển Mãng Cầu Bà Đen NABADEN từ vườn Tây Ninh đến tay khách hàng: Cách chọn độ già, bọc xốp chống va đập, kiểm soát thời gian và mẹo kiểm tra khi nhận.",
+      "Khám phá quy trình vận chuyển Mãng Cầu Bà Đen từ vườn Tây Ninh đến tay khách hàng: Cách chọn độ già, bọc xốp chống va đập, kiểm soát thời gian và mẹo kiểm tra khi nhận.",
   },
   {
     slug: "/cach-bao-quan-mang-cau-ba-den",
@@ -126,16 +126,5 @@ export const articles: Article[] = [
     readTime: "5 phút đọc",
     description:
       "Hướng dẫn chi tiết cách nhận biết độ già của trái, phân biệt mãng cầu chuẩn gốc Tây Ninh, quy cách đóng gói chống va đập và bảng phân loại trái ăn gia đình hoặc biếu tặng.",
-  },
-  {
-    slug: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh",
-    title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
-    kicker: "Đặc sản quê nhà, Tây Ninh",
-    badge: "Văn hóa nhà nông",
-    image: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
-    date: "Tháng 8/2026",
-    readTime: "4 phút đọc",
-    description:
-      "Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
   },
 ];

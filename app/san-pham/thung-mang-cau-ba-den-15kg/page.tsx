@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Mãng Cầu Bà Đen",
     images: [
       {
-        url: `${siteUrl}/thung-15kg.png`,
+        url: `${siteUrl}/san-pham-thung-15kg.jpg`,
         width: 1200,
         height: 630,
         alt: "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh Đơn Sỉ",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
     description:
       "Thùng carton 15kg dày dặn 3-5 lớp chịu lực, chuyên gửi xe khách & máy bay toàn quốc, giá sỉ tận vườn.",
-    images: [`${siteUrl}/thung-15kg.png`],
+    images: [`${siteUrl}/san-pham-thung-15kg.jpg`],
   },
 };
 
@@ -49,14 +49,14 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Thùng 15KG Mãng Cầu Bà Đen Tuyển Chọn (OCOP 3 Sao)",
-  image: `${siteUrl}/thung-15kg.png`,
+  image: `${siteUrl}/san-pham-thung-15kg.jpg`,
   description:
     "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
   sku: "MCBD-THUNG-15KG",
   mpn: "NAB-15KG",
   brand: {
     "@type": "Brand",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
   },
   offers: {
     "@type": "Offer",
@@ -191,7 +191,7 @@ export default function Thung15kgPage() {
         <div className="product-detail-hero">
           <div className="product-gallery-main">
             <img
-              src="/thung-15kg.png"
+              src="/san-pham-thung-15kg.jpg"
               alt="Thùng 15KG Mãng Cầu Bà Đen Tây Ninh Đơn Sỉ"
             />
           </div>
@@ -315,7 +315,7 @@ export default function Thung15kgPage() {
           <div className="related-products-grid">
             <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Đặc Biệt (3 Quả VIP)" loading="lazy" />
+                <img src="/san-pham-hop-qua-3-trai.jpg" alt="Hộp Đặc Biệt (3 Quả VIP)" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
@@ -325,7 +325,7 @@ export default function Thung15kgPage() {
 
             <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-5kg.jpg" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>

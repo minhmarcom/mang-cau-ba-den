@@ -14,6 +14,16 @@ const nextConfig: NextConfig = {
         destination: "https://mangcaubaden.vn/:path*",
         permanent: true,
       },
+      {
+        source: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh",
+        destination: "/mang-cau-ba-den-dac-san-tay-ninh",
+        permanent: true,
+      },
+      {
+        source: "/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh",
+        destination: "/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh",
+        permanent: true,
+      },
     ];
   },
 };

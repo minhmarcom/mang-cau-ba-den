@@ -101,12 +101,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${siteUrl}/mang-cau-ba-den-nabaden-dac-san-tay-ninh/`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
-    {
       url: `${siteUrl}/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den/`,
       lastModified: new Date(),
       changeFrequency: "daily",

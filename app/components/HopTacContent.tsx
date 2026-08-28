@@ -36,7 +36,7 @@ export default function HopTacContent() {
         <Link className="brand" href="/">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen Tây Ninh NABADEN"
+            alt="Mãng Cầu Bà Đen Tây Ninh"
             className="brand-logo-img"
             width="42"
             height="42"
@@ -80,7 +80,7 @@ export default function HopTacContent() {
 
                   <h1 className="success-title">Đăng Ký Thành Công!</h1>
                   <p className="success-subtitle">
-                    Cảm ơn <strong>{successData.fullName}</strong>! Thông tin đăng ký đã được hệ thống ghi nhận. NABADEN sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
+                    Cảm ơn <strong>{successData.fullName}</strong>! Thông tin đăng ký đã được hệ thống ghi nhận. Mãng Cầu Bà Đen sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
                   </p>
 
                   <div className="success-details-box">
@@ -127,18 +127,18 @@ export default function HopTacContent() {
             <section className="partner-hero-section">
               <div className="partner-hero-container">
                 <div className="partner-hero-badge">
-                  <span>CHƯƠNG TRÌNH HỢP TÁC KINH DOANH NABADEN</span>
+                  <span>CHƯƠNG TRÌNH HỢP TÁC KINH DOANH Mãng Cầu Bà Đen</span>
                 </div>
 
                 <h1 className="partner-hero-title">
                   Hợp Tác Phân Phối <span className="nobr">Mãng Cầu Bà Đen</span> <span className="nobr">Tây Ninh</span>
                   <span className="hero-highlight-phrase">
-                    NABADEN Hỗ Trợ Đóng Gói, Vận Chuyển &amp; Đối Soát Chiết Khấu
+                    Mãng Cầu Bà Đen Hỗ Trợ Đóng Gói, Vận Chuyển &amp; Đối Soát Chiết Khấu
                   </span>
                 </h1>
 
                 <p className="partner-hero-lead">
-                  Kinh doanh nông sản đặc sản Tây Ninh theo mô hình linh hoạt. Bạn tập trung tìm kiếm khách hàng và lên đơn, các khâu <em>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</em> được NABADEN hỗ trợ phối hợp vận hành.
+                  Kinh doanh nông sản đặc sản Tây Ninh theo mô hình linh hoạt. Bạn tập trung tìm kiếm khách hàng và lên đơn, các khâu <em>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</em> được Mãng Cầu Bà Đen hỗ trợ phối hợp vận hành.
                 </p>
 
                 <div className="partner-hero-pills">
@@ -184,7 +184,7 @@ export default function HopTacContent() {
                   <span className="section-sub-kicker">HÌNH THỨC HỢP TÁC</span>
                   <h2 className="section-heading-bold">Lựa Chọn Mô Hình Phù Hợp Với Năng Lực</h2>
                   <p className="section-desc-lead">
-                    NABADEN thiết kế 2 hình thức hợp tác chính nhằm tối ưu quyền lợi cho từng nhóm đối tác kinh doanh.
+                    Mãng Cầu Bà Đen thiết kế 2 hình thức hợp tác chính nhằm tối ưu quyền lợi cho từng nhóm đối tác kinh doanh.
                   </p>
                 </div>
 
@@ -201,7 +201,7 @@ export default function HopTacContent() {
                     <div className="tier-benefit-list">
                       <div className="benefit-item">
 
-                        <div><strong>Không áp lực vốn:</strong> Bạn chỉ cần nhận đơn từ khách, NABADEN hỗ trợ chuẩn bị hàng và vận chuyển.</div>
+                        <div><strong>Không áp lực vốn:</strong> Bạn chỉ cần nhận đơn từ khách, Mãng Cầu Bà Đen hỗ trợ chuẩn bị hàng và vận chuyển.</div>
                       </div>
                       <div className="benefit-item">
 
@@ -259,7 +259,7 @@ export default function HopTacContent() {
               <div className="section-container">
                 <div className="section-header-center">
                   <span className="section-sub-kicker">QUY TRÌNH PHỐI HỢP</span>
-                  <h2 className="section-heading-bold">Các Bước Vận Hành Cùng NABADEN</h2>
+                  <h2 className="section-heading-bold">Các Bước Vận Hành Cùng Mãng Cầu Bà Đen</h2>
                   <p className="section-desc-lead">
                     Nhấn vào từng bước bên dưới để xem chi tiết quy trình phối hợp vận hành đơn hàng.
                   </p>
@@ -274,7 +274,7 @@ export default function HopTacContent() {
               <div className="section-container">
                 <div className="section-header-center">
                   <span className="section-sub-kicker">TIÊU CHUẨN NÔNG SẢN</span>
-                  <h2 className="section-heading-bold">3 Điểm Tựa Chất Lượng Của NABADEN</h2>
+                  <h2 className="section-heading-bold">3 Điểm Tựa Chất Lượng Của Mãng Cầu Bà Đen</h2>
                 </div>
 
                 <div className="commitments-grid">

@@ -1,6 +1,6 @@
 /**
- * GOOGLE APPS SCRIPT CHO MÃNG CẦU BÀ ĐEN NABADEN
- * Tự động phân loại đơn từ: nabaden.vn hoặc mangcaubaden.vn
+ * GOOGLE APPS SCRIPT CHO MÃNG CẦU BÀ ĐEN
+ * Tự động ghi nhận đơn từ website mangcaubaden.vn
  * ======================================================
  * HƯỚNG DẪN CẬP NHẬT TRANG TÍNH:
  * 1. Mở trang Google Sheets của bạn.
@@ -27,7 +27,7 @@ function setupSheetHeaders(sheet) {
   if (sheet.getLastRow() === 0) {
     sheet.appendRow(headers);
     
-    // Định dạng dòng tiêu đề (Màu xanh thương hiệu NABADEN)
+    // Định dạng dòng tiêu đề (Màu xanh thương hiệu Mãng Cầu Bà Đen)
     const headerRange = sheet.getRange(1, 1, 1, headers.length);
     headerRange.setBackground("#1b4d2b");
     headerRange.setFontColor("#ffffff");
@@ -69,8 +69,8 @@ function doPost(e) {
     const now = new Date();
     const timeFormatted = Utilities.formatDate(now, "Asia/Ho_Chi_Minh", "dd/MM/yyyy HH:mm:ss");
     
-    // Phân loại website nguồn: nabaden.vn hoặc mangcaubaden.vn
-    const website = data.website || "nabaden.vn";
+    // Ghi nhận website nguồn: mangcaubaden.vn
+    const website = data.website || "mangcaubaden.vn";
     
     // Đảm bảo số điện thoại luôn giữ số 0 ở đầu khi vào Google Sheet
     const phoneFormatted = data.phone ? `'${String(data.phone).replace(/^'/, "")}` : "";
@@ -99,7 +99,7 @@ function doPost(e) {
     if (website.includes("mangcaubaden")) {
       webCell.setBackground("#e0f2fe").setFontColor("#0369a1").setFontWeight("bold"); // Xanh dương cho mangcaubaden.vn
     } else {
-      webCell.setBackground("#f0fdf4").setFontColor("#15803d").setFontWeight("bold"); // Xanh lá cây cho nabaden.vn
+      webCell.setBackground("#f0fdf4").setFontColor("#15803d").setFontWeight("bold"); // Xanh lá cây cho mangcaubaden.vn
     }
 
     // Định dạng màu cho cột Loại Đối Tác
@@ -125,6 +125,6 @@ function doPost(e) {
 
 function doGet(e) {
   return ContentService
-    .createTextOutput(JSON.stringify({ status: "active", message: "Nabaden Partner Webhook ready!" }))
+    .createTextOutput(JSON.stringify({ status: "active", message: "Mãng Cầu Bà Đen Partner Webhook ready!" }))
     .setMimeType(ContentService.MimeType.JSON);
 }

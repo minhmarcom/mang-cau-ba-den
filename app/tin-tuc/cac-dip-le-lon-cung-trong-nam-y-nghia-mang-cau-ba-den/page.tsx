@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Khám phá 10 dịp lễ cúng lớn trong năm của người Việt từ Tết Nguyên Đán, Rằm tháng Giêng, Vu Lan đến khai trương, tân gia và ý nghĩa của mãng cầu Bà Đen Tây Ninh trên mâm ngũ quả.",
   keywords: [
     "mãng cầu Bà Đen",
-    "NABADEN",
+    "Mãng Cầu Bà Đen",
     "mãng cầu Tây Ninh",
     "trái cây cúng",
     "mâm ngũ quả",
@@ -69,7 +69,7 @@ const articleSchema = {
   dateModified: "2026-08-22T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -117,10 +117,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "NABADEN cung cấp những dòng sản phẩm mãng cầu nào phù hợp làm quà biếu dâng lễ?",
+      name: "Mãng Cầu Bà Đen cung cấp những dòng sản phẩm mãng cầu nào phù hợp làm quà biếu dâng lễ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NABADEN mang đến dòng 'Hộp Đặc Biệt 3 Trái VIP' đóng hộp sang trọng chuyên dùng dâng lễ và biếu tặng, cùng các 'Thùng 5KG' và 'Thùng 15KG' tuyển chọn trái chín già loại 1 bọc lưới xốp an toàn.",
+        text: "Mãng Cầu Bà Đen mang đến dòng 'Hộp Đặc Biệt 3 Trái VIP' đóng hộp sang trọng chuyên dùng dâng lễ và biếu tặng, cùng các 'Thùng 5KG' và 'Thùng 15KG' tuyển chọn trái chín già loại 1 bọc lưới xốp an toàn.",
       },
     },
   ],
@@ -173,7 +173,7 @@ export default function CultureArticlePage() {
         <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN"
+            alt="Mãng Cầu Bà Đen"
             className="brand-logo-img"
             width="42"
             height="42"
@@ -270,7 +270,7 @@ export default function CultureArticlePage() {
               </p>
 
               <p>
-                Tây Ninh lại là vùng đất nổi tiếng với sản vật <strong>mãng cầu Bà Đen</strong>. Không chỉ được dùng để thưởng thức hàng ngày hoặc làm quà biếu trang trọng, mãng cầu còn xuất hiện tự nhiên trong những mâm trái cây vào các dịp lễ, Tết của nhiều gia đình. Đây cũng là một trong những giá trị văn hóa sâu sắc mà <strong>NABADEN</strong> mong muốn giới thiệu khi đưa đặc sản mãng cầu Tây Ninh đến gần hơn với người tiêu dùng toàn quốc.
+                Tây Ninh lại là vùng đất nổi tiếng với sản vật <strong>mãng cầu Bà Đen</strong>. Không chỉ được dùng để thưởng thức hàng ngày hoặc làm quà biếu trang trọng, mãng cầu còn xuất hiện tự nhiên trong những mâm trái cây vào các dịp lễ, Tết của nhiều gia đình. Đây cũng là một trong những giá trị văn hóa sâu sắc mà <strong>Mãng Cầu Bà Đen</strong> mong muốn giới thiệu khi đưa đặc sản mãng cầu Tây Ninh đến gần hơn với người tiêu dùng toàn quốc.
               </p>
 
               {/* TABLE OF CONTENTS */}
@@ -401,7 +401,7 @@ export default function CultureArticlePage() {
                 Trong mùa Vu Lan, giá trị của lễ vật không nằm ở việc đắt tiền mà chủ yếu thể hiện qua sự thành tâm. Một giỏ trái cây tươi ngon, một hộp đặc sản quê hương hoặc những trái cây được lựa chọn kỹ cũng có thể trở thành món quà ý nghĩa dành tặng cha mẹ, ông bà.
               </p>
               <p>
-                Với ý nghĩa đó, <strong>NABADEN</strong> hướng <strong>mãng cầu Bà Đen</strong> không chỉ đến nhu cầu thưởng thức mà còn trở thành một lựa chọn đặc sản Tây Ninh dành cho những dịp biếu tặng và sum họp gia đình ấm cúng.
+                Với ý nghĩa đó, <strong>Mãng Cầu Bà Đen</strong> hướng <strong>mãng cầu Bà Đen</strong> không chỉ đến nhu cầu thưởng thức mà còn trở thành một lựa chọn đặc sản Tây Ninh dành cho những dịp biếu tặng và sum họp gia đình ấm cúng.
               </p>
 
               <h2 id="tet-trung-thu">6. Tết Trung Thu – ngày đoàn viên của gia đình</h2>
@@ -488,10 +488,10 @@ export default function CultureArticlePage() {
 
               {/* HIGHLIGHT BOX / CALLOUT */}
               <div className="article-callout-box">
-                <div className="callout-badge">Gợi ý từ NABADEN</div>
+                <div className="callout-badge">Gợi ý từ Mãng Cầu Bà Đen</div>
                 <h3>Lựa chọn Mãng Cầu Bà Đen cho dịp cúng lễ &amp; Biếu tặng</h3>
                 <p>
-                  Để mâm cỗ thêm phần trang trọng và tròn đầy ý nghĩa, NABADEN tuyển chọn từng trái <strong>mãng cầu Bà Đen loại 1</strong> đạt chuẩn VietGAP &amp; OCOP 3 Sao Tây Ninh:
+                  Để mâm cỗ thêm phần trang trọng và tròn đầy ý nghĩa, Mãng Cầu Bà Đen tuyển chọn từng trái <strong>mãng cầu Bà Đen loại 1</strong> đạt chuẩn VietGAP &amp; OCOP 3 Sao Tây Ninh:
                 </p>
                 <ul>
                   <li>
@@ -534,7 +534,7 @@ export default function CultureArticlePage() {
                 Điều đáng quý của một đặc sản không chỉ nằm ở hương vị dẻo ngọt thanh mát. Đằng sau mỗi sản phẩm còn là vùng đất, người trồng và những câu chuyện văn hóa được hình thành qua nhiều thế hệ.
               </p>
               <p>
-                Với <strong>NABADEN</strong>, việc đưa <strong>mãng cầu Bà Đen Tây Ninh</strong> đến người tiêu dùng không đơn thuần là bán một loại trái cây. Đó còn là cơ hội để giới thiệu một sản vật gắn với Tây Ninh theo cách gần gũi và trân trọng hơn.
+                Với <strong>Mãng Cầu Bà Đen</strong>, việc đưa <strong>mãng cầu Bà Đen Tây Ninh</strong> đến người tiêu dùng không đơn thuần là bán một loại trái cây. Đó còn là cơ hội để giới thiệu một sản vật gắn với Tây Ninh theo cách gần gũi và trân trọng hơn.
               </p>
               <p>
                 Mãng cầu có thể được mua để gia đình thưởng thức, làm quà khi đến Tây Ninh, biếu người thân hoặc sử dụng trong mâm trái cây vào những dịp lễ phù hợp với phong tục của từng gia đình.
@@ -552,7 +552,7 @@ export default function CultureArticlePage() {
               </p>
 
               <p style={{ fontWeight: 600, color: "var(--leaf-dark)", fontSize: "1.05rem", marginTop: "24px" }}>
-                NABADEN – Mãng cầu Bà Đen mong muốn gìn giữ câu chuyện ấy từ chính những trái mãng cầu được lựa chọn tại vùng đất Tây Ninh, để mỗi sản phẩm khi đến tay người nhận không chỉ có giá trị thưởng thức mà còn mang theo một phần câu chuyện về quê hương, văn hóa và con người nơi núi Bà Đen.
+                Mãng Cầu Bà Đen – Mãng cầu Bà Đen mong muốn gìn giữ câu chuyện ấy từ chính những trái mãng cầu được lựa chọn tại vùng đất Tây Ninh, để mỗi sản phẩm khi đến tay người nhận không chỉ có giá trị thưởng thức mà còn mang theo một phần câu chuyện về quê hương, văn hóa và con người nơi núi Bà Đen.
               </p>
             </div>
           </div>
@@ -597,10 +597,10 @@ export default function CultureArticlePage() {
 
                 <details className="faq-item">
                   <summary className="faq-question">
-                    <span>NABADEN cung cấp những dòng sản phẩm mãng cầu nào phù hợp làm quà biếu dâng lễ?</span>
+                    <span>Mãng Cầu Bà Đen cung cấp những dòng sản phẩm mãng cầu nào phù hợp làm quà biếu dâng lễ?</span>
                   </summary>
                   <p>
-                    NABADEN mang đến dòng “Hộp Đặc Biệt 3 Trái VIP” đóng hộp sang trọng chuyên dùng dâng lễ và biếu tặng, cùng các “Thùng 5KG” và “Thùng 15KG” tuyển chọn trái chín già loại 1 bọc lưới xốp an toàn.
+                    Mãng Cầu Bà Đen mang đến dòng “Hộp Đặc Biệt 3 Trái VIP” đóng hộp sang trọng chuyên dùng dâng lễ và biếu tặng, cùng các “Thùng 5KG” và “Thùng 15KG” tuyển chọn trái chín già loại 1 bọc lưới xốp an toàn.
                   </p>
                 </details>
               </div>

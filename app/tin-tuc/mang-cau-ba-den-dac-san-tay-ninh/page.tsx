@@ -56,7 +56,7 @@ const articleSchema = {
   dateModified: "2026-08-15T16:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -147,7 +147,7 @@ export default function ArticleFamousSpecialtyPage() {
 
       {/* HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"

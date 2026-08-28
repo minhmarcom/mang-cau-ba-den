@@ -57,7 +57,7 @@ const articleSchema = {
   dateModified: "2026-08-15T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -156,7 +156,7 @@ export default function ArticlePage() {
 
       {/* HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"
@@ -362,7 +362,7 @@ export default function ArticlePage() {
           <section id="bang-gia-quy-cach">
             <h2>4. Phân loại và quy cách mãng cầu Bà Đen</h2>
             <p>
-              Nhà vườn Mãng Cầu Bà Đen NABADEN đóng gói và phân phối theo 3 dòng sản phẩm tiêu chuẩn đạt chứng nhận OCOP 3 Sao, đáp ứng trọn vẹn từ nhu cầu biếu tặng cao cấp đến thưởng thức gia đình hay đơn sỉ gửi xa:
+              Nhà vườn Mãng Cầu Bà Đen đóng gói và phân phối theo 3 dòng sản phẩm tiêu chuẩn đạt chứng nhận OCOP 3 Sao, đáp ứng trọn vẹn từ nhu cầu biếu tặng cao cấp đến thưởng thức gia đình hay đơn sỉ gửi xa:
             </p>
 
             <div className="table-responsive">
@@ -422,7 +422,7 @@ export default function ArticlePage() {
 
             <figure className="article-inline-image">
               <img
-                src="/hop-qua-3-trai-vip.jpg"
+                src="/san-pham-hop-qua-3-trai.jpg"
                 alt="Hộp quà mãng cầu Bà Đen 3 trái tuyển chọn thượng hạng"
                 loading="lazy"
               />
@@ -509,7 +509,7 @@ export default function ArticlePage() {
 
           <div className="related-articles-grid">
             <Link
-              href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/"
+              href="/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/"
               className="related-article-card"
             >
               <div className="related-card-thumb">

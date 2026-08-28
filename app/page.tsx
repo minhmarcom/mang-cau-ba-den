@@ -11,7 +11,7 @@ const products = [
     title: "Hộp Đặc Biệt (3 Quả)",
     slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
     tag: "OCOP 3 Sao, Quà biếu VIP",
-    image: "/hop-dac-biet-3-qua.png",
+    image: "/san-pham-hop-qua-3-trai.jpg",
     copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng, bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
     featured: true,
     badge: "Hộp quà đặc biệt",
@@ -21,7 +21,7 @@ const products = [
     title: "Thùng 5KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-5kg",
     tag: "OCOP 3 Sao, Thưởng thức & Biếu tặng",
-    image: "/thung-5kg.png",
+    image: "/san-pham-thung-5kg.jpg",
     copy: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ, giữ trọn độ tươi ngọt tự nhiên cho gia đình.",
     featured: false,
   },
@@ -30,7 +30,7 @@ const products = [
     title: "Thùng 15KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-15kg",
     tag: "OCOP 3 Sao, Đơn sỉ & Vận chuyển xa",
-    image: "/thung-15kg.png",
+    image: "/san-pham-thung-15kg.jpg",
     copy: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển nhanh đến TP.HCM, Hà Nội và toàn quốc.",
     featured: false,
   },
@@ -50,15 +50,15 @@ const gallery = [
     shape: "gallery-half",
   },
   {
-    src: "/hop-qua-nabaden-thiet-ke.jpg",
-    alt: "Hộp quà mãng cầu Bà Đen 3 trái NABADEN Thạnh Tân Co.op cao cấp",
-    caption: "Hộp quà biếu 3 trái NABADEN Thạnh Tân Co.op VIP",
+    src: "/san-pham-hop-qua-3-trai.jpg",
+    alt: "Hộp quà Mãng Cầu Bà Đen 3 trái cao cấp",
+    caption: "Hộp quà biếu 3 trái Mãng Cầu Bà Đen",
     shape: "gallery-half",
   },
   {
     src: "/mang-cau-tap-ket-tai-vuon.jpg",
     alt: "Mãng cầu bọc xốp thu hoạch tập kết dồi dào tại vườn Thạnh Tân",
-    caption: "Thu hoạch tập kết dồi dào tại vườn NABADEN Thạnh Tân",
+    caption: "Thu hoạch tập kết dồi dào tại vườn Mãng Cầu Bà Đen",
     shape: "gallery-wide",
   },
   {
@@ -79,7 +79,7 @@ const faqs = [
   {
     question: "Mãng cầu Bà Đen là gì và được trồng ở đâu?",
     answer:
-      "Mãng cầu Bà Đen là giống na dai đặc sản được canh tác tại vùng đất xám chân núi Bà Đen (Tây Ninh). NABADEN thu hoạch và phân phối trực tiếp từ nhà vườn HTX Thạnh Tân Co.op đạt chuẩn VietGAP & OCOP 3 sao.",
+      "Mãng cầu Bà Đen là giống na dai đặc sản được canh tác tại vùng đất xám chân núi Bà Đen (Tây Ninh), được tuyển chọn và phân phối trực tiếp từ vùng trồng đạt chuẩn VietGAP & OCOP 3 sao.",
   },
   {
     question: "Mãng cầu Bà Đen giá bao nhiêu 1kg hôm nay?",
@@ -89,7 +89,7 @@ const faqs = [
   {
     question: "Mùa mãng cầu Tây Ninh vào thời gian nào?",
     answer:
-      "Mãng cầu Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10).",
+      "Mãng cầu Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của nhà vườn. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10).",
   },
   {
     question: "Cách chọn mãng cầu Bà Đen ngon không bị sượng?",
@@ -99,12 +99,12 @@ const faqs = [
   {
     question: "Mua mãng cầu Bà Đen chính gốc giao TPHCM & Hà Nội ở đâu?",
     answer:
-      "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân, bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
+      "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. Mãng Cầu Bà Đen hái tươi tại vườn Thạnh Tân, bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
   },
   {
-    question: "Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?",
+    question: "Mãng Cầu Bà Đen có chứng nhận an toàn nào?",
     answer:
-      "Mãng cầu NABADEN đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng từ HTX Nông nghiệp Thạnh Tân.",
+      "Mãng Cầu Bà Đen đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, trái được bao bọc an toàn trên cành và có thông tin nguồn gốc rõ ràng.",
   },
 ];
 
@@ -123,13 +123,13 @@ const localBusinessSchema = {
   "@type": ["LocalBusiness", "ProduceFarm", "Store"],
   "@id": "https://mangcaubaden.vn/#business",
   name: "Mãng Cầu Bà Đen Tây Ninh — Vùng Trồng Chính Gốc",
-  alternateName: ["Mãng Cầu Bà Đen NABADEN", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh", "Vựa Mãng Cầu Núi Bà Đen"],
+  alternateName: ["Mãng Cầu Bà Đen", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh", "Vựa Mãng Cầu Núi Bà Đen"],
   url: "https://mangcaubaden.vn/",
   logo: "https://mangcaubaden.vn/logo.png",
   image: [
     "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
-    "https://mangcaubaden.vn/hop-dac-biet-3-qua.png",
-    "https://mangcaubaden.vn/thung-5kg.png"
+    "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
+    "https://mangcaubaden.vn/san-pham-thung-5kg.jpg"
   ],
   description:
     "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh chính gốc. Cập nhật kiến thức mùa vụ, cách chọn, bảo quản, bảng giá mãng cầu tại vườn và phân phối sỉ lẻ toàn quốc.",
@@ -178,7 +178,7 @@ const localBusinessSchema = {
     "https://www.facebook.com/mangcaubaden.vn/",
     "https://zalo.me/0907215521",
     "https://www.tiktok.com/@mangcaubaden",
-    "https://nabaden.vn",
+    "https://mangcaubaden.vn",
   ],
 };
 
@@ -193,9 +193,9 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Mãng Cầu Bà Đen Hộp Đặc Biệt (3 Quả VIP)",
-        image: "https://mangcaubaden.vn/hop-dac-biet-3-qua.png",
+        image: "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -232,9 +232,9 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn",
-        image: "https://mangcaubaden.vn/thung-5kg.png",
+        image: "https://mangcaubaden.vn/san-pham-thung-5kg.jpg",
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -271,9 +271,9 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 15KG Mãng Cầu Bà Đen Đơn Sỉ & Vận Chuyển Xa",
-        image: "https://mangcaubaden.vn/thung-15kg.png",
+        image: "https://mangcaubaden.vn/san-pham-thung-15kg.jpg",
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -312,7 +312,7 @@ const websiteSchema = {
   "@type": "WebSite",
   name: 'Mãng Cầu Bà Đen Tây Ninh - Sản vật vùng "đất Thánh"',
   description:
-    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.",
+    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ Mãng Cầu Bà Đen.",
   url: "https://mangcaubaden.vn/",
   inLanguage: "vi-VN",
 };
@@ -926,7 +926,7 @@ export default function Home() {
               maxWidth: "620px",
               marginBottom: "24px"
             }}>
-              NABADEN hỗ trợ các khâu từ <strong>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</strong>. Đối tác &amp; CTV chủ động lên đơn và đối soát chiết khấu minh bạch!
+              Mãng Cầu Bà Đen hỗ trợ các khâu từ <strong>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</strong>. Đối tác &amp; CTV chủ động lên đơn và đối soát chiết khấu minh bạch!
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
               <Link
@@ -990,7 +990,7 @@ export default function Home() {
               style={{ objectFit: "contain", marginBottom: "14px", filter: "drop-shadow(0 6px 12px rgba(0,0,0,0.3))" }}
             />
             <div style={{ color: "#fcd34d", fontWeight: 800, fontSize: "1.1rem", marginBottom: "4px" }}>
-              MÃNG CẦU BÀ ĐEN NABADEN
+              MÃNG CẦU BÀ ĐEN
             </div>
             <div style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "0.85rem", lineHeight: 1.45 }}>
                Bán hàng theo đơn, Không ôm hàng<br />
@@ -1220,8 +1220,8 @@ export default function Home() {
               {
                 "@type": ["Organization", "AgriculturalBusiness", "LocalBusiness"],
                 "@id": "https://mangcaubaden.vn/#organization",
-                "name": "Mãng Cầu Bà Đen Tây Ninh - NABADEN",
-                "alternateName": "Hợp tác xã Nông nghiệp Mãng cầu Thạnh Tân",
+                "name": "Mãng Cầu Bà Đen Tây Ninh - Mãng Cầu Bà Đen",
+                "alternateName": "Đặc sản Mãng Cầu Bà Đen Tây Ninh",
                 "url": "https://mangcaubaden.vn/",
                 "logo": {
                   "@type": "ImageObject",
@@ -1230,7 +1230,7 @@ export default function Home() {
                   "height": 512
                 },
                 "image": "https://mangcaubaden.vn/og.png",
-                "description": "Thương hiệu Mãng Cầu Bà Đen Tây Ninh NABADEN chính gốc VietGAP & OCOP 3 sao, thu hoạch trực tiếp tại vườn khu vực chân núi Bà Đen Tây Ninh.",
+                "description": "Mãng Cầu Bà Đen Tây Ninh chính gốc, đạt chuẩn VietGAP & OCOP 3 sao, thu hoạch trực tiếp tại vùng trồng khu vực chân núi Bà Đen.",
                 "telephone": "+84907215521",
                 "priceRange": "$$",
                 "address": {
@@ -1254,7 +1254,7 @@ export default function Home() {
                 },
                 "sameAs": [
                   "https://www.facebook.com/mangcaubaden.vn/",
-                  "https://nabaden.vn/"
+                  "https://mangcaubaden.vn/"
                 ]
               },
               {
@@ -1274,7 +1274,7 @@ export default function Home() {
                     "name": "Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10)."
+                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của nhà vườn. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10)."
                     }
                   },
                   {
@@ -1290,15 +1290,15 @@ export default function Home() {
                     "name": "Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM & Hà Nội?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc."
+                      "text": "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. Mãng Cầu Bà Đen hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?",
+                    "name": "Mãng Cầu Bà Đen có chứng nhận an toàn nào?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Mãng cầu NABADEN đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng."
+                      "text": "Mãng Cầu Bà Đen đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, trái được bao bọc an toàn trên cành và có thông tin nguồn gốc rõ ràng."
                     }
                   }
                 ]

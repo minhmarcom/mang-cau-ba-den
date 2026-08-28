@@ -44,7 +44,7 @@ const articleSchema = {
   ],
   datePublished: "2026-08-25T10:00:00+07:00",
   dateModified: "2026-08-25T10:00:00+07:00",
-  author: { "@type": "Organization", name: "Mãng Cầu Bà Đen NABADEN", url: "https://mangcaubaden.vn/" },
+  author: { "@type": "Organization", name: "Mãng Cầu Bà Đen", url: "https://mangcaubaden.vn/" },
   publisher: {
     "@type": "Organization",
     name: "Mãng Cầu Bà Đen Tây Ninh",
@@ -99,7 +99,7 @@ export default function MangCauCoSauArticlePage() {
 
       <header className="site-header" role="banner">
         <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
-          <img src="/logo.png" alt="Mãng Cầu Bà Đen NABADEN" className="brand-logo-img" width="42" height="42" />
+          <img src="/logo.png" alt="Mãng Cầu Bà Đen" className="brand-logo-img" width="42" height="42" />
           <span className="brand-divider" aria-hidden="true">|</span>
           <span className="brand-text">Mãng Cầu<br />Bà Đen</span>
         </Link>
@@ -138,11 +138,11 @@ export default function MangCauCoSauArticlePage() {
 
           <div className="article-body">
             <div className="article-container article-prose">
-              <p>Khi nhắc đến <a href="https://nabaden.vn" target="_blank" rel="noreferrer"><strong>mãng cầu Bà Đen</strong></a>, nhiều người nhớ đến đặc sản Tây Ninh có thịt mềm, vị ngọt và hương thơm tự nhiên. Tuy nhiên, một vài trải nghiệm gặp trái có dấu hiệu sâu bên trong có thể khiến người mua e ngại.</p>
+              <p>Khi nhắc đến <a href="https://mangcaubaden.vn" target="_blank" rel="noreferrer"><strong>mãng cầu Bà Đen</strong></a>, nhiều người nhớ đến đặc sản Tây Ninh có thịt mềm, vị ngọt và hương thơm tự nhiên. Tuy nhiên, một vài trải nghiệm gặp trái có dấu hiệu sâu bên trong có thể khiến người mua e ngại.</p>
               <p>Không nên hiểu rằng cứ là mãng cầu Bà Đen thì sẽ có sâu, cũng không nên cho rằng một trái có sâu đồng nghĩa cả lô hàng kém chất lượng. Cần nhìn vấn đề qua cấu tạo trái, quá trình sinh trưởng, thu hoạch, tuyển lựa và bảo quản.</p>
 
               <div className="article-toc" id="toc"><p className="toc-title">Mục lục nội dung bài viết</p><ol>
-                <li><a href="#cau-tao">1. Cấu tạo nhiều mắt và khe tự nhiên</a></li><li><a href="#moi-truong">2. Môi trường sinh trưởng ngoài vườn</a></li><li><a href="#ben-ngoai-dep">3. Vì sao bên ngoài đẹp nhưng bên trong có thể gặp sâu?</a></li><li><a href="#an-toan">4. Có sâu có đồng nghĩa không an toàn?</a></li><li><a href="#tam-ly">5. Vì sao trải nghiệm này thường được nhớ lâu?</a></li><li><a href="#tuyen-lua">6. Vai trò của khâu tuyển lựa</a></li><li><a href="#van-chuyen">7. Phân biệt sâu với tổn thương vận chuyển</a></li><li><a href="#kiem-tra">8. Cách kiểm tra trước khi ăn</a></li><li><a href="#bao-quan">9. Bảo quản để hạn chế hư hỏng</a></li><li><a href="#mua-hang">10. Đừng chỉ quan tâm giá/kg</a></li><li><a href="#trach-nhiem">11. Trách nhiệm của nơi bán</a></li><li><a href="#nabaden">12. Quan điểm của NABADEN</a></li><li><a href="#ket-luan">13. Hiểu đúng để có trải nghiệm tốt hơn</a></li>
+                <li><a href="#cau-tao">1. Cấu tạo nhiều mắt và khe tự nhiên</a></li><li><a href="#moi-truong">2. Môi trường sinh trưởng ngoài vườn</a></li><li><a href="#ben-ngoai-dep">3. Vì sao bên ngoài đẹp nhưng bên trong có thể gặp sâu?</a></li><li><a href="#an-toan">4. Có sâu có đồng nghĩa không an toàn?</a></li><li><a href="#tam-ly">5. Vì sao trải nghiệm này thường được nhớ lâu?</a></li><li><a href="#tuyen-lua">6. Vai trò của khâu tuyển lựa</a></li><li><a href="#van-chuyen">7. Phân biệt sâu với tổn thương vận chuyển</a></li><li><a href="#kiem-tra">8. Cách kiểm tra trước khi ăn</a></li><li><a href="#bao-quan">9. Bảo quản để hạn chế hư hỏng</a></li><li><a href="#mua-hang">10. Đừng chỉ quan tâm giá/kg</a></li><li><a href="#trach-nhiem">11. Trách nhiệm của nơi bán</a></li><li><a href="#quan-diem-thuong-hieu">12. Quan điểm của Mãng Cầu Bà Đen</a></li><li><a href="#ket-luan">13. Hiểu đúng để có trải nghiệm tốt hơn</a></li>
               </ol></div>
 
               <h2 id="cau-tao">1. Cấu tạo của trái mãng cầu khác với nhiều loại trái cây</h2>
@@ -187,9 +187,9 @@ export default function MangCauCoSauArticlePage() {
               <h2 id="trach-nhiem">11. Một đơn vị bán hàng có trách nhiệm nên làm gì khi khách gặp trái lỗi?</h2>
               <p>Đơn vị nghiêm túc cần kiểm soát từ lựa chọn, đóng gói đến vận chuyển; đồng thời tiếp nhận phản ánh khi khách gặp trái sâu hoặc bất thường. Hình ảnh, video, thời điểm nhận hàng và cách bảo quản là dữ liệu giúp xác định nguyên nhân và hỗ trợ phù hợp.</p>
 
-              <h2 id="nabaden">12. NABADEN nhìn nhận vấn đề trái mãng cầu có sâu như thế nào?</h2>
-              <p>NABADEN tuyển lựa nhằm hạn chế tối đa trái không đạt chất lượng trước khi giao. Điều quan trọng là kiểm soát từng khâu: thu hoạch phù hợp, tuyển lựa, phân loại, đóng gói, vận chuyển và hướng dẫn bảo quản.</p>
-              <div className="article-callout-box"><div className="callout-badge">Quan điểm NABADEN</div><h3>Nông sản có thể không hoàn hảo tuyệt đối</h3><p>Nhưng sự chỉn chu, minh bạch và trách nhiệm với khách hàng luôn cần được đặt lên hàng đầu.</p><div className="callout-actions"><Link href="/san-pham" className="callout-btn primary">Xem sản phẩm ➔</Link><a href="tel:0907215521" className="callout-btn secondary">Hotline: 0907 215 521</a></div></div>
+              <h2 id="quan-diem-thuong-hieu">12. Mãng Cầu Bà Đen nhìn nhận vấn đề trái mãng cầu có sâu như thế nào?</h2>
+              <p>Mãng Cầu Bà Đen tuyển lựa nhằm hạn chế tối đa trái không đạt chất lượng trước khi giao. Điều quan trọng là kiểm soát từng khâu: thu hoạch phù hợp, tuyển lựa, phân loại, đóng gói, vận chuyển và hướng dẫn bảo quản.</p>
+              <div className="article-callout-box"><div className="callout-badge">Quan điểm Mãng Cầu Bà Đen</div><h3>Nông sản có thể không hoàn hảo tuyệt đối</h3><p>Nhưng sự chỉn chu, minh bạch và trách nhiệm với khách hàng luôn cần được đặt lên hàng đầu.</p><div className="callout-actions"><Link href="/san-pham" className="callout-btn primary">Xem sản phẩm ➔</Link><a href="tel:0907215521" className="callout-btn secondary">Hotline: 0907 215 521</a></div></div>
 
               <h2 id="ket-luan">13. Hiểu đúng về mãng cầu Bà Đen để có trải nghiệm tốt hơn</h2>
               <p>Mãng cầu có cấu trúc nhiều mắt và khe, phát triển trong môi trường tự nhiên và tiếp tục chín sau thu hoạch. Dù được tuyển lựa cẩn thận, vẫn có thể có trường hợp bất thường khó phát hiện hoàn toàn khi trái còn nguyên.</p>
