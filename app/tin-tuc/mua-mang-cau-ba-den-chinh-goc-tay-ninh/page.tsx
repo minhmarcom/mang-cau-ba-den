@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
         width: 1200,
         height: 630,
         alt: "Mua mãng cầu Bà Đen chính gốc Tây Ninh",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen Tây Ninh ngon, chuẩn nguồn gốc từ nhà vườn.",
-    images: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   },
 };
 
@@ -52,7 +52,7 @@ const articleSchema = {
   headline: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
   description:
     "Khi tìm mua mãng cầu Bà Đen chính gốc Tây Ninh, người mua nên kiểm tra nguồn gốc vùng trồng, độ già của trái, cách phân loại, đóng gói và thời điểm giao hàng phù hợp.",
-  image: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],
+  image: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   datePublished: "2026-07-04T08:00:00+07:00",
   dateModified: "2026-08-15T08:00:00+07:00",
   author: {
@@ -226,7 +226,7 @@ export default function ArticlePage() {
         {/* FEATURED IMAGE */}
         <figure className="article-hero-media">
           <img
-            src="/thuc-te-dong-goi-nhieu-thung.jpg"
+            src="/thuc-te-dong-goi.jpg"
             alt="Mãng cầu Bà Đen Tây Ninh chính gốc đóng thùng sẵn sàng vận chuyển"
           />
           <figcaption>

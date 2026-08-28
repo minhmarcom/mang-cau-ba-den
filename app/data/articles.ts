@@ -66,7 +66,7 @@ export const articles: Article[] = [
     title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói Mãng Cầu Bà Đen",
     kicker: "Đóng gói & Vận chuyển, Tây Ninh",
     badge: "Vận chuyển & Đóng gói",
-    image: "/thuc-te-dong-goi-nhieu-thung.jpg",
+    image: "/thuc-te-dong-goi.jpg",
     date: "Tháng 8/2026",
     readTime: "6 phút đọc",
     description:
@@ -77,7 +77,7 @@ export const articles: Article[] = [
     title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
     kicker: "Mẹo hay & Bảo quản, Tây Ninh",
     badge: "Kinh nghiệm bảo quản",
-    image: "/dong-thung-carton-mang-cau-xop.jpg",
+    image: "/thuc-te-dong-goi.jpg",
     date: "Tháng 8/2026",
     readTime: "5 phút đọc",
     description:
@@ -99,7 +99,7 @@ export const articles: Article[] = [
     title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn",
     kicker: "Cẩm nang du lịch, Tây Ninh",
     badge: "Kinh nghiệm du lịch",
-    image: "/trai-mang-cau-chin-gia-loai-1.jpg",
+    image: "/thuc-te-mang-cau-tuoi.jpg",
     date: "Tháng 8/2026",
     readTime: "5 phút đọc",
     description:
@@ -121,7 +121,7 @@ export const articles: Article[] = [
     title: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
     kicker: "Tin tức mùa vụ, Tây Ninh",
     badge: "Kinh nghiệm chọn mua",
-    image: "/thuc-te-dong-goi-nhieu-thung.jpg",
+    image: "/thuc-te-dong-goi.jpg",
     date: "Tháng 8/2026",
     readTime: "5 phút đọc",
     description:

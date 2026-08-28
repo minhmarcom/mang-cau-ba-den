@@ -653,7 +653,7 @@ export default function CultureArticlePage() {
               >
                 <div className="related-card-thumb">
                   <img
-                    src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                    src="/thuc-te-mang-cau-tuoi.jpg"
                     alt="Kinh nghiệm mua mãng cầu Bà Đen ở Tây Ninh"
                     loading="lazy"
                   />

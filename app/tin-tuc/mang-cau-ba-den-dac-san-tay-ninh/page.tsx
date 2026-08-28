@@ -464,7 +464,7 @@ export default function ArticleFamousSpecialtyPage() {
             >
               <div className="related-card-thumb">
                 <img
-                  src="/thuc-te-dong-goi-nhieu-thung.jpg"
+                  src="/thuc-te-dong-goi.jpg"
                   alt="Kinh nghiệm chọn mua mãng cầu Bà Đen chính gốc Tây Ninh"
                   loading="lazy"
                 />

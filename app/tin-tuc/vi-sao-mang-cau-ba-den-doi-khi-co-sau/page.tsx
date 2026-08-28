@@ -170,7 +170,7 @@ export default function MangCauCoSauArticlePage() {
 
               <h2 id="van-chuyen">7. Không chỉ sâu, quá trình vận chuyển cũng ảnh hưởng đến mãng cầu</h2>
               <p>Không phải mọi phần hư bên trong đều do sâu. Khi chín, thịt mãng cầu khá mềm. Nếu trái bị va đập hoặc chịu lực mạnh, khu vực tổn thương có thể mềm nhanh, thâm màu hoặc hư. Chỉ nhìn phần thịt sau khi chín đôi khi khó phân biệt tổn thương vận chuyển, chín quá hay côn trùng.</p>
-              <InlineFigure src="/dong-thung-carton-mang-cau-xop.jpg" alt="Đóng thùng carton bọc xốp hạn chế va đập" caption="Bao bì và cách xếp trái rất quan trọng khi vận chuyển mãng cầu đi xa." />
+              <InlineFigure src="/thuc-te-dong-goi.jpg" alt="Đóng thùng carton bọc xốp hạn chế va đập" caption="Bao bì và cách xếp trái rất quan trọng khi vận chuyển mãng cầu đi xa." />
 
               <h2 id="kiem-tra">8. Cách kiểm tra mãng cầu trước khi ăn</h2>
               <p>Khi nhận hàng, nên quan sát xem trái có bị dập mạnh, nứt bất thường, chảy nước, có mùi lạ hoặc vùng hư rõ ràng hay không. Nếu trái hư nhiều, có mùi bất thường hoặc không xác định được mức độ an toàn, lựa chọn thận trọng nhất là không sử dụng.</p>
@@ -203,7 +203,7 @@ export default function MangCauCoSauArticlePage() {
 
           <section className="article-related-section" aria-label="Bài viết liên quan"><div className="related-section-header"><span className="related-section-kicker">Góc đọc thêm</span><h2 className="related-section-title">Bài viết liên quan</h2></div><div className="related-articles-grid">
             <Link href="/mang-cau-bao-lau-thi-chin/" className="related-article-card"><div className="related-card-thumb"><img src="/mang-cau-ba-den-chin-vang-bo-xop.jpg" alt="Mãng cầu bao lâu thì chín?" loading="lazy" /><span className="related-thumb-tag">Nhận biết độ chín</span></div><div className="related-card-body"><h3 className="related-card-title">Mãng cầu bao lâu thì chín? Cách nhận biết mãng cầu chín ngon</h3><span className="related-card-link">Đọc bài viết <span>→</span></span></div></Link>
-            <Link href="/cach-bao-quan-mang-cau-ba-den/" className="related-article-card"><div className="related-card-thumb"><img src="/dong-thung-carton-mang-cau-xop.jpg" alt="Cách bảo quản Mãng Cầu Bà Đen" loading="lazy" /><span className="related-thumb-tag">Bảo quản đúng cách</span></div><div className="related-card-body"><h3 className="related-card-title">Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà</h3><span className="related-card-link">Đọc bài viết <span>→</span></span></div></Link>
+            <Link href="/cach-bao-quan-mang-cau-ba-den/" className="related-article-card"><div className="related-card-thumb"><img src="/thuc-te-dong-goi.jpg" alt="Cách bảo quản Mãng Cầu Bà Đen" loading="lazy" /><span className="related-thumb-tag">Bảo quản đúng cách</span></div><div className="related-card-body"><h3 className="related-card-title">Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà</h3><span className="related-card-link">Đọc bài viết <span>→</span></span></div></Link>
           </div><div className="related-bottom-nav"><Link href="/tin-tuc" className="nav-pill-btn">← Xem tất cả tin tức</Link><Link href="/" className="nav-pill-btn secondary">← Về trang chủ</Link></div></section>
         </article>
       </main>

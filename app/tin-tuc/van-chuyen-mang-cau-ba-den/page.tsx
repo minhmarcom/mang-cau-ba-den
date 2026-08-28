@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
         width: 1200,
         height: 630,
         alt: "Vận chuyển Mãng Cầu Bà Đen - Quy trình đóng gói chống va đập",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói Mãng Cầu Bà Đen",
     description:
       "Khám phá quy trình vận chuyển Mãng Cầu Bà Đen từ vườn Núi Bà Đen: lựa độ già, bọc lưới xốp chống va đập, kiểm soát thời gian và mẹo nhận hàng.",
-    images: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   },
 };
 
@@ -55,9 +55,9 @@ const articleSchema = {
   description:
     "Mãng cầu Bà Đen là trái cây tươi và tiếp tục thay đổi sau khi thu hoạch. Tìm hiểu quy trình đóng gói, lựa độ già, kiểm soát thời gian vận chuyển của Mãng Cầu Bà Đen từ vườn Tây Ninh.",
   image: [
-    "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
-    "https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg",
-    "https://mangcaubaden.vn/can-trong-luong-mang-cau-tay-ninh.jpg",
+    "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
+    "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
+    "https://mangcaubaden.vn/thuc-te-phan-loai.jpg",
     "https://mangcaubaden.vn/hai-trieu-van-chuyen-vuon.jpg",
   ],
   datePublished: "2026-08-17T08:00:00+07:00",
@@ -231,7 +231,7 @@ export default function ShippingArticlePage() {
             <div className="article-container">
               <figure className="article-figure-main">
                 <img
-                  src="/thuc-te-dong-goi-nhieu-thung.jpg"
+                  src="/thuc-te-dong-goi.jpg"
                   alt="Thực tế đóng gói và xếp thùng vận chuyển Mãng Cầu Bà Đen Tây Ninh"
                   className="article-img"
                   width="1140"
@@ -306,7 +306,7 @@ export default function ShippingArticlePage() {
 
               <figure className="article-figure-inline">
                 <img
-                  src="/can-trong-luong-mang-cau-tay-ninh.jpg"
+                  src="/thuc-te-phan-loai.jpg"
                   alt="Cân trọng lượng và phân loại mãng cầu Bà Đen loại 1"
                   className="article-img"
                   width="900"
@@ -347,7 +347,7 @@ export default function ShippingArticlePage() {
 
               <figure className="article-figure-inline">
                 <img
-                  src="/dong-thung-carton-mang-cau-xop.jpg"
+                  src="/thuc-te-dong-goi.jpg"
                   alt="Đóng thùng carton bọc lưới xốp mãng cầu Bà Đen Tây Ninh"
                   className="article-img"
                   width="900"
@@ -498,7 +498,7 @@ export default function ShippingArticlePage() {
               <div className="related-grid">
                 <Link href="/cach-bao-quan-mang-cau-ba-den" className="related-card">
                   <img
-                    src="/dong-thung-carton-mang-cau-xop.jpg"
+                    src="/thuc-te-dong-goi.jpg"
                     alt="Cách bảo quản mãng cầu Bà Đen"
                     className="related-img"
                     width="300"
@@ -512,7 +512,7 @@ export default function ShippingArticlePage() {
 
                 <Link href="/mua-mang-cau-ba-den-chinh-goc-tay-ninh" className="related-card">
                   <img
-                    src="/thuc-te-dong-goi-nhieu-thung.jpg"
+                    src="/thuc-te-dong-goi.jpg"
                     alt="Mua mãng cầu chính gốc Tây Ninh"
                     className="related-img"
                     width="300"
@@ -526,7 +526,7 @@ export default function ShippingArticlePage() {
 
                 <Link href="/di-tay-ninh-mua-mang-cau-ba-den-o-dau" className="related-card">
                   <img
-                    src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                    src="/thuc-te-mang-cau-tuoi.jpg"
                     alt="Đi Tây Ninh mua mãng cầu ở đâu"
                     className="related-img"
                     width="300"

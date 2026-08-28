@@ -426,7 +426,7 @@ export default function CustardAppleSeasonPage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                  src="/thuc-te-mang-cau-tuoi.jpg"
                   alt="Trái mãng cầu Bà Đen tuyển chọn loại 1 đạt độ già sinh lý hoàn hảo"
                   loading="lazy"
                 />
@@ -579,7 +579,7 @@ export default function CustardAppleSeasonPage() {
           <div className="related-products-grid">
             <Link href="/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/trai-mang-cau-chin-gia-loai-1.jpg" alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu" loading="lazy" />
+                <img src="/thuc-te-mang-cau-tuoi.jpg" alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Đi Tây Ninh Mua Mãng Cầu Ở Đâu? Kinh Nghiệm Chuẩn</h3>

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg",
         width: 1200,
         height: 630,
         alt: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu - Kinh nghiệm chọn mua ngon chuẩn",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | Mãng Cầu Bà Đen",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen ngon, mua làm quà, cách bảo quản và vận chuyển khi đi du lịch Tây Ninh.",
-    images: ["https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg"],
   },
 };
 
@@ -54,9 +54,9 @@ const articleSchema = {
   description:
     "Hướng dẫn chi tiết kinh nghiệm chọn mua mãng cầu Bà Đen chính gốc khi đi du lịch Tây Ninh: cách chọn trái già, phân loại kích thước, bảo quản và vận chuyển đi xa.",
   image: [
-    "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
-    "https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg",
-    "https://mangcaubaden.vn/can-trong-luong-mang-cau-tay-ninh.jpg",
+    "https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg",
+    "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
+    "https://mangcaubaden.vn/thuc-te-phan-loai.jpg",
   ],
   datePublished: "2026-08-16T09:00:00+07:00",
   dateModified: "2026-08-16T09:00:00+07:00",
@@ -248,7 +248,7 @@ export default function BuyCustardAppleGuidePage() {
           {/* FEATURED HERO IMAGE */}
           <figure className="article-hero-media">
             <img
-              src="/trai-mang-cau-chin-gia-loai-1.jpg"
+              src="/thuc-te-mang-cau-tuoi.jpg"
               alt="Mãng cầu Bà Đen Tây Ninh tuyển chọn trái to mắt nở đều bọc lưới xốp"
             />
             <figcaption>
@@ -396,7 +396,7 @@ export default function BuyCustardAppleGuidePage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/can-trong-luong-mang-cau-tay-ninh.jpg"
+                  src="/thuc-te-phan-loai.jpg"
                   alt="Cân kiểm tra trọng lượng từng trái mãng cầu Bà Đen đạt chuẩn loại 1"
                   loading="lazy"
                 />
@@ -458,7 +458,7 @@ export default function BuyCustardAppleGuidePage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/dong-thung-carton-mang-cau-xop.jpg"
+                  src="/thuc-te-dong-goi.jpg"
                   alt="Các thùng carton mãng cầu Bà Đen bọc xốp cẩn thận sẵn sàng gửi toàn quốc"
                   loading="lazy"
                 />

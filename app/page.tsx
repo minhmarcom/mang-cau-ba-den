@@ -68,7 +68,7 @@ const gallery = [
     shape: "gallery-half",
   },
   {
-    src: "/dong-thung-carton-mang-cau-xop.jpg",
+    src: "/thuc-te-dong-goi.jpg",
     alt: "Đóng thùng carton mãng cầu bọc xốp thoáng khí",
     caption: "Đóng thùng carton thoáng khí bọc xốp chống va đập",
     shape: "gallery-half",

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
         width: 1200,
         height: 630,
         alt: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà | Mãng Cầu Bà Đen",
     description:
       "Hướng dẫn chi tiết từ nhà vườn: cách bảo quản mãng cầu khi nhận hàng, kiểm tra độ chín và mẹo giữ trái tươi ngon.",
-    images: ["https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   },
 };
 
@@ -52,8 +52,8 @@ const articleSchema = {
   description:
     "Hướng dẫn chi tiết cách bảo quản Mãng Cầu Bà Đen từ lúc nhận hàng đến khi chín, giải đáp thắc mắc về tủ lạnh, thời gian chín và xử lý trái chín không đều.",
   image: [
-    "https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg",
-    "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
+    "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
+    "https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg",
     "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
   ],
   datePublished: "2026-08-16T10:00:00+07:00",
@@ -246,7 +246,7 @@ export default function CustardAppleStorageGuidePage() {
           {/* FEATURED HERO IMAGE */}
           <figure className="article-hero-media">
             <img
-              src="/dong-thung-carton-mang-cau-xop.jpg"
+              src="/thuc-te-dong-goi.jpg"
               alt="Mở thùng carton kiểm tra và phân loại bảo quản mãng cầu Bà Đen đúng cách"
             />
             <figcaption>
@@ -339,7 +339,7 @@ export default function CustardAppleStorageGuidePage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                  src="/thuc-te-mang-cau-tuoi.jpg"
                   alt="Trái mãng cầu Bà Đen tuyển chọn già ngon mắt nở to phẳng"
                   loading="lazy"
                 />
@@ -607,7 +607,7 @@ export default function CustardAppleStorageGuidePage() {
 
             <Link href="/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/trai-mang-cau-chin-gia-loai-1.jpg" alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu" loading="lazy" />
+                <img src="/thuc-te-mang-cau-tuoi.jpg" alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Đi Tây Ninh Mua Mãng Cầu Ở Đâu? Kinh Nghiệm Chuẩn</h3>
