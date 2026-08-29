@@ -223,7 +223,7 @@ async function main() {
       <rect x="0" y="0" width="550" height="66" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
       <text x="24" y="40" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">🌐 mangcaubaden.vn</text>
       <line x1="270" y1="16" x2="270" y2="50" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25"/>
-      <text x="294" y="40" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800">📞 0907 215 521</text>
+      <text x="294" y="40" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800">📞 0833 184 106</text>
     </g>
   </g>
 </svg>`;

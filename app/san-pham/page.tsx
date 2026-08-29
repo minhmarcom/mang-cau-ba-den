@@ -321,7 +321,7 @@ export default function ProductHubPage() {
         <div className="header-actions">
           <a
             className="header-cta"
-            href="https://zalo.me/0907215521"
+            href="https://zalo.me/0833184106"
             target="_blank"
             rel="noreferrer"
             aria-label="Tư vấn mua hàng qua Zalo"
@@ -397,7 +397,7 @@ export default function ProductHubPage() {
                     <span>→</span>
                   </Link>
                   <a
-                    href="https://zalo.me/0907215521"
+                    href="https://zalo.me/0833184106"
                     target="_blank"
                     rel="noreferrer"
                     className="btn-order-zalo"
@@ -494,7 +494,7 @@ export default function ProductHubPage() {
                 <b>+</b>
               </summary>
               <p>
-                Bạn có thể gọi trực tiếp Hotline 0907 215 521 hoặc nhắn tin qua Zalo 0907 215 521 để nhận hình ảnh thực tế lứa trái thu hoạch trong ngày và báo giá chuẩn vườn.
+                Bạn có thể gọi trực tiếp Hotline 0833 184 106 hoặc nhắn tin qua Zalo 0833 184 106 để nhận hình ảnh thực tế lứa trái thu hoạch trong ngày và báo giá chuẩn vườn.
               </p>
             </details>
           </div>
@@ -507,13 +507,13 @@ export default function ProductHubPage() {
             Liên hệ trực tiếp với vườn để kiểm tra độ già của lứa trái hôm nay, nhận hình ảnh thực tế và hỗ trợ giao nhanh toàn quốc.
           </p>
           <div className="cta-box-buttons">
-            <a className="btn-call" href="tel:0907215521">
-              <span>Hotline: 0907 215 521</span>
+            <a className="btn-call" href="tel:0833184106">
+              <span>Hotline: 0833 184 106</span>
               <span>↗</span>
             </a>
             <a
               className="btn-zalo"
-              href="https://zalo.me/0907215521"
+              href="https://zalo.me/0833184106"
               target="_blank"
               rel="noreferrer"
             >

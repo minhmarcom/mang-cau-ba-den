@@ -158,7 +158,7 @@ export default function Hop3TraiVipPage() {
         <div className="header-actions">
           <a
             className="header-cta"
-            href="https://zalo.me/0907215521"
+            href="https://zalo.me/0833184106"
             target="_blank"
             rel="noreferrer"
             aria-label="Tư vấn đặt hộp VIP qua Zalo"
@@ -238,7 +238,7 @@ export default function Hop3TraiVipPage() {
 
             <div className="product-detail-actions">
               <a
-                href="https://zalo.me/0907215521"
+                href="https://zalo.me/0833184106"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-order-zalo"
@@ -248,11 +248,11 @@ export default function Hop3TraiVipPage() {
                 <span>↗</span>
               </a>
               <a
-                href="tel:0907215521"
+                href="tel:0833184106"
                 className="btn-call"
                 style={{ width: "100%", justifyContent: "center" }}
               >
-                <span>Hotline: 0907 215 521</span>
+                <span>Hotline: 0833 184 106</span>
                 <span>↗</span>
               </a>
             </div>
@@ -356,13 +356,13 @@ export default function Hop3TraiVipPage() {
             Liên hệ trực tiếp với vườn để đặt mẫu hộp quà 3 trái tuyển chọn đẹp nhất, hỗ trợ đóng gói và giao nhanh tận nơi.
           </p>
           <div className="cta-box-buttons">
-            <a className="btn-call" href="tel:0907215521">
-              <span>Hotline: 0907 215 521</span>
+            <a className="btn-call" href="tel:0833184106">
+              <span>Hotline: 0833 184 106</span>
               <span>↗</span>
             </a>
             <a
               className="btn-zalo"
-              href="https://zalo.me/0907215521"
+              href="https://zalo.me/0833184106"
               target="_blank"
               rel="noreferrer"
             >

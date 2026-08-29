@@ -171,8 +171,8 @@ export default function ArticleFamousSpecialtyPage() {
         </nav>
 
         <div className="header-actions">
-          <a className="header-cta" href="tel:0907215521">
-            <span>Gọi 0907 215 521</span>
+          <a className="header-cta" href="tel:0833184106">
+            <span>Gọi 0833 184 106</span>
             <span className="cta-arrow">↗</span>
           </a>
           <Link
@@ -439,13 +439,13 @@ export default function ArticleFamousSpecialtyPage() {
               Liên hệ trực tiếp với chúng tôi để chọn những trái mãng cầu tươi ngon mới hái, đóng hộp quà biếu hoặc thùng giao nhanh tận nơi toàn quốc.
             </p>
             <div className="cta-box-buttons">
-              <a className="btn-call" href="tel:0907215521">
-                <span>Hotline: 0907 215 521</span>
+              <a className="btn-call" href="tel:0833184106">
+                <span>Hotline: 0833 184 106</span>
                 <span>↗</span>
               </a>
               <a
                 className="btn-zalo"
-                href="https://zalo.me/0907215521"
+                href="https://zalo.me/0833184106"
                 target="_blank"
                 rel="noreferrer"
               >

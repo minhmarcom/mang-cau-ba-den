@@ -62,6 +62,8 @@ for target in targets:
         if status.stdout.strip():
             print(f"Committing changes in {target}...")
             subprocess.run(["git", "-C", target, "commit", "-m", commit_msg], check=True)
+            print(f"Pulling latest from origin main in {target}...")
+            subprocess.run(["git", "-C", target, "pull", "--rebase", "origin", "main"], check=False)
             print(f"Pushing to origin main in {target}...")
             push_res = subprocess.run(["git", "-C", target, "push", "origin", "main"], capture_output=True, text=True)
             print(f"Push result:\n{push_res.stdout}\n{push_res.stderr}")

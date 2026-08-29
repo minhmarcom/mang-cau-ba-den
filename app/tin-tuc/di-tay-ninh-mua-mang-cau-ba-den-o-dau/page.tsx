@@ -88,7 +88,7 @@ const faqSchema = {
       name: "Mãng Cầu Bà Đen mua ở đâu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bạn có thể mua trực tiếp tại vùng trồng Thạnh Tân chân Núi Bà Đen Tây Ninh (Google Maps: https://share.google/mKCDKiRjRo25L0TDN) hoặc đặt mua chính gốc giao tận nơi qua website https://mangcaubaden.vn và Hotline/Zalo 0907 215 521.",
+        text: "Bạn có thể mua trực tiếp tại vùng trồng Thạnh Tân chân Núi Bà Đen Tây Ninh (Google Maps: https://share.google/mKCDKiRjRo25L0TDN) hoặc đặt mua chính gốc giao tận nơi qua website https://mangcaubaden.vn và Hotline/Zalo 0833 184 106.",
       },
     },
     {
@@ -201,8 +201,8 @@ export default function BuyCustardAppleGuidePage() {
         </nav>
 
         <div className="header-actions">
-          <a className="header-cta" href="tel:0907215521">
-            <span>Gọi 0907 215 521</span>
+          <a className="header-cta" href="tel:0833184106">
+            <span>Gọi 0833 184 106</span>
             <span className="cta-arrow">↗</span>
           </a>
           <Link
@@ -570,13 +570,13 @@ export default function BuyCustardAppleGuidePage() {
                 Liên hệ ngay Hotline/Zalo để được tư vấn chọn đúng độ già, quy cách đóng gói hộp quà biếu hoặc thùng sỉ giao nhanh tận nơi theo yêu cầu.
               </p>
               <div className="cta-box-buttons">
-                <a className="btn-call" href="tel:0907215521">
-                  <span>Hotline: 0907 215 521</span>
+                <a className="btn-call" href="tel:0833184106">
+                  <span>Hotline: 0833 184 106</span>
                   <span>↗</span>
                 </a>
                 <a
                   className="btn-zalo"
-                  href="https://zalo.me/0907215521"
+                  href="https://zalo.me/0833184106"
                   target="_blank"
                   rel="noreferrer"
                 >
