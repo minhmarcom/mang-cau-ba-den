@@ -3,9 +3,9 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
+  title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Chính Gốc – Giá & Đặt Hàng",
   description:
-    "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và cách phân biệt trái ngon chuẩn vị.",
+    "Tìm mua Mãng Cầu Bà Đen, na Bà Đen Tây Ninh chính gốc: xem giá tham khảo, cách chọn trái, quy cách hộp 3 trái, thùng 5kg, 15kg và đặt giao tận nơi.",
   keywords: [
     "mua mãng cầu Bà Đen",
     "mua mãng cầu Bà Đen chính gốc",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
   },
   openGraph: {
-    title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
+    title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Chính Gốc – Giá & Đặt Hàng",
     description:
       "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
     url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
+    title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Chính Gốc – Giá & Đặt Hàng",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen Tây Ninh ngon, chuẩn nguồn gốc từ nhà vườn.",
     images: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
@@ -49,12 +49,12 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  headline: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
+  headline: "Mua Mãng Cầu Bà Đen, Na Bà Đen chính gốc Tây Ninh: giá và cách đặt hàng",
   description:
     "Khi tìm mua mãng cầu Bà Đen chính gốc Tây Ninh, người mua nên kiểm tra nguồn gốc vùng trồng, độ già của trái, cách phân loại, đóng gói và thời điểm giao hàng phù hợp.",
   image: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   datePublished: "2026-07-04T08:00:00+07:00",
-  dateModified: "2026-08-15T08:00:00+07:00",
+  dateModified: "2026-08-29T08:00:00+07:00",
   author: {
     "@type": "Organization",
     name: "Mãng Cầu Bà Đen",
@@ -215,11 +215,11 @@ export default function ArticlePage() {
           </div>
 
           <h1 className="article-title">
-            Tìm mãng cầu Bà Đen <em>chính gốc Tây Ninh</em> ở đâu? Kinh nghiệm chọn mua chuẩn ngon
+            Mua mãng cầu Bà Đen (na Bà Đen) <em>chính gốc Tây Ninh</em>: giá và cách đặt hàng
           </h1>
 
           <p className="article-lead">
-            Mãng cầu Bà Đen là đặc sản nức tiếng của Tây Ninh nhờ vị ngọt thanh, cơm trắng dẻo và hương thơm thanh khiết. Để tránh mua phải hàng trôi nổi kém chất lượng, hãy cùng tìm hiểu kinh nghiệm chọn mua mãng cầu chuẩn gốc từ chính các nhà vườn Tây Ninh.
+            Mãng cầu Bà Đen còn được gọi là na Bà Đen hoặc na Tây Ninh. Trang này giúp bạn nhận biết trái ngon, tham khảo quy cách và đi thẳng tới danh mục đặt mua sản phẩm đang cung ứng.
           </p>
         </header>
 
@@ -438,6 +438,9 @@ export default function ArticlePage() {
                 Liên hệ trực tiếp với chúng tôi để đặt mua mãng cầu Bà Đen đang thu hoạch, nhận báo giá theo thời điểm và tư vấn quy cách giao nhận phù hợp nhất.
               </p>
               <div className="cta-box-buttons">
+                <Link className="btn-zalo" href="/san-pham">
+                  <span>Xem giá & sản phẩm</span>
+                </Link>
                 <a className="btn-call" href="tel:0907215521">
                   <span>Hotline: 0907 215 521</span>
                 </a>

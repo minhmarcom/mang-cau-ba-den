@@ -11,6 +11,7 @@ const products = [
     title: "Hộp Đặc Biệt (3 Quả)",
     slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
     tag: "OCOP 3 Sao, Quà biếu VIP",
+    price: "180.000₫",
     image: "/san-pham-hop-qua-3-trai.jpg",
     copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng, bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
     featured: true,
@@ -21,6 +22,7 @@ const products = [
     title: "Thùng 5KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-5kg",
     tag: "OCOP 3 Sao, Thưởng thức & Biếu tặng",
+    price: "325.000₫",
     image: "/san-pham-thung-5kg.jpg",
     copy: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ, giữ trọn độ tươi ngọt tự nhiên cho gia đình.",
     featured: false,
@@ -30,6 +32,7 @@ const products = [
     title: "Thùng 15KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-15kg",
     tag: "OCOP 3 Sao, Đơn sỉ & Vận chuyển xa",
+    price: "900.000₫",
     image: "/san-pham-thung-15kg.jpg",
     copy: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển nhanh đến TP.HCM, Hà Nội và toàn quốc.",
     featured: false,
@@ -132,7 +135,14 @@ const localBusinessSchema = {
     "https://mangcaubaden.vn/san-pham-thung-5kg.jpg"
   ],
   description:
-    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh chính gốc. Cập nhật kiến thức mùa vụ, cách chọn, bảo quản, bảng giá mãng cầu tại vườn và phân phối sỉ lẻ toàn quốc.",
+    "Mãng Cầu Bà Đen, còn gọi là na Bà Đen Tây Ninh. Cung cấp sản phẩm trái tươi, hộp quà, thùng 5kg, thùng 15kg và giao tận nơi toàn quốc.",
+  knowsAbout: [
+    "Mãng cầu Bà Đen",
+    "Na Bà Đen",
+    "Na Tây Ninh",
+    "Mãng cầu núi Bà Đen",
+    "Đặc sản mãng cầu Tây Ninh",
+  ],
   telephone: "+84907215521",
   priceRange: "$$",
   currenciesAccepted: "VND",
@@ -193,6 +203,7 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Mãng Cầu Bà Đen Hộp Đặc Biệt (3 Quả VIP)",
+        alternateName: ["Hộp na Bà Đen 3 trái", "Hộp quà mãng cầu Tây Ninh"],
         image: "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
@@ -202,28 +213,9 @@ const productListSchema = {
           price: "180000",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
           url: "https://mangcaubaden.vn/san-pham/hop-mang-cau-ba-den-3-trai-vip",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "128",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Chị Thanh Hằng" },
-            reviewBody: "Hộp quà mãng cầu 3 trái VIP sang trọng, dâng lễ Núi Bà Đen rất ý nghĩa."
-          }
-        ]
       },
     },
     {
@@ -232,6 +224,7 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn",
+        alternateName: ["Thùng na Bà Đen 5kg", "Mãng cầu Tây Ninh thùng 5kg"],
         image: "https://mangcaubaden.vn/san-pham-thung-5kg.jpg",
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
@@ -241,28 +234,9 @@ const productListSchema = {
           price: "325000",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
           url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-5kg",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "96",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Anh Minh Đức" },
-            reviewBody: "Thùng 5kg bọc xốp cẩn thận, nhận hàng mãng cầu còn rất tươi."
-          }
-        ]
       },
     },
     {
@@ -271,6 +245,7 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 15KG Mãng Cầu Bà Đen Đơn Sỉ & Vận Chuyển Xa",
+        alternateName: ["Thùng na Bà Đen 15kg", "Mãng cầu Tây Ninh giá sỉ"],
         image: "https://mangcaubaden.vn/san-pham-thung-15kg.jpg",
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
@@ -280,28 +255,9 @@ const productListSchema = {
           price: "900000",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
           url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-15kg",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.8",
-          reviewCount: "74",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Đại lý Nông sản" },
-            reviewBody: "Đơn sỉ 15kg giao hỏa tốc đóng thùng chịu lực cực tốt."
-          }
-        ]
       },
     },
   ],
@@ -310,7 +266,8 @@ const productListSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: 'Mãng Cầu Bà Đen Tây Ninh - Sản vật vùng "đất Thánh"',
+  name: "Mãng Cầu Bà Đen",
+  alternateName: ["Na Bà Đen", "Na Tây Ninh", "Mãng Cầu Tây Ninh", "Mãng Cầu Núi Bà Đen"],
   description:
     "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ Mãng Cầu Bà Đen.",
   url: "https://mangcaubaden.vn/",
@@ -746,6 +703,7 @@ export default function Home() {
               </div>
               <p className="product-tag">{product.tag}</p>
               <h3>{product.title}</h3>
+              <p className="product-item-price"><strong>{product.price}</strong><span>giá tham khảo</span></p>
               <p>{product.copy}</p>
               <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginTop: "16px" }}>
                 <a

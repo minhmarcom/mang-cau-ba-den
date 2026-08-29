@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
+  title: "Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – Giá 900.000₫",
   description:
     "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh chuyên dụng đơn sỉ: Thùng carton dày dặn 3-5 lớp chịu lực, lỗ thông gió chống hấp hơi, trái già đều đẹp. Hỗ trợ gửi xe khách & đường bay toàn quốc.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
   },
   openGraph: {
-    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
+    title: "Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – Giá 900.000₫",
     description:
       "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
+    title: "Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – Giá 900.000₫",
     description:
       "Thùng carton 15kg dày dặn 3-5 lớp chịu lực, chuyên gửi xe khách & máy bay toàn quốc, giá sỉ tận vườn.",
     images: [`${siteUrl}/san-pham-thung-15kg.jpg`],
@@ -49,11 +49,11 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Thùng 15KG Mãng Cầu Bà Đen Tuyển Chọn (OCOP 3 Sao)",
+  alternateName: ["Thùng na Bà Đen 15kg", "Mãng cầu Tây Ninh giá sỉ"],
   image: `${siteUrl}/san-pham-thung-15kg.jpg`,
   description:
     "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
   sku: "MCBD-THUNG-15KG",
-  mpn: "NAB-15KG",
   brand: {
     "@type": "Brand",
     name: "Mãng Cầu Bà Đen",
@@ -64,32 +64,13 @@ const productSchema = {
     price: "900000",
     priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
     seller: {
       "@type": "Organization",
       name: "Mãng Cầu Bà Đen Tây Ninh",
     },
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "74",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-        worstRating: "1"
-      },
-      author: { "@type": "Person", name: "Đại lý Nông sản" },
-      reviewBody: "Đơn sỉ 15kg giao hỏa tốc đóng thùng chịu lực cực tốt."
-    }
-  ],
 };
 
 const breadcrumbSchema = {
@@ -201,6 +182,7 @@ export default function Thung15kgPage() {
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Thùng 15KG Mãng Cầu Bà Đen Tuyển Chọn
             </h1>
+            <p className="product-item-price"><strong>900.000₫</strong><span>/ thùng 15kg</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Giải pháp tối ưu cho khách mua sỉ, đại lý phân phối hoa quả sạch, nhà hàng tiệc cưới hoặc khách hàng có nhu cầu gửi hàng đi tỉnh xa bằng đường bộ hoặc máy bay.
             </p>

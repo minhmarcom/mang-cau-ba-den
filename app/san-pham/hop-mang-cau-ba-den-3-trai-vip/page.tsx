@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Cao Cấp | Mãng Cầu Bà Đen",
+  title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
   description:
     "Hộp quà Mãng Cầu Bà Đen 3 trái VIP thượng hạng: Tuyển chọn 3 quả đỉnh chóp tròn đều, vỏ sáng, lót rơm giấy và xốp lưới sang trọng. Chuẩn VietGAP & OCOP 3 sao làm quà biếu đối tác, dâng lễ.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
   },
   openGraph: {
-    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Cao Cấp | Mãng Cầu Bà Đen",
+    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
     description:
       "Hộp quà 3 trái mãng cầu Bà Đen tuyển chọn thượng hạng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP | Mãng Cầu Bà Đen",
+    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
     description:
       "Tuyển chọn 3 trái mãng cầu Bà Đen VIP sang trọng, vỏ sáng đẹp mắt, chuẩn OCOP 3 sao Tây Ninh.",
     images: [`${siteUrl}/san-pham-hop-qua-3-trai.jpg`],
@@ -49,11 +49,11 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP (OCOP 3 Sao)",
+  alternateName: ["Hộp na Bà Đen 3 trái", "Hộp quà mãng cầu Tây Ninh"],
   image: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
   description:
     "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng, mã đẹp, vỏ sáng, lót rơm giấy và xốp lưới bảo vệ sang trọng.",
   sku: "MCBD-VIP-03",
-  mpn: "NAB-03VIP",
   brand: {
     "@type": "Brand",
     name: "Mãng Cầu Bà Đen",
@@ -64,32 +64,13 @@ const productSchema = {
     price: "180000",
     priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
     seller: {
       "@type": "Organization",
       name: "Mãng Cầu Bà Đen Tây Ninh",
     },
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "128",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-        worstRating: "1"
-      },
-      author: { "@type": "Person", name: "Chị Thanh Hằng" },
-      reviewBody: "Hộp quà mãng cầu 3 trái VIP sang trọng, dâng lễ Núi Bà Đen rất ý nghĩa."
-    }
-  ],
 };
 
 const breadcrumbSchema = {
@@ -201,6 +182,7 @@ export default function Hop3TraiVipPage() {
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP
             </h1>
+            <p className="product-item-price"><strong>180.000₫</strong><span>/ hộp 3 trái</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Phiên bản quà tặng cao cấp được thiết kế tinh tế với quai xách trang nhã, ô cửa sổ trong suốt tôn vinh 3 quả mãng cầu tuyển chọn đỉnh chóp từ vườn chân Núi Bà Đen Tây Ninh.
             </p>

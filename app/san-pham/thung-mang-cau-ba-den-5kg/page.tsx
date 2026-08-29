@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
+  title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
   description:
     "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh chính gốc: Từng trái già loại 1 tuyển chọn kỹ lưỡng, bọc xốp lưới êm ái, đóng thùng carton thoáng khí. Chuẩn VietGAP & OCOP 3 sao, ngọt thanh dẻo dai.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
   },
   openGraph: {
-    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
+    title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
     description:
       "Thùng 5kg Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1: Bọc xốp lưới từng quả, đóng thùng carton có quai xách tiện dụng, thích hợp thưởng thức gia đình và biếu tặng.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
+    title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
     description:
       "Quy cách đóng thùng 5kg chuyên dụng, trái già loại 1 bọc xốp êm ái, chuẩn OCOP 3 sao Tây Ninh.",
     images: [`${siteUrl}/san-pham-thung-5kg.jpg`],
@@ -49,11 +49,11 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn (OCOP 3 Sao)",
+  alternateName: ["Thùng na Bà Đen 5kg", "Mãng cầu Tây Ninh thùng 5kg"],
   image: `${siteUrl}/san-pham-thung-5kg.jpg`,
   description:
     "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
   sku: "MCBD-THUNG-05KG",
-  mpn: "NAB-05KG",
   brand: {
     "@type": "Brand",
     name: "Mãng Cầu Bà Đen",
@@ -64,32 +64,13 @@ const productSchema = {
     price: "325000",
     priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
     seller: {
       "@type": "Organization",
       name: "Mãng Cầu Bà Đen Tây Ninh",
     },
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "96",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-        worstRating: "1"
-      },
-      author: { "@type": "Person", name: "Anh Minh Đức" },
-      reviewBody: "Thùng 5kg bọc xốp cẩn thận, nhận hàng mãng cầu còn rất tươi."
-    }
-  ],
 };
 
 const breadcrumbSchema = {
@@ -201,6 +182,7 @@ export default function Thung5kgPage() {
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn
             </h1>
+            <p className="product-item-price"><strong>325.000₫</strong><span>/ thùng 5kg</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Quy cách đóng thùng 5kg chuyên dụng được đông đảo khách hàng ưa chuộng nhất: Từng quả già loại 1 đồng đều, bọc lưới xốp êm ái, lý tưởng để gia đình thưởng thức hoặc làm quà biếu người thân bạn bè.
             </p>

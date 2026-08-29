@@ -70,3 +70,23 @@ test("legacy branded image assets are absent", async () => {
     await access(new URL(asset, repositoryRoot));
   }
 });
+
+test("purchase pages expose indexable product intent and honest product data", async () => {
+  for (const pathname of [
+    "/san-pham",
+    "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
+    "/san-pham/thung-mang-cau-ba-den-5kg",
+    "/san-pham/thung-mang-cau-ba-den-15kg",
+  ]) {
+    const response = await render(pathname);
+    const html = await response.text();
+
+    assert.equal(response.status, 200, pathname);
+    assert.match(html, /<link[^>]+rel="canonical"/i, pathname);
+    assert.match(html, /"@type":"Product"/i, pathname);
+    assert.match(html, /"priceCurrency":"VND"/i, pathname);
+    assert.match(html, /na Bà Đen/i, pathname);
+    assert.doesNotMatch(html, /"@type":"AggregateRating"/i, pathname);
+    assert.doesNotMatch(html, /"@type":"Review"/i, pathname);
+  }
+});

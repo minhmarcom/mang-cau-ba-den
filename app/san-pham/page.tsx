@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Mãng Cầu Bà Đen",
+  title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Tây Ninh – Giá & Đặt Hàng",
   description:
-    "Danh mục sản phẩm Mãng Cầu Bà Đen Tây Ninh chính gốc: Hộp quà 3 trái VIP, Thùng 5kg biếu tặng gia đình, Thùng 15kg đơn sỉ. Chuẩn VietGAP & OCOP 3 sao, hái tươi giao nhanh toàn quốc.",
+    "Đặt mua Mãng Cầu Bà Đen, na Bà Đen Tây Ninh chính gốc: hộp quà 3 trái, thùng 5kg và thùng 15kg. Xem giá tham khảo, quy cách và giao tận nơi.",
   keywords: [
     "sản phẩm mãng cầu bà đen",
     "mãng cầu bà đen tây ninh",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham`,
   },
   openGraph: {
-    title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Mãng Cầu Bà Đen",
+    title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Tây Ninh – Giá & Đặt Hàng",
     description:
       "Tuyển chọn những dòng sản phẩm Mãng Cầu Bà Đen Tây Ninh thượng hạng: Hộp quà 3 trái VIP, Thùng 5kg & Thùng 15kg. Trồng theo chuẩn VietGAP & OCOP, tươi ngon từ vườn.",
     url: `${siteUrl}/san-pham`,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sản Phẩm Mãng Cầu Bà Đen Tây Ninh Chính Gốc | Mãng Cầu Bà Đen",
+    title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Tây Ninh – Giá & Đặt Hàng",
     description:
       "Danh mục sản phẩm Mãng Cầu Bà Đen Tây Ninh chính gốc: Hộp 3 trái VIP, Thùng 5kg, Thùng 15kg chuẩn OCOP 3 sao.",
     images: [`${siteUrl}/san-pham-hop-qua-3-trai.jpg`],
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 const productListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Danh Mục Sản Phẩm Mãng Cầu Bà Đen Tây Ninh",
+  name: "Mua Mãng Cầu Bà Đen, Na Bà Đen Tây Ninh",
   description: "Các dòng sản phẩm mãng cầu Bà Đen tươi ngon chuẩn OCOP Tây Ninh",
   url: `${siteUrl}/san-pham`,
   itemListElement: [
@@ -61,6 +61,7 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Hộp Đặc Biệt (3 Quả) – Quà Biếu VIP",
+        alternateName: ["Hộp na Bà Đen 3 trái", "Hộp quà mãng cầu Tây Ninh"],
         image: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
@@ -73,26 +74,6 @@ const productListSchema = {
           availability: "https://schema.org/InStock",
           url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "128",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Chị Thanh Hằng" },
-            reviewBody: "Hộp quà mãng cầu 3 trái VIP sang trọng, dâng lễ Núi Bà Đen rất ý nghĩa."
-          }
-        ]
       },
     },
     {
@@ -101,6 +82,7 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 5KG Tuyển Chọn – Thưởng Thức & Biếu Tặng",
+        alternateName: ["Thùng na Bà Đen 5kg", "Mãng cầu Tây Ninh thùng 5kg"],
         image: `${siteUrl}/san-pham-thung-5kg.jpg`,
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
@@ -113,26 +95,6 @@ const productListSchema = {
           availability: "https://schema.org/InStock",
           url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "96",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Anh Minh Đức" },
-            reviewBody: "Thùng 5kg bọc xốp cẩn thận, nhận hàng mãng cầu còn rất tươi."
-          }
-        ]
       },
     },
     {
@@ -141,6 +103,7 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 15KG Tuyển Chọn – Đơn Sỉ & Vận Chuyển Xa",
+        alternateName: ["Thùng na Bà Đen 15kg", "Mãng cầu Tây Ninh giá sỉ"],
         image: `${siteUrl}/san-pham-thung-15kg.jpg`,
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
@@ -153,26 +116,6 @@ const productListSchema = {
           availability: "https://schema.org/InStock",
           url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.8",
-          reviewCount: "74",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Đại lý Nông sản" },
-            reviewBody: "Đơn sỉ 15kg giao hỏa tốc đóng thùng chịu lực cực tốt."
-          }
-        ]
       },
     },
   ],
@@ -234,6 +177,8 @@ export default function ProductHubPage() {
       id: "hop-3-trai",
       tag: "OCOP 3 Sao, Quà Biếu VIP",
       title: "Hộp Đặc Biệt (3 Quả)",
+      price: "180.000₫",
+      unit: "hộp 3 trái",
       slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
       image: "/san-pham-hop-qua-3-trai.jpg",
       desc: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng, mã đẹp, vỏ sáng, lót rơm giấy và xốp lưới bảo vệ sang trọng.",
@@ -249,6 +194,8 @@ export default function ProductHubPage() {
       id: "thung-5kg",
       tag: "OCOP 3 Sao, Thưởng Thức & Biếu Tặng",
       title: "Thùng 5KG Tuyển Chọn",
+      price: "325.000₫",
+      unit: "thùng 5kg",
       slug: "/san-pham/thung-mang-cau-ba-den-5kg",
       image: "/san-pham-thung-5kg.jpg",
       desc: "Quy cách đóng thùng carton 5kg chuyên dụng, từng trái già loại 1 bọc lưới xốp êm ái, thích hợp dùng cho gia đình hoặc làm quà biếu người thân bạn bè.",
@@ -264,6 +211,8 @@ export default function ProductHubPage() {
       id: "thung-15kg",
       tag: "OCOP 3 Sao, Đơn Sỉ & Vận Chuyển Xa",
       title: "Thùng 15KG Tuyển Chọn",
+      price: "900.000₫",
+      unit: "thùng 15kg",
       slug: "/san-pham/thung-mang-cau-ba-den-15kg",
       image: "/san-pham-thung-15kg.jpg",
       desc: "Thùng carton 15kg dày dặn nhiều lớp chịu lực, lỗ thoáng khí chống hấp hơi, tối ưu cho việc gửi xe khách liên tỉnh, máy bay hoặc cung cấp cho đại lý hoa quả sạch.",
@@ -357,11 +306,11 @@ export default function ProductHubPage() {
           </div>
 
           <h1 className="article-title">
-            Danh Mục Sản Phẩm <em>Mãng Cầu Bà Đen</em>
+            Mua <em>Mãng Cầu Bà Đen</em> (Na Bà Đen) Tây Ninh
           </h1>
 
           <p>
-            Tuyển chọn những trái mãng cầu ta ngon nhất dưới chân Núi Bà Đen Tây Ninh, canh tác an toàn theo quy trình VietGAP, bao trái 100% trên cành, giữ trọn vị ngọt thanh, dẻo dai và thơm ngát.
+            Mãng cầu Bà Đen còn được nhiều khách hàng gọi là <strong>na Bà Đen</strong>, <strong>na Tây Ninh</strong> hoặc mãng cầu núi Bà Đen. Chọn quy cách phù hợp bên dưới để xem giá, hình ảnh thực tế và đặt giao tận nơi qua Hotline/Zalo.
           </p>
 
           <div className="product-hub-badges">
@@ -382,6 +331,9 @@ export default function ProductHubPage() {
               <div className="product-item-info">
                 <span className="product-item-tag">{item.tag}</span>
                 <h2>{item.title}</h2>
+                <p className="product-item-price">
+                  <strong>{item.price}</strong> <span>/ {item.unit}</span>
+                </p>
                 <p className="product-item-desc">{item.desc}</p>
                 <ul className="product-item-features">
                   {item.features.map((feat, idx) => (
@@ -425,6 +377,7 @@ export default function ProductHubPage() {
                   <th>Dòng Sản Phẩm</th>
                   <th>Mục Đích Sử Dụng</th>
                   <th>Quy Cách Đóng Gói</th>
+                  <th>Giá Tham Khảo</th>
                   <th>Đặc Điểm Trái</th>
                   <th>Chính Sách Giao</th>
                 </tr>
@@ -434,6 +387,7 @@ export default function ProductHubPage() {
                   <td><strong>Hộp 3 Trái VIP</strong></td>
                   <td>Quà biếu VIP, đối tác, sự kiện, dâng lễ</td>
                   <td>Hộp quai xách cao cấp, ô kính trong, lót rơm & xốp lưới</td>
+                  <td><strong>180.000₫</strong></td>
                   <td>Trái tuyển chọn đỉnh chóp, quả tròn đều mã sáng</td>
                   <td>Giao hỏa tốc hoặc gửi theo yêu cầu</td>
                 </tr>
@@ -441,6 +395,7 @@ export default function ProductHubPage() {
                   <td><strong>Thùng 5KG</strong></td>
                   <td>Thưởng thức gia đình, biếu người thân bạn bè</td>
                   <td>Thùng carton 5kg chuyên dụng, bọc lưới xốp từng trái</td>
+                  <td><strong>325.000₫</strong></td>
                   <td>Trái già loại 1, mắt nở đều, ngọt thanh dẻo dai</td>
                   <td>Giao nhanh trong ngày hoặc gửi liên tỉnh</td>
                 </tr>
@@ -448,12 +403,16 @@ export default function ProductHubPage() {
                   <td><strong>Thùng 15KG</strong></td>
                   <td>Khách mua sỉ, đại lý trái cây sạch, tiệc lớn</td>
                   <td>Thùng carton 3-5 lớp dày dặn, lỗ thoáng khí chống hấp hơi</td>
+                  <td><strong>900.000₫</strong></td>
                   <td>Trái già đều ngày, phân loại chuẩn kích cỡ</td>
                   <td>Gửi xe khách, chành xe, máy bay toàn quốc</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p style={{ color: "var(--ink-muted)", fontSize: "13px", marginTop: "12px" }}>
+            Giá trên là mức tham khảo theo quy cách đóng gói; giá thực tế có thể thay đổi theo mùa vụ, kích cỡ trái và phí vận chuyển. Liên hệ trước khi đặt để nhận báo giá trong ngày.
+          </p>
         </section>
 
 
