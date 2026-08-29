@@ -7165,3 +7165,15 @@ footer {
     flex-basis: auto;
   }
 }
+
+/* =========================================================
+   SECURITY & ASSET SHIELD
+   Prevent image dragging and scraping.
+   ========================================================= */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}

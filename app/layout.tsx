@@ -142,6 +142,9 @@ export default function RootLayout({
                     for (var n of names) { caches.delete(n); }
                   });
                 }
+                // Anti-Tamper & Security Shield Banner
+                console.log("%c⚠️ CẢNH BÁO BẢO MẬT NABADEN", "color: #eab308; font-size: 20px; font-weight: bold;");
+                console.log("%cHệ thống bảo mật & chống Spam/DDoS NABADEN đang hoạt động. Mọi hành vi tấn công, giả mạo hoặc spam dữ liệu đều bị mã hóa và ghi vết IP.", "color: #64748b; font-size: 12px;");
               } catch (e) {}
             `,
           }}

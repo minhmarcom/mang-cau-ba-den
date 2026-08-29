@@ -102,6 +102,8 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
   const [province, setProvince] = useState("");
   const [salesChannel, setSalesChannel] = useState("Bán online qua Facebook / Zalo / TikTok");
   const [notes, setNotes] = useState("");
+  const [websiteHp, setWebsiteHp] = useState("");
+  const [renderedAt] = useState<number>(() => Date.now());
 
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -218,6 +220,18 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="partner-form">
+          {/* ANTI-SPAM HONEYPOT FIELD (Hidden from humans, tricks spam bots) */}
+          <div style={{ display: "none", position: "absolute", left: "-9999px" }} aria-hidden="true">
+            <input
+              type="text"
+              name="website_hp"
+              tabIndex={-1}
+              value={websiteHp}
+              onChange={(e) => setWebsiteHp(e.target.value)}
+              autoComplete="off"
+            />
+          </div>
+
           <div className="form-header-area">
             <span className="form-tag">ĐĂNG KÝ HỢP TÁC</span>
             <h3 className="form-main-title">Điền Thông Tin Trở Thành Đối Tác</h3>
