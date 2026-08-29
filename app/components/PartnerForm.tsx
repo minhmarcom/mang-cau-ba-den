@@ -122,7 +122,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
     const cleanPhone = phone.trim().replace(/[\s\-\.]/g, "").replace(/^\+84/, "0").replace(/^84/, "0");
     const vnPhoneRegex = /^0(3|5|7|8|9)[0-9]{8}$/;
     if (!vnPhoneRegex.test(cleanPhone)) {
-      setErrorMessage("Số điện thoại Zalo không hợp lệ. Vui lòng nhập đúng 10 chữ số Việt Nam (ví dụ: 0833184106).");
+      setErrorMessage("Số điện thoại Zalo không hợp lệ. Vui lòng nhập đúng 10 chữ số Việt Nam (ví dụ: 0907215521).");
       return;
     }
 
@@ -170,10 +170,10 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
           window.scrollTo({ top: 0, behavior: "smooth" });
         }
       } else {
-        setErrorMessage(data.message || "Có lỗi xảy ra khi gửi. Vui lòng liên hệ Hotline/Zalo 0833 184 106.");
+        setErrorMessage(data.message || "Có lỗi xảy ra khi gửi. Vui lòng liên hệ Hotline/Zalo 0907 215 521.");
       }
     } catch (err) {
-      setErrorMessage("Không thể kết nối máy chủ. Vui lòng kiểm tra mạng hoặc liên hệ qua Zalo 0833 184 106.");
+      setErrorMessage("Không thể kết nối máy chủ. Vui lòng kiểm tra mạng hoặc liên hệ qua Zalo 0907 215 521.");
     } finally {
       setIsLoading(false);
     }
@@ -298,7 +298,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
                 id="partner-phone"
                 type="tel"
                 className="form-input"
-                placeholder="Ví dụ: 0833 184 106"
+                placeholder="Ví dụ: 0907 215 521"
                 maxLength={12}
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}

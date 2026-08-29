@@ -139,7 +139,7 @@ export default function Thung5kgPage() {
         <div className="header-actions">
           <a
             className="header-cta"
-            href="https://zalo.me/0833184106"
+            href="https://zalo.me/0907215521"
             target="_blank"
             rel="noreferrer"
             aria-label="Tư vấn đặt thùng 5kg qua Zalo"
@@ -217,7 +217,7 @@ export default function Thung5kgPage() {
 
             <div className="product-detail-actions">
               <a
-                href="https://zalo.me/0833184106"
+                href="https://zalo.me/0907215521"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-order-zalo"
@@ -227,11 +227,11 @@ export default function Thung5kgPage() {
 
               </a>
               <a
-                href="tel:0833184106"
+                href="tel:0907215521"
                 className="btn-call"
                 style={{ width: "100%", justifyContent: "center" }}
               >
-                <span>Hotline: 0833 184 106</span>
+                <span>Hotline: 0907 215 521</span>
                 <span>↗</span>
               </a>
             </div>
@@ -324,13 +324,13 @@ export default function Thung5kgPage() {
             Liên hệ trực tiếp với vườn để kiểm tra lứa trái già hôm nay và nhận báo giá tốt nhất cùng chính sách giao hàng tận nhà.
           </p>
           <div className="cta-box-buttons">
-            <a className="btn-call" href="tel:0833184106">
-              <span>Hotline: 0833 184 106</span>
+            <a className="btn-call" href="tel:0907215521">
+              <span>Hotline: 0907 215 521</span>
               <span>↗</span>
             </a>
             <a
               className="btn-zalo"
-              href="https://zalo.me/0833184106"
+              href="https://zalo.me/0907215521"
               target="_blank"
               rel="noreferrer"
             >

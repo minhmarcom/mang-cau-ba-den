@@ -47,11 +47,11 @@ export default function Footer({ backLink }: FooterProps) {
             <h4 className="footer-heading">Liên hệ đặt hàng</h4>
             <div className="footer-contact-item">
               <span className="contact-label">Hotline / Zalo:</span>
-              <a href="tel:0833184106" className="footer-hotline-link">
+              <a href="tel:0907215521" className="footer-hotline-link">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <span>0833 184 106</span>
+                <span>0907 215 521</span>
               </a>
             </div>
             <p className="footer-address">
@@ -83,11 +83,11 @@ export default function Footer({ backLink }: FooterProps) {
               </a>
 
               <a
-                href="https://zalo.me/0833184106"
+                href="https://zalo.me/0907215521"
                 target="_blank"
                 rel="noreferrer"
                 className="footer-btn-pill btn-zalo"
-                aria-label="Nhắn tin Zalo 0833 184 106"
+                aria-label="Nhắn tin Zalo 0907 215 521"
               >
                 <span>Zalo Tư Vấn</span>
               </a>

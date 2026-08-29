@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const siteUrl = isLocal ? `http://${host}` : "https://mangcaubaden.vn";
   const image = "https://mangcaubaden.vn/og.png";
   const title = "Mãng Cầu Bà Đen Tây Ninh Chính Gốc – Giá & Đặt Mua";
-  const description = "Mãng Cầu Bà Đen, còn gọi là na Bà Đen Tây Ninh: xem sản phẩm, giá tham khảo, mùa vụ, cách chọn và đặt mua giao tận nơi qua Hotline/Zalo 0833 184 106.";
+  const description = "Mãng Cầu Bà Đen, còn gọi là na Bà Đen Tây Ninh: xem sản phẩm, giá tham khảo, mùa vụ, cách chọn và đặt mua giao tận nơi qua Hotline/Zalo 0907 215 521.";
   const keywords = [
     // Từ khóa hạt nhân (Core Keywords)
     "mãng cầu Bà Đen", "mang cau ba den", "mãng cầu Bà Đen Tây Ninh", "mang cau tay ninh",

@@ -199,8 +199,8 @@ export default function CustardAppleStorageGuidePage() {
         </nav>
 
         <div className="header-actions">
-          <a className="header-cta" href="tel:0833184106">
-            <span>Gọi 0833 184 106</span>
+          <a className="header-cta" href="tel:0907215521">
+            <span>Gọi 0907 215 521</span>
             <span className="cta-arrow">↗</span>
           </a>
           <Link
@@ -536,13 +536,13 @@ export default function CustardAppleStorageGuidePage() {
                 Đặt mua ngay hôm nay để nhận những thùng mãng cầu già tuyển chọn chuẩn VietGAP & OCOP, đóng gói lưới xốp an toàn và hướng dẫn bảo quản tận tâm từ Mãng Cầu Bà Đen.
               </p>
               <div className="cta-box-buttons">
-                <a className="btn-call" href="tel:0833184106">
-                  <span>Hotline: 0833 184 106</span>
+                <a className="btn-call" href="tel:0907215521">
+                  <span>Hotline: 0907 215 521</span>
                   <span>↗</span>
                 </a>
                 <a
                   className="btn-zalo"
-                  href="https://zalo.me/0833184106"
+                  href="https://zalo.me/0907215521"
                   target="_blank"
                   rel="noreferrer"
                 >

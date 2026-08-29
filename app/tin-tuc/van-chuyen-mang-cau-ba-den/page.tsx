@@ -186,8 +186,8 @@ export default function ShippingArticlePage() {
         </nav>
 
         <div className="header-actions">
-          <a className="header-cta" href="tel:0833184106">
-            <span>0833 184 106</span>
+          <a className="header-cta" href="tel:0907215521">
+            <span>0907 215 521</span>
             <span className="cta-arrow">↗</span>
           </a>
         </div>
@@ -469,8 +469,8 @@ export default function ShippingArticlePage() {
                     <Link href="/hop-tac" className="btn-cta-partner">
                       Đăng Ký Làm Đối Tác / CTV
                     </Link>
-                    <a href="https://zalo.me/0833184106" target="_blank" rel="noreferrer" className="btn-cta-zalo">
-                      Tư Vấn Zalo: 0833 184 106
+                    <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer" className="btn-cta-zalo">
+                      Tư Vấn Zalo: 0907 215 521
                     </a>
                   </div>
                 </div>

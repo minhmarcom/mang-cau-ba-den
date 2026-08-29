@@ -166,12 +166,12 @@ export default function HopTacContent() {
 
                   </a>
                   <a
-                    href="https://zalo.me/0833184106"
+                    href="https://zalo.me/0907215521"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-hero-partner secondary"
                   >
-                    <span>Nhắn Zalo Trao Đổi (0833 184 106)</span>
+                    <span>Nhắn Zalo Trao Đổi (0907 215 521)</span>
                   </a>
                 </div>
               </div>

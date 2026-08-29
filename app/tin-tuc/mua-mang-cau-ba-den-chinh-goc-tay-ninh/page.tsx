@@ -108,7 +108,7 @@ const faqSchema = {
       name: "Mua mãng cầu Bà Đen chính gốc ở đâu uy tín?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bạn nên chọn các nhà vườn có vùng trồng trực tiếp tại Thạnh Tân chân Núi Bà Đen Tây Ninh (Chỉ đường Google Maps: https://share.google/mKCDKiRjRo25L0TDN), có phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Website: https://mangcaubaden.vn - Hotline/Zalo: 0833 184 106).",
+        text: "Bạn nên chọn các nhà vườn có vùng trồng trực tiếp tại Thạnh Tân chân Núi Bà Đen Tây Ninh (Chỉ đường Google Maps: https://share.google/mKCDKiRjRo25L0TDN), có phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Website: https://mangcaubaden.vn - Hotline/Zalo: 0907 215 521).",
       },
     },
     {
@@ -180,8 +180,8 @@ export default function ArticlePage() {
         </nav>
 
         <div className="header-actions">
-          <a className="header-cta" href="tel:0833184106">
-            <span>Gọi 0833 184 106</span>
+          <a className="header-cta" href="tel:0907215521">
+            <span>Gọi 0907 215 521</span>
             <span className="cta-arrow">↗</span>
           </a>
           <Link
@@ -439,13 +439,13 @@ export default function ArticlePage() {
                 Liên hệ trực tiếp với chúng tôi để đặt mua mãng cầu Bà Đen đang thu hoạch, nhận báo giá theo thời điểm và tư vấn quy cách giao nhận phù hợp nhất.
               </p>
               <div className="cta-box-buttons">
-                <a className="btn-call" href="tel:0833184106">
-                  <span>Hotline: 0833 184 106</span>
+                <a className="btn-call" href="tel:0907215521">
+                  <span>Hotline: 0907 215 521</span>
                   <span>↗</span>
                 </a>
                 <a
                   className="btn-zalo"
-                  href="https://zalo.me/0833184106"
+                  href="https://zalo.me/0907215521"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -465,7 +465,7 @@ export default function ArticlePage() {
                   Mua mãng cầu Bà Đen chính gốc ở đâu uy tín?
                 </summary>
                 <p>
-                  Bạn nên chọn các nhà vườn có vùng trồng trực tiếp quanh khu vực Núi Bà Đen Tây Ninh, có hình ảnh thu hoạch thực tế tại vườn, tiêu chuẩn phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Hotline/Zalo: 0833 184 106).
+                  Bạn nên chọn các nhà vườn có vùng trồng trực tiếp quanh khu vực Núi Bà Đen Tây Ninh, có hình ảnh thu hoạch thực tế tại vườn, tiêu chuẩn phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Hotline/Zalo: 0907 215 521).
                 </p>
               </details>
 

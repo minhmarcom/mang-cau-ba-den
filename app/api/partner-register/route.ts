@@ -8,7 +8,7 @@ export async function POST(request: Request) {
 
     if (!fullName || !vnPhoneRegex.test(cleanPhone)) {
       return Response.json(
-        { success: false, message: "Vui lòng nhập đúng số điện thoại Zalo Việt Nam (10 chữ số, ví dụ: 0833184106)." },
+        { success: false, message: "Vui lòng nhập đúng số điện thoại Zalo Việt Nam (10 chữ số, ví dụ: 0907215521)." },
         { status: 400 }
       );
     }

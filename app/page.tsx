@@ -87,7 +87,7 @@ const faqs = [
   {
     question: "Mãng cầu Bà Đen giá bao nhiêu 1kg hôm nay?",
     answer:
-      "Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và quy cách đóng thùng. Quý khách vui lòng liên hệ Hotline/Zalo 0833 184 106 để nhận báo giá sỉ & lẻ tại vườn mới nhất hôm nay.",
+      "Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và quy cách đóng thùng. Quý khách vui lòng liên hệ Hotline/Zalo 0907 215 521 để nhận báo giá sỉ & lẻ tại vườn mới nhất hôm nay.",
   },
   {
     question: "Mùa mãng cầu Tây Ninh vào thời gian nào?",
@@ -102,7 +102,7 @@ const faqs = [
   {
     question: "Mua mãng cầu Bà Đen chính gốc giao TPHCM & Hà Nội ở đâu?",
     answer:
-      "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0833 184 106. NABADEN hái tươi tại vườn Thạnh Tân, bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
+      "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân, bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
   },
   {
     question: "Mãng Cầu Bà Đen có chứng nhận an toàn nào?",
@@ -136,7 +136,7 @@ const localBusinessSchema = {
   ],
   description:
     "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh chính gốc. Cập nhật kiến thức mùa vụ, cách chọn, bảo quản, bảng giá mãng cầu tại vườn và phân phối sỉ lẻ toàn quốc.",
-  telephone: "+84833184106",
+  telephone: "+84907215521",
   priceRange: "$$",
   currenciesAccepted: "VND",
   paymentAccepted: "Tiền mặt, Chuyển khoản ngân hàng, COD",
@@ -171,7 +171,7 @@ const localBusinessSchema = {
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+84833184106",
+    telephone: "+84907215521",
     contactType: "customer service",
     areaServed: "VN",
     availableLanguage: ["vi"],
@@ -179,7 +179,7 @@ const localBusinessSchema = {
   sameAs: [
     "https://share.google/mKCDKiRjRo25L0TDN",
     "https://www.facebook.com/mangcaubaden.vn/",
-    "https://zalo.me/0833184106",
+    "https://zalo.me/0907215521",
     "https://www.tiktok.com/@mangcaubaden",
     "https://mangcaubaden.vn",
   ],
@@ -408,8 +408,8 @@ export default function Home() {
         </nav>
 
         <div className="header-actions">
-          <a className="header-cta" href="tel:0833184106">
-            <span>Gọi 0833 184 106</span>
+          <a className="header-cta" href="tel:0907215521">
+            <span>Gọi 0907 215 521</span>
             <span className="cta-arrow">↗</span>
           </a>
 
@@ -472,15 +472,15 @@ export default function Home() {
               </div>
 
               <div className="mobile-nav-actions">
-                <a className="mobile-cta-primary" href="tel:0833184106" onClick={closeMenu}>
+                <a className="mobile-cta-primary" href="tel:0907215521" onClick={closeMenu}>
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
-                  <span>Gọi ngay 0833 184 106</span>
+                  <span>Gọi ngay 0907 215 521</span>
                 </a>
                 <a
                   className="mobile-cta-secondary"
-                  href="https://zalo.me/0833184106"
+                  href="https://zalo.me/0907215521"
                   target="_blank"
                   rel="noreferrer"
                   onClick={closeMenu}
@@ -494,7 +494,7 @@ export default function Home() {
                 <span>Đặc sản Tây Ninh chính gốc</span>
                 <div className="mobile-nav-socials">
                   <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">Facebook</a>
-                  <a href="https://zalo.me/0833184106" target="_blank" rel="noreferrer">Zalo</a>
+                  <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">Zalo</a>
                   <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">TikTok</a>
                 </div>
               </div>
@@ -722,7 +722,7 @@ export default function Home() {
 
                 </a>
                 <a
-                  href="https://zalo.me/0833184106"
+                  href="https://zalo.me/0907215521"
                   target="_blank"
                   rel="noreferrer"
                   style={{
@@ -791,7 +791,7 @@ export default function Home() {
           </p>
           <div className="path-list">
             <a
-              href="https://zalo.me/0833184106"
+              href="https://zalo.me/0907215521"
               target="_blank"
               rel="noreferrer"
             >
@@ -800,7 +800,7 @@ export default function Home() {
 
             </a>
             <a
-              href="https://zalo.me/0833184106"
+              href="https://zalo.me/0907215521"
               target="_blank"
               rel="noreferrer"
             >
@@ -809,7 +809,7 @@ export default function Home() {
 
             </a>
             <a
-              href="https://zalo.me/0833184106"
+              href="https://zalo.me/0907215521"
               target="_blank"
               rel="noreferrer"
             >
@@ -818,7 +818,7 @@ export default function Home() {
 
             </a>
             <a
-              href="https://zalo.me/0833184106"
+              href="https://zalo.me/0907215521"
               target="_blank"
               rel="noreferrer"
             >
@@ -903,7 +903,7 @@ export default function Home() {
 
               </Link>
               <a
-                href="https://zalo.me/0833184106"
+                href="https://zalo.me/0907215521"
                 target="_blank"
                 rel="noreferrer"
                 style={{
@@ -1079,9 +1079,9 @@ export default function Home() {
           </p>
         </div>
         <div className="contact-channels">
-          <a className="contact-main" href="tel:0833184106">
+          <a className="contact-main" href="tel:0907215521">
             <span className="channel-label">Hotline tư vấn</span>
-            <strong>0833 184 106</strong>
+            <strong>0907 215 521</strong>
             <b>Gọi ngay ↗</b>
           </a>
           <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
@@ -1091,11 +1091,11 @@ export default function Home() {
             </div>
 
           </a>
-          <a href="https://zalo.me/0833184106" target="_blank" rel="noreferrer">
+          <a href="https://zalo.me/0907215521" target="_blank" rel="noreferrer">
             <span className="channel-icon">Z</span>
             <div>
               <small>Nhắn tin nhanh</small>
-              <strong>Zalo 0833 184 106</strong>
+              <strong>Zalo 0907 215 521</strong>
             </div>
 
           </a>
@@ -1186,7 +1186,7 @@ export default function Home() {
                 },
                 "image": "https://mangcaubaden.vn/og.png",
                 "description": "Thương hiệu Mãng Cầu Bà Đen Tây Ninh NABADEN chính gốc VietGAP & OCOP 3 sao, thu hoạch trực tiếp tại vườn khu vực chân núi Bà Đen Tây Ninh.",
-                "telephone": "+84833184106",
+                "telephone": "+84907215521",
                 "priceRange": "$$",
                 "address": {
                   "@type": "PostalAddress",
@@ -1221,7 +1221,7 @@ export default function Home() {
                     "name": "Mãng cầu Bà Đen bao nhiêu 1kg hôm nay?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và kích thước trái. Vui lòng liên hệ Hotline/Zalo 0833 184 106 để nhận báo giá sỉ & lẻ tại vườn mới nhất hôm nay."
+                      "text": "Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và kích thước trái. Vui lòng liên hệ Hotline/Zalo 0907 215 521 để nhận báo giá sỉ & lẻ tại vườn mới nhất hôm nay."
                     }
                   },
                   {
@@ -1245,7 +1245,7 @@ export default function Home() {
                     "name": "Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM & Hà Nội?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0833 184 106. NABADEN hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc."
+                      "text": "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc."
                     }
                   },
                   {
