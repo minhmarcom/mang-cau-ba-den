@@ -3,9 +3,9 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
+  title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Chính Gốc – Giá & Đặt Hàng",
   description:
-    "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và cách phân biệt trái ngon chuẩn vị.",
+    "Tìm mua Mãng Cầu Bà Đen, na Bà Đen Tây Ninh chính gốc: xem giá tham khảo, cách chọn trái, quy cách hộp 3 trái, thùng 5kg, 15kg và đặt giao tận nơi.",
   keywords: [
     "mua mãng cầu Bà Đen",
     "mua mãng cầu Bà Đen chính gốc",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
   },
   openGraph: {
-    title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
+    title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Chính Gốc – Giá & Đặt Hàng",
     description:
       "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
     url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
         width: 1200,
         height: 630,
         alt: "Mua mãng cầu Bà Đen chính gốc Tây Ninh",
@@ -39,25 +39,25 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tìm mua Mãng Cầu Bà Đen chính gốc Tây Ninh ở đâu? | Mãng Cầu Bà Đen",
+    title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Chính Gốc – Giá & Đặt Hàng",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen Tây Ninh ngon, chuẩn nguồn gốc từ nhà vườn.",
-    images: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   },
 };
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  headline: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
+  headline: "Mua Mãng Cầu Bà Đen, Na Bà Đen chính gốc Tây Ninh: giá và cách đặt hàng",
   description:
     "Khi tìm mua mãng cầu Bà Đen chính gốc Tây Ninh, người mua nên kiểm tra nguồn gốc vùng trồng, độ già của trái, cách phân loại, đóng gói và thời điểm giao hàng phù hợp.",
-  image: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],
+  image: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   datePublished: "2026-07-04T08:00:00+07:00",
-  dateModified: "2026-08-15T08:00:00+07:00",
+  dateModified: "2026-08-29T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -140,7 +140,7 @@ const faqSchema = {
 
 export default function ArticlePage() {
   return (
-    <div className="article-page-wrap">
+    <div className="article-page-wrap news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -156,7 +156,7 @@ export default function ArticlePage() {
 
       {/* HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"
@@ -189,9 +189,6 @@ export default function ArticlePage() {
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -219,18 +216,18 @@ export default function ArticlePage() {
           </div>
 
           <h1 className="article-title">
-            Tìm mãng cầu Bà Đen <em>chính gốc Tây Ninh</em> ở đâu? Kinh nghiệm chọn mua chuẩn ngon
+            Mua mãng cầu Bà Đen (na Bà Đen) <em>chính gốc Tây Ninh</em>: giá và cách đặt hàng
           </h1>
 
           <p className="article-lead">
-            Mãng cầu Bà Đen là đặc sản nức tiếng của Tây Ninh nhờ vị ngọt thanh, cơm trắng dẻo và hương thơm thanh khiết. Để tránh mua phải hàng trôi nổi kém chất lượng, hãy cùng tìm hiểu kinh nghiệm chọn mua mãng cầu chuẩn gốc từ chính các nhà vườn Tây Ninh.
+            Mãng cầu Bà Đen còn được gọi là na Bà Đen hoặc na Tây Ninh. Trang này giúp bạn nhận biết trái ngon, tham khảo quy cách và đi thẳng tới danh mục đặt mua sản phẩm đang cung ứng.
           </p>
         </header>
 
         {/* FEATURED IMAGE */}
         <figure className="article-hero-media">
           <img
-            src="/thuc-te-dong-goi-nhieu-thung.jpg"
+            src="/thuc-te-dong-goi.jpg"
             alt="Mãng cầu Bà Đen Tây Ninh chính gốc đóng thùng sẵn sàng vận chuyển"
           />
           <figcaption>
@@ -366,7 +363,7 @@ export default function ArticlePage() {
           <section id="bang-gia-quy-cach">
             <h2>4. Phân loại và quy cách mãng cầu Bà Đen</h2>
             <p>
-              Nhà vườn Mãng Cầu Bà Đen NABADEN đóng gói và phân phối theo 3 dòng sản phẩm tiêu chuẩn đạt chứng nhận OCOP 3 Sao, đáp ứng trọn vẹn từ nhu cầu biếu tặng cao cấp đến thưởng thức gia đình hay đơn sỉ gửi xa:
+              Nhà vườn Mãng Cầu Bà Đen đóng gói và phân phối theo 3 dòng sản phẩm tiêu chuẩn đạt chứng nhận OCOP 3 Sao, đáp ứng trọn vẹn từ nhu cầu biếu tặng cao cấp đến thưởng thức gia đình hay đơn sỉ gửi xa:
             </p>
 
             <div className="table-responsive">
@@ -384,7 +381,7 @@ export default function ArticlePage() {
                     <td>
                       <strong>Hộp Đặc Biệt (3 Quả)</strong>
                       <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
-                        OCOP 3 Sao • Quà biếu VIP
+                        OCOP 3 Sao, Quà biếu VIP
                       </span>
                     </td>
                     <td>Hộp 3 trái VIP</td>
@@ -395,7 +392,7 @@ export default function ArticlePage() {
                     <td>
                       <strong>Thùng 5KG Tuyển Chọn</strong>
                       <span style={{ display: "block", fontSize: "12px", color: "var(--leaf)", fontWeight: 600, marginTop: "2px" }}>
-                        OCOP 3 Sao • Thưởng thức & Biếu tặng
+                        OCOP 3 Sao, Thưởng thức & Biếu tặng
                       </span>
                     </td>
                     <td>Thùng carton 5kg</td>
@@ -426,7 +423,7 @@ export default function ArticlePage() {
 
             <figure className="article-inline-image">
               <img
-                src="/hop-qua-3-trai-vip.jpg"
+                src="/san-pham-hop-qua-3-trai.jpg"
                 alt="Hộp quà mãng cầu Bà Đen 3 trái tuyển chọn thượng hạng"
                 loading="lazy"
               />
@@ -453,7 +450,6 @@ export default function ArticlePage() {
                   rel="noreferrer"
                 >
                   <span>Nhắn Zalo tư vấn</span>
-                  <span>↗</span>
                 </a>
               </div>
             </div>
@@ -467,7 +463,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>01</span>
                   Mua mãng cầu Bà Đen chính gốc ở đâu uy tín?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Bạn nên chọn các nhà vườn có vùng trồng trực tiếp quanh khu vực Núi Bà Đen Tây Ninh, có hình ảnh thu hoạch thực tế tại vườn, tiêu chuẩn phân loại trái rõ ràng và hỗ trợ vận chuyển an toàn (Hotline/Zalo: 0833 184 106).
@@ -478,7 +473,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>02</span>
                   Nên chọn mãng cầu già hay chín khi mua mang đi xa?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Nếu mang đi xa hoặc làm quà biếu, nên chọn trái già cứng tay, mắt na nở phẳng to, rãnh nở trắng ngà và bọc lưới xốp bảo vệ. Trái sẽ chín dẻo tự nhiên trong 1-2 ngày di chuyển.
@@ -489,7 +483,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>03</span>
                   Mãng cầu Bà Đen có gì khác so với mãng cầu thường?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Mãng cầu Bà Đen được nuôi dưỡng bởi thổ nhưỡng đất phù sa cổ quanh chân núi Bà Đen và biên độ nhiệt ngày đêm cao, giúp cơm trắng mịn, dai dẻo, ít hạt và có vị ngọt thanh xen lẫn chút chua nhẹ rất thanh mát.
@@ -500,7 +493,6 @@ export default function ArticlePage() {
                 <summary>
                   <span>04</span>
                   Mãng cầu còn xanh có nên để trong tủ lạnh không?
-                  <b aria-hidden="true">＋</b>
                 </summary>
                 <p>
                   Tuyệt đối không để mãng cầu còn xanh hoặc cứng vào tủ lạnh vì nhiệt độ thấp sẽ làm trái bị sượng và ngưng chín. Chỉ nên cho vào ngăn mát sau khi trái đã chín mềm vừa ăn.
@@ -519,7 +511,7 @@ export default function ArticlePage() {
 
           <div className="related-articles-grid">
             <Link
-              href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh/"
+              href="/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/"
               className="related-article-card"
             >
               <div className="related-card-thumb">
@@ -533,7 +525,6 @@ export default function ArticlePage() {
               <div className="related-card-body">
                 <div className="related-card-meta">
                   <span>4 phút đọc</span>
-                  <span>•</span>
                   <time>Tháng 8/2026</time>
                 </div>
                 <h3 className="related-card-title">
@@ -543,7 +534,7 @@ export default function ArticlePage() {
                   Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.
                 </p>
                 <span className="related-card-link">
-                  Đọc bài viết <span>→</span>
+                  Đọc bài viết
                 </span>
               </div>
             </Link>
@@ -551,10 +542,10 @@ export default function ArticlePage() {
 
           <div className="related-bottom-nav">
             <Link href="/tin-tuc" className="nav-pill-btn">
-              ← Xem tất cả tin tức
+              Xem tất cả tin tức
             </Link>
             <Link href="/" className="nav-pill-btn secondary">
-              ← Về trang chủ
+              Về trang chủ
             </Link>
           </div>
         </section>

@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import { ArticleFaq } from "../../components/ArticleBlocks";
 
 export const metadata: Metadata = {
-  title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
+  title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói Mãng Cầu Bà Đen",
   description:
-    "Mãng cầu Bà Đen là trái cây tươi nhạy cảm. Tìm hiểu quy trình vận chuyển Mãng cầu Bà Đen NABADEN từ vườn Tây Ninh: lựa độ già, đóng gói bọc xốp chống va đập, kiểm soát thời gian và hướng dẫn bảo quản khi nhận.",
+    "Mãng cầu Bà Đen là trái cây tươi nhạy cảm. Tìm hiểu quy trình vận chuyển Mãng Cầu Bà Đen từ vườn Tây Ninh: lựa độ già, đóng gói bọc xốp chống va đập, kiểm soát thời gian và hướng dẫn bảo quản khi nhận.",
   keywords: [
     "vận chuyển mãng cầu Bà Đen",
     "Mãng cầu Bà Đen",
-    "NABADEN",
+    "Mãng Cầu Bà Đen",
     "mãng cầu Tây Ninh",
     "mãng cầu Núi Bà Đen",
     "cách đóng gói mãng cầu",
@@ -22,48 +23,48 @@ export const metadata: Metadata = {
     canonical: "/van-chuyen-mang-cau-ba-den/",
   },
   openGraph: {
-    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
+    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói Mãng Cầu Bà Đen",
     description:
-      "Quy trình đóng gói và vận chuyển Mãng Cầu Bà Đen NABADEN từ vườn Tây Ninh đến tay khách hàng vẫn giữ nguyên độ tươi ngon, dẻo dai và không dập nát.",
+      "Quy trình đóng gói và vận chuyển Mãng Cầu Bà Đen từ vườn Tây Ninh đến tay khách hàng vẫn giữ nguyên độ tươi ngon, dẻo dai và không dập nát.",
     url: "https://mangcaubaden.vn/van-chuyen-mang-cau-ba-den/",
     siteName: "Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
         width: 1200,
         height: 630,
-        alt: "Vận chuyển Mãng cầu Bà Đen NABADEN - Quy trình đóng gói chống va đập",
+        alt: "Vận chuyển Mãng Cầu Bà Đen - Quy trình đóng gói chống va đập",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
+    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói Mãng Cầu Bà Đen",
     description:
       "Khám phá quy trình vận chuyển Mãng Cầu Bà Đen từ vườn Núi Bà Đen: lựa độ già, bọc lưới xốp chống va đập, kiểm soát thời gian và mẹo nhận hàng.",
-    images: ["https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-dong-goi.jpg"],
   },
 };
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  headline: "Vận chuyển Mãng cầu Bà Đen NABADEN như thế nào để trái đến tay khách vẫn ngon?",
+  headline: "Vận chuyển Mãng Cầu Bà Đen như thế nào để trái đến tay khách vẫn ngon?",
   description:
-    "Mãng cầu Bà Đen là trái cây tươi và tiếp tục thay đổi sau khi thu hoạch. Tìm hiểu quy trình đóng gói, lựa độ già, kiểm soát thời gian vận chuyển của NABADEN từ vườn Tây Ninh.",
+    "Mãng cầu Bà Đen là trái cây tươi và tiếp tục thay đổi sau khi thu hoạch. Tìm hiểu quy trình đóng gói, lựa độ già, kiểm soát thời gian vận chuyển của Mãng Cầu Bà Đen từ vườn Tây Ninh.",
   image: [
-    "https://mangcaubaden.vn/thuc-te-dong-goi-nhieu-thung.jpg",
-    "https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg",
-    "https://mangcaubaden.vn/can-trong-luong-mang-cau-tay-ninh.jpg",
+    "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
+    "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
+    "https://mangcaubaden.vn/thuc-te-phan-loai.jpg",
     "https://mangcaubaden.vn/hai-trieu-van-chuyen-vuon.jpg",
   ],
   datePublished: "2026-08-17T08:00:00+07:00",
   dateModified: "2026-08-17T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -110,10 +111,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Quy trình đóng gói Mãng Cầu Bà Đen NABADEN có gì đặc biệt?",
+      name: "Quy trình đóng gói Mãng Cầu Bà Đen có gì đặc biệt?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NABADEN phân loại trái kỹ lưỡng, bọc lưới xốp riêng từng quả nhằm hạn chế va đập giữa các mắt mãng cầu, xếp thùng carton dày dặn với khoảng cách vừa vặn, không chèn ép quá chặt và kiểm soát lộ trình giao hỏa tốc.",
+        text: "Mãng Cầu Bà Đen phân loại trái kỹ lưỡng, bọc lưới xốp riêng từng quả nhằm hạn chế va đập giữa các mắt mãng cầu, xếp thùng carton dày dặn với khoảng cách vừa vặn, không chèn ép quá chặt và kiểm soát lộ trình giao hỏa tốc.",
       },
     },
   ],
@@ -146,7 +147,7 @@ const breadcrumbSchema = {
 
 export default function ShippingArticlePage() {
   return (
-    <>
+    <div className="news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -211,13 +212,13 @@ export default function ShippingArticlePage() {
           <header className="article-header">
             <div className="article-container">
               <div className="article-meta-top">
-                <span className="article-kicker-badge">Đóng gói &amp; Vận chuyển • Tây Ninh</span>
-                <span className="article-read-time">⏱ 6 phút đọc</span>
-                <span className="article-pub-date">📅 Tháng 8/2026</span>
+                <span className="article-kicker-badge">Đóng gói &amp; Vận chuyển, Tây Ninh</span>
+                <span className="article-read-time">6 phút đọc</span>
+                <span className="article-pub-date">Tháng 8/2026</span>
               </div>
 
               <h1 className="article-title">
-                Vận chuyển Mãng cầu Bà Đen NABADEN như thế nào để trái đến tay khách vẫn ngon?
+                Vận chuyển Mãng Cầu Bà Đen như thế nào để trái đến tay khách vẫn ngon?
               </h1>
 
               <p className="article-lead">
@@ -231,14 +232,14 @@ export default function ShippingArticlePage() {
             <div className="article-container">
               <figure className="article-figure-main">
                 <img
-                  src="/thuc-te-dong-goi-nhieu-thung.jpg"
+                  src="/thuc-te-dong-goi.jpg"
                   alt="Thực tế đóng gói và xếp thùng vận chuyển Mãng Cầu Bà Đen Tây Ninh"
                   className="article-img"
                   width="1140"
                   height="600"
                 />
                 <figcaption className="article-figcaption">
-                  Quy trình đóng gói thùng carton chuẩn xuất vườn tại Tây Ninh — NABADEN chú trọng bảo vệ từng mắt trái trên suốt hành trình vận chuyển.
+                  Quy trình đóng gói thùng carton chuẩn xuất vườn tại Tây Ninh — Mãng Cầu Bà Đen chú trọng bảo vệ từng mắt trái trên suốt hành trình vận chuyển.
                 </figcaption>
               </figure>
             </div>
@@ -248,13 +249,12 @@ export default function ShippingArticlePage() {
           <div className="article-body">
             <div className="article-container article-prose">
               <p>
-                Với <strong>NABADEN</strong>, vận chuyển mãng cầu không đơn giản là hái trái, bỏ vào thùng rồi gửi đi. Từ thời điểm thu hoạch, lựa trái, phân loại, đóng gói đến lựa chọn hình thức giao hàng đều cần được tính toán dựa trên đặc tính của mãng cầu tươi.
+                Với <strong>Mãng Cầu Bà Đen</strong>, vận chuyển mãng cầu không đơn giản là hái trái, bỏ vào thùng rồi gửi đi. Từ thời điểm thu hoạch, lựa trái, phân loại, đóng gói đến lựa chọn hình thức giao hàng đều cần được tính toán dựa trên đặc tính của mãng cầu tươi.
               </p>
 
               <div className="editorial-callout-box">
-                <div className="callout-icon">💡</div>
                 <div className="callout-content">
-                  <strong>Thông điệp từ nhà vườn NABADEN:</strong> Đối với nông sản tươi, “trái đẹp tại vườn” mới chỉ là khởi đầu — điều quyết định trải nghiệm của khách hàng chính là cách chuẩn bị trái phù hợp với toàn bộ hành trình vận chuyển phía trước.
+                  <strong>Thông điệp từ nhà vườn Mãng Cầu Bà Đen:</strong> Đối với nông sản tươi, “trái đẹp tại vườn” mới chỉ là khởi đầu — điều quyết định trải nghiệm của khách hàng chính là cách chuẩn bị trái phù hợp với toàn bộ hành trình vận chuyển phía trước.
                 </div>
               </div>
 
@@ -291,8 +291,8 @@ export default function ShippingArticlePage() {
                 <li><strong>Cách nhận và bảo quản của khách:</strong> Mở thùng kiểm tra ngay khi nhận hàng để phân loại trái ăn trước / ăn sau.</li>
               </ul>
 
-              {/* H2: QUY TRÌNH VẬN CHUYỂN NABADEN */}
-              <h2>Quy trình vận chuyển Mãng Cầu Bà Đen NABADEN</h2>
+              {/* H2: QUY TRÌNH VẬN CHUYỂN Mãng Cầu Bà Đen */}
+              <h2>Quy trình vận chuyển Mãng Cầu Bà Đen</h2>
 
               <h3>1. Thu hoạch theo độ già phù hợp</h3>
               <p>
@@ -302,12 +302,12 @@ export default function ShippingArticlePage() {
                 Trái quá mềm khi đóng thùng sẽ có nguy cơ bị dập, nứt vỏ hoặc xuống chất lượng nhanh chóng khi xe rung lắc. Ngược lại, nếu thu hoạch khi trái chưa đạt độ già sinh lý cần thiết, trái có thể bị sượng hoặc không đạt được độ ngọt thanh đậm đà vốn có.
               </p>
               <p>
-                Vì vậy, một trong những bí quyết quan trọng của NABADEN trước khi vận chuyển là <strong>đánh giá độ già của từng trái kết hợp với thời gian dự kiến giao hàng</strong>. Đơn hàng giao gần (như nội thành TP.HCM, Tây Ninh) và đơn hàng cần di chuyển xa (như Hà Nội, các tỉnh phía Bắc) luôn có tiêu chuẩn lựa trái khác nhau.
+                Vì vậy, một trong những bí quyết quan trọng của Mãng Cầu Bà Đen trước khi vận chuyển là <strong>đánh giá độ già của từng trái kết hợp với thời gian dự kiến giao hàng</strong>. Đơn hàng giao gần (như nội thành TP.HCM, Tây Ninh) và đơn hàng cần di chuyển xa (như Hà Nội, các tỉnh phía Bắc) luôn có tiêu chuẩn lựa trái khác nhau.
               </p>
 
               <figure className="article-figure-inline">
                 <img
-                  src="/can-trong-luong-mang-cau-tay-ninh.jpg"
+                  src="/thuc-te-phan-loai.jpg"
                   alt="Cân trọng lượng và phân loại mãng cầu Bà Đen loại 1"
                   className="article-img"
                   width="900"
@@ -326,7 +326,7 @@ export default function ShippingArticlePage() {
                 Việc phân loại giúp những trái có kích thước, trọng lượng và độ già tương đồng được bố trí cùng quy cách, đồng thời loại bỏ những trái có tì vết, trầy xước không thích hợp cho hành trình di chuyển xa.
               </p>
               <p>
-                Tại <strong>NABADEN</strong>, mãng cầu tươi được định hướng đóng gói chuyên biệt: hộp quà biếu 3 trái VIP sang trọng sẽ có tiêu chuẩn khắt khe khác với thùng 5kg, thùng 15kg phục vụ đại lý phân phối số lượng lớn.
+                Tại <strong>Mãng Cầu Bà Đen</strong>, mãng cầu tươi được định hướng đóng gói chuyên biệt: hộp quà biếu 3 trái VIP sang trọng sẽ có tiêu chuẩn khắt khe khác với thùng 5kg, thùng 15kg phục vụ đại lý phân phối số lượng lớn.
               </p>
 
               <h3>3. Hạn chế để các trái va đập trực tiếp vào nhau</h3>
@@ -337,7 +337,7 @@ export default function ShippingArticlePage() {
                 Mãng cầu có bề mặt gồm nhiều mắt nổi. Khi các trái liên tục cọ xát vào nhau trong suốt chặng đường xe chạy, bề mặt rất dễ bị thâm đen, trầy xước hoặc tổn thương phần thịt bên trong.
               </p>
               <p>
-                Tùy từng quy cách đóng gói, NABADEN bố trí <strong>lưới xốp bao bọc riêng từng quả</strong> kết hợp chèn vách ngăn chống sốc nhằm:
+                Tùy từng quy cách đóng gói, Mãng Cầu Bà Đen bố trí <strong>lưới xốp bao bọc riêng từng quả</strong> kết hợp chèn vách ngăn chống sốc nhằm:
               </p>
               <ul className="article-bullet-list">
                 <li>Giảm tối đa va chạm trực tiếp giữa các trái với nhau.</li>
@@ -348,7 +348,7 @@ export default function ShippingArticlePage() {
 
               <figure className="article-figure-inline">
                 <img
-                  src="/dong-thung-carton-mang-cau-xop.jpg"
+                  src="/thuc-te-dong-goi.jpg"
                   alt="Đóng thùng carton bọc lưới xốp mãng cầu Bà Đen Tây Ninh"
                   className="article-img"
                   width="900"
@@ -367,7 +367,7 @@ export default function ShippingArticlePage() {
                 Đối với mãng cầu, việc ép quá chặt sẽ khiến áp lực nén tăng lên gấp nhiều lần khi phương tiện đi qua đoạn đường xóc, dẫn đến hiện tượng dập cục bộ. Ngược lại, nếu thùng quá rộng rãi mà không có đệm chèn, trái lại bị va đập tự do.
               </p>
               <p>
-                Do đó, nghệ thuật đóng gói chuẩn NABADEN là tạo được <em>sự cân bằng hoàn hảo</em>: đủ vừa vặn để trái không xê dịch nhưng tuyệt đối không chèn ép làm tổn hại dáng trái.
+                Do đó, nghệ thuật đóng gói chuẩn Mãng Cầu Bà Đen là tạo được <em>sự cân bằng hoàn hảo</em>: đủ vừa vặn để trái không xê dịch nhưng tuyệt đối không chèn ép làm tổn hại dáng trái.
               </p>
 
               <h3>5. Kiểm soát thời gian vận chuyển</h3>
@@ -375,7 +375,7 @@ export default function ShippingArticlePage() {
                 Các nghiên cứu khoa học sau thu hoạch về giống na / mãng cầu ta (<em>Annona squamosa</em>) chỉ ra rằng nhiệt độ và thời gian có tác động rõ rệt đến tốc độ sinh khí ethylene và quá trình chín mềm của trái.
               </p>
               <p>
-                Thời gian giao hàng càng dài thì khâu tính toán độ già sinh lý và phương án vận chuyển càng phải chặt chẽ. NABADEN luôn ưu tiên tư vấn phương án vận chuyển tối ưu nhất theo từng địa phương (xe hỏa tốc tuyến ngắn, đường bay hỏa tốc tuyến dài) thay vì áp dụng một công thức cứng nhắc cho mọi đơn hàng.
+                Thời gian giao hàng càng dài thì khâu tính toán độ già sinh lý và phương án vận chuyển càng phải chặt chẽ. Mãng Cầu Bà Đen luôn ưu tiên tư vấn phương án vận chuyển tối ưu nhất theo từng địa phương (xe hỏa tốc tuyến ngắn, đường bay hỏa tốc tuyến dài) thay vì áp dụng một công thức cứng nhắc cho mọi đơn hàng.
               </p>
 
               {/* H2: CÓ CẦN LÀM LẠNH KHÔNG */}
@@ -393,7 +393,7 @@ export default function ShippingArticlePage() {
               {/* H2: TẠI SAO KHÔNG CHÍN CÙNG LÚC */}
               <h2>Tại sao nhận cùng một thùng nhưng mãng cầu không chín cùng lúc?</h2>
               <p>
-                Đây là thắc mắc rất phổ biến của khách hàng khi thưởng thức <strong>Mãng Cầu Bà Đen NABADEN</strong>.
+                Đây là thắc mắc rất phổ biến của khách hàng khi thưởng thức <strong>Mãng Cầu Bà Đen</strong>.
               </p>
               <p>
                 Mãng cầu là nông sản tự nhiên từ vườn nhà, không phải là sản phẩm công nghiệp sản xuất hàng loạt trong nhà máy. Ngay cả khi được hái trong cùng một buổi sáng, từng trái trên cây vẫn có sự khác biệt tự nhiên về:
@@ -410,7 +410,6 @@ export default function ShippingArticlePage() {
               </p>
 
               <div className="editorial-callout-box info">
-                <div className="callout-icon">✨</div>
                 <div className="callout-content">
                   <strong>Ưu điểm tuyệt vời cho gia đình:</strong> Trái chín so le giúp gia đình bạn thảnh thơi thưởng thức từng quả thơm ngon chuẩn độ chín mỗi ngày trong suốt cả tuần, không phải lo lắng việc cả thùng chín ồ ạt ăn không kịp!
                 </div>
@@ -438,26 +437,34 @@ export default function ShippingArticlePage() {
                 </li>
               </ol>
 
-              {/* H2: NABADEN ĐƯA MÃNG CẦU ĐẾN GẦN NGƯỜI TIÊU DÙNG */}
-              <h2>NABADEN – Đưa Mãng Cầu Bà Đen từ vùng trồng đến gần hơn với người tiêu dùng</h2>
+              {/* H2: Mãng Cầu Bà Đen ĐƯA MÃNG CẦU ĐẾN GẦN NGƯỜI TIÊU DÙNG */}
+              <h2>Mãng Cầu Bà Đen – Đưa Mãng Cầu Bà Đen từ vùng trồng đến gần hơn với người tiêu dùng</h2>
               <p>
                 Mãng cầu Bà Đen không chỉ là một loại trái cây giải khát, mà còn là sản vật biểu trưng gắn liền với văn hóa và con người Tây Ninh.
               </p>
               <p>
-                <strong>NABADEN</strong> phát triển mô hình kết nối từ vùng nguyên liệu sạch, chuẩn hóa quy trình thu hoạch, phân loại, đóng gói chống dập nát đến vận chuyển hỏa tốc tận tay người tiêu dùng trên khắp mọi miền đất nước.
+                <strong>Mãng Cầu Bà Đen</strong> phát triển mô hình kết nối từ vùng nguyên liệu sạch, chuẩn hóa quy trình thu hoạch, phân loại, đóng gói chống dập nát đến vận chuyển hỏa tốc tận tay người tiêu dùng trên khắp mọi miền đất nước.
               </p>
               <p>
-                Dù bạn cần đặt mua hộp quà biếu VIP sang trọng, thùng ăn gia đình hay tìm nguồn hàng sỉ ổn định để phân phối kinh doanh, NABADEN luôn sẵn sàng đồng hành cùng bạn với chất lượng tốt nhất và sự tận tâm từ nhà vườn.
+                Dù bạn cần đặt mua hộp quà biếu VIP sang trọng, thùng ăn gia đình hay tìm nguồn hàng sỉ ổn định để phân phối kinh doanh, Mãng Cầu Bà Đen luôn sẵn sàng đồng hành cùng bạn với chất lượng tốt nhất và sự tận tâm từ nhà vườn.
               </p>
+
+              <ArticleFaq
+                heading="Câu hỏi thường gặp về vận chuyển Mãng Cầu Bà Đen"
+                items={faqSchema.mainEntity.map((item) => ({
+                  question: item.name,
+                  answer: item.acceptedAnswer.text,
+                }))}
+              />
 
               {/* CTA BOX */}
               <div className="article-cta-card">
                 <div className="cta-card-content">
                   <h3>Đặt Mua Mãng Cầu Bà Đen Tây Ninh Chính Gốc</h3>
-                  <p>Hái tươi tại vườn mỗi ngày • Đóng thùng xốp chống va đập • Giao nhanh toàn quốc • Hỗ trợ tận tâm.</p>
+                  <p>Hái tươi tại vườn mỗi ngày, đóng thùng xốp chống va đập, giao nhanh toàn quốc và hỗ trợ tận tâm.</p>
                   <div className="cta-btn-group">
                     <Link href="/san-pham" className="btn-cta-primary">
-                      Xem Các Sản Phẩm →
+                      Xem Các Sản Phẩm
                     </Link>
                     <Link href="/hop-tac" className="btn-cta-partner">
                       Đăng Ký Làm Đối Tác / CTV
@@ -474,7 +481,7 @@ export default function ShippingArticlePage() {
                 <span className="tags-label">Từ khóa liên quan:</span>
                 <span className="article-tag-pill">Mãng cầu Bà Đen</span>
                 <span className="article-tag-pill">vận chuyển mãng cầu Bà Đen</span>
-                <span className="article-tag-pill">NABADEN</span>
+                <span className="article-tag-pill">Mãng Cầu Bà Đen</span>
                 <span className="article-tag-pill">mãng cầu Tây Ninh</span>
                 <span className="article-tag-pill">mãng cầu Núi Bà Đen</span>
                 <span className="article-tag-pill">cách đóng gói mãng cầu</span>
@@ -492,7 +499,7 @@ export default function ShippingArticlePage() {
               <div className="related-grid">
                 <Link href="/cach-bao-quan-mang-cau-ba-den" className="related-card">
                   <img
-                    src="/dong-thung-carton-mang-cau-xop.jpg"
+                    src="/thuc-te-dong-goi.jpg"
                     alt="Cách bảo quản mãng cầu Bà Đen"
                     className="related-img"
                     width="300"
@@ -506,7 +513,7 @@ export default function ShippingArticlePage() {
 
                 <Link href="/mua-mang-cau-ba-den-chinh-goc-tay-ninh" className="related-card">
                   <img
-                    src="/thuc-te-dong-goi-nhieu-thung.jpg"
+                    src="/thuc-te-dong-goi.jpg"
                     alt="Mua mãng cầu chính gốc Tây Ninh"
                     className="related-img"
                     width="300"
@@ -520,7 +527,7 @@ export default function ShippingArticlePage() {
 
                 <Link href="/di-tay-ninh-mua-mang-cau-ba-den-o-dau" className="related-card">
                   <img
-                    src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                    src="/thuc-te-mang-cau-tuoi.jpg"
                     alt="Đi Tây Ninh mua mãng cầu ở đâu"
                     className="related-img"
                     width="300"
@@ -539,6 +546,6 @@ export default function ShippingArticlePage() {
 
       {/* FOOTER */}
       <Footer />
-    </>
+    </div>
   );
 }

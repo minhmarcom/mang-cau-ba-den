@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Cao Cấp | Mãng Cầu Bà Đen",
+  title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
   description:
     "Hộp quà Mãng Cầu Bà Đen 3 trái VIP thượng hạng: Tuyển chọn 3 quả đỉnh chóp tròn đều, vỏ sáng, lót rơm giấy và xốp lưới sang trọng. Chuẩn VietGAP & OCOP 3 sao làm quà biếu đối tác, dâng lễ.",
   keywords: [
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
   },
   openGraph: {
-    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP – Quà Biếu Cao Cấp | Mãng Cầu Bà Đen",
+    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
     description:
       "Hộp quà 3 trái mãng cầu Bà Đen tuyển chọn thượng hạng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
     siteName: "Mãng Cầu Bà Đen",
     images: [
       {
-        url: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+        url: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
         width: 1200,
         height: 630,
         alt: "Hộp quà Mãng Cầu Bà Đen 3 trái VIP sang trọng",
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP | Mãng Cầu Bà Đen",
+    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
     description:
       "Tuyển chọn 3 trái mãng cầu Bà Đen VIP sang trọng, vỏ sáng đẹp mắt, chuẩn OCOP 3 sao Tây Ninh.",
-    images: [`${siteUrl}/hop-qua-3-trai-vip.jpg`],
+    images: [`${siteUrl}/san-pham-hop-qua-3-trai.jpg`],
   },
 };
 
@@ -49,14 +49,14 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP (OCOP 3 Sao)",
-  image: `${siteUrl}/hop-qua-3-trai-vip.jpg`,
+  alternateName: ["Hộp na Bà Đen 3 trái", "Hộp quà mãng cầu Tây Ninh"],
+  image: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,
   description:
     "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng, mã đẹp, vỏ sáng, lót rơm giấy và xốp lưới bảo vệ sang trọng.",
   sku: "MCBD-VIP-03",
-  mpn: "NAB-03VIP",
   brand: {
     "@type": "Brand",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
   },
   offers: {
     "@type": "Offer",
@@ -64,32 +64,13 @@ const productSchema = {
     price: "180000",
     priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
     seller: {
       "@type": "Organization",
       name: "Mãng Cầu Bà Đen Tây Ninh",
     },
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "128",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-        worstRating: "1"
-      },
-      author: { "@type": "Person", name: "Chị Thanh Hằng" },
-      reviewBody: "Hộp quà mãng cầu 3 trái VIP sang trọng, dâng lễ Núi Bà Đen rất ý nghĩa."
-    }
-  ],
 };
 
 const breadcrumbSchema = {
@@ -164,16 +145,13 @@ export default function Hop3TraiVipPage() {
             aria-label="Tư vấn đặt hộp VIP qua Zalo"
           >
             <span>Đặt hộp quà Zalo</span>
-            <span className="btn-arrow">↗</span>
+
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -194,16 +172,17 @@ export default function Hop3TraiVipPage() {
         <div className="product-detail-hero">
           <div className="product-gallery-main">
             <img
-              src="/hop-qua-3-trai-vip.jpg"
+              src="/san-pham-hop-qua-3-trai.jpg"
               alt="Hộp quà Mãng Cầu Bà Đen 3 trái VIP sang trọng"
             />
           </div>
 
           <div className="product-specs-box">
-            <span className="product-item-tag">OCOP 3 Sao • Quà Biếu VIP</span>
+            <span className="product-item-tag">OCOP 3 Sao, Quà Biếu VIP</span>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP
             </h1>
+            <p className="product-item-price"><strong>180.000₫</strong><span>/ hộp 3 trái</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Phiên bản quà tặng cao cấp được thiết kế tinh tế với quai xách trang nhã, ô cửa sổ trong suốt tôn vinh 3 quả mãng cầu tuyển chọn đỉnh chóp từ vườn chân Núi Bà Đen Tây Ninh.
             </p>
@@ -245,7 +224,7 @@ export default function Hop3TraiVipPage() {
                 style={{ width: "100%", justifyContent: "center" }}
               >
                 <span>Nhắn Zalo Đặt Hộp Quà VIP</span>
-                <span>↗</span>
+
               </a>
               <a
                 href="tel:0833184106"
@@ -279,7 +258,7 @@ export default function Hop3TraiVipPage() {
 
           <figure className="article-inline-image">
             <img
-              src="/hop-qua-3-trai-vip.jpg"
+              src="/san-pham-hop-qua-3-trai.jpg"
               alt="Cận cảnh hộp quà 3 trái mãng cầu Bà Đen sang trọng với quai xách tiện lợi"
               loading="lazy"
             />
@@ -329,21 +308,21 @@ export default function Hop3TraiVipPage() {
           <div className="related-products-grid">
             <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-5kg.jpg" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
 
             <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-15kg.png" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-15kg.jpg" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
           </div>
@@ -367,7 +346,7 @@ export default function Hop3TraiVipPage() {
               rel="noreferrer"
             >
               <span>Nhắn Zalo tư vấn</span>
-              <span>↗</span>
+
             </a>
           </div>
         </section>

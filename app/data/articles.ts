@@ -9,6 +9,12 @@ export interface Article {
   description: string;
 }
 
+/**
+ * Nguồn dữ liệu chung cho trang tin và khối bài viết liên quan.
+ * Bài mới chỉ cần thêm một bản ghi tại đây và tạo nội dung dưới /tin-tuc.
+ * Khung trình bày được áp tự động bởi app/tin-tuc/layout.tsx.
+ */
+
 export const articles: Article[] = [
   {
     slug: "/vi-sao-mang-cau-ba-den-doi-khi-co-sau",
@@ -47,7 +53,7 @@ export const articles: Article[] = [
   {
     slug: "/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den",
     title: "Các dịp lễ lớn cúng trong năm của người Việt và ý nghĩa của mãng cầu Bà Đen trong văn hóa truyền thống",
-    kicker: "Văn hóa & Tâm linh • Tây Ninh",
+    kicker: "Văn hóa & Tâm linh, Tây Ninh",
     badge: "Văn hóa cúng lễ",
     image: "/cung-le-trai-cay-mang-cau-ba-den.jpg",
     date: "Tháng 8/2026",
@@ -57,21 +63,21 @@ export const articles: Article[] = [
   },
   {
     slug: "/van-chuyen-mang-cau-ba-den",
-    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói NABADEN",
-    kicker: "Đóng gói & Vận chuyển • Tây Ninh",
+    title: "Vận chuyển Mãng cầu Bà Đen như thế nào? Quy trình đóng gói Mãng Cầu Bà Đen",
+    kicker: "Đóng gói & Vận chuyển, Tây Ninh",
     badge: "Vận chuyển & Đóng gói",
-    image: "/thuc-te-dong-goi-nhieu-thung.jpg",
+    image: "/thuc-te-dong-goi.jpg",
     date: "Tháng 8/2026",
     readTime: "6 phút đọc",
     description:
-      "Khám phá quy trình vận chuyển Mãng Cầu Bà Đen NABADEN từ vườn Tây Ninh đến tay khách hàng: Cách chọn độ già, bọc xốp chống va đập, kiểm soát thời gian và mẹo kiểm tra khi nhận.",
+      "Khám phá quy trình vận chuyển Mãng Cầu Bà Đen từ vườn Tây Ninh đến tay khách hàng: Cách chọn độ già, bọc xốp chống va đập, kiểm soát thời gian và mẹo kiểm tra khi nhận.",
   },
   {
     slug: "/cach-bao-quan-mang-cau-ba-den",
     title: "Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà",
-    kicker: "Mẹo hay & Bảo quản • Tây Ninh",
+    kicker: "Mẹo hay & Bảo quản, Tây Ninh",
     badge: "Kinh nghiệm bảo quản",
-    image: "/dong-thung-carton-mang-cau-xop.jpg",
+    image: "/thuc-te-dong-goi.jpg",
     date: "Tháng 8/2026",
     readTime: "5 phút đọc",
     description:
@@ -80,7 +86,7 @@ export const articles: Article[] = [
   {
     slug: "/mua-mang-cau-ba-den-thang-may",
     title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh",
-    kicker: "Mùa vụ & Nông sản • Tây Ninh",
+    kicker: "Mùa vụ & Nông sản, Tây Ninh",
     badge: "Mùa vụ thu hoạch",
     image: "/vuon-mang-cau-tay-ninh-bao-trai.jpg",
     date: "Tháng 8/2026",
@@ -91,9 +97,9 @@ export const articles: Article[] = [
   {
     slug: "/di-tay-ninh-mua-mang-cau-ba-den-o-dau",
     title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn",
-    kicker: "Cẩm nang du lịch • Tây Ninh",
+    kicker: "Cẩm nang du lịch, Tây Ninh",
     badge: "Kinh nghiệm du lịch",
-    image: "/trai-mang-cau-chin-gia-loai-1.jpg",
+    image: "/thuc-te-mang-cau-tuoi.jpg",
     date: "Tháng 8/2026",
     readTime: "5 phút đọc",
     description:
@@ -102,7 +108,7 @@ export const articles: Article[] = [
   {
     slug: "/mang-cau-ba-den-dac-san-tay-ninh",
     title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh",
-    kicker: "Nông sản bản sắc • Tây Ninh",
+    kicker: "Nông sản bản sắc, Tây Ninh",
     badge: "Đặc sản nổi tiếng",
     image: "/hai-trieu-trai-mang-cau-chin.jpg",
     date: "Tháng 8/2026",
@@ -113,7 +119,7 @@ export const articles: Article[] = [
   {
     slug: "/mua-mang-cau-ba-den-chinh-goc-tay-ninh",
     title: "Tìm mãng cầu Bà Đen chính gốc Tây Ninh ở đâu? Kinh nghiệm chọn mua chuẩn ngon",
-    kicker: "Tin tức mùa vụ • Tây Ninh",
+    kicker: "Tin tức mùa vụ, Tây Ninh",
     badge: "Kinh nghiệm chọn mua",
     image: "/thuc-te-phan-loai.jpg",
     date: "Tháng 8/2026",

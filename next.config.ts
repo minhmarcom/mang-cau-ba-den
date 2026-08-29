@@ -14,6 +14,21 @@ const nextConfig: NextConfig = {
         destination: "https://mangcaubaden.vn/:path*",
         permanent: true,
       },
+      {
+        source: "/mua-mang-cau-ba-den",
+        destination: "/san-pham",
+        permanent: true,
+      },
+      {
+        source: "/dat-mang-cau-ba-den",
+        destination: "/san-pham",
+        permanent: true,
+      },
+      {
+        source: "/mua-na-ba-den",
+        destination: "/san-pham",
+        permanent: true,
+      },
     ];
   },
 };

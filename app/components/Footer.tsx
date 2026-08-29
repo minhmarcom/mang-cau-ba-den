@@ -15,7 +15,6 @@ export default function Footer({ backLink }: FooterProps) {
         {backLink && (
           <div className="footer-back-wrap">
             <Link href={backLink.href} className="footer-back-pill">
-              <span className="back-arrow" aria-hidden="true">←</span>
               <span>{backLink.label}</span>
             </Link>
           </div>
@@ -64,8 +63,7 @@ export default function Footer({ backLink }: FooterProps) {
                 title="Xem chỉ đường đến Vườn Mãng Cầu Bà Đen trên Google Maps"
                 style={{ color: "inherit", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "4px", transition: "color 0.2s" }}
               >
-                <span>📍 Vùng trồng Thạnh Tân, Chân Núi Bà Đen, TP. Tây Ninh</span>
-                <span style={{ fontSize: "0.82em", opacity: 0.85 }} aria-hidden="true">↗ (Google Maps)</span>
+                <span>Vùng trồng Thạnh Tân, Chân Núi Bà Đen, TP. Tây Ninh — Google Maps</span>
               </a>
             </p>
           </div>
@@ -81,9 +79,6 @@ export default function Footer({ backLink }: FooterProps) {
                 className="footer-btn-pill btn-facebook"
                 aria-label="Facebook Fanpage Mãng Cầu Bà Đen"
               >
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
                 <span>Facebook</span>
               </a>
 
@@ -94,9 +89,6 @@ export default function Footer({ backLink }: FooterProps) {
                 className="footer-btn-pill btn-zalo"
                 aria-label="Nhắn tin Zalo 0833 184 106"
               >
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                </svg>
                 <span>Zalo Tư Vấn</span>
               </a>
 
@@ -107,9 +99,6 @@ export default function Footer({ backLink }: FooterProps) {
                 className="footer-btn-pill btn-tiktok"
                 aria-label="Kênh TikTok Mãng Cầu Bà Đen"
               >
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
-                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.75 1.48-.03 2.75-1.04 3.09-2.48.15-.65.17-1.33.17-2V.02h-.03z" />
-                </svg>
                 <span>TikTok</span>
               </a>
             </div>
@@ -119,13 +108,11 @@ export default function Footer({ backLink }: FooterProps) {
         {/* BOTTOM COPYRIGHT & SITEMAP BAR */}
         <div className="footer-bottom-bar">
           <p className="copyright-text">
-            © 2026 Mãng Cầu Bà Đen NABADEN • Giữ trọn vị quê nhà
+            © 2026 Mãng Cầu Bà Đen — Giữ trọn vị quê nhà
           </p>
           <div className="footer-quick-links">
             <Link href="/san-pham">Sản phẩm</Link>
-            <span className="dot-sep" aria-hidden="true">•</span>
             <Link href="/tin-tuc">Tin tức &amp; Cẩm nang</Link>
-            <span className="dot-sep" aria-hidden="true">•</span>
             <Link href="/hop-tac" style={{ color: "#fcd34d", fontWeight: 700 }}>Hợp Tác Đối Tác &amp; CTV</Link>
           </div>
         </div>

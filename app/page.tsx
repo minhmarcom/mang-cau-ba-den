@@ -10,18 +10,20 @@ const products = [
     no: "01",
     title: "Hộp Đặc Biệt (3 Quả)",
     slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
-    tag: "OCOP 3 Sao • Quà biếu VIP",
-    image: "/hop-dac-biet-3-qua.png",
+    tag: "OCOP 3 Sao, Quà biếu VIP",
+    price: "180.000₫",
+    image: "/san-pham-hop-qua-3-trai.jpg",
     copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng, bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
     featured: true,
-    badge: "⭐ Hộp quà đặc biệt",
+    badge: "Hộp quà đặc biệt",
   },
   {
     no: "02",
     title: "Thùng 5KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-5kg",
-    tag: "OCOP 3 Sao • Thưởng thức & Biếu tặng",
-    image: "/thung-5kg.png",
+    tag: "OCOP 3 Sao, Thưởng thức & Biếu tặng",
+    price: "325.000₫",
+    image: "/san-pham-thung-5kg.jpg",
     copy: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ, giữ trọn độ tươi ngọt tự nhiên cho gia đình.",
     featured: false,
   },
@@ -29,8 +31,9 @@ const products = [
     no: "03",
     title: "Thùng 15KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-15kg",
-    tag: "OCOP 3 Sao • Đơn sỉ & Vận chuyển xa",
-    image: "/thung-15kg.png",
+    tag: "OCOP 3 Sao, Đơn sỉ & Vận chuyển xa",
+    price: "900.000₫",
+    image: "/san-pham-thung-15kg.jpg",
     copy: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển nhanh đến TP.HCM, Hà Nội và toàn quốc.",
     featured: false,
   },
@@ -50,15 +53,15 @@ const gallery = [
     shape: "gallery-half",
   },
   {
-    src: "/hop-qua-nabaden-thiet-ke.jpg",
-    alt: "Hộp quà mãng cầu Bà Đen 3 trái NABADEN Thạnh Tân Co.op cao cấp",
-    caption: "Hộp quà biếu 3 trái NABADEN Thạnh Tân Co.op VIP",
+    src: "/san-pham-hop-qua-3-trai.jpg",
+    alt: "Hộp quà Mãng Cầu Bà Đen 3 trái cao cấp",
+    caption: "Hộp quà biếu 3 trái Mãng Cầu Bà Đen",
     shape: "gallery-half",
   },
   {
     src: "/mang-cau-tap-ket-tai-vuon.jpg",
     alt: "Mãng cầu bọc xốp thu hoạch tập kết dồi dào tại vườn Thạnh Tân",
-    caption: "Thu hoạch tập kết dồi dào tại vườn NABADEN Thạnh Tân",
+    caption: "Thu hoạch tập kết dồi dào tại vườn Mãng Cầu Bà Đen",
     shape: "gallery-wide",
   },
   {
@@ -68,7 +71,7 @@ const gallery = [
     shape: "gallery-half",
   },
   {
-    src: "/dong-thung-carton-mang-cau-xop.jpg",
+    src: "/thuc-te-dong-goi.jpg",
     alt: "Đóng thùng carton mãng cầu bọc xốp thoáng khí",
     caption: "Đóng thùng carton thoáng khí bọc xốp chống va đập",
     shape: "gallery-half",
@@ -79,7 +82,7 @@ const faqs = [
   {
     question: "Mãng cầu Bà Đen là gì và được trồng ở đâu?",
     answer:
-      "Mãng cầu Bà Đen là giống na dai đặc sản được canh tác tại vùng đất xám chân núi Bà Đen (Tây Ninh). NABADEN thu hoạch và phân phối trực tiếp từ nhà vườn HTX Thạnh Tân Co.op đạt chuẩn VietGAP & OCOP 3 sao.",
+      "Mãng cầu Bà Đen là giống na dai đặc sản được canh tác tại vùng đất xám chân núi Bà Đen (Tây Ninh), được tuyển chọn và phân phối trực tiếp từ vùng trồng đạt chuẩn VietGAP & OCOP 3 sao.",
   },
   {
     question: "Mãng cầu Bà Đen giá bao nhiêu 1kg hôm nay?",
@@ -89,7 +92,7 @@ const faqs = [
   {
     question: "Mùa mãng cầu Tây Ninh vào thời gian nào?",
     answer:
-      "Mãng cầu Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10).",
+      "Mãng cầu Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của nhà vườn. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10).",
   },
   {
     question: "Cách chọn mãng cầu Bà Đen ngon không bị sượng?",
@@ -102,9 +105,9 @@ const faqs = [
       "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0833 184 106. NABADEN hái tươi tại vườn Thạnh Tân, bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
   },
   {
-    question: "Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?",
+    question: "Mãng Cầu Bà Đen có chứng nhận an toàn nào?",
     answer:
-      "Mãng cầu NABADEN đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng từ HTX Nông nghiệp Thạnh Tân.",
+      "Mãng Cầu Bà Đen đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, trái được bao bọc an toàn trên cành và có thông tin nguồn gốc rõ ràng.",
   },
 ];
 
@@ -123,13 +126,13 @@ const localBusinessSchema = {
   "@type": ["LocalBusiness", "ProduceFarm", "Store"],
   "@id": "https://mangcaubaden.vn/#business",
   name: "Mãng Cầu Bà Đen Tây Ninh — Vùng Trồng Chính Gốc",
-  alternateName: ["Mãng Cầu Bà Đen NABADEN", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh", "Vựa Mãng Cầu Núi Bà Đen"],
+  alternateName: ["Mãng Cầu Bà Đen", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh", "Vựa Mãng Cầu Núi Bà Đen"],
   url: "https://mangcaubaden.vn/",
   logo: "https://mangcaubaden.vn/logo.png",
   image: [
     "https://mangcaubaden.vn/vuon-nui-ba-den.jpg",
-    "https://mangcaubaden.vn/hop-dac-biet-3-qua.png",
-    "https://mangcaubaden.vn/thung-5kg.png"
+    "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
+    "https://mangcaubaden.vn/san-pham-thung-5kg.jpg"
   ],
   description:
     "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh chính gốc. Cập nhật kiến thức mùa vụ, cách chọn, bảo quản, bảng giá mãng cầu tại vườn và phân phối sỉ lẻ toàn quốc.",
@@ -178,7 +181,7 @@ const localBusinessSchema = {
     "https://www.facebook.com/mangcaubaden.vn/",
     "https://zalo.me/0833184106",
     "https://www.tiktok.com/@mangcaubaden",
-    "https://nabaden.vn",
+    "https://mangcaubaden.vn",
   ],
 };
 
@@ -193,37 +196,19 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Mãng Cầu Bà Đen Hộp Đặc Biệt (3 Quả VIP)",
-        image: "https://mangcaubaden.vn/hop-dac-biet-3-qua.png",
+        alternateName: ["Hộp na Bà Đen 3 trái", "Hộp quà mãng cầu Tây Ninh"],
+        image: "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
           price: "180000",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
           url: "https://mangcaubaden.vn/san-pham/hop-mang-cau-ba-den-3-trai-vip",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "128",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Chị Thanh Hằng" },
-            reviewBody: "Hộp quà mãng cầu 3 trái VIP sang trọng, dâng lễ Núi Bà Đen rất ý nghĩa."
-          }
-        ]
       },
     },
     {
@@ -232,37 +217,19 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn",
-        image: "https://mangcaubaden.vn/thung-5kg.png",
+        alternateName: ["Thùng na Bà Đen 5kg", "Mãng cầu Tây Ninh thùng 5kg"],
+        image: "https://mangcaubaden.vn/san-pham-thung-5kg.jpg",
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
           price: "325000",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
           url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-5kg",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "96",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Anh Minh Đức" },
-            reviewBody: "Thùng 5kg bọc xốp cẩn thận, nhận hàng mãng cầu còn rất tươi."
-          }
-        ]
       },
     },
     {
@@ -271,37 +238,19 @@ const productListSchema = {
       item: {
         "@type": "Product",
         name: "Thùng 15KG Mãng Cầu Bà Đen Đơn Sỉ & Vận Chuyển Xa",
-        image: "https://mangcaubaden.vn/thung-15kg.png",
+        alternateName: ["Thùng na Bà Đen 15kg", "Mãng cầu Tây Ninh giá sỉ"],
+        image: "https://mangcaubaden.vn/san-pham-thung-15kg.jpg",
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen NABADEN" },
+        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
           price: "900000",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
           url: "https://mangcaubaden.vn/san-pham/thung-mang-cau-ba-den-15kg",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.8",
-          reviewCount: "74",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: [
-          {
-            "@type": "Review",
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
-              worstRating: "1"
-            },
-            author: { "@type": "Person", name: "Đại lý Nông sản" },
-            reviewBody: "Đơn sỉ 15kg giao hỏa tốc đóng thùng chịu lực cực tốt."
-          }
-        ]
       },
     },
   ],
@@ -310,9 +259,10 @@ const productListSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: 'Mãng Cầu Bà Đen Tây Ninh - Sản vật vùng "đất Thánh"',
+  name: "Mãng Cầu Bà Đen",
+  alternateName: ["Na Bà Đen", "Na Tây Ninh", "Mãng Cầu Tây Ninh", "Mãng Cầu Núi Bà Đen"],
   description:
-    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.",
+    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ Mãng Cầu Bà Đen.",
   url: "https://mangcaubaden.vn/",
   inLanguage: "vi-VN",
 };
@@ -468,9 +418,6 @@ export default function Home() {
             href="#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </a>
 
@@ -495,32 +442,32 @@ export default function Home() {
                 <a href="#cau-chuyen" onClick={closeMenu}>
                   <span className="mobile-nav-num">01</span>
                   <span>Câu chuyện vườn nhà</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#san-pham" onClick={closeMenu}>
                   <span className="mobile-nav-num">02</span>
                   <span>Sản phẩm & Quà biếu</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#hinh-anh" onClick={closeMenu}>
                   <span className="mobile-nav-num">03</span>
                   <span>Hình ảnh thực tế</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#dat-hang" onClick={closeMenu}>
                   <span className="mobile-nav-num">04</span>
                   <span>Đặt mua & Quà tặng</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#tin-tuc" onClick={closeMenu}>
                   <span className="mobile-nav-num">05</span>
                   <span>Tin tức từ vườn</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
                 <a href="#lien-he" onClick={closeMenu}>
                   <span className="mobile-nav-num">06</span>
                   <span>Kênh liên hệ mua hàng</span>
-                  <span className="mobile-nav-arrow">→</span>
+
                 </a>
               </div>
 
@@ -539,7 +486,7 @@ export default function Home() {
                   onClick={closeMenu}
                 >
                   <span>Nhắn tin Zalo trực tiếp</span>
-                  <span>↗</span>
+
                 </a>
               </div>
 
@@ -566,7 +513,7 @@ export default function Home() {
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow">
-            Nông sản quê mình • Tây Ninh
+            Nông sản quê mình, Tây Ninh
           </p>
           <h1>
             <span className="hero-line-1">Trái ngọt</span>
@@ -578,12 +525,12 @@ export default function Home() {
           <div className="hero-actions">
             <a className="primary-button" href="#san-pham">
               <span>Khám phá sản phẩm</span>
-              <span className="btn-arrow">→</span>
+
             </a>
           </div>
         </div>
         <div className="hero-note">
-          <span className="note-number">✓</span>
+
           <p>
             <strong>Chuẩn VietGAP & OCOP</strong>
             <br />
@@ -597,7 +544,7 @@ export default function Home() {
         <div className="geo-entity-container">
           <div className="geo-entity-card">
             <div className="geo-entity-kicker">
-              <span>🌿 THƯƠNG HIỆU NÔNG SẢN ĐẶC SẢN CHÍNH THỨC</span>
+              <span> THƯƠNG HIỆU NÔNG SẢN ĐẶC SẢN CHÍNH THỨC</span>
             </div>
             <h2 className="geo-entity-title">
               Mãng Cầu Bà Đen Tây Ninh Là Gì?
@@ -607,28 +554,28 @@ export default function Home() {
             </p>
             <div className="geo-badges-grid">
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">🏅</span>
+
                 <div className="geo-badge-text">
-                  <strong>OCOP 3★ Tây Ninh</strong>
+                  <strong>OCOP 3 Tây Ninh</strong>
                   <span>Đặc sản cấp tỉnh chứng nhận</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">🌱</span>
+
                 <div className="geo-badge-text">
                   <strong>Tiêu Chuẩn VietGAP</strong>
                   <span>Canh tác an toàn sinh học</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">⛰️</span>
+
                 <div className="geo-badge-text">
                   <strong>Vùng Trồng Núi Bà Đen</strong>
                   <span>Thổ nhưỡng chân núi Tây Ninh</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-                <span className="geo-badge-icon">✨</span>
+
                 <div className="geo-badge-text">
                   <strong>Nông Sản Chính Gốc</strong>
                   <span>100% Thu hoạch tại vườn Tây Ninh</span>
@@ -658,7 +605,7 @@ export default function Home() {
             Chúng tôi kết nối câu chuyện vùng trồng với những cơ hội mới — từ kênh bán lẻ, quà tặng đến sản phẩm chế biến và trải nghiệm nông nghiệp.
           </p>
           <a className="arrow-link" href="#san-pham">
-            Khám phá các dòng sản phẩm <span>→</span>
+            Khám phá các dòng sản phẩm
           </a>
         </div>
         <div className="intro-image">
@@ -667,7 +614,7 @@ export default function Home() {
             alt="Vườn mãng cầu xanh tốt dưới chân Núi Bà Đen Tây Ninh"
             loading="lazy"
           />
-          <span>Vùng trồng chân Núi Bà Đen • Tây Ninh</span>
+          <span>Vùng trồng chân Núi Bà Đen, Tây Ninh</span>
         </div>
       </section>
 
@@ -752,6 +699,7 @@ export default function Home() {
               </div>
               <p className="product-tag">{product.tag}</p>
               <h3>{product.title}</h3>
+              <p className="product-item-price"><strong>{product.price}</strong><span>giá tham khảo</span></p>
               <p>{product.copy}</p>
               <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginTop: "16px" }}>
                 <a
@@ -771,7 +719,7 @@ export default function Home() {
                   aria-label={`Xem chi tiết ${product.title}`}
                 >
                   <span>Chi tiết</span>
-                  <span>→</span>
+
                 </a>
                 <a
                   href="https://zalo.me/0833184106"
@@ -791,7 +739,7 @@ export default function Home() {
                   }}
                   aria-label={`Trao đổi về ${product.title} qua Zalo`}
                 >
-                  {product.featured ? "Đặt hộp quà" : "Đặt qua Zalo"} <span>↗</span>
+                  {product.featured ? "Đặt hộp quà" : "Đặt qua Zalo"}
                 </a>
               </div>
             </article>
@@ -849,7 +797,7 @@ export default function Home() {
             >
               <span>01</span>
               Hộp quà 3 trái VIP biếu tặng trang nhã
-              <b>→</b>
+
             </a>
             <a
               href="https://zalo.me/0833184106"
@@ -858,7 +806,7 @@ export default function Home() {
             >
               <span>02</span>
               Thùng 5kg tuyển chọn ăn gia đình
-              <b>→</b>
+
             </a>
             <a
               href="https://zalo.me/0833184106"
@@ -867,7 +815,7 @@ export default function Home() {
             >
               <span>03</span>
               Thùng 10kg – 15kg đơn sỉ & doanh nghiệp
-              <b>→</b>
+
             </a>
             <a
               href="https://zalo.me/0833184106"
@@ -876,7 +824,7 @@ export default function Home() {
             >
               <span>04</span>
               Giao nhanh TP.HCM, Hà Nội & toàn quốc
-              <b>→</b>
+
             </a>
           </div>
         </div>
@@ -914,7 +862,7 @@ export default function Home() {
               letterSpacing: "0.08em",
               marginBottom: "16px"
             }}>
-              <span>🤝 HỢP TÁC KINH DOANH 0 VỐN</span>
+              <span> HỢP TÁC KINH DOANH 0 VỐN</span>
             </div>
             <h2 style={{
               fontSize: "clamp(1.6rem, 2.4vw + 0.8rem, 2.4rem)",
@@ -932,7 +880,7 @@ export default function Home() {
               maxWidth: "620px",
               marginBottom: "24px"
             }}>
-              NABADEN hỗ trợ các khâu từ <strong>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</strong>. Đối tác &amp; CTV chủ động lên đơn và đối soát chiết khấu minh bạch!
+              Mãng Cầu Bà Đen hỗ trợ các khâu từ <strong>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</strong>. Đối tác &amp; CTV chủ động lên đơn và đối soát chiết khấu minh bạch!
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
               <Link
@@ -952,7 +900,7 @@ export default function Home() {
                 }}
               >
                 <span>Xem Quyền Lợi &amp; Đăng Ký Ngay</span>
-                <span>→</span>
+
               </Link>
               <a
                 href="https://zalo.me/0833184106"
@@ -996,12 +944,12 @@ export default function Home() {
               style={{ objectFit: "contain", marginBottom: "14px", filter: "drop-shadow(0 6px 12px rgba(0,0,0,0.3))" }}
             />
             <div style={{ color: "#fcd34d", fontWeight: 800, fontSize: "1.1rem", marginBottom: "4px" }}>
-              MÃNG CẦU BÀ ĐEN NABADEN
+              MÃNG CẦU BÀ ĐEN
             </div>
             <div style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "0.85rem", lineHeight: 1.45 }}>
-              ✓ Bán hàng theo đơn • Không ôm hàng<br />
-              ✓ Hái tươi tại vườn &amp; Ship toàn quốc<br />
-              ✓ Hỗ trợ xử lý &amp; đối soát linh hoạt
+               Bán hàng theo đơn, Không ôm hàng<br />
+               Hái tươi tại vườn &amp; Ship toàn quốc<br />
+               Hỗ trợ xử lý &amp; đối soát linh hoạt
             </div>
           </div>
         </div>
@@ -1057,7 +1005,7 @@ export default function Home() {
               }}
             >
               <span>Xem tất cả bài viết ({articles.length})</span>
-              <span>→</span>
+
             </a>
           </div>
 
@@ -1083,9 +1031,9 @@ export default function Home() {
                   <div className="featured-article-action">
                     <a href={art.slug} className="featured-read-btn">
                       <span>Đọc bài viết chi tiết</span>
-                      <span>→</span>
+
                     </a>
-                    <span className="featured-read-time">{art.readTime} • {art.date}</span>
+                    <span className="featured-read-time">{art.readTime}, {art.date}</span>
                   </div>
                 </div>
               </article>
@@ -1110,7 +1058,7 @@ export default function Home() {
               }}
             >
               <span>Xem toàn bộ chuyên mục Tin tức & Cẩm nang</span>
-              <span>→</span>
+
             </a>
           </div>
         </div>
@@ -1137,12 +1085,11 @@ export default function Home() {
             <b>Gọi ngay ↗</b>
           </a>
           <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
-            <span className="channel-icon" style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>f</span>
             <div>
               <small>Fanpage chính thức</small>
               <strong>Facebook Mãng Cầu Bà Đen</strong>
             </div>
-            <b>↗</b>
+
           </a>
           <a href="https://zalo.me/0833184106" target="_blank" rel="noreferrer">
             <span className="channel-icon">Z</span>
@@ -1150,23 +1097,23 @@ export default function Home() {
               <small>Nhắn tin nhanh</small>
               <strong>Zalo 0833 184 106</strong>
             </div>
-            <b>↗</b>
+
           </a>
           <a href="https://share.google/mKCDKiRjRo25L0TDN" target="_blank" rel="noopener noreferrer">
-            <span className="channel-icon" style={{ backgroundColor: "#047857", color: "#ffffff", fontSize: "16px" }}>📍</span>
+
             <div>
               <small>Vị trí nhà vườn</small>
               <strong>Google Maps: Vườn Mãng Cầu</strong>
             </div>
-            <b>Chỉ đường ↗</b>
+            <b>Chỉ đường </b>
           </a>
           <a href="https://www.tiktok.com/@mangcaubaden" target="_blank" rel="noreferrer">
-            <span className="channel-icon">♪</span>
+
             <div>
               <small>Xem video tại vườn</small>
               <strong>TikTok @mangcaubaden</strong>
             </div>
-            <b>↗</b>
+
           </a>
         </div>
       </section>
@@ -1183,19 +1130,6 @@ export default function Home() {
           className={currentTab === "top" ? "is-active" : ""}
           aria-current={currentTab === "top" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <polyline points="9 22 9 12 15 12 15 22" />
-          </svg>
           <span>Trang chủ</span>
         </a>
 
@@ -1204,21 +1138,6 @@ export default function Home() {
           className={currentTab === "san-pham" ? "is-active" : ""}
           aria-current={currentTab === "san-pham" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="m7.5 4.27 9 5.15" />
-            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-            <path d="m3.3 7 8.7 5 8.7-5" />
-            <path d="M12 22V12" />
-          </svg>
           <span>Sản phẩm</span>
         </a>
 
@@ -1226,21 +1145,6 @@ export default function Home() {
           href="/hop-tac"
           aria-label="Hợp tác đối tác &amp; CTV"
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-          </svg>
           <span>Hợp tác</span>
         </Link>
 
@@ -1249,21 +1153,6 @@ export default function Home() {
           className={currentTab === "tin-tuc" ? "is-active" : ""}
           aria-current={currentTab === "tin-tuc" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
-            <path d="M18 14h-8" />
-            <path d="M15 18h-5" />
-            <path d="M10 6h8v4h-8V6Z" />
-          </svg>
           <span>Tin tức</span>
         </a>
 
@@ -1272,18 +1161,6 @@ export default function Home() {
           className={currentTab === "lien-he" ? "is-active" : ""}
           aria-current={currentTab === "lien-he" ? "page" : undefined}
         >
-          <svg
-            className="nav-svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
           <span>Liên hệ</span>
         </a>
       </nav>
@@ -1298,8 +1175,8 @@ export default function Home() {
               {
                 "@type": ["Organization", "AgriculturalBusiness", "LocalBusiness"],
                 "@id": "https://mangcaubaden.vn/#organization",
-                "name": "Mãng Cầu Bà Đen Tây Ninh - NABADEN",
-                "alternateName": "Hợp tác xã Nông nghiệp Mãng cầu Thạnh Tân",
+                "name": "Mãng Cầu Bà Đen Tây Ninh - Mãng Cầu Bà Đen",
+                "alternateName": "Đặc sản Mãng Cầu Bà Đen Tây Ninh",
                 "url": "https://mangcaubaden.vn/",
                 "logo": {
                   "@type": "ImageObject",
@@ -1332,7 +1209,7 @@ export default function Home() {
                 },
                 "sameAs": [
                   "https://www.facebook.com/mangcaubaden.vn/",
-                  "https://nabaden.vn/"
+                  "https://mangcaubaden.vn/"
                 ]
               },
               {
@@ -1352,7 +1229,7 @@ export default function Home() {
                     "name": "Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của NABADEN. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10)."
+                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của nhà vườn. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10)."
                     }
                   },
                   {
@@ -1373,10 +1250,10 @@ export default function Home() {
                   },
                   {
                     "@type": "Question",
-                    "name": "Mãng cầu Bà Đen NABADEN có chứng nhận an toàn nào?",
+                    "name": "Mãng Cầu Bà Đen có chứng nhận an toàn nào?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Mãng cầu NABADEN đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, 100% trái bao bọc túi an toàn trên cành và có tem truy xuất nguồn gốc rõ ràng."
+                      "text": "Mãng Cầu Bà Đen đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, trái được bao bọc an toàn trên cành và có thông tin nguồn gốc rõ ràng."
                     }
                   }
                 ]

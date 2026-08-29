@@ -13,7 +13,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Nhận diện website nguồn (nabaden.vn hoặc mangcaubaden.vn)
+    // Nhận diện website nguồn của Mãng Cầu Bà Đen
     const host = request.headers.get("host") || "";
     const referer = request.headers.get("referer") || "";
     let detectedWebsite = sourceWebsite || "";
@@ -21,16 +21,12 @@ export async function POST(request: Request) {
     if (!detectedWebsite || detectedWebsite.includes("localhost")) {
       if (host.includes("mangcaubaden") || referer.includes("mangcaubaden")) {
         detectedWebsite = "mangcaubaden.vn";
-      } else if (host.includes("nabaden") || referer.includes("nabaden")) {
-        detectedWebsite = "nabaden.vn";
       } else {
-        detectedWebsite = detectedWebsite || "nabaden.vn";
+        detectedWebsite = detectedWebsite || "mangcaubaden.vn";
       }
     } else {
       if (detectedWebsite.includes("mangcaubaden")) {
         detectedWebsite = "mangcaubaden.vn";
-      } else if (detectedWebsite.includes("nabaden")) {
-        detectedWebsite = "nabaden.vn";
       }
     }
 
@@ -91,7 +87,7 @@ export async function POST(request: Request) {
 
     return Response.json({
       success: true,
-      message: "Đăng ký thành công! Đội ngũ Mãng Cầu Bà Đen NABADEN sẽ liên hệ Zalo bạn ngay trong 15 phút.",
+      message: "Đăng ký thành công! Đội ngũ Mãng Cầu Bà Đen sẽ liên hệ Zalo bạn ngay trong 15 phút.",
       data: payload,
     });
   } catch (error) {

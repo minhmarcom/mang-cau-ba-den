@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
+  title: "Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – Giá 900.000₫",
   description:
     "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh chuyên dụng đơn sỉ: Thùng carton dày dặn 3-5 lớp chịu lực, lỗ thông gió chống hấp hơi, trái già đều đẹp. Hỗ trợ gửi xe khách & đường bay toàn quốc.",
   keywords: [
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
   },
   openGraph: {
-    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
+    title: "Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – Giá 900.000₫",
     description:
       "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
     siteName: "Mãng Cầu Bà Đen",
     images: [
       {
-        url: `${siteUrl}/thung-15kg.png`,
+        url: `${siteUrl}/san-pham-thung-15kg.jpg`,
         width: 1200,
         height: 630,
         alt: "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh Đơn Sỉ",
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thùng Mãng Cầu Bà Đen 15KG Đơn Sỉ & Vận Chuyển Toàn Quốc | Mãng Cầu Bà Đen",
+    title: "Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – Giá 900.000₫",
     description:
       "Thùng carton 15kg dày dặn 3-5 lớp chịu lực, chuyên gửi xe khách & máy bay toàn quốc, giá sỉ tận vườn.",
-    images: [`${siteUrl}/thung-15kg.png`],
+    images: [`${siteUrl}/san-pham-thung-15kg.jpg`],
   },
 };
 
@@ -49,14 +49,14 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Thùng 15KG Mãng Cầu Bà Đen Tuyển Chọn (OCOP 3 Sao)",
-  image: `${siteUrl}/thung-15kg.png`,
+  alternateName: ["Thùng na Bà Đen 15kg", "Mãng cầu Tây Ninh giá sỉ"],
+  image: `${siteUrl}/san-pham-thung-15kg.jpg`,
   description:
     "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
   sku: "MCBD-THUNG-15KG",
-  mpn: "NAB-15KG",
   brand: {
     "@type": "Brand",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
   },
   offers: {
     "@type": "Offer",
@@ -64,32 +64,13 @@ const productSchema = {
     price: "900000",
     priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
     seller: {
       "@type": "Organization",
       name: "Mãng Cầu Bà Đen Tây Ninh",
     },
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "74",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-        worstRating: "1"
-      },
-      author: { "@type": "Person", name: "Đại lý Nông sản" },
-      reviewBody: "Đơn sỉ 15kg giao hỏa tốc đóng thùng chịu lực cực tốt."
-    }
-  ],
 };
 
 const breadcrumbSchema = {
@@ -164,16 +145,13 @@ export default function Thung15kgPage() {
             aria-label="Tư vấn đơn sỉ 15kg qua Zalo"
           >
             <span>Báo giá sỉ Zalo</span>
-            <span className="btn-arrow">↗</span>
+
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -194,16 +172,17 @@ export default function Thung15kgPage() {
         <div className="product-detail-hero">
           <div className="product-gallery-main">
             <img
-              src="/thung-15kg.png"
+              src="/san-pham-thung-15kg.jpg"
               alt="Thùng 15KG Mãng Cầu Bà Đen Tây Ninh Đơn Sỉ"
             />
           </div>
 
           <div className="product-specs-box">
-            <span className="product-item-tag">OCOP 3 Sao • Đơn Sỉ & Vận Chuyển Xa</span>
+            <span className="product-item-tag">OCOP 3 Sao, Đơn Sỉ & Vận Chuyển Xa</span>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Thùng 15KG Mãng Cầu Bà Đen Tuyển Chọn
             </h1>
+            <p className="product-item-price"><strong>900.000₫</strong><span>/ thùng 15kg</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Giải pháp tối ưu cho khách mua sỉ, đại lý phân phối hoa quả sạch, nhà hàng tiệc cưới hoặc khách hàng có nhu cầu gửi hàng đi tỉnh xa bằng đường bộ hoặc máy bay.
             </p>
@@ -245,7 +224,7 @@ export default function Thung15kgPage() {
                 style={{ width: "100%", justifyContent: "center" }}
               >
                 <span>Nhắn Zalo Báo Giá Sỉ Thùng 15KG</span>
-                <span>↗</span>
+
               </a>
               <a
                 href="tel:0833184106"
@@ -318,21 +297,21 @@ export default function Thung15kgPage() {
           <div className="related-products-grid">
             <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Đặc Biệt (3 Quả VIP)" loading="lazy" />
+                <img src="/san-pham-hop-qua-3-trai.jpg" alt="Hộp Đặc Biệt (3 Quả VIP)" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
 
             <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-5kg.jpg" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
           </div>
@@ -356,7 +335,7 @@ export default function Thung15kgPage() {
               rel="noreferrer"
             >
               <span>Nhắn Zalo tư vấn sỉ</span>
-              <span>↗</span>
+
             </a>
           </div>
         </section>

@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
+  title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
   description:
     "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh chính gốc: Từng trái già loại 1 tuyển chọn kỹ lưỡng, bọc xốp lưới êm ái, đóng thùng carton thoáng khí. Chuẩn VietGAP & OCOP 3 sao, ngọt thanh dẻo dai.",
   keywords: [
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
   },
   openGraph: {
-    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
+    title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
     description:
       "Thùng 5kg Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1: Bọc xốp lưới từng quả, đóng thùng carton có quai xách tiện dụng, thích hợp thưởng thức gia đình và biếu tặng.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
     siteName: "Mãng Cầu Bà Đen",
     images: [
       {
-        url: `${siteUrl}/thung-5kg.png`,
+        url: `${siteUrl}/san-pham-thung-5kg.jpg`,
         width: 1200,
         height: 630,
         alt: "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh Tuyển Chọn",
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thùng Mãng Cầu Bà Đen 5KG Tuyển Chọn | Mãng Cầu Bà Đen",
+    title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
     description:
       "Quy cách đóng thùng 5kg chuyên dụng, trái già loại 1 bọc xốp êm ái, chuẩn OCOP 3 sao Tây Ninh.",
-    images: [`${siteUrl}/thung-5kg.png`],
+    images: [`${siteUrl}/san-pham-thung-5kg.jpg`],
   },
 };
 
@@ -49,14 +49,14 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn (OCOP 3 Sao)",
-  image: `${siteUrl}/thung-5kg.png`,
+  alternateName: ["Thùng na Bà Đen 5kg", "Mãng cầu Tây Ninh thùng 5kg"],
+  image: `${siteUrl}/san-pham-thung-5kg.jpg`,
   description:
     "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
   sku: "MCBD-THUNG-05KG",
-  mpn: "NAB-05KG",
   brand: {
     "@type": "Brand",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
   },
   offers: {
     "@type": "Offer",
@@ -64,32 +64,13 @@ const productSchema = {
     price: "325000",
     priceValidUntil: "2027-12-31",
     availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
     seller: {
       "@type": "Organization",
       name: "Mãng Cầu Bà Đen Tây Ninh",
     },
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "96",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-        worstRating: "1"
-      },
-      author: { "@type": "Person", name: "Anh Minh Đức" },
-      reviewBody: "Thùng 5kg bọc xốp cẩn thận, nhận hàng mãng cầu còn rất tươi."
-    }
-  ],
 };
 
 const breadcrumbSchema = {
@@ -164,16 +145,13 @@ export default function Thung5kgPage() {
             aria-label="Tư vấn đặt thùng 5kg qua Zalo"
           >
             <span>Đặt thùng 5kg Zalo</span>
-            <span className="btn-arrow">↗</span>
+
           </a>
           <Link
             className="mobile-order-btn"
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -194,16 +172,17 @@ export default function Thung5kgPage() {
         <div className="product-detail-hero">
           <div className="product-gallery-main">
             <img
-              src="/thung-5kg.png"
+              src="/san-pham-thung-5kg.jpg"
               alt="Thùng 5KG Mãng Cầu Bà Đen Tây Ninh Tuyển Chọn"
             />
           </div>
 
           <div className="product-specs-box">
-            <span className="product-item-tag">OCOP 3 Sao • Thưởng Thức & Biếu Tặng</span>
+            <span className="product-item-tag">OCOP 3 Sao, Thưởng Thức & Biếu Tặng</span>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Thùng 5KG Mãng Cầu Bà Đen Tuyển Chọn
             </h1>
+            <p className="product-item-price"><strong>325.000₫</strong><span>/ thùng 5kg</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Quy cách đóng thùng 5kg chuyên dụng được đông đảo khách hàng ưa chuộng nhất: Từng quả già loại 1 đồng đều, bọc lưới xốp êm ái, lý tưởng để gia đình thưởng thức hoặc làm quà biếu người thân bạn bè.
             </p>
@@ -245,7 +224,7 @@ export default function Thung5kgPage() {
                 style={{ width: "100%", justifyContent: "center" }}
               >
                 <span>Nhắn Zalo Đặt Thùng 5KG</span>
-                <span>↗</span>
+
               </a>
               <a
                 href="tel:0833184106"
@@ -318,21 +297,21 @@ export default function Thung5kgPage() {
           <div className="related-products-grid">
             <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Đặc Biệt (3 Quả VIP)" loading="lazy" />
+                <img src="/san-pham-hop-qua-3-trai.jpg" alt="Hộp Đặc Biệt (3 Quả VIP)" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
 
             <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-15kg.png" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-15kg.jpg" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết </span>
               </div>
             </Link>
           </div>
@@ -356,7 +335,7 @@ export default function Thung5kgPage() {
               rel="noreferrer"
             >
               <span>Nhắn Zalo tư vấn</span>
-              <span>↗</span>
+
             </a>
           </div>
         </section>

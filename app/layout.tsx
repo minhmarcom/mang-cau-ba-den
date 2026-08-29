@@ -15,25 +15,25 @@ export async function generateMetadata(): Promise<Metadata> {
   const isLocal = host?.startsWith("localhost") || host?.startsWith("127.0.0.1");
   const siteUrl = isLocal ? `http://${host}` : "https://mangcaubaden.vn";
   const image = "https://mangcaubaden.vn/og.png";
-  const title = 'Mãng cầu Bà Đen Tây Ninh - Sản vật vùng "đất Thánh"';
-  const description = "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ NABADEN.";
+  const title = "Mãng Cầu Bà Đen Tây Ninh Chính Gốc – Giá & Đặt Mua";
+  const description = "Mãng Cầu Bà Đen, còn gọi là na Bà Đen Tây Ninh: xem sản phẩm, giá tham khảo, mùa vụ, cách chọn và đặt mua giao tận nơi qua Hotline/Zalo 0833 184 106.";
   const keywords = [
     // Từ khóa hạt nhân (Core Keywords)
     "mãng cầu Bà Đen", "mang cau ba den", "mãng cầu Bà Đen Tây Ninh", "mang cau tay ninh",
     "mãng cầu Tây Ninh", "đặc sản Tây Ninh", "đặc sản núi Bà Đen", "na Bà Đen", "na Tây Ninh",
     "mãng cầu na Bà Đen", "trái mãng cầu Bà Đen", "quả mãng cầu Tây Ninh",
-    
+
     // Từ khóa thương mại & Đặt mua (Commercial & Transactional)
     "mua mãng cầu Bà Đen chính gốc", "mua mang cau ba den", "giá mãng cầu Bà Đen hôm nay",
     "giá mãng cầu Tây Ninh tại vườn", "đặt mua mãng cầu Bà Đen online", "mãng cầu Bà Đen giao tận nơi",
     "hộp đặc biệt 3 quả mãng cầu", "hộp quà mãng cầu 3 trái VIP", "hộp quà mãng cầu Tây Ninh",
     "thùng mãng cầu 5kg", "thùng mãng cầu 15kg", "sỉ mãng cầu Bà Đen", "vựa mãng cầu Tây Ninh",
     "mãng cầu Tây Ninh giao TPHCM", "mãng cầu Tây Ninh giao Hà Nội",
-    
+
     // Từ khóa tiêu chuẩn chất lượng (Quality & Standards)
     "mãng cầu VietGAP Tây Ninh", "mãng cầu OCOP 3 sao", "mãng cầu bao trái an toàn",
     "mãng cầu sạch Tây Ninh", "mãng cầu tươi thu hoạch trong ngày", "mãng cầu loại 1 Tây Ninh",
-    
+
     // Từ khóa thông tin & Hướng dẫn (Informational)
     "vườn mãng cầu núi Bà Đen", "mùa mãng cầu Tây Ninh tháng mấy", "cách chọn mãng cầu Bà Đen ngon",
     "phân biệt mãng cầu Bà Đen chính gốc", "cách nhận biết mãng cầu chín", "cách bảo quản mãng cầu không bị sượng"
@@ -151,5 +151,4 @@ export default function RootLayout({
     </html>
   );
 }
-
 

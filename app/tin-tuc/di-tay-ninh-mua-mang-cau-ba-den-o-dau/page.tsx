@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
+        url: "https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg",
         width: 1200,
         height: 630,
         alt: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu - Kinh nghiệm chọn mua ngon chuẩn",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | Mãng Cầu Bà Đen",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen ngon, mua làm quà, cách bảo quản và vận chuyển khi đi du lịch Tây Ninh.",
-    images: ["https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg"],
+    images: ["https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg"],
   },
 };
 
@@ -54,15 +54,15 @@ const articleSchema = {
   description:
     "Hướng dẫn chi tiết kinh nghiệm chọn mua mãng cầu Bà Đen chính gốc khi đi du lịch Tây Ninh: cách chọn trái già, phân loại kích thước, bảo quản và vận chuyển đi xa.",
   image: [
-    "https://mangcaubaden.vn/trai-mang-cau-chin-gia-loai-1.jpg",
-    "https://mangcaubaden.vn/dong-thung-carton-mang-cau-xop.jpg",
-    "https://mangcaubaden.vn/can-trong-luong-mang-cau-tay-ninh.jpg",
+    "https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg",
+    "https://mangcaubaden.vn/thuc-te-dong-goi.jpg",
+    "https://mangcaubaden.vn/thuc-te-phan-loai.jpg",
   ],
   datePublished: "2026-08-16T09:00:00+07:00",
   dateModified: "2026-08-16T09:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -125,10 +125,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "NABADEN có phải là Mãng Cầu Bà Đen không?",
+      name: "Mãng cầu Bà Đen có gì đặc biệt?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NABADEN là thương hiệu phát triển xoay quanh sản phẩm Mãng Cầu Bà Đen, với định hướng tuyển chọn, phân loại, đóng gói và đưa đặc sản vùng trồng Tây Ninh đến người tiêu dùng.",
+        text: "Mãng cầu Bà Đen là đặc sản Tây Ninh nổi bật với thịt dai, vị ngọt thanh và hương thơm tự nhiên. Trái được tuyển chọn, phân loại và đóng gói phù hợp trước khi giao đến người tiêu dùng.",
       },
     },
   ],
@@ -161,7 +161,7 @@ const breadcrumbSchema = {
 
 export default function BuyCustardAppleGuidePage() {
   return (
-    <div className="article-page-wrap">
+    <div className="article-page-wrap news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -177,7 +177,7 @@ export default function BuyCustardAppleGuidePage() {
 
       {/* SITE HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"
@@ -210,9 +210,6 @@ export default function BuyCustardAppleGuidePage() {
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -252,7 +249,7 @@ export default function BuyCustardAppleGuidePage() {
           {/* FEATURED HERO IMAGE */}
           <figure className="article-hero-media">
             <img
-              src="/trai-mang-cau-chin-gia-loai-1.jpg"
+              src="/thuc-te-mang-cau-tuoi.jpg"
               alt="Mãng cầu Bà Đen Tây Ninh tuyển chọn trái to mắt nở đều bọc lưới xốp"
             />
             <figcaption>
@@ -271,7 +268,7 @@ export default function BuyCustardAppleGuidePage() {
               <li><a href="#bao-lau-thi-chin">5. Mãng Cầu Bà Đen bao lâu thì chín & cách bảo quản?</a></li>
               <li><a href="#van-chuyen-xa">6. Mua mang về TP.HCM & gửi đi Hà Nội, các tỉnh xa</a></li>
               <li><a href="#gia-ca-va-nhu-cau">7. Giá Mãng Cầu Bà Đen Tây Ninh bao nhiêu?</a></li>
-              <li><a href="#nabaden-hanh-trinh">8. NABADEN và hành trình đưa Mãng Cầu Bà Đen đến người tiêu dùng</a></li>
+              <li><a href="#hanh-trinh-mang-cau">8. Mãng Cầu Bà Đen và hành trình đưa Mãng Cầu Bà Đen đến người tiêu dùng</a></li>
               <li><a href="#faq">9. Câu hỏi thường gặp về Mãng Cầu Bà Đen</a></li>
             </ol>
           </div>
@@ -332,7 +329,7 @@ export default function BuyCustardAppleGuidePage() {
                 Nếu không có thời gian đi trực tiếp đến vườn, một phương án thuận tiện hơn là lựa chọn đơn vị chuyên cung cấp Mãng Cầu Bà Đen có thông tin nguồn gốc và quy cách sản phẩm rõ ràng.
               </p>
               <p>
-                <strong>NABADEN</strong> phát triển theo định hướng đưa Mãng Cầu Bà Đen đến gần hơn với người tiêu dùng thông qua việc tuyển chọn, phân loại, đóng gói và cung cấp thông tin rõ ràng về sản phẩm. Thay vì chỉ bán mãng cầu theo kilogram xô bồ, sản phẩm có thể được phân chia thành nhiều quy cách phù hợp với từng nhu cầu như:
+                <strong>Mãng Cầu Bà Đen</strong> phát triển theo định hướng đưa Mãng Cầu Bà Đen đến gần hơn với người tiêu dùng thông qua việc tuyển chọn, phân loại, đóng gói và cung cấp thông tin rõ ràng về sản phẩm. Thay vì chỉ bán mãng cầu theo kilogram xô bồ, sản phẩm có thể được phân chia thành nhiều quy cách phù hợp với từng nhu cầu như:
               </p>
               <ul>
                 <li><strong>Hộp tuyển chọn 3 trái VIP:</strong> Thiết kế sang trọng làm quà biếu đối tác, dâng lễ;</li>
@@ -361,12 +358,12 @@ export default function BuyCustardAppleGuidePage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/mang-cau-ba-den-nabaden-trung-bay.jpg"
-                  alt="Trưng bày mãng cầu Bà Đen NABADEN bọc lưới xốp và hộp quà biếu"
+                  src="/san-pham-hop-qua-3-trai.jpg"
+                  alt="Trưng bày mãng cầu Bà Đen Mãng Cầu Bà Đen bọc lưới xốp và hộp quà biếu"
                   loading="lazy"
                 />
                 <figcaption>
-                  Mãng cầu Bà Đen NABADEN được phân loại, đóng gói quai xách sang trọng rất thích hợp làm quà tặng du lịch.
+                  Mãng Cầu Bà Đen được phân loại, đóng gói quai xách sang trọng rất thích hợp làm quà tặng du lịch.
                 </figcaption>
               </figure>
             </section>
@@ -400,7 +397,7 @@ export default function BuyCustardAppleGuidePage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/can-trong-luong-mang-cau-tay-ninh.jpg"
+                  src="/thuc-te-phan-loai.jpg"
                   alt="Cân kiểm tra trọng lượng từng trái mãng cầu Bà Đen đạt chuẩn loại 1"
                   loading="lazy"
                 />
@@ -462,7 +459,7 @@ export default function BuyCustardAppleGuidePage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/dong-thung-carton-mang-cau-xop.jpg"
+                  src="/thuc-te-dong-goi.jpg"
                   alt="Các thùng carton mãng cầu Bà Đen bọc xốp cẩn thận sẵn sàng gửi toàn quốc"
                   loading="lazy"
                 />
@@ -489,13 +486,13 @@ export default function BuyCustardAppleGuidePage() {
               </p>
             </section>
 
-            <section id="nabaden-hanh-trinh">
-              <h2>8. NABADEN và hành trình đưa Mãng Cầu Bà Đen đến người tiêu dùng</h2>
+            <section id="hanh-trinh-mang-cau">
+              <h2>8. Mãng Cầu Bà Đen và hành trình đưa Mãng Cầu Bà Đen đến người tiêu dùng</h2>
               <p>
-                <strong>NABADEN</strong> được xây dựng với định hướng phát triển giá trị của Mãng Cầu Bà Đen thông qua câu chuyện vùng trồng, người nông dân, chất lượng sản phẩm và trải nghiệm minh bạch của người tiêu dùng.
+                <strong>Mãng Cầu Bà Đen</strong> được xây dựng với định hướng phát triển giá trị của Mãng Cầu Bà Đen thông qua câu chuyện vùng trồng, người nông dân, chất lượng sản phẩm và trải nghiệm minh bạch của người tiêu dùng.
               </p>
               <p>
-                Mỗi trái mãng cầu là một sản phẩm nông nghiệp tươi sống. Kích thước, hình dáng và thời điểm chín có thể có những khác biệt tự nhiên. Thay vì cố biến nông sản thành một sản phẩm hoàn toàn đồng nhất công nghiệp, NABADEN hướng đến việc <strong>tuyển chọn đúng – phân loại rõ – đóng gói phù hợp – cung cấp thông tin minh bạch</strong> để người mua hiểu và an tâm tuyệt đối về sản phẩm mình lựa chọn.
+                Mỗi trái mãng cầu là một sản phẩm nông nghiệp tươi sống. Kích thước, hình dáng và thời điểm chín có thể có những khác biệt tự nhiên. Thay vì cố biến nông sản thành một sản phẩm hoàn toàn đồng nhất công nghiệp, Mãng Cầu Bà Đen hướng đến việc <strong>tuyển chọn đúng – phân loại rõ – đóng gói phù hợp – cung cấp thông tin minh bạch</strong> để người mua hiểu và an tâm tuyệt đối về sản phẩm mình lựa chọn.
               </p>
               <p>
                 Nếu có dịp đến Tây Ninh, ngoài việc chiêm bái Núi Bà Đen và khám phá ẩm thực địa phương, bạn đừng quên dành thời gian thưởng thức hoặc chọn một hộp mãng cầu Bà Đen tươi ngon mang về làm quà cho gia đình và người thân!
@@ -513,7 +510,7 @@ export default function BuyCustardAppleGuidePage() {
                     <b>+</b>
                   </summary>
                   <p>
-                    Bạn có thể tìm mua tại vùng trồng quanh khu vực Núi Bà Đen, các điểm cung cấp nông sản và những đơn vị chuyên về Mãng Cầu Bà Đen tại Tây Ninh như NABADEN. Nên ưu tiên nơi cung cấp được thông tin rõ ràng về nguồn gốc, phân loại và thời điểm thu hoạch.
+                    Bạn có thể tìm mua tại vùng trồng quanh khu vực Núi Bà Đen, các điểm cung cấp nông sản và những đơn vị chuyên về Mãng Cầu Bà Đen tại Tây Ninh như Mãng Cầu Bà Đen. Nên ưu tiên nơi cung cấp được thông tin rõ ràng về nguồn gốc, phân loại và thời điểm thu hoạch.
                   </p>
                 </details>
 
@@ -553,11 +550,11 @@ export default function BuyCustardAppleGuidePage() {
                 <details>
                   <summary>
                     <span>Q</span>
-                    <span>NABADEN có phải là Mãng Cầu Bà Đen không?</span>
+                    <span>Mãng cầu Bà Đen có gì đặc biệt?</span>
                     <b>+</b>
                   </summary>
                   <p>
-                    NABADEN là thương hiệu chuyên sâu về Mãng Cầu Bà Đen Tây Ninh, với định hướng tuyển chọn từng trái già chất lượng, phân loại minh bạch, đóng gói chuẩn OCOP và phân phối trực tiếp từ vườn đến tay khách hàng.
+                    Mãng cầu Bà Đen là đặc sản Tây Ninh nổi bật với thịt dai, vị ngọt thanh và hương thơm tự nhiên. Trái được tuyển chọn theo độ già, phân loại minh bạch và đóng gói phù hợp trước khi giao đến khách hàng.
                   </p>
                 </details>
               </div>
@@ -581,7 +578,6 @@ export default function BuyCustardAppleGuidePage() {
                   rel="noreferrer"
                 >
                   <span>Nhắn Zalo tư vấn</span>
-                  <span>↗</span>
                 </a>
               </div>
             </section>
@@ -596,31 +592,31 @@ export default function BuyCustardAppleGuidePage() {
           <div className="related-products-grid">
             <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Quà 3 Trái VIP" loading="lazy" />
+                <img src="/san-pham-hop-qua-3-trai.jpg" alt="Hộp Quà 3 Trái VIP" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
             <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-5kg.jpg" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
             <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-15kg.png" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-15kg.jpg" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
           </div>
@@ -638,17 +634,17 @@ export default function BuyCustardAppleGuidePage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
 
-            <Link href="/tin-tuc/mang-cau-ba-den-nabaden-dac-san-tay-ninh" className="related-product-card">
+            <Link href="/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh" className="related-product-card">
               <div className="related-product-thumb">
                 <img src="/vuon-mang-cau-tay-ninh-bao-trai.jpg" alt="Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Mãng Cầu Bà Đen – Tươi Ngon Chuẩn Vị Từ Vườn Nhà</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
           </div>

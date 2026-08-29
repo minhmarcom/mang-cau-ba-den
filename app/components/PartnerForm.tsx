@@ -137,9 +137,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
       const currentHost = typeof window !== "undefined" ? window.location.hostname : "";
       const sourceWebsite = currentHost.includes("mangcaubaden")
         ? "mangcaubaden.vn"
-        : currentHost.includes("nabaden")
-        ? "nabaden.vn"
-        : currentHost || "nabaden.vn";
+        : currentHost || "mangcaubaden.vn";
 
       const res = await fetch("/api/partner-register", {
         method: "POST",
@@ -185,19 +183,13 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
     <div className="partner-form-card" id="form-dang-ky">
       {isSuccess ? (
         <div className="partner-success-state" role="region" aria-live="polite">
-          <div className="success-icon-badge" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="#2d6a3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-              <polyline points="22 4 12 14.01 9 11.01" />
-            </svg>
-          </div>
           <h3 className="success-title">Đăng Ký Thành Công!</h3>
           <p className="success-subtitle">
-            Cảm ơn <strong>{fullName}</strong>! Thông tin đăng ký của bạn đã được hệ thống ghi nhận. NABADEN sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
+            Cảm ơn <strong>{fullName}</strong>! Thông tin đăng ký của bạn đã được hệ thống ghi nhận. Mãng Cầu Bà Đen sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
           </p>
 
           <div className="success-details-box">
-            <div className="success-details-title">📋 THÔNG TIN XÁC NHẬN ĐĂNG KÝ</div>
+            <div className="success-details-title"> THÔNG TIN XÁC NHẬN ĐĂNG KÝ</div>
             <div className="success-details-grid">
               <div className="detail-item">
                 <span className="detail-label">Họ và tên:</span>
@@ -220,10 +212,6 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
 
           <div className="success-action-btns">
             <Link href="/" className="btn-home-partner">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9 22 9 12 15 12 15 22" />
-              </svg>
               <span>Quay Về Trang Chủ</span>
             </Link>
           </div>
@@ -234,7 +222,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
             <span className="form-tag">ĐĂNG KÝ HỢP TÁC</span>
             <h3 className="form-main-title">Điền Thông Tin Trở Thành Đối Tác</h3>
             <p className="form-main-desc">
-              Tham gia mạng lưới phân phối đặc sản Tây Ninh chính gốc cùng NABADEN.
+              Tham gia mạng lưới phân phối đặc sản Tây Ninh chính gốc cùng Mãng Cầu Bà Đen.
             </p>
           </div>
 
@@ -254,7 +242,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
                 </div>
                 <div className="role-info">
                   <div className="role-title">Cộng Tác Viên (CTV)</div>
-                  <div className="role-desc">Bán hàng theo đơn, NABADEN hỗ trợ đóng gói, ship hàng và đối soát chiết khấu.</div>
+                  <div className="role-desc">Bán hàng theo đơn, Mãng Cầu Bà Đen hỗ trợ đóng gói, ship hàng và đối soát chiết khấu.</div>
                 </div>
               </button>
 
@@ -276,12 +264,11 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
 
           {/* BENEFIT HIGHLIGHT CALLOUT */}
           <div className={`benefit-callout ${isNPP ? "npp" : "ctv"}`}>
-            <span className="callout-icon">{isNPP ? "👑" : "🌱"}</span>
             <div className="callout-text">
               {isNPP ? (
                 <span><strong>Chính sách Nhà Phân Phối:</strong> Áp dụng khung giá sỉ theo sản lượng tại vườn Núi Bà Đen, hỗ trợ nguồn hàng theo mùa vụ, cung cấp thông tin xuất xứ và chứng nhận VietGAP/OCOP.</span>
               ) : (
-                <span><strong>Chính sách Cộng Tác Viên:</strong> Không bắt buộc ôm hàng. NABADEN hỗ trợ các khâu hái trái tại vườn, bọc xốp, đóng thùng, gửi hàng và thu hộ COD, đối soát chiết khấu định kỳ cùng bạn.</span>
+                <span><strong>Chính sách Cộng Tác Viên:</strong> Không bắt buộc ôm hàng. Mãng Cầu Bà Đen hỗ trợ các khâu hái trái tại vườn, bọc xốp, đóng thùng, gửi hàng và thu hộ COD, đối soát chiết khấu định kỳ cùng bạn.</span>
               )}
             </div>
           </div>
@@ -333,14 +320,14 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
                 required
               >
                 <option value="">-- Chọn Tỉnh / Thành phố --</option>
-                <optgroup label="⭐ Tỉnh / Thành phố trọng điểm">
+                <optgroup label="Tỉnh / Thành phố trọng điểm">
                   {PROVINCES_POPULAR.map((p) => (
                     <option key={`pop-${p}`} value={p}>
                       {p}
                     </option>
                   ))}
                 </optgroup>
-                <optgroup label="📋 Danh sách 63 Tỉnh / Thành phố (A - Z)">
+                <optgroup label=" Danh sách 63 Tỉnh / Thành phố (A - Z)">
                   {VIETNAM_PROVINCES.map((p) => (
                     <option key={`all-${p}`} value={p}>
                       {p}
@@ -385,7 +372,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
 
           {errorMessage && (
             <div className="form-error-alert" role="alert">
-              ⚠️ {errorMessage}
+               {errorMessage}
             </div>
           )}
 
@@ -399,12 +386,12 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
                 <span className="spinner" /> Đang gửi thông tin & đồng bộ...
               </span>
             ) : (
-              <span>Gửi Đăng Ký Trở Thành {isNPP ? "Nhà Phân Phối" : "Cộng Tác Viên"} →</span>
+              <span>Gửi Đăng Ký Trở Thành {isNPP ? "Nhà Phân Phối" : "Cộng Tác Viên"} </span>
             )}
           </button>
 
           <p className="form-security-note">
-            🔒 Thông tin của bạn được bảo mật tuyệt đối và chỉ dùng để liên hệ gửi bảng giá đối tác từ NABADEN.
+             Thông tin của bạn được bảo mật tuyệt đối và chỉ dùng để liên hệ gửi bảng giá đối tác từ Mãng Cầu Bà Đen.
           </p>
         </form>
       )}

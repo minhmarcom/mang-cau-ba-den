@@ -40,7 +40,7 @@ export default function NotFound() {
           boxShadow: "0 4px 14px rgba(45, 90, 60, 0.2)",
         }}
       >
-        Quay về Trang chủ ngay →
+        Quay về Trang chủ ngay
       </a>
       <script
         dangerouslySetInnerHTML={{

@@ -61,7 +61,7 @@ const articleSchema = {
   dateModified: "2026-08-16T09:30:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
@@ -152,7 +152,7 @@ const breadcrumbSchema = {
 
 export default function CustardAppleSeasonPage() {
   return (
-    <div className="article-page-wrap">
+    <div className="article-page-wrap news-article-system">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -168,7 +168,7 @@ export default function CustardAppleSeasonPage() {
 
       {/* SITE HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"
@@ -201,9 +201,6 @@ export default function CustardAppleSeasonPage() {
             href="/#san-pham"
             aria-label="Đặt mua Mãng Cầu Bà Đen"
           >
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
             <span>Đặt mua</span>
           </Link>
         </div>
@@ -274,7 +271,7 @@ export default function CustardAppleSeasonPage() {
               Khác với suy nghĩ rằng mãng cầu chỉ có một mùa duy nhất trong năm, nhờ kỹ thuật canh tác và xử lý ra hoa tỉ mỉ của người nông dân, <strong>Mãng Cầu Bà Đen tại Tây Ninh có thể được thu hoạch vào nhiều thời điểm trong năm</strong>. Tuy nhiên, vẫn có những giai đoạn sản lượng tập trung cao hơn, đặc biệt khi nhà vườn chủ động mùa vụ phục vụ nhu cầu thị trường và các dịp lễ, Tết.
             </p>
             <p>
-              Cùng <strong>NABADEN</strong> tìm hiểu mùa vụ của Mãng Cầu Bà Đen và vì sao loại trái cây này có thể xuất hiện trên thị trường vào nhiều tháng trong năm.
+              Cùng <strong>Mãng Cầu Bà Đen</strong> tìm hiểu mùa vụ của Mãng Cầu Bà Đen và vì sao loại trái cây này có thể xuất hiện trên thị trường vào nhiều tháng trong năm.
             </p>
 
             <section id="mang-cau-la-trai-gi">
@@ -343,7 +340,7 @@ export default function CustardAppleSeasonPage() {
                 Nguồn cung mãng cầu phụ thuộc vào: thời tiết – nhiệt độ – lượng mưa – tình trạng cây – thời điểm xử lý ra hoa – diện tích đang cho trái – nhu cầu thị trường.
               </p>
               <p>
-                Vì vậy, có những thời điểm mãng cầu tương đối dồi dào, trong khi những giai đoạn khác lượng trái đạt yêu cầu có thể ít hơn. Đối với <strong>NABADEN</strong>, việc có hàng hay không còn phụ thuộc vào lượng trái đạt tiêu chí tuyển chọn khắt khe tại thời điểm thu hoạch.
+                Vì vậy, có những thời điểm mãng cầu tương đối dồi dào, trong khi những giai đoạn khác lượng trái đạt yêu cầu có thể ít hơn. Đối với <strong>Mãng Cầu Bà Đen</strong>, việc có hàng hay không còn phụ thuộc vào lượng trái đạt tiêu chí tuyển chọn khắt khe tại thời điểm thu hoạch.
               </p>
             </section>
 
@@ -385,7 +382,7 @@ export default function CustardAppleSeasonPage() {
                 Trong suốt khoảng thời gian đó, nhà vườn phải liên tục chăm sóc qua các khâu:
               </p>
               <p style={{ textAlign: "center", fontWeight: 600, color: "var(--leaf)", padding: "14px", background: "#eef2e2", borderRadius: "14px" }}>
-                Cành → Hoa → Đậu trái → Tuyển trái → Bao trái → Nuôi trái → Thu hoạch.
+                Quy trình gồm cành, hoa, đậu trái, tuyển trái, bao trái, nuôi trái và thu hoạch.
               </p>
               <p>
                 Thời gian phát triển thực tế có thể thay đổi tùy giống, thời tiết, dinh dưỡng và kỹ thuật chăm sóc. Điều này giải thích tại sao việc dự báo chính xác sản lượng của một đợt thu hoạch cần sự theo dõi rất sát sao từ thực tế nhà vườn.
@@ -430,7 +427,7 @@ export default function CustardAppleSeasonPage() {
 
               <figure className="article-inline-image">
                 <img
-                  src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                  src="/thuc-te-mang-cau-tuoi.jpg"
                   alt="Trái mãng cầu Bà Đen tuyển chọn loại 1 đạt độ già sinh lý hoàn hảo"
                   loading="lazy"
                 />
@@ -446,7 +443,7 @@ export default function CustardAppleSeasonPage() {
                 Đối với người tiêu dùng, mùa mãng cầu có thể đơn giản là thời điểm có nhiều trái ngon để thưởng thức. Nhưng đối với người làm vườn Tây Ninh, mỗi vụ mãng cầu là cả một hành trình gắn bó với nhịp điệu của đất trời và cây cỏ.
               </p>
               <p>
-                <strong>NABADEN</strong> phát triển với định hướng đưa giá trị của Mãng Cầu Bà Đen đến gần hơn với người tiêu dùng thông qua câu chuyện vùng trồng, người nông dân và trải nghiệm sản phẩm minh bạch. Với NABADEN, việc cung cấp mãng cầu không chỉ đơn giản là có trái để bán quanh năm, mà quan trọng hơn là <strong>lựa chọn đúng những trái đạt độ già phù hợp với mục đích sử dụng và hành trình vận chuyển</strong> của từng khách hàng.
+                <strong>Mãng Cầu Bà Đen</strong> phát triển với định hướng đưa giá trị của Mãng Cầu Bà Đen đến gần hơn với người tiêu dùng thông qua câu chuyện vùng trồng, người nông dân và trải nghiệm sản phẩm minh bạch. Với Mãng Cầu Bà Đen, việc cung cấp mãng cầu không chỉ đơn giản là có trái để bán quanh năm, mà quan trọng hơn là <strong>lựa chọn đúng những trái đạt độ già phù hợp với mục đích sử dụng và hành trình vận chuyển</strong> của từng khách hàng.
               </p>
               <p>
                 Đôi khi, chờ thêm một chút để trái đạt đúng ngày tuổi trên cây lại chính là cách tốt nhất để bạn cảm nhận trọn vẹn hương vị ngọt thanh, dẻo thơm nguyên bản của Mãng Cầu Bà Đen Tây Ninh!
@@ -518,7 +515,7 @@ export default function CustardAppleSeasonPage() {
             <section className="article-cta-box" style={{ marginTop: "40px" }}>
               <h3>Liên hệ đặt mua Mãng Cầu Bà Đen hái tươi theo đợt</h3>
               <p>
-                Trao đổi trực tiếp với vườn NABADEN để biết tình hình thu hoạch hiện tại, chọn đúng độ già và đặt giao nhanh toàn quốc.
+                Trao đổi trực tiếp với vườn Mãng Cầu Bà Đen để biết tình hình thu hoạch hiện tại, chọn đúng độ già và đặt giao nhanh toàn quốc.
               </p>
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0833184106">
@@ -532,7 +529,6 @@ export default function CustardAppleSeasonPage() {
                   rel="noreferrer"
                 >
                   <span>Nhắn Zalo tư vấn mùa vụ</span>
-                  <span>↗</span>
                 </a>
               </div>
             </section>
@@ -547,31 +543,31 @@ export default function CustardAppleSeasonPage() {
           <div className="related-products-grid">
             <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/hop-qua-3-trai-vip.jpg" alt="Hộp Quà 3 Trái VIP" loading="lazy" />
+                <img src="/san-pham-hop-qua-3-trai.jpg" alt="Hộp Quà 3 Trái VIP" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Hộp Đặc Biệt (3 Quả VIP)</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
             <Link href="/san-pham/thung-mang-cau-ba-den-5kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-5kg.png" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-5kg.jpg" alt="Thùng 5KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 5KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
 
             <Link href="/san-pham/thung-mang-cau-ba-den-15kg" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/thung-15kg.png" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
+                <img src="/san-pham-thung-15kg.jpg" alt="Thùng 15KG Tuyển Chọn" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Thùng 15KG Tuyển Chọn</h3>
-                <span className="related-product-link">Xem chi tiết →</span>
+                <span className="related-product-link">Xem chi tiết</span>
               </div>
             </Link>
           </div>
@@ -585,11 +581,11 @@ export default function CustardAppleSeasonPage() {
           <div className="related-products-grid">
             <Link href="/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau" className="related-product-card">
               <div className="related-product-thumb">
-                <img src="/trai-mang-cau-chin-gia-loai-1.jpg" alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu" loading="lazy" />
+                <img src="/thuc-te-mang-cau-tuoi.jpg" alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu" loading="lazy" />
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Đi Tây Ninh Mua Mãng Cầu Ở Đâu? Kinh Nghiệm Chuẩn</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
 
@@ -599,7 +595,7 @@ export default function CustardAppleSeasonPage() {
               </div>
               <div className="related-product-body">
                 <h3 className="related-product-title">Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh</h3>
-                <span className="related-product-link">Đọc bài viết →</span>
+                <span className="related-product-link">Đọc bài viết</span>
               </div>
             </Link>
           </div>
