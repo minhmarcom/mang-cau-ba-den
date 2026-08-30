@@ -5,11 +5,13 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
+  title: "TAYNA - Thùng Mãng Cầu Bà Đen 5KG – TAYNA - Mãng Cầu Bà Đen",
   description:
-    "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh chính gốc: Từng trái già loại 1 tuyển chọn kỹ lưỡng, bọc xốp lưới êm ái, đóng thùng carton thoáng khí. Chuẩn VietGAP & OCOP 3 sao, ngọt thanh dẻo dai.",
+    "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh chính gốc từ TAYNA - Mãng Cầu Bà Đen: Trái già loại 1 bọc xốp lưới êm ái, đóng thùng carton thoáng khí. Chuẩn VietGAP & OCOP 3 sao.",
   keywords: [
-    "thùng mãng cầu bà đen 5kg",
+    "TAYNA",
+    "TAYNA - Mãng Cầu Bà Đen",
+    "thùng mãng cầu bà đen 5kg TAYNA",
     "giá mãng cầu bà đen 5kg",
     "mãng cầu tây ninh 5kg",
     "đặt mua mãng cầu 5kg",
@@ -20,11 +22,11 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
   },
   openGraph: {
-    title: "Mua Thùng Mãng Cầu Bà Đen 5KG – Giá 325.000₫",
+    title: "TAYNA - Thùng Mãng Cầu Bà Đen 5KG – TAYNA - Mãng Cầu Bà Đen",
     description:
-      "Thùng 5kg Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1: Bọc xốp lưới từng quả, đóng thùng carton có quai xách tiện dụng, thích hợp thưởng thức gia đình và biếu tặng.",
+      "Thùng 5kg Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1 từ TAYNA - Mãng Cầu Bà Đen: Bọc xốp lưới từng quả, đóng thùng carton có quai xách tiện dụng.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     images: [
       {
         url: `${siteUrl}/san-pham-thung-5kg.jpg`,

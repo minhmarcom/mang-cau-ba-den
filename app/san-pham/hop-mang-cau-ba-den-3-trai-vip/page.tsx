@@ -5,11 +5,13 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
+  title: "TAYNA - Hộp Mãng Cầu Bà Đen 3 Trái VIP – TAYNA - Mãng Cầu Bà Đen",
   description:
-    "Hộp quà Mãng Cầu Bà Đen 3 trái VIP thượng hạng: Tuyển chọn 3 quả đỉnh chóp tròn đều, vỏ sáng, lót rơm giấy và xốp lưới sang trọng. Chuẩn VietGAP & OCOP 3 sao làm quà biếu đối tác, dâng lễ.",
+    "Hộp quà TAYNA - Mãng Cầu Bà Đen 3 trái VIP thượng hạng từ TAYNA - Mãng Cầu Bà Đen: Tuyển chọn 3 quả đỉnh chóp tròn đều, vỏ sáng, lót rơm giấy và xốp lưới sang trọng làm quà biếu đối tác, dâng lễ.",
   keywords: [
-    "hộp mãng cầu bà đen 3 trái",
+    "TAYNA",
+    "TAYNA - Mãng Cầu Bà Đen",
+    "hộp mãng cầu bà đen 3 trái TAYNA",
     "hộp quà mãng cầu bà đen vip",
     "quà biếu mãng cầu tây ninh",
     "mãng cầu dâng lễ chùa bà",
@@ -20,11 +22,11 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
   },
   openGraph: {
-    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
+    title: "TAYNA - Hộp Mãng Cầu Bà Đen 3 Trái VIP – TAYNA - Mãng Cầu Bà Đen",
     description:
-      "Hộp quà 3 trái mãng cầu Bà Đen tuyển chọn thượng hạng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
+      "Hộp quà 3 trái mãng cầu Bà Đen TAYNA tuyển chọn thượng hạng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     images: [
       {
         url: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,

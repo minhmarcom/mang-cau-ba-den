@@ -187,7 +187,7 @@ export default function PartnerForm({ defaultType = "ctv", onSuccess }: PartnerF
         <div className="partner-success-state" role="region" aria-live="polite">
           <h3 className="success-title">Đăng Ký Thành Công!</h3>
           <p className="success-subtitle">
-            Cảm ơn <strong>{fullName}</strong>! Thông tin đăng ký của bạn đã được hệ thống ghi nhận. Mãng Cầu Bà Đen sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
+            Cảm ơn <strong>{fullName}</strong>! Thông tin đăng ký của bạn đã được hệ thống ghi nhận. Đội ngũ <strong>TAYNA - Mãng Cầu Bà Đen </strong> sẽ chủ động liên hệ qua Zalo/SĐT trong ít phút.
           </p>
 
           <div className="success-details-box">

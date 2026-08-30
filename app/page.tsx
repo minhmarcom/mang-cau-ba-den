@@ -125,8 +125,9 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProduceFarm", "Store"],
   "@id": "https://mangcaubaden.vn/#business",
-  name: "Mãng Cầu Bà Đen Tây Ninh — Vùng Trồng Chính Gốc",
-  alternateName: ["Mãng Cầu Bà Đen", "Na Bà Đen Tây Ninh", "Đặc Sản Mãng Cầu Tây Ninh", "Vựa Mãng Cầu Núi Bà Đen"],
+  name: "TAYNA - Mãng Cầu Bà Đen Tây Ninh — TAYNA - Mãng Cầu Bà Đen",
+  legalName: "TAYNA - Mãng Cầu Bà Đen",
+  alternateName: ["TAYNA", "TAYNA - Mãng Cầu Bà Đen", "TAYNA - Mãng Cầu Bà Đen", "TAYNA - Mãng Cầu Bà Đen", "Mãng Cầu Bà Đen TAYNA", "Na Bà Đen Tây Ninh TAYNA"],
   url: "https://mangcaubaden.vn/",
   logo: "https://mangcaubaden.vn/logo.png",
   image: [
@@ -135,7 +136,7 @@ const localBusinessSchema = {
     "https://mangcaubaden.vn/san-pham-thung-5kg.jpg"
   ],
   description:
-    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh chính gốc. Cập nhật kiến thức mùa vụ, cách chọn, bảo quản, bảng giá mãng cầu tại vườn và phân phối sỉ lẻ toàn quốc.",
+    "TAYNA - Mãng Cầu Bà Đen  – Thương hiệu chuyên phân phối đặc sản Mãng Cầu Bà Đen Tây Ninh chính gốc loại 1. Cập nhật bảng giá tại vườn, quy cách đóng gói và giao nhanh toàn quốc.",
   telephone: "+84907215521",
   priceRange: "$$",
   currenciesAccepted: "VND",
@@ -382,18 +383,18 @@ export default function Home() {
             window.scrollTo({ top: 0, behavior: "smooth" });
             if (window.location.hash) window.history.replaceState(null, "", "/");
           }}
-          aria-label="Mãng Cầu Bà Đen - Trang chủ"
+          aria-label="TAYNA - Mãng Cầu Bà Đen - Trang chủ"
         >
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen"
+            alt="TAYNA - Mãng Cầu Bà Đen"
             className="brand-logo-img"
             width="42"
             height="42"
           />
           <span className="brand-divider" aria-hidden="true">|</span>
           <span className="brand-text">
-            Mãng Cầu<br />Bà Đen
+            TAYNA - Mãng Cầu<br />Bà Đen
           </span>
         </a>
 

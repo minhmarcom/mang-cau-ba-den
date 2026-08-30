@@ -5,10 +5,13 @@ import Footer from "../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Tây Ninh – Giá & Đặt Hàng",
+  title: "TAYNA - Mua Mãng Cầu Bà Đen Tây Ninh Chính Gốc | TAYNA - Mãng Cầu Bà Đen",
   description:
-    "Đặt mua Mãng Cầu Bà Đen, na Bà Đen Tây Ninh chính gốc: hộp quà 3 trái, thùng 5kg và thùng 15kg. Xem giá tham khảo, quy cách và giao tận nơi.",
+    "Đặt mua Mãng Cầu Bà Đen loại 1 chính gốc từ TAYNA - Mãng Cầu Bà Đen: Hộp quà 3 trái VIP, Thùng 5kg & Thùng 15kg. Báo giá tại vườn, giao nhanh toàn quốc. Hotline/Zalo: 0907 215 521.",
   keywords: [
+    "TAYNA",
+    "TAYNA - Mãng Cầu Bà Đen",
+    "TAYNA mãng cầu bà đen",
     "sản phẩm mãng cầu bà đen",
     "mãng cầu bà đen tây ninh",
     "hộp mãng cầu bà đen 3 trái",
@@ -23,11 +26,11 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham`,
   },
   openGraph: {
-    title: "Mua Mãng Cầu Bà Đen (Na Bà Đen) Tây Ninh – Giá & Đặt Hàng",
+    title: "TAYNA - Mua Mãng Cầu Bà Đen Tây Ninh Chính Gốc | TAYNA - Mãng Cầu Bà Đen",
     description:
-      "Tuyển chọn những dòng sản phẩm Mãng Cầu Bà Đen Tây Ninh thượng hạng: Hộp quà 3 trái VIP, Thùng 5kg & Thùng 15kg. Trồng theo chuẩn VietGAP & OCOP, tươi ngon từ vườn.",
+      "Tuyển chọn những dòng sản phẩm Mãng Cầu Bà Đen Tây Ninh thượng hạng từ TAYNA - Mãng Cầu Bà Đen: Hộp quà 3 trái VIP, Thùng 5kg & Thùng 15kg. Trồng theo chuẩn VietGAP & OCOP 3 sao.",
     url: `${siteUrl}/san-pham`,
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     images: [
       {
         url: `${siteUrl}/san-pham-hop-qua-3-trai.jpg`,

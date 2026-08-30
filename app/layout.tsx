@@ -15,9 +15,13 @@ export async function generateMetadata(): Promise<Metadata> {
   const isLocal = host?.startsWith("localhost") || host?.startsWith("127.0.0.1");
   const siteUrl = isLocal ? `http://${host}` : "https://mangcaubaden.vn";
   const image = "https://mangcaubaden.vn/og.png";
-  const title = "Mãng Cầu Bà Đen Tây Ninh Chính Gốc – Giá & Đặt Mua";
-  const description = "Mãng Cầu Bà Đen, còn gọi là na Bà Đen Tây Ninh: xem sản phẩm, giá tham khảo, mùa vụ, cách chọn và đặt mua giao tận nơi qua Hotline/Zalo 0907 215 521.";
+  const title = "TAYNA – Mãng Cầu Bà Đen Tây Ninh Chính Gốc | TAYNA - Mãng Cầu Bà Đen";
+  const description = "Đặc sản Mãng Cầu Bà Đen Tây Ninh loại 1 chính gốc từ TAYNA - Mãng Cầu Bà Đen. Thu hoạch trực tiếp tại vườn Thạnh Tân chân núi Bà Đen, đóng gói chuẩn VietGAP & OCOP. Hotline/Zalo: 0907 215 521.";
   const keywords = [
+    // Thương hiệu & Đơn vị kinh doanh (Brand & Entity)
+    "TAYNA", "TAYNA mãng cầu bà đen", "TAYNA - Mãng Cầu Bà Đen", "TAYNA - Mãng Cầu Bà Đen", "mãng cầu TAYNA",
+    "mãng cầu bà đen TAYNA", "TAYNA Tây Ninh", "thương hiệu TAYNA",
+
     // Từ khóa hạt nhân (Core Keywords)
     "mãng cầu Bà Đen", "mang cau ba den", "mãng cầu Bà Đen Tây Ninh", "mang cau tay ninh",
     "mãng cầu Tây Ninh", "đặc sản Tây Ninh", "đặc sản núi Bà Đen", "na Bà Đen", "na Tây Ninh",
@@ -57,9 +61,9 @@ export async function generateMetadata(): Promise<Metadata> {
         "max-video-preview": -1,
       },
     },
-    applicationName: "Mãng Cầu Bà Đen",
+    applicationName: "TAYNA - Mãng Cầu Bà Đen",
     manifest: "/manifest.webmanifest",
-    appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "Mãng Cầu Bà Đen" },
+    appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "TAYNA - Mãng Cầu Bà Đen" },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any" },
@@ -81,7 +85,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       url: siteUrl,
-      siteName: "Mãng Cầu Bà Đen Tây Ninh",
+      siteName: "TAYNA - Mãng Cầu Bà Đen Tây Ninh",
       locale: "vi_VN",
       type: "website",
       images: [
@@ -89,7 +93,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: image,
           width: 1200,
           height: 630,
-          alt: "Mãng Cầu Bà Đen Tây Ninh — Trái ngọt từ vườn nhà",
+          alt: "TAYNA - Mãng Cầu Bà Đen Tây Ninh — TAYNA - Mãng Cầu Bà Đen",
         },
       ],
     },

@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import HopTacContent from "../components/HopTacContent";
 
 export const metadata: Metadata = {
-  title: "Tuyển Nhà Phân Phối & Cộng Tác Viên (CTV) Mãng Cầu Bà Đen | Mãng Cầu Bà Đen",
-  description: "Chương trình tuyển Nhà phân phối và Cộng tác viên bán Mãng Cầu Bà Đen Tây Ninh. Hợp tác linh hoạt, không áp lực ôm hàng; đội ngũ Mãng Cầu Bà Đen hỗ trợ hái trái, đóng thùng, giao hàng, thu COD và đối soát chiết khấu.",
+  title: "Tuyển Đại Lý & CTV Mãng Cầu Bà Đen TAYNA | TAYNA - Mãng Cầu Bà Đen",
+  description: "Chương trình tuyển Nhà phân phối và Cộng tác viên bán Mãng Cầu Bà Đen Tây Ninh của TAYNA - Mãng Cầu Bà Đen. Hợp tác linh hoạt, không áp lực ôm hàng, đối soát chiết khấu định kỳ minh bạch.",
   keywords: [
-    "tuyển cộng tác viên mãng cầu bà đen", "tuyển ctv bán hoa quả", "tuyển đại lý mãng cầu tây ninh",
-    "sỉ mãng cầu bà đen", "nhà phân phối mãng cầu tây ninh", "kinh doanh trái cây",
-    "cộng tác viên bán trái cây online", "chiết khấu ctv mãng cầu"
+    "TAYNA", "TAYNA - Mãng Cầu Bà Đen", "tuyển cộng tác viên mãng cầu bà đen", "tuyển ctv bán hoa quả",
+    "tuyển đại lý mãng cầu tây ninh", "sỉ mãng cầu bà đen", "nhà phân phối mãng cầu tây ninh",
+    "kinh doanh trái cây", "cộng tác viên bán trái cây online", "chiết khấu ctv mãng cầu TAYNA"
   ],
   alternates: { canonical: "/hop-tac" },
   openGraph: {
-    title: "Tuyển Nhà Phân Phối & CTV Mãng Cầu Bà Đen Tây Ninh | Mãng Cầu Bà Đen",
-    description: "Mãng Cầu Bà Đen hỗ trợ các khâu từ cắt trái tại vườn, đóng thùng xốp, chuyển hàng và thu COD. Đối tác & CTV tập trung giới thiệu và nhận chiết khấu.",
+    title: "Tuyển Nhà Phân Phối & CTV TAYNA - Mãng Cầu Bà Đen",
+    description: "TAYNA - Mãng Cầu Bà Đen  hỗ trợ từ cắt trái tại vườn, đóng thùng xốp, chuyển hàng và thu COD. Đối tác & CTV nhận chiết khấu hấp dẫn.",
     url: "https://mangcaubaden.vn/hop-tac",
     images: [{ url: "https://mangcaubaden.vn/og.png", width: 1200, height: 630 }],
   },

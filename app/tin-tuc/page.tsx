@@ -5,11 +5,13 @@ import Footer from "../components/Footer";
 import MagazineArticleCard from "../components/MagazineArticleCard";
 
 export const metadata: Metadata = {
-  title: "Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | Mãng Cầu Bà Đen",
+  title: "TAYNA - Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
   description:
-    "Tổng hợp bài viết tin tức nông sản, hướng dẫn chọn mua mãng cầu Bà Đen chính gốc Tây Ninh, quy trình chăm sóc bao trái an toàn và tiêu chuẩn VietGAP & OCOP.",
+    "Tổng hợp bài viết tin tức nông sản, hướng dẫn chọn mua Mãng Cầu Bà Đen chính gốc Tây Ninh từ TAYNA - Mãng Cầu Bà Đen.",
   keywords: [
-    "tin tức mãng cầu Bà Đen",
+    "TAYNA",
+    "TAYNA - Mãng Cầu Bà Đen",
+    "tin tức mãng cầu Bà Đen TAYNA",
     "kinh nghiệm mua mãng cầu",
     "mãng cầu Bà Đen Tây Ninh",
     "đặc sản Tây Ninh",
@@ -21,11 +23,11 @@ export const metadata: Metadata = {
     canonical: "/tin-tuc/",
   },
   openGraph: {
-    title: "Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | Mãng Cầu Bà Đen",
+    title: "TAYNA - Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
     description:
-      "Tổng hợp các bài viết thông tin, tin tức chọn mua và quy trình canh tác mãng cầu Bà Đen chính gốc Tây Ninh.",
+      "Tổng hợp các bài viết thông tin, tin tức chọn mua và quy trình canh tác Mãng Cầu Bà Đen chính gốc Tây Ninh từ TAYNA - Mãng Cầu Bà Đen.",
     url: "https://mangcaubaden.vn/tin-tuc/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "website",
     images: [
