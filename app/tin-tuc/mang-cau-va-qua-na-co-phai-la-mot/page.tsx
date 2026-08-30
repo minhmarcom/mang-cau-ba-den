@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title:
-    "Mãng cầu và quả na có phải là một? Na dai, na bở khác gì? | Mãng Cầu Bà Đen",
+    "Mãng cầu và quả na có phải là một? Na dai, na bở khác gì? | TAYNA - Mãng Cầu Bà Đen",
   description:
     "Mãng cầu và quả na có phải là một? Tìm hiểu cách gọi na – mãng cầu theo vùng miền, phân biệt na dai, na bở và mãng cầu Bà Đen Tây Ninh.",
   keywords: [
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Mãng cầu và quả na có phải là một? Na dai, na bở khác gì? | Mãng Cầu Bà Đen",
+      "Mãng cầu và quả na có phải là một? Na dai, na bở khác gì? | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Giải đáp thắc mắc mãng cầu và quả na có phải là một không, phân biệt na dai, na bở với sản vật Mãng Cầu Bà Đen chính gốc Tây Ninh.",
     url: "https://mangcaubaden.vn/mang-cau-va-qua-na-co-phai-la-mot/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -66,12 +66,12 @@ const articleSchema = {
   dateModified: "2026-08-23T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",
@@ -169,7 +169,7 @@ export default function NaVsMangCauArticlePage() {
         <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN"
+            alt="TAYNA - Mãng Cầu Bà Đen"
             className="brand-logo-img"
             width="42"
             height="42"
@@ -262,7 +262,7 @@ export default function NaVsMangCauArticlePage() {
           <div className="article-body">
             <div className="article-container article-prose">
               <p>
-                Thực tế, cách gọi còn phụ thuộc vào vùng miền và đặc tính giống cây. Vì vậy, không nên chỉ dựa vào tên “na” hay “mãng cầu” để kết luận chất lượng hoặc nguồn gốc của trái. Hãy cùng NABADEN tìm hiểu chi tiết về tên gọi, đặc tính và phân biệt các loại quả quen thuộc này.
+                Thực tế, cách gọi còn phụ thuộc vào vùng miền và đặc tính giống cây. Vì vậy, không nên chỉ dựa vào tên “na” hay “mãng cầu” để kết luận chất lượng hoặc nguồn gốc của trái. Hãy cùng TAYNA - Mãng Cầu Bà Đen tìm hiểu chi tiết về tên gọi, đặc tính và phân biệt các loại quả quen thuộc này.
               </p>
 
               {/* TABLE OF CONTENTS */}
@@ -398,7 +398,7 @@ export default function NaVsMangCauArticlePage() {
                   style={{ maxHeight: "550px", objectFit: "cover", width: "100%", borderRadius: "16px" }}
                 />
                 <figcaption>
-                  Thùng mãng cầu Bà Đen NABADEN được sắp xếp chỉn chu, trái giữ nguyên cuống lá tươi khi đóng thùng xuất vườn.
+                  Thùng mãng cầu Bà Đen TAYNA - Mãng Cầu Bà Đen được sắp xếp chỉn chu, trái giữ nguyên cuống lá tươi khi đóng thùng xuất vườn.
                 </figcaption>
               </figure>
 
@@ -438,7 +438,7 @@ export default function NaVsMangCauArticlePage() {
 
               <h2 id="tai-sao-mua-ve-chua-an-ngay">7. Tại sao mãng cầu mua về chưa ăn được ngay?</h2>
               <p>
-                Mãng cầu là loại trái cây thuộc nhóm hô hấp đột biến (tiếp tục chín sau khi thu hoạch). Để thuận lợi cho quá trình đóng thùng vận chuyển xa (từ Tây Ninh đi TP.HCM, Hà Nội, Đà Nẵng...), nhà vườn NABADEN chủ động hái trái khi vừa đạt độ già sinh lý tốt nhất thay vì đợi chín mềm trên cây.
+                Mãng cầu là loại trái cây thuộc nhóm hô hấp đột biến (tiếp tục chín sau khi thu hoạch). Để thuận lợi cho quá trình đóng thùng vận chuyển xa (từ Tây Ninh đi TP.HCM, Hà Nội, Đà Nẵng...), nhà vườn TAYNA - Mãng Cầu Bà Đen chủ động hái trái khi vừa đạt độ già sinh lý tốt nhất thay vì đợi chín mềm trên cây.
               </p>
               <p>
                 Khi nhận hàng, người mua chỉ cần xếp trái nơi khô ráo thoáng mát ở nhiệt độ phòng. Sau 2-4 ngày, quả sẽ tỏa hương thơm ngọt ngào, vỏ mềm tay là thời điểm thưởng thức ngon nhất.
@@ -446,10 +446,10 @@ export default function NaVsMangCauArticlePage() {
 
               {/* HIGHLIGHT BOX / CALLOUT */}
               <div className="article-callout-box">
-                <div className="callout-badge">💡 Mẹo thưởng thức từ NABADEN</div>
+                <div className="callout-badge">💡 Mẹo thưởng thức từ TAYNA - Mãng Cầu Bà Đen</div>
                 <h3>Đặt mua Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1</h3>
                 <p>
-                  Dù bạn ở miền Bắc gọi là <strong>Quả Na</strong> hay miền Nam gọi là <strong>Mãng Cầu</strong>, NABADEN luôn sẵn sàng cung ứng những trái mãng cầu Bà Đen chuẩn gốc ngọt dẻo thơm ngon:
+                  Dù bạn ở miền Bắc gọi là <strong>Quả Na</strong> hay miền Nam gọi là <strong>Mãng Cầu</strong>, TAYNA - Mãng Cầu Bà Đen luôn sẵn sàng cung ứng những trái mãng cầu Bà Đen chuẩn gốc ngọt dẻo thơm ngon:
                 </p>
                 <ul>
                   <li>

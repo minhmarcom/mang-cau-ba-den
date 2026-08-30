@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       "Kinh nghiệm tìm mua mãng cầu Bà Đen Tây Ninh chính gốc từ nhà vườn: cách chọn trái già, nhận biết độ chín, quy cách đóng gói và địa chỉ mua uy tín.",
     url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-chinh-goc-tay-ninh/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -62,7 +62,7 @@ const articleSchema = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",

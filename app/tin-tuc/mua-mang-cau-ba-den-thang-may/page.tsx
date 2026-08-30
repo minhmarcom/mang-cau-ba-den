@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | Mãng Cầu Bà Đen",
+  title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
   description:
     "Mùa Mãng Cầu Bà Đen tháng mấy? Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ, thời điểm có trái và kinh nghiệm chọn mua từ nhà vườn Tây Ninh.",
   keywords: [
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     canonical: "/mua-mang-cau-ba-den-thang-may/",
   },
   openGraph: {
-    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | Mãng Cầu Bà Đen",
+    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Mùa Mãng Cầu Bà Đen tháng mấy? Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ, thời điểm có trái và kinh nghiệm chọn mua từ nhà vườn Tây Ninh.",
     url: "https://mangcaubaden.vn/mua-mang-cau-ba-den-thang-may/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | Mãng Cầu Bà Đen",
+    title: "Mùa Mãng Cầu Bà Đen tháng mấy? Mùa thu hoạch mãng cầu Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Tìm hiểu mùa thu hoạch mãng cầu Tây Ninh, chính vụ, nghịch vụ và thời điểm trái ngon nhất.",
     images: ["https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg"],
@@ -66,7 +66,7 @@ const articleSchema = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",

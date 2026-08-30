@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title:
-    "Mãng cầu bao lâu thì chín? 7 dấu hiệu nhận biết mãng cầu chín | Mãng Cầu Bà Đen",
+    "Mãng cầu bao lâu thì chín? 7 dấu hiệu nhận biết mãng cầu chín | TAYNA - Mãng Cầu Bà Đen",
   description:
     "Mãng cầu mua về còn cứng bao lâu thì chín? Xem 7 dấu hiệu nhận biết mãng cầu chín ngon, cách để mãng cầu chín tự nhiên và cách theo dõi chuẩn nhất.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Giải đáp mãng cầu mua về còn cứng mấy ngày thì chín, 7 dấu hiệu nhận biết mãng cầu chín tới ngon ngọt và cách theo dõi từng quả sau khi nhận.",
     url: "https://mangcaubaden.vn/mang-cau-bao-lau-thi-chin/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -65,12 +65,12 @@ const articleSchema = {
   dateModified: "2026-08-23T09:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",
@@ -175,7 +175,7 @@ export default function MangCauRipeningArticlePage() {
         <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
-            alt="Mãng Cầu Bà Đen NABADEN"
+            alt="TAYNA - Mãng Cầu Bà Đen"
             className="brand-logo-img"
             width="42"
             height="42"
@@ -328,7 +328,7 @@ export default function MangCauRipeningArticlePage() {
 
               <h2 id="tai-sao-giao-den-con-cung">2. Tại sao mãng cầu Bà Đen giao đến vẫn còn cứng?</h2>
               <p>
-                Nhiều khách hàng lần đầu mua mãng cầu cảm thấy băn khoăn khi nhận thùng hàng thấy quả vẫn còn cứng. Tuy nhiên, <strong>trái còn cứng khi vừa nhận hàng là tiêu chuẩn đóng gói vận chuyển chuyên nghiệp</strong> của NABADEN.
+                Nhiều khách hàng lần đầu mua mãng cầu cảm thấy băn khoăn khi nhận thùng hàng thấy quả vẫn còn cứng. Tuy nhiên, <strong>trái còn cứng khi vừa nhận hàng là tiêu chuẩn đóng gói vận chuyển chuyên nghiệp</strong> của TAYNA - Mãng Cầu Bà Đen.
               </p>
               <p>
                 Đối với đặc sản <strong>Mãng Cầu Bà Đen</strong> cần gửi từ vườn Tây Ninh đi các tỉnh thành như TP.HCM, Hà Nội, Đà Nẵng..., việc hái trái ở độ già vừa tới (vỏ cứng chắc) mang lại nhiều lợi ích lớn:
@@ -464,7 +464,7 @@ export default function MangCauRipeningArticlePage() {
 
               <h2 id="cach-theo-doi-khi-nhan">9. Hướng dẫn theo dõi mãng cầu sau khi nhận hàng</h2>
               <p>
-                Khi nhận thùng Mãng Cầu Bà Đen Tây Ninh từ nhà vườn NABADEN, bạn có thể thực hiện theo quy trình đơn giản sau:
+                Khi nhận thùng Mãng Cầu Bà Đen Tây Ninh từ nhà vườn TAYNA - Mãng Cầu Bà Đen, bạn có thể thực hiện theo quy trình đơn giản sau:
               </p>
               <ol>
                 <li><strong>Bước 1 (Ngày nhận):</strong> Mở nắp thùng, tháo bỏ lớp bọc đè nếu có, đặt các trái nơi khô ráo thoáng mát.</li>
@@ -476,9 +476,9 @@ export default function MangCauRipeningArticlePage() {
               {/* HIGHLIGHT BOX / CALLOUT */}
               <div className="article-callout-box">
                 <div className="callout-badge">🛍️ Thưởng thức đặc sản chuẩn vị</div>
-                <h3>Đặt mua Mãng Cầu Bà Đen NABADEN thu hoạch trong ngày</h3>
+                <h3>Đặt mua TAYNA - Mãng Cầu Bà Đen thu hoạch trong ngày</h3>
                 <p>
-                  NABADEN cam kết tuyển chọn từng trái <strong>mãng cầu Bà Đen già lứa chuẩn VietGAP &amp; OCOP</strong>, bao trái an toàn trên cành và đóng gói bọc lưới xốp kỹ lưỡng:
+                  TAYNA - Mãng Cầu Bà Đen cam kết tuyển chọn từng trái <strong>mãng cầu Bà Đen già lứa chuẩn VietGAP &amp; OCOP</strong>, bao trái an toàn trên cành và đóng gói bọc lưới xốp kỹ lưỡng:
                 </p>
                 <ul>
                   <li>

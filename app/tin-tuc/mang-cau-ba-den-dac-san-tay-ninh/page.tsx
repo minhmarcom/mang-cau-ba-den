@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | Mãng Cầu Bà Đen",
+  title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
   description:
     "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon và được bảo hộ chỉ dẫn địa lý.",
   keywords: [
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     canonical: "/mang-cau-ba-den-dac-san-tay-ninh/",
   },
   openGraph: {
-    title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | Mãng Cầu Bà Đen",
+    title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon và được bảo hộ chỉ dẫn địa lý.",
     url: "https://mangcaubaden.vn/mang-cau-ba-den-dac-san-tay-ninh/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | Mãng Cầu Bà Đen",
+    title: "Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Khám phá mãng cầu Bà Đen Tây Ninh – đặc sản nổi tiếng với thịt dai, vị ngọt thanh, thơm ngon và được bảo hộ chỉ dẫn địa lý.",
     images: ["https://mangcaubaden.vn/hai-trieu-trai-mang-cau-chin.jpg"],
@@ -61,7 +61,7 @@ const articleSchema = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",

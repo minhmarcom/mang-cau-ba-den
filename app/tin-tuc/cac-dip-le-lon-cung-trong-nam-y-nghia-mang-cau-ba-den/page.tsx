@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "Tổng hợp 10 dịp cúng lễ quan trọng trong năm và lý do mãng cầu Bà Đen Tây Ninh trở thành sản vật ý nghĩa trên mâm trái cây cúng lễ gia tiên, thần linh.",
     url: "https://mangcaubaden.vn/cac-dip-le-lon-cung-trong-nam-y-nghia-mang-cau-ba-den/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -74,7 +74,7 @@ const articleSchema = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",

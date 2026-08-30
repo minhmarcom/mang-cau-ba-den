@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà | Mãng Cầu Bà Đen",
+  title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà | TAYNA - Mãng Cầu Bà Đen",
   description:
     "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
   keywords: [
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     canonical: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
   },
   openGraph: {
-    title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà | Mãng Cầu Bà Đen",
+    title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
     url: "https://mangcaubaden.vn/mang-cau-ba-den-nabaden-dac-san-tay-ninh/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà | Mãng Cầu Bà Đen",
+    title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Khám phá nét độc đáo của mãng cầu Bà Đen Tây Ninh: hương vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành và chất lượng chuẩn VietGAP & OCOP.",
     images: ["https://mangcaubaden.vn/vuon-mang-cau-tay-ninh-bao-trai.jpg"],
@@ -57,12 +57,12 @@ const articleSchema = {
   dateModified: "2026-08-15T08:00:00+07:00",
   author: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen NABADEN",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     url: "https://mangcaubaden.vn/",
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",
@@ -148,7 +148,7 @@ export default function ArticleBrandPage() {
 
       {/* HEADER */}
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Mãng Cầu Bà Đen NABADEN - Trang chủ">
+        <Link className="brand" href="/" aria-label="TAYNA - Mãng Cầu Bà Đen - Trang chủ">
           <img
             src="/logo.png"
             alt="Mãng Cầu Bà Đen"

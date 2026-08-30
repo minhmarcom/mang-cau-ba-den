@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Quy trình đóng gói và vận chuyển Mãng Cầu Bà Đen từ vườn Tây Ninh đến tay khách hàng vẫn giữ nguyên độ tươi ngon, dẻo dai và không dập nát.",
     url: "https://mangcaubaden.vn/van-chuyen-mang-cau-ba-den/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -69,7 +69,7 @@ const articleSchema = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",

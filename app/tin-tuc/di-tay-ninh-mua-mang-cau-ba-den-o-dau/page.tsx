@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | Mãng Cầu Bà Đen",
+  title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | TAYNA - Mãng Cầu Bà Đen",
   description:
     "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Khám phá kinh nghiệm chọn mãng cầu ngon, mua làm quà, cách bảo quản, vận chuyển và thông tin từ nhà vườn Tây Ninh.",
   keywords: [
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     canonical: "/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
   },
   openGraph: {
-    title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | Mãng Cầu Bà Đen",
+    title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Khám phá kinh nghiệm chọn mãng cầu ngon, mua làm quà, cách bảo quản, vận chuyển và thông tin từ nhà vườn Tây Ninh.",
     url: "https://mangcaubaden.vn/di-tay-ninh-mua-mang-cau-ba-den-o-dau/",
-    siteName: "Mãng Cầu Bà Đen",
+    siteName: "TAYNA - Mãng Cầu Bà Đen",
     locale: "vi_VN",
     type: "article",
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | Mãng Cầu Bà Đen",
+    title: "Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua | TAYNA - Mãng Cầu Bà Đen",
     description:
       "Kinh nghiệm chọn mua mãng cầu Bà Đen ngon, mua làm quà, cách bảo quản và vận chuyển khi đi du lịch Tây Ninh.",
     images: ["https://mangcaubaden.vn/thuc-te-mang-cau-tuoi.jpg"],
@@ -67,7 +67,7 @@ const articleSchema = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Mãng Cầu Bà Đen Tây Ninh",
+    name: "TAYNA - Mãng Cầu Bà Đen",
     logo: {
       "@type": "ImageObject",
       url: "https://mangcaubaden.vn/logo.png",
