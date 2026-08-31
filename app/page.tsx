@@ -145,9 +145,9 @@ const localBusinessSchema = {
   maps: "https://share.google/mKCDKiRjRo25L0TDN",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Khu vực vườn Thạnh Tân, chân Núi Bà Đen",
-    addressLocality: "Xã Thạnh Tân",
-    addressRegion: "Thành phố Tây Ninh, Tỉnh Tây Ninh",
+    streetAddress: "104 Phan Chu Trinh, Tân Biên & Vùng trồng Thạnh Tân, Chân Núi Bà Đen",
+    addressLocality: "TP. Tây Ninh & H. Tân Biên",
+    addressRegion: "Tỉnh Tây Ninh",
     postalCode: "84000",
     addressCountry: "VN",
   },
