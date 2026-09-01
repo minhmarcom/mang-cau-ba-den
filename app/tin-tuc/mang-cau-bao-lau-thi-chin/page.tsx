@@ -514,7 +514,7 @@ export default function MangCauRipeningArticlePage() {
                 <details className="faq-item" open>
                   <summary className="faq-question">
                     <span>Mãng cầu để mấy ngày thì chín?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Mãng cầu đủ độ già có thể bắt đầu mềm và chín từ 1-3 ngày ở nhiệt độ phòng, nhưng thời gian thực tế thay đổi tùy theo tình trạng từng trái và nhiệt độ môi trường.
@@ -524,7 +524,7 @@ export default function MangCauRipeningArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Mãng cầu còn cứng có ăn được không?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Khi trái chưa chín và còn cứng, thịt mãng cầu chưa chuyển hóa lượng đường hoàn toàn nên vị chưa đạt độ ngọt dai tốt nhất. Bạn nên để trái chín tự nhiên ở nhiệt độ phòng.
@@ -534,7 +534,7 @@ export default function MangCauRipeningArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Làm sao biết mãng cầu Bà Đen đã chín?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Bạn có thể kết hợp các dấu hiệu: sờ vào thấy trái mềm nhẹ tay, mắt quả xòe rộng nở phẳng, tỏa mùi thơm đặc trưng ngọt ngào và múi tách dễ dàng.
@@ -544,7 +544,7 @@ export default function MangCauRipeningArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Mãng cầu chín có cần cho vào tủ lạnh không?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Nếu mãng cầu đã chín vừa ăn mà chưa dùng ngay, bạn nên cho vào ngăn mát tủ lạnh (8-12°C) để giữ nguyên vị ngon từ 2-4 ngày. Nếu trái còn cứng, không nên bỏ tủ lạnh sớm.
@@ -554,7 +554,7 @@ export default function MangCauRipeningArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Tại sao mãng cầu trong cùng một thùng chín không đều?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Mỗi trái có độ già sinh lý, vị trí trên cây và tốc độ hô hấp sau thu hoạch khác nhau. Điều này rất tiện lợi vì giúp gia đình thưởng thức từng trái chín ngon mỗi ngày thay vì chín dồn cùng lúc.

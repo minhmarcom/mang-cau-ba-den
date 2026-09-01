@@ -496,7 +496,7 @@ export default function NaVsMangCauArticlePage() {
                 <details className="faq-item" open>
                   <summary className="faq-question">
                     <span>Quả na có phải mãng cầu không?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Trong cách gọi phổ biến tại Việt Nam, loại quả được miền Bắc gọi là na thường được miền Nam gọi là mãng cầu ta hoặc mãng cầu. Tuy nhiên, cần phân biệt với mãng cầu xiêm (loại quả to, vỏ có gai mềm).
@@ -506,7 +506,7 @@ export default function NaVsMangCauArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Mãng cầu Bà Đen có phải là một giống mãng cầu riêng không?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Tên “mãng cầu Bà Đen” chủ yếu nhấn mạnh đến yếu tố vùng trồng trù phú tại khu vực Núi Bà Đen và Tây Ninh, gắn liền với thổ nhưỡng, khí hậu và kinh nghiệm canh tác lâu đời của người dân địa phương.
@@ -516,7 +516,7 @@ export default function NaVsMangCauArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Na dai và mãng cầu Bà Đen có giống nhau không?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Hai tên gọi không hoàn toàn cùng một cách phân loại. “Na dai” thường dùng để chỉ đặc tính cảm quan của quả (thịt dẻo, dai), còn “mãng cầu Bà Đen” nhấn mạnh đến nguồn gốc chỉ dẫn địa lý Tây Ninh.
@@ -526,7 +526,7 @@ export default function NaVsMangCauArticlePage() {
                 <details className="faq-item">
                   <summary className="faq-question">
                     <span>Mãng cầu Bà Đen mua về bao lâu thì chín?</span>
-                    <b aria-hidden="true">＋</b>
+                    
                   </summary>
                   <p>
                     Mãng cầu thường được hái ở độ già phù hợp để vận chuyển. Khi nhận hàng, quả để ở nhiệt độ phòng sẽ chín tự nhiên sau 2-4 ngày. Cần kiểm tra độ mềm trước khi ăn thay vì chỉ đếm số ngày.

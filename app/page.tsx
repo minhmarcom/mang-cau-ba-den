@@ -978,7 +978,7 @@ export default function Home() {
               <summary>
                 <span>0{index + 1}</span>
                 {item.question}
-                <b aria-hidden="true">＋</b>
+                
               </summary>
               <p>{item.answer}</p>
             </details>

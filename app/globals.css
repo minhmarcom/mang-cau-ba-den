@@ -6567,125 +6567,193 @@ footer {
   box-shadow: none;
 }
 
+/* =========================================================
+   REDESIGNED MODERN FAQ ACCORDION (ARTICLE & PAGE WIDE)
+   ========================================================= */
+.article-faq-section,
+.article-standard-faq,
 .news-article-system .article-faq-section,
 .news-article-system .article-standard-faq {
   width: 100%;
-  margin: var(--article-section-space) auto !important;
-  padding: clamp(28px, 5vw, 42px);
-  border: 1px solid var(--border-soft);
-  border-radius: 22px;
-  background: rgba(255, 253, 246, 0.88);
+  margin: var(--article-section-space, 40px) auto !important;
+  padding: clamp(24px, 4vw, 36px) !important;
+  border: 1px solid rgba(45, 90, 60, 0.14) !important;
+  border-radius: 24px !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 20px rgba(35, 69, 47, 0.04) !important;
   box-sizing: border-box;
 }
 
+.faq-header,
 .news-article-system .faq-header {
-  margin-bottom: 20px;
+  margin-bottom: 24px !important;
   text-align: left;
 }
 
+.faq-kicker,
 .news-article-system .faq-kicker {
-  display: block;
-  margin-bottom: 7px;
-  color: var(--leaf);
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  display: inline-block !important;
+  margin-bottom: 8px !important;
+  padding: 4px 14px !important;
+  border-radius: 100px !important;
+  background: rgba(45, 90, 60, 0.08) !important;
+  color: var(--leaf, #2d5a3c) !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
 }
 
+.faq-title,
 .news-article-system .faq-title,
 .news-article-system .article-faq-section > h2 {
-  margin: 0 0 20px;
-  color: var(--ink);
-  font-family: var(--font-serif);
-  font-size: clamp(1.45rem, 2vw, 1.85rem);
-  line-height: 1.25;
-  text-align: left;
+  margin: 6px 0 0 !important;
+  color: var(--ink, #1c2e24) !important;
+  font-family: var(--font-serif) !important;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem) !important;
+  line-height: 1.28 !important;
+  font-weight: 600 !important;
 }
 
+.faq-accordion,
+.faq-list,
 .news-article-system .faq-list,
 .news-article-system .faq-accordion {
-  border-top: 1px solid var(--border-soft);
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  border-top: none !important;
 }
 
+.faq-accordion details,
+.faq-list details,
+.faq-accordion-item,
 .news-article-system .faq-list details,
 .news-article-system .faq-accordion details {
-  margin: 0;
-  border: 0;
-  border-bottom: 1px solid var(--border-soft);
-  border-radius: 0;
-  background: transparent;
+  margin: 0 !important;
+  border: 1px solid rgba(45, 90, 60, 0.12) !important;
+  border-radius: 14px !important;
+  background: #faf8f2 !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden !important;
 }
 
-.news-article-system .faq-list summary,
-.news-article-system .faq-accordion summary {
-  display: grid;
-  grid-template-columns: 38px minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 12px;
-  min-height: 68px;
-  padding: 16px 0;
-  color: var(--ink);
-  cursor: pointer;
-  list-style: none;
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.28rem);
-  font-weight: 600;
-  line-height: 1.38;
-  text-align: left;
+.faq-accordion details:hover,
+.faq-list details:hover,
+.faq-accordion-item:hover,
+.news-article-system .faq-list details:hover,
+.news-article-system .faq-accordion details:hover {
+  border-color: rgba(45, 90, 60, 0.3) !important;
+  box-shadow: 0 4px 14px rgba(45, 90, 60, 0.06) !important;
 }
 
-.news-article-system .faq-accordion .faq-question {
-  grid-template-columns: minmax(0, 1fr);
+.faq-accordion details[open],
+.faq-list details[open],
+.faq-accordion-item.active,
+.news-article-system .faq-list details[open],
+.news-article-system .faq-accordion details[open] {
+  border-color: rgba(45, 90, 60, 0.4) !important;
+  border-left: 5px solid var(--leaf, #2d5a3c) !important;
+  background: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(45, 90, 60, 0.08) !important;
 }
 
+/* Hide ALL browser default markers & loose character badges */
+.faq-accordion summary::-webkit-details-marker,
+.faq-list summary::-webkit-details-marker,
+.faq-accordion summary::marker,
+.faq-list summary::marker,
 .news-article-system .faq-list summary::-webkit-details-marker,
 .news-article-system .faq-accordion summary::-webkit-details-marker,
-.news-article-system .faq-list summary > b {
-  display: none;
+.news-article-system .faq-list summary::marker,
+.news-article-system .faq-accordion summary::marker {
+  display: none !important;
+  content: "" !important;
 }
 
-.news-article-system .faq-list summary > span:first-child:not(.faq-text-action) {
-  color: var(--leaf);
-  font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
+.faq-accordion summary > b,
+.faq-list summary > b,
+.news-article-system .faq-list summary > b,
+.news-article-system .faq-accordion summary > b {
+  display: none !important;
 }
 
-.news-article-system .faq-accordion .faq-question > span:first-child {
-  color: var(--ink);
-  font-family: var(--font-serif);
-  font-size: inherit;
-  letter-spacing: normal;
-}
-
-.news-article-system .faq-text-action {
-  color: var(--leaf) !important;
+.faq-accordion summary,
+.faq-list summary,
+.news-article-system .faq-list summary,
+.news-article-system .faq-accordion summary {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  padding: 16px 20px !important;
+  min-height: 54px !important;
+  color: var(--ink, #1c2e24) !important;
+  cursor: pointer !important;
+  list-style: none !important;
   font-family: var(--font-sans) !important;
-  font-size: 0.68rem !important;
-  font-weight: 800 !important;
-  letter-spacing: 0.04em !important;
-  text-transform: uppercase;
+  font-size: clamp(0.98rem, 1vw + 0.72rem, 1.1rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  text-align: left !important;
+  user-select: none !important;
 }
 
-.news-article-system details[open] .faq-text-action {
-  font-size: 0 !important;
+.faq-accordion summary > span:first-child,
+.faq-list summary > span:nth-child(2),
+.news-article-system .faq-accordion .faq-question > span:first-child {
+  flex: 1 !important;
+  color: #1a2e22 !important;
+  font-family: var(--font-sans) !important;
+  font-size: inherit !important;
 }
 
-.news-article-system details[open] .faq-text-action::after {
-  content: "Thu gọn";
-  font-size: 0.68rem;
+/* Custom CSS Toggle Badge (+ / −) */
+.faq-accordion summary::after,
+.faq-list summary::after,
+.news-article-system .faq-list summary::after,
+.news-article-system .faq-accordion summary::after {
+  content: "+" !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  border-radius: 50% !important;
+  background: rgba(45, 90, 60, 0.1) !important;
+  color: var(--leaf, #2d5a3c) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease !important;
 }
 
+.faq-accordion details[open] summary::after,
+.faq-list details[open] summary::after,
+.news-article-system .faq-list details[open] summary::after,
+.news-article-system .faq-accordion details[open] summary::after {
+  content: "−" !important;
+  background: var(--leaf, #2d5a3c) !important;
+  color: #ffffff !important;
+}
+
+.faq-text-action,
+.news-article-system .faq-text-action {
+  display: none !important;
+}
+
+.faq-accordion details > p,
+.faq-list details > p,
 .news-article-system .faq-list details > p,
 .news-article-system .faq-accordion details > p {
-  max-width: none;
-  margin: 0;
-  padding: 0 0 20px 50px;
-  color: var(--ink-muted);
-  font-size: 0.96rem;
-  line-height: 1.8;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 12px 20px 18px 20px !important;
+  border-top: 1px dashed rgba(45, 90, 60, 0.12) !important;
+  color: #4a5568 !important;
+  font-size: 0.96rem !important;
+  line-height: 1.8 !important;
+  background: #ffffff !important;
 }
 
 .news-article-system .article-cta-box,

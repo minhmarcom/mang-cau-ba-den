@@ -198,7 +198,7 @@ export default function MangCauCoSauArticlePage() {
           </div>
 
           <div className="article-container" id="faq"><section className="article-faq-section" aria-label="Câu hỏi thường gặp"><div className="faq-header"><span className="faq-kicker">Giải đáp thắc mắc</span><h2 className="faq-title">Câu hỏi thường gặp về mãng cầu Bà Đen có sâu</h2></div><div className="faq-accordion">
-            {faqItems.map(([question, answer], index) => <details className="faq-item" key={question} open={index === 0}><summary className="faq-question"><span>{question}</span><b aria-hidden="true">＋</b></summary><p>{answer}</p></details>)}
+            {faqItems.map(([question, answer], index) => <details className="faq-item" key={question} open={index === 0}><summary className="faq-question"><span>{question}</span></summary><p>{answer}</p></details>)}
           </div></section></div>
 
           <section className="article-related-section" aria-label="Bài viết liên quan"><div className="related-section-header"><span className="related-section-kicker">Góc đọc thêm</span><h2 className="related-section-title">Bài viết liên quan</h2></div><div className="related-articles-grid">

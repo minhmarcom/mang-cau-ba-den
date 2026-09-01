@@ -355,7 +355,7 @@ export default function ArticleBrandPage() {
                 <summary>
                   <span>01</span>
                   Mãng cầu Bà Đen Tây Ninh có tươi ngon khi giao đến tay khách hàng không?
-                  <b aria-hidden="true">＋</b>
+                  
                 </summary>
                 <p>
                   Nhà vườn ưu tiên thu hoạch trái trong ngày vào sáng sớm khi trái đạt độ già chuẩn, phân loại thủ công kỹ lưỡng, bọc lưới bảo vệ chống dập và đóng thùng thông khí chắc chắn nên trái giữ trọn độ tươi ngon tự nhiên khi giao.
@@ -366,7 +366,7 @@ export default function ArticleBrandPage() {
                 <summary>
                   <span>02</span>
                   Mãng cầu Bà Đen Tây Ninh có thích hợp làm quà biếu tặng không?
-                  <b aria-hidden="true">＋</b>
+                  
                 </summary>
                 <p>
                   Hộp quà 3 trái VIP và các thùng quà mãng cầu Tây Ninh tuyển chọn có ngoại hình tròn đều bắt mắt, hương thơm thanh khiết, đạt chuẩn VietGAP & OCOP, đóng gói trang nhã rất thích hợp làm quà biếu tặng gia đình, đối tác và khách hàng.
@@ -377,7 +377,7 @@ export default function ArticleBrandPage() {
                 <summary>
                   <span>03</span>
                   Vì sao mãng cầu trồng dưới chân núi Bà Đen lại có hương vị ngon khác biệt?
-                  <b aria-hidden="true">＋</b>
+                  
                 </summary>
                 <p>
                   Do thổ nhưỡng đất xám phù sa cổ quanh chân núi lửa cổ Bà Đen có khả năng thoát nước lý tưởng, cùng nền nhiệt nhiều nắng và biên độ nhiệt ngày đêm cao giúp cây mãng cầu tích tụ lượng đường tự nhiên đậm đà, thịt dai và thơm thanh.
