@@ -106,7 +106,7 @@ export default function MangCauCoSauArticlePage() {
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <Link href="/">Trang chủ</Link><Link href="/san-pham">Sản phẩm</Link><Link href="/hop-tac">Hợp tác</Link><Link href="/tin-tuc" className="active">Tin tức</Link><Link href="/#lien-he">Liên hệ</Link>
         </nav>
-        <div className="header-actions"><a className="header-cta" href="tel:0907215521"><span>0907 215 521</span><span className="cta-arrow">↗</span></a></div>
+        <div className="header-actions"><a className="header-cta" href="tel:0907215521"><span>0907 215 521</span></a></div>
       </header>
 
       <div className="article-breadcrumb-bar">
@@ -121,7 +121,7 @@ export default function MangCauCoSauArticlePage() {
         <article className="article-layout">
           <header className="article-header">
             <div className="article-container">
-              <div className="article-meta-top"><span className="article-kicker-badge">Kiến thức về trái • Tây Ninh</span><span className="article-read-time">⏱ 9 phút đọc</span><span className="article-pub-date">📅 Tháng 8/2026</span></div>
+              <div className="article-meta-top"><span className="article-kicker-badge">Kiến thức về trái • Tây Ninh</span><span className="article-read-time"> 9 phút đọc</span><span className="article-pub-date"> Tháng 8/2026</span></div>
               <h1 className="article-title">Vì sao mãng cầu Bà Đen đôi khi có sâu? <em>Hiểu đúng về đặc tính tự nhiên của trái mãng cầu</em></h1>
               <p className="article-lead">Vì sao một trái mãng cầu nhìn bên ngoài khá đẹp nhưng khi chín và tách ra lại có thể xuất hiện phần bị sâu? Cùng tìm hiểu khách quan về cấu tạo trái, môi trường sinh trưởng, tuyển lựa và bảo quản.</p>
             </div>
@@ -189,7 +189,7 @@ export default function MangCauCoSauArticlePage() {
 
               <h2 id="nabaden">12. TAYNA - Mãng Cầu Bà Đen nhìn nhận vấn đề trái mãng cầu có sâu như thế nào?</h2>
               <p>TAYNA - Mãng Cầu Bà Đen tuyển lựa nhằm hạn chế tối đa trái không đạt chất lượng trước khi giao. Điều quan trọng là kiểm soát từng khâu: thu hoạch phù hợp, tuyển lựa, phân loại, đóng gói, vận chuyển và hướng dẫn bảo quản.</p>
-              <div className="article-callout-box"><div className="callout-badge">Quan điểm TAYNA - Mãng Cầu Bà Đen</div><h3>Nông sản có thể không hoàn hảo tuyệt đối</h3><p>Nhưng sự chỉn chu, minh bạch và trách nhiệm với khách hàng luôn cần được đặt lên hàng đầu.</p><div className="callout-actions"><Link href="/san-pham" className="callout-btn primary">Xem sản phẩm ➔</Link><a href="tel:0907215521" className="callout-btn secondary">Hotline: 0907 215 521</a></div></div>
+              <div className="article-callout-box"><div className="callout-badge">Quan điểm TAYNA - Mãng Cầu Bà Đen</div><h3>Nông sản có thể không hoàn hảo tuyệt đối</h3><p>Nhưng sự chỉn chu, minh bạch và trách nhiệm với khách hàng luôn cần được đặt lên hàng đầu.</p><div className="callout-actions"><Link href="/san-pham" className="callout-btn primary">Xem sản phẩm </Link><a href="tel:0907215521" className="callout-btn secondary">Hotline: 0907 215 521</a></div></div>
 
               <h2 id="ket-luan">13. Hiểu đúng về mãng cầu Bà Đen để có trải nghiệm tốt hơn</h2>
               <p>Mãng cầu có cấu trúc nhiều mắt và khe, phát triển trong môi trường tự nhiên và tiếp tục chín sau thu hoạch. Dù được tuyển lựa cẩn thận, vẫn có thể có trường hợp bất thường khó phát hiện hoàn toàn khi trái còn nguyên.</p>

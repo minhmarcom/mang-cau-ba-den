@@ -208,21 +208,21 @@ async function main() {
     <!-- 3 Badges -->
     <g transform="translate(0, 225)">
       <rect x="0" y="0" width="175" height="42" rx="10" fill="url(#badgeGrad)" stroke="#52b788" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="18" y="26" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="600">✓ Chuẩn VietGAP</text>
+      <text x="18" y="26" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="600"> Chuẩn VietGAP</text>
       
       <rect x="188" y="0" width="175" height="42" rx="10" fill="url(#badgeGrad)" stroke="#52b788" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="206" y="26" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="600">✓ OCOP Tây Ninh</text>
+      <text x="206" y="26" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="600"> OCOP Tây Ninh</text>
       
       <rect x="376" y="0" width="175" height="42" rx="10" fill="url(#badgeGrad)" stroke="#52b788" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="394" y="26" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="600">✓ Giao Trong Ngày</text>
+      <text x="394" y="26" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="600"> Giao Trong Ngày</text>
     </g>
     
     <!-- Bottom Contact Box -->
     <g transform="translate(0, 312)">
       <rect x="0" y="0" width="550" height="66" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
-      <text x="24" y="40" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">🌐 mangcaubaden.vn</text>
+      <text x="24" y="40" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700"> mangcaubaden.vn</text>
       <line x1="270" y1="16" x2="270" y2="50" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25"/>
-      <text x="294" y="40" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800">📞 0907 215 521</text>
+      <text x="294" y="40" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800"> 0907 215 521</text>
     </g>
   </g>
 </svg>`;

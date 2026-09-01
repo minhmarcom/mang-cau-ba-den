@@ -234,7 +234,7 @@ export default function Hop3TraiVipPage() {
                 style={{ width: "100%", justifyContent: "center" }}
               >
                 <span>Hotline: 0907 215 521</span>
-                <span>↗</span>
+                <span></span>
               </a>
             </div>
           </div>
@@ -339,7 +339,7 @@ export default function Hop3TraiVipPage() {
           <div className="cta-box-buttons">
             <a className="btn-call" href="tel:0907215521">
               <span>Hotline: 0907 215 521</span>
-              <span>↗</span>
+              <span></span>
             </a>
             <a
               className="btn-zalo"

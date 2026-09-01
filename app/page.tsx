@@ -411,7 +411,7 @@ export default function Home() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
+            
           </a>
 
           <a
@@ -1083,7 +1083,7 @@ export default function Home() {
           <a className="contact-main" href="tel:0907215521">
             <span className="channel-label">Hotline tư vấn</span>
             <strong>0907 215 521</strong>
-            <b>Gọi ngay ↗</b>
+            <b>Gọi ngay </b>
           </a>
           <a href="https://www.facebook.com/mangcaubaden.vn/" target="_blank" rel="noreferrer">
             <div>

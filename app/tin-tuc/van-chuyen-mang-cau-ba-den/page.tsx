@@ -188,7 +188,7 @@ export default function ShippingArticlePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>0907 215 521</span>
-            <span className="cta-arrow">↗</span>
+            
           </a>
         </div>
       </header>

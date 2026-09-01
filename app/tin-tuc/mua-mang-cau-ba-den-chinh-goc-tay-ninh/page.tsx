@@ -182,7 +182,7 @@ export default function ArticlePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>Gọi 0907 215 521</span>
-            <span className="cta-arrow">↗</span>
+            
           </a>
           <Link
             className="mobile-order-btn"
@@ -441,7 +441,7 @@ export default function ArticlePage() {
               <div className="cta-box-buttons">
                 <a className="btn-call" href="tel:0907215521">
                   <span>Hotline: 0907 215 521</span>
-                  <span>↗</span>
+                  <span></span>
                 </a>
                 <a
                   className="btn-zalo"

@@ -203,7 +203,7 @@ export default function MangCauRipeningArticlePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>0907 215 521</span>
-            <span className="cta-arrow">↗</span>
+            
           </a>
         </div>
       </header>
@@ -232,8 +232,8 @@ export default function MangCauRipeningArticlePage() {
                 <span className="article-kicker-badge">
                   Mẹo hay &amp; Bảo quản • Tây Ninh
                 </span>
-                <span className="article-read-time">⏱ 5 phút đọc</span>
-                <span className="article-pub-date">📅 Tháng 8/2026</span>
+                <span className="article-read-time"> 5 phút đọc</span>
+                <span className="article-pub-date"> Tháng 8/2026</span>
               </div>
 
               <h1 className="article-title">
@@ -475,7 +475,7 @@ export default function MangCauRipeningArticlePage() {
 
               {/* HIGHLIGHT BOX / CALLOUT */}
               <div className="article-callout-box">
-                <div className="callout-badge">🛍️ Thưởng thức đặc sản chuẩn vị</div>
+                <div className="callout-badge"> Thưởng thức đặc sản chuẩn vị</div>
                 <h3>Đặt mua TAYNA - Mãng Cầu Bà Đen thu hoạch trong ngày</h3>
                 <p>
                   TAYNA - Mãng Cầu Bà Đen cam kết tuyển chọn từng trái <strong>mãng cầu Bà Đen già lứa chuẩn VietGAP &amp; OCOP</strong>, bao trái an toàn trên cành và đóng gói bọc lưới xốp kỹ lưỡng:
@@ -490,7 +490,7 @@ export default function MangCauRipeningArticlePage() {
                 </ul>
                 <div className="callout-actions">
                   <Link href="/san-pham" className="callout-btn primary">
-                    Đặt hàng sản phẩm ➔
+                    Đặt hàng sản phẩm 
                   </Link>
                   <a href="tel:0907215521" className="callout-btn secondary">
                     Hotline: 0907 215 521

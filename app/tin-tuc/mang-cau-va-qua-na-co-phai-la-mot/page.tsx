@@ -197,7 +197,7 @@ export default function NaVsMangCauArticlePage() {
         <div className="header-actions">
           <a className="header-cta" href="tel:0907215521">
             <span>0907 215 521</span>
-            <span className="cta-arrow">↗</span>
+            
           </a>
         </div>
       </header>
@@ -226,8 +226,8 @@ export default function NaVsMangCauArticlePage() {
                 <span className="article-kicker-badge">
                   Kiến thức nông sản • Tây Ninh
                 </span>
-                <span className="article-read-time">⏱ 6 phút đọc</span>
-                <span className="article-pub-date">📅 Tháng 8/2026</span>
+                <span className="article-read-time"> 6 phút đọc</span>
+                <span className="article-pub-date"> Tháng 8/2026</span>
               </div>
 
               <h1 className="article-title">
@@ -446,7 +446,7 @@ export default function NaVsMangCauArticlePage() {
 
               {/* HIGHLIGHT BOX / CALLOUT */}
               <div className="article-callout-box">
-                <div className="callout-badge">💡 Mẹo thưởng thức từ TAYNA - Mãng Cầu Bà Đen</div>
+                <div className="callout-badge"> Mẹo thưởng thức từ TAYNA - Mãng Cầu Bà Đen</div>
                 <h3>Đặt mua Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1</h3>
                 <p>
                   Dù bạn ở miền Bắc gọi là <strong>Quả Na</strong> hay miền Nam gọi là <strong>Mãng Cầu</strong>, TAYNA - Mãng Cầu Bà Đen luôn sẵn sàng cung ứng những trái mãng cầu Bà Đen chuẩn gốc ngọt dẻo thơm ngon:
@@ -461,7 +461,7 @@ export default function NaVsMangCauArticlePage() {
                 </ul>
                 <div className="callout-actions">
                   <Link href="/san-pham" className="callout-btn primary">
-                    Khám phá các dòng sản phẩm ➔
+                    Khám phá các dòng sản phẩm 
                   </Link>
                   <a href="tel:0907215521" className="callout-btn secondary">
                     Hotline đặt hàng: 0907 215 521

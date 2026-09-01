@@ -117,6 +117,8 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+import FloatingMessenger from "./components/FloatingMessenger";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -147,14 +149,17 @@ export default function RootLayout({
                   });
                 }
                 // Anti-Tamper & Security Shield Banner
-                console.log("%c⚠️ CẢNH BÁO BẢO MẬT NABADEN", "color: #eab308; font-size: 20px; font-weight: bold;");
-                console.log("%cHệ thống bảo mật & chống Spam/DDoS NABADEN đang hoạt động. Mọi hành vi tấn công, giả mạo hoặc spam dữ liệu đều bị mã hóa và ghi vết IP.", "color: #64748b; font-size: 12px;");
+                console.log("%c CẢNH BÁO BẢO MẬT TAYNA", "color: #eab308; font-size: 20px; font-weight: bold;");
+                console.log("%cHệ thống bảo mật & chống Spam/DDoS TAYNA đang hoạt động. Mọi hành vi tấn công, giả mạo hoặc spam dữ liệu đều bị mã hóa và ghi vết IP.", "color: #64748b; font-size: 12px;");
               } catch (e) {}
             `,
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatingMessenger />
+      </body>
     </html>
   );
 }

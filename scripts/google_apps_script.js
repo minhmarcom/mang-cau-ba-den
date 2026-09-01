@@ -6,7 +6,7 @@
  * 1. Mở trang Google Sheets của bạn.
  * 2. Trên thanh menu, chọn: Tiện ích mở rộng (Extensions) -> Apps Script.
  * 3. Xóa toàn bộ mã cũ, dán toàn bộ đoạn mã bên dưới vào.
- * 4. Bấm biểu tượng Lưu (Save) 💾.
+ * 4. Bấm biểu tượng Lưu (Save) .
  * 5. Bấm nút "Triển khai" (Deploy) -> "Quản lý bản triển khai" (Manage deployments).
  * 6. Chọn biểu tượng bút chì (Edit) -> Ở mục Phiên bản (Version) chọn "Phiên bản mới" (New version) -> Bấm "Triển khai" (Deploy).
  */
