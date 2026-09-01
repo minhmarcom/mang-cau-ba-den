@@ -5,16 +5,16 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "TAYNA - Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – TAYNA - Mãng Cầu Bà Đen",
+  title: "Thùng 15KG TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
   description:
-    "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh chuyên dụng đơn sỉ từ TAYNA - Mãng Cầu Bà Đen: Thùng carton 3-5 lớp chịu lực, lỗ thông gió chống hấp hơi. Gửi hàng toàn quốc.",
+    "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh thu hoạch trực tiếp tại nhà vườn chân Núi Bà Đen. Thùng carton 3-5 lớp chịu lực, lỗ thông gió chống hấp hơi, cung ứng sỉ & lẻ toàn quốc.",
   keywords: [
     "TAYNA",
     "TAYNA - Mãng Cầu Bà Đen",
     "thùng mãng cầu bà đen 15kg TAYNA",
-    "sỉ mãng cầu bà đen tây ninh",
+    "sỉ mãng cầu bà đen tây ninh tận vườn",
     "mua sỉ mãng cầu tây ninh",
-    "mãng cầu bà đen giá sỉ",
+    "mãng cầu bà đen giá sỉ tại vườn",
     "mãng cầu gửi xe khách toàn quốc",
     "đại lý mãng cầu bà đen",
   ],
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
   },
   openGraph: {
-    title: "TAYNA - Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – TAYNA - Mãng Cầu Bà Đen",
+    title: "Thùng 15KG TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
     description:
-      "Thùng carton 15kg Mãng Cầu Bà Đen TAYNA bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc từ TAYNA - Mãng Cầu Bà Đen.",
+      "Thùng carton 15kg Mãng Cầu Bà Đen TAYNA trực tiếp từ vùng trồng: Bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
     siteName: "TAYNA - Mãng Cầu Bà Đen",
     images: [

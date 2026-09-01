@@ -5,14 +5,14 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "TAYNA - Thùng Mãng Cầu Bà Đen 5KG – TAYNA - Mãng Cầu Bà Đen",
+  title: "Thùng 5KG TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
   description:
-    "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh chính gốc từ TAYNA - Mãng Cầu Bà Đen: Trái già loại 1 bọc xốp lưới êm ái, đóng thùng carton thoáng khí. Chuẩn VietGAP & OCOP 3 sao.",
+    "Thùng 5KG Mãng Cầu Bà Đen Tây Ninh thu hoạch trực tiếp tại vùng trồng chân Núi Bà Đen. Trái già loại 1 bọc xốp lưới, đóng thùng carton thoáng khí, cung ứng tươi ngon toàn quốc.",
   keywords: [
     "TAYNA",
     "TAYNA - Mãng Cầu Bà Đen",
     "thùng mãng cầu bà đen 5kg TAYNA",
-    "giá mãng cầu bà đen 5kg",
+    "giá mãng cầu bà đen 5kg tại vườn",
     "mãng cầu tây ninh 5kg",
     "đặt mua mãng cầu 5kg",
     "mãng cầu bà đen gia đình",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
   },
   openGraph: {
-    title: "TAYNA - Thùng Mãng Cầu Bà Đen 5KG – TAYNA - Mãng Cầu Bà Đen",
+    title: "Thùng 5KG TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
     description:
-      "Thùng 5kg Mãng Cầu Bà Đen Tây Ninh tuyển chọn loại 1 từ TAYNA - Mãng Cầu Bà Đen: Bọc xốp lưới từng quả, đóng thùng carton có quai xách tiện dụng.",
+      "Thùng 5kg Mãng Cầu Bà Đen Tây Ninh tuyển chọn trực tiếp tại nhà vườn TAYNA: Bọc xốp lưới từng quả, đóng thùng carton thoáng khí, giao nhanh toàn quốc.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-5kg`,
     siteName: "TAYNA - Mãng Cầu Bà Đen",
     images: [

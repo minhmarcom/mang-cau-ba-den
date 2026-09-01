@@ -15,8 +15,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const isLocal = host?.startsWith("localhost") || host?.startsWith("127.0.0.1");
   const siteUrl = isLocal ? `http://${host}` : "https://mangcaubaden.vn";
   const image = "https://mangcaubaden.vn/og.png";
-  const title = "TAYNA – Mãng Cầu Bà Đen Tây Ninh Chính Gốc | TAYNA - Mãng Cầu Bà Đen";
-  const description = "Đặc sản Mãng Cầu Bà Đen Tây Ninh loại 1 chính gốc từ TAYNA - Mãng Cầu Bà Đen. Thu hoạch trực tiếp tại vườn Thạnh Tân chân núi Bà Đen, đóng gói chuẩn VietGAP & OCOP. Hotline/Zalo: 0907 215 521.";
+  const title = "TAYNA – Mãng Cầu Bà Đen Chính Gốc Từ Vùng Trồng Tây Ninh";
+  const description = "TAYNA – Mãng Cầu Bà Đen từ vùng trồng dưới chân Núi Bà Đen, Tây Ninh. Chủ động nguồn trái tại vườn, thu hoạch đúng độ già, tuyển chọn theo phân loại, ngọt thơm tự nhiên.";
   const keywords = [
     // Thương hiệu & Đơn vị kinh doanh (Brand & Entity)
     "TAYNA", "TAYNA mãng cầu bà đen", "TAYNA - Mãng Cầu Bà Đen", "TAYNA - Mãng Cầu Bà Đen", "mãng cầu TAYNA",

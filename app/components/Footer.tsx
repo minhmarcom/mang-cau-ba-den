@@ -38,7 +38,7 @@ export default function Footer({ backLink }: FooterProps) {
               </span>
             </Link>
             <p className="footer-brand-desc">
-              <strong>TAYNA - Mãng Cầu Bà Đen</strong> – Chuyên tuyển chọn &amp; phân phối đặc sản Mãng Cầu Núi Bà Đen Tây Ninh loại 1 chính gốc từ nhà vườn Thạnh Tân. Trái già chuẩn lứa, ngọt thơm tự nhiên.
+              <strong>TAYNA – Mãng Cầu Bà Đen</strong> từ vùng trồng dưới chân Núi Bà Đen, Tây Ninh. Chủ động nguồn trái tại vườn, thu hoạch đúng độ già, tuyển chọn theo phân loại và cung ứng trực tiếp đến mọi nhà.
             </p>
           </div>
 

@@ -5,9 +5,9 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "TAYNA - Hộp Mãng Cầu Bà Đen 3 Trái VIP – TAYNA - Mãng Cầu Bà Đen",
+  title: "Hộp 3 Trái VIP TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
   description:
-    "Hộp quà TAYNA - Mãng Cầu Bà Đen 3 trái VIP thượng hạng từ TAYNA - Mãng Cầu Bà Đen: Tuyển chọn 3 quả đỉnh chóp tròn đều, vỏ sáng, lót rơm giấy và xốp lưới sang trọng làm quà biếu đối tác, dâng lễ.",
+    "Hộp quà TAYNA 3 trái VIP thượng hạng hái trực tiếp từ vùng trồng chân Núi Bà Đen, Tây Ninh. Tuyển chọn 3 quả đỉnh chóp tròn đều, thu hoạch đúng độ già, cung ứng làm quà biếu đối tác & dâng lễ.",
   keywords: [
     "TAYNA",
     "TAYNA - Mãng Cầu Bà Đen",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
   },
   openGraph: {
-    title: "TAYNA - Hộp Mãng Cầu Bà Đen 3 Trái VIP – TAYNA - Mãng Cầu Bà Đen",
+    title: "Hộp 3 Trái VIP TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
     description:
-      "Hộp quà 3 trái mãng cầu Bà Đen TAYNA tuyển chọn thượng hạng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
+      "Hộp quà 3 trái mãng cầu Bà Đen TAYNA tuyển chọn trực tiếp từ vùng trồng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
     siteName: "TAYNA - Mãng Cầu Bà Đen",
     images: [

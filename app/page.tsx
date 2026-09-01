@@ -509,77 +509,71 @@ export default function Home() {
         <div
           className="hero-photo"
           role="img"
-          aria-label="Mãng cầu tươi trong vườn tại Tây Ninh"
+          aria-label="Vườn mãng cầu TAYNA dưới chân Núi Bà Đen Tây Ninh"
         />
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow">
-            Nông sản quê mình, Tây Ninh
+            Trực tiếp từ vùng trồng chân Núi Bà Đen, Tây Ninh
           </p>
           <h1>
-            <span className="hero-line-1">Trái ngọt</span>
-            <em className="hero-line-2">từ vườn nhà.</em>
+            <span className="hero-line-1">TAYNA – Mãng Cầu Bà Đen</span>
+            <em className="hero-line-2">Chính Gốc Từ Vùng Trồng.</em>
           </h1>
           <p className="hero-copy">
-            Mãng Cầu Bà Đen mang đến hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất. Được tuyển chọn kỹ lưỡng từ nguồn nông sản an toàn. Sản phẩm trồng trọt theo tiêu chuẩn VietGAP và OCOP.
+            TAYNA được hình thành ngay tại vùng trồng mãng cầu dưới chân Núi Bà Đen, nơi những vườn mãng cầu được chăm sóc và thu hoạch mỗi ngày. Chúng tôi trực tiếp từ vùng trồng, chủ động nguồn trái và cung ứng đến khách hàng, không đơn thuần là một cửa hàng thu mua hay trung gian phân phối.
           </p>
           <div className="hero-actions">
             <a className="primary-button" href="#san-pham">
-              <span>Khám phá sản phẩm</span>
-
+              <span>Xem sản phẩm tại vùng trồng</span>
             </a>
           </div>
         </div>
         <div className="hero-note">
-
           <p>
-            <strong>Chuẩn VietGAP & OCOP</strong>
+            <strong>Chuẩn VietGAP &amp; OCOP 3 Sao</strong>
             <br />
-            Hương vị chuẩn tự nhiên, tươi ngon và giàu dưỡng chất.
+            Chủ động nguồn trái tại vườn – Thu hoạch đúng độ già – Cung ứng tươi ngon đến mọi nhà.
           </p>
         </div>
       </section>
 
-      {/* GEO ENTITY DEFINITION SECTION */}
+      {/* GEO ENTITY CARD */}
       <section className="geo-entity-section">
         <div className="geo-entity-container">
           <div className="geo-entity-card">
             <div className="geo-entity-kicker">
-              <span> THƯƠNG HIỆU NÔNG SẢN ĐẶC SẢN CHÍNH THỨC</span>
+              <span> THƯƠNG HIỆU MÃNG CẦU BÀ ĐEN CHÍNH GỐC TỪ VÙNG TRỒNG</span>
             </div>
             <h2 className="geo-entity-title">
-              Mãng Cầu Bà Đen Tây Ninh Là Gì?
+              TAYNA – Mãng Cầu Bà Đen Chính Gốc Từ Vùng Trồng Tây Ninh
             </h2>
             <p className="geo-entity-desc">
-              <strong>Mãng Cầu Bà Đen Tây Ninh</strong> là nông sản đặc sản đạt chuẩn <strong>VietGAP &amp; OCOP 3 sao</strong>, được canh tác và thu hoạch trực tiếp tại vùng chân núi Bà Đen (Tây Ninh). Sản phẩm nổi tiếng khắp cả nước nhờ thổ nhưỡng đất xám phù sa đồi núi đặc thù, trái chín mắt nở to phẳng, thịt dai dẻo quánh, vị ngọt thanh tự nhiên và quy trình bao bọc túi bảo vệ an toàn 100% trên cành.
+              <strong>TAYNA</strong> được hình thành ngay tại vùng trồng mãng cầu dưới chân Núi Bà Đen (Tây Ninh), nơi những vườn mãng cầu được chăm sóc và thu hoạch mỗi ngày. Chúng tôi trực tiếp từ vùng trồng, chủ động nguồn trái và cung ứng đến khách hàng. Mãng cầu TAYNA được thu hoạch đúng độ già, tuyển theo từng phân loại và nhu cầu sử dụng, giữ trọn đặc trưng ngọt thơm tự nhiên của Mãng Cầu Bà Đen Tây Ninh đạt chuẩn VietGAP &amp; OCOP 3 sao.
             </p>
             <div className="geo-badges-grid">
               <div className="geo-badge-item">
-
                 <div className="geo-badge-text">
-                  <strong>OCOP 3 Tây Ninh</strong>
-                  <span>Đặc sản cấp tỉnh chứng nhận</span>
+                  <strong>Trực Tiếp Từ Vùng Trồng</strong>
+                  <span>Chủ động nguồn trái tại vườn nhà</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-
                 <div className="geo-badge-text">
-                  <strong>Tiêu Chuẩn VietGAP</strong>
-                  <span>Canh tác an toàn sinh học</span>
+                  <strong>Thu Hoạch Đúng Độ Già</strong>
+                  <span>Hái tươi trực tiếp mỗi ngày</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-
                 <div className="geo-badge-text">
                   <strong>Vùng Trồng Núi Bà Đen</strong>
                   <span>Thổ nhưỡng chân núi Tây Ninh</span>
                 </div>
               </div>
               <div className="geo-badge-item">
-
                 <div className="geo-badge-text">
-                  <strong>Nông Sản Chính Gốc</strong>
-                  <span>100% Thu hoạch tại vườn Tây Ninh</span>
+                  <strong>Cung Ứng Trực Tiếp</strong>
+                  <span>Giao tận tay không qua trung gian</span>
                 </div>
               </div>
             </div>
@@ -591,78 +585,84 @@ export default function Home() {
       <section className="intro section-pad" id="cau-chuyen">
         <div>
           <p className="section-kicker">
-            Chuyện của vườn nhà
+            Hành trình từ vùng trồng
           </p>
           <h2>
-            <span className="heading-line">Lớn lên</span>
-            <em className="heading-line">từ đất lành.</em>
+            <span className="heading-line">TAYNA – Từ vùng trồng</span>
+            <em className="heading-line">chân Núi Bà Đen.</em>
           </h2>
         </div>
         <div className="intro-copy">
           <p>
-            Khí hậu nắng ấm, đất đai đặc trưng cùng kinh nghiệm canh tác qua nhiều thế hệ đã làm nên hương vị mãng cầu Bà Đen: thơm, ngọt thanh và dẻo dai.
+            <strong>TAYNA được hình thành ngay tại vùng trồng mãng cầu dưới chân Núi Bà Đen</strong>, nơi những vườn mãng cầu được chăm sóc và thu hoạch mỗi ngày.
           </p>
           <p>
-            Chúng tôi kết nối câu chuyện vùng trồng với những cơ hội mới — từ kênh bán lẻ, quà tặng đến sản phẩm chế biến và trải nghiệm nông nghiệp.
+            <strong>Chúng tôi trực tiếp từ vùng trồng, chủ động nguồn trái và cung ứng đến khách hàng</strong>, không đơn thuần là một cửa hàng thu mua và phân phối.
           </p>
-          <a className="arrow-link" href="#san-pham">
-            Khám phá các dòng sản phẩm
+          <p>
+            Mãng cầu TAYNA được thu hoạch đúng độ già, tuyển theo từng phân loại và nhu cầu sử dụng, giữ trọn đặc trưng ngọt thơm tự nhiên của Mãng Cầu Bà Đen Tây Ninh.
+          </p>
+          <p style={{ fontWeight: 700, color: "#1b4332", fontSize: "1.1rem", marginTop: "1rem" }}>
+            Từ vùng trồng dưới chân Núi Bà Đen – đưa trái mãng cầu Tây Ninh đến gần hơn với mọi nhà.
+          </p>
+          <a className="arrow-link" href="#san-pham" style={{ marginTop: "1rem", display: "inline-block" }}>
+            Xem các quy cách đóng gói tại vùng trồng
           </a>
         </div>
         <div className="intro-image">
           <img
             src="/vuon-nui-ba-den.jpg"
-            alt="Vườn mãng cầu xanh tốt dưới chân Núi Bà Đen Tây Ninh"
+            alt="Vườn mãng cầu TAYNA xanh tốt dưới chân Núi Bà Đen Tây Ninh"
             loading="lazy"
           />
-          <span>Vùng trồng chân Núi Bà Đen, Tây Ninh</span>
+          <span>Vùng trồng mãng cầu TAYNA chân Núi Bà Đen, Tây Ninh</span>
         </div>
       </section>
 
       {/* VALUES SECTION */}
       <section className="values">
         <div className="value-lead">
-          <p className="section-kicker">Giữ trọn chất quê</p>
+          <p className="section-kicker">Trực tiếp từ nhà vườn</p>
           <h2>
-            <span className="heading-line">Thuần mùa.</span>
-            <span className="heading-line">Sạch lành.</span>
-            <em className="heading-line">Tử tế.</em>
+            <span className="heading-line">Chủ động nguồn trái.</span>
+            <span className="heading-line">Hái đúng độ già.</span>
+            <em className="heading-line">Cung ứng tận tay.</em>
           </h2>
         </div>
         <div className="value-list">
           <article>
             <span>01</span>
             <div>
-              <h3>Thuận theo mùa vụ</h3>
+              <h3>Hình thành tại vùng trồng</h3>
               <p>
-                Tôn trọng nhịp sinh trưởng tự nhiên, độ chín và hương vị riêng của từng mùa trái.
+                TAYNA ở ngay tại vùng trồng chân Núi Bà Đen, nơi những vườn mãng cầu được chăm sóc và thu hoạch mỗi ngày.
               </p>
             </div>
           </article>
           <article>
             <span>02</span>
             <div>
-              <h3>Chăm từ vườn</h3>
+              <h3>Chủ động nguồn trái tại vườn</h3>
               <p>
-                Gìn giữ kinh nghiệm nhà nông, chăm chút từ lúc nuôi trái đến khi phân loại.
+                Trực tiếp từ vùng trồng và cung ứng đến khách hàng, chủ động từng khâu thu hoạch mà không qua bất kỳ trung gian hay cửa hàng thu mua nào.
               </p>
             </div>
           </article>
           <article>
             <span>03</span>
             <div>
-              <h3>Gửi đi tử tế</h3>
+              <h3>Thu hoạch đúng độ già</h3>
               <p>
-                Trao đổi rõ độ chín, quy cách, bao bì và lịch giao để trái đến tay khách trọn vị.
+                Tuyển chọn theo từng phân loại và nhu cầu sử dụng, giữ trọn hương vị dẻo dai ngọt thơm tự nhiên của Mãng Cầu Bà Đen Tây Ninh.
               </p>
             </div>
           </article>
           <article>
             <span>04</span>
             <div>
-              <h3>Chuẩn VietGAP & OCOP</h3>
+              <h3>Cung ứng đến mọi nhà</h3>
               <p>
-                Trồng trọt theo tiêu chuẩn an toàn, tuyển chọn kỹ lưỡng, giữ trọn vị ngon thuần khiết và giàu dưỡng chất.
+                Từ vùng trồng dưới chân Núi Bà Đen – đưa trái mãng cầu Tây Ninh chính gốc đến gần hơn với mọi gia đình toàn quốc.
               </p>
             </div>
           </article>

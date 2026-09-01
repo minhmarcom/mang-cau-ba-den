@@ -131,14 +131,14 @@ export default function HopTacContent() {
                 </div>
 
                 <h1 className="partner-hero-title">
-                  Hợp Tác Phân Phối <span className="nobr">Mãng Cầu Bà Đen</span> <span className="nobr">Tây Ninh</span>
+                  Hợp Tác Cung Ứng <span className="nobr">Mãng Cầu Bà Đen</span> <span className="nobr">Tây Ninh</span>
                   <span className="hero-highlight-phrase">
-                    Mãng Cầu Bà Đen Hỗ Trợ Đóng Gói, Vận Chuyển &amp; Đối Soát Chiết Khấu
+                    TAYNA Trực Tiếp Từ Vùng Trồng Hỗ Trợ Đóng Gói, Vận Chuyển &amp; Cung Ứng Toàn Quốc
                   </span>
                 </h1>
 
                 <p className="partner-hero-lead">
-                  Kinh doanh nông sản đặc sản Tây Ninh theo mô hình linh hoạt. Bạn tập trung tìm kiếm khách hàng và lên đơn, các khâu <em>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng và thu hộ COD</em> được Mãng Cầu Bà Đen hỗ trợ phối hợp vận hành.
+                  TAYNA được hình thành ngay tại vùng trồng dưới chân Núi Bà Đen. Chúng tôi trực tiếp từ vùng trồng, chủ động nguồn trái tại vườn và cung ứng đến các đối tác, cộng tác viên toàn quốc. Bạn tập trung phát triển thị trường, các khâu <em>thu hoạch tại vườn, đóng thùng xốp, điều phối giao hàng</em> được TAYNA trực tiếp đảm bảo.
                 </p>
 
                 <div className="partner-hero-pills">
