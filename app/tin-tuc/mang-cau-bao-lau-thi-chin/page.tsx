@@ -621,7 +621,7 @@ export default function MangCauRipeningArticlePage() {
               >
                 <div className="related-card-thumb">
                   <img
-                    src="/dong-thung-carton-mang-cau-xop.jpg"
+                    src="/dong-mang-cau-xop-tay-ninh.jpg"
                     alt="Cách bảo quản Mãng Cầu Bà Đen đúng cách tại nhà"
                     loading="lazy"
                   />

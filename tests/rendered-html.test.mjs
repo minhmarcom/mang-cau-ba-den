@@ -47,7 +47,7 @@ test("legacy branded image assets are absent", async () => {
   const removedAssets = [
     "public/banner-mang-cau-ba-den.png",
     "public/can-trong-luong-mang-cau-tay-ninh.jpg",
-    "public/dong-thung-carton-mang-cau-xop.jpg",
+    "public/dong-mang-cau-xop-tay-ninh.jpg",
     "public/mascot-speaking.jpg",
     "public/thuc-te-dong-goi-nhieu-thung.jpg",
     "public/thuc-te-vuon-mang-cau.jpg",
