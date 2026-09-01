@@ -190,7 +190,7 @@ export default function ArticleBrandPage() {
       </header>
 
       {/* ARTICLE CONTENT */}
-      <article className="article-container article-content">
+      <article className="news-article-system article-container article-content">
         {/* BREADCRUMB */}
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Trang chủ</Link>

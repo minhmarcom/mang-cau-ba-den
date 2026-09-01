@@ -223,7 +223,7 @@ export default function MangCauRipeningArticlePage() {
         </div>
       </div>
 
-      <main className="article-main">
+      <main className="news-article-system article-main">
         <article className="article-layout">
           {/* ARTICLE HEADER */}
           <header className="article-header">

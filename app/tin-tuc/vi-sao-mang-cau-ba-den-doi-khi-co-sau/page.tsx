@@ -117,7 +117,7 @@ export default function MangCauCoSauArticlePage() {
         </div>
       </div>
 
-      <main className="article-main">
+      <main className="news-article-system article-main">
         <article className="article-layout">
           <header className="article-header">
             <div className="article-container">
