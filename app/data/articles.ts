@@ -17,6 +17,18 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/mang-cau-ba-den-duoc-trong-nhu-the-nao",
+    title:
+      "Mãng Cầu Bà Đen Được Trồng Như Thế Nào? Hành Trình Từ Vườn Đến Khi Thu Hoạch",
+    kicker: "Quy trình & Vùng trồng • Tây Ninh",
+    badge: "Hành trình vùng trồng",
+    image: "/nong-dan-thu-hoach-mang-cau.jpg",
+    date: "Tháng 9/2026",
+    readTime: "8 phút đọc",
+    description:
+      "Khám phá quy trình trồng Mãng Cầu Bà Đen Tây Ninh từ thổ nhưỡng chân núi, xử lý ra hoa, tỉa trái, bao trái an toàn đến khâu xác định độ già, thu hoạch và tuyển chọn tỉ mỉ.",
+  },
+  {
     slug: "/vi-sao-mang-cau-ba-den-doi-khi-co-sau",
     title:
       "Vì sao mãng cầu Bà Đen đôi khi có sâu? Hiểu đúng về đặc tính tự nhiên của trái mãng cầu",
