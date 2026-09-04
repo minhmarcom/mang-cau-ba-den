@@ -109,15 +109,14 @@ export default function MangCauCoSauArticlePage() {
         <div className="header-actions"><a className="header-cta" href="tel:0907215521"><span>0907 215 521</span></a></div>
       </header>
 
-      <div className="article-breadcrumb-bar">
+      <main className="news-article-system article-main">
+        <div className="article-breadcrumb-bar">
         <div className="article-container">
           <nav className="breadcrumb-nav" aria-label="Breadcrumb">
             <Link href="/">Trang chủ</Link><span className="breadcrumb-sep">/</span><Link href="/tin-tuc">Cẩm nang &amp; Tin tức</Link><span className="breadcrumb-sep">/</span><span className="breadcrumb-current">Vì sao mãng cầu đôi khi có sâu?</span>
           </nav>
         </div>
       </div>
-
-      <main className="news-article-system article-main">
         <article className="article-layout">
           <header className="article-header">
             <div className="article-container">

@@ -193,20 +193,18 @@ export default function ShippingArticlePage() {
         </div>
       </header>
 
-      {/* BREADCRUMB */}
-      <div className="article-breadcrumb-bar">
-        <div className="article-container">
-          <nav className="breadcrumb-nav" aria-label="Breadcrumb">
-            <Link href="/">Trang chủ</Link>
-            <span className="breadcrumb-sep">/</span>
-            <Link href="/tin-tuc">Cẩm nang &amp; Tin tức</Link>
-            <span className="breadcrumb-sep">/</span>
-            <span className="breadcrumb-current">Vận chuyển Mãng cầu Bà Đen</span>
-          </nav>
+      <main className="news-article-system article-main">
+        <div className="article-breadcrumb-bar">
+          <div className="article-container">
+            <nav className="breadcrumb-nav" aria-label="Breadcrumb">
+              <Link href="/">Trang chủ</Link>
+              <span className="breadcrumb-sep">/</span>
+              <Link href="/tin-tuc">Cẩm nang &amp; Tin tức</Link>
+              <span className="breadcrumb-sep">/</span>
+              <span className="breadcrumb-current">Vận chuyển Mãng cầu Bà Đen</span>
+            </nav>
+          </div>
         </div>
-      </div>
-
-      <main className="article-main">
         <article className="article-layout">
           {/* ARTICLE HERO */}
           <header className="article-header">

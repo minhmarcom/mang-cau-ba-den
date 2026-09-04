@@ -150,22 +150,22 @@ export default function ArticlePage() {
         </div>
       </header>
 
-      {/* BREADCRUMB */}
-      <div className="article-breadcrumb-bar">
-        <div className="article-container">
-          <nav className="breadcrumb-nav" aria-label="Breadcrumb">
-            <Link href="/">Trang chủ</Link>
-            <span className="breadcrumb-sep">/</span>
-            <Link href="/tin-tuc">Cẩm nang &amp; Tin tức</Link>
-            <span className="breadcrumb-sep">/</span>
-            <span className="breadcrumb-current">
-              Mãng Cầu Bà Đen Được Trồng Như Thế Nào?
-            </span>
-          </nav>
-        </div>
-      </div>
-
       <main className="news-article-system article-main">
+        {/* BREADCRUMB */}
+        <div className="article-breadcrumb-bar">
+          <div className="article-container">
+            <nav className="breadcrumb-nav" aria-label="Breadcrumb">
+              <Link href="/">Trang chủ</Link>
+              <span className="breadcrumb-sep">/</span>
+              <Link href="/tin-tuc">Cẩm nang &amp; Tin tức</Link>
+              <span className="breadcrumb-sep">/</span>
+              <span className="breadcrumb-current">
+                Mãng Cầu Bà Đen Được Trồng Như Thế Nào?
+              </span>
+            </nav>
+          </div>
+        </div>
+
         <article className="article-layout">
           {/* ARTICLE HEADER */}
           <header className="article-header">

@@ -208,8 +208,8 @@ export default function MangCauRipeningArticlePage() {
         </div>
       </header>
 
-      {/* BREADCRUMB */}
-      <div className="article-breadcrumb-bar">
+      <main className="news-article-system article-main">
+        <div className="article-breadcrumb-bar">
         <div className="article-container">
           <nav className="breadcrumb-nav" aria-label="Breadcrumb">
             <Link href="/">Trang chủ</Link>
@@ -222,8 +222,6 @@ export default function MangCauRipeningArticlePage() {
           </nav>
         </div>
       </div>
-
-      <main className="news-article-system article-main">
         <article className="article-layout">
           {/* ARTICLE HEADER */}
           <header className="article-header">

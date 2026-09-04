@@ -206,8 +206,8 @@ export default function CultureArticlePage() {
         </div>
       </header>
 
-      {/* BREADCRUMB */}
-      <div className="article-breadcrumb-bar">
+      <main className="article-main">
+        <div className="article-breadcrumb-bar">
         <div className="article-container">
           <nav className="breadcrumb-nav" aria-label="Breadcrumb">
             <Link href="/">Trang chủ</Link>
@@ -220,8 +220,6 @@ export default function CultureArticlePage() {
           </nav>
         </div>
       </div>
-
-      <main className="article-main">
         <article className="article-layout">
           {/* ARTICLE HEADER */}
           <header className="article-header">

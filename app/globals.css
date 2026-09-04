@@ -182,24 +182,38 @@ h2 {
 /* =========================================================
    STICKY HEADER (DESKTOP & MOBILE APP BAR)
    ========================================================= */
+/* =========================================================
+   STICKY HEADER (DESKTOP & MOBILE APP BAR)
+   ========================================================= */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: var(--header-height-desktop);
-  z-index: 100;
+  height: var(--header-height-desktop, 76px);
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5vw;
+  padding: 0 clamp(16px, 4vw, 40px);
   color: var(--ink);
   background: rgba(247, 242, 223, 0.96);
   border-bottom: 1px solid var(--border-soft);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 4px 20px rgba(31, 61, 43, 0.04);
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
 }
 
 .brand {
@@ -226,17 +240,19 @@ h2 {
 }
 
 .brand-text {
-  color: var(--ink);
-  font-size: clamp(0.72rem, 0.2vw + 0.68rem, 0.82rem);
-  line-height: 1.15;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  text-transform: uppercase;
-  white-space: nowrap;
+  color: var(--ink, #1c2e24) !important;
+  font-family: var(--font-sans, "Be Vietnam Pro", sans-serif) !important;
+  font-size: clamp(0.72rem, 0.2vw + 0.68rem, 0.82rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0.06em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
 }
 
 .desktop-nav {
   display: flex;
+  align-items: center;
   gap: clamp(18px, 2.2vw, 34px);
   font-size: clamp(0.85rem, 0.2vw + 0.8rem, 0.95rem);
   font-weight: 500;
@@ -275,19 +291,22 @@ h2 {
 }
 
 .header-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 22px;
-  min-height: 44px;
-  border-radius: 100px;
-  color: white;
-  background: var(--leaf);
-  font-size: clamp(0.8rem, 0.15vw + 0.75rem, 0.9rem);
-  font-weight: 600;
-  white-space: nowrap;
-  box-shadow: 0 4px 14px rgba(74, 110, 59, 0.22);
-  transition: background 0.2s ease, transform 0.15s ease;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 8px 20px !important;
+  min-height: 40px !important;
+  height: 40px !important;
+  border-radius: 100px !important;
+  color: #ffffff !important;
+  background: var(--leaf, #2d5a3c) !important;
+  font-family: var(--font-sans, "Be Vietnam Pro", sans-serif) !important;
+  font-size: clamp(0.8rem, 0.15vw + 0.75rem, 0.9rem) !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+  box-shadow: 0 4px 14px rgba(74, 110, 59, 0.22) !important;
+  transition: background 0.2s ease, transform 0.15s ease !important;
 }
 
 .header-cta:hover {
@@ -6293,49 +6312,71 @@ footer {
   background: transparent;
 }
 
-.news-article-system .article-breadcrumb-bar,
-.news-article-system .article-breadcrumb {
-  border-top: 0;
-  border-bottom: 1px solid var(--border-soft);
-  color: var(--ink-muted);
-  background: rgba(255, 253, 246, 0.74);
-  font-size: 0.76rem;
-  line-height: 1.6;
-}
-
+.article-breadcrumb-bar,
 .news-article-system .article-breadcrumb-bar {
-  padding: 13px 0;
+  width: 100% !important;
+  margin-top: var(--header-height-desktop, 76px) !important;
+  padding: 14px 18px !important;
+  border-bottom: 1px solid rgba(45, 90, 60, 0.12) !important;
+  background: #faf8f2 !important;
+  box-sizing: border-box !important;
 }
 
+.article-breadcrumb,
+.breadcrumb-nav,
 .news-article-system .article-breadcrumb,
 .news-article-system .breadcrumb-nav {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 7px;
-  width: min(calc(100% - 36px), var(--article-media-width));
-  max-width: var(--article-media-width);
-  margin-inline: auto;
-  padding: 0;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  width: min(calc(100% - 32px), var(--article-media-width, 940px)) !important;
+  max-width: var(--article-media-width, 940px) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-family: var(--font-sans, "Be Vietnam Pro", sans-serif) !important;
+  font-size: 0.84rem !important;
+  line-height: 1.5 !important;
+  color: #6b7280 !important;
+  text-align: center !important;
 }
 
+.article-breadcrumb a,
+.breadcrumb-nav a,
 .news-article-system .article-breadcrumb a,
 .news-article-system .breadcrumb-nav a {
-  color: var(--leaf);
-  font-weight: 700;
-  text-decoration: none;
+  color: var(--leaf, #2d5a3c) !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
 }
 
-.news-article-system .breadcrumb-separator,
+.article-breadcrumb a:hover,
+.breadcrumb-nav a:hover {
+  color: #1c3525 !important;
+  text-decoration: underline !important;
+}
+
+.breadcrumb-sep,
+.breadcrumb-separator,
 .news-article-system .breadcrumb-sep {
-  color: rgba(31, 61, 43, 0.42);
+  color: #9ca3af !important;
+  margin: 0 4px !important;
+  font-weight: 400 !important;
+}
+
+.breadcrumb-current,
+.news-article-system .breadcrumb-current {
+  color: #374151 !important;
+  font-weight: 500 !important;
 }
 
 .news-article-system .article-header {
-  width: 100%;
-  margin: 0;
-  padding: clamp(46px, 7vw, 78px) 18px clamp(30px, 4vw, 48px);
-  text-align: center;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: clamp(28px, 4vw, 44px) 18px clamp(20px, 3vw, 32px) !important;
+  text-align: center !important;
 }
 
 .news-article-system .article-header > .article-container {
