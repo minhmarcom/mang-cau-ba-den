@@ -328,13 +328,35 @@ h2 {
 }
 
 /* =========================================================
-   MOBILE MENU DRAWER (ZERO GAPS, FLUSH APP FEEL)
+   RESPONSIVE HEADER ADJUSTMENTS (PC / LAPTOP / TABLET / MOBILE)
    ========================================================= */
-.mobile-nav {
-  display: none;
+@media (min-width: 951px) and (max-width: 1180px) {
+  .site-header {
+    padding: 0 16px !important;
+  }
+
+  .header-container {
+    gap: 12px !important;
+  }
+
+  .desktop-nav {
+    gap: clamp(8px, 1.2vw, 16px) !important;
+    font-size: clamp(0.76rem, 0.15vw + 0.72rem, 0.84rem) !important;
+  }
+
+  .header-cta {
+    padding: 6px 14px !important;
+    font-size: 0.78rem !important;
+    min-height: 36px !important;
+    height: 36px !important;
+  }
+
+  .brand-text {
+    font-size: 0.72rem !important;
+  }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
   body {
     padding-top: var(--header-height-mobile);
     padding-bottom: calc(66px + env(safe-area-inset-bottom, 0px));
@@ -346,7 +368,7 @@ h2 {
   }
 
   .desktop-nav, .header-cta {
-    display: none;
+    display: none !important;
   }
 
   .mobile-order-btn {
@@ -2665,7 +2687,7 @@ h2 {
 }
 
 .site-header {
-  padding-inline: max(var(--page-gutter), calc((100vw - var(--container-max)) / 2));
+  padding-inline: max(var(--page-gutter), calc((100% - var(--container-max)) / 2));
 }
 
 /* Full-bleed sections keep their background while content follows one grid. */
@@ -2673,7 +2695,7 @@ h2 {
 .values,
 .contact {
   padding-block: var(--section-space);
-  padding-inline: max(var(--page-gutter), calc((100vw - var(--container-max)) / 2));
+  padding-inline: max(var(--page-gutter), calc((100% - var(--container-max)) / 2));
 }
 
 .geo-entity-section,
@@ -2727,7 +2749,7 @@ h2 {
 /* Homepage: hero and editorial sections */
 .hero-content {
   width: min(50%, 640px);
-  margin-left: max(var(--page-gutter), calc((100vw - var(--container-max)) / 2));
+  margin-left: max(var(--page-gutter), calc((100% - var(--container-max)) / 2));
   padding-block: var(--space-6);
   padding-top: calc(var(--header-height-desktop) + 16px);
 }
@@ -2748,7 +2770,7 @@ h2 {
 }
 
 .hero-note {
-  right: max(var(--page-gutter), calc((100vw - var(--container-max)) / 2));
+  right: max(var(--page-gutter), calc((100% - var(--container-max)) / 2));
   bottom: var(--space-8);
   gap: var(--space-4);
   padding: var(--space-4) var(--space-5);
