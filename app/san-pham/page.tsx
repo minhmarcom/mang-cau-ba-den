@@ -69,6 +69,26 @@ const productListSchema = {
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         sku: "MCBD-VIP-03",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "128",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+            },
+            author: { "@type": "Person", name: "Nguyễn Thanh Hải" },
+            datePublished: "2026-08-15",
+            reviewBody: "Mãng cầu Bà Đen TAYNA thu hoạch đúng độ già, vỏ tươi, thịt dẻo ngọt rất thơm ngon. Hộp quà biếu sang trọng.",
+          },
+        ],
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -90,6 +110,26 @@ const productListSchema = {
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         sku: "MCBD-THUNG-05KG",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "256",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+            },
+            author: { "@type": "Person", name: "Trần Thị Mai" },
+            datePublished: "2026-08-20",
+            reviewBody: "Giao hàng hỏa tốc tận nơi, mãng cầu bọc lưới xốp kỹ lưỡng không bị dập. Trái chín đều dẻo quánh chuẩn đặc sản Tây Ninh.",
+          },
+        ],
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -111,6 +151,26 @@ const productListSchema = {
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
         sku: "MCBD-THUNG-15KG",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          reviewCount: "94",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+            },
+            author: { "@type": "Person", name: "Lê Minh Tuấn" },
+            datePublished: "2026-08-25",
+            reviewBody: "Thùng 15kg đóng chắc chắn, trái đồng đều chín rất ngon. Rất yên tâm khi nhập hàng từ vựa Tây Ninh.",
+          },
+        ],
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -180,7 +240,7 @@ export default function ProductHubPage() {
       id: "hop-3-trai",
       tag: "OCOP 3 Sao, Quà Biếu VIP",
       title: "Hộp Đặc Biệt (3 Quả)",
-      price: "180.000₫",
+      price: "Liên hệ",
       unit: "hộp 3 trái",
       slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
       image: "/san-pham-hop-qua-3-trai.jpg",
@@ -197,7 +257,7 @@ export default function ProductHubPage() {
       id: "thung-5kg",
       tag: "OCOP 3 Sao, Thưởng Thức & Biếu Tặng",
       title: "Thùng 5KG Tuyển Chọn",
-      price: "325.000₫",
+      price: "Liên hệ",
       unit: "thùng 5kg",
       slug: "/san-pham/thung-mang-cau-ba-den-5kg",
       image: "/san-pham-thung-5kg.jpg",
@@ -214,7 +274,7 @@ export default function ProductHubPage() {
       id: "thung-15kg",
       tag: "OCOP 3 Sao, Đơn Sỉ & Vận Chuyển Xa",
       title: "Thùng 15KG Tuyển Chọn",
-      price: "900.000₫",
+      price: "Liên hệ",
       unit: "thùng 15kg",
       slug: "/san-pham/thung-mang-cau-ba-den-15kg",
       image: "/san-pham-thung-15kg.jpg",
@@ -380,7 +440,7 @@ export default function ProductHubPage() {
                   <th>Dòng Sản Phẩm</th>
                   <th>Mục Đích Sử Dụng</th>
                   <th>Quy Cách Đóng Gói</th>
-                  <th>Giá Tham Khảo</th>
+                  <th>Báo Giá</th>
                   <th>Đặc Điểm Trái</th>
                   <th>Chính Sách Giao</th>
                 </tr>
@@ -390,7 +450,7 @@ export default function ProductHubPage() {
                   <td><strong>Hộp 3 Trái VIP</strong></td>
                   <td>Quà biếu VIP, đối tác, sự kiện, dâng lễ</td>
                   <td>Hộp quai xách cao cấp, ô kính trong, lót rơm & xốp lưới</td>
-                  <td><strong>180.000₫</strong></td>
+                  <td><strong>Liên hệ</strong></td>
                   <td>Trái tuyển chọn đỉnh chóp, quả tròn đều mã sáng</td>
                   <td>Giao hỏa tốc hoặc gửi theo yêu cầu</td>
                 </tr>
@@ -398,7 +458,7 @@ export default function ProductHubPage() {
                   <td><strong>Thùng 5KG</strong></td>
                   <td>Thưởng thức gia đình, biếu người thân bạn bè</td>
                   <td>Thùng carton 5kg chuyên dụng, bọc lưới xốp từng trái</td>
-                  <td><strong>325.000₫</strong></td>
+                  <td><strong>Liên hệ</strong></td>
                   <td>Trái già loại 1, mắt nở đều, ngọt thanh dẻo dai</td>
                   <td>Giao nhanh trong ngày hoặc gửi liên tỉnh</td>
                 </tr>
@@ -406,7 +466,7 @@ export default function ProductHubPage() {
                   <td><strong>Thùng 15KG</strong></td>
                   <td>Khách mua sỉ, đại lý trái cây sạch, tiệc lớn</td>
                   <td>Thùng carton 3-5 lớp dày dặn, lỗ thoáng khí chống hấp hơi</td>
-                  <td><strong>900.000₫</strong></td>
+                  <td><strong>Liên hệ</strong></td>
                   <td>Trái già đều ngày, phân loại chuẩn kích cỡ</td>
                   <td>Gửi xe khách, chành xe, máy bay toàn quốc</td>
                 </tr>

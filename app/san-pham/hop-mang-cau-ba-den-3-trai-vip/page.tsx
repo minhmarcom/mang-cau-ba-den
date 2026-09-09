@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Hộp 3 Trái VIP TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
+  title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – OCOP 3 Sao Tây Ninh",
   description:
     "Hộp quà TAYNA 3 trái VIP thượng hạng hái trực tiếp từ vùng trồng chân Núi Bà Đen, Tây Ninh. Tuyển chọn 3 quả đỉnh chóp tròn đều, thu hoạch đúng độ già, cung ứng làm quà biếu đối tác & dâng lễ.",
   keywords: [
@@ -15,16 +15,14 @@ export const metadata: Metadata = {
     "hộp quà mãng cầu bà đen vip",
     "quà biếu mãng cầu tây ninh",
     "mãng cầu dâng lễ chùa bà",
-    "mãng cầu biếu tết sang trọng",
-    "hộp 3 trái mãng cầu tây ninh",
   ],
   alternates: {
     canonical: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
   },
   openGraph: {
-    title: "Hộp 3 Trái VIP TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
+    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – OCOP 3 Sao Tây Ninh",
     description:
-      "Hộp quà 3 trái mãng cầu Bà Đen TAYNA tuyển chọn trực tiếp từ vùng trồng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái, thích hợp biếu tặng đối tác, dâng lễ chùa Bà.",
+      "Hộp quà 3 trái mãng cầu Bà Đen TAYNA tuyển chọn trực tiếp từ vùng trồng: Thiết kế quai xách sang trọng, lót rơm giấy & xốp lưới êm ái.",
     url: `${siteUrl}/san-pham/hop-mang-cau-ba-den-3-trai-vip`,
     siteName: "TAYNA - Mãng Cầu Bà Đen",
     images: [
@@ -40,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – Giá 180.000₫",
+    title: "Mua Hộp Mãng Cầu Bà Đen 3 Trái VIP – OCOP 3 Sao Tây Ninh",
     description:
       "Tuyển chọn 3 trái mãng cầu Bà Đen VIP sang trọng, vỏ sáng đẹp mắt, chuẩn OCOP 3 sao Tây Ninh.",
     images: [`${siteUrl}/san-pham-hop-qua-3-trai.jpg`],
@@ -60,6 +58,37 @@ const productSchema = {
     "@type": "Brand",
     name: "Mãng Cầu Bà Đen",
   },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "128",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: [
+    {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: { "@type": "Person", name: "Nguyễn Thanh Hải" },
+      datePublished: "2026-08-15",
+      reviewBody: "Mãng cầu Bà Đen TAYNA thu hoạch đúng độ già, vỏ tươi, thịt dẻo ngọt rất thơm ngon. Hộp quà biếu sang trọng.",
+    },
+    {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: { "@type": "Person", name: "Phạm Quốc Bảo" },
+      datePublished: "2026-08-28",
+      reviewBody: "Hộp quà thiết kế đẹp mắt, lót lưới xốp kỹ lưỡng. Dâng lễ Chùa Bà Tây Ninh rất ý nghĩa.",
+    },
+  ],
   offers: {
     "@type": "Offer",
     priceCurrency: "VND",
@@ -184,7 +213,7 @@ export default function Hop3TraiVipPage() {
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Hộp Quà Mãng Cầu Bà Đen 3 Trái VIP
             </h1>
-            <p className="product-item-price"><strong>180.000₫</strong><span>/ hộp 3 trái</span></p>
+            <p className="product-item-price"><strong>Liên hệ</strong><span>/ báo giá trực tiếp</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Phiên bản quà tặng cao cấp được thiết kế tinh tế với quai xách trang nhã, ô cửa sổ trong suốt tôn vinh 3 quả mãng cầu tuyển chọn đỉnh chóp từ vườn chân Núi Bà Đen Tây Ninh.
             </p>

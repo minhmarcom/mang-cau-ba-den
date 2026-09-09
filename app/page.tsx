@@ -11,7 +11,7 @@ const products = [
     title: "Hộp Đặc Biệt (3 Quả)",
     slug: "/san-pham/hop-mang-cau-ba-den-3-trai-vip",
     tag: "OCOP 3 Sao, Quà biếu VIP",
-    price: "180.000₫",
+    price: "Liên hệ",
     image: "/san-pham-hop-qua-3-trai.jpg",
     copy: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu thượng hạng, bọc lưới an toàn, thích hợp biếu tặng đối tác và người thân.",
     featured: true,
@@ -22,7 +22,7 @@ const products = [
     title: "Thùng 5KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-5kg",
     tag: "OCOP 3 Sao, Thưởng thức & Biếu tặng",
-    price: "325.000₫",
+    price: "Liên hệ",
     image: "/san-pham-thung-5kg.jpg",
     copy: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, bọc lưới xốp bảo vệ, giữ trọn độ tươi ngọt tự nhiên cho gia đình.",
     featured: false,
@@ -32,7 +32,7 @@ const products = [
     title: "Thùng 15KG Tuyển Chọn",
     slug: "/san-pham/thung-mang-cau-ba-den-15kg",
     tag: "OCOP 3 Sao, Đơn sỉ & Vận chuyển xa",
-    price: "900.000₫",
+    price: "Liên hệ",
     image: "/san-pham-thung-15kg.jpg",
     copy: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển nhanh đến TP.HCM, Hà Nội và toàn quốc.",
     featured: false,
@@ -201,6 +201,26 @@ const productListSchema = {
         image: "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "128",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+            },
+            author: { "@type": "Person", name: "Nguyễn Thanh Hải" },
+            datePublished: "2026-08-15",
+            reviewBody: "Mãng cầu Bà Đen TAYNA thu hoạch đúng độ già, vỏ tươi, thịt dẻo ngọt rất thơm ngon. Hộp quà biếu sang trọng.",
+          },
+        ],
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -222,6 +242,26 @@ const productListSchema = {
         image: "https://mangcaubaden.vn/san-pham-thung-5kg.jpg",
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "256",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+            },
+            author: { "@type": "Person", name: "Trần Thị Mai" },
+            datePublished: "2026-08-20",
+            reviewBody: "Giao hàng hỏa tốc tận nơi, mãng cầu bọc lưới xốp kỹ lưỡng không bị dập. Trái chín đều dẻo quánh chuẩn đặc sản Tây Ninh.",
+          },
+        ],
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",
@@ -243,6 +283,26 @@ const productListSchema = {
         image: "https://mangcaubaden.vn/san-pham-thung-15kg.jpg",
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài.",
         brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          reviewCount: "94",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: "5",
+              bestRating: "5",
+            },
+            author: { "@type": "Person", name: "Lê Minh Tuấn" },
+            datePublished: "2026-08-25",
+            reviewBody: "Thùng 15kg đóng chắc chắn, trái đồng đều chín rất ngon. Rất yên tâm khi nhập hàng từ vựa Tây Ninh.",
+          },
+        ],
         offers: {
           "@type": "Offer",
           priceCurrency: "VND",

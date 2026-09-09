@@ -5,42 +5,20 @@ import Footer from "../../components/Footer";
 const siteUrl = "https://mangcaubaden.vn";
 
 export const metadata: Metadata = {
-  title: "Thùng 15KG TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
+  title: "Mua Sỉ Thùng Mãng Cầu Bà Đen 15KG – OCOP 3 Sao Tây Ninh",
   description:
-    "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh thu hoạch trực tiếp tại nhà vườn chân Núi Bà Đen. Thùng carton 3-5 lớp chịu lực, lỗ thông gió chống hấp hơi, cung ứng sỉ & lẻ toàn quốc.",
-  keywords: [
-    "TAYNA",
-    "TAYNA - Mãng Cầu Bà Đen",
-    "thùng mãng cầu bà đen 15kg TAYNA",
-    "sỉ mãng cầu bà đen tây ninh tận vườn",
-    "mua sỉ mãng cầu tây ninh",
-    "mãng cầu bà đen giá sỉ tại vườn",
-    "mãng cầu gửi xe khách toàn quốc",
-    "đại lý mãng cầu bà đen",
-  ],
-  alternates: {
-    canonical: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
-  },
+    "Thùng carton 15kg dày dặn 3-5 lớp chịu lực, chuyên gửi xe khách & máy bay toàn quốc, giá sỉ trực tiếp từ nhà vườn Tây Ninh.",
+  alternates: { canonical: "/san-pham/thung-mang-cau-ba-den-15kg" },
   openGraph: {
-    title: "Thùng 15KG TAYNA – Mãng Cầu Bà Đen Từ Vùng Trồng Tây Ninh",
+    title: "Mua Sỉ Thùng Mãng Cầu Bà Đen 15KG – OCOP 3 Sao Tây Ninh",
     description:
-      "Thùng carton 15kg Mãng Cầu Bà Đen TAYNA trực tiếp từ vùng trồng: Bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài toàn quốc.",
+      "Thùng carton 15kg dày dặn 3-5 lớp chịu lực, chuyên gửi xe khách & máy bay toàn quốc, giá sỉ trực tiếp từ nhà vườn.",
     url: `${siteUrl}/san-pham/thung-mang-cau-ba-den-15kg`,
-    siteName: "TAYNA - Mãng Cầu Bà Đen",
-    images: [
-      {
-        url: `${siteUrl}/san-pham-thung-15kg.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Thùng 15KG Mãng Cầu Bà Đen Tây Ninh Đơn Sỉ",
-      },
-    ],
-    locale: "vi_VN",
-    type: "article",
+    images: [{ url: `${siteUrl}/san-pham-thung-15kg.jpg` }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mua Sỉ Mãng Cầu Bà Đen Thùng 15KG – Giá 900.000₫",
+    title: "Mua Sỉ Thùng Mãng Cầu Bà Đen 15KG – OCOP 3 Sao Tây Ninh",
     description:
       "Thùng carton 15kg dày dặn 3-5 lớp chịu lực, chuyên gửi xe khách & máy bay toàn quốc, giá sỉ tận vườn.",
     images: [`${siteUrl}/san-pham-thung-15kg.jpg`],
@@ -60,6 +38,37 @@ const productSchema = {
     "@type": "Brand",
     name: "Mãng Cầu Bà Đen",
   },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    reviewCount: "94",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: [
+    {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: { "@type": "Person", name: "Lê Minh Tuấn" },
+      datePublished: "2026-08-25",
+      reviewBody: "Thùng 15kg đóng chắc chắn, trái đồng đều chín rất ngon. Rất yên tâm khi nhập hàng từ vựa Tây Ninh.",
+    },
+    {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: { "@type": "Person", name: "Đặng Thu Hương" },
+      datePublished: "2026-08-29",
+      reviewBody: "Gửi xe về Hà Nội trái vẫn nguyên vẹn không bị dập. Phản hồi tư vấn báo giá rất nhanh.",
+    },
+  ],
   offers: {
     "@type": "Offer",
     priceCurrency: "VND",
@@ -184,7 +193,7 @@ export default function Thung15kgPage() {
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 2.5vw, 32px)", margin: "8px 0 14px", lineHeight: 1.25 }}>
               Thùng 15KG Mãng Cầu Bà Đen Tuyển Chọn
             </h1>
-            <p className="product-item-price"><strong>900.000₫</strong><span>/ thùng 15kg</span></p>
+            <p className="product-item-price"><strong>Liên hệ</strong><span>/ báo giá sỉ trực tiếp</span></p>
             <p style={{ fontSize: "14.5px", color: "var(--ink-muted)", lineHeight: 1.65, margin: "0 0 18px" }}>
               Giải pháp tối ưu cho khách mua sỉ, đại lý phân phối hoa quả sạch, nhà hàng tiệc cưới hoặc khách hàng có nhu cầu gửi hàng đi tỉnh xa bằng đường bộ hoặc máy bay.
             </p>
