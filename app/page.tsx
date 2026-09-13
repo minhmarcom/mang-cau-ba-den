@@ -41,39 +41,39 @@ const products = [
 
 const gallery = [
   {
-    src: "/vuon-mang-cau-nui-ba-den.jpg",
-    alt: "Vườn mãng cầu trù phú bọc túi sinh học dưới chân Núi Bà Đen Tây Ninh",
-    caption: "Vườn mãng cầu trù phú dưới chân Núi Bà Đen Tây Ninh",
+    src: "/nha-vuon-phan-loai-mang-cau-ba-den.jpg",
+    alt: "Không khí phân loại và đóng gói mãng cầu Bà Đen tại vựa Tây Ninh",
+    caption: "Bà con nông dân tại vựa tập trung phân loại từng lứa trái mãng cầu Bà Đen",
     shape: "gallery-wide",
   },
   {
-    src: "/mang-cau-tren-canh-tay-ninh.jpg",
-    alt: "Trái mãng cầu Bà Đen chín già mắt nở to phẳng trên cành",
-    caption: "Trái chín già, mắt nở phẳng, bọc túi an toàn trên cành",
+    src: "/trai-mang-cau-ba-den-tay-ninh-tayna.jpg",
+    alt: "Trái mãng cầu Bà Đen TAYNA tươi xanh nguyên cành bọc xốp",
+    caption: "Trái Mãng Cầu Bà Đen TAYNA tuyển chọn tươi xanh nguyên cành lá tại vườn",
+    shape: "gallery-half",
+  },
+  {
+    src: "/dong-goi-thung-carton-mang-cau-ba-den.jpg",
+    alt: "Cận cảnh nhà vườn đóng gói mãng cầu Bà Đen vào thùng carton",
+    caption: "Đóng gói cẩn thận từng trái già vào thùng carton đục lỗ thông thoáng",
+    shape: "gallery-half",
+  },
+  {
+    src: "/trai-mang-cau-ba-den-boc-luoi-xop.jpg",
+    alt: "Mãng cầu Bà Đen bọc xốp tươi ngon vừa thu hoạch tập kết tại vựa",
+    caption: "Lứa mãng cầu Bà Đen bọc xốp tươi ngon vừa tập kết sau khi thu hoạch",
+    shape: "gallery-wide",
+  },
+  {
+    src: "/inside-thung-carton-mang-cau-ba-den-tayna.jpg",
+    alt: "Quy cách đóng thùng carton mãng cầu Bà Đen TAYNA bọc xốp dán tem",
+    caption: "Quy cách xếp 8 trái bọc xốp dán tem TAYNA chỉn chu trong thùng carton",
     shape: "gallery-half",
   },
   {
     src: "/san-pham-hop-qua-3-trai.jpg",
-    alt: "Hộp quà Mãng Cầu Bà Đen 3 trái cao cấp",
-    caption: "Hộp quà biếu 3 trái Mãng Cầu Bà Đen",
-    shape: "gallery-half",
-  },
-  {
-    src: "/mang-cau-tap-ket-tai-vuon.jpg",
-    alt: "Mãng cầu bọc xốp thu hoạch tập kết dồi dào tại vườn Thạnh Tân",
-    caption: "Thu hoạch tập kết dồi dào tại vườn Mãng Cầu Bà Đen",
-    shape: "gallery-wide",
-  },
-  {
-    src: "/trai-mang-cau-chin-gia-tren-tay.jpg",
-    alt: "Trái mãng cầu Bà Đen chín dẻo trên tay nhà vườn",
-    caption: "Thịt dai dẻo quánh, vị ngọt thanh tự nhiên",
-    shape: "gallery-half",
-  },
-  {
-    src: "/thuc-te-dong-goi.jpg",
-    alt: "Đóng thùng carton mãng cầu bọc xốp thoáng khí",
-    caption: "Đóng thùng carton thoáng khí bọc xốp chống va đập",
+    alt: "Hộp quà Mãng Cầu Bà Đen 3 trái cao cấp biếu tặng",
+    caption: "Hộp quà biếu 3 trái VIP Mãng Cầu Bà Đen trang nhã sang trọng",
     shape: "gallery-half",
   },
 ];
@@ -671,11 +671,11 @@ export default function Home() {
         </div>
         <div className="intro-image">
           <img
-            src="/vuon-nui-ba-den.jpg"
-            alt="Vườn mãng cầu TAYNA xanh tốt dưới chân Núi Bà Đen Tây Ninh"
+            src="/nha-vuon-phan-loai-mang-cau-ba-den.jpg"
+            alt="Hoạt động phân loại và đóng gói mãng cầu Bà Đen TAYNA tại vựa Tây Ninh"
             loading="lazy"
           />
-          <span>Vùng trồng mãng cầu TAYNA chân Núi Bà Đen, Tây Ninh</span>
+          <span>Bà con nông dân tại vựa TAYNA phân loại mãng cầu Bà Đen Tây Ninh</span>
         </div>
       </section>
 

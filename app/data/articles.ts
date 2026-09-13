@@ -141,13 +141,14 @@ export const articles: Article[] = [
   },
   {
     slug: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh",
-    title: "Mãng Cầu Bà Đen – Đặc sản Tây Ninh: Tươi ngon chuẩn vị từ vườn nhà",
-    kicker: "Đặc sản quê nhà • Tây Ninh",
-    badge: "Văn hóa nhà nông",
-    image: "/mang-cau-vua-hai-tai-vuon.jpg",
-    date: "Tháng 8/2026",
-    readTime: "4 phút đọc",
+    title:
+      "TAYNA – Mãng Cầu Bà Đen | Đặc Sản Tây Ninh Từ Vùng Trồng Chân Núi Bà Đen",
+    kicker: "Đặc sản Tây Ninh • Vùng trồng TAYNA",
+    badge: "Thương hiệu vùng trồng",
+    image: "/trai-mang-cau-ba-den-tay-ninh-tayna.jpg",
+    date: "Tháng 9/2026",
+    readTime: "9 phút đọc",
     description:
-      "Khám phá nét độc đáo của mãng cầu Bà Đen: vị ngọt thanh dai dẻo, quy trình bao trái an toàn trên cành, thu hoạch trong ngày và chuẩn chất lượng VietGAP & OCOP.",
+      "TAYNA – Mãng Cầu Bà Đen từ vùng trồng chân Núi Bà Đen, Tây Ninh. Khám phá nét độc đáo của sản vật địa phương, thương hiệu TAYNA, lý do khuyến khích đặt trước 1-2 ngày, cách chọn và bảo quản.",
   },
 ];
