@@ -140,7 +140,7 @@ export const articles: Article[] = [
       "Hướng dẫn chi tiết cách nhận biết độ già của trái, phân biệt mãng cầu chuẩn gốc Tây Ninh, quy cách đóng gói chống va đập và bảng phân loại trái ăn gia đình hoặc biếu tặng.",
   },
   {
-    slug: "/mang-cau-ba-den-nabaden-dac-san-tay-ninh",
+    slug: "/mang-cau-ba-den-tayna-dac-san-tay-ninh",
     title:
       "TAYNA – Mãng Cầu Bà Đen | Đặc Sản Tây Ninh Từ Vùng Trồng Chân Núi Bà Đen",
     kicker: "Đặc sản Tây Ninh • Vùng trồng TAYNA",
