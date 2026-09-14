@@ -4,12 +4,14 @@ import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title:
-    "Mãng cầu Bà Đen dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026 tại Núi Bà Đen | TAYNA – Mãng Cầu Bà Đen",
+    "Lễ hội nông sản đặc trưng và sản phẩm OCOP Tây Ninh 2026: Mãng cầu Bà Đen TAYNA tham dự",
   description:
-    "TAYNA mang Mãng Cầu Bà Đen tham dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần I năm 2026 từ 22-26/9/2026 tại Núi Bà Đen, kết nối nông sản Tây Ninh và người tiêu dùng.",
+    "Lễ hội nông sản đặc trưng và sản phẩm OCOP tỉnh Tây Ninh lần I năm 2026 diễn ra từ 22/9 - 26/9/2026 tại KDL Quốc gia Núi Bà Đen (8:00 - 21:00). Khám phá 244 gian hàng, livestream và thưởng thức Mãng Cầu Bà Đen TAYNA chính gốc.",
   keywords: [
     "Lễ hội nông sản đặc trưng Tây Ninh 2026",
     "Lễ hội OCOP Tây Ninh lần thứ I năm 2026",
+    "Lễ hội nông sản Tây Ninh diễn ra khi nào",
+    "Lễ hội Núi Bà Đen tháng 9 2026",
     "mãng cầu Bà Đen dự lễ hội OCOP",
     "TAYNA Mãng Cầu Bà Đen",
     "Khu du lịch quốc gia Núi Bà Đen",
@@ -17,15 +19,16 @@ export const metadata: Metadata = {
     "đặc sản Tây Ninh",
     "mãng cầu Tây Ninh",
     "nông sản Tây Ninh OCOP",
+    "giá mãng cầu Bà Đen",
   ],
   alternates: {
     canonical: "/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/",
   },
   openGraph: {
     title:
-      "Mãng cầu Bà Đen dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026 tại Núi Bà Đen",
+      "Lễ hội nông sản đặc trưng và sản phẩm OCOP Tây Ninh 2026: Mãng cầu Bà Đen TAYNA tham dự",
     description:
-      "Từ ngày 22 đến 26/9/2026 tại Khu du lịch quốc gia Núi Bà Đen: TAYNA mang đặc sản Mãng Cầu Bà Đen tham gia ngày hội tôn vinh nông sản tiêu biểu và sản phẩm OCOP Tây Ninh.",
+      "Từ 22-26/9/2026 tại Khu du lịch quốc gia Núi Bà Đen: 244 gian hàng, livestream nông sản số và đặc sản Mãng Cầu Bà Đen TAYNA tươi hái từ chân núi.",
     url: "https://mangcaubaden.vn/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/",
     siteName: "TAYNA – Mãng Cầu Bà Đen",
     locale: "vi_VN",
@@ -42,10 +45,57 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Mãng cầu Bà Đen dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026 tại Núi Bà Đen",
+      "Lễ hội nông sản đặc trưng và sản phẩm OCOP Tây Ninh 2026: Mãng cầu Bà Đen TAYNA",
     description:
-      "TAYNA mang Mãng Cầu Bà Đen tham gia sự kiện nông sản OCOP lớn nhất năm 2026 tại chân Núi Bà Đen Tây Ninh.",
+      "Sự kiện nông sản OCOP lớn nhất năm 2026 tại KDL Quốc gia Núi Bà Đen Tây Ninh từ ngày 22 - 26/09/2026.",
     images: ["https://mangcaubaden.vn/le-hoi-nong-san-ocop-tay-ninh-2026.jpg"],
+  },
+};
+
+const eventSchema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "Lễ hội nông sản đặc trưng và sản phẩm OCOP tỉnh Tây Ninh lần thứ I năm 2026",
+  startDate: "2026-09-22T08:00:00+07:00",
+  endDate: "2026-09-26T21:00:00+07:00",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  eventStatus: "https://schema.org/EventScheduled",
+  location: {
+    "@type": "Place",
+    name: "Khu du lịch quốc gia Núi Bà Đen",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Khu phố Ninh Phú, Phường Bình Minh",
+      addressLocality: "Thành phố Tây Ninh",
+      addressRegion: "Tây Ninh",
+      addressCountry: "VN",
+    },
+  },
+  image: [
+    "https://mangcaubaden.vn/le-hoi-nong-san-ocop-tay-ninh-2026.jpg",
+    "https://mangcaubaden.vn/dong-goi-mang-cau-ba-den-tay-ninh.jpg",
+    "https://mangcaubaden.vn/xo-mang-cau-vua-hai-tai-vuon.jpg",
+    "https://mangcaubaden.vn/hop-qua-mang-cau-ba-den-tayna.jpg",
+  ],
+  description:
+    "Lễ hội nông sản đặc trưng và sản phẩm OCOP tỉnh Tây Ninh lần thứ I năm 2026 quy tụ 244 gian hàng, livestream nông sản số và đặc sản Mãng Cầu Bà Đen TAYNA tại chân Núi Bà Đen.",
+  organizer: {
+    "@type": "Organization",
+    name: "Tỉnh Tây Ninh & TAYNA – Mãng Cầu Bà Đen",
+    url: "https://mangcaubaden.vn",
+  },
+  offers: {
+    "@type": "Offer",
+    url: "https://mangcaubaden.vn/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/",
+    price: "0",
+    priceCurrency: "VND",
+    availability: "https://schema.org/InStock",
+    validFrom: "2026-09-14T00:00:00+07:00",
+  },
+  performer: {
+    "@type": "Organization",
+    name: "TAYNA – Mãng Cầu Bà Đen",
+    url: "https://mangcaubaden.vn",
   },
 };
 
@@ -55,7 +105,7 @@ const articleSchema = {
   headline:
     "Mãng cầu Bà Đen dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026 tại Núi Bà Đen",
   description:
-    "Từ ngày 22 đến 26/9/2026, Khu du lịch quốc gia Núi Bà Đen trở thành điểm hẹn của nông sản đặc trưng và sản phẩm OCOP. TAYNA mang Mãng Cầu Bà Đen tuyển chọn từ vùng trồng đến tham dự sự kiện.",
+    "Từ ngày 22 đến 26/9/2026, Khu du lịch quốc gia Núi Bà Đen trở thành điểm hẹn của 244 gian hàng nông sản đặc trưng và sản phẩm OCOP. TAYNA mang Mãng Cầu Bà Đen tuyển chọn tham gia sự kiện.",
   image: [
     "https://mangcaubaden.vn/le-hoi-nong-san-ocop-tay-ninh-2026.jpg",
     "https://mangcaubaden.vn/dong-goi-mang-cau-ba-den-tay-ninh.jpg",
@@ -63,7 +113,7 @@ const articleSchema = {
     "https://mangcaubaden.vn/hop-qua-mang-cau-ba-den-tayna.jpg",
   ],
   datePublished: "2026-09-14T08:00:00+07:00",
-  dateModified: "2026-09-14T08:00:00+07:00",
+  dateModified: "2026-09-14T09:30:00+07:00",
   author: {
     "@type": "Organization",
     name: "TAYNA – Mãng Cầu Bà Đen",
@@ -83,22 +133,62 @@ const articleSchema = {
   },
 };
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Mãng Cầu Bà Đen TAYNA – Hộp Quà 3 Trái VIP Lễ Hội OCOP 2026",
+  image: "https://mangcaubaden.vn/hop-qua-mang-cau-ba-den-tayna.jpg",
+  description:
+    "Mãng cầu Bà Đen tuyển chọn từ vườn chân Núi Bà Đen Tây Ninh, mắt nở đều phẳng, vị ngọt thanh dai dẻo chuẩn VietGAP, đóng hộp sang trọng phục vụ dâng lễ và biếu tặng.",
+  brand: {
+    "@type": "Brand",
+    name: "TAYNA",
+  },
+  offers: {
+    "@type": "Offer",
+    url: "https://mangcaubaden.vn/san-pham/hop-mang-cau-ba-den-3-trai-vip/",
+    priceCurrency: "VND",
+    price: "185000",
+    availability: "https://schema.org/InStock",
+    seller: {
+      "@type": "Organization",
+      name: "TAYNA – Mãng Cầu Bà Đen",
+    },
+  },
+};
+
 const faqItems = [
   [
     "Lễ hội nông sản đặc trưng và sản phẩm OCOP Tây Ninh 2026 diễn ra khi nào, ở đâu?",
-    "Lễ hội dự kiến diễn ra trong 5 ngày, từ ngày 22/9 đến 26/9/2026 tại Khu du lịch quốc gia Núi Bà Đen (khu phố Ninh Phú, phường Bình Minh, tỉnh Tây Ninh). Khu vực trưng bày hoạt động liên tục từ 8:00 đến 21:00 hàng ngày.",
+    "Lễ hội diễn ra trong 5 ngày, từ ngày 22/9 đến 26/9/2026 tại Khu du lịch quốc gia Núi Bà Đen (khu phố Ninh Phú, phường Bình Minh, TP. Tây Ninh). Khu vực trưng bày hoạt động liên tục từ 8:00 đến 21:00 hàng ngày, mở cửa tự do cho người dân và du khách.",
   ],
   [
-    "Quy mô Lễ hội nông sản và OCOP Tây Ninh lần thứ I năm 2026 như thế nào?",
-    "Lễ hội có quy mô cấp vùng với khoảng 244 gian hàng tiêu chuẩn giới thiệu sản phẩm nông nghiệp, sản phẩm OCOP tiêu biểu, đi kèm các hoạt động livestream thương mại điện tử, hội thi 'Nhà nông đua tài', cùng nhiều tọa đàm và hội nghị chuyên ngành.",
+    "Quy mô Lễ hội nông sản và OCOP Tây Ninh lần thứ I năm 2026 có gì nổi bật?",
+    "Lễ hội có quy mô cấp vùng với khoảng 244 gian hàng tiêu chuẩn giới thiệu sản phẩm nông nghiệp sạch, sản phẩm OCOP tiêu biểu của Tây Ninh và các tỉnh thành bạn, đi kèm các phiên livestream bán nông sản số, hội thi 'Nhà nông đua tài', và các tọa đàm chuyên đề nâng tầm nông sản Việt.",
   ],
   [
     "TAYNA mang đến lễ hội những dòng sản phẩm Mãng Cầu Bà Đen nào?",
-    "TAYNA tuyển chọn trực tiếp từ các vườn cây dưới chân Núi Bà Đen những trái mãng cầu đạt độ già sinh lý tốt nhất, bao gồm Hộp quà 3 Trái VIP sang trọng phục vụ dâng lễ / biếu tặng và các thùng tuyển chọn chất lượng cao.",
+    "TAYNA mang đến những trái Mãng Cầu Bà Đen được tuyển chọn khắt khe tại vùng trồng dưới chân núi: Hộp quà 3 Trái VIP sang trọng phục vụ dâng lễ Chùa Bà / biếu tặng, và các thùng tuyển chọn 5KG, 15KG chất lượng cao hái mới mỗi ngày.",
   ],
   [
-    "Du khách tham quan Núi Bà Đen vào dịp lễ hội có thể trải nghiệm gì?",
-    "Du khách có thể kết hợp hành hương, vãn cảnh Núi Bà Đen với tham quan các gian hàng OCOP, trực tiếp thưởng thức đặc sản Mãng Cầu Bà Đen chín ngọt thơm dẻo và giao lưu cùng nhà vườn để hiểu rõ hơn về văn hóa canh tác bản địa.",
+    "Du khách tham quan lễ hội có thể mua mãng cầu tươi và gửi về TP.HCM hoặc các tỉnh không?",
+    "Có. Tại gian hàng TAYNA, du khách có thể mua thưởng thức ngay hoặc đăng ký dịch vụ đóng thùng bọc lưới xốp chuyên dụng giao hỏa tốc về tận nhà tại TP.HCM, Bình Dương, Đồng Nai, Hà Nội và các tỉnh thành toàn quốc.",
+  ],
+  [
+    "Đến tham quan Lễ hội OCOP tại Núi Bà Đen có phải mua vé vào cổng không?",
+    "Khu vực hội chợ, triển lãm nông sản đặc trưng và sản phẩm OCOP mở cửa hoàn toàn MIỄN PHÍ cho người dân và du khách từ 8:00 đến 21:00 hàng ngày. Nếu du khách có nhu cầu sử dụng cáp treo lên đỉnh núi hoặc viếng Chùa Bà, chỉ cần mua vé dịch vụ cáp treo của KDL Núi Bà Đen theo quy định.",
+  ],
+  [
+    "Vì sao Mãng Cầu Bà Đen Tây Ninh được chọn làm nông sản tiêu biểu tại lễ hội?",
+    "Mãng Cầu Bà Đen là đặc sản nổi tiếng được bảo hộ Chỉ dẫn địa lý (GI) cấp quốc gia từ năm 2011, sở hữu hương vị ngọt thanh, thịt dai dẻo đặc trưng nhờ vi khí hậu và thổ nhưỡng đất xám giàu khoáng chất dưới chân ngọn núi cao nhất Nam Bộ.",
+  ],
+  [
+    "Tôi không có mặt tại Tây Ninh thì có thể đặt mua mãng cầu Bà Đen trong dịp lễ hội không?",
+    "Hoàn toàn được! Bạn có thể đặt hàng trực tuyến trên website https://mangcaubaden.vn, qua kênh livestream của sự kiện, hoặc liên hệ Hotline/Zalo 0907 215 521 để được nhà vườn TAYNA gửi hàng tươi hái trực tiếp từ Tây Ninh.",
+  ],
+  [
+    "Đường đi đến Khu du lịch quốc gia Núi Bà Đen dự lễ hội như thế nào?",
+    "Từ trung tâm TP. Tây Ninh, bạn đi theo đường Bời Lời khoảng 10km là đến Khu du lịch quốc gia Núi Bà Đen. Nếu xuất phát từ TP.HCM, bạn di chuyển theo Quốc lộ 22 hoặc cao tốc Mộc Bài tương lai (khoảng 2 – 2.5 giờ đi xe máy hoặc ô tô).",
   ],
 ];
 
@@ -134,7 +224,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Mãng cầu Bà Đen dự Lễ hội nông sản & OCOP Tây Ninh 2026",
+      name: "Lễ hội nông sản & OCOP Tây Ninh 2026",
       item: "https://mangcaubaden.vn/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/",
     },
   ],
@@ -145,7 +235,15 @@ export default function OcopFestivalArticlePage() {
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
       <script
         type="application/ld+json"
@@ -204,7 +302,7 @@ export default function OcopFestivalArticlePage() {
               <Link href="/tin-tuc">Cẩm nang &amp; Tin tức</Link>
               <span className="breadcrumb-sep">/</span>
               <span className="breadcrumb-current">
-                Mãng cầu Bà Đen dự Lễ hội OCOP 2026
+                Lễ hội nông sản &amp; OCOP Tây Ninh 2026
               </span>
             </nav>
           </div>
@@ -228,7 +326,7 @@ export default function OcopFestivalArticlePage() {
               </h1>
 
               <p className="article-lead">
-                Từ ngày 22 đến 26/9/2026, Khu du lịch quốc gia Núi Bà Đen, Tây Ninh trở thành điểm hẹn rực rỡ của các sản vật nông nghiệp, đặc sản địa phương và sản phẩm OCOP tiêu biểu. TAYNA mang những trái Mãng Cầu Bà Đen tuyển chọn từ vườn nhà đến tham dự ngày hội, kể câu chuyện gắn kết giữa người nông dân và vùng đất thiêng phương Nam.
+                Từ ngày 22 đến 26/9/2026, Khu du lịch quốc gia Núi Bà Đen, Tây Ninh trở thành điểm hẹn rực rỡ của các sản vật nông nghiệp, đặc sản địa phương và sản phẩm OCOP tiêu biểu. TAYNA mang những trái Mãng Cầu Bà Đen tuyển chọn từ vườn nhà đến tham dự ngày hội, kết nối nông sản đất Thánh với người tiêu dùng và du khách bốn phương.
               </p>
             </div>
           </header>
@@ -255,14 +353,63 @@ export default function OcopFestivalArticlePage() {
           {/* ARTICLE BODY CONTENT */}
           <div className="article-body">
             <div className="article-container article-prose">
+
+              {/* AEO / AI QUICK FACT BOX - TỐI ƯU HÓA ANSWER ENGINE & GOOGLE AI OVERVIEWS */}
+              <section
+                className="aeo-quick-facts"
+                aria-label="Tóm tắt thông tin Lễ hội OCOP Tây Ninh 2026"
+                style={{
+                  background: "linear-gradient(135deg, rgba(45, 106, 63, 0.08) 0%, rgba(240, 253, 244, 0.9) 100%)",
+                  border: "2px solid rgba(45, 106, 63, 0.25)",
+                  borderRadius: "16px",
+                  padding: "24px 28px",
+                  margin: "24px 0 36px 0",
+                  boxShadow: "0 4px 16px rgba(45, 106, 63, 0.08)",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
+                  <span style={{ fontSize: "1.4rem" }}>📌</span>
+                  <h2 style={{ fontSize: "1.25rem", margin: 0, color: "var(--leaf-dark)", fontWeight: 800 }}>
+                    Thông tin nhanh Lễ hội nông sản &amp; OCOP Tây Ninh lần I năm 2026
+                  </h2>
+                </div>
+
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "14px" }}>
+                  <div style={{ padding: "10px 14px", background: "#ffffff", borderRadius: "10px", border: "1px solid rgba(45,106,63,0.15)" }}>
+                    <strong style={{ color: "var(--leaf-dark)", display: "block" }}>🗓️ Thời gian diễn ra:</strong>
+                    <span>22/09/2026 – 26/09/2026 (5 ngày liên tục)</span>
+                  </div>
+                  <div style={{ padding: "10px 14px", background: "#ffffff", borderRadius: "10px", border: "1px solid rgba(45,106,63,0.15)" }}>
+                    <strong style={{ color: "var(--leaf-dark)", display: "block" }}>⏰ Giờ mở cửa:</strong>
+                    <span>08:00 – 21:00 hàng ngày (Vào cửa tự do)</span>
+                  </div>
+                  <div style={{ padding: "10px 14px", background: "#ffffff", borderRadius: "10px", border: "1px solid rgba(45,106,63,0.15)" }}>
+                    <strong style={{ color: "var(--leaf-dark)", display: "block" }}>📍 Địa điểm:</strong>
+                    <span>KDL quốc gia Núi Bà Đen, KP. Ninh Phú, P. Bình Minh, TP. Tây Ninh</span>
+                  </div>
+                  <div style={{ padding: "10px 14px", background: "#ffffff", borderRadius: "10px", border: "1px solid rgba(45,106,63,0.15)" }}>
+                    <strong style={{ color: "var(--leaf-dark)", display: "block" }}>🎪 Quy mô:</strong>
+                    <span>Khoảng 244 gian hàng tiêu chuẩn vùng Đông Nam Bộ</span>
+                  </div>
+                  <div style={{ padding: "10px 14px", background: "#ffffff", borderRadius: "10px", border: "1px solid rgba(45,106,63,0.15)" }}>
+                    <strong style={{ color: "var(--leaf-dark)", display: "block" }}>🍈 Gian hàng TAYNA:</strong>
+                    <span><Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip/">Hộp quà 3 Trái VIP</Link>, Thùng 5KG/15KG tươi hái từ vườn</span>
+                  </div>
+                  <div style={{ padding: "10px 14px", background: "#ffffff", borderRadius: "10px", border: "1px solid rgba(45,106,63,0.15)" }}>
+                    <strong style={{ color: "var(--leaf-dark)", display: "block" }}>📞 Hỗ trợ &amp; Đặt hàng:</strong>
+                    <span><a href="tel:0907215521" style={{ color: "var(--leaf)", fontWeight: 700 }}>0907 215 521</a> (Zalo / Hotline nhà vườn)</span>
+                  </div>
+                </div>
+              </section>
+
               <p>
-                Giữa không gian hội tụ những sản vật đặc trưng ấy, <strong>mãng cầu Bà Đen</strong> là một trong những nông sản tiêu biểu gắn liền với chỉ dẫn địa lý và tâm thức của người dân quanh chân Núi Bà Đen.
+                Giữa không gian hội tụ những sản vật trứ danh ấy, <strong>Mãng Cầu Bà Đen</strong> là nông sản hạt nhân gắn liền với chỉ dẫn địa lý và danh xưng đất Thánh Tây Ninh.
               </p>
               <p>
-                <strong>TAYNA – Mãng Cầu Bà Đen</strong> sẽ mang những trái mãng cầu được tuyển chọn khắt khe từ vùng trồng đến tham dự sự kiện, với mong muốn giới thiệu đến bà con, du khách và các đối tác câu chuyện phía sau một loại trái cây đã gắn bó qua nhiều thế hệ với vùng đất dưới chân Núi Bà.
+                <strong>TAYNA – Mãng Cầu Bà Đen</strong> mang những trái quả được tuyển chọn khắt khe từ vùng trồng dưới chân núi đến tham dự sự kiện, với mong muốn giới thiệu đến người tiêu dùng và đối tác câu chuyện phía sau một loại trái cây ngọt lành đã gắn bó qua nhiều thế hệ.
               </p>
               <p>
-                Đây không chỉ là dịp để giới thiệu một sản phẩm nông nghiệp đơn thuần. Đó còn là cơ hội để kể câu chuyện về người nông dân, vùng đất trù phú và hành trình đưa đặc sản Mãng Cầu Bà Đen Tây Ninh đến gần hơn với người tiêu dùng khắp mọi miền đất nước.
+                Đây không chỉ là dịp quảng bá một sản phẩm nông nghiệp, mà còn là hành trình tôn vinh giá trị lao động của người nông dân Tây Ninh, đưa nông sản Việt tự tin vươn xa trên bản đồ ẩm thực và thương mại điện tử.
               </p>
 
               {/* TABLE OF CONTENTS */}
@@ -288,19 +435,19 @@ export default function OcopFestivalArticlePage() {
                     <a href="#khong-gian-ocop">6. Mãng cầu Bà Đen trong không gian sản phẩm OCOP và nông sản đặc trưng</a>
                   </li>
                   <li>
-                    <a href="#livestream-nong-san">7. Từ gian hàng truyền thống đến livestream bán nông sản</a>
+                    <a href="#livestream-nong-san">7. Từ gian hàng truyền thống đến livestream bán nông sản số</a>
                   </li>
                   <li>
                     <a href="#hoat-dong-dong-hanh">8. Lễ hội còn có nhiều hoạt động dành cho nông dân và doanh nghiệp</a>
                   </li>
                   <li>
-                    <a href="#co-hoi-ket-noi">9. Cơ hội kết nối cho Mãng Cầu Bà Đen Tây Ninh</a>
+                    <a href="#co-hoi-ket-noi">9. Cơ hội kết nối thương mại cho Mãng Cầu Bà Đen Tây Ninh</a>
                   </li>
                   <li>
                     <a href="#di-xa-hon">10. Đưa Mãng Cầu Bà Đen đi xa hơn từ chính quê hương của mình</a>
                   </li>
                   <li>
-                    <a href="#du-lich-thang-9">11. Đi Tây Ninh tháng 9, đừng bỏ lỡ lễ hội và Mãng Cầu Bà Đen</a>
+                    <a href="#kinh-nghiem-tham-quan">11. Kinh nghiệm và đường đi đến Khu du lịch Núi Bà Đen dự lễ hội</a>
                   </li>
                   <li>
                     <a href="#tayna-dong-hanh">12. TAYNA – Mang Mãng Cầu Bà Đen từ vùng trồng đến gần hơn với mọi người</a>
@@ -313,38 +460,32 @@ export default function OcopFestivalArticlePage() {
 
               <h2 id="thoi-gian-dia-diem">1. Lễ hội nông sản đặc trưng và sản phẩm OCOP Tây Ninh 2026 diễn ra khi nào?</h2>
               <p>
-                Theo kế hoạch, <strong>Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026</strong> dự kiến diễn ra trong 5 ngày, từ ngày <strong>22/9 đến ngày 26/9/2026</strong>.
+                Theo kế hoạch tổ chức của tỉnh Tây Ninh, <strong>Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026</strong> chính thức diễn ra trong 5 ngày, từ ngày <strong>22/9 đến ngày 26/9/2026</strong>.
               </p>
               <p>
-                Địa điểm tổ chức tại <strong>Khu du lịch quốc gia Núi Bà Đen</strong>, thuộc khu phố Ninh Phú, phường Bình Minh, tỉnh Tây Ninh.
+                Địa điểm tổ chức tại <strong>Khu du lịch quốc gia Núi Bà Đen</strong>, thuộc khu phố Ninh Phú, phường Bình Minh, thành phố Tây Ninh.
               </p>
               <p>
-                Khu vực trưng bày, giới thiệu và kinh doanh sản phẩm mở cửa phục vụ từ <strong>8 giờ sáng đến 21 giờ đêm hàng ngày</strong>, rất thuận tiện để người dân địa phương và du khách kết hợp hành trình khám phá, chiêm bái đỉnh Núi Bà Đen với tham quan không gian ẩm thực, nông sản đặc trưng của Tây Ninh cùng các tỉnh bạn.
+                Khu vực trưng bày, giới thiệu và thương mại sản phẩm mở cửa liên tục từ <strong>8 giờ sáng đến 21 giờ đêm mỗi ngày</strong>. Người dân địa phương và du khách thập phương hoàn toàn có thể kết hợp hành hương, chiêm bái tượng Phật Bà Tây Bổ Đà Sơn trên đỉnh núi với việc trải nghiệm không gian nông sản nhộn nhịp dưới chân núi.
               </p>
               <p>
-                Với quy mô cấp vùng cùng khoảng <strong>244 gian hàng tiêu chuẩn</strong>, lễ hội được kỳ vọng tạo nên một không gian kết nối đa chiều giữa nông nghiệp, thương mại, công nghệ số và du lịch văn hóa.
-              </p>
-              <p>
-                Các khu vực chức năng tại lễ hội sẽ giới thiệu sản phẩm nông nghiệp sạch, sản phẩm nông thôn tiêu biểu, các chứng nhận OCOP 3–5 sao, thành tựu khoa học kỹ thuật trong nông nghiệp và các giải pháp kích cầu tiêu thụ thông qua sàn thương mại điện tử.
+                Với quy mô cấp vùng quy tụ <strong>khoảng 244 gian hàng tiêu chuẩn</strong>, lễ hội được kỳ vọng tạo nên một mắt xích kết nối bền chặt giữa 4 trụ cột: <em>Nông nghiệp xanh – Thương mại – Công nghệ số – Du lịch trải nghiệm</em>.
               </p>
 
               <h2 id="san-vat-gan-lien">2. Mãng cầu Bà Đen – sản vật gắn với vùng đất dưới chân Núi Bà</h2>
               <p>
-                Nhắc đến vùng đất Tây Ninh linh thiêng, người ta nghĩ ngay đến Núi Bà Đen hùng vĩ, bánh tráng phơi sương, muối tôm Tây Ninh và trái <strong>mãng cầu Bà Đen</strong> ngọt lành.
+                Nhắc đến Tây Ninh, trong lòng du khách luôn gắn chặt với hình ảnh Núi Bà Đen uy nghi, bánh tráng phơi sương Trảng Bàng, muối tôm cay nồng và đặc biệt là trái <strong>mãng cầu Bà Đen</strong> mọng nước.
               </p>
               <p>
-                Nếu Núi Bà Đen là biểu tượng thiên nhiên kỳ vĩ, văn hóa và du lịch thì những vườn mãng cầu xanh bạt ngàn bao quanh chân núi lại khắc họa một nét đẹp bình dị, thuần hậu và gắn chặt với nhịp sống của người nông dân địa phương.
+                Nếu Núi Bà Đen là biểu tượng thiên nhiên kỳ vĩ thì những vườn mãng cầu xanh bạt ngàn bao quanh chân núi lại tạo nên một hình ảnh Tây Ninh thuần nông, mộc mạc và trù phú. Cây mãng cầu ta (na dai) đã trở thành sinh kế chủ lực của hàng ngàn hộ gia đình nông dân nơi đây.
               </p>
               <p>
-                Qua nhiều thập kỷ, cây mãng cầu ta (na dai) đã trở thành trụ cột quen thuộc của kinh tế nông nghiệp Tây Ninh. Phía sau từng trái mãng cầu được đưa ra thị trường là công sức cần mẫn: tỉa cành rải vụ, thụ phấn bằng tay, tuyển lọc trái non, bao trái an toàn trên cành và căn ngày thu hoạch đúng độ già sinh lý.
-              </p>
-              <p>
-                Chính vì vậy, giá trị của mãng cầu Bà Đen không chỉ dừng lại ở vị ngọt thanh dai dẻo đặc sắc, mà còn là câu chuyện bền bỉ về thổ nhưỡng, con người và hành trình nâng tầm sản vật bản địa vươn ra thị trường lớn.
+                Để có được trái mãng cầu đạt chuẩn, người nông dân phải tỉ mỉ từ khâu <Link href="/mang-cau-ba-den-duoc-trong-nhu-the-nao/">xử lý ra hoa, thụ phấn bổ sung bằng tay, tỉa bớt trái non, bao trái an toàn trên cành</Link> cho đến canh ngày thu hoạch đúng độ già sinh lý.
               </p>
 
               <h2 id="gap-nhau-tai-nui-ba">3. Khi lễ hội và mãng cầu Bà Đen gặp nhau ngay tại Núi Bà Đen</h2>
               <p>
-                Điều đặc biệt và ý nghĩa nhất của kỳ lễ hội năm nay chính là địa điểm tổ chức: tọa lạc ngay dưới chân Núi Bà Đen – nơi khai sinh và nuôi dưỡng thương hiệu mãng cầu nổi tiếng.
+                Điều đặc biệt và giàu cảm xúc nhất của lễ hội năm 2026 chính là không gian tổ chức: diễn ra ngay tại ngọn núi đã khai sinh ra thương hiệu Mãng Cầu Bà Đen.
               </p>
 
               <figure className="article-figure-inline">
@@ -355,59 +496,50 @@ export default function OcopFestivalArticlePage() {
                   style={{ maxHeight: "550px", objectFit: "cover", width: "100%", borderRadius: "16px" }}
                 />
                 <figcaption>
-                  Những trái mãng cầu tươi rói vừa được thu hoạch từ vườn nhà, chuẩn bị lên kệ trưng bày tại không gian lễ hội Núi Bà Đen.
+                  Những trái mãng cầu tươi rói vừa được thu hoạch từ các khu vườn dưới chân núi, sẵn sàng phục vụ du khách tại lễ hội.
                 </figcaption>
               </figure>
 
               <p>
-                Chỉ cách không gian lễ hội vài cây số là những tán vườn mãng cầu xanh mướt đã gắn bó bao đời. Du khách đến đây không chỉ được chiêm ngưỡng ngọn núi cao nhất Nam Bộ mà còn có thể nếm thử ngay hương vị ngọt ngào từ chính những trái quả hái từ các khu vườn dưới chân núi.
-              </p>
-              <p>
-                Khoảng cách từ khu vườn vào đến gian hàng lễ hội chỉ mất vài mươi phút vận chuyển. Đó là hành trình rút ngắn tối đa thời gian từ cành cây đến bàn ăn, mang đến trải nghiệm tươi nguyên nhất cho khách tham quan.
+                Chỉ cách không gian lễ hội vài cây số là những khu vườn mãng cầu rợp bóng mát. Khoảng cách địa lý được rút ngắn tối đa, giúp từng trái mãng cầu đưa vào gian hàng luôn giữ trọn độ tươi mới, cuống lá xanh tươi và vị ngọt thanh mát nhất.
               </p>
 
               <h2 id="tayna-mang-mang-cau">4. TAYNA mang Mãng Cầu Bà Đen từ vùng trồng đến lễ hội</h2>
               <p>
-                Tham gia Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026, <strong>TAYNA</strong> mang đến hình ảnh chân thật, chỉn chu và gần gũi về Mãng Cầu Bà Đen.
-              </p>
-              <p>
-                Cái tên <strong>TAYNA</strong> được đúc kết từ hai giá trị cốt lõi:
+                Đến với sự kiện lớn của quê hương, <strong>TAYNA</strong> tự hào đại diện cho tinh thần nông nghiệp trách nhiệm và tình yêu mảnh đất Tây Ninh:
               </p>
               <ul>
-                <li><strong>TAY:</strong> Đại diện cho vùng đất và con người Tây Ninh.</li>
+                <li><strong>TAY:</strong> Viết tắt của Tây Ninh – vùng đất thiêng anh hùng và trù phú.</li>
                 <li><strong>NA:</strong> Tên gọi quen thuộc của trái mãng cầu ta, thân thương với cả người miền Nam lẫn đồng bào miền Bắc.</li>
               </ul>
 
               <figure className="article-figure-inline">
                 <img
                   src="/dong-goi-mang-cau-ba-den-tay-ninh.jpg"
-                  alt="Không khí phân loại và đóng gói mãng cầu Bà Đen cẩn thận tại nhà kho Tây Ninh"
+                  alt="Không khí phân loại và đóng gói mãng cầu Bà Đen cẩn thận tại xưởng Tây Ninh"
                   loading="lazy"
                   style={{ maxHeight: "550px", objectFit: "cover", width: "100%", borderRadius: "16px" }}
                 />
                 <figcaption>
-                  Bà con nông dân tỉ mỉ phân loại từng trái mãng cầu đạt chuẩn trước khi đóng hộp và gửi đến người tiêu dùng.
+                  Bà con nông dân tỉ mỉ phân loại từng trái mãng cầu đạt chuẩn trước khi đóng hộp và gửi đến du khách tham gia sự kiện.
                 </figcaption>
               </figure>
 
               <p>
-                Dù sáng sớm sương mù hay những ngày nắng hanh hao, người nông dân TAYNA vẫn bước vào vườn, ngắm từng mắt quả, lựa chọn từng quả già vừa lứa để thu hoạch. Mỗi giỏ mãng cầu mang đến lễ hội không chỉ là hàng hóa, mà là kết tinh mồ hôi và niềm tự hào nông sản quê mình.
+                Những trái mãng cầu TAYNA mang đến lễ hội được tuyển lựa từng quả một. Trái phải già lứa, mắt quả nở to căng phẳng, vỏ bóng sáng và không bị dập xước. Đó là sự trân trọng cao nhất gửi gắm đến khách hàng.
               </p>
 
               <h2 id="cau-chuyen-vung-trong">5. Không chỉ bán một trái mãng cầu, mà còn kể câu chuyện vùng trồng</h2>
               <p>
-                Trong thời đại tiêu dùng thông minh, khách hàng quan tâm sâu sắc đến tính minh bạch: <em>Trái cây được trồng ở đâu? Ai là người chăm sóc? Quy trình tuyển chọn ra sao và vận chuyển thế nào để không dập nát?</em>
+                Trong xu hướng tiêu dùng hiện đại, khách hàng ngày càng mong muốn sự minh bạch: <em>Trái cây được trồng ra sao? Ai chăm sóc? Bao bì có bảo vệ môi trường và giữ an toàn vệ sinh không?</em>
               </p>
               <p>
-                Tại gian hàng lễ hội, TAYNA không chỉ trưng bày những trái mãng cầu no tròn, mắt nở căng phẳng. Điều chúng tôi mong muốn gửi gắm là toàn bộ câu chuyện phía sau: từ việc bao trái an toàn trên cành, kinh nghiệm căn độ già thu hoạch, cho đến khâu lót lưới xốp êm ái chống va đập trên từng nẻo đường vận chuyển.
-              </p>
-              <p>
-                Khi người mua thấu hiểu hành trình ấy, giá trị của một trái mãng cầu không còn gói gọn trong giá bán mỗi ký, mà là sự trân trọng công sức của người làm nông chân chính.
+                Tại gian hàng TAYNA, người mua không chỉ nhìn thấy những trái quả đẹp mắt. Bạn sẽ được lắng nghe toàn bộ hành trình: từ đặc điểm thổ nhưỡng đất phong hóa từ đá núi lửa, kỹ thuật bao trái hạn chế sâu bệnh tự nhiên, đến <Link href="/cach-bao-quan-mang-cau-ba-den/">kinh nghiệm bảo quản và nhận biết mãng cầu chín ngon</Link>.
               </p>
 
               <h2 id="khong-gian-ocop">6. Mãng cầu Bà Đen trong không gian sản phẩm OCOP và nông sản đặc trưng</h2>
               <p>
-                Chương trình <strong>Mỗi xã một sản phẩm (OCOP)</strong> đã thổi luồng sinh khí mới vào nông nghiệp địa phương, giúp đặc sản Tây Ninh chuẩn hóa chất lượng, bao bì nhận diện và tự tin bước vào chuỗi cung ứng hiện đại.
+                Chương trình <strong>Mỗi xã một sản phẩm (OCOP)</strong> đóng vai trò đòn bẩy chiến lược giúp đặc sản bản địa Tây Ninh chuẩn hóa chất lượng và xây dựng thương hiệu bài bản.
               </p>
 
               <figure className="article-figure-inline">
@@ -423,81 +555,66 @@ export default function OcopFestivalArticlePage() {
               </figure>
 
               <p>
-                Sự kết hợp giữa <strong>Nông nghiệp – Thương mại – Du lịch</strong> tại Núi Bà Đen mở ra cơ hội lớn: Du khách đến tham quan danh thắng sẽ trực tiếp biết đến sản phẩm OCOP Tây Ninh, giúp thương hiệu mãng cầu địa phương mở rộng tệp khách hàng từ khắp mọi miền.
+                TAYNA giới thiệu dòng <Link href="/san-pham/hop-mang-cau-ba-den-3-trai-vip/">Hộp quà Mãng Cầu Bà Đen 3 Trái VIP</Link> được thiết kế quai xách tiện lợi, mặt kính mica trong suốt tôn vinh từng quả mãng cầu tròn đều không tì vết. Đây là món lễ vật trang nghiêm, ý nghĩa khi dâng cúng Linh Sơn Thánh Mẫu và là món quà biếu đậm đà tình quê hương.
               </p>
 
-              <h2 id="livestream-nong-san">7. Từ gian hàng truyền thống đến livestream bán nông sản</h2>
+              <h2 id="livestream-nong-san">7. Từ gian hàng truyền thống đến livestream bán nông sản số</h2>
               <p>
-                Điểm nhấn đột phá tại Lễ hội OCOP Tây Ninh 2026 là sự xuất hiện của các phiên <strong>livestream bán hàng nông sản trực tiếp trên nền tảng số</strong>.
+                Một bước đột phá của Lễ hội OCOP Tây Ninh lần I năm 2026 chính là các phiên <strong>livestream bán hàng nông sản trực tiếp trên các nền tảng mạng xã hội và sàn TMĐT</strong> (TikTok Shop, Shopee, Facebook).
               </p>
               <p>
-                Không còn giới hạn trong phạm vi khuôn viên hội chợ, thông qua sóng trực tiếp, khung cảnh vườn tược tươi xanh và không khí nhộn nhịp tại chân Núi Bà Đen có thể tiếp cận hàng triệu khách hàng tại TP.HCM, Hà Nội, Đà Nẵng, Bình Dương... Khách hàng có thể chốt đơn trực tuyến và nhận mãng cầu tươi hái tại vườn giao hỏa tốc đến tận nhà.
+                Nhờ công nghệ số, hình ảnh nhộn nhịp từ chân Núi Bà Đen có thể chạm đến hàng triệu người tiêu dùng tại TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng... Khách hàng theo dõi qua màn hình điện thoại có thể đặt mua hàng tươi ngay trong phiên live và nhận hàng hỏa tốc trong ngày.
               </p>
 
               <h2 id="hoat-dong-dong-hanh">8. Lễ hội còn có nhiều hoạt động dành cho nông dân và doanh nghiệp</h2>
               <p>
-                Bên cạnh không gian mua sắm, lễ hội còn tổ chức nhiều chương trình thiết thực:
+                Không dừng lại ở việc mua bán, sự kiện còn là ngày hội tôn vinh trí tuệ và sự sáng tạo của người nông dân với nhiều hoạt động đồng hành:
               </p>
               <ul>
-                <li>Hội thi <strong>“Nhà nông đua tài”</strong> và vinh danh sản phẩm OCOP tiêu biểu.</li>
-                <li>Tọa đàm chuyên sâu về <strong>Nông nghiệp bền vững &amp; Nông nghiệp công nghệ cao</strong>.</li>
-                <li>Hội nghị chuyển đổi số, kết nối tiêu thụ nông sản trên các sàn thương mại điện tử lớn.</li>
+                <li>Hội thi <strong>“Nhà nông đua tài”</strong> và vinh danh gian hàng OCOP sáng tạo.</li>
+                <li>Tọa đàm <strong>“Nông nghiệp tuần hoàn và ứng dụng công nghệ cao tại Tây Ninh”</strong>.</li>
+                <li>Chương trình kết nối cung – cầu B2B giữa hợp tác xã và các hệ thống bán lẻ hiện đại.</li>
               </ul>
-              <p>
-                Đây là sân chơi quý báu giúp người nông dân Tây Ninh chuyển biến từ tư duy sản xuất nông nghiệp thuần túy sang <strong>tư duy kinh tế nông nghiệp</strong> hiện đại, giải bài toán gia tăng giá trị cho trái mãng cầu.
-              </p>
 
-              <h2 id="co-hoi-ket-noi">9. Cơ hội kết nối cho Mãng Cầu Bà Đen Tây Ninh</h2>
+              <h2 id="co-hoi-ket-noi">9. Cơ hội kết nối thương mại cho Mãng Cầu Bà Đen Tây Ninh</h2>
               <p>
-                Với 244 gian hàng quy tụ nhiều doanh nghiệp bán lẻ, hệ thống siêu thị, sàn TMĐT và đối tác chế biến, sự kiện là cầu nối mở rộng kênh tiêu thụ bền vững cho mãng cầu Tây Ninh.
-              </p>
-              <p>
-                Đối với một loại quả nhạy cảm với nhiệt độ và thời gian chín sau hái, việc bắt tay cùng các đơn vị logistics chuyên nghiệp và hệ thống phân phối uy tín sẽ giúp mãng cầu Bà Đen giữ trọn chất lượng tươi ngon khi đi xa.
+                Với hơn 200 đơn vị tham gia, lễ hội mở ra cánh cửa giao thương quan trọng. Các đối tác phân phối sỉ, chuỗi siêu thị thực phẩm sạch và đơn vị xuất khẩu có cơ hội trực tiếp khảo sát chất lượng tại nguồn và ký kết hợp đồng dài hạn cùng nhà vườn TAYNA.
               </p>
 
               <h2 id="di-xa-hon">10. Đưa Mãng Cầu Bà Đen đi xa hơn từ chính quê hương của mình</h2>
               <p>
-                Từ vùng đất thiêng quanh núi, những chuyến xe chở mãng cầu rời Tây Ninh mỗi ngày để đến với các bữa ăn gia đình, mâm ngũ quả ngày lễ Tết hay những giỏ quà biếu trang trọng khắp cả nước.
-              </p>
-              <p>
-                TAYNA tin rằng, khi một sản vật được tôn vinh ngay trên mảnh đất sinh ra nó, niềm tự hào bản địa sẽ tiếp thêm động lực để người nông dân gìn giữ vườn cây, nâng cao chất lượng qua từng mùa vụ.
+                Mỗi chuyến xe chở mãng cầu lăn bánh rời Tây Ninh là một niềm hy vọng. Hy vọng về sinh kế ổn định cho bà con nhà nông, và niềm tự hào khi một sản vật địa phương khẳng định được vị thế vững chắc trong lòng người tiêu dùng cả nước.
               </p>
 
-              <h2 id="du-lich-thang-9">11. Đi Tây Ninh tháng 9, đừng bỏ lỡ lễ hội và Mãng Cầu Bà Đen</h2>
-              <div style={{ background: "rgba(45, 106, 63, 0.08)", borderLeft: "4px solid var(--leaf)", padding: "20px 24px", borderRadius: "0 14px 14px 0", margin: "24px 0" }}>
-                <h4 style={{ margin: "0 0 10px 0", color: "var(--leaf-dark)", fontSize: "1.15rem" }}>Thông tin chi tiết sự kiện:</h4>
-                <ul style={{ margin: 0, paddingLeft: "20px" }}>
-                  <li><strong>Thời gian:</strong> Từ ngày 22/09 đến hết ngày 26/09/2026.</li>
-                  <li><strong>Giờ mở cửa khu trưng bày:</strong> 8:00 – 21:00 hàng ngày (Vào cửa tự do).</li>
-                  <li><strong>Địa điểm:</strong> Khu du lịch quốc gia Núi Bà Đen, khu phố Ninh Phú, phường Bình Minh, tỉnh Tây Ninh.</li>
+              <h2 id="kinh-nghiem-tham-quan">11. Kinh nghiệm và đường đi đến Khu du lịch Núi Bà Đen dự lễ hội</h2>
+              <div style={{ background: "rgba(45, 106, 63, 0.08)", borderLeft: "4px solid var(--leaf)", padding: "22px 26px", borderRadius: "0 14px 14px 0", margin: "24px 0" }}>
+                <h3 style={{ margin: "0 0 12px 0", color: "var(--leaf-dark)", fontSize: "1.2rem" }}>Cẩm nang dành cho du khách đi lễ hội:</h3>
+                <ul style={{ margin: 0, paddingLeft: "20px", lineHeight: 1.7 }}>
+                  <li><strong>Cách di chuyển từ TP.HCM:</strong> Đi theo Quốc lộ 22 (khoảng 95km, mất 2 tiếng rưỡi bằng ô tô hoặc xe buýt/xe khách). Đến TP. Tây Ninh, đi đường Bời Lời là đến cổng KDL Núi Bà Đen.</li>
+                  <li><strong>Thời điểm tham quan lý tưởng:</strong> Sáng sớm từ 8:00 – 10:30 (không khí mát lành, thích hợp dạo chợ nông sản) hoặc chiều mát từ 16:00 – 20:30 (thưởng thức ẩm thực và xem chương trình nghệ thuật).</li>
+                  <li><strong>Chọn mua mãng cầu làm quà:</strong> Bạn nên chọn những trái mãng cầu còn cứng tay, mắt nở căng phẳng để thuận tiện di chuyển đường xa mà không sợ bị mềm dập.</li>
                 </ul>
               </div>
 
               <h2 id="tayna-dong-hanh">12. TAYNA – Mang Mãng Cầu Bà Đen từ vùng trồng đến gần hơn với mọi người</h2>
               <p>
-                Một kỳ lễ hội rồi sẽ khép lại sau 5 ngày nhộn nhịp, nhưng dư vị ngọt lành và câu chuyện về vùng đất Núi Bà Đen sẽ còn đọng lại mãi trong lòng du khách.
-              </p>
-              <p>
-                Hành trình của TAYNA bắt đầu từ những điều mộc mạc nhất: một khu vườn ngát xanh dưới chân núi lửa cổ, bàn tay người nông dân nâng niu từng cành quả, và nụ cười rạng rỡ của khách hàng khi thưởng thức trái mãng cầu chuẩn vị quê nhà.
-              </p>
-              <p style={{ fontWeight: 700, color: "var(--leaf-dark)", fontSize: "1.1rem" }}>
-                Hẹn gặp quý khách và các đối tác tại Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026 tại Núi Bà Đen, Tây Ninh!
+                Từ ngày 22 đến 26/9/2026, <strong>TAYNA – Mãng Cầu Bà Đen</strong> trân trọng kính mời quý bà con, du khách gần xa ghé thăm gian hàng của chúng tôi tại Khu du lịch quốc gia Núi Bà Đen để cùng thưởng thức từng múi na dai ngọt mát và sẻ chia câu chuyện làm nông chân thật!
               </p>
 
               {/* HIGHLIGHT BOX / CALLOUT */}
               <div className="article-callout-box">
-                <div className="callout-badge">🌿 TAYNA – MÃNG CẦU BÀ ĐEN</div>
-                <h3>Ghé thăm gian hàng hoặc Đặt hàng trực tiếp từ vườn</h3>
+                <div className="callout-badge">🌿 TAYNA – MÃNG CẦU BÀ ĐEN CHÍNH GỐC</div>
+                <h3>Ghé thăm gian hàng hoặc Đặt hàng hỏa tốc từ vườn nhà</h3>
                 <p>
-                  Nếu chưa thể đến tham dự lễ hội trực tiếp, quý khách có thể liên hệ ngay với TAYNA để được gửi tận tay những trái <strong>Mãng Cầu Bà Đen tuyển chọn loại 1</strong> hái mới mỗi ngày:
+                  Nếu chưa thể sắp xếp thời gian đến Tây Ninh dịp này, quý khách hoàn toàn có thể đặt trước các dòng sản phẩm chất lượng cao của TAYNA:
                 </p>
                 <ul>
-                  <li><strong>Hộp Đặc Biệt 3 Trái VIP:</strong> Đóng hộp quà cao cấp dâng lễ hoặc biếu tặng.</li>
-                  <li><strong>Thùng 5KG &amp; 15KG Tuyển Chọn:</strong> Bọc lưới xốp từng quả, trái già cứng phom đẹp, giao hỏa tốc toàn quốc.</li>
+                  <li><strong>Hộp Quà 3 Trái VIP (Hái mới mỗi ngày):</strong> Mắt nở căng, chuẩn phom dâng lễ và làm quà tặng đối tác.</li>
+                  <li><strong>Thùng 5KG &amp; 15KG Tuyển Chọn:</strong> Bọc lưới xốp an toàn chống va đập, bảo hành chất lượng tận tay.</li>
                 </ul>
                 <div className="callout-actions">
                   <Link href="/san-pham" className="callout-btn primary">
-                    Xem sản phẩm TAYNA ➔
+                    Xem bảng giá sản phẩm ➔
                   </Link>
                   <a href="tel:0907215521" className="callout-btn secondary">
                     Hotline / Zalo: 0907 215 521
@@ -509,11 +626,11 @@ export default function OcopFestivalArticlePage() {
 
           {/* FAQ SECTION */}
           <div className="article-container" id="faq">
-            <section className="article-faq-section" aria-label="Câu hỏi thường gặp">
+            <section className="article-faq-section" aria-label="Câu hỏi thường gặp về Lễ hội OCOP Tây Ninh 2026">
               <div className="faq-header">
-                <span className="faq-kicker">Giải đáp thông tin</span>
+                <span className="faq-kicker">Giải đáp thắc mắc</span>
                 <h2 className="faq-title">
-                  Câu hỏi thường gặp về Lễ hội OCOP Tây Ninh 2026
+                  Câu hỏi thường gặp về Lễ hội nông sản &amp; OCOP Tây Ninh 2026
                 </h2>
               </div>
 
@@ -573,28 +690,28 @@ export default function OcopFestivalArticlePage() {
               </Link>
 
               <Link
-                href="/tin-tuc/mang-cau-ba-den-dac-san-tay-ninh/"
+                href="/tin-tuc/di-tay-ninh-mua-mang-cau-ba-den-o-dau/"
                 className="related-article-card"
               >
                 <div className="related-card-thumb">
                   <img
-                    src="/hai-trieu-trai-mang-cau-chin.jpg"
-                    alt="Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh"
+                    src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                    alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu?"
                     loading="lazy"
                   />
-                  <span className="related-thumb-tag">Đặc sản nổi tiếng</span>
+                  <span className="related-thumb-tag">Kinh nghiệm du lịch</span>
                 </div>
                 <div className="related-card-body">
                   <div className="related-card-meta">
-                    <span>4 phút đọc</span>
+                    <span>5 phút đọc</span>
                     <span>•</span>
                     <time>Tháng 8/2026</time>
                   </div>
                   <h3 className="related-card-title">
-                    Mãng Cầu Bà Đen – Đặc Sản Nổi Tiếng Của Tây Ninh
+                    Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu? Kinh nghiệm chọn mua ngon, chuẩn
                   </h3>
                   <p className="related-card-desc">
-                    Khám phá đặc sản mãng cầu Bà Đen với thịt dai, vị ngọt thanh, hương thơm dịu mát được bảo hộ chỉ dẫn địa lý quốc gia.
+                    Kinh nghiệm chọn mãng cầu ngon làm quà du lịch, cách bảo quản và địa chỉ uy tín từ nhà vườn Tây Ninh.
                   </p>
                   <span className="related-card-link">
                     Đọc bài viết <span>→</span>

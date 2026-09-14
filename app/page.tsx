@@ -564,6 +564,47 @@ export default function Home() {
         )}
       </header>
 
+      {/* SỰ KIỆN NỔI BẬT TOP BANNER (SEO & CONVERSION) */}
+      <aside
+        className="event-highlight-bar"
+        aria-label="Thông báo sự kiện Lễ hội OCOP Tây Ninh 2026"
+        style={{
+          background: "linear-gradient(90deg, #1b4332 0%, #2d6a4f 50%, #40916c 100%)",
+          color: "#ffffff",
+          padding: "10px 16px",
+          textAlign: "center",
+          fontSize: "14px",
+          fontWeight: 600,
+          position: "relative",
+          zIndex: 40,
+          borderBottom: "1px solid rgba(255,255,255,0.15)",
+        }}
+      >
+        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", flexWrap: "wrap" }}>
+          <span style={{ background: "#ffd166", color: "#1b4332", padding: "2px 8px", borderRadius: "999px", fontSize: "12px", fontWeight: 800, textTransform: "uppercase" }}>
+            Sự kiện 22–26/09/2026
+          </span>
+          <span>
+            🎉 TAYNA tham dự <strong>Lễ hội nông sản đặc trưng &amp; sản phẩm OCOP lần I</strong> tại Núi Bà Đen!
+          </span>
+          <Link
+            href="/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/"
+            style={{
+              color: "#ffffff",
+              textDecoration: "underline",
+              fontWeight: 700,
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "4px",
+              marginLeft: "6px",
+            }}
+          >
+            <span>Khám phá gian hàng &amp; Lịch trình</span>
+            <span aria-hidden="true">➔</span>
+          </Link>
+        </div>
+      </aside>
+
       {/* HERO SECTION */}
       <section className="hero" id="top">
         <div
