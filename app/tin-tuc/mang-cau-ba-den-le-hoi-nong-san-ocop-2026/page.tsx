@@ -695,7 +695,7 @@ export default function OcopFestivalArticlePage() {
               >
                 <div className="related-card-thumb">
                   <img
-                    src="/trai-mang-cau-chin-gia-loai-1.jpg"
+                    src="/thuc-te-mang-cau-tuoi.jpg"
                     alt="Đi Tây Ninh mua Mãng Cầu Bà Đen ở đâu?"
                     loading="lazy"
                   />
