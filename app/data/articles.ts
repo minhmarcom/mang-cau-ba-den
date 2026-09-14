@@ -17,6 +17,18 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/mang-cau-ba-den-le-hoi-nong-san-ocop-2026",
+    title:
+      "Mãng cầu Bà Đen dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026 tại Núi Bà Đen",
+    kicker: "Sự kiện & Lễ hội • Tây Ninh",
+    badge: "Lễ hội OCOP 2026",
+    image: "/le-hoi-nong-san-ocop-tay-ninh-2026.jpg",
+    date: "Tháng 9/2026",
+    readTime: "7 phút đọc",
+    description:
+      "TAYNA mang Mãng Cầu Bà Đen tham dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần I năm 2026 từ 22-26/9/2026 tại Núi Bà Đen, kết nối nông sản Tây Ninh và người tiêu dùng.",
+  },
+  {
     slug: "/mang-cau-ba-den-duoc-trong-nhu-the-nao",
     title:
       "Mãng Cầu Bà Đen Được Trồng Như Thế Nào? Hành Trình Từ Vườn Đến Khi Thu Hoạch",

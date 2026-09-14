@@ -185,5 +185,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.95,
     },
+    {
+      url: `${siteUrl}/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
+      url: `${siteUrl}/tin-tuc/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
   ];
 }
