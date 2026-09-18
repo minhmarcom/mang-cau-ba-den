@@ -3,6 +3,7 @@ import Link from "next/link";
 import { articles } from "../data/articles";
 import Footer from "../components/Footer";
 import MagazineArticleCard from "../components/MagazineArticleCard";
+import { cmsDb } from "@/db";
 
 export const metadata: Metadata = {
   title: "TAYNA - Tin Tức & Cẩm Nang Mãng Cầu Bà Đen Tây Ninh | TAYNA - Mãng Cầu Bà Đen",
@@ -90,8 +91,30 @@ const breadcrumbSchema = {
   ],
 };
 
-export default function NewsHubPage() {
-  const [featuredArticle, ...latestArticles] = articles;
+export default async function NewsHubPage() {
+  const allPublished = await cmsDb.listPosts({ status: "published" });
+  const now = Date.now();
+  const livePosts = allPublished.filter(
+    (p) => !p.publishedAt || new Date(p.publishedAt).getTime() <= now
+  );
+
+  const displayArticles =
+    livePosts.length > 0
+      ? livePosts.map((p) => ({
+          slug: `/${p.slug}`,
+          title: p.title,
+          kicker: p.seoTitle || "Tin tức & Cẩm nang",
+          badge: "Bài viết mới",
+          image: p.featuredImage || "/vuon-nui-ba-den.jpg",
+          date: p.publishedAt
+            ? new Date(p.publishedAt).toLocaleDateString("vi-VN")
+            : "Mới cập nhật",
+          readTime: "6 phút đọc",
+          description: p.excerpt || p.title,
+        }))
+      : articles;
+
+  const [featuredArticle, ...latestArticles] = displayArticles;
 
   return (
     <div className="article-page-wrap news-magazine-page">
