@@ -68,10 +68,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Dynamic article routes: both root slug and /tin-tuc/ slug
+  // Dynamic article routes: both root slug, /tin-tuc/ slug, and /du-lich/ if applicable
   const articlePages: MetadataRoute.Sitemap = articles.flatMap((art) => {
     const cleanSlug = art.slug.replace(/^\//, "");
-    return [
+    const isTravel =
+      cleanSlug === "kinh-nghiem-hanh-huong-nui-ba-den" ||
+      cleanSlug === "thue-xe-lan-nui-ba-den";
+
+    const routes: MetadataRoute.Sitemap = [
       {
         url: `${siteUrl}/${cleanSlug}/`,
         lastModified: now,
@@ -85,6 +89,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.95,
       },
     ];
+
+    if (isTravel) {
+      routes.push({
+        url: `${siteUrl}/du-lich/${cleanSlug}/`,
+        lastModified: now,
+        changeFrequency: "daily" as const,
+        priority: 0.95,
+      });
+    }
+
+    return routes;
   });
 
   return [...staticPages, ...articlePages];

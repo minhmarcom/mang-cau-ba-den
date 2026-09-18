@@ -8,6 +8,26 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://mangcaubaden.vn/thue-xe-lan-nui-ba-den/</loc>
+    <lastmod>2026-09-19T05:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/vuon-nui-ba-den.jpg</image:loc>
+      <image:title>Thuê xe lăn Núi Bà Đen ở đâu? Hướng dẫn sử dụng dịch vụ từ A-Z</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mangcaubaden.vn/tin-tuc/thue-xe-lan-nui-ba-den/</loc>
+    <lastmod>2026-09-19T05:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/vuon-nui-ba-den.jpg</image:loc>
+      <image:title>Thuê xe lăn Núi Bà Đen ở đâu? Hướng dẫn sử dụng dịch vụ từ A-Z</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mangcaubaden.vn/kinh-nghiem-hanh-huong-nui-ba-den/</loc>
     <lastmod>2026-09-18T08:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>

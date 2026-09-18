@@ -17,6 +17,17 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/thue-xe-lan-nui-ba-den",
+    title: "Thuê xe lăn Núi Bà Đen ở đâu? Hướng dẫn sử dụng dịch vụ từ A-Z",
+    kicker: "Cẩm nang du lịch • Tiện ích Núi Bà",
+    badge: "Tiện ích du khách",
+    image: "/vuon-nui-ba-den.jpg",
+    date: "17/09/2026",
+    readTime: "6 phút đọc",
+    description:
+      "Hướng dẫn thuê xe lăn Núi Bà Đen chi tiết: Địa điểm đăng ký miễn phí tại quầy CSKH, cách đi cáp treo cùng xe lăn, tham quan đỉnh 986m và gợi ý lịch trình 1 ngày.",
+  },
+  {
     slug: "/kinh-nghiem-hanh-huong-nui-ba-den",
     title: "Kinh nghiệm hành hương Núi Bà Đen trọn vẹn và ý nghĩa",
     kicker: "Cẩm nang du lịch • Hành hương Tây Ninh",
