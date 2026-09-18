@@ -17,6 +17,17 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/kinh-nghiem-hanh-huong-nui-ba-den",
+    title: "Kinh nghiệm hành hương Núi Bà Đen trọn vẹn và ý nghĩa",
+    kicker: "Cẩm nang du lịch • Hành hương Tây Ninh",
+    badge: "Hành hương Núi Bà",
+    image: "/le-phat-ram-thang-gieng-nui-ba-den.jpg",
+    date: "10/09/2026",
+    readTime: "9 phút đọc",
+    description:
+      "Tổng hợp kinh nghiệm hành hương Núi Bà Đen Tây Ninh chi tiết: Thời điểm lý tưởng, các điểm chiêm bái Chùa Bà - Điện Bà, quần thể tượng Phật đỉnh núi 986m, cáp treo và mẹo chuẩn bị.",
+  },
+  {
     slug: "/mang-cau-ba-den-le-hoi-nong-san-ocop-2026",
     title:
       "Mãng cầu Bà Đen dự Lễ hội nông sản đặc trưng và sản phẩm OCOP lần thứ I năm 2026 tại Núi Bà Đen",

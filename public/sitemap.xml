@@ -92,6 +92,36 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mangcaubaden.vn/du-lich/</loc>
+    <lastmod>2026-09-18T08:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/vuon-mang-cau-nui-ba-den-troi-xanh.jpg</image:loc>
+      <image:title>Cẩm nang Du lịch Tây Ninh &amp; Hành hương Núi Bà Đen</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mangcaubaden.vn/kinh-nghiem-hanh-huong-nui-ba-den/</loc>
+    <lastmod>2026-09-18T08:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/le-phat-ram-thang-gieng-nui-ba-den.jpg</image:loc>
+      <image:title>Kinh nghiệm hành hương Núi Bà Đen trọn vẹn và ý nghĩa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mangcaubaden.vn/tin-tuc/kinh-nghiem-hanh-huong-nui-ba-den/</loc>
+    <lastmod>2026-09-18T08:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mangcaubaden.vn/le-phat-ram-thang-gieng-nui-ba-den.jpg</image:loc>
+      <image:title>Kinh nghiệm hành hương Núi Bà Đen trọn vẹn và ý nghĩa</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mangcaubaden.vn/mang-cau-ba-den-le-hoi-nong-san-ocop-2026/</loc>
     <lastmod>2026-09-18T08:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>

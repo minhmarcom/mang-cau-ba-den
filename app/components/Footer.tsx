@@ -121,6 +121,7 @@ export default function Footer({ backLink }: FooterProps) {
           </p>
           <div className="footer-quick-links">
             <Link href="/san-pham">Sản phẩm</Link>
+            <Link href="/du-lich">Du lịch Tây Ninh</Link>
             <Link href="/tin-tuc">Tin tức &amp; Cẩm nang</Link>
             <Link href="/hop-tac" style={{ color: "#fcd34d", fontWeight: 700 }}>Hợp Tác Đối Tác &amp; CTV</Link>
           </div>

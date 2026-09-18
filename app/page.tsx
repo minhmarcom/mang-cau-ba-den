@@ -464,6 +464,7 @@ export default function Home() {
           <a href="#hinh-anh">Hình ảnh</a>
           <a href="#dat-hang">Đặt hàng</a>
           <Link href="/hop-tac" style={{ color: "#2d6a3f", fontWeight: 700 }}>Hợp tác</Link>
+          <Link href="/du-lich" style={{ color: "#2d6a3f", fontWeight: 700 }}>Du lịch</Link>
           <a href="#tin-tuc">Tin tức</a>
           <a href="#lien-he">Liên hệ</a>
         </nav>
@@ -523,10 +524,13 @@ export default function Home() {
                 <a href="#tin-tuc" onClick={closeMenu}>
                   <span className="mobile-nav-num">05</span>
                   <span>Tin tức từ vườn</span>
-
                 </a>
-                <a href="#lien-he" onClick={closeMenu}>
+                <Link href="/du-lich" onClick={closeMenu}>
                   <span className="mobile-nav-num">06</span>
+                  <span>Cẩm nang Du lịch Tây Ninh</span>
+                </Link>
+                <a href="#lien-he" onClick={closeMenu}>
+                  <span className="mobile-nav-num">07</span>
                   <span>Kênh liên hệ mua hàng</span>
 
                 </a>
