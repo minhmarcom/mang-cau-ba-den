@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
 import crypto from "node:crypto";
 import { articles as initialStaticArticles } from "../app/data/articles";
 import { hashPassword } from "../lib/auth";
@@ -103,21 +104,42 @@ interface CmsDataStore {
   activityLogs: DbActivityLog[];
 }
 
-const DATA_DIR = path.join(process.cwd(), "data");
+// Serverless-safe storage configuration for Vercel
+const IS_SERVERLESS = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const DATA_DIR = IS_SERVERLESS
+  ? path.join(os.tmpdir(), "tayna-cms-data")
+  : path.join(process.cwd(), "data");
 const STORE_PATH = path.join(DATA_DIR, "cms-db.json");
 
+// In-memory singleton cache to guarantee zero EROFS crashes
+let globalStore: CmsDataStore | null = null;
+
 function ensureStoreInitialized(): CmsDataStore {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+  if (globalStore) {
+    return globalStore;
   }
 
-  if (fs.existsSync(STORE_PATH)) {
-    try {
+  // 1. Try to load existing data from STORE_PATH (/tmp in serverless)
+  try {
+    if (fs.existsSync(STORE_PATH)) {
       const content = fs.readFileSync(STORE_PATH, "utf-8");
-      return JSON.parse(content) as CmsDataStore;
-    } catch {
-      // If corrupted, re-seed
+      globalStore = JSON.parse(content) as CmsDataStore;
+      return globalStore;
     }
+  } catch {
+    // Proceed to bundled or seed
+  }
+
+  // 2. Try to load bundled static data if present in project
+  try {
+    const bundledPath = path.join(process.cwd(), "data", "cms-db.json");
+    if (fs.existsSync(bundledPath)) {
+      const content = fs.readFileSync(bundledPath, "utf-8");
+      globalStore = JSON.parse(content) as CmsDataStore;
+      return globalStore;
+    }
+  } catch {
+    // Proceed to seed
   }
 
   const now = new Date().toISOString();
@@ -209,8 +231,8 @@ function ensureStoreInitialized(): CmsDataStore {
     { id: crypto.randomUUID(), name: "OCOP 2026", slug: "ocop-2026", createdAt: now },
   ];
 
-  // 4. Initial Posts from articles.ts
-  const posts: DbPost[] = initialStaticArticles.map((art, idx) => {
+  // 4. Initial Posts from static articles
+  const posts: DbPost[] = (initialStaticArticles || []).map((art, idx) => {
     const slug = art.slug.replace(/^\//, "");
     let catId = categories[2].id;
     if (slug.includes("du-lich") || slug.includes("hanh-huong") || slug.includes("xe-lan")) {
@@ -228,7 +250,7 @@ function ensureStoreInitialized(): CmsDataStore {
       content: `<h2>Giới thiệu</h2><p>${art.description}</p><p>Nội dung chi tiết của bài viết được biên soạn đồng bộ từ hệ sinh thái nội dung TAYNA – Mãng Cầu Bà Đen Tây Ninh.</p>`,
       excerpt: art.description,
       featuredImage: art.image,
-      status: "published",
+      status: "published" as const,
       authorId: users[0].id,
       categoryId: catId,
       tagIds: [tags[0].id, tags[1].id],
@@ -311,15 +333,31 @@ function ensureStoreInitialized(): CmsDataStore {
     ],
   };
 
-  fs.writeFileSync(STORE_PATH, JSON.stringify(store, null, 2), "utf-8");
+  globalStore = store;
+
+  // Safe persist to disk (wrapped in try-catch so it never throws EROFS)
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+    fs.writeFileSync(STORE_PATH, JSON.stringify(store, null, 2), "utf-8");
+  } catch (err) {
+    console.warn("[CMS Store] Safe initial write skipped:", err);
+  }
+
   return store;
 }
 
 function saveStore(store: CmsDataStore) {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+  globalStore = store;
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+    fs.writeFileSync(STORE_PATH, JSON.stringify(store, null, 2), "utf-8");
+  } catch (err) {
+    console.warn("[CMS Store] Safe save skipped:", err);
   }
-  fs.writeFileSync(STORE_PATH, JSON.stringify(store, null, 2), "utf-8");
 }
 
 export const cmsDb = {
@@ -613,11 +651,15 @@ export const cmsDb = {
     const rev = store.revisions.find((r) => r.id === revisionId);
     if (!rev) return null;
 
-    return this.updatePost(rev.postId, {
-      title: rev.title,
-      content: rev.content,
-      excerpt: rev.excerpt,
-    }, editedBy);
+    return this.updatePost(
+      rev.postId,
+      {
+        title: rev.title,
+        content: rev.content,
+        excerpt: rev.excerpt,
+      },
+      editedBy
+    );
   },
 
   // ACTIVITY LOGS
@@ -628,7 +670,6 @@ export const cmsDb = {
       id: crypto.randomUUID(),
       createdAt: new Date().toISOString(),
     });
-    // Keep max 200 logs
     if (store.activityLogs.length > 200) {
       store.activityLogs = store.activityLogs.slice(0, 200);
     }
