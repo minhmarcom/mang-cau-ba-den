@@ -412,7 +412,7 @@ export default function PilgrimageGuideArticlePage() {
                   Di chuyển êm ái chỉ trong 5 phút từ chân núi lên Chùa Bà, tiết kiệm sức lực, ngắm trọn cảnh sắc thung lũng xanh mướt.
                 </p>
                 <a
-                  href="https://booking.sunworld.vn/vi/ticket-detail/1413668-cap-treo-chua-hang-khu-hoi?land=SunParadiseLandTayNinh&park=SBD&utm_source=MCG_web_SWBD&utm_medium=referral&utm_campaign=2026_tayninh_trackingbooking&utm_content=kinh_nghiem_hanh_huong_nui_ba_den_tron_ven_va_y_nghia"
+                  href="https://tayninh.lnm.vn"
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   style={{
@@ -493,7 +493,7 @@ export default function PilgrimageGuideArticlePage() {
                   Vé trọn gói viếng cả Chùa Bà và chinh phục đỉnh cao 986m chiêm bái Đại tượng Phật Bà Tây Bổ Đà Sơn, Tượng Di Lặc và Vườn Ưu Đàm.
                 </p>
                 <a
-                  href="https://booking.sunworld.vn/vi/ticket-detail/1600281-combo-hanh-trinh-tam-linh-nui-ba-den-cap-treo-dinh-van-son-khu-hoi-chua-hang?land=SunParadiseLandTayNinh&park=SBD&utm_source=MCG_web_SWBDN&utm_medium=referral&utm_campaign=2026_tayninh_trackingbooking&utm_content=kinh_nghiem_hanh_huong_nui_ba_den_tron_ven_va_y_nghia"
+                  href="https://tayninh.lnm.vn"
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   style={{

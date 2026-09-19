@@ -181,8 +181,7 @@ const breadcrumbSchema = {
   ],
 };
 
-const sunworldBookingUrl =
-  "https://booking.sunworld.vn/vi/ticket-detail/1600281-combo-hanh-trinh-tam-linh-nui-ba-den-cap-treo-dinh-van-son-khu-hoi-chua-hang?land=SunParadiseLandTayNinh&park=SBD&utm_source=MCG_web_SWBDN&utm_medium=referral&utm_campaign=2026_tayninh_trackingbooking&utm_content=thue_xe_lan_nui_ba_den";
+const sunworldBookingUrl = "https://tayninh.lnm.vn";
 
 export default function WheelchairGuidePage() {
   return (

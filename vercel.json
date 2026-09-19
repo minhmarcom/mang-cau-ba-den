@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "name": "mang-cau-ba-den",
   "framework": "nextjs",
   "buildCommand": "npm run build:vercel",
   "redirects": [
