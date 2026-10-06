@@ -17,6 +17,18 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "/vi-sao-mang-cau-ba-den-duoc-bao-trai",
+    title:
+      "Vì sao Mãng Cầu Bà Đen được “mặc áo” ngay từ khi còn trên cây?",
+    kicker: "Kỹ thuật canh tác • Vườn mãng cầu Bà Đen",
+    badge: "Kỹ thuật bao trái",
+    image: "/toan-canh-vuon-mang-cau-ba-den-tay-ninh.jpg",
+    date: "Tháng 10/2026",
+    readTime: "7 phút đọc",
+    description:
+      "Những chiếc lưới trắng xuất hiện trên từng trái Mãng Cầu Bà Đen không phải để trang trí. Đây là một công đoạn quan trọng trong quá trình chăm sóc giúp hạn chế côn trùng, bảo vệ bề mặt trái và hỗ trợ nâng cao chất lượng trước khi thu hoạch.",
+  },
+  {
     slug: "/thue-xe-lan-nui-ba-den",
     title: "Thuê xe lăn Núi Bà Đen ở đâu? Hướng dẫn sử dụng dịch vụ từ A-Z",
     kicker: "Cẩm nang du lịch • Tiện ích Núi Bà",
