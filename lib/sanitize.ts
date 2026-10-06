@@ -30,19 +30,28 @@ const ALLOWED_ATTRS: Record<string, Set<string>> = {
 export function sanitizeHtml(html: string): string {
   if (!html) return "";
 
-  // 1. Remove script and dangerous tags and their content
-  let clean = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
-  clean = clean.replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, "");
-  clean = clean.replace(/<link\b[^>]*>/gi, "");
-  clean = clean.replace(/<meta\b[^>]*>/gi, "");
-  clean = clean.replace(/<base\b[^>]*>/gi, "");
+  // 1. Remove dangerous active tags and their content
+  const DANGEROUS_TAGS = [
+    "script", "style", "link", "meta", "base",
+    "svg", "object", "embed", "applet", "form",
+    "input", "button", "textarea", "select", "math"
+  ];
 
-  // 2. Remove all inline event handlers like onclick, onload, onerror
-  clean = clean.replace(/\son[a-z]+\s*=\s*(?:'[^']*'|"[^"]*"|[^\s>]+)/gi, "");
+  let clean = html;
+  for (const tag of DANGEROUS_TAGS) {
+    const regex = new RegExp(`<${tag}\\b[^<]*(?:(?!<\\/${tag}>)<[^<]*)*<\\/${tag}>`, "gi");
+    clean = clean.replace(regex, "");
+    clean = clean.replace(new RegExp(`<${tag}\\b[^>]*\\/?>`, "gi"), "");
+  }
 
-  // 3. Remove javascript: pseudo-protocol
-  clean = clean.replace(/href\s*=\s*(?:'javascript:[^']*'|"javascript:[^"]*")/gi, 'href="#"');
-  clean = clean.replace(/src\s*=\s*(?:'javascript:[^']*'|"javascript:[^"]*")/gi, 'src=""');
+  // 2. Remove all inline event handlers (onload, onerror, onclick, etc.) with any delimiter/whitespace
+  clean = clean.replace(/[\s/]+on[a-zA-Z0-9_-]+\s*=\s*(?:'[^']*'|"[^"]*"|[^\s>]+)/gi, "");
+
+  // 3. Block dangerous URL schemes (javascript:, vbscript:, data:) in href and src
+  clean = clean.replace(
+    /(href|src)\s*=\s*['"]?\s*(?:javascript|vbscript|data(?!\s*:\s*image)):[^'">\s]*/gi,
+    '$1="#"'
+  );
 
   // 4. Force no H1 tag in content body (convert <h1> to <h2> to maintain single H1 SEO rule)
   clean = clean.replace(/<h1(\b[^>]*)>/gi, "<h2$1>");

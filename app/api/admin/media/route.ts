@@ -9,7 +9,6 @@ const ALLOWED_MIME_TYPES = new Set([
   "image/png",
   "image/webp",
   "image/gif",
-  "image/svg+xml",
 ]);
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
@@ -43,7 +42,7 @@ export async function POST(req: Request) {
 
     if (!ALLOWED_MIME_TYPES.has(file.type)) {
       return NextResponse.json(
-        { error: "Định dạng tệp không được hỗ trợ. Vui lòng tải ảnh JPG, PNG, WebP, GIF hoặc SVG" },
+        { error: "Định dạng tệp không được hỗ trợ. Vui lòng tải ảnh an toàn: JPG, PNG, WebP hoặc GIF" },
         { status: 400 }
       );
     }
@@ -62,13 +61,20 @@ export async function POST(req: Request) {
 
     const buffer = Buffer.from(await file.arrayBuffer());
 
-    // Generate safe clean filename
-    const ext = path.extname(file.name) || ".jpg";
+    // Generate safe clean filename with strict extension
+    const mimeToExt: Record<string, string> = {
+      "image/jpeg": ".jpg",
+      "image/png": ".png",
+      "image/webp": ".webp",
+      "image/gif": ".gif",
+    };
+    const ext = mimeToExt[file.type] || ".jpg";
     const baseName = path
-      .basename(file.name, ext)
+      .basename(file.name, path.extname(file.name))
       .toLowerCase()
       .replace(/[^a-z0-9_-]/g, "-")
-      .replace(/-+/g, "-");
+      .replace(/-+/g, "-")
+      .slice(0, 50) || "image";
     const uniqueFilename = `${baseName}-${Date.now()}${ext}`;
     const filePath = path.join(uploadsDir, uniqueFilename);
 

@@ -1,6 +1,21 @@
 import type { NextConfig } from "next";
 
+const cspHeader = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  "img-src 'self' data: blob: https://mangcaubaden.vn",
+  "connect-src 'self'",
+  "frame-src 'self' https://www.google.com https://maps.google.com https://www.youtube.com",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'self'",
+].join("; ");
+
 const securityHeaders = [
+  { key: "Content-Security-Policy", value: cspHeader },
   { key: "X-DNS-Prefetch-Control", value: "on" },
   { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
   { key: "X-Frame-Options", value: "SAMEORIGIN" },

@@ -11,7 +11,15 @@ export interface SessionUser {
   avatarUrl?: string | null;
 }
 
-const JWT_SECRET = process.env.CMS_JWT_SECRET || "tayna_cms_super_secret_key_2026_jwt_token";
+const JWT_SECRET: string =
+  process.env.CMS_JWT_SECRET ||
+  (() => {
+    if (process.env.NODE_ENV === "production") {
+      console.warn("⚠️ [SECURITY WARNING] CMS_JWT_SECRET is missing! Using ephemeral secret to prevent token forgery.");
+      return crypto.randomBytes(32).toString("hex");
+    }
+    return "tayna_cms_dev_secret_key_2026";
+  })();
 const COOKIE_NAME = "cms_session";
 
 /**
@@ -32,6 +40,7 @@ export function verifyPassword(password: string, storedHash: string): boolean {
     if (!salt || !key) return false;
     const keyBuffer = Buffer.from(key, "hex");
     const derivedKey = crypto.scryptSync(password, salt, 64);
+    if (keyBuffer.length !== derivedKey.length) return false;
     return crypto.timingSafeEqual(keyBuffer, derivedKey);
   } catch {
     return false;
@@ -67,12 +76,10 @@ export function verifySessionToken(token: string): SessionUser | null {
       .update(data)
       .digest("base64url");
 
-    if (
-      !crypto.timingSafeEqual(
-        Buffer.from(signature),
-        Buffer.from(expectedSig)
-      )
-    ) {
+    const sigBuf = Buffer.from(signature);
+    const expBuf = Buffer.from(expectedSig);
+
+    if (sigBuf.length !== expBuf.length || !crypto.timingSafeEqual(sigBuf, expBuf)) {
       return null;
     }
 
