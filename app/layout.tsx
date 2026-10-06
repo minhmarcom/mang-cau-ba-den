@@ -19,8 +19,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = "TAYNA – Mãng Cầu Bà Đen từ vùng trồng dưới chân Núi Bà Đen, Tây Ninh. Chủ động nguồn trái tại vườn, thu hoạch đúng độ già, tuyển chọn theo phân loại, ngọt thơm tự nhiên.";
   const keywords = [
     // Thương hiệu & Đơn vị kinh doanh (Brand & Entity)
-    "TAYNA", "TAYNA mãng cầu bà đen", "TAYNA - Mãng Cầu Bà Đen", "TAYNA - Mãng Cầu Bà Đen", "mãng cầu TAYNA",
-    "mãng cầu bà đen TAYNA", "TAYNA Tây Ninh", "thương hiệu TAYNA",
+    "TAYNA", "TAYNA mãng cầu bà đen", "TAYNA - Mãng Cầu Bà Đen", "mãng cầu TAYNA",
+    "mãng cầu bà đen TAYNA", "TAYNA Tây Ninh", "thương hiệu TAYNA", "vườn mãng cầu TAYNA",
 
     // Từ khóa hạt nhân (Core Keywords)
     "mãng cầu Bà Đen", "mang cau ba den", "mãng cầu Bà Đen Tây Ninh", "mang cau tay ninh",

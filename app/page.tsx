@@ -102,7 +102,7 @@ const faqs = [
   {
     question: "Mua mãng cầu Bà Đen chính gốc giao TPHCM & Hà Nội ở đâu?",
     answer:
-      "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân, bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
+      "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. TAYNA hái tươi tại vườn Thạnh Tân (chân Núi Bà Đen, Tây Ninh), bọc xốp đóng thùng carton và giao hỏa tốc toàn quốc.",
   },
   {
     question: "Mãng Cầu Bà Đen có chứng nhận an toàn nào?",
@@ -121,13 +121,52 @@ const faqSchema = {
   })),
 };
 
+const brandSchema = {
+  "@context": "https://schema.org",
+  "@type": "Brand",
+  "@id": "https://mangcaubaden.vn/#brand",
+  name: "TAYNA",
+  alternateName: [
+    "TAYNA Mãng Cầu Bà Đen",
+    "Mãng Cầu Bà Đen TAYNA",
+    "TAYNA Tây Ninh",
+    "Thương hiệu TAYNA",
+    "Mãng Cầu TAYNA"
+  ],
+  description:
+    "TAYNA là thương hiệu nông sản đặc sản chuyên canh và phân phối Mãng Cầu Bà Đen chính gốc loại 1 từ vùng trồng dưới chân Núi Bà Đen, tỉnh Tây Ninh, Việt Nam.",
+  url: "https://mangcaubaden.vn/",
+  logo: "https://mangcaubaden.vn/logo.png",
+  slogan: "Mãng Cầu Bà Đen Chính Gốc Từ Vùng Trồng Tây Ninh",
+  knowsAbout: [
+    "Mãng Cầu Bà Đen",
+    "Đặc sản Tây Ninh",
+    "Na Bà Đen Tây Ninh",
+    "Nông sản OCOP Tây Ninh",
+    "VietGAP Tây Ninh"
+  ],
+  sameAs: [
+    "https://share.google/mKCDKiRjRo25L0TDN",
+    "https://www.facebook.com/mangcaubaden.vn/",
+    "https://zalo.me/0907215521",
+    "https://www.tiktok.com/@mangcaubaden"
+  ]
+};
+
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProduceFarm", "Store"],
-  "@id": "https://mangcaubaden.vn/#business",
-  name: "TAYNA - Mãng Cầu Bà Đen Tây Ninh — TAYNA - Mãng Cầu Bà Đen",
+  "@id": "https://mangcaubaden.vn/#organization",
+  name: "TAYNA – Mãng Cầu Bà Đen Tây Ninh",
   legalName: "TAYNA - Mãng Cầu Bà Đen",
-  alternateName: ["TAYNA", "TAYNA - Mãng Cầu Bà Đen", "TAYNA - Mãng Cầu Bà Đen", "TAYNA - Mãng Cầu Bà Đen", "Mãng Cầu Bà Đen TAYNA", "Na Bà Đen Tây Ninh TAYNA"],
+  alternateName: [
+    "TAYNA",
+    "Mãng Cầu Bà Đen TAYNA",
+    "TAYNA Tây Ninh",
+    "Vườn Mãng Cầu TAYNA",
+    "TAYNA - Mãng Cầu Bà Đen"
+  ],
+  brand: { "@id": "https://mangcaubaden.vn/#brand" },
   url: "https://mangcaubaden.vn/",
   logo: "https://mangcaubaden.vn/logo.png",
   image: [
@@ -136,7 +175,7 @@ const localBusinessSchema = {
     "https://mangcaubaden.vn/san-pham-thung-5kg.jpg"
   ],
   description:
-    "TAYNA - Mãng Cầu Bà Đen  – Thương hiệu chuyên phân phối đặc sản Mãng Cầu Bà Đen Tây Ninh chính gốc loại 1. Cập nhật bảng giá tại vườn, quy cách đóng gói và giao nhanh toàn quốc.",
+    "TAYNA là thương hiệu nông sản chuyên canh và phân phối đặc sản Mãng Cầu Bà Đen Tây Ninh chính gốc loại 1 từ vùng trồng dưới chân Núi Bà Đen. Hái tươi tại vườn, tuyển chọn đúng độ già chuẩn OCOP 3 sao và giao nhanh toàn quốc.",
   telephone: "+84907215521",
   priceRange: "$$",
   currenciesAccepted: "VND",
@@ -182,8 +221,15 @@ const localBusinessSchema = {
     "https://www.facebook.com/mangcaubaden.vn/",
     "https://zalo.me/0907215521",
     "https://www.tiktok.com/@mangcaubaden",
-    "https://mangcaubaden.vn",
   ],
+  knowsAbout: [
+    "Mãng Cầu Bà Đen",
+    "Đặc sản Tây Ninh",
+    "Vùng trồng Núi Bà Đen",
+    "Nông sản OCOP 3 Sao Tây Ninh",
+    "VietGAP Tây Ninh"
+  ],
+  slogan: "Mãng Cầu Bà Đen Chính Gốc Từ Vùng Trồng Tây Ninh",
 };
 
 const productListSchema = {
@@ -200,7 +246,7 @@ const productListSchema = {
         alternateName: ["Hộp na Bà Đen 3 trái", "Hộp quà mãng cầu Tây Ninh"],
         image: "https://mangcaubaden.vn/san-pham-hop-qua-3-trai.jpg",
         description: "Hộp quà quai xách cao cấp với thiết kế cửa sổ trong suốt, tuyển chọn 3 trái mãng cầu Bà Đen thượng hạng đạt chuẩn OCOP 3 sao.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
+        brand: { "@type": "Brand", "@id": "https://mangcaubaden.vn/#brand", name: "TAYNA", alternateName: "Mãng Cầu Bà Đen TAYNA" },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",
@@ -241,7 +287,7 @@ const productListSchema = {
         alternateName: ["Thùng na Bà Đen 5kg", "Mãng cầu Tây Ninh thùng 5kg"],
         image: "https://mangcaubaden.vn/san-pham-thung-5kg.jpg",
         description: "Quy cách đóng thùng carton 5kg chuẩn OCOP Tây Ninh, từng trái già tuyển chọn kỹ lưỡng, giữ trọn độ tươi ngọt tự nhiên.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
+        brand: { "@type": "Brand", "@id": "https://mangcaubaden.vn/#brand", name: "TAYNA", alternateName: "Mãng Cầu Bà Đen TAYNA" },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",
@@ -282,7 +328,7 @@ const productListSchema = {
         alternateName: ["Thùng na Bà Đen 15kg", "Mãng cầu Tây Ninh giá sỉ"],
         image: "https://mangcaubaden.vn/san-pham-thung-15kg.jpg",
         description: "Thùng carton 15kg dày dặn nhiều lớp chuyên dụng, bảo quản thông thoáng chống va đập hoàn hảo khi vận chuyển đường dài.",
-        brand: { "@type": "Brand", name: "Mãng Cầu Bà Đen" },
+        brand: { "@type": "Brand", "@id": "https://mangcaubaden.vn/#brand", name: "TAYNA", alternateName: "Mãng Cầu Bà Đen TAYNA" },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.8",
@@ -320,12 +366,20 @@ const productListSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Mãng Cầu Bà Đen",
-  alternateName: ["Na Bà Đen", "Na Tây Ninh", "Mãng Cầu Tây Ninh", "Mãng Cầu Núi Bà Đen"],
+  "@id": "https://mangcaubaden.vn/#website",
+  name: "TAYNA – Mãng Cầu Bà Đen",
+  alternateName: [
+    "TAYNA",
+    "Mãng Cầu Bà Đen TAYNA",
+    "TAYNA Tây Ninh",
+    "Mãng Cầu Bà Đen",
+    "mangcaubaden.vn"
+  ],
   description:
-    "Mãng Cầu Bà Đen – Chuyên trang về đặc sản mãng cầu Tây Ninh. Cập nhật kiến thức, mùa vụ, cách chọn, bảo quản, giá Mãng Cầu Bà Đen và thông tin đặt mua từ Mãng Cầu Bà Đen.",
+    "TAYNA – Thương hiệu Mãng Cầu Bà Đen chính gốc Tây Ninh từ vùng trồng chân Núi Bà Đen. Cập nhật bảng giá tại vườn, cách chọn, bảo quản và đặt mua giao hỏa tốc toàn quốc.",
   url: "https://mangcaubaden.vn/",
   inLanguage: "vi-VN",
+  publisher: { "@id": "https://mangcaubaden.vn/#organization" },
 };
 
 const breadcrumbSchema = {
@@ -397,6 +451,10 @@ export default function Home() {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(brandSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -1228,104 +1286,6 @@ export default function Home() {
           <span>Liên hệ</span>
         </a>
       </nav>
-
-      {/* JSON-LD SCHEMA FOR GEO, SEO & AEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": ["Organization", "AgriculturalBusiness", "LocalBusiness"],
-                "@id": "https://mangcaubaden.vn/#organization",
-                "name": "Mãng Cầu Bà Đen Tây Ninh - Mãng Cầu Bà Đen",
-                "alternateName": "Đặc sản Mãng Cầu Bà Đen Tây Ninh",
-                "url": "https://mangcaubaden.vn/",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://mangcaubaden.vn/logo.png",
-                  "width": 512,
-                  "height": 512
-                },
-                "image": "https://mangcaubaden.vn/og.png",
-                "description": "Thương hiệu Mãng Cầu Bà Đen Tây Ninh NABADEN chính gốc VietGAP & OCOP 3 sao, thu hoạch trực tiếp tại vườn khu vực chân núi Bà Đen Tây Ninh.",
-                "telephone": "+84907215521",
-                "priceRange": "$$",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Đường Bời Lời, Xã Thạnh Tân",
-                  "addressLocality": "TP. Tây Ninh",
-                  "addressRegion": "Tây Ninh",
-                  "postalCode": "840000",
-                  "addressCountry": "VN"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 11.3742,
-                  "longitude": 106.1685
-                },
-                "openingHoursSpecification": {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                  "opens": "06:00",
-                  "closes": "21:00"
-                },
-                "sameAs": [
-                  "https://www.facebook.com/mangcaubaden.vn/",
-                  "https://mangcaubaden.vn/"
-                ]
-              },
-              {
-                "@type": "FAQPage",
-                "@id": "https://mangcaubaden.vn/#faq",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "Mãng cầu Bà Đen bao nhiêu 1kg hôm nay?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Giá mãng cầu Bà Đen Tây Ninh thay đổi theo từng thời điểm mùa vụ và kích thước trái. Vui lòng liên hệ Hotline/Zalo 0907 215 521 để nhận báo giá sỉ & lẻ tại vườn mới nhất hôm nay."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Mãng cầu Bà Đen Tây Ninh vào mùa tháng mấy?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Mãng cầu Bà Đen Tây Ninh được thu hoạch quanh năm nhờ kỹ thuật rải vụ của nhà vườn. Trong đó, 2 vụ chính ngon nhất là Vụ Đông Xuân (Tháng 12 - Tháng 2) và Vụ Thu Đông (Tháng 8 - Tháng 10)."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Cách chọn mãng cầu Bà Đen ngon không bị sượng?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Chọn quả có mắt na nở to phẳng, kẽ mắt hở rãnh màu trắng hồng, vỏ mỏng hơi mềm tay và cuống còn tươi. Tránh chọn quả mắt nhỏ còn xanh gắt để không bị sượng."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Mua mãng cầu Bà Đen chính gốc Tây Ninh ở đâu giao TPHCM & Hà Nội?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Đặt mua trực tiếp tại mangcaubaden.vn hoặc Zalo 0907 215 521. NABADEN hái tươi tại vườn Thạnh Tân và đóng thùng bọc xốp giao hỏa tốc toàn quốc."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Mãng Cầu Bà Đen có chứng nhận an toàn nào?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Mãng Cầu Bà Đen đạt chuẩn VietGAP & OCOP 3 sao tỉnh Tây Ninh, trái được bao bọc an toàn trên cành và có thông tin nguồn gốc rõ ràng."
-                    }
-                  }
-                ]
-              }
-            ]
-          }),
-        }}
-      />
 
       {/* FOOTER */}
       <Footer />
